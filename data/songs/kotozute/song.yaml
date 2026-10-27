@@ -1,0 +1,38 @@
+song:
+  id: kotozute
+  title: 言伝
+  artist: ""          # TODO 人工补全
+  source_lang: ja
+
+sections:
+  - {id: V1, role: verse}
+  - {id: V2, role: verse}
+  - {id: B1, role: pre-chorus}
+  - {id: C1, role: chorus}
+
+phrases:
+  - {id: V1-01, section: V1, ja: "いつか見た風景", budget: {min: 6, max: 6}}
+  - {id: V1-02, section: V1, ja: "呆然といずれ見える流星", budget: {min: 10, max: 10}}
+  - {id: V1-03, section: V1, ja: "いつも見ていたい", budget: {min: 5, max: 5}}
+  - {id: V2-01, section: V2, ja: "いつか見た終演", budget: {min: 6, max: 6}}
+  - {id: V2-02, section: V2, ja: "当然といずれ見える運命", budget: {min: 10, max: 10}}
+  - {id: V2-03, section: V2, ja: "いつも見えていない", budget: {min: 5, max: 5}}
+
+  - {id: B1-01, section: B1, ja: "過去を掴み捨てて未来", budget: {min: 9, max: 9}}
+  - {id: B1-02, section: B1, ja: "出会いし続けて目を逸らしたい", budget: {min: 12, max: 12}}
+  - {id: B1-03, section: B1, ja: "あの自分よりも", budget: {min: 7, max: 7}}
+  - {id: B1-04, section: B1, ja: "時空よりも", budget: {min: 5, max: 5}}
+
+  # 副歌共 11 句；若后续发现它在音乐上其实是两段（5 + 6），
+  # 只需在此拆成 C1 / C2 两个 section，其余数据不用动。
+  - {id: C1-01, section: C1, ja: "闇に日が差して手を伸ばしたい", budget: {min: 12, max: 12}}
+  - {id: C1-02, section: C1, ja: "あなたと今話したい", budget: {min: 9, max: 9}}
+  - {id: C1-03, section: C1, ja: "朝日を見て染まりだす", budget: {min: 10, max: 10}}
+  - {id: C1-04, section: C1, ja: "もう自由に", budget: {min: 3, max: 3}}
+  - {id: C1-05, section: C1, ja: "もう自由に", budget: {min: 3, max: 3}}
+  - {id: C1-06, section: C1, ja: "わたしは今目を覚ました", budget: {min: 11, max: 11}}
+  - {id: C1-07, section: C1, ja: "あなたと今話したい", budget: {min: 9, max: 9}}
+  - {id: C1-08, section: C1, ja: "愛すべき日が染まりだす", budget: {min: 10, max: 10}}
+  - {id: C1-09, section: C1, ja: "もう自由に", budget: {min: 3, max: 3}}
+  - {id: C1-10, section: C1, ja: "もう自由に", budget: {min: 3, max: 3}}
+  - {id: C1-11, section: C1, ja: "飛ぶ", budget: {min: 2, max: 2}}

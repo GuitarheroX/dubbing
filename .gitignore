@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+
+# 运行产物：一次 run 一个目录，体积会增长；state.yaml 是运行状态，不入库
+data/songs/*/runs/
+data/songs/*/archive/
+data/songs/*/state.yaml
+data/songs/*/preview/
+data/songs/*/view.json
