@@ -143,10 +143,22 @@ class Phrase:
     budget: Budget | None = None
     keep_source: bool = False
     notes: str = ""
+    #: 这一句在旋律上被切成几段、每段几个音，例如 ``(3, 4, 5)``。
+    #: ``None`` 表示未标注，等价于"整句一段"（见 ``parts``）。
+    pattern: tuple[int, ...] | None = None
 
     @property
     def translatable(self) -> bool:
         return not self.keep_source
+
+    @property
+    def parts(self) -> tuple[int, ...]:
+        """归一化后的分段：没标注就是整句一段。"""
+        if self.pattern is not None:
+            return self.pattern
+        if self.budget is not None:
+            return (self.budget.max,)
+        return ()
 
     @classmethod
     def from_json(cls, obj: Any, where: str = "phrase") -> "Phrase":
@@ -160,6 +172,31 @@ class Phrase:
             raise SchemaError(f"{where}.keep_source: 期望布尔，得到 {type(keep).__name__}")
         if keep and budget is not None:
             raise SchemaError(f"{where}: keep_source 的乐句不应有 budget（应写 null）")
+
+        raw_pattern = m.get("pattern")
+        pattern: tuple[int, ...] | None = None
+        if raw_pattern is not None:
+            if not isinstance(raw_pattern, (list, tuple)) or not raw_pattern:
+                raise SchemaError(f"{where}.pattern: 期望非空数组，例如 [3, 4, 5]")
+            parts: list[int] = []
+            for i, v in enumerate(raw_pattern):
+                if isinstance(v, bool) or not isinstance(v, int) or v < 1:
+                    raise SchemaError(f"{where}.pattern[{i}]: 期望正整数，得到 {v!r}")
+                parts.append(v)
+            pattern = tuple(parts)
+
+        if pattern is not None:
+            if keep:
+                raise SchemaError(f"{where}: keep_source 的乐句不应有 pattern（整句保留原文）")
+            if budget is None:
+                raise SchemaError(f"{where}: 写了 pattern 就必须写 budget")
+            total = sum(pattern)
+            if not budget.allows(total):
+                raise SchemaError(
+                    f"{where}: pattern 合计 {total} 字，超出 budget "
+                    f"{budget.min}-{budget.max}"
+                )
+
         return cls(
             id=pid,
             section=_str(m, "section", where),
@@ -167,6 +204,7 @@ class Phrase:
             budget=budget,
             keep_source=keep,
             notes=_str(m, "notes", where, default=""),
+            pattern=pattern,
         )
 
     def to_json(self) -> dict[str, Any]:
@@ -180,6 +218,8 @@ class Phrase:
             d["keep_source"] = True
         if self.notes:
             d["notes"] = self.notes
+        if self.pattern is not None:
+            d["pattern"] = list(self.pattern)
         return d
 
 

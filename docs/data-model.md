@@ -41,6 +41,7 @@ sections:
 phrases:            # 顺序即演唱顺序
   - {id: V1-01, section: V1, ja: "…", budget: {min: 10, max: 10}}
   - {id: C1-01, section: C1, ja: "沈むように溶けてゆくように", budget: {min: 12, max: 12}, notes: "结尾拖腔"}
+  - {id: C1-02, section: C1, ja: "…", budget: {min: 12, max: 12}, pattern: [3, 4, 5]}
   - {id: C1-05, section: C1, ja: "君の声がする", keep_source: true}
 ```
 
@@ -48,6 +49,10 @@ phrases:            # 顺序即演唱顺序
 
 - `budget`：人工决定的可唱汉字数，结构固定为 `{min, max}`。**MVP 阶段 `min == max`**，退化为定值；将来放开成区间时，数据结构与 C 的比较逻辑都不变。
 - `budget: null`：不设约束的乐句（纯语气词、拖长音），C 跳过。
+- `pattern`：这一句在旋律上被切成几段、每段几个音，例如 `[3, 4, 5]` 表示三部分共 12 个音。
+  省略即"整句一段"（等价于 `[budget.max]`）。约束：每段必须是正整数、合计必须落在 `budget`
+  区间内、不能和 `keep_source` 同时出现。**目前它只是给 B 看的旋律信息，C 不检查、
+  也不要求译词按它断句**——所以标错了不会让流程失败，但会误导 B。
 - `keep_source: true`：本句保留原文，不翻译。见第 6 节。
 - `notes`：给人看的自由文本，agent 不读。
 
@@ -234,11 +239,12 @@ sections:
 
 - `song.yaml` + A 整曲输出 + B 段级生成 + C 的两条规则（`OVER_BUDGET` / `UNDER_BUDGET`）+ `state.yaml`
 - `keep_source`（含在 MVP 里，因为它会影响 B 的输入契约，事后加要改契约结构）
+- `pattern`（同样影响 B 的输入契约，先只透传、不约束）
 
 暂不做（加进去不改变结构）：
 
 - `budget` 放开成真正的区间（MVP 里 `min == max`）
 - 跨行借还字数（`borrow`）
-- 行内停顿切分（`pattern`）——句就是乐句，不需要再切
+- `pattern` 的强制检查（现在只透传给人看）
 - A 的语料检索（`references`）
 - 原文 ↔ 译文的行内词对齐

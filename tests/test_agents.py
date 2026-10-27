@@ -8,7 +8,7 @@ from dubbing.agents import (
     parse_b_output,
 )
 
-from helpers import analysis_json, make_analysis, make_song, phrase
+from helpers import analysis_json, make_analysis, make_draft, make_song, phrase
 
 SONG = make_song(
     "t",
@@ -161,3 +161,33 @@ def test_feedback_never_leaks_into_data():
     )
     assert "补一句译词" in request.user
     assert "补一句译词" not in str(request.data)
+
+
+# -- pattern 透传 --------------------------------------------------------
+
+
+def test_pattern_reaches_b_only_when_annotated():
+    song = make_song(
+        "t",
+        ["S1"],
+        [
+            dict(phrase("P1", "S1", "ああああ", 12), pattern=[3, 4, 5]),
+            phrase("P2", "S1", "いいいい", 5),
+        ],
+    )
+    data = b_payload(song, make_analysis(["S1"]), focus="S1")
+    rows = {r["id"]: r for r in data["phrases"]}
+
+    assert rows["P1"]["pattern"] == [3, 4, 5]
+    assert "pattern" not in rows["P2"]  # 没标注就不出现，默认整句一段
+
+
+def test_pattern_does_not_change_c_verdict():
+    """C 不检查 pattern：字数和 pattern 对不上也照样 pass。"""
+    from dubbing.checks import review
+
+    song = make_song(
+        "t", ["S1"], [dict(phrase("P1", "S1", "あ", 6), pattern=[2, 2, 2])]
+    )
+    draft = make_draft("S1", {"P1": "一二三四五六"})
+    assert review(song, "S1", draft, draft_run="r1").verdict == "pass"

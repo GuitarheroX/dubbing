@@ -140,6 +140,9 @@ def b_payload(
             "ja": p.ja,
             "budget": None if p.budget is None else p.budget.to_json(),
         }
+        if p.pattern is not None:
+            # 只有标注过分段才给出去；没标注就是默认的"整句一段"，不必占地方
+            row["pattern"] = list(p.pattern)
         if p.keep_source:
             row["keep_source"] = True
         elif p.section == focus:
