@@ -1,0 +1,96 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "不安在胸口涨起来",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "整句一段，八音齐"
+      }
+    },
+    {
+      "id": "V1-02",
+      "zh": "这世界教我的规矩",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "无空格，一气唱完"
+      }
+    },
+    {
+      "id": "V1-03",
+      "zh": "焦躁跟着雨水涌来",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "把「苛立ち」接到下一句的雨上"
+      }
+    },
+    {
+      "id": "V1-04",
+      "zh": "自由从指缝里流走",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "「从指缝里」四字连读占四音"
+      }
+    },
+    {
+      "id": "V1-05",
+      "zh": "一场无色的雨落下",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "对应モノクロの雨"
+      }
+    },
+    {
+      "id": "V1-06",
+      "zh": "把远处的轮廓抹掉",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "「轮廓」两字并作一拍快唱"
+      }
+    },
+    {
+      "id": "V1-07",
+      "zh": "抬起头看见天在笑 压了下来",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": true,
+        "note": "前八后四，中间空格断句，对应 pattern[8,4]"
+      }
+    }
+  ]
+}

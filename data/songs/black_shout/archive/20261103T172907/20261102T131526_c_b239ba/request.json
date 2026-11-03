@@ -1,0 +1,117 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "phrases": [
+      {
+        "id": "B1-01",
+        "section": "B1",
+        "ja": "邪魔するもの 嫉妬",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          6,
+          2
+        ]
+      },
+      {
+        "id": "B1-02",
+        "section": "B1",
+        "ja": "振り落として 衝動",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          6,
+          2
+        ]
+      },
+      {
+        "id": "B1-03",
+        "section": "B1",
+        "ja": "私の色 本能",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          6,
+          2
+        ]
+      },
+      {
+        "id": "B1-04",
+        "section": "B1",
+        "ja": "取り戻したいから…！",
+        "budget": {
+          "min": 9,
+          "max": 9
+        }
+      }
+    ],
+    "draft": {
+      "section": "B1",
+      "phrases": [
+        {
+          "id": "B1-01",
+          "zh": "肩上堆的碎石 嫉妒",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "前六字一段后两字一段，空格对应 pattern [6,2]"
+          }
+        },
+        {
+          "id": "B1-02",
+          "zh": "全抖落到地上 冲动",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "六加二，空格断在 pattern 分割处"
+          }
+        },
+        {
+          "id": "B1-03",
+          "zh": "这是我的颜色 本能",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "六加二，尾两字重击收住"
+          }
+        },
+        {
+          "id": "B1-04",
+          "zh": "我的颜色 我要夺回来",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "四加五，中间空格留换气，尾字不落虚词"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

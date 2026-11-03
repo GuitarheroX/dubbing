@@ -1,0 +1,70 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "画的地图 我亲手 撕成两半",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": true,
+        "note": "按4+3+4断句，共11字"
+      }
+    },
+    {
+      "id": "V1-02",
+      "zh": "世界停在 那一天的原地",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": true,
+        "note": "按4+6断句，共10字"
+      }
+    },
+    {
+      "id": "V1-03",
+      "zh": "我又再一次",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "整句5字，对应一个乐句"
+      }
+    },
+    {
+      "id": "V1-04",
+      "zh": "把一切 都推给别人",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "按3+5断句，共8字"
+      }
+    },
+    {
+      "id": "V1-05",
+      "zh": "真讨厌自己",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "整句5字，对应一个乐句"
+      }
+    }
+  ]
+}

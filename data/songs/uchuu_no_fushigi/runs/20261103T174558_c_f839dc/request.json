@@ -1,0 +1,121 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "O1",
+    "phrases": [
+      {
+        "id": "O1-01",
+        "section": "O1",
+        "ja": "ぜんぶ ぜんぶ ぜんぶ",
+        "budget": {
+          "min": 6,
+          "max": 6
+        },
+        "pattern": [
+          4,
+          2
+        ]
+      },
+      {
+        "id": "O1-02",
+        "section": "O1",
+        "ja": "さがしにゆこう",
+        "budget": {
+          "min": 6,
+          "max": 6
+        },
+        "pattern": [
+          4,
+          2
+        ]
+      },
+      {
+        "id": "O1-03",
+        "section": "O1",
+        "ja": "ぜんぶ ぜんぶ ぜんぶ",
+        "budget": {
+          "min": 6,
+          "max": 6
+        },
+        "pattern": [
+          4,
+          2
+        ]
+      },
+      {
+        "id": "O1-04",
+        "section": "O1",
+        "ja": "さがしにゆこう",
+        "budget": {
+          "min": 6,
+          "max": 6
+        },
+        "pattern": [
+          4,
+          2
+        ]
+      }
+    ],
+    "draft": {
+      "section": "O1",
+      "phrases": [
+        {
+          "id": "O1-01",
+          "zh": "全部全部 全部",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "前四字连读占 4 个音，空格后两字占 2 个音，与 V1-04 用词一致只换断句"
+          }
+        },
+        {
+          "id": "O1-02",
+          "zh": "一起出发 寻找",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "四字加两字正好对上 4+2，与 V1-05 完全相同，保留重复"
+          }
+        },
+        {
+          "id": "O1-03",
+          "zh": "全部全部 全部",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "与 O1-01 逐字相同，重复句照原样"
+          }
+        },
+        {
+          "id": "O1-04",
+          "zh": "一起出发 寻找",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "与 O1-02 逐字相同，收尾落在这句邀约上"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

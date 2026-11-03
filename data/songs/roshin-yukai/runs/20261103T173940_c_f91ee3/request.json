@@ -1,0 +1,193 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "phrases": [
+      {
+        "id": "V1-01",
+        "section": "V1",
+        "ja": "街明かり華やか",
+        "budget": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      {
+        "id": "V1-02",
+        "section": "V1",
+        "ja": "エーテル麻酔の冷たさ",
+        "budget": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      {
+        "id": "V1-03",
+        "section": "V1",
+        "ja": "眠れない午前二時",
+        "budget": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      {
+        "id": "V1-04",
+        "section": "V1",
+        "ja": "全てが急速に変わる",
+        "budget": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      {
+        "id": "V1-05",
+        "section": "V1",
+        "ja": "オイル切れのライター",
+        "budget": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      {
+        "id": "V1-06",
+        "section": "V1",
+        "ja": "焼けつくような胃の中",
+        "budget": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      {
+        "id": "V1-07",
+        "section": "V1",
+        "ja": "全てがそう嘘なら",
+        "budget": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      {
+        "id": "V1-08",
+        "section": "V1",
+        "ja": "本当によかったのにね",
+        "budget": {
+          "min": 9,
+          "max": 9
+        }
+      }
+    ],
+    "draft": {
+      "section": "V1",
+      "phrases": [
+        {
+          "id": "V1-01",
+          "zh": "街灯太亮 照不暖空房间",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "空格断句不计字，实字十个"
+          }
+        },
+        {
+          "id": "V1-02",
+          "zh": "乙醚擦过皮肤 冷得没有痛",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "乙醚保留麻醉的冷感，空格处停顿"
+          }
+        },
+        {
+          "id": "V1-03",
+          "zh": "凌晨两点 睡意全无",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "午前二时化作凌晨两点，字数精确"
+          }
+        },
+        {
+          "id": "V1-04",
+          "zh": "一切都在急速地崩塌改变",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "急速对应原文，崩塌补足画面"
+          }
+        },
+        {
+          "id": "V1-05",
+          "zh": "油已用尽的打火机",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "无空格，八字连读"
+          }
+        },
+        {
+          "id": "V1-06",
+          "zh": "胃里灼烧 像有火慢慢啃咬",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "灼烧与啃咬都是身体内部的实感"
+          }
+        },
+        {
+          "id": "V1-07",
+          "zh": "如果这一切全都是假",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "句尾落在假字，不拖虚词"
+          }
+        },
+        {
+          "id": "V1-08",
+          "zh": "那该多好 可惜都不是",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "空格断句不计字，自嘲语气收束"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

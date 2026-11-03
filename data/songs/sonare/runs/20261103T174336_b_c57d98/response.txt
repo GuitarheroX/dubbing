@@ -1,0 +1,55 @@
+```json
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "从空白梦里睁开眼睛",
+      "chars": 10,
+      "self_check": {"budget": [10, 10], "ok": true, "note": "整句连读十字，正好十拍"}
+    },
+    {
+      "id": "V1-02",
+      "zh": "我一个人站在翻开的空白页中央",
+      "chars": 14,
+      "self_check": {"budget": [14, 14], "ok": true, "note": "一气唱完十四字，无空格断句"}
+    },
+    {
+      "id": "V1-03",
+      "zh": "转过身 四面都看不见",
+      "chars": 9,
+      "self_check": {"budget": [9, 9], "ok": true, "note": "空格在「身」后，前三字后六字"}
+    },
+    {
+      "id": "V1-04",
+      "zh": "没有门也没有路",
+      "chars": 7,
+      "self_check": {"budget": [7, 7], "ok": true, "note": "七字连读，收在实词「路」上"}
+    },
+    {
+      "id": "V1-05",
+      "zh": "耳朵里 忽然落进一声",
+      "chars": 9,
+      "self_check": {"budget": [9, 9], "ok": true, "note": "空格断在「里」后，三加六共九字"}
+    },
+    {
+      "id": "V1-06",
+      "zh": "是你在叫我的名字 轻轻地 一声声",
+      "chars": 14,
+      "self_check": {"budget": [14, 14], "ok": true, "note": "两处空格分三段，八加三加三共十四字"}
+    },
+    {
+      "id": "V1-07",
+      "zh": "摸黑捡起散落的词语",
+      "chars": 9,
+      "self_check": {"budget": [9, 9], "ok": true, "note": "九字连读，末字落在「语」"}
+    },
+    {
+      "id": "V1-08",
+      "zh": "开始迈出脚步",
+      "chars": 6,
+      "self_check": {"budget": [6, 6], "ok": true, "note": "六字收尾，不用「了」「着」"}
+    }
+  ]
+}
+```

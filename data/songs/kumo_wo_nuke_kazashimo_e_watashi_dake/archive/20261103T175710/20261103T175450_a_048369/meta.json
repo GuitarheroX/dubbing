@@ -1,0 +1,7 @@
+{
+  "agent": "a",
+  "run_id": "20261103T175450_a_048369",
+  "input_hash": "048369b86087c78319c4317d0df211f0c0ce1cdb997163918f236a57d839943d",
+  "abandoned": "error: agent=a 调用失败：网络错误：HTTPSConnectionPool(host='api.deepseek.com', port=443): Max retries exceeded with url: /anthropic/v1/messages (Caused by ProxyError('Unable to connect to proxy', NewConnectionError(\"HTTPSConnection(host='127.0.0.1', port=7890): Failed to establish a new connection: [Errno 1] Operation not permitted\")))",
+  "finished_at": "2026-11-03T17:54:53+00:00"
+}

@@ -1,0 +1,14 @@
+{
+  "section": "B1",
+  "draft_run": "20261103T175626_b_657638",
+  "verdict": "pass",
+  "violations": [],
+  "changes": {
+    "rewritten": [
+      "B1-01",
+      "B1-02"
+    ],
+    "unchanged": []
+  },
+  "regressions": []
+}

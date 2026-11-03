@@ -1,0 +1,37 @@
+```json
+{
+  "section": "C1",
+  "phrases": [
+    {
+      "id": "C1-01",
+      "zh": "一遍一遍",
+      "chars": 4,
+      "self_check": {"budget": [4, 4], "ok": true, "note": "整句一口气四字，与下一句开头重复"}
+    },
+    {
+      "id": "C1-02",
+      "zh": "一遍一遍 呼喊",
+      "chars": 6,
+      "self_check": {"budget": [6, 6], "ok": true, "note": "按 pattern 4+2 断，前四字承接上句"}
+    },
+    {
+      "id": "C1-03",
+      "zh": "就算变成夜色 深处的怪兽 也不回头",
+      "chars": 15,
+      "self_check": {"budget": [15, 15], "ok": true, "note": "空格切 6+5+4，与旋律三段对齐"}
+    },
+    {
+      "id": "C1-04",
+      "zh": "想在这 留下一句 没说出的心事",
+      "chars": 13,
+      "self_check": {"budget": [13, 13], "ok": true, "note": "空格切 3+4+6，末段六字落在长音上"}
+    },
+    {
+      "id": "C1-05",
+      "zh": "把这一句秘密",
+      "chars": 6,
+      "self_check": {"budget": [6, 6], "ok": true, "note": "整句一段六字，收在秘密上不作停顿"}
+    }
+  ]
+}
+```

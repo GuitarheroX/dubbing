@@ -1,0 +1,69 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "O1",
+    "phrases": [
+      {
+        "id": "O1-01",
+        "section": "O1",
+        "ja": "連れてって",
+        "budget": {
+          "min": 4,
+          "max": 4
+        },
+        "pattern": [
+          2,
+          2
+        ]
+      },
+      {
+        "id": "O1-02",
+        "section": "O1",
+        "ja": "oh, fly me to the star",
+        "budget": {
+          "min": 6,
+          "max": 6
+        },
+        "pattern": [
+          1,
+          5
+        ]
+      }
+    ],
+    "draft": {
+      "section": "O1",
+      "phrases": [
+        {
+          "id": "O1-01",
+          "zh": "带我走吧",
+          "chars": 4,
+          "self_check": {
+            "budget": [
+              4,
+              4
+            ],
+            "ok": true,
+            "note": "按旋律切成「带我 走吧」两段，每段两字"
+          }
+        },
+        {
+          "id": "O1-02",
+          "zh": "带 我飞去星河",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "首字单独占一拍，「我飞去星河」五字连唱"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

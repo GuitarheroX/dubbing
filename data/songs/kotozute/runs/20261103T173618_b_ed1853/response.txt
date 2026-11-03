@@ -1,0 +1,35 @@
+{
+  "section": "V2",
+  "phrases": [
+    {
+      "id": "V2-01",
+      "zh": "曾见过的落幕",
+      "chars": 6,
+      "self_check": {
+        "budget": [6, 6],
+        "ok": true,
+        "note": "六字整句，与V1「曾见过的风景」呼应"
+      }
+    },
+    {
+      "id": "V2-02",
+      "zh": "理所当然该出现的命运",
+      "chars": 10,
+      "self_check": {
+        "budget": [10, 10],
+        "ok": true,
+        "note": "十字整句连读，不加标点"
+      }
+    },
+    {
+      "id": "V2-03",
+      "zh": "始终看不见",
+      "chars": 5,
+      "self_check": {
+        "budget": [5, 5],
+        "ok": true,
+        "note": "五字收束，保留持续未见的状态"
+      }
+    }
+  ]
+}

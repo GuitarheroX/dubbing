@@ -1,0 +1,39 @@
+{
+  "section": "V1",
+  "draft_run": "20261103T174336_b_c57d98",
+  "verdict": "fail",
+  "violations": [
+    {
+      "phrase_id": "V1-01",
+      "code": "UNDER_BUDGET",
+      "severity": "hard",
+      "expected": [
+        10,
+        10
+      ],
+      "actual": 9,
+      "fix": "差 1 字，补到 10 字以上"
+    },
+    {
+      "phrase_id": "V1-01",
+      "code": "CHAR_MISMATCH",
+      "severity": "soft",
+      "actual": 9,
+      "fix": "自报 10 字，实际 9 字"
+    }
+  ],
+  "changes": {
+    "rewritten": [
+      "V1-01",
+      "V1-02",
+      "V1-03",
+      "V1-04",
+      "V1-05",
+      "V1-06",
+      "V1-07",
+      "V1-08"
+    ],
+    "unchanged": []
+  },
+  "regressions": []
+}

@@ -1,0 +1,335 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "phrases": [
+      {
+        "id": "V2-01",
+        "section": "V2",
+        "ja": "突風一吹き、晴れ",
+        "budget": {
+          "min": 7,
+          "max": 7
+        },
+        "pattern": [
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "id": "V2-02",
+        "section": "V2",
+        "ja": "私は道の上",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": "V2-03",
+        "section": "V2",
+        "ja": "とうとうと闊歩",
+        "budget": {
+          "min": 5,
+          "max": 5
+        },
+        "pattern": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": "V2-04",
+        "section": "V2",
+        "ja": "その風下、お前だけ",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "V2-05",
+        "section": "V2",
+        "ja": "草原に立った影",
+        "budget": {
+          "min": 7,
+          "max": 7
+        },
+        "pattern": [
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "id": "V2-06",
+        "section": "V2",
+        "ja": "渡りの白い羽根",
+        "budget": {
+          "min": 9,
+          "max": 9
+        },
+        "pattern": [
+          4,
+          5
+        ]
+      },
+      {
+        "id": "V2-07",
+        "section": "V2",
+        "ja": "私の白い風",
+        "budget": {
+          "min": 9,
+          "max": 9
+        },
+        "pattern": [
+          4,
+          5
+        ]
+      },
+      {
+        "id": "V2-08",
+        "section": "V2",
+        "ja": "靡く",
+        "budget": {
+          "min": 3,
+          "max": 3
+        },
+        "pattern": [
+          3
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V2",
+      "phrases": [
+        {
+          "id": "V2-01",
+          "zh": "忽来 一阵风 放晴",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "按 2+3+2 断句，空格分隔三段"
+          }
+        },
+        {
+          "id": "V2-02",
+          "zh": "我已走在 笔直路上",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "4+4，两段各占四拍"
+          }
+        },
+        {
+          "id": "V2-03",
+          "zh": "阔步 尘飞扬",
+          "chars": 5,
+          "self_check": {
+            "budget": [
+              5,
+              5
+            ],
+            "ok": true,
+            "note": "压掉「踏响尘土」的动词，改成 2+3 的「阔步 尘飞扬」"
+          }
+        },
+        {
+          "id": "V2-04",
+          "zh": "此刻 风的下方 只剩你一人",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "2+4+5，三段按 pattern 停"
+          }
+        },
+        {
+          "id": "V2-05",
+          "zh": "草原 一道影 拉长",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "2+3+2，与 V1-05 完全相同作重复"
+          }
+        },
+        {
+          "id": "V2-06",
+          "zh": "候鸟掠过 落一片白羽",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "4+5，删掉「下」字压到九字"
+          }
+        },
+        {
+          "id": "V2-07",
+          "zh": "我便是那 一缕白色风",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "4+5，与 V1-06 结构呼应只换颜色"
+          }
+        },
+        {
+          "id": "V2-08",
+          "zh": "随风伏",
+          "chars": 3,
+          "self_check": {
+            "budget": [
+              3,
+              3
+            ],
+            "ok": true,
+            "note": "三字一句，与 V1-07 重复"
+          }
+        }
+      ]
+    },
+    "prev_draft": {
+      "section": "V2",
+      "phrases": [
+        {
+          "id": "V2-01",
+          "zh": "忽来 一阵风 放晴",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "2+3+2，首段与 V1-01「忽来 一阵风」同起句，收尾加「放晴」对原文的晴"
+          }
+        },
+        {
+          "id": "V2-02",
+          "zh": "我已走在 笔直路上",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "4+4，空格切在四字后"
+          }
+        },
+        {
+          "id": "V2-03",
+          "zh": "阔步 踏响尘土",
+          "chars": 5,
+          "self_check": {
+            "budget": [
+              5,
+              5
+            ],
+            "ok": true,
+            "note": "2+3，「阔步」呼应原文闊歩，鞋底扬尘补足音节"
+          }
+        },
+        {
+          "id": "V2-04",
+          "zh": "此刻 风的下方 只剩你一人",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "2+4+5，「此刻」占两音起拍"
+          }
+        },
+        {
+          "id": "V2-05",
+          "zh": "草原 一道影 拉长",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "2+3+2，与 V1-05 原文重复，译词保持完全重复"
+          }
+        },
+        {
+          "id": "V2-06",
+          "zh": "候鸟飞过 落下一片白羽",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "4+5，白羽落在路上作出发的征兆"
+          }
+        },
+        {
+          "id": "V2-07",
+          "zh": "我便是那 一缕白色风",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "4+5，与 V1-06「一缕青色风」对仗，只换颜色"
+          }
+        },
+        {
+          "id": "V2-08",
+          "zh": "随风伏",
+          "chars": 3,
+          "self_check": {
+            "budget": [
+              3,
+              3
+            ],
+            "ok": true,
+            "note": "三字整句，与 V1-07 原文同词，故重复"
+          }
+        }
+      ]
+    }
+  }
+}

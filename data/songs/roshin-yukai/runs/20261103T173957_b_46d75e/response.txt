@@ -1,0 +1,77 @@
+{
+  "section": "V2",
+  "phrases": [
+    {
+      "id": "V2-01",
+      "zh": "阳台外 风穿过栏杆",
+      "chars": 8,
+      "self_check": {"budget": [8, 8], "ok": true, "note": "阳台外后空格断句，共八字"}
+    },
+    {
+      "id": "V2-02",
+      "zh": "楼梯上 脚步声一级一级",
+      "chars": 10,
+      "self_check": {"budget": [10, 10], "ok": true, "note": "空格在第三字后，脚步声叠字占四拍"}
+    },
+    {
+      "id": "V2-03",
+      "zh": "天暗下来 云压得很低",
+      "chars": 9,
+      "self_check": {"budget": [9, 9], "ok": true, "note": "四字后换气，后五字连读"}
+    },
+    {
+      "id": "V2-04",
+      "zh": "落在窗玻璃上 落在房间地板",
+      "chars": 12,
+      "self_check": {"budget": [12, 12], "ok": true, "note": "两个落在重复，各占六字"}
+    },
+    {
+      "id": "V2-05",
+      "zh": "黄昏正一点一点散开",
+      "chars": 9,
+      "self_check": {"budget": [9, 9], "ok": true, "note": "一气呵成，一点一点连读占四拍"}
+    },
+    {
+      "id": "V2-06",
+      "zh": "夕阳红得像 一双哭肿的眼睛",
+      "chars": 12,
+      "self_check": {"budget": [12, 12], "ok": true, "note": "前五字后半句七字"}
+    },
+    {
+      "id": "V2-07",
+      "zh": "像要融化一样 一点一点",
+      "chars": 10,
+      "self_check": {"budget": [10, 10], "ok": true, "note": "六字加四字，中间空格换气"}
+    },
+    {
+      "id": "V2-08",
+      "zh": "世界就一点一点 一点点死去",
+      "chars": 12,
+      "self_check": {"budget": [12, 12], "ok": true, "note": "一点一点与一点点形成重复，前后各七字五字"}
+    },
+    {
+      "id": "V2-09",
+      "zh": "梦见我双手 一寸一寸收紧你喉咙",
+      "chars": 14,
+      "self_check": {"budget": [14, 14], "ok": true, "note": "与B1-01完全相同，保留原曲重复"}
+    },
+    {
+      "id": "V2-10",
+      "zh": "春风里 窗帘轻轻地晃动",
+      "chars": 10,
+      "self_check": {"budget": [10, 10], "ok": true, "note": "三字后断句，后七字连读"}
+    },
+    {
+      "id": "V2-11",
+      "zh": "干裂的嘴唇 轻轻张开 却说不出",
+      "chars": 13,
+      "self_check": {"budget": [13, 13], "ok": true, "note": "五字四字四字，两处空格分三段"}
+    },
+    {
+      "id": "V2-12",
+      "zh": "漏出的话 像泡沫一样 一碰就破",
+      "chars": 13,
+      "self_check": {"budget": [13, 13], "ok": true, "note": "四字五字四字，承接上句的嘴唇"}
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "section": "C3",
+  "draft_run": "20261103T174045_b_b105a5",
+  "verdict": "fail",
+  "violations": [
+    {
+      "phrase_id": "C3-06",
+      "code": "OVER_BUDGET",
+      "severity": "hard",
+      "expected": [
+        13,
+        13
+      ],
+      "actual": 14,
+      "fix": "超出 1 字，压到 13 字以内"
+    },
+    {
+      "phrase_id": "C3-06",
+      "code": "CHAR_MISMATCH",
+      "severity": "soft",
+      "actual": 14,
+      "fix": "自报 13 字，实际 14 字"
+    }
+  ],
+  "changes": {
+    "rewritten": [
+      "C3-01",
+      "C3-02",
+      "C3-03",
+      "C3-04",
+      "C3-05",
+      "C3-06",
+      "C3-07"
+    ],
+    "unchanged": []
+  },
+  "regressions": []
+}
