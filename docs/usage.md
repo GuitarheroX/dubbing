@@ -15,7 +15,8 @@ python -m pytest            # 44 个测试，跑完不到 1 秒
 
 ```bash
 python -m dubbing songs                     # 歌库里有什么
-python -m dubbing run     --song kotozute   # 跑一遍（带进度）
+python -m dubbing run     --song kotozute   # 跑一首（带进度）
+python -m dubbing run     --all             # 跑歌库里所有歌
 python -m dubbing runs    --song kotozute   # 所有 run，标出当前用的是哪版
 python -m dubbing show    --song kotozute   # 看 A / B / C 各自的产物
 python -m dubbing view    --song kotozute   # 调试视图（每句状态）
@@ -44,6 +45,22 @@ python -m dubbing show --song kotozute --run <run_id>         # 直接看某一�
 *  20261027T150039_b_961b90  B      deepseek-flash  1   3605    11 句
 *  20261027T150056_c_1268ec  C      -                           pass
 ```
+
+### 批量跑
+
+```bash
+python -m dubbing run --all --client api          # 全部重来
+python -m dubbing run --all --client api --keep-history
+python -m dubbing run --song a --song b --client api   # 指定几首
+python -m dubbing run --all --dry-run             # 只看规模，不调用
+```
+
+- 每首歌**独立**套用 `run` 的语义（默认是清空重来，逐首清空）；
+- 一首失败不会中断整批，最后打印 `N 首成功 / M 首失败` 和失败清单；
+- 例外是 exit 2（需要 API / 需要人工），那种情况直接停下，因为后面的歌会以同样原因失败；
+- 顺序是 `songs` 的排序，逐首打印 `=== [3/10] kotozute ===` 这样的分隔。
+
+先估成本：`--all --dry-run` 会告诉你每首几个请求（当前 10 首共 49 个请求）。
 
 ### 跑的时候会打印进度
 
@@ -138,12 +155,27 @@ python -m dubbing run --song kotozute --client api
 
 `.env` 的规则：**真 key 只写在 `.env`**；`.env.example` 是模板，要入库，里面只能有占位符。
 
+### 换接口地址
+
+`DUBBING_BASE_URL` 默认指向 DeepSeek 的 Anthropic 兼容端点，改成自建网关或代理都行：
+
+```bash
+# 写在 .env 里
+DUBBING_BASE_URL=https://my-gateway.example.com/anthropic
+
+# 或临时覆盖
+python -m dubbing run --song kotozute --base-url http://127.0.0.1:8080/anthropic
+```
+
+客户端会在根地址后拼 `/v1/messages`，所以别自己带这一段（`.../anthropic` ✓，`.../anthropic/v1/messages` ✗）。
+模型名（`DUBBING_MODEL` / `--model`）要跟你的网关认得的一致；`deepseek-flash` 是 DeepSeek 的。
+
 | 环境变量 | 作用 | 默认 |
 |---|---|---|
 | `DEEPSEEK_API_KEY` | 密钥（也认 `ANTHROPIC_API_KEY` / `ANTHROPIC_AUTH_TOKEN`） | 无 |
 | `DUBBING_CLIENT` | `pending` / `api` | `pending` |
 | `DUBBING_MODEL` | 模型名 | `deepseek-flash` |
-| `DUBBING_BASE_URL` | 端点 | `https://api.deepseek.com/anthropic` |
+| `DUBBING_BASE_URL` | 接口根地址 | `https://api.deepseek.com/anthropic` |
 | `DUBBING_TEMPERATURE` | 通用温度 | `0.7` |
 | `DUBBING_TEMPERATURE_A` | 只给 A | 跟随通用值 |
 | `DUBBING_TEMPERATURE_B` | 只给 B | 跟随通用值 |

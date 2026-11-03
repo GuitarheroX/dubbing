@@ -17,7 +17,7 @@ from typing import Callable
 from . import checks
 from .agents import build_a_request, build_b_request, parse_a_output, parse_b_output
 from .llm import LLMClient, LLMError, NeedsLLM, extract_json
-from .models import Analysis, Draft, Review, Song, State
+from .models import Analysis, Draft, Review, SchemaError, Song, State
 from .prompting import prompt_hash
 from .song import load_song
 from .store import Request, Run, SongStore
@@ -95,13 +95,16 @@ def _call(
     store: SongStore, run: Run, llm: LLMClient, *, agent: str, request: Request
 ) -> str:
     try:
-        return llm.complete(agent=agent, system=request.system, user=request.user)
+        text = llm.complete(agent=agent, system=request.system, user=request.user)
     except NeedsLLM as exc:
         store.abandon(run, reason="needs-llm")
         raise NeedsLLM(f"{exc}\n本次入参已落盘：{run.request_path}") from exc
     except LLMError as exc:
         store.abandon(run, reason=f"error: {exc}")
         raise LLMError(f"{exc}\n本次入参已落盘：{run.request_path}") from exc
+
+    store.write_response(run, text)
+    return text
 
 
 # --------------------------------------------------------------------------
@@ -142,7 +145,11 @@ def ensure_analysis(
     request = build_a_request(song)
     run = store.new_run("a", request)
     raw = _call(store, run, llm, agent="a", request=request)
-    analysis, warnings = parse_a_output(extract_json(raw), song)
+    try:
+        analysis, warnings = parse_a_output(extract_json(raw), song)
+    except (LLMError, SchemaError) as exc:
+        store.abandon(run, reason=f"解析失败：{exc}")
+        raise
     store.finish(run, analysis.to_json(), meta=_meta("a", llm, request.system, warnings=warnings))
     state.analysis = run.id
     store.save_state(state)
@@ -223,7 +230,11 @@ def attempt_section(
         emit(Step("b", "start", section=section, note=f"第 {attempt} 轮"))
         run = store.new_run("b", request)
         raw = _call(store, run, llm, agent="b", request=request)
-        draft, warnings = parse_b_output(extract_json(raw), song, section)
+        try:
+            draft, warnings = parse_b_output(extract_json(raw), song, section)
+        except (LLMError, SchemaError) as exc:
+            store.abandon(run, reason=f"解析失败：{exc}")
+            raise
         store.finish(
             run,
             draft.to_json(),

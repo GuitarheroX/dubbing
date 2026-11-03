@@ -182,3 +182,88 @@ def test_pending_client_never_wipes(root, monkeypatch, capsys):
     assert main(["--root", str(root), "run", "--song", "t"]) == 2
     assert {p.name for p in (root / "t" / "runs").iterdir()}.issuperset(before)
     assert "pending 客户端不清空" in capsys.readouterr().err
+
+
+# -- 批量 ----------------------------------------------------------------
+
+
+def _two_songs(root):
+    for sid in ("s1", "s2"):
+        write_song(root, sid, ["S1"], [phrase("A-01", "S1", "ああああ", 4)])
+
+
+def _multi(count, section="S1", text="一二三四"):
+    from dubbing.llm import ScriptedClient
+
+    from helpers import analysis_json, draft_json, scripted
+
+    return ScriptedClient(
+        {
+            "a": scripted(*[analysis_json([section]) for _ in range(count)]),
+            "b": scripted(*[draft_json(section, {"A-01": text}) for _ in range(count)]),
+        }
+    )
+
+
+def test_run_needs_song_or_all(root, capsys):
+    _two_songs(root)
+    assert main(["--root", str(root), "run", "--dry-run"]) == 2
+    err = capsys.readouterr().err
+    assert "要么给 --song" in err
+    assert "s1" in err
+
+
+def test_all_runs_every_song(root, monkeypatch):
+    from dubbing import cli
+
+    _two_songs(root)
+    monkeypatch.setattr(cli, "build_client", lambda *a, **k: _multi(2))
+    assert main(["--root", str(root), "run", "--all", "--client", "api"]) == 0
+
+    for sid in ("s1", "s2"):
+        assert (root / sid / "state.yaml").is_file()
+        assert (root / sid / "lyrics.zh.txt").is_file()
+
+
+def test_song_can_be_repeated(root, monkeypatch):
+    from dubbing import cli
+
+    _two_songs(root)
+    monkeypatch.setattr(cli, "build_client", lambda *a, **k: _multi(2))
+    assert (
+        main(
+            ["--root", str(root), "run", "--song", "s1", "--song", "s2", "--client", "api"]
+        )
+        == 0
+    )
+    assert (root / "s1" / "state.yaml").is_file()
+    assert (root / "s2" / "state.yaml").is_file()
+
+
+def test_batch_keeps_going_after_one_song_fails(root, monkeypatch, capsys):
+    from dubbing import cli
+
+    _two_songs(root)
+    # s1 三次都超字数 → exhausted；s2 一次过
+    from dubbing.llm import ScriptedClient
+
+    from helpers import analysis_json, draft_json, scripted
+
+    client = ScriptedClient(
+        {
+            "a": scripted(analysis_json(["S1"]), analysis_json(["S1"])),
+            "b": scripted(
+                draft_json("S1", {"A-01": "一二三四五"}),
+                draft_json("S1", {"A-01": "一二三四五"}),
+                draft_json("S1", {"A-01": "一二三四五"}),
+                draft_json("S1", {"A-01": "一二三四"}),
+            ),
+        }
+    )
+    monkeypatch.setattr(cli, "build_client", lambda *a, **k: client)
+    assert main(["--root", str(root), "run", "--all", "--client", "api"]) == 1
+
+    out = capsys.readouterr().out
+    assert "1 首成功 / 1 首失败" in out
+    assert "✗ s1" in out
+    assert (root / "s2" / "state.yaml").is_file()

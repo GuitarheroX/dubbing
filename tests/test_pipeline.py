@@ -439,3 +439,36 @@ def test_stale_analysis_is_flagged_when_song_gained_a_section(root):
     assert outcome.analysis_reused is True
     assert second.calls and second.calls[0]["agent"] == "b"  # A 没重跑
     assert any("没有覆盖" in w and "S2" in w for w in outcome.warnings)
+
+
+def test_broken_json_keeps_the_raw_response(root):
+    """解析失败时，必须留下模型原话，否则没法复盘。"""
+    _make(root)
+    broken = '{"section": "S1", "phrases": ['
+    client = _client({"a": scripted(analysis_json(["S1", "S2"])), "b": [broken]})
+
+    with pytest.raises(LLMError, match="不是合法 JSON"):
+        run_song("t", client, root=root)
+
+    runs = list((root / "t" / "runs").glob("*_b_*"))
+    assert len(runs) == 1
+    assert (runs[0] / "response.txt").read_text(encoding="utf-8") == broken
+    meta = json.loads((runs[0] / "meta.json").read_text(encoding="utf-8"))
+    assert "解析失败" in meta["abandoned"]
+
+
+def test_raw_newline_in_string_does_not_break_the_run(root):
+    """同样的换行，现在应当被容忍而不是整轮失败。"""
+    _make(root)
+    client = _client(
+        {
+            "a": scripted(analysis_json(["S1", "S2"])),
+            "b": [
+                '{"section": "S1", "phrases": [{"id": "A-01", "zh": "一二\n三四"}, '
+                '{"id": "A-02", "zh": "六七八九"}]}',
+                json.dumps(draft_json("S2", {"B-01": "一二三"}), ensure_ascii=False),
+            ],
+        }
+    )
+    outcome = run_song("t", client, root=root)
+    assert outcome.sections[0].status == "passed"

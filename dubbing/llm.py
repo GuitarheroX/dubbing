@@ -84,8 +84,11 @@ def load_dotenv(path: Path | None = None) -> list[str]:
     """把 .env 里的键值补进 ``os.environ``，**不覆盖**已存在的变量。
 
     只做最简单的 ``KEY=VALUE`` 解析：忽略空行和 ``#`` 注释，去掉成对引号。
+    设了 ``DUBBING_NO_DOTENV=1`` 就直接跳过（测试用，免得读到你真正的 .env）。
     返回实际补进去的变量名，方便命令行提示一句"从 .env 载入了什么"。
     """
+    if os.environ.get("DUBBING_NO_DOTENV"):
+        return []
     candidates = (
         [Path(path)]
         if path is not None
@@ -301,28 +304,54 @@ class ScriptedClient:
         return self._queue.pop(0)
 
 
-def extract_json(text: str) -> Any:
-    """从模型输出里取出 JSON。容忍 ```json 围栏和前后废话。"""
-    stripped = text.strip()
-    fence = re.search(r"```(?:json)?\s*(.+?)```", stripped, re.S)
-    candidates = [stripped]
-    if fence:
-        candidates.insert(0, fence.group(1).strip())
+def _decode(candidate: str) -> Any:
+    """严格解析失败时退回 strict=False——模型常在字符串里塞裸换行/制表符。"""
+    try:
+        return json.loads(candidate)
+    except json.JSONDecodeError as strict_error:
+        try:
+            return json.loads(candidate, strict=False)
+        except json.JSONDecodeError:
+            raise strict_error
 
+
+def _around(text: str, pos: int, width: int = 70) -> str:
+    lo = max(0, pos - width)
+    hi = min(len(text), pos + width)
+    snippet = text[lo:hi].replace("\n", "\\n")
+    return f"…{snippet}…"
+
+
+def extract_json(text: str) -> Any:
+    """从模型输出里取出 JSON。
+
+    容忍三件事：```json 围栏、前后废话、字符串里的裸控制字符（模型偶尔不转义换行）。
+    """
+    stripped = text.strip()
+    if "{" not in stripped:
+        raise LLMError(f"模型输出里找不到 JSON：{stripped[:200]!r}")
+
+    candidates: list[str] = []
+    fence = re.search(r"```(?:json)?\s*(.+?)```", stripped, re.S)
+    if fence:
+        candidates.append(fence.group(1).strip())
+    candidates.append(stripped)
+    start, end = stripped.find("{"), stripped.rfind("}")
+    if end > start:
+        candidates.append(stripped[start : end + 1])
+
+    errors: list[json.JSONDecodeError] = []
     for cand in candidates:
         try:
-            return json.loads(cand)
-        except json.JSONDecodeError:
-            pass
-
-    start = stripped.find("{")
-    end = stripped.rfind("}")
-    if start != -1 and end > start:
-        try:
-            return json.loads(stripped[start : end + 1])
+            return _decode(cand)
         except json.JSONDecodeError as exc:
-            raise LLMError(f"模型输出不是合法 JSON：{exc}") from exc
-    raise LLMError(f"模型输出里找不到 JSON：{stripped[:200]!r}")
+            errors.append(exc)
+
+    worst = max(errors, key=lambda e: e.pos)
+    raise LLMError(
+        f"模型输出不是合法 JSON：{worst.msg}"
+        f"（第 {worst.lineno} 行第 {worst.colno} 列）\n附近：{_around(text, worst.pos)}"
+    )
 
 
 def build_client(kind: str | None = None, **kwargs: Any) -> LLMClient:

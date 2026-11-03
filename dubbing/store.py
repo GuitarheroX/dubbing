@@ -115,6 +115,10 @@ class SongStore:
             },
         )
 
+    def write_response(self, run: Run, text: str) -> None:
+        """把模型原始输出落盘。解析失败时这是唯一能复盘的证据。"""
+        (run.dir / "response.txt").write_text(text, encoding="utf-8")
+
     def abandon(self, run: Run, *, reason: str) -> None:
         self._write(
             run.meta_path,

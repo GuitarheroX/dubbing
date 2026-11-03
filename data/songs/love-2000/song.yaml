@@ -7,6 +7,7 @@ song:
 sections:
   - {id: I1, role: chorus first}
   - {id: V1, role: verse}
+  - {id: B1, role: pre-chorus}
   - {id: C1, role: chorus}
 
 phrases:
@@ -21,12 +22,12 @@ phrases:
   - {id: V1-04, section: V1, ja: "風が気持ちイイからネ", budget: {min: 9, max: 9}}
   - {id: V1-05, section: V1, ja: "楽しさに着替えてネ", budget: {min: 9, max: 9}, pattern: [5, 4]}
 
-  - {id: C1-01, section: C1, ja: "気づけなかった", budget: {min: 6, max: 6}}
-  - {id: C1-02, section: C1, ja: "きっと甘えてたのかな", budget: {min: 10, max: 10}}
-  - {id: C1-03, section: C1, ja: "だから自分愛して人を愛して", budget: {min: 13, max: 13}, pattern: [2, 6, 5]}
-  - {id: C1-04, section: C1, ja: "みたいの", budget: {min: 4, max: 4}}
-  - {id: C1-05, section: C1, ja: "愛はどこからやってくるのでしょう", budget: {min: 14, max: 14}, pattern: [4, 4, 6]}
-  - {id: C1-06, section: C1, ja: "自分の胸に問いかけた", budget: {min: 12, max: 12}, pattern: [4, 3, 5]}
-  - {id: C1-07, section: C1, ja: "ニセモノなんか興味はないワ", budget: {min: 12, max: 12}, pattern: [6, 6]}
-  - {id: C1-08, section: C1, ja: "ホンモノだけ見つけたい", budget: {min: 11, max: 11}, pattern: [6, 5]}
-  - {id: C1-09, section: C1, ja: "あなたをずっと探してた", budget: {min: 11, max: 11}, pattern: [6, 5]}
+  - {id: B1-01, section: B1, ja: "気づけなかった", budget: {min: 6, max: 6}}
+  - {id: B1-02, section: B1, ja: "きっと甘えてたのかな", budget: {min: 10, max: 10}}
+  - {id: B1-03, section: B1, ja: "だから自分愛して人を愛してみたいの", budget: {min: 17, max: 17}, pattern: [2, 6, 5, 4]}
+
+  - {id: C1-01, section: C1, ja: "愛はどこからやってくるのでしょう", budget: {min: 14, max: 14}, pattern: [4, 4, 6]}
+  - {id: C1-02, section: C1, ja: "自分の胸に問いかけた", budget: {min: 12, max: 12}, pattern: [4, 3, 5]}
+  - {id: C1-03, section: C1, ja: "ニセモノなんか興味はないワ", budget: {min: 12, max: 12}, pattern: [6, 6]}
+  - {id: C1-04, section: C1, ja: "ホンモノだけ見つけたい", budget: {min: 11, max: 11}, pattern: [6, 5]}
+  - {id: C1-05, section: C1, ja: "あなたをずっと探してた", budget: {min: 11, max: 11}, pattern: [6, 5]}

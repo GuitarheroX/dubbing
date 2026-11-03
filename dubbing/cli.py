@@ -192,15 +192,14 @@ def cmd_export(args: argparse.Namespace) -> int:
     return 0
 
 
-def cmd_run(args: argparse.Namespace) -> int:
-    root = Path(args.root)
+def _run_one(song_id: str, args: argparse.Namespace, root: Path) -> int:
 
     if args.dry_run:
         plan = plan_requests(
-            args.song, root=root, skip_done=args.skip_done, fresh=args.fresh
+            song_id, root=root, skip_done=args.skip_done, fresh=args.fresh
         )
-        song = load_song(args.song, root=root)
-        out_dir = root / args.song / "preview"
+        song = load_song(song_id, root=root)
+        out_dir = root / song_id / "preview"
         out_dir.mkdir(parents=True, exist_ok=True)
         if not plan:
             print("没有待发的请求：A 已产出，各段也都已定稿。")
@@ -218,7 +217,7 @@ def cmd_run(args: argparse.Namespace) -> int:
         print(f"共 {len(song.phrases)} 句，{len(plan)} 个请求。")
         return 0
 
-    store = SongStore(root, args.song)
+    store = SongStore(root, song_id)
     pending = args.client == "pending"
     full_fresh = not args.only and args.fresh and not args.skip_done
     if full_fresh and not pending:
@@ -243,6 +242,7 @@ def cmd_run(args: argparse.Namespace) -> int:
     llm = build_client(
         args.client,
         model=args.model,
+        base_url=args.base_url,
         temperature=args.temperature,
         temperature_by_agent={
             k: v
@@ -254,7 +254,7 @@ def cmd_run(args: argparse.Namespace) -> int:
     )
     try:
         outcome = run_song(
-            args.song,
+            song_id,
             llm,
             root=root,
             max_rounds=args.max_rounds,
@@ -278,7 +278,7 @@ def cmd_run(args: argparse.Namespace) -> int:
         print(f"数据格式有问题：{exc}", file=sys.stderr)
         return 1
 
-    print(f"\n{args.song}")
+    print(f"\n{song_id}")
     print(f"  A: {outcome.analysis_run}（{'复用' if outcome.analysis_reused else '新跑'}）")
     rows = [["section", "status", "轮次", "hard", "soft", "draft"]]
     for s in outcome.sections:
@@ -303,15 +303,54 @@ def cmd_run(args: argparse.Namespace) -> int:
     for w in outcome.warnings:
         print(f"  ! {w}")
 
-    song = load_song(args.song, root=root)
-    store = SongStore(root, args.song)
+    song = load_song(song_id, root=root)
+    store = SongStore(root, song_id)
     view = build_view(song, store.load_state(), store)
-    paths = write_lyrics(song, view, root / args.song)
+    paths = write_lyrics(song, view, root / song_id)
     print()
     for p in paths:
         print(f"歌词已写出：{p}")
 
     return 0 if outcome.ok else 1
+
+
+
+
+def cmd_run(args: argparse.Namespace) -> int:
+    root = Path(args.root)
+
+    if args.all_songs:
+        targets = list_songs(root=root)
+    elif args.song:
+        targets = list(args.song)
+    else:
+        print("要么给 --song <id>（可重复），要么加 --all。", file=sys.stderr)
+        ids = list_songs(root=root)
+        print("歌库：" + ("、".join(ids) if ids else "（空）"), file=sys.stderr)
+        return 2
+
+    if not targets:
+        print(f"{root} 下没有歌", file=sys.stderr)
+        return 1
+
+    if len(targets) == 1:
+        return _run_one(targets[0], args, root)
+
+    failures: list[tuple[str, int]] = []
+    for i, song_id in enumerate(targets, 1):
+        print(f"\n=== [{i}/{len(targets)}] {song_id} ===", file=sys.stderr)
+        code = _run_one(song_id, args, root)
+        if code:
+            failures.append((song_id, code))
+            if code == 2:
+                print("后面的歌跳过（同一原因，再跑也是这个结果）", file=sys.stderr)
+                break
+
+    print()
+    print(f"批量结束：{len(targets) - len(failures)} 首成功 / {len(failures)} 首失败")
+    for song_id, code in failures:
+        print(f"  ✗ {song_id}（exit {code}）")
+    return 1 if failures else 0
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -349,7 +388,12 @@ def main(argv: list[str] | None = None) -> int:
         "run",
         help="跑一遍（默认清空旧结果、A/B/C 全部从头生成；pending 客户端不会清空）"
     )
-    p_run.add_argument("--song", required=True)
+    p_run.add_argument(
+        "--song", action="append", default=None, help="歌 id；可重复，也可用 --all"
+    )
+    p_run.add_argument(
+        "--all", action="store_true", dest="all_songs", help="跑歌库里所有歌"
+    )
     p_run.add_argument("--max-rounds", type=int, default=DEFAULT_MAX_ROUNDS)
     p_run.add_argument(
         "--continue",
@@ -377,6 +421,11 @@ def main(argv: list[str] | None = None) -> int:
         help="pending=不发请求（默认）；api=走 DeepSeek 的 Anthropic 兼容端点",
     )
     p_run.add_argument("--model", default=None, help="默认取 DUBBING_MODEL 或 deepseek-flash")
+    p_run.add_argument(
+        "--base-url",
+        default=None,
+        help="接口根地址，默认取 DUBBING_BASE_URL 或 https://api.deepseek.com/anthropic",
+    )
     p_run.add_argument(
         "--temperature",
         type=float,

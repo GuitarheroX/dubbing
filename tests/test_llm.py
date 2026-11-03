@@ -225,6 +225,7 @@ def test_build_client_env_switch(monkeypatch, key):
 def test_load_dotenv_fills_missing_only(monkeypatch, tmp_path):
     from dubbing.llm import load_dotenv
 
+    monkeypatch.delenv("DUBBING_NO_DOTENV", raising=False)
     for name in KEYS:
         monkeypatch.delenv(name, raising=False)
     monkeypatch.setenv("ANTHROPIC_API_KEY", "from-shell")
@@ -248,6 +249,7 @@ def test_load_dotenv_strips_quotes(monkeypatch, tmp_path):
 
     from dubbing.llm import load_dotenv
 
+    monkeypatch.delenv("DUBBING_NO_DOTENV", raising=False)
     monkeypatch.delenv("DEEPSEEK_API_KEY", raising=False)
     env = tmp_path / ".env"
     env.write_text('DEEPSEEK_API_KEY="sk-quoted"\n', encoding="utf-8")
@@ -255,10 +257,23 @@ def test_load_dotenv_strips_quotes(monkeypatch, tmp_path):
     assert os.environ["DEEPSEEK_API_KEY"] == "sk-quoted"
 
 
-def test_load_dotenv_missing_file_is_noop(tmp_path):
+def test_load_dotenv_missing_file_is_noop(monkeypatch, tmp_path):
     from dubbing.llm import load_dotenv
 
+    monkeypatch.delenv("DUBBING_NO_DOTENV", raising=False)
     assert load_dotenv(tmp_path / "nope") == []
+
+
+def test_load_dotenv_can_be_disabled(monkeypatch, tmp_path):
+    import os
+
+    from dubbing.llm import load_dotenv
+
+    monkeypatch.setenv("DUBBING_NO_DOTENV", "1")
+    env = tmp_path / ".env"
+    env.write_text("DEEPSEEK_API_KEY=sk-file\n", encoding="utf-8")
+    assert load_dotenv(env) == []
+    assert "DEEPSEEK_API_KEY" not in os.environ
 
 
 # -- 温度 ----------------------------------------------------------------
@@ -315,3 +330,17 @@ def test_per_agent_temperature_from_env(monkeypatch, key):
 
     client.complete(agent="a", system="s", user="u")
     assert seen["temperature"] == 0.7  # 没设的用通用值
+
+
+def test_extract_json_tolerates_raw_control_characters():
+    """模型有时在字符串里塞裸换行，而不是 \\n 转义。"""
+    assert extract_json('{"zh": "第一行\n第二行"}') == {"zh": "第一行\n第二行"}
+    assert extract_json('{"zh": "a\tb"}') == {"zh": "a\tb"}
+
+
+def test_extract_json_reports_position_and_context():
+    with pytest.raises(LLMError) as err:
+        extract_json('{"a": 1, "b" }')
+    msg = str(err.value)
+    assert "第 1 行" in msg
+    assert "附近" in msg
