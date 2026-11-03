@@ -1,0 +1,24 @@
+song:
+  id: himawari
+  title: "向日葵"
+  artist: ""          # TODO 人工补全
+  source_lang: ja
+
+sections:
+  - {id: I1, role: chorus first}
+  - {id: V1, role: verse}
+  - {id: C1, role: chorus}
+
+phrases:
+  - {id: I1-01, section: I1, ja: "私の命をあなたにあげたい", budget: {min: 17, max: 17}, pattern: [9, 8]}
+  - {id: I1-02, section: I1, ja: "私の命をあなたにあげたい", budget: {min: 17, max: 17}, pattern: [9, 8]}
+
+  - {id: V1-01, section: V1, ja: "夏の海原裸足のまま", budget: {min: 13, max: 13}, pattern: [7, 6]}
+  - {id: V1-02, section: V1, ja: "あなたを呼ぶ間に足が濡れる", budget: {min: 14, max: 14}, pattern: [8, 6]}
+  - {id: V1-03, section: V1, ja: "波を忘れて乾いた肌", budget: {min: 13, max: 13}, pattern: [7, 6]}
+  - {id: V1-04, section: V1, ja: "あなたの引く手に燃えるからだ", budget: {min: 14, max: 14}, pattern: [8, 6]}
+
+  - {id: C1-01, section: C1, ja: "私の命をあなたにあげたい", budget: {min: 17, max: 17}, pattern: [9, 8]}
+  - {id: C1-02, section: C1, ja: "私の命をあなたにあげたい", budget: {min: 17, max: 17}, pattern: [9, 8]}
+  - {id: C1-03, section: C1, ja: "渡り、海の風をあなたにあげたい", budget: {min: 17, max: 17}, pattern: [9, 8]}
+  - {id: C1-04, section: C1, ja: "風を受ける腕をあなたにあげたい", budget: {min: 17, max: 17}, pattern: [9, 8]}

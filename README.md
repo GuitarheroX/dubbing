@@ -26,4 +26,7 @@
 ## 实现
 - 代码在 `dubbing/`，规范见 [docs/data-model.md](docs/data-model.md)，操作见 [docs/usage.md](docs/usage.md)。
 - 模型调用已接通 DeepSeek 的 Anthropic 兼容端点（`dubbing/llm.py`）：`export DEEPSEEK_API_KEY=...` 后加 `--client api` 才真正调用，不加则只渲染请求停住。
-- 已标注一首：`data/songs/kotozute/song.yaml`（言伝，3 段 21 句）。
+- 已标注 10 首：`data/songs/kotozute/song.yaml`（言伝，4 段 21 句），以及从
+  `data/lyrics.txt` 批量导入的 9 首。
+- 批量导入标注文本：`python scripts/import_lyrics.py data/lyrics.txt`，
+  输入格式与选项见 [docs/usage.md](docs/usage.md)。

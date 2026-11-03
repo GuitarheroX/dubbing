@@ -174,7 +174,7 @@ python -m dubbing run --song kotozute --client api --temperature-a 1.2 --tempera
 - **返修**：C 不合格时，下一轮会把 C 的结论（哪句、超几个字、怎么改）渲染进 B 的消息，
   B 才知道要改什么。这段反馈只存在于消息里，不写入任何数据文件。
 
-## 加一首歌## 加一首歌
+## 加一首歌
 
 新建 `data/songs/<song_id>/song.yaml`，把日文按乐句一行一句拆开，每句标上
 该唱几个字（`budget`）。格式见 [data-model.md](data-model.md) 第 2 节。
@@ -190,6 +190,35 @@ python -m dubbing run --song kotozute --client api --temperature-a 1.2 --tempera
 
 `[3, 4, 5]` = 三部分组成、分别唱 3/4/5 个字，合计 12。不写就是"整句一段"。
 目前它只是喂给 B 的参考信息，C 不检查，也不要求译词照着切。
+
+### 从标注文本批量导入
+
+如果已经按「歌词 总字数 [分句...]」的形式断好句，可以直接批量生成
+`song.yaml`，不用手写 YAML。完整示例在 `data/lyrics.txt`：
+
+```
+## ソナーレ
+眠りから目覚めたら 10
+ひらかれたページの上にひとり 14
+
+ばらばらのリズムで 8
+口ずさめたらきいて 9
+```
+
+- 以 `#` / `##` 开头的是歌名；歌名后可写 `[song-id]` 显式指定目录名；
+- 空行切分 section，section 内的每一行是一句；
+- 行尾第一个数字是 `budget`（MVP 里 `min == max`），后面的数字是 `pattern`；
+- `*这句不用翻译*` 表示该句 `keep_source: true`，此行可以没有数字。
+
+```bash
+python scripts/import_lyrics.py data/lyrics.txt --dry-run   # 先看解析结果
+python scripts/import_lyrics.py data/lyrics.txt             # 写入 data/songs/
+python scripts/import_lyrics.py data/lyrics.txt --force     # 覆盖已有 song.yaml
+```
+
+section 的 `role` 是按位置和重复关系粗略推测的（副歌、pre-chorus、outro），
+导入后建议人工复核。分句合计与总字数不一致时会打印 `!` 警告并尽量修复；
+不想让它猜，加 `--strict` 直接报错。
 
 ## 目录会变成什么样
 

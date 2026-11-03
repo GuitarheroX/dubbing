@@ -12,8 +12,10 @@ def test_loads_kotozute(data_root):
     assert song.section_ids == ("V1", "V2", "B1", "C1")
     assert len(song.phrases) == 21
     assert [len(song.phrases_of(s)) for s in song.section_ids] == [3, 3, 4, 11]
-    assert sum(p.budget.max for p in song.phrases) == 150
-    assert all(p.budget.min == p.budget.max for p in song.phrases)
+    assert sum(p.budget.min for p in song.phrases) == 150
+    assert sum(p.budget.max for p in song.phrases) == 151
+    assert song.phrase("C1-01").budget.as_tuple() == (12, 13)
+    assert all(p.budget.min == p.budget.max for p in song.phrases if p.id != "C1-01")
     assert song.phrases[-1].ja == "飛ぶ"
     assert song.phrases[-1].budget.max == 2
 
