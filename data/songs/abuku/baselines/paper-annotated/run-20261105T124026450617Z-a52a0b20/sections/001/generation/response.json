@@ -1,0 +1,21 @@
+{
+  "id": "bb553ab2-dba7-44c7-8b43-0b879fa10a83",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "1. 啊，无可奈何地 (8 syllables: a, wu, ke, nai, he, di)\n2. 我心中躁动的兽 (8 syllables: wo, xin, zhong, zao, dong, de, shou)\n3. 水面浮现又破灭的泡沫 (15 syllables: shui, mian, fu, xian, you, po, mie, de, pao, mo)"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 384,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 94,
+    "service_tier": "standard"
+  }
+}

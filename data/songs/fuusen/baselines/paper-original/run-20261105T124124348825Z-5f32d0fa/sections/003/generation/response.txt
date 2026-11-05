@@ -1,0 +1,12 @@
+1) 什么都没了的话 是你的错吧
+   这样说着继续打了好多次
+   连那也能漂亮地吞下去吗
+   Mora count (hiragana syllables):
+   なにもなくなったら (10) / きみのせいだよね (8)
+   そういってなんかいもなぐりつづけても (17)
+   それさえきれいにのみこむのかな (15)
+   (Note: Chinese syllable counts differ from Japanese mora; the Chinese lines are matched by syllable count per line as closely as possible: 10/8, 17, 15 syllables in pinyin reading — approximate.)
+
+2) Rhyme pattern: Original ends with よね (yo ne), ても (te mo), かな (ka na) — no strict end rhyme, but a loose -e/-o/-a vowel sequence. Chinese rendering ends with 吧 (ba), 了 (le), 吗 (ma) — maintaining a similar open-vowel ending sequence.
+
+3) Theme preserved: loss/emptiness, blame, repeated violence, and the question of whether even that is swallowed cleanly.

@@ -1,0 +1,21 @@
+{
+  "id": "7afec8b2-5f6d-40bc-92f4-fba7b3658166",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"命令 故意地感受\",\"订正 无为地观透\",\"安宁之中掺杂罪\",\"当然吗\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 552,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 27,
+    "service_tier": "standard"
+  }
+}

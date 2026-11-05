@@ -1,0 +1,43 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+    "user": "時計の秒針や\nテレビの司会者や\nそこにいるけど\n見えない誰かの\n笑い声\n飽和して反響する\nアレグロ･アジテート\n耳鳴りが消えない止まない\nアレグロ･アジテート\n耳鳴りが消えない止まない"
+  },
+  "data": {
+    "lyrics": [
+      "時計の秒針や",
+      "テレビの司会者や",
+      "そこにいるけど",
+      "見えない誰かの",
+      "笑い声",
+      "飽和して反響する",
+      "アレグロ･アジテート",
+      "耳鳴りが消えない止まない",
+      "アレグロ･アジテート",
+      "耳鳴りが消えない止まない"
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "時計の秒針や\nテレビの司会者や\nそこにいるけど\n見えない誰かの\n笑い声\n飽和して反響する\nアレグロ･アジテート\n耳鳴りが消えない止まない\nアレグロ･アジテート\n耳鳴りが消えない止まない"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

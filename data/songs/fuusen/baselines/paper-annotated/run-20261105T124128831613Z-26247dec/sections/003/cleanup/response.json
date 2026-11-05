@@ -1,0 +1,21 @@
+{
+  "id": "116eae18-ec16-4462-b147-09cb2285c0d2",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"若一切化为乌有 那全都是你的错吧\",\"就算这样说着无数次继续挥拳打下去\",\"就连那一切是否都能漂亮地吞咽下去呢\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 152,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 38,
+    "service_tier": "standard"
+  }
+}

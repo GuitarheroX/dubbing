@@ -1,0 +1,243 @@
+{
+  "song_id": "abuku",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "啊，无可奈何地",
+      "sing_text": "啊，无可奈何地",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "我心中躁动的兽",
+      "sing_text": "我心中躁动的兽",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "水面浮现又破灭的泡沫",
+      "sing_text": "水面浮现又破灭的泡沫",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 15,
+        "max": 15
+      },
+      "budget_distance": 5,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-01",
+      "section": "V2",
+      "model_text": "啊，无可奈何的悲伤",
+      "sing_text": "啊，无可奈何的悲伤",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V2-02",
+      "section": "V2",
+      "model_text": "驱使我内心的野兽",
+      "sing_text": "驱使我内心的野兽",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V2-03",
+      "section": "V2",
+      "model_text": "同义反复紧握手中的泡沫",
+      "sing_text": "同义反复紧握手中的泡沫",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "B1-01",
+      "section": "B1",
+      "model_text": "与其空想着那过眼云烟",
+      "sing_text": "与其空想着那过眼云烟",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "B1-02",
+      "section": "B1",
+      "model_text": "向着那远方长嚎",
+      "sing_text": "向着那远方长嚎",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 7,
+        "max": 7
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "B1-03",
+      "section": "B1",
+      "model_text": "连喘息的那空隙都没有",
+      "sing_text": "连喘息的那空隙都没有",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "B1-04",
+      "section": "B1",
+      "model_text": "这般痛苦难熬",
+      "sing_text": "这般痛苦难熬",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "悠然悠然焚烧着梦想",
+      "sing_text": "悠然悠然焚烧着梦想",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "用灵魂纯白纯白的颜色",
+      "sing_text": "用灵魂纯白纯白的颜色",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "model_text": "我只想要在喜悦之火上把火点燃",
+      "sing_text": "我只想要在喜悦之火上把火点燃",
+      "keep_source": false,
+      "actual": 14,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-04",
+      "section": "C1",
+      "model_text": "想象不过是些许的零钱",
+      "sing_text": "想象不过是些许的零钱",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-05",
+      "section": "C1",
+      "model_text": "用不会冷却的话语双手",
+      "sing_text": "用不会冷却的话语双手",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-06",
+      "section": "C1",
+      "model_text": "数着那些燃烧不尽的东西",
+      "sing_text": "数着那些燃烧不尽的东西",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-07",
+      "section": "C1",
+      "model_text": "我只想捧起来",
+      "sing_text": "我只想捧起来",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 7,
+        "max": 7
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    }
+  ]
+}

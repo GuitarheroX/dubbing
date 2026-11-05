@@ -1,0 +1,10 @@
+{
+  "song": "spiral",
+  "variant": "paper-original",
+  "run": "run-20261105T124410050510Z-03216579",
+  "status": "completed",
+  "partial_export": false,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "source_directory": "data/songs/spiral/baselines/paper-original/run-20261105T124410050510Z-03216579"
+}

@@ -1,0 +1,37 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+    "user": "過ぎ去る雲を思うより\n遥かへ遠吠え\n息継ぐ暇もないほど\n苦しいあれで"
+  },
+  "data": {
+    "lyrics": [
+      "過ぎ去る雲を思うより",
+      "遥かへ遠吠え",
+      "息継ぐ暇もないほど",
+      "苦しいあれで"
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "過ぎ去る雲を思うより\n遥かへ遠吠え\n息継ぐ暇もないほど\n苦しいあれで"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

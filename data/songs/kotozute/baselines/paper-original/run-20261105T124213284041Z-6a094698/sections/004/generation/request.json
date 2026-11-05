@@ -1,0 +1,44 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+    "user": "闇に日が差して手を伸ばしたい\nあなたと今話したい\n朝日を見て染まりだす\nもう自由に\nもう自由に\nわたしは今目を覚ました\nあなたと今話したい\n愛すべき日が染まりだす\nもう自由に\nもう自由に\n飛ぶ"
+  },
+  "data": {
+    "lyrics": [
+      "闇に日が差して手を伸ばしたい",
+      "あなたと今話したい",
+      "朝日を見て染まりだす",
+      "もう自由に",
+      "もう自由に",
+      "わたしは今目を覚ました",
+      "あなたと今話したい",
+      "愛すべき日が染まりだす",
+      "もう自由に",
+      "もう自由に",
+      "飛ぶ"
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "闇に日が差して手を伸ばしたい\nあなたと今話したい\n朝日を見て染まりだす\nもう自由に\nもう自由に\nわたしは今目を覚ました\nあなたと今話したい\n愛すべき日が染まりだす\nもう自由に\nもう自由に\n飛ぶ"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

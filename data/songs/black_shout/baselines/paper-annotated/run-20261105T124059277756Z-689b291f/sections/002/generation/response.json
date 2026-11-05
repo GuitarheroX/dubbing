@@ -1,0 +1,21 @@
+{
+  "id": "3fef7083-534b-4514-a15a-ad30e9f24863",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "1. 不安充满心房 (8 syllables)\n2. 世间百态无常 (8 syllables)\n3. 焦躁伴随身旁 (8 syllables)\n4. 自由被夺走光 (8 syllables)\n5. 黑白之雨落下 (8 syllables)\n6. 将世界都隐藏 (8 syllables)\n7. 天空嘲笑般沉没无声 (12 syllables)"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 526,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 79,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+    "user": "朝はなんで僕を照らすの？\n夜はなんで寂しくなるの？\nかなしいことははんぶんこ\nできたらいいのにね"
+  },
+  "data": {
+    "lyrics": [
+      "朝はなんで僕を照らすの？",
+      "夜はなんで寂しくなるの？",
+      "かなしいことははんぶんこ",
+      "できたらいいのにね"
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "朝はなんで僕を照らすの？\n夜はなんで寂しくなるの？\nかなしいことははんぶんこ\nできたらいいのにね"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

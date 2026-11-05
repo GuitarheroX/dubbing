@@ -1,0 +1,10 @@
+{
+  "song": "know_me",
+  "variant": "paper-annotated",
+  "run": "run-20261105T124212449668Z-d132d673",
+  "status": "completed",
+  "partial_export": false,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "source_directory": "data/songs/know_me/baselines/paper-annotated/run-20261105T124212449668Z-d132d673"
+}

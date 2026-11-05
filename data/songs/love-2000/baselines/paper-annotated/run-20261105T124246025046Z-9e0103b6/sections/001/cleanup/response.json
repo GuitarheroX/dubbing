@@ -1,0 +1,21 @@
+{
+  "id": "7806e5e6-455e-4185-9fce-58e7545f55a0",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"爱情究竟是从什么地方飘来的哦\",\"我向自己的内心深处去坦白\",\"对虚假的东西我毫无兴趣哦\",\"我只想凝视着那一份真爱\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1698,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 36,
+    "service_tier": "standard"
+  }
+}

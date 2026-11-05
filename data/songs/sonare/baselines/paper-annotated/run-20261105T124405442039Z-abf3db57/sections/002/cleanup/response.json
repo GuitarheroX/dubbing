@@ -1,0 +1,21 @@
+{
+  "id": "eed3a739-8820-4745-aaa6-d1bce8f65168",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 162,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 5,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "0f1b3f56-a199-4e6b-8d38-339b91526a96",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "草丛中啊 名字无人知\n静静绽放着 若是野花时\n只需迎着那 清风拂过来\n轻轻摇曳着 那样便足矣"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 102,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 33,
+    "service_tier": "standard"
+  }
+}

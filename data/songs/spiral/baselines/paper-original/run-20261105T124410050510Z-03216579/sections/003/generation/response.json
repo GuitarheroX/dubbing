@@ -1,0 +1,21 @@
+{
+  "id": "803cab76-92f4-46cc-8f20-118776551f60",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "曾以为能去任何地方\n那时的我如今在何方\n想必是已经长大成人\n其实并不是那样的事\n只需再添一点勇气\n本可改变的明天确实存在\n可我连那都没能察觉"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 121,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 43,
+    "service_tier": "standard"
+  }
+}

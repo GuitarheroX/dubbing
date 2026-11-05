@@ -1,0 +1,10 @@
+{
+  "song": "uchuu_no_fushigi",
+  "variant": "paper-original",
+  "run": "run-20261105T124417218291Z-9fe1577b",
+  "status": "completed",
+  "partial_export": false,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "source_directory": "data/songs/uchuu_no_fushigi/baselines/paper-original/run-20261105T124417218291Z-9fe1577b"
+}

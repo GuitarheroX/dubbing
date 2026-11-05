@@ -1,0 +1,397 @@
+{
+  "song_id": "uchuu_no_fushigi",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "鸟儿为何能在天空飞翔？",
+      "sing_text": "鸟儿为何能在天空飞翔？",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "猫咪为何总是睡个不停？",
+      "sing_text": "猫咪为何总是睡个不停？",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "你今天会活出怎样的模样？",
+      "sing_text": "你今天会活出怎样的模样？",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "全部 全部 全部",
+      "sing_text": "全部 全部 全部",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-05",
+      "section": "V1",
+      "model_text": "一起去寻找吧",
+      "sing_text": "一起去寻找吧",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V2-01",
+      "section": "V2",
+      "model_text": "清晨为何要将我照亮？",
+      "sing_text": "清晨为何要将我照亮？",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-02",
+      "section": "V2",
+      "model_text": "夜晚为何会变得寂凉？",
+      "sing_text": "夜晚为何会变得寂凉？",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-03",
+      "section": "V2",
+      "model_text": "悲伤的事情对半分吧",
+      "sing_text": "悲伤的事情对半分吧",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V2-04",
+      "section": "V2",
+      "model_text": "若能如此该有多好啊",
+      "sing_text": "若能如此该有多好啊",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "B1-01",
+      "section": "B1",
+      "model_text": "笑着烦恼着",
+      "sing_text": "笑着烦恼着",
+      "keep_source": false,
+      "actual": 5,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 7,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-02",
+      "section": "B1",
+      "model_text": "在这广阔世界的角落里",
+      "sing_text": "在这广阔世界的角落里",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-03",
+      "section": "B1",
+      "model_text": "我们一起把宇宙的奥秘",
+      "sing_text": "我们一起把宇宙的奥秘",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-04",
+      "section": "B1",
+      "model_text": "试着解开吧",
+      "sing_text": "试着解开吧",
+      "keep_source": false,
+      "actual": 5,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "星星为什么在闪耀呢",
+      "sing_text": "星星为什么在闪耀呢",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "云儿为什么在天空游荡",
+      "sing_text": "云儿为什么在天空游荡",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "model_text": "人们为什么描绘梦想",
+      "sing_text": "人们为什么描绘梦想",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-04",
+      "section": "C1",
+      "model_text": "难道没有答案吗",
+      "sing_text": "难道没有答案吗",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "D1-01",
+      "section": "D1",
+      "model_text": "总有一天这样的小小歌谣",
+      "sing_text": "总有一天这样的小小歌谣",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "D1-02",
+      "section": "D1",
+      "model_text": "你一定会把它忘掉哟",
+      "sing_text": "你一定会把它忘掉哟",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "D1-03",
+      "section": "D1",
+      "model_text": "可我会一直记着它哦",
+      "sing_text": "可我会一直记着它哦",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "D1-04",
+      "section": "D1",
+      "model_text": "就算长大成人了喔",
+      "sing_text": "就算长大成人了喔",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "V3-01",
+      "section": "V3",
+      "model_text": "今天聊什么样的话题？",
+      "sing_text": "今天聊什么样的话题？",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V3-02",
+      "section": "V3",
+      "model_text": "和你唱什么样的歌曲？",
+      "sing_text": "和你唱什么样的歌曲？",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V3-03",
+      "section": "V3",
+      "model_text": "还有无人知晓的花儿",
+      "sing_text": "还有无人知晓的花儿",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "O1-01",
+      "section": "O1",
+      "model_text": "全部 全部 全部",
+      "sing_text": "全部 全部 全部",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "O1-02",
+      "section": "O1",
+      "model_text": "去寻找吧",
+      "sing_text": "去寻找吧",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "O1-03",
+      "section": "O1",
+      "model_text": "全部 全部 全部",
+      "sing_text": "全部 全部 全部",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "O1-04",
+      "section": "O1",
+      "model_text": "去寻找吧",
+      "sing_text": "去寻找吧",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    }
+  ]
+}

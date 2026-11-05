@@ -1,0 +1,102 @@
+{
+  "status": "completed",
+  "calls": [
+    {
+      "section": "C1",
+      "stage": "generation",
+      "usage": {
+        "input_tokens": 114,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 39,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "C1",
+      "stage": "cleanup",
+      "usage": {
+        "input_tokens": 140,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 45,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "V1",
+      "stage": "generation",
+      "usage": {
+        "input_tokens": 109,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 192,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "V1",
+      "stage": "cleanup",
+      "usage": {
+        "input_tokens": 293,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 38,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "B1",
+      "stage": "generation",
+      "usage": {
+        "input_tokens": 95,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 22,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "B1",
+      "stage": "cleanup",
+      "usage": {
+        "input_tokens": 123,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 28,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "C2",
+      "stage": "generation",
+      "usage": {
+        "input_tokens": 117,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 37,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "C2",
+      "stage": "cleanup",
+      "usage": {
+        "input_tokens": 138,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 43,
+        "service_tier": "standard"
+      },
+      "reused": false
+    }
+  ],
+  "budget_pass_rate": 0.1111111111111111
+}

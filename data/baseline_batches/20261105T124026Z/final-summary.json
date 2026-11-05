@@ -1,0 +1,482 @@
+{
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking": "disabled",
+  "temperature": 0.7,
+  "started_at": "2026-11-05T12:40:26.448454+00:00",
+  "results": [
+    {
+      "song": "abuku",
+      "variant": "paper-annotated",
+      "directory": "data/songs/abuku/baselines/paper-annotated/run-20261105T124026450617Z-a52a0b20",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 17,
+      "budget_pass_rate": 0.7058823529411765,
+      "mean_budget_distance": 0.5882352941176471,
+      "rule_pass_rate": 0.7058823529411765
+    },
+    {
+      "song": "abuku",
+      "variant": "paper-original",
+      "directory": "data/songs/abuku/baselines/paper-original/run-20261105T124026449384Z-5f73a80c",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 17,
+      "budget_pass_rate": 0.23529411764705882,
+      "mean_budget_distance": 1.1176470588235294,
+      "rule_pass_rate": 0.23529411764705882
+    },
+    {
+      "song": "bara",
+      "variant": "paper-annotated",
+      "directory": "data/songs/bara/baselines/paper-annotated/run-20261105T124044397525Z-9152738a",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 16,
+      "budget_pass_rate": 0.5,
+      "mean_budget_distance": 1.4375,
+      "rule_pass_rate": 0.5
+    },
+    {
+      "song": "bara",
+      "variant": "paper-original",
+      "directory": "data/songs/bara/baselines/paper-original/run-20261105T124035254008Z-46996043",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 16,
+      "budget_pass_rate": 0.125,
+      "mean_budget_distance": 3.4375,
+      "rule_pass_rate": 0.125
+    },
+    {
+      "song": "black_shout",
+      "variant": "paper-annotated",
+      "directory": "data/songs/black_shout/baselines/paper-annotated/run-20261105T124059277756Z-689b291f",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 27,
+      "budget_pass_rate": 0.0,
+      "mean_budget_distance": 1.8888888888888888,
+      "rule_pass_rate": 0.0
+    },
+    {
+      "song": "black_shout",
+      "variant": "paper-original",
+      "directory": "data/songs/black_shout/baselines/paper-original/run-20261105T124051697071Z-e000ba21",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 27,
+      "budget_pass_rate": 0.1111111111111111,
+      "mean_budget_distance": 2.2962962962962963,
+      "rule_pass_rate": 0.1111111111111111
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "variant": "paper-annotated",
+      "directory": "data/songs/fly_me_to_the_star/baselines/paper-annotated/run-20261105T124109880230Z-342fcb8f",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 20,
+      "budget_pass_rate": 0.35,
+      "mean_budget_distance": 1.9,
+      "rule_pass_rate": 0.35
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "variant": "paper-original",
+      "directory": "data/songs/fly_me_to_the_star/baselines/paper-original/run-20261105T124107008508Z-441a11d4",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 20,
+      "budget_pass_rate": 0.25,
+      "mean_budget_distance": 2.5,
+      "rule_pass_rate": 0.25
+    },
+    {
+      "song": "fuusen",
+      "variant": "paper-annotated",
+      "directory": "data/songs/fuusen/baselines/paper-annotated/run-20261105T124128831613Z-26247dec",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 14,
+      "budget_pass_rate": 0.6428571428571429,
+      "mean_budget_distance": 0.9285714285714286,
+      "rule_pass_rate": 0.6428571428571429
+    },
+    {
+      "song": "fuusen",
+      "variant": "paper-original",
+      "directory": "data/songs/fuusen/baselines/paper-original/run-20261105T124124348825Z-5f32d0fa",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 14,
+      "budget_pass_rate": 0.07142857142857142,
+      "mean_budget_distance": 3.2142857142857144,
+      "rule_pass_rate": 0.07142857142857142
+    },
+    {
+      "song": "himawari",
+      "variant": "paper-annotated",
+      "directory": "data/songs/himawari/baselines/paper-annotated/run-20261105T124137432137Z-0aaa0a3e",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 10,
+      "budget_pass_rate": 0.0,
+      "mean_budget_distance": 4.5,
+      "rule_pass_rate": 0.0
+    },
+    {
+      "song": "himawari",
+      "variant": "paper-original",
+      "directory": "data/songs/himawari/baselines/paper-original/run-20261105T124131954394Z-0e29fbe8",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 10,
+      "budget_pass_rate": 0.0,
+      "mean_budget_distance": 6.9,
+      "rule_pass_rate": 0.0
+    },
+    {
+      "song": "kaijuu",
+      "variant": "paper-annotated",
+      "directory": "data/songs/kaijuu/baselines/paper-annotated/run-20261105T124146932199Z-f37cce18",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 17,
+      "budget_pass_rate": 0.6470588235294118,
+      "mean_budget_distance": 0.8823529411764706,
+      "rule_pass_rate": 0.6470588235294118
+    },
+    {
+      "song": "kaijuu",
+      "variant": "paper-original",
+      "directory": "data/songs/kaijuu/baselines/paper-original/run-20261105T124143840518Z-549441f0",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 17,
+      "budget_pass_rate": 0.11764705882352941,
+      "mean_budget_distance": 2.7058823529411766,
+      "rule_pass_rate": 0.11764705882352941
+    },
+    {
+      "song": "kazeyo",
+      "variant": "paper-annotated",
+      "directory": "data/songs/kazeyo/baselines/paper-annotated/run-20261105T124156783650Z-a80bceb6",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 12,
+      "budget_pass_rate": 0.3333333333333333,
+      "mean_budget_distance": 1.9166666666666667,
+      "rule_pass_rate": 0.3333333333333333
+    },
+    {
+      "song": "kazeyo",
+      "variant": "paper-original",
+      "directory": "data/songs/kazeyo/baselines/paper-original/run-20261105T124149555066Z-8693b173",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 12,
+      "budget_pass_rate": 0.08333333333333333,
+      "mean_budget_distance": 3.0,
+      "rule_pass_rate": 0.08333333333333333
+    },
+    {
+      "song": "know_me",
+      "variant": "paper-annotated",
+      "directory": "data/songs/know_me/baselines/paper-annotated/run-20261105T124212449668Z-d132d673",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 20,
+      "budget_pass_rate": 0.3,
+      "mean_budget_distance": 1.4,
+      "rule_pass_rate": 0.3
+    },
+    {
+      "song": "know_me",
+      "variant": "paper-original",
+      "directory": "data/songs/know_me/baselines/paper-original/run-20261105T124204281507Z-5ccd2308",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 20,
+      "budget_pass_rate": 0.25,
+      "mean_budget_distance": 1.95,
+      "rule_pass_rate": 0.25
+    },
+    {
+      "song": "kotozute",
+      "variant": "paper-annotated",
+      "directory": "data/songs/kotozute/baselines/paper-annotated/run-20261105T124225072660Z-e0452048",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 21,
+      "budget_pass_rate": 0.5714285714285714,
+      "mean_budget_distance": 0.6666666666666666,
+      "rule_pass_rate": 0.5714285714285714
+    },
+    {
+      "song": "kotozute",
+      "variant": "paper-original",
+      "directory": "data/songs/kotozute/baselines/paper-original/run-20261105T124213284041Z-6a094698",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 21,
+      "budget_pass_rate": 0.19047619047619047,
+      "mean_budget_distance": 1.5714285714285714,
+      "rule_pass_rate": 0.19047619047619047
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "variant": "paper-annotated",
+      "directory": "data/songs/kumo_wo_nuke_kazashimo_e_watashi_dake/baselines/paper-annotated/run-20261105T124230779561Z-aa9bdecf",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 21,
+      "budget_pass_rate": 0.7142857142857143,
+      "mean_budget_distance": 0.5714285714285714,
+      "rule_pass_rate": 0.7142857142857143
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "variant": "paper-original",
+      "directory": "data/songs/kumo_wo_nuke_kazashimo_e_watashi_dake/baselines/paper-original/run-20261105T124225224939Z-c2df5978",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 21,
+      "budget_pass_rate": 0.14285714285714285,
+      "mean_budget_distance": 1.7619047619047619,
+      "rule_pass_rate": 0.14285714285714285
+    },
+    {
+      "song": "love-2000",
+      "variant": "paper-annotated",
+      "directory": "data/songs/love-2000/baselines/paper-annotated/run-20261105T124246025046Z-9e0103b6",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 17,
+      "budget_pass_rate": 0.7058823529411765,
+      "mean_budget_distance": 0.6470588235294118,
+      "rule_pass_rate": 0.7058823529411765
+    },
+    {
+      "song": "love-2000",
+      "variant": "paper-original",
+      "directory": "data/songs/love-2000/baselines/paper-original/run-20261105T124238138493Z-f67a4232",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 17,
+      "budget_pass_rate": 0.11764705882352941,
+      "mean_budget_distance": 1.8235294117647058,
+      "rule_pass_rate": 0.11764705882352941
+    },
+    {
+      "song": "roshin-yukai",
+      "variant": "paper-annotated",
+      "directory": "data/songs/roshin-yukai/baselines/paper-annotated/run-20261105T124311824420Z-7a4205df",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 55,
+      "budget_pass_rate": 0.45454545454545453,
+      "mean_budget_distance": 1.3818181818181818,
+      "rule_pass_rate": 0.45454545454545453
+    },
+    {
+      "song": "roshin-yukai",
+      "variant": "paper-original",
+      "directory": "data/songs/roshin-yukai/baselines/paper-original/run-20261105T124254824500Z-5fbeed5d",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 55,
+      "budget_pass_rate": 0.18181818181818182,
+      "mean_budget_distance": 2.618181818181818,
+      "rule_pass_rate": 0.18181818181818182
+    },
+    {
+      "song": "sayonara-penguin",
+      "variant": "paper-annotated",
+      "directory": "data/songs/sayonara-penguin/baselines/paper-annotated/run-20261105T124321073502Z-093e2861",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 13,
+      "budget_pass_rate": 0.7692307692307693,
+      "mean_budget_distance": 0.46153846153846156,
+      "rule_pass_rate": 0.7692307692307693
+    },
+    {
+      "song": "sayonara-penguin",
+      "variant": "paper-original",
+      "directory": "data/songs/sayonara-penguin/baselines/paper-original/run-20261105T124312265878Z-d4acafc7",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 13,
+      "budget_pass_rate": 0.0,
+      "mean_budget_distance": 3.769230769230769,
+      "rule_pass_rate": 0.0
+    },
+    {
+      "song": "shiori",
+      "variant": "paper-annotated",
+      "directory": "data/songs/shiori/baselines/paper-annotated/run-20261105T124347418360Z-4ae84d0b",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 20,
+      "budget_pass_rate": 0.3,
+      "mean_budget_distance": 1.85,
+      "rule_pass_rate": 0.3
+    },
+    {
+      "song": "shiori",
+      "variant": "paper-original",
+      "directory": "data/songs/shiori/baselines/paper-original/run-20261105T124340644652Z-14f9efa8",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 20,
+      "budget_pass_rate": 0.1,
+      "mean_budget_distance": 3.05,
+      "rule_pass_rate": 0.1
+    },
+    {
+      "song": "sonare",
+      "variant": "paper-annotated",
+      "directory": "data/songs/sonare/baselines/paper-annotated/run-20261105T124405442039Z-abf3db57",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 20,
+      "budget_pass_rate": 0.0,
+      "mean_budget_distance": 1.4,
+      "rule_pass_rate": 0.0
+    },
+    {
+      "song": "sonare",
+      "variant": "paper-original",
+      "directory": "data/songs/sonare/baselines/paper-original/run-20261105T124358297131Z-e40d509f",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 20,
+      "budget_pass_rate": 0.0,
+      "mean_budget_distance": 1.7,
+      "rule_pass_rate": 0.0
+    },
+    {
+      "song": "spiral",
+      "variant": "paper-annotated",
+      "directory": "data/songs/spiral/baselines/paper-annotated/run-20261105T124415791262Z-bda14bee",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 20,
+      "budget_pass_rate": 0.2,
+      "mean_budget_distance": 1.4,
+      "rule_pass_rate": 0.2
+    },
+    {
+      "song": "spiral",
+      "variant": "paper-original",
+      "directory": "data/songs/spiral/baselines/paper-original/run-20261105T124410050510Z-03216579",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 20,
+      "budget_pass_rate": 0.25,
+      "mean_budget_distance": 1.35,
+      "rule_pass_rate": 0.25
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "variant": "paper-annotated",
+      "directory": "data/songs/uchuu_no_fushigi/baselines/paper-annotated/run-20261105T124427203784Z-bf14ab3a",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 28,
+      "budget_pass_rate": 0.2857142857142857,
+      "mean_budget_distance": 1.75,
+      "rule_pass_rate": 0.2857142857142857
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "variant": "paper-original",
+      "directory": "data/songs/uchuu_no_fushigi/baselines/paper-original/run-20261105T124417218291Z-9fe1577b",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 28,
+      "budget_pass_rate": 0.21428571428571427,
+      "mean_budget_distance": 2.0,
+      "rule_pass_rate": 0.21428571428571427
+    },
+    {
+      "song": "wasurete-kudasai",
+      "variant": "paper-annotated",
+      "directory": "data/songs/wasurete-kudasai/baselines/paper-annotated/run-20261105T124447123874Z-94b4ed9d",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 38,
+      "budget_pass_rate": 0.2631578947368421,
+      "mean_budget_distance": 2.0,
+      "rule_pass_rate": 0.2631578947368421
+    },
+    {
+      "song": "wasurete-kudasai",
+      "variant": "paper-original",
+      "directory": "data/songs/wasurete-kudasai/baselines/paper-original/run-20261105T124436676019Z-e7f592a5",
+      "status": "failed",
+      "error": "清理输出 3 行，预期 1 行；未自动删除或补写任何行"
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "variant": "paper-annotated",
+      "directory": "data/songs/yoake-to-hotaru/baselines/paper-annotated/run-20261105T124452750701Z-8207bcae",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 12,
+      "budget_pass_rate": 0.08333333333333333,
+      "mean_budget_distance": 3.0,
+      "rule_pass_rate": 0.08333333333333333
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "variant": "paper-original",
+      "directory": "data/songs/yoake-to-hotaru/baselines/paper-original/run-20261105T124448143879Z-8b7b7d6f",
+      "status": "completed",
+      "error": null,
+      "evaluated_phrases": 12,
+      "budget_pass_rate": 0.0,
+      "mean_budget_distance": 4.666666666666667,
+      "rule_pass_rate": 0.0
+    }
+  ],
+  "finished_at": "2026-11-05T12:45:46.864884+00:00",
+  "verification": {
+    "requests_checked": 326,
+    "responses_checked": 326,
+    "all_thinking_disabled": true,
+    "reasoning_content_present": false,
+    "response_models": {
+      "deepseek-flash": 326
+    },
+    "credential_pattern_matches": 0,
+    "successful_response_input_tokens": 125099,
+    "successful_response_output_tokens": 66735
+  },
+  "paired_completed_songs": 19,
+  "paired_macro_metrics": {
+    "paper-original": {
+      "budget_pass_rate": 0.12846834108444014,
+      "mean_budget_distance": 2.706976495869685,
+      "rule_pass_rate": 0.12846834108444014
+    },
+    "paper-annotated": {
+      "budget_pass_rate": 0.39808169127054577,
+      "mean_budget_distance": 1.5037224170738104,
+      "rule_pass_rate": 0.39808169127054577
+    }
+  },
+  "formatted_exports": {
+    "variants": 40,
+    "complete": 39,
+    "partial": 1,
+    "files_per_variant": [
+      "lyrics.md",
+      "lyrics.zh.txt"
+    ],
+    "latest_pointer": "data/songs/<song>/baselines/<variant>/latest.json"
+  }
+}

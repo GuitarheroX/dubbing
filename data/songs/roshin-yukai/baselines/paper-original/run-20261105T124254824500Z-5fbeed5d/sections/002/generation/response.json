@@ -1,0 +1,21 @@
+{
+  "id": "c3752c2a-9e6e-4017-96e6-a4ebee9ee097",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "我梦见勒住你的脖颈\n在那洒满阳光的午后\n你纤细的喉咙跳动着\n我用快要哭出来的眼神望着"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 108,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 27,
+    "service_tier": "standard"
+  }
+}

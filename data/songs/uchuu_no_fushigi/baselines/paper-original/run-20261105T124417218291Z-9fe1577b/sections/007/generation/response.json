@@ -1,0 +1,21 @@
+{
+  "id": "587c769b-395b-4e03-9036-9a54edeb1c09",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "全部 全部 全部\n去寻找吧\n全部 全部 全部\n去寻找吧"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 103,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 17,
+    "service_tier": "standard"
+  }
+}

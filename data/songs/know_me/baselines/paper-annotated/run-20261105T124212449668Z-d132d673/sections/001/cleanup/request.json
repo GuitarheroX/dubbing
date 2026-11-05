@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "1. 总是一样地渴求着 (13 syllables: zǒng shì yī yàng de kě qiú zhe — 13)\n2. 沉默着就好吗 (6 syllables: chén mò zhe jiù hǎo ma — 6)\n3. 如你所愿倒着走下去 (13 syllables: rú nǐ suǒ yuàn dào zhe zǒu xià qù — 13)\n4. 像断了气一样 (8 syllables: xiàng duàn le qì yī yàng — 8)\n\nRhyme check: line endings are 着 (zhe), 吗 (ma), 去 (qù), 样 (yàng) — no consistent rhyme, matching the source's lack of a shared rhyme pattern across these lines."
+  },
+  "data": {
+    "response": "1. 总是一样地渴求着 (13 syllables: zǒng shì yī yàng de kě qiú zhe — 13)\n2. 沉默着就好吗 (6 syllables: chén mò zhe jiù hǎo ma — 6)\n3. 如你所愿倒着走下去 (13 syllables: rú nǐ suǒ yuàn dào zhe zǒu xià qù — 13)\n4. 像断了气一样 (8 syllables: xiàng duàn le qì yī yàng — 8)\n\nRhyme check: line endings are 着 (zhe), 吗 (ma), 去 (qù), 样 (yàng) — no consistent rhyme, matching the source's lack of a shared rhyme pattern across these lines."
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "1. 总是一样地渴求着 (13 syllables: zǒng shì yī yàng de kě qiú zhe — 13)\n2. 沉默着就好吗 (6 syllables: chén mò zhe jiù hǎo ma — 6)\n3. 如你所愿倒着走下去 (13 syllables: rú nǐ suǒ yuàn dào zhe zǒu xià qù — 13)\n4. 像断了气一样 (8 syllables: xiàng duàn le qì yī yàng — 8)\n\nRhyme check: line endings are 着 (zhe), 吗 (ma), 去 (qù), 样 (yàng) — no consistent rhyme, matching the source's lack of a shared rhyme pattern across these lines."
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

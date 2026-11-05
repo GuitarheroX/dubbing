@@ -1,0 +1,21 @@
+{
+  "id": "5c417b63-64a2-4dd0-beb9-d8603bdd578e",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"心情 无法传达给你\",\"浮现出种种人生\",\"试着扮演 因为想吸引你的注意\",\"oh, fly me to the star\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 661,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 33,
+    "service_tier": "standard"
+  }
+}

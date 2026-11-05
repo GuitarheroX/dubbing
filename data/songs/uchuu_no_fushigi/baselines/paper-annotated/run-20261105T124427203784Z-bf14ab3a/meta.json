@@ -1,0 +1,174 @@
+{
+  "status": "completed",
+  "calls": [
+    {
+      "section": "V1",
+      "stage": "generation",
+      "usage": {
+        "input_tokens": 526,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 438,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "V1",
+      "stage": "cleanup",
+      "usage": {
+        "input_tokens": 539,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 39,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "V2",
+      "stage": "generation",
+      "usage": {
+        "input_tokens": 453,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 208,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "V2",
+      "stage": "cleanup",
+      "usage": {
+        "input_tokens": 309,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 33,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "B1",
+      "stage": "generation",
+      "usage": {
+        "input_tokens": 431,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 916,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "B1",
+      "stage": "cleanup",
+      "usage": {
+        "input_tokens": 1017,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 29,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "C1",
+      "stage": "generation",
+      "usage": {
+        "input_tokens": 454,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 186,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "C1",
+      "stage": "cleanup",
+      "usage": {
+        "input_tokens": 287,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 30,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "D1",
+      "stage": "generation",
+      "usage": {
+        "input_tokens": 458,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 48,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "D1",
+      "stage": "cleanup",
+      "usage": {
+        "input_tokens": 149,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 29,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "V3",
+      "stage": "generation",
+      "usage": {
+        "input_tokens": 388,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 27,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "V3",
+      "stage": "cleanup",
+      "usage": {
+        "input_tokens": 128,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 26,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "O1",
+      "stage": "generation",
+      "usage": {
+        "input_tokens": 436,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 106,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "O1",
+      "stage": "cleanup",
+      "usage": {
+        "input_tokens": 207,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 7,
+        "service_tier": "standard"
+      },
+      "reused": false
+    }
+  ],
+  "budget_pass_rate": 0.2857142857142857
+}

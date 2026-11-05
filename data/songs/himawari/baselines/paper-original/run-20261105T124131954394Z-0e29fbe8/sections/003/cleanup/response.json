@@ -1,0 +1,21 @@
+{
+  "id": "3e414ae2-486e-49fa-8af6-bf0c661f0286",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"我愿把我的生命献给你\",\"我愿把我的生命献给你\",\"跨越吧，我愿把海风献给你\",\"我愿把迎风的手臂献给你\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 134,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 39,
+    "service_tier": "standard"
+  }
+}

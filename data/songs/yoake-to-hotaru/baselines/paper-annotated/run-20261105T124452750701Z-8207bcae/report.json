@@ -1,0 +1,339 @@
+{
+  "evaluated_phrases": 12,
+  "kept_phrases": 0,
+  "budget_pass_rate": 0.08333333333333333,
+  "mean_budget_distance": 3.0,
+  "rule_pass_rate": 0.08333333333333333,
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "淡月令我沉醉所以",
+      "sing_text": "淡月令我沉醉所以",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 5,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "连暗处脚下都看不见",
+      "sing_text": "连暗处脚下都看不见",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "一直没察觉自己已跌倒",
+      "sing_text": "一直没察觉自己已跌倒",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "远方夜星模糊一片",
+      "sing_text": "远方夜星模糊一片",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-05",
+      "section": "V1",
+      "model_text": "因为找不到想做的事啊",
+      "sing_text": "因为找不到想做的事啊",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-06",
+      "section": "V1",
+      "model_text": "装作匆忙 仍低着头",
+      "sing_text": "装作匆忙 仍低着头",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-07",
+      "section": "V1",
+      "model_text": "跌倒之后被人嘲笑的模样",
+      "sing_text": "跌倒之后被人嘲笑的模样",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-08",
+      "section": "V1",
+      "model_text": "我就装作没有发觉",
+      "sing_text": "我就装作没有发觉",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "用无形的歌描绘着黎明",
+      "sing_text": "用无形的歌描绘着黎明",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 15,
+        "max": 15
+      },
+      "budget_distance": 5,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "在那浅浅的浅浅的夏日彼方",
+      "sing_text": "在那浅浅的浅浅的夏日彼方",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "model_text": "我看见了你不冰冷的手掌心",
+      "sing_text": "我看见了你不冰冷的手掌心",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 16,
+        "max": 16
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-04",
+      "section": "C1",
+      "model_text": "淡淡天空 黎明的萤火",
+      "sing_text": "淡淡天空 黎明的萤火",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    }
+  ],
+  "sections": [
+    {
+      "section": "V1",
+      "draft_run": "run-20261105T124452750701Z-8207bcae",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "V1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            13,
+            13
+          ],
+          "actual": 8,
+          "fix": "差 5 字，补到 13 字以上"
+        },
+        {
+          "phrase_id": "V1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            11,
+            11
+          ],
+          "actual": 9,
+          "fix": "差 2 字，补到 11 字以上"
+        },
+        {
+          "phrase_id": "V1-03",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            13,
+            13
+          ],
+          "actual": 10,
+          "fix": "差 3 字，补到 13 字以上"
+        },
+        {
+          "phrase_id": "V1-04",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            11,
+            11
+          ],
+          "actual": 8,
+          "fix": "差 3 字，补到 11 字以上"
+        },
+        {
+          "phrase_id": "V1-05",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            13,
+            13
+          ],
+          "actual": 10,
+          "fix": "差 3 字，补到 13 字以上"
+        },
+        {
+          "phrase_id": "V1-06",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            11,
+            11
+          ],
+          "actual": 8,
+          "fix": "差 3 字，补到 11 字以上"
+        },
+        {
+          "phrase_id": "V1-07",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            14,
+            14
+          ],
+          "actual": 11,
+          "fix": "差 3 字，补到 14 字以上"
+        },
+        {
+          "phrase_id": "V1-08",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            11,
+            11
+          ],
+          "actual": 8,
+          "fix": "差 3 字，补到 11 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "V1-01",
+          "V1-02",
+          "V1-03",
+          "V1-04",
+          "V1-05",
+          "V1-06",
+          "V1-07",
+          "V1-08"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "C1",
+      "draft_run": "run-20261105T124452750701Z-8207bcae",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "C1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            15,
+            15
+          ],
+          "actual": 10,
+          "fix": "差 5 字，补到 15 字以上"
+        },
+        {
+          "phrase_id": "C1-03",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            16,
+            16
+          ],
+          "actual": 12,
+          "fix": "差 4 字，补到 16 字以上"
+        },
+        {
+          "phrase_id": "C1-04",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            11,
+            11
+          ],
+          "actual": 9,
+          "fix": "差 2 字，补到 11 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "C1-01",
+          "C1-02",
+          "C1-03",
+          "C1-04"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    }
+  ],
+  "note": "仅为人工预算和规则的事后评测，不是论文原始节奏距离，也不代表真人可唱性评分。"
+}

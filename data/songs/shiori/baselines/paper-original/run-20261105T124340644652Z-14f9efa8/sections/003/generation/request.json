@@ -1,0 +1,43 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+    "user": "ぜんぶ ぜんぶ 僕だから\nうじうじ しくしく 僕だから\nぜんぶ ぜんぶ 抱きしめて\n少し眠ろう\n痛いの痛いの飛んでゆけ\n悲しみにすべてを奪われないように\n僕は 僕の味方でいようよ\nまだまだ長い道の途中\nちょっとくらい休憩したって\n誰にも叱られはしないから"
+  },
+  "data": {
+    "lyrics": [
+      "ぜんぶ ぜんぶ 僕だから",
+      "うじうじ しくしく 僕だから",
+      "ぜんぶ ぜんぶ 抱きしめて",
+      "少し眠ろう",
+      "痛いの痛いの飛んでゆけ",
+      "悲しみにすべてを奪われないように",
+      "僕は 僕の味方でいようよ",
+      "まだまだ長い道の途中",
+      "ちょっとくらい休憩したって",
+      "誰にも叱られはしないから"
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "ぜんぶ ぜんぶ 僕だから\nうじうじ しくしく 僕だから\nぜんぶ ぜんぶ 抱きしめて\n少し眠ろう\n痛いの痛いの飛んでゆけ\n悲しみにすべてを奪われないように\n僕は 僕の味方でいようよ\nまだまだ長い道の途中\nちょっとくらい休憩したって\n誰にも叱られはしないから"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

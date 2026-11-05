@@ -1,0 +1,21 @@
+{
+  "id": "f9210dc9-b20a-4144-bc86-6167a77e78e3",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "给我 给我 给我"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 248,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 5,
+    "service_tier": "standard"
+  }
+}

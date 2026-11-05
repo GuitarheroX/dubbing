@@ -1,0 +1,10 @@
+{
+  "song": "fuusen",
+  "variant": "paper-original",
+  "run": "run-20261105T124124348825Z-5f32d0fa",
+  "status": "completed",
+  "partial_export": false,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "source_directory": "data/songs/fuusen/baselines/paper-original/run-20261105T124124348825Z-5f32d0fa"
+}

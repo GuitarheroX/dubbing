@@ -1,0 +1,145 @@
+{
+  "song_id": "himawari",
+  "phrases": [
+    {
+      "id": "I1-01",
+      "section": "I1",
+      "model_text": "I want to give my life to you",
+      "sing_text": "I want to give my life to you",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "budget_distance": 7,
+      "verdict": "fail"
+    },
+    {
+      "id": "I1-02",
+      "section": "I1",
+      "model_text": "I want to give my life to you",
+      "sing_text": "I want to give my life to you",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "budget_distance": 7,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "夏日海滨赤足奔跑不停",
+      "sing_text": "夏日海滨赤足奔跑不停",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "呼唤你时双脚已被水浸湿",
+      "sing_text": "呼唤你时双脚已被水浸湿",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "忘却波浪肌肤已干涸",
+      "sing_text": "忘却波浪肌肤已干涸",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "你牵我的手让我身体燃烧",
+      "sing_text": "你牵我的手让我身体燃烧",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "我想把我的生命全都献给你",
+      "sing_text": "我想把我的生命全都献给你",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "budget_distance": 5,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "我想把我的生命全都献给你",
+      "sing_text": "我想把我的生命全都献给你",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "budget_distance": 5,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "model_text": "渡过大海的风我想全都献给你",
+      "sing_text": "渡过大海的风我想全都献给你",
+      "keep_source": false,
+      "actual": 13,
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-04",
+      "section": "C1",
+      "model_text": "迎着风的双臂我想全都献给你",
+      "sing_text": "迎着风的双臂我想全都献给你",
+      "keep_source": false,
+      "actual": 13,
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    }
+  ]
+}

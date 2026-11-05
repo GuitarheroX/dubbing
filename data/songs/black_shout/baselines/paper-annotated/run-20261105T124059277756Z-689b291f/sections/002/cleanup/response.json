@@ -1,0 +1,21 @@
+{
+  "id": "5c20fcb1-e232-426f-bd59-fd02ae6475e3",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"不安充满心房\",\"世间百态无常\",\"焦躁伴随身旁\",\"自由被夺走光\",\"黑白之雨落下\",\"将世界都隐藏\",\"天空嘲笑般沉没无声\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 180,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 42,
+    "service_tier": "standard"
+  }
+}

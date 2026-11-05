@@ -1,0 +1,21 @@
+{
+  "id": "fe149dba-fb40-43be-ab6a-914d1f63fefc",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"黄昏城镇的寂寥\",\"人心变幻的空虚\",\"风载着一切前行\",\"乘上流云去漂泊\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 211,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 29,
+    "service_tier": "standard"
+  }
+}

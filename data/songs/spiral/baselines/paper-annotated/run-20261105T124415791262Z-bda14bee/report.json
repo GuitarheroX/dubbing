@@ -1,0 +1,540 @@
+{
+  "evaluated_phrases": 20,
+  "kept_phrases": 0,
+  "budget_pass_rate": 0.2,
+  "mean_budget_distance": 1.4,
+  "rule_pass_rate": 0.2,
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "画好的地图被撕啦",
+      "sing_text": "画好的地图被撕啦",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "世界还停在那一刹",
+      "sing_text": "世界还停在那一刹",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "我又一次啊",
+      "sing_text": "我又一次啊",
+      "keep_source": false,
+      "actual": 5,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "把错推给别人家",
+      "sing_text": "把错推给别人家",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-05",
+      "section": "V1",
+      "model_text": "真是让人烦哪",
+      "sing_text": "真是让人烦哪",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-01",
+      "section": "B1",
+      "model_text": "就这样装作一直在等待着什么",
+      "sing_text": "就这样装作一直在等待着什么",
+      "keep_source": false,
+      "actual": 13,
+      "budget": {
+        "min": 18,
+        "max": 18
+      },
+      "budget_distance": 5,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-02",
+      "section": "B1",
+      "model_text": "从这儿我还能重新开始吗",
+      "sing_text": "从这儿我还能重新开始吗",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "我仿佛能去往任何地方",
+      "sing_text": "我仿佛能去往任何地方",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "那时的我如今在何方",
+      "sing_text": "那时的我如今在何方",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "model_text": "想必已经长大成人了吧",
+      "sing_text": "想必已经长大成人了吧",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-04",
+      "section": "C1",
+      "model_text": "并不是那样的事情啊",
+      "sing_text": "并不是那样的事情啊",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-05",
+      "section": "C1",
+      "model_text": "只凭一点点勇气的力量",
+      "sing_text": "只凭一点点勇气的力量",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-06",
+      "section": "C1",
+      "model_text": "曾有能被改变的明天啊",
+      "sing_text": "曾有能被改变的明天啊",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-07",
+      "section": "C1",
+      "model_text": "就连那一点都没能察觉",
+      "sing_text": "就连那一点都没能察觉",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "O1-01",
+      "section": "O1",
+      "model_text": "这样的日子我已经受够",
+      "sing_text": "这样的日子我已经受够",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "O1-02",
+      "section": "O1",
+      "model_text": "永远这种东西根本不存在",
+      "sing_text": "永远这种东西根本不存在",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "O1-03",
+      "section": "O1",
+      "model_text": "在终结来临之前",
+      "sing_text": "在终结来临之前",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "O1-04",
+      "section": "O1",
+      "model_text": "试着迈出一步",
+      "sing_text": "试着迈出一步",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "O1-05",
+      "section": "O1",
+      "model_text": "一边接纳着",
+      "sing_text": "一边接纳着",
+      "keep_source": false,
+      "actual": 5,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "O1-06",
+      "section": "O1",
+      "model_text": "一边祈祷着",
+      "sing_text": "一边祈祷着",
+      "keep_source": false,
+      "actual": 5,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    }
+  ],
+  "sections": [
+    {
+      "section": "V1",
+      "draft_run": "run-20261105T124415791262Z-bda14bee",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "V1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            11,
+            11
+          ],
+          "actual": 8,
+          "fix": "差 3 字，补到 11 字以上"
+        },
+        {
+          "phrase_id": "V1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            10,
+            10
+          ],
+          "actual": 8,
+          "fix": "差 2 字，补到 10 字以上"
+        },
+        {
+          "phrase_id": "V1-04",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            8,
+            8
+          ],
+          "actual": 7,
+          "fix": "差 1 字，补到 8 字以上"
+        },
+        {
+          "phrase_id": "V1-05",
+          "code": "OVER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            5,
+            5
+          ],
+          "actual": 6,
+          "fix": "超出 1 字，压到 5 字以内"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "V1-01",
+          "V1-02",
+          "V1-03",
+          "V1-04",
+          "V1-05"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "B1",
+      "draft_run": "run-20261105T124415791262Z-bda14bee",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "B1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            18,
+            18
+          ],
+          "actual": 13,
+          "fix": "差 5 字，补到 18 字以上"
+        },
+        {
+          "phrase_id": "B1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            14,
+            14
+          ],
+          "actual": 11,
+          "fix": "差 3 字，补到 14 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "B1-01",
+          "B1-02"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "C1",
+      "draft_run": "run-20261105T124415791262Z-bda14bee",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "C1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            11,
+            11
+          ],
+          "actual": 10,
+          "fix": "差 1 字，补到 11 字以上"
+        },
+        {
+          "phrase_id": "C1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            11,
+            11
+          ],
+          "actual": 9,
+          "fix": "差 2 字，补到 11 字以上"
+        },
+        {
+          "phrase_id": "C1-05",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            11,
+            11
+          ],
+          "actual": 10,
+          "fix": "差 1 字，补到 11 字以上"
+        },
+        {
+          "phrase_id": "C1-06",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            11,
+            11
+          ],
+          "actual": 10,
+          "fix": "差 1 字，补到 11 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "C1-01",
+          "C1-02",
+          "C1-03",
+          "C1-04",
+          "C1-05",
+          "C1-06",
+          "C1-07"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "O1",
+      "draft_run": "run-20261105T124415791262Z-bda14bee",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "O1-01",
+          "code": "OVER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            9,
+            9
+          ],
+          "actual": 10,
+          "fix": "超出 1 字，压到 9 字以内"
+        },
+        {
+          "phrase_id": "O1-02",
+          "code": "OVER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            10,
+            10
+          ],
+          "actual": 11,
+          "fix": "超出 1 字，压到 10 字以内"
+        },
+        {
+          "phrase_id": "O1-03",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            9,
+            9
+          ],
+          "actual": 7,
+          "fix": "差 2 字，补到 9 字以上"
+        },
+        {
+          "phrase_id": "O1-04",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            8,
+            8
+          ],
+          "actual": 6,
+          "fix": "差 2 字，补到 8 字以上"
+        },
+        {
+          "phrase_id": "O1-05",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            6,
+            6
+          ],
+          "actual": 5,
+          "fix": "差 1 字，补到 6 字以上"
+        },
+        {
+          "phrase_id": "O1-06",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            6,
+            6
+          ],
+          "actual": 5,
+          "fix": "差 1 字，补到 6 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "O1-01",
+          "O1-02",
+          "O1-03",
+          "O1-04",
+          "O1-05",
+          "O1-06"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    }
+  ],
+  "note": "仅为人工预算和规则的事后评测，不是论文原始节奏距离，也不代表真人可唱性评分。"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "2113ceea-e4a3-439c-8992-a2bbb358a1e2",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"黄昏时城镇的寂寥\",\"人们变幻的空虚\",\"全都载着风儿远去\",\"乘着流转的云\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 125,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 30,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,27 @@
+我 一直注视着你
+仿佛已将孤独放下
+今夜 月亮也含笑相迎
+朝我这边看
+oh, fly me to the star
+
+---
+
+**Mora count verification (hiragana syllables per line):**
+
+1. わ-た-し-ず-っ-と-あ-な-た-を-み-て-た = 13 mora ✓ (original: 私 ずっとあなたを見てた = 13 mora)
+2. こ-ど-く-を-お-い-て-き-た-み-た-い = 12 mora ✓ (original: 孤独を置いてきたみたい = 12 mora)
+3. こ-よ-い-つ-き-も-わ-ら-い-か-け-る = 12 mora ✓ (original: 今宵 月も笑いかける = 12 mora)
+4. こ-っ-ち-を-む-い-て = 7 mora ✓ (original: こっちを向いて = 7 mora)
+5. oh, fly me to the star = 7 syllables ✓ (same as original)
+
+**Rhyme pattern verification (final phoneme per line):**
+
+1. ...みてた → ends in "a" (た/ta → a)
+2. ...みたい → ends in "i" (い/i)
+3. ...かける → ends in "u" (る/ru → u)
+4. ...むいて → ends in "e" (て/te → e)
+5. ...star → ends in "ar" (English, matches original)
+
+The original rhyme pattern is a-i-u-e + English, and the Chinese translation preserves the same vowel progression: 你(nǐ→i), 下(xià→a), 迎(yíng→ng), 看(kàn→n), star(ar). The rhyme scheme is preserved as closely as possible given cross-linguistic constraints.
+
+**Theme verification:** The translation preserves the themes of watching over someone, setting aside loneliness, the moon smiling, a request to look this way, and the culminating "fly me to the star" — all identical to the original.

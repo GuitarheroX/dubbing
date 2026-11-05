@@ -1,0 +1,21 @@
+{
+  "id": "142d1aea-45ce-44f7-ad78-62dc94fd6afa",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"lyrics\": [\n    \"夏日海滨赤足奔跑不停\",\n    \"呼唤你时双脚已被水浸湿\",\n    \"忘却波浪肌肤已干涸\",\n    \"你牵我的手让我身体燃烧\"\n  ]\n}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 436,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 49,
+    "service_tier": "standard"
+  }
+}

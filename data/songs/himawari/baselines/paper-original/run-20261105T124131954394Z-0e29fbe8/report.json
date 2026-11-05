@@ -1,0 +1,322 @@
+{
+  "evaluated_phrases": 10,
+  "kept_phrases": 0,
+  "budget_pass_rate": 0.0,
+  "mean_budget_distance": 6.9,
+  "rule_pass_rate": 0.0,
+  "phrases": [
+    {
+      "id": "I1-01",
+      "section": "I1",
+      "model_text": "我愿将生命献给你",
+      "sing_text": "我愿将生命献给你",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "budget_distance": 9,
+      "verdict": "fail"
+    },
+    {
+      "id": "I1-02",
+      "section": "I1",
+      "model_text": "我愿将生命献给你",
+      "sing_text": "我愿将生命献给你",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "budget_distance": 9,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "夏日海滨赤足行",
+      "sing_text": "夏日海滨赤足行",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 6,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "唤你之间足已湿",
+      "sing_text": "唤你之间足已湿",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 7,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "忘却波浪干肌肤",
+      "sing_text": "忘却波浪干肌肤",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 6,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "你牵引之手燃我身",
+      "sing_text": "你牵引之手燃我身",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 6,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "我愿把我的生命献给你",
+      "sing_text": "我愿把我的生命献给你",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "budget_distance": 7,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "我愿把我的生命献给你",
+      "sing_text": "我愿把我的生命献给你",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "budget_distance": 7,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "model_text": "跨越吧，我愿把海风献给你",
+      "sing_text": "跨越吧，我愿把海风献给你",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "budget_distance": 6,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-04",
+      "section": "C1",
+      "model_text": "我愿把迎风的手臂献给你",
+      "sing_text": "我愿把迎风的手臂献给你",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "budget_distance": 6,
+      "verdict": "fail"
+    }
+  ],
+  "sections": [
+    {
+      "section": "I1",
+      "draft_run": "run-20261105T124131954394Z-0e29fbe8",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "I1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            17,
+            17
+          ],
+          "actual": 8,
+          "fix": "差 9 字，补到 17 字以上"
+        },
+        {
+          "phrase_id": "I1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            17,
+            17
+          ],
+          "actual": 8,
+          "fix": "差 9 字，补到 17 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "I1-01",
+          "I1-02"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "V1",
+      "draft_run": "run-20261105T124131954394Z-0e29fbe8",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "V1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            13,
+            13
+          ],
+          "actual": 7,
+          "fix": "差 6 字，补到 13 字以上"
+        },
+        {
+          "phrase_id": "V1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            14,
+            14
+          ],
+          "actual": 7,
+          "fix": "差 7 字，补到 14 字以上"
+        },
+        {
+          "phrase_id": "V1-03",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            13,
+            13
+          ],
+          "actual": 7,
+          "fix": "差 6 字，补到 13 字以上"
+        },
+        {
+          "phrase_id": "V1-04",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            14,
+            14
+          ],
+          "actual": 8,
+          "fix": "差 6 字，补到 14 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "V1-01",
+          "V1-02",
+          "V1-03",
+          "V1-04"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "C1",
+      "draft_run": "run-20261105T124131954394Z-0e29fbe8",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "C1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            17,
+            17
+          ],
+          "actual": 10,
+          "fix": "差 7 字，补到 17 字以上"
+        },
+        {
+          "phrase_id": "C1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            17,
+            17
+          ],
+          "actual": 10,
+          "fix": "差 7 字，补到 17 字以上"
+        },
+        {
+          "phrase_id": "C1-03",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            17,
+            17
+          ],
+          "actual": 11,
+          "fix": "差 6 字，补到 17 字以上"
+        },
+        {
+          "phrase_id": "C1-03",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            17,
+            17
+          ],
+          "actual": 11,
+          "fix": "去掉标点；停顿用空格表达"
+        },
+        {
+          "phrase_id": "C1-04",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            17,
+            17
+          ],
+          "actual": 11,
+          "fix": "差 6 字，补到 17 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "C1-01",
+          "C1-02",
+          "C1-03",
+          "C1-04"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    }
+  ],
+  "note": "仅为人工预算和规则的事后评测，不是论文原始节奏距离，也不代表真人可唱性评分。"
+}

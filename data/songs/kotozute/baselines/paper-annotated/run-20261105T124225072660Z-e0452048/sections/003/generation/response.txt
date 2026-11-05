@@ -1,0 +1,36 @@
+1. 抓住过去丢弃走向未来 (9 syllables: zhuā zhù guò qù diū qì zǒu xiàng wèi lái) ✓
+2. 不断相遇却想移开视线 (12 syllables: bù duàn xiāng yù què xiǎng yí kāi shì xiàn) ✓
+3. 比起那个自己 (7 syllables: bǐ qǐ nà ge zì jǐ) ✓
+4. 比时空更远 (5 syllables: bǐ shí kōng gèng yuǎn) ✓
+
+Rhyme check (final phoneme per line):
+- Line 1: lái → /ai/
+- Line 2: xiàn → /ian/
+- Line 3: jǐ → /i/
+- Line 4: yuǎn → /üan/
+
+Original rhyme pattern check:
+- 未来 (mirai) → /ai/
+- 逸らしたい (yokorashitai) → /ai/
+- 自分よりも (jibun yori mo) → /o/
+- 時空よりも (jikū yori mo) → /o/
+
+The original has lines 1–2 rhyming (/ai/) and lines 3–4 rhyming (/o/). My translation has lines 1 (/ai/) and 2 (/ian/) not matching. Let me revise:
+
+1. 抓住过去丢弃走向未来 (9) — final /ai/
+2. 不断相遇却想移开眼外 (12: bù duàn xiāng yù què xiǎng yí kāi yǎn wài) — final /ai/ ✓
+3. 比起那个自己 (7: bǐ qǐ nà ge zì jǐ) — final /i/
+4. 比时空更际 (5: bǐ shí kōng gèng jì) — final /i/ ✓
+
+Now lines 1–2 rhyme (/ai/), lines 3–4 rhyme (/i/). Original lines 3–4 rhyme /o/; my /i/ differs but maintains an internal rhyme pair. Let me try to match /o/ for lines 3–4:
+
+3. 比起那个自我 (7: bǐ qǐ nà ge zì wǒ) — final /o/ ✓
+4. 比时空更多 (5: bǐ shí kōng gèng duō) — final /o/ ✓
+
+Final version:
+1. 抓住过去丢弃走向未来 (9) — /ai/
+2. 不断相遇却想移开眼外 (12) — /ai/
+3. 比起那个自我 (7) — /o/
+4. 比时空更多 (5) — /o/
+
+Rhyme pattern matches original (AABB with /ai/ then /o/), syllable counts exact (9/12/7/5), theme preserved.

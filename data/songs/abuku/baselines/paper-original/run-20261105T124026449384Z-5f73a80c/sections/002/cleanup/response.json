@@ -1,0 +1,21 @@
+{
+  "id": "9cc049c2-0446-4cce-91b7-2028b75fa637",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"啊，无可奈何地悲伤\",\"驱动我的野兽\",\"同义反复握住的手中的泡沫\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 118,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 23,
+    "service_tier": "standard"
+  }
+}

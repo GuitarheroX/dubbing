@@ -1,0 +1,10 @@
+{
+  "song": "fly_me_to_the_star",
+  "variant": "paper-original",
+  "run": "run-20261105T124107008508Z-441a11d4",
+  "status": "completed",
+  "partial_export": false,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "source_directory": "data/songs/fly_me_to_the_star/baselines/paper-original/run-20261105T124107008508Z-441a11d4"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "80e97561-db2e-4c4d-851b-f35922c9f57f",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"迎风穿行，掠过花丛\",\"穿过云层，向下风处唯我独行\",\"晨光微露，快些前行\",\"这青草与灵魂的气息\",\"穿风而过，掠过天空\",\"穿过云层，向下风处唯我独行\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 156,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 61,
+    "service_tier": "standard"
+  }
+}

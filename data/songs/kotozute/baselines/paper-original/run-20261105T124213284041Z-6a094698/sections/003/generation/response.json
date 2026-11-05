@@ -1,0 +1,21 @@
+{
+  "id": "c0718c27-a8d6-4b0f-a64a-16b373ad705c",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "紧抓过去抛弃迎未来\n不断相遇却想移开眼\n比起那个自己\n比起时空"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 96,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 21,
+    "service_tier": "standard"
+  }
+}

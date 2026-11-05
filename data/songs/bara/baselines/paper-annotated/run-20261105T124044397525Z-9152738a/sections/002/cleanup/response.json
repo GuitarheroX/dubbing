@@ -1,0 +1,21 @@
+{
+  "id": "df43cc82-c6f8-4abf-8bfe-8d8281b6ac67",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"我生来就注定是那朵玫瑰花的命运\",\"我生来就要华丽而激烈地活着如那风云\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1362,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 30,
+    "service_tier": "standard"
+  }
+}

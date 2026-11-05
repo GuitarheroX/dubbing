@@ -1,0 +1,21 @@
+{
+  "id": "a0f12bb7-ea9b-4c88-8ef0-d3d7e8c03e63",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "悠悠悠悠将梦燃烧\n以灵魂那洁白洁白的色调\n只想为喜悦之火点上火苗\n想象不过是些许零钱泡泡\n用不冷却的话语之双手\n数着那些烧不尽的所有\n只想捧起就好"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 126,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 47,
+    "service_tier": "standard"
+  }
+}

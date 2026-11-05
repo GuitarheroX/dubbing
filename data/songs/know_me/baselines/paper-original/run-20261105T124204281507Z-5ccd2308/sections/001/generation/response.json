@@ -1,0 +1,21 @@
+{
+  "id": "72e4f7f2-1817-4824-94ad-ddd791e0616a",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "同样地追求着\n沉默着就好吗？\n如你所愿倒着行走\n仿佛已断了气息"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 96,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 21,
+    "service_tier": "standard"
+  }
+}

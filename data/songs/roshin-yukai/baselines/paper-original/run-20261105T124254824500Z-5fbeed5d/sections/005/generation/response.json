@@ -1,0 +1,21 @@
+{
+  "id": "6414e79e-d184-4809-86ed-e6a8371a0113",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "核融合爐啊\n真想縱身跳入其中\n被湛藍光芒包裹多美麗\n核融合爐啊\n若縱身跳入其中的話\n彷彿一切都會被原諒"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 115,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 39,
+    "service_tier": "standard"
+  }
+}

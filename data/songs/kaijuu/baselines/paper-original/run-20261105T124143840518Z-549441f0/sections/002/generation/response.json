@@ -1,0 +1,21 @@
+{
+  "id": "80ac71f6-629b-4ac6-a51e-d1d60c0e3ef2",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "渐渐吃掉\n红与蓝的群星\n从未来到过去\n按顺序吃掉\n咀嚼几十次\n融化了就喝下"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 104,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 28,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "3cd384b0-fe7e-49ed-a677-50090761a020",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"用无形的歌描绘着黎明\",\"在那浅浅的浅浅的夏日彼方\",\"我看见了你不冰冷的手掌心\",\"淡淡天空 黎明的萤火\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 204,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 36,
+    "service_tier": "standard"
+  }
+}

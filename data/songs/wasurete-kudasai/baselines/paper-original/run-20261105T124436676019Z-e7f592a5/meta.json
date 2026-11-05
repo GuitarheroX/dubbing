@@ -1,0 +1,78 @@
+{
+  "status": "failed",
+  "calls": [
+    {
+      "section": "I1",
+      "stage": "generation",
+      "usage": {
+        "input_tokens": 87,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 977,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "I1",
+      "stage": "cleanup",
+      "usage": {
+        "input_tokens": 1078,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 30,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "V1",
+      "stage": "generation",
+      "usage": {
+        "input_tokens": 131,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 45,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "V1",
+      "stage": "cleanup",
+      "usage": {
+        "input_tokens": 146,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 51,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "B1",
+      "stage": "generation",
+      "usage": {
+        "input_tokens": 74,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 11,
+        "service_tier": "standard"
+      },
+      "reused": false
+    },
+    {
+      "section": "B1",
+      "stage": "cleanup",
+      "usage": {
+        "input_tokens": 112,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 17,
+        "service_tier": "standard"
+      },
+      "reused": false
+    }
+  ],
+  "error": "清理输出 3 行，预期 1 行；未自动删除或补写任何行"
+}

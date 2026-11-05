@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "两人的心跳 重叠在一起\n偶尔会感到不安 因为\n你似乎要消失不见\n闪耀的眼眸中 请不要映出我以外的人\noh, fly me to the star"
+  },
+  "data": {
+    "response": "两人的心跳 重叠在一起\n偶尔会感到不安 因为\n你似乎要消失不见\n闪耀的眼眸中 请不要映出我以外的人\noh, fly me to the star"
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "两人的心跳 重叠在一起\n偶尔会感到不安 因为\n你似乎要消失不见\n闪耀的眼眸中 请不要映出我以外的人\noh, fly me to the star"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

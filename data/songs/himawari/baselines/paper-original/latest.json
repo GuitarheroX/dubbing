@@ -1,0 +1,10 @@
+{
+  "song": "himawari",
+  "variant": "paper-original",
+  "run": "run-20261105T124131954394Z-0e29fbe8",
+  "status": "completed",
+  "partial_export": false,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "source_directory": "data/songs/himawari/baselines/paper-original/run-20261105T124131954394Z-0e29fbe8"
+}

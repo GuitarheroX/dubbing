@@ -1,0 +1,21 @@
+{
+  "id": "5ad05a78-6fed-46c2-8d2f-1bdfab264922",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "ばらばらのリズムで (ba-ra-ba-ra-no-ri-zu-mu-de, 12 mora)\n口ずさめたらきいて (ku-chi-zu-sa-me-ta-ra-ki-i-te, 13 mora)\n\nChinese translation with mora/syllable count per line:\n\n零散的节奏中 (líng-sǎn-de-jié-zòu-zhōng, 7 syllables)\n若能哼唱请听 (ruò-néng-hēng-chàng-qǐng-tīng, 7 syllables)\n\nRhyme check: 中 (zhōng) and 听 (tīng) — both end in -ng, matching rhyme. Theme preserved: scattered rhythm, humming, and listening."
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 81,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 157,
+    "service_tier": "standard"
+  }
+}

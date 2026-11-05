@@ -1,0 +1,21 @@
+{
+  "id": "92535a43-b7fa-4cd6-a72c-187784f0f7fa",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"我已然接受了那玫瑰花的生命赐予\",\"我燃烧着满腔热情永远地活下去每一天\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 671,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 25,
+    "service_tier": "standard"
+  }
+}

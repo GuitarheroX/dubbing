@@ -1,0 +1,21 @@
+{
+  "id": "f43810ae-e4ea-482f-aa41-7c212ccf5076",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"我渐渐变得轻盈\",\"你把一切都夺去\",\"无论什么都能吸入\",\"全都吞噬殆尽\",\"我渐渐变得虚弱\",\"心中的黑色污渍\",\"也被彻底洗净\",\"于是什么都不用做也好\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 139,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 44,
+    "service_tier": "standard"
+  }
+}

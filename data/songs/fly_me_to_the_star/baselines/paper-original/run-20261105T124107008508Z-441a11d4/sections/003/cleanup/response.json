@@ -1,0 +1,21 @@
+{
+  "id": "d6e4ec51-2269-4992-909c-8f1db9897b37",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"两人的心跳 重叠在一起\",\"偶尔会感到不安 因为\",\"你似乎要消失不见\",\"闪耀的眼眸中 请不要映出我以外的人\",\"oh, fly me to the star\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 139,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 44,
+    "service_tier": "standard"
+  }
+}

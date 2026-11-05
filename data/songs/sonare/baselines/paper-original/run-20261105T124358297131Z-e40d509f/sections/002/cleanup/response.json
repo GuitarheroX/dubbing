@@ -1,0 +1,21 @@
+{
+  "id": "628e7776-f93f-4815-a7b1-3769e2f866c9",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"零散的节奏中\",\"若能哼唱请听\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 258,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 16,
+    "service_tier": "standard"
+  }
+}

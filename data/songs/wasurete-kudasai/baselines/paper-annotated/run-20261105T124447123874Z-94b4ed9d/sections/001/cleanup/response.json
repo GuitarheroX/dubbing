@@ -1,0 +1,21 @@
+{
+  "id": "3a66b924-af9a-42b1-8dd9-2f9cc2e0588a",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"请收下我的心\",\"我要送你一束鲜花\",\"只让那摇曳的发丝随着风轻轻飘散\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 290,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 28,
+    "service_tier": "standard"
+  }
+}

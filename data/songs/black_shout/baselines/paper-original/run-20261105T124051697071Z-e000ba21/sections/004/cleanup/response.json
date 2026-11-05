@@ -1,0 +1,21 @@
+{
+  "id": "d2a28973-98f2-44f9-a031-c12fc09555e5",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"即使明天是\",\"死路一条也\",\"用自己双手\",\"去开辟道路\",\"颤抖的身躯\",\"紧紧拥抱住\",\"决心迈出步\",\"想实现的梦 现在就夺取！\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 138,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 43,
+    "service_tier": "standard"
+  }
+}

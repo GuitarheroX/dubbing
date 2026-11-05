@@ -1,0 +1,21 @@
+{
+  "id": "4a4f4f61-97a7-4a51-a8ef-ba32cbed9951",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"潜藏的忧虑啊\",\"怎么也难以坦率\",\"和谁都说不通呢\",\"连自己也是\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 120,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 25,
+    "service_tier": "standard"
+  }
+}

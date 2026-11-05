@@ -1,0 +1,21 @@
+{
+  "id": "51968445-44ec-4469-bfc7-1d6e37d2a424",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "全部 全部 都是我\n扭扭捏捏 抽抽噎噎 都是我\n全部 全部 抱紧吧\n稍微睡一会儿\n痛痛痛痛 飞走吧\n愿悲伤不会夺走一切\n我要 做我自己的伙伴\n还在 还在 漫长路途的中途\n稍微休息一下\n谁也不会责备的"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 162,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 69,
+    "service_tier": "standard"
+  }
+}

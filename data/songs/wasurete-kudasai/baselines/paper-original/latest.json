@@ -1,0 +1,10 @@
+{
+  "song": "wasurete-kudasai",
+  "variant": "paper-original",
+  "run": "run-20261105T124436676019Z-e7f592a5",
+  "status": "failed",
+  "partial_export": true,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "source_directory": "data/songs/wasurete-kudasai/baselines/paper-original/run-20261105T124436676019Z-e7f592a5"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "55e9a4f9-12d9-45f5-997e-359df1caaff4",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"我 一直注视着你\",\"仿佛已将孤独放下\",\"今夜 月亮也含笑相迎\",\"朝我这边看\",\"oh, fly me to the star\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 574,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 37,
+    "service_tier": "standard"
+  }
+}

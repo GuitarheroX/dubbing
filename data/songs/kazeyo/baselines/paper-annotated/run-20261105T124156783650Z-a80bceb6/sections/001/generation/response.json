@@ -1,0 +1,21 @@
+{
+  "id": "0855efd2-0978-418d-a603-ce7128668e33",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"黄昏城镇的寂寥\"\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"人心变幻的空虚\"\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"风载着一切前行\"\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"乘上流云去漂泊\"\n    }\n  ]\n}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 447,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 110,
+    "service_tier": "standard"
+  }
+}
