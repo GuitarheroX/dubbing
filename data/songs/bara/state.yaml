@@ -1,0 +1,33 @@
+sections:
+  V1:
+    round: 1
+    draft: 20261103T172816_b_c6a5a6
+    review: 20261103T172824_c_62aa19
+    verdict: pass
+  B1:
+    round: 1
+    draft: 20261103T172824_b_e31a46
+    review: 20261103T172835_c_51bd48
+    verdict: pass
+  C1:
+    round: 1
+    draft: 20261103T172835_b_9b9208
+    review: 20261103T172847_c_7be83a
+    verdict: pass
+  V2:
+    round: 1
+    draft: 20261103T172847_b_9b8c11
+    review: 20261103T172856_c_55530c
+    verdict: pass
+  B2:
+    round: 1
+    draft: 20261103T172856_b_2736a0
+    review: 20261103T172903_c_169aed
+    verdict: pass
+  C2:
+    round: 1
+    draft: 20261103T172903_b_77e43a
+    review: 20261103T172907_c_726dcc
+    verdict: pass
+song_level:
+  analysis: 20261103T172804_a_ed0099

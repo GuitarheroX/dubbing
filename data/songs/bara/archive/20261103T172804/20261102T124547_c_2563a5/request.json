@@ -1,0 +1,121 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "phrases": [
+      {
+        "id": "V1-01",
+        "section": "V1",
+        "ja": "草むらに　名も知れず",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "V1-02",
+        "section": "V1",
+        "ja": "咲いている　花ならば",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "V1-03",
+        "section": "V1",
+        "ja": "ただ風を　受けながら",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "V1-04",
+        "section": "V1",
+        "ja": "そよいでいれば　いいけれど",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          7,
+          5
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V1",
+      "phrases": [
+        {
+          "id": "V1-01",
+          "zh": "长在草叶间 无人唤我名",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "前五字一句、后五字一句，中间空一格断开，正好对应两个五音"
+          }
+        },
+        {
+          "id": "V1-02",
+          "zh": "开在路旁边 不为谁开落",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "五加五，空格落在路旁边之后"
+          }
+        },
+        {
+          "id": "V1-03",
+          "zh": "只要风经过 我便弯下腰",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "五加五，用弯下腰替代摇曳，避免与下一句的摇摆重复"
+          }
+        },
+        {
+          "id": "V1-04",
+          "zh": "随风轻轻地摇摆 一辈子就够",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "按七加五切，前七字一口气唱完，后五字落在收束音上"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

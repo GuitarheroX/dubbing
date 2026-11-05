@@ -1,0 +1,89 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "phrases": [
+      {
+        "id": "B1-01",
+        "section": "B1",
+        "ja": "気づけなかった",
+        "budget": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      {
+        "id": "B1-02",
+        "section": "B1",
+        "ja": "きっと甘えてたのかな",
+        "budget": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      {
+        "id": "B1-03",
+        "section": "B1",
+        "ja": "だから自分愛して人を愛してみたいの",
+        "budget": {
+          "min": 17,
+          "max": 17
+        },
+        "pattern": [
+          2,
+          6,
+          5,
+          4
+        ]
+      }
+    ],
+    "draft": {
+      "section": "B1",
+      "phrases": [
+        {
+          "id": "B1-01",
+          "zh": "竟一直没察觉",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "六字整句，没有标点，语气轻而坦白"
+          }
+        },
+        {
+          "id": "B1-02",
+          "zh": "也许是我太习惯被宠爱",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "十字整句，对应原句猜想的语气"
+          }
+        },
+        {
+          "id": "B1-03",
+          "zh": "所以 先好好爱自己 再把心打开 拥抱别人",
+          "chars": 17,
+          "self_check": {
+            "budget": [
+              17,
+              17
+            ],
+            "ok": true,
+            "note": "按旋律切成 2+6+5+4 四段，空格只作停顿不算字"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

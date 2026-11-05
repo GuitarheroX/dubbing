@@ -1,0 +1,69 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "O1",
+    "phrases": [
+      {
+        "id": "O1-01",
+        "section": "O1",
+        "ja": "連れてって",
+        "budget": {
+          "min": 4,
+          "max": 4
+        },
+        "pattern": [
+          2,
+          2
+        ]
+      },
+      {
+        "id": "O1-02",
+        "section": "O1",
+        "ja": "oh, fly me to the star",
+        "budget": {
+          "min": 6,
+          "max": 6
+        },
+        "pattern": [
+          1,
+          5
+        ]
+      }
+    ],
+    "draft": {
+      "section": "O1",
+      "phrases": [
+        {
+          "id": "O1-01",
+          "zh": "带我 走吧",
+          "chars": 4,
+          "self_check": {
+            "budget": [
+              4,
+              4
+            ],
+            "ok": true,
+            "note": "按 pattern 切成 2+2，「带我」「走吧」各占两个音"
+          }
+        },
+        {
+          "id": "O1-02",
+          "zh": "快 带我飞向星",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "「快」占第 1 个音，其余五字连唱，和前面各段重复句保持一致"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

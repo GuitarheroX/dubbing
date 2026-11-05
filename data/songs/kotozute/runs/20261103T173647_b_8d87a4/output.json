@@ -1,0 +1,148 @@
+{
+  "section": "C1",
+  "phrases": [
+    {
+      "id": "C1-01",
+      "zh": "暗里斜进一线日光 想把手伸出",
+      "chars": 13,
+      "self_check": {
+        "budget": [
+          12,
+          13
+        ],
+        "ok": true,
+        "note": "中间空格只是分句停顿，不计入字数；共 13 字，落在 12 到 13 的区间内"
+      }
+    },
+    {
+      "id": "C1-02",
+      "zh": "此刻就想和你说说话",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "整句连读，共 9 字"
+      }
+    },
+    {
+      "id": "C1-03",
+      "zh": "朝日漫过指尖 染成金色",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": true,
+        "note": "按 pattern 分成 6 个字和 4 个字两段，空格处换气"
+      }
+    },
+    {
+      "id": "C1-04",
+      "zh": "多自由",
+      "chars": 3,
+      "self_check": {
+        "budget": [
+          3,
+          3
+        ],
+        "ok": true,
+        "note": "只有三个字，整句连着唱"
+      }
+    },
+    {
+      "id": "C1-05",
+      "zh": "多自由",
+      "chars": 3,
+      "self_check": {
+        "budget": [
+          3,
+          3
+        ],
+        "ok": true,
+        "note": "和上一句完全一样，保留原曲的重复"
+      }
+    },
+    {
+      "id": "C1-06",
+      "zh": "我此刻才睁开双眼 醒过来",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": true,
+        "note": "中间空格只是分句停顿，共 11 字，句尾避开了「了」字"
+      }
+    },
+    {
+      "id": "C1-07",
+      "zh": "此刻就想和你说说话",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "和 C1-02 完全相同，保留原曲的重复"
+      }
+    },
+    {
+      "id": "C1-08",
+      "zh": "值得爱的日子 染上晨光",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": true,
+        "note": "按 pattern 分成 6 个字和 4 个字两段"
+      }
+    },
+    {
+      "id": "C1-09",
+      "zh": "多自由",
+      "chars": 3,
+      "self_check": {
+        "budget": [
+          3,
+          3
+        ],
+        "ok": true,
+        "note": "和三句重复句一致"
+      }
+    },
+    {
+      "id": "C1-10",
+      "zh": "多自由",
+      "chars": 3,
+      "self_check": {
+        "budget": [
+          3,
+          3
+        ],
+        "ok": true,
+        "note": "和三句重复句一致"
+      }
+    },
+    {
+      "id": "C1-11",
+      "zh": "飞翔",
+      "chars": 2,
+      "self_check": {
+        "budget": [
+          2,
+          2
+        ],
+        "ok": true,
+        "note": "两个字，收在开口音上"
+      }
+    }
+  ]
+}

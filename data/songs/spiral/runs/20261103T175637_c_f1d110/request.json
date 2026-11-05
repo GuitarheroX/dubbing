@@ -1,0 +1,71 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "phrases": [
+      {
+        "id": "B1-01",
+        "section": "B1",
+        "ja": "このまま何かを待ち続けるフリするの",
+        "budget": {
+          "min": 18,
+          "max": 18
+        },
+        "pattern": [
+          4,
+          3,
+          6,
+          5
+        ]
+      },
+      {
+        "id": "B1-02",
+        "section": "B1",
+        "ja": "ここから僕はやりなおせますか",
+        "budget": {
+          "min": 14,
+          "max": 14
+        },
+        "pattern": [
+          6,
+          8
+        ]
+      }
+    ],
+    "draft": {
+      "section": "B1",
+      "phrases": [
+        {
+          "id": "B1-01",
+          "zh": "楼梯转角 停住脚 假装还在等谁 等到灯熄灭",
+          "chars": 18,
+          "self_check": {
+            "budget": [
+              18,
+              18
+            ],
+            "ok": true,
+            "note": "四段按 4/3/6/5 落拍，空格处是旋律的断点"
+          }
+        },
+        {
+          "id": "B1-02",
+          "zh": "从这里再往前 我还能重新来过吗",
+          "chars": 14,
+          "self_check": {
+            "budget": [
+              14,
+              14
+            ],
+            "ok": true,
+            "note": "前六字占第一段 从 这里 再 往 前，后八字整句悬着收尾"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

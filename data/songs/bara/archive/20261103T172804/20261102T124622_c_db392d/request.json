@@ -1,0 +1,121 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "phrases": [
+      {
+        "id": "V2-01",
+        "section": "V2",
+        "ja": "どの星が　めぐる時",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "V2-02",
+        "section": "V2",
+        "ja": "散ってゆく　私だろう",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "V2-03",
+        "section": "V2",
+        "ja": "平凡な　人生は",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "V2-04",
+        "section": "V2",
+        "ja": "かなえられない　身だけれど",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          7,
+          5
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V2",
+      "phrases": [
+        {
+          "id": "V2-01",
+          "zh": "哪一颗星辰 数我这一生",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "5+5断句，与旋律两段对齐"
+          }
+        },
+        {
+          "id": "V2-02",
+          "zh": "终将散落的 那个人是我",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "5+5，「散落的」承接上句星辰下坠的意象"
+          }
+        },
+        {
+          "id": "V2-03",
+          "zh": "平凡的人生 窗里亮着灯",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "5+5，用亮灯的窗代指够不着的寻常日子"
+          }
+        },
+        {
+          "id": "V2-04",
+          "zh": "那扇窗里的灯火 照不到我身",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "7+5，前七字连读成一口气，后五字落在低音"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

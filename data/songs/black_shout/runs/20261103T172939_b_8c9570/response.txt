@@ -1,0 +1,45 @@
+{
+  "section": "B1",
+  "phrases": [
+    {
+      "id": "B1-01",
+      "zh": "挡路的一切都 嫉妒",
+      "chars": 8,
+      "self_check": {
+        "budget": [8, 8],
+        "ok": true,
+        "note": "按旋律切成前六后二 空格只断句不计字"
+      }
+    },
+    {
+      "id": "B1-02",
+      "zh": "抖落贴上身那 冲动",
+      "chars": 8,
+      "self_check": {
+        "budget": [8, 8],
+        "ok": true,
+        "note": "前六字写动作 后两字落在冲动"
+      }
+    },
+    {
+      "id": "B1-03",
+      "zh": "黑从骨里翻涌 本能",
+      "chars": 8,
+      "self_check": {
+        "budget": [8, 8],
+        "ok": true,
+        "note": "前六字写自己的颜色上涌 后两字收在本能"
+      }
+    },
+    {
+      "id": "B1-04",
+      "zh": "我要亲手把黑夺回来",
+      "chars": 9,
+      "self_check": {
+        "budget": [9, 9],
+        "ok": true,
+        "note": "整句一气唱完 不另加语气字"
+      }
+    }
+  ]
+}

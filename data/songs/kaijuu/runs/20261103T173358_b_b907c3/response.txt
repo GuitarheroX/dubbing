@@ -1,0 +1,41 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "一口 又一口",
+      "chars": 5,
+      "self_check": {"budget": [5, 5], "ok": true, "note": "空格断开处对应旋律 2+3 的两段"}
+    },
+    {
+      "id": "V1-02",
+      "zh": "红的蓝的星 落满舌尖",
+      "chars": 9,
+      "self_check": {"budget": [9, 9], "ok": true, "note": "前五字「红的蓝的星」对第一段，后四字对第二段"}
+    },
+    {
+      "id": "V1-03",
+      "zh": "从未来 嚼回过去",
+      "chars": 7,
+      "self_check": {"budget": [7, 7], "ok": true, "note": "三字加四字，正好对上 3+4"}
+    },
+    {
+      "id": "V1-04",
+      "zh": "一颗 又一颗",
+      "chars": 5,
+      "self_check": {"budget": [5, 5], "ok": true, "note": "与 V1-01 结构重复，只换「一口」为「一颗」"}
+    },
+    {
+      "id": "V1-05",
+      "zh": "嚼碎星屑 咽几十遍",
+      "chars": 8,
+      "self_check": {"budget": [8, 8], "ok": true, "note": "四字加四字，与旋律两段对齐"}
+    },
+    {
+      "id": "V1-06",
+      "zh": "融化在喉咙 喝完",
+      "chars": 7,
+      "self_check": {"budget": [7, 7], "ok": true, "note": "五字加两字，末尾两字落在尾段短音"}
+    }
+  ]
+}

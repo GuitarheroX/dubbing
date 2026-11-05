@@ -1,0 +1,135 @@
+{
+  "section": "C1",
+  "phrases": [
+    {
+      "id": "C1-01",
+      "zh": "世界像线头松开的声音",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": true,
+        "note": "整句一气连唱，不多不少十字"
+      }
+    },
+    {
+      "id": "C1-02",
+      "zh": "向我跑过来",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "连读五字，收在来字上开口"
+      }
+    },
+    {
+      "id": "C1-03",
+      "zh": "向我跑过来",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "与原曲重复句完全一致"
+      }
+    },
+    {
+      "id": "C1-04",
+      "zh": "晨光涌进来",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "五字，与上句同为来字收尾保持连贯"
+      }
+    },
+    {
+      "id": "C1-05",
+      "zh": "在未来回过头来的那个你",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": true,
+        "note": "十一字连读，那个略轻唱"
+      }
+    },
+    {
+      "id": "C1-06",
+      "zh": "我也挥挥手",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "五字，挥挥手略带连音"
+      }
+    },
+    {
+      "id": "C1-07",
+      "zh": "一桨一桨划",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "叠字模拟划桨节奏，五字"
+      }
+    },
+    {
+      "id": "C1-08",
+      "zh": "一桨一桨划",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "与原曲重复句完全一致"
+      }
+    },
+    {
+      "id": "C1-09",
+      "zh": "往哪里去呢",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "五字，往字与下句呼应"
+      }
+    },
+    {
+      "id": "C1-10",
+      "zh": "往哪里都行",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "五字，与上句共用往哪里，保留原曲重复感"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "section": "B1",
+  "phrases": [
+    {
+      "id": "B1-01",
+      "zh": "云飘远 就让它飘 我抬头",
+      "chars": 10,
+      "self_check": {"budget": [10, 10], "ok": true, "note": "按 3/4/3 断句，对应 [4,3,3] 的旋律停顿"}
+    },
+    {
+      "id": "B1-02",
+      "zh": "向远方 嘶吼一声",
+      "chars": 7,
+      "self_check": {"budget": [7, 7], "ok": true, "note": "前 3 后 4，靠近 [4,3] 的切分"}
+    },
+    {
+      "id": "B1-03",
+      "zh": "喉咙发烫 来不及 换口气",
+      "chars": 10,
+      "self_check": {"budget": [10, 10], "ok": true, "note": "4/3/3 与 pattern 完全对齐"}
+    },
+    {
+      "id": "B1-04",
+      "zh": "这痛 烙在胸口",
+      "chars": 6,
+      "self_check": {"budget": [6, 6], "ok": true, "note": "3/3 断句，接住上一句没喘上来的那口气"}
+    }
+  ]
+}

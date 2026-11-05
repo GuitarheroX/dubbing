@@ -1,0 +1,37 @@
+song:
+  id: love_2000
+  title: LOVE 2000
+  artist: hitomi
+  source_lang: ja
+
+# budget: 基于发声音节的文本估算，尚未根据歌曲演唱音频核对。
+# pattern: 暂定发声分组，并非经音轨确认的旋律分组。
+
+sections:
+  - {id: C1, role: chorus}
+  - {id: V1, role: verse}
+  - {id: B1, role: pre-chorus}
+  - {id: C2, role: chorus}
+  - {id: O1, role: outro}
+
+phrases:
+  # ===== C1 =====
+  - {id: C1-01, section: C1, ja: "愛はどこからやってくるのでしょう 自分の胸に問いかけた", budget: {min: 25, max: 25}, pattern: [3, 4, 7, 3, 3, 5]}
+  - {id: C1-02, section: C1, ja: "ニセモノなんか興味はないの ホントだけを見つめたい", budget: {min: 22, max: 22}, pattern: [4, 2, 3, 3, 2, 3, 5]}
+
+  # ===== V1 =====
+  - {id: V1-01, section: V1, ja: "悲しいNEWSとどうでもいい話", budget: {min: 14, max: 14}, pattern: [7, 7]}
+  - {id: V1-02, section: V1, ja: "朝からもうそんなのうんざりで", budget: {min: 12, max: 12}, pattern: [4, 4, 4]}
+  - {id: V1-03, section: V1, ja: "今日はいつもよりも風が気持ちイイからネ", budget: {min: 14, max: 14}, pattern: [7, 7]}
+  - {id: V1-04, section: V1, ja: "楽しさに着替えてネ", budget: {min: 9, max: 9}, pattern: [5, 4]}
+
+  # ===== B1 =====
+  - {id: B1-01, section: B1, ja: "気づけなかった きっと甘えてたのかな", budget: {min: 16, max: 16}, pattern: [7, 2, 7]}
+  - {id: B1-02, section: B1, ja: "だから自分愛して 人を愛してみたいの", budget: {min: 18, max: 18}, pattern: [3, 6, 5, 4]}
+
+  # ===== C2 =====
+  - {id: C2-01, section: C2, ja: "愛はどこからやってくるのでしょう 自分の胸に問いかけた", budget: {min: 25, max: 25}, pattern: [3, 4, 7, 3, 3, 5]}
+  - {id: C2-02, section: C2, ja: "ニセモノなんか興味はないワ ホンモノだけ見つけたい", budget: {min: 22, max: 22}, pattern: [4, 2, 3, 3, 3, 2, 5]}
+
+  # ===== O1 =====
+  - {id: O1-01, section: O1, ja: "あなたをずっと探してた", budget: {min: 11, max: 11}, pattern: [4, 2, 5]}

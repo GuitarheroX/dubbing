@@ -1,0 +1,148 @@
+{
+  "section": "C1",
+  "phrases": [
+    {
+      "id": "C1-01",
+      "zh": "黑暗里透进一线光 我伸出手",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          12,
+          13
+        ],
+        "ok": true,
+        "note": "中间用空格断开，光后一口气，共十二字"
+      }
+    },
+    {
+      "id": "C1-02",
+      "zh": "现在就想和你说说话",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "整句九字连读，重复「说」字已有节奏感"
+      }
+    },
+    {
+      "id": "C1-03",
+      "zh": "朝日漫过天边 染上脸颊",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": true,
+        "note": "按 pattern 6+4 断成「朝日漫过天边」加「染上脸颊」"
+      }
+    },
+    {
+      "id": "C1-04",
+      "zh": "我自由",
+      "chars": 3,
+      "self_check": {
+        "budget": [
+          3,
+          3
+        ],
+        "ok": true,
+        "note": "三字一句，短促收住"
+      }
+    },
+    {
+      "id": "C1-05",
+      "zh": "我自由",
+      "chars": 3,
+      "self_check": {
+        "budget": [
+          3,
+          3
+        ],
+        "ok": true,
+        "note": "与上一句完全重复，保留原曲的重复美"
+      }
+    },
+    {
+      "id": "C1-06",
+      "zh": "我就在这一刻 静静睁开眼",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": true,
+        "note": "空格在「刻」后断开，避开句尾虚字"
+      }
+    },
+    {
+      "id": "C1-07",
+      "zh": "现在就想和你说说话",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "与 C1-02 完全相同，呼应原曲重复句"
+      }
+    },
+    {
+      "id": "C1-08",
+      "zh": "心爱的那些天 染上脸颊",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": true,
+        "note": "按 pattern 6+4 断句，后半与 C1-03 一致形成回响"
+      }
+    },
+    {
+      "id": "C1-09",
+      "zh": "我自由",
+      "chars": 3,
+      "self_check": {
+        "budget": [
+          3,
+          3
+        ],
+        "ok": true,
+        "note": "再次重复，一次确认一次试探"
+      }
+    },
+    {
+      "id": "C1-10",
+      "zh": "我自由",
+      "chars": 3,
+      "self_check": {
+        "budget": [
+          3,
+          3
+        ],
+        "ok": true,
+        "note": "与上一句完全重复"
+      }
+    },
+    {
+      "id": "C1-11",
+      "zh": "飞翔",
+      "chars": 2,
+      "self_check": {
+        "budget": [
+          2,
+          2
+        ],
+        "ok": true,
+        "note": "两字收尾，把前面所有的仰望换成离地的动作"
+      }
+    }
+  ]
+}

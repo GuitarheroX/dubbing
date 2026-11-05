@@ -22,11 +22,83 @@
 -  使用三个 Agent A B C，分别用来处理情感意象，产生译词，以及检查译词是否满足约束。其中 A 和 B 使用 AI，C 基于规则。
 - A 拿到歌词原文后，体会其中的意象与情感，用合适的方式表达出来作为输出传给 B；B 拿到歌词原文，每一句歌词应该产生的音节数（这一部分由人工标注），以及 A 的输出，然后基于此生成一份译文；C 拿到 B 的译文后，检测每一句歌词是否满足了可唱性约束。如果不满足的话，将不满足的地方传输 B，让 B 修改自己的输出。
 - 可以使用 LangGraph 作为框架。
+- 当前版本使用普通 Python 实现上述编排，尚未引入 LangGraph；A、B 调用模型，C 使用确定性的规则检查，每段默认最多生成 / 检查 3 轮。
 
 ## 实现
 - 代码在 `dubbing/`，规范见 [docs/data-model.md](docs/data-model.md)，操作见 [docs/usage.md](docs/usage.md)。
-- 模型调用已接通 DeepSeek 的 Anthropic 兼容端点（`dubbing/llm.py`）：`export DEEPSEEK_API_KEY=...` 后加 `--client api` 才真正调用，不加则只渲染请求停住。
-- 已标注 10 首：`data/songs/kotozute/song.yaml`（言伝，4 段 21 句），以及从
-  `data/lyrics.txt` 批量导入的 9 首。
+- 模型调用已接通 DeepSeek 的 Anthropic 兼容端点（`dubbing/llm.py`）。默认使用 `pending` 客户端，在需要模型调用的位置保存请求并暂停；配置 API Key 后加 `--client api` 才真正调用，也可以通过 `DUBBING_CLIENT` 环境变量指定客户端。
+- `final_20_song` 分支已收录 **20 首歌曲的 21 个数据版本，共 432 个乐句**。其中 `love-2000` 和 `love_2000` 是 `LOVE 2000` 的两套分句与预算版本，均予以保留。
+- 本分支同时保存各首歌的译词、当前运行状态和历史运行记录。当前快照的 432 个乐句均为 `pass` 或 `skip`；这只表示通过程序规则，最终仍需真人试唱评判。
 - 批量导入标注文本：`python scripts/import_lyrics.py data/lyrics.txt`，
   输入格式与选项见 [docs/usage.md](docs/usage.md)。
+
+## 快速开始
+
+需要 Python ≥ 3.11，运行依赖为 PyYAML、Requests。建议从源码以可编辑方式安装，并在项目根目录执行命令，以便读取歌曲和提示词文件。
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install -e ".[dev]"
+
+# 不需要 API Key，即可查看本分支已有的歌库与结果
+python -m dubbing songs
+python -m dubbing view --song kotozute
+```
+
+首次配置时，将 [.env.example](.env.example) 复制为 `.env`，填写 `DEEPSEEK_API_KEY`。命令行启动时会自动读取 `.env`，且不覆盖终端中已有的同名环境变量。真实密钥不入库。
+
+```bash
+cp .env.example .env
+# 编辑 .env，填写自己的 API Key
+```
+
+## 常用命令
+
+```bash
+# 单曲重新生成，归档保留旧运行记录
+python -m dubbing run --song kotozute --client api --keep-history
+
+# 全库重新生成；两个 LOVE 2000 目录会分别运行
+python -m dubbing run --all --client api --keep-history
+
+# 仅处理尚未通过的段落，复用已有 A 分析
+python -m dubbing run --all --client api --skip-done
+
+# 只运行指定的几首
+python -m dubbing run --song kazeyo --song spiral --client api --keep-history
+
+# 仅重跑一个段落；加 --continue 可使用该段上一版译词继续修改
+python -m dubbing run --song shiori --only C1 --client api
+
+# 预览当前状态下的初始请求，不调用模型
+python -m dubbing run --all --dry-run
+
+# 查看分析、历史记录和当前译词
+python -m dubbing show --song kotozute --agent a
+python -m dubbing runs --song kotozute
+python -m dubbing view --song kotozute
+```
+
+真实运行默认会删除目标歌曲的旧 `runs/` 与 `state.yaml` 后从头生成；`--keep-history` 会把旧 run 移入 `archive/`，但仍会重建当前状态。`--only`、`--continue`、`--skip-done` 都保留已有记录。各选项的详细语义见 [docs/usage.md](docs/usage.md)。
+
+`--dry-run` 会写入 `preview/`，可能复用已有 A 分析，不预测后续返修次数，因此不能作为完整重跑的精确请求数或费用估计。
+
+## 数据准备与运行结果
+
+- 新歌放在 `data/songs/<song_id>/song.yaml`，按 `song / sections / phrases` 组织。人工确认乐句顺序和音节预算，重复演唱的歌词也分别列出。
+- `budget` 支持固定值和区间。可选的 `pattern` 各项须为正整数，合计必须落在预算范围内，否则加载会报错；它目前只为 B 提供参考，C 不检查译词是否按该分组断句。
+- `keep_source: true` 仅支持整句保留原文，此时预算必须为空，也不能填写 `pattern`。目前尚不支持行内片段保留，括号内的英文不会自动从计数中排除。
+- `scripts/import_lyrics.py` 将已标注的「歌词 总字数 [分组字数...]」文本转换为 YAML，不会根据原始歌词自动确认预算。可先运行 `python scripts/import_lyrics.py data/lyrics.txt --dry-run --strict` 检查输入；已有文件默认跳过，`--force` 才会覆盖。
+- 当前程序不读取音频、MIDI 或乐谱来自动校准预算。文本估算需要人工对照演唱复核，不能将日语音拍数或音符数直接当作已经确认的中文可唱字位。
+- 每首歌完成运行后，自动写出 `lyrics.zh.txt`（演唱文本，含保留的原文）与 `lyrics.md`（原文、译词、字数、预算和状态对照）。
+- `state.yaml` 保存当前 A / B / C 产物的指针；`runs/` 保存请求、解析后的输出、元数据，以及已取得的 A / B 模型正文 `response.txt`。失败记录可能没有正文或输出文件。
+- 本分支已将运行结果作为快照纳入 Git；`.gitignore` 仍默认忽略新增运行文件，后续若要提交这些文件，需显式选择并使用 `git add -f`。手动编辑导出歌词不会更新 run 或状态，再次导出会按状态重新生成。
+
+## 开发与测试
+
+```bash
+python -m pytest
+```
+
+测试使用临时数据、脚本化响应或 mock，不调用真实模型 API。提示词集中在 `prompts/shared.md`、`prompts/a.md`、`prompts/b.md`；歌曲数据与提示词分开维护。数据设计见 [docs/data-model.md](docs/data-model.md)，完整操作说明见 [docs/usage.md](docs/usage.md)。

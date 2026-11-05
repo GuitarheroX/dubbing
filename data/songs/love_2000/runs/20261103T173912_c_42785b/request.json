@@ -1,0 +1,44 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "O1",
+    "phrases": [
+      {
+        "id": "O1-01",
+        "section": "O1",
+        "ja": "あなたをずっと探してた",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          4,
+          2,
+          5
+        ]
+      }
+    ],
+    "draft": {
+      "section": "O1",
+      "phrases": [
+        {
+          "id": "O1-01",
+          "zh": "我一直在 找你 人海里回头",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "按4 2 5断句，空格不计字数"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

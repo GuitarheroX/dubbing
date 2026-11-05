@@ -1,0 +1,209 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V3",
+    "phrases": [
+      {
+        "id": "V3-01",
+        "section": "V3",
+        "ja": "時計の秒針や",
+        "budget": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      {
+        "id": "V3-02",
+        "section": "V3",
+        "ja": "テレビの司会者や",
+        "budget": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      {
+        "id": "V3-03",
+        "section": "V3",
+        "ja": "そこにいるけど",
+        "budget": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      {
+        "id": "V3-04",
+        "section": "V3",
+        "ja": "見えない誰かの",
+        "budget": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      {
+        "id": "V3-05",
+        "section": "V3",
+        "ja": "笑い声",
+        "budget": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      {
+        "id": "V3-06",
+        "section": "V3",
+        "ja": "飽和して反響する",
+        "budget": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      {
+        "id": "V3-07",
+        "section": "V3",
+        "ja": "アレグロ･アジテート",
+        "budget": null,
+        "keep_source": true,
+        "notes": "这句不用翻译"
+      },
+      {
+        "id": "V3-08",
+        "section": "V3",
+        "ja": "耳鳴りが消えない止まない",
+        "budget": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      {
+        "id": "V3-09",
+        "section": "V3",
+        "ja": "アレグロ･アジテート",
+        "budget": null,
+        "keep_source": true,
+        "notes": "这句不用翻译"
+      },
+      {
+        "id": "V3-10",
+        "section": "V3",
+        "ja": "耳鳴りが消えない止まない",
+        "budget": {
+          "min": 12,
+          "max": 12
+        }
+      }
+    ],
+    "draft": {
+      "section": "V3",
+      "phrases": [
+        {
+          "id": "V3-01",
+          "zh": "秒针 一下一下敲",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "用空格断开「秒针」和后面的动作，共7字"
+          }
+        },
+        {
+          "id": "V3-02",
+          "zh": "电视里的人 不停说话",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "前五字是主语，后四字接上，共9字"
+          }
+        },
+        {
+          "id": "V3-03",
+          "zh": "都在 我却碰不到",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "前两字一停，后半五字连读，共7字"
+          }
+        },
+        {
+          "id": "V3-04",
+          "zh": "看不见的谁 轻轻笑",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "五字加三字，中间空格断开，共8字"
+          }
+        },
+        {
+          "id": "V3-05",
+          "zh": "那一阵笑声",
+          "chars": 5,
+          "self_check": {
+            "budget": [
+              5,
+              5
+            ],
+            "ok": true,
+            "note": "整句一口气，5字"
+          }
+        },
+        {
+          "id": "V3-06",
+          "zh": "声音饱和 反撞回来",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "四字加四字，中间断开，共8字"
+          }
+        },
+        {
+          "id": "V3-08",
+          "zh": "耳鸣 一遍遍响 一直都不肯停",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "按 2-4-6 三处停顿，共12字"
+          }
+        },
+        {
+          "id": "V3-10",
+          "zh": "耳鸣 一遍遍响 一直都不肯停",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "与V3-08完全相同，保留原曲重复"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

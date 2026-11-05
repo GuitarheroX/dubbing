@@ -1,0 +1,72 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "phrases": [
+      {
+        "id": "B1-01",
+        "section": "B1",
+        "ja": "気づけなかった きっと甘えてたのかな",
+        "budget": {
+          "min": 16,
+          "max": 16
+        },
+        "pattern": [
+          7,
+          2,
+          7
+        ]
+      },
+      {
+        "id": "B1-02",
+        "section": "B1",
+        "ja": "だから自分愛して 人を愛してみたいの",
+        "budget": {
+          "min": 18,
+          "max": 18
+        },
+        "pattern": [
+          3,
+          6,
+          5,
+          4
+        ]
+      }
+    ],
+    "draft": {
+      "section": "B1",
+      "phrases": [
+        {
+          "id": "B1-01",
+          "zh": "从前一直没察觉 原来 我总被温柔宠坏",
+          "chars": 16,
+          "self_check": {
+            "budget": [
+              16,
+              16
+            ],
+            "ok": true,
+            "note": "按 7 2 7 断句 空格对齐旋律"
+          }
+        },
+        {
+          "id": "B1-02",
+          "zh": "先学会 好好拥抱自己 再把心打开 去爱别人",
+          "chars": 18,
+          "self_check": {
+            "budget": [
+              18,
+              18
+            ],
+            "ok": true,
+            "note": "按 3 6 5 4 断句 空格对齐旋律"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

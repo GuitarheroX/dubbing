@@ -1,0 +1,123 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "O1",
+    "phrases": [
+      {
+        "id": "O1-01",
+        "section": "O1",
+        "ja": "ぜんぶ ぜんぶ ぜんぶ",
+        "budget": {
+          "min": 9,
+          "max": 9
+        },
+        "pattern": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "id": "O1-02",
+        "section": "O1",
+        "ja": "さがしにゆこう",
+        "budget": {
+          "min": 7,
+          "max": 7
+        },
+        "pattern": [
+          4,
+          3
+        ]
+      },
+      {
+        "id": "O1-03",
+        "section": "O1",
+        "ja": "ぜんぶ ぜんぶ ぜんぶ",
+        "budget": {
+          "min": 9,
+          "max": 9
+        },
+        "pattern": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "id": "O1-04",
+        "section": "O1",
+        "ja": "さがしにゆこう",
+        "budget": {
+          "min": 7,
+          "max": 7
+        },
+        "pattern": [
+          4,
+          3
+        ]
+      }
+    ],
+    "draft": {
+      "section": "O1",
+      "phrases": [
+        {
+          "id": "O1-01",
+          "zh": "全都要 全都要 全都要",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "三顿各三字，与 V1-04 完全一致，首尾呼应"
+          }
+        },
+        {
+          "id": "O1-02",
+          "zh": "一起出发 去寻找",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "四字加三字，对应 4+3 两段，与 V1-05 同句"
+          }
+        },
+        {
+          "id": "O1-03",
+          "zh": "全都要 全都要 全都要",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "原曲重复句，译词保持完全相同"
+          }
+        },
+        {
+          "id": "O1-04",
+          "zh": "一起出发 去寻找",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "重复句保持相同，收在往前迈的脚步上"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "section": "C2",
+  "phrases": [
+    {
+      "id": "C2-01",
+      "zh": "就算明天尽头",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "整句连读 六字正好"
+      }
+    },
+    {
+      "id": "C2-02",
+      "zh": "是一堵沉默的墙",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "接着上一句往下说 不换气"
+      }
+    },
+    {
+      "id": "C2-03",
+      "zh": "摊开我的手掌",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "六个字 一拍一个"
+      }
+    },
+    {
+      "id": "C2-04",
+      "zh": "徒手把这墙劈开",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "墙和前句重复 是有意呼应"
+      }
+    },
+    {
+      "id": "C2-05",
+      "zh": "这发抖的肩膀",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "六字 收在实词上"
+      }
+    },
+    {
+      "id": "C2-06",
+      "zh": "自己把自己抱紧",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "两个自己叠着唱 节奏对得上"
+      }
+    },
+    {
+      "id": "C2-07",
+      "zh": "指甲压进我掌心",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "把决心写成手上的用力"
+      }
+    },
+    {
+      "id": "C2-08",
+      "zh": "向前迈出这一步 想要的梦 现在就去抢",
+      "chars": 16,
+      "self_check": {
+        "budget": [
+          16,
+          16
+        ],
+        "ok": true,
+        "note": "按 7+9 切 空格标在第七字后 前三字顺势带过"
+      }
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C1",
+    "phrases": [
+      {
+        "id": "C1-01",
+        "section": "C1",
+        "ja": "二人の鼓動 重ね合わせて",
+        "budget": {
+          "min": 13,
+          "max": 13
+        },
+        "pattern": [
+          4,
+          2,
+          4,
+          3
+        ]
+      },
+      {
+        "id": "C1-02",
+        "section": "C1",
+        "ja": "たまに不安になる だって",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          3,
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "id": "C1-03",
+        "section": "C1",
+        "ja": "あなたがいなくなりそうで",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          4,
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "id": "C1-04",
+        "section": "C1",
+        "ja": "輝く目に 私以外映さないで",
+        "budget": {
+          "min": 18,
+          "max": 18
+        },
+        "pattern": [
+          4,
+          2,
+          3,
+          3,
+          6
+        ]
+      },
+      {
+        "id": "C1-05",
+        "section": "C1",
+        "ja": "oh, fly me to the star",
+        "budget": {
+          "min": 6,
+          "max": 6
+        },
+        "pattern": [
+          1,
+          5
+        ]
+      }
+    ],
+    "draft": {
+      "section": "C1",
+      "phrases": [
+        {
+          "id": "C1-01",
+          "zh": "两颗心跳 贴近 叠成一拍 在颤动",
+          "chars": 13,
+          "self_check": {
+            "budget": [
+              13,
+              13
+            ],
+            "ok": true,
+            "note": "四段依次为 4 2 4 3 字 空格只作断句"
+          }
+        },
+        {
+          "id": "C1-02",
+          "zh": "偶尔会 忽然 心发慌 因为",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "按 3 2 3 2 分四段 结尾留一个悬着的因为"
+          }
+        },
+        {
+          "id": "C1-03",
+          "zh": "怕你像风 一松手 就散 无痕",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "四段为 4 3 2 2 字 用松开手的动作写消失"
+          }
+        },
+        {
+          "id": "C1-04",
+          "zh": "那双亮眼 请你 只映我 别容下 别人半个身影",
+          "chars": 18,
+          "self_check": {
+            "budget": [
+              18,
+              18
+            ],
+            "ok": true,
+            "note": "按 4 2 3 3 6 分五段 最后一段六字收住占有欲"
+          }
+        },
+        {
+          "id": "C1-05",
+          "zh": "带 我飞去星河",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "沿用前面段落的同一句 一字领起后五字"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

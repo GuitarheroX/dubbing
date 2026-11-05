@@ -1,0 +1,124 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "phrases": [
+      {
+        "id": "V2-01",
+        "section": "V2",
+        "ja": "今日の 悲しみを乗せて",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          3,
+          5,
+          3
+        ]
+      },
+      {
+        "id": "V2-02",
+        "section": "V2",
+        "ja": "明日の 喜びを運んで",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          3,
+          5,
+          3
+        ]
+      },
+      {
+        "id": "V2-03",
+        "section": "V2",
+        "ja": "全部 風が連れてゆく",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          2,
+          3,
+          5
+        ]
+      },
+      {
+        "id": "V2-04",
+        "section": "V2",
+        "ja": "或るべき場所へ",
+        "budget": {
+          "min": 7,
+          "max": 7
+        },
+        "pattern": [
+          4,
+          3
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V2",
+      "phrases": [
+        {
+          "id": "V2-01",
+          "zh": "把今日 悲伤都装进 旧行李",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "按 3/5/3 断：把今日｜悲伤都装进｜旧行李"
+          }
+        },
+        {
+          "id": "V2-02",
+          "zh": "明天的 喜悦还没拆 先上路",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "按 3/5/3 断：明天的｜喜悦还没拆｜先上路"
+          }
+        },
+        {
+          "id": "V2-03",
+          "zh": "全都 风带走 影子也不留",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "按 2/3/5 断：全都｜风带走｜影子也不留，句首「全都」与 V1-03 呼应"
+          }
+        },
+        {
+          "id": "V2-04",
+          "zh": "往该去的 那地方",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "按 4/3 断：往该去的｜那地方"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

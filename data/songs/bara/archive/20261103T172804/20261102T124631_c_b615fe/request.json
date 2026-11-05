@@ -1,0 +1,73 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B2",
+    "phrases": [
+      {
+        "id": "B2-01",
+        "section": "B2",
+        "ja": "私はバラの　命をさずかり",
+        "budget": {
+          "min": 15,
+          "max": 15
+        },
+        "pattern": [
+          4,
+          3,
+          4,
+          4
+        ]
+      },
+      {
+        "id": "B2-02",
+        "section": "B2",
+        "ja": "情熱を燃やして生きてくいつでも",
+        "budget": {
+          "min": 17,
+          "max": 17
+        },
+        "pattern": [
+          5,
+          4,
+          4,
+          4
+        ]
+      }
+    ],
+    "draft": {
+      "section": "B2",
+      "phrases": [
+        {
+          "id": "B2-01",
+          "zh": "我生来就 被玫瑰 选作火种 一路燃烧",
+          "chars": 15,
+          "self_check": {
+            "budget": [
+              15,
+              15
+            ],
+            "ok": true,
+            "note": "按4 3 4 4断句，空格不计入字数"
+          }
+        },
+        {
+          "id": "B2-02",
+          "zh": "我血里的火 全都点燃 烧到指尖 烧到天明",
+          "chars": 17,
+          "self_check": {
+            "budget": [
+              17,
+              17
+            ],
+            "ok": true,
+            "note": "按5 4 4 4断句，烧到重复保留燃烧感"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

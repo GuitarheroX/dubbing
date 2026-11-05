@@ -1,0 +1,23 @@
+sections:
+  I1:
+    round: 1
+    draft: 20261103T173719_b_7faeb3
+    review: 20261103T173737_c_44bb33
+    verdict: pass
+  V1:
+    round: 1
+    draft: 20261103T173737_b_20e393
+    review: 20261103T173747_c_f68027
+    verdict: pass
+  B1:
+    round: 1
+    draft: 20261103T173747_b_a70611
+    review: 20261103T173758_c_7f0958
+    verdict: pass
+  C1:
+    round: 1
+    draft: 20261103T173758_b_a8a6f9
+    review: 20261103T173807_c_3e35eb
+    verdict: pass
+song_level:
+  analysis: 20261103T173709_a_203c01

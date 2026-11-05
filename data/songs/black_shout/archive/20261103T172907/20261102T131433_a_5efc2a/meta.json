@@ -1,0 +1,18 @@
+{
+  "agent": "a",
+  "run_id": "20261102T131433_a_5efc2a",
+  "input_hash": "5efc2a87fbc2bb63a62ff49aabcc14db39d6b2ac575184a25b6f7653aae9935b",
+  "finished_at": "2026-11-02T13:14:46+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "9ba2c9714c597d66a72089a2b38c457f6d8019f2358910be00189a04f28bc937",
+  "warnings": [],
+  "usage": {
+    "input_tokens": 559,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 1528,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

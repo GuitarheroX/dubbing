@@ -1,0 +1,1 @@
+{"section":"C1","phrases":[{"id":"C1-01","zh":"玫瑰开 玫瑰开 一身深红高傲盛开","chars":14,"self_check":{"budget":[14,14],"ok":true,"note":"三字加三字再加八字，空格处对应旋律断句"}},{"id":"C1-02","zh":"玫瑰落 玫瑰落 一瓣瓣美丽散落","chars":13,"self_check":{"budget":[13,13],"ok":true,"note":"三字加三字再加七字，空格处对应旋律断句"}}]}
