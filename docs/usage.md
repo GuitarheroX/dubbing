@@ -18,10 +18,26 @@ python -m dubbing songs                     # 歌库里有什么
 python -m dubbing run     --song kotozute   # 跑一首（带进度）
 python -m dubbing run     --all             # 跑歌库里所有歌
 python -m dubbing runs    --song kotozute   # 所有 run，标出当前用的是哪版
+python -m dubbing prompt  --song kotozute   # 看 B 收到的提示词与数据
 python -m dubbing show    --song kotozute   # 看 A / B / C 各自的产物
 python -m dubbing view    --song kotozute   # 调试视图（每句状态）
 python -m dubbing export  --song kotozute   # 导出成品歌词
 ```
+
+### 看某个 agent 收到的提示词
+
+```bash
+python -m dubbing prompt --song kotozute --agent b --section B1
+python -m dubbing prompt --song kotozute --agent b --section B1 --run <run_id>  # 某次真实调用
+```
+
+`prompt` 打印两段：`system`（`prompts/shared.md` + `prompts/b.md` 拼起来的，约 2100 字）和
+`user`（这次要喂的数据，约 6-8k 字）。
+
+- 不加 `--run` 是**现拼**：按当前 `song.yaml`、`state.yaml` 算出的"如果现在调用会发什么"，
+  返修反馈不会出现（没有"上一轮"）。
+- 加 `--run` 是**原样回放**：直接读 `runs/<id>/request.json`，包括返修轮里 C 的结论。
+- 只想看提示词文本本身，不看数据：`prompts/shared.md` 和 `prompts/b.md`，顺序拼起来就是。
 
 ### 看每个 agent 的产物
 

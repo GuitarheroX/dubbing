@@ -267,3 +267,38 @@ def test_batch_keeps_going_after_one_song_fails(root, monkeypatch, capsys):
     assert "1 首成功 / 1 首失败" in out
     assert "✗ s1" in out
     assert (root / "s2" / "state.yaml").is_file()
+
+
+def test_prompt_command_prints_system_and_user(root, capsys):
+    _song(root)
+    assert (
+        main(["--root", str(root), "prompt", "--song", "t", "--agent", "b", "--section", "S1"])
+        == 0
+    )
+    out = capsys.readouterr().out
+    assert "# 共同前提" in out          # system = shared.md + b.md
+    assert "本次任务数据（JSON）" in out  # user = 数据
+    assert "system" in out and "user" in out
+
+
+def test_prompt_command_reads_a_real_run(root, capsys):
+    from dubbing import cli
+    from dubbing.store import SongStore
+
+    _song(root)
+    monkeypatch_client = _scripted()
+    import dubbing.cli as cli_mod
+
+    original = cli_mod.build_client
+    cli_mod.build_client = lambda *a, **k: monkeypatch_client
+    try:
+        main(["--root", str(root), "run", "--song", "t", "--client", "api"])
+    finally:
+        cli_mod.build_client = original
+
+    run_id = SongStore(root, "t").load_state().sections["S1"].draft
+    capsys.readouterr()
+    assert main(["--root", str(root), "prompt", "--song", "t", "--run", run_id]) == 0
+    out = capsys.readouterr().out
+    assert run_id in out
+    assert "真实发出去的请求" in out

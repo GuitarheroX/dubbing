@@ -25,6 +25,7 @@ from .view import build_view, load_draft, load_review
 
 __all__ = [
     "Step",
+    "compose_request",
     "SongOutcome",
     "SectionOutcome",
     "run_song",
@@ -332,6 +333,49 @@ def run_song(
         )
     store.save_state(state)
     return outcome
+
+
+def compose_request(
+    song_id: str,
+    *,
+    agent: str = "b",
+    section: str | None = None,
+    root: Path | None = None,
+    fresh: bool = True,
+) -> Request:
+    """现拼一份"如果现在要调用，会发出去什么"的请求（不调用模型）。
+
+    跟真实调用唯一的差别：返修轮次里 C 的结论不会出现，因为这里没有"上一轮"。
+    想看带反馈的原样请求，用 ``--run <id>`` 读 ``runs/<id>/request.json``。
+    """
+    song = load_song(song_id, root=root)
+    store = SongStore(root or DEFAULT_ROOT, song_id)
+    state = store.load_state()
+
+    if agent == "a":
+        return build_a_request(song)
+
+    if section is None:
+        section = next((s.id for s in song.sections if song.translatable_of(s.id)), None)
+        if section is None:
+            raise KeyError("这首歌没有可译的 section")
+    if section not in song.section_ids:
+        raise KeyError(f"未知 section {section!r}，可选 {list(song.section_ids)}")
+
+    analysis = (
+        Analysis.from_json(store.load_output(state.analysis))  # type: ignore[arg-type]
+        if store.has_run(state.analysis)
+        else Analysis(theme="", emotional_arc="", narrative="")
+    )
+    ss = state.sections.get(section)
+    prev = None if fresh else load_draft(store, ss.draft if ss is not None else None)
+    return build_b_request(
+        song,
+        analysis,
+        focus=section,
+        accepted=_accepted_texts(song, state, store, section),
+        prev_texts=prev.texts() if prev is not None else None,
+    )
 
 
 def plan_requests(

@@ -42,11 +42,14 @@ __all__ = [
     "DEFAULT_BASE_URL",
     "DEFAULT_MODEL",
     "DEFAULT_TEMPERATURE",
+    "DEFAULT_MAX_TOKENS",
 ]
 
 DEFAULT_BASE_URL = "https://api.deepseek.com/anthropic"
 DEFAULT_MODEL = "deepseek-flash"
 DEFAULT_TEMPERATURE = 0.7
+#: 输出上限。思考块也算在里面，长任务要么调大，要么把任务拆小。
+DEFAULT_MAX_TOKENS = 16000
 _KEY_ENVS = ("DEEPSEEK_API_KEY", "ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN")
 
 #: 这些状态码值得重试；4xx（除 408/429）说明请求本身有问题，重试无用。
@@ -138,7 +141,7 @@ class APIClient:
         *,
         api_key: str | None = None,
         base_url: str | None = None,
-        max_tokens: int = 8000,
+        max_tokens: int = DEFAULT_MAX_TOKENS,
         temperature: float | None = None,
         temperature_by_agent: dict[str, float] | None = None,
         timeout: float = 180.0,
@@ -264,18 +267,28 @@ class APIClient:
             raise LLMError(f"agent={agent} 的响应里没有 content：{str(data)[:300]}")
 
         # 只取 text 块；thinking 块要跳过，否则会把推理过程当成正文
-        text = "".join(
-            b.get("text", "")
-            for b in blocks
-            if isinstance(b, dict) and b.get("type") == "text"
-        ).strip()
-        if not text:
-            raise LLMError(f"agent={agent} 的响应里没有文本块：{str(data)[:300]}")
+        texts = [b for b in blocks if isinstance(b, dict) and b.get("type") == "text"]
+        thinking = [b for b in blocks if isinstance(b, dict) and b.get("type") == "thinking"]
+        text = "".join(b.get("text", "") for b in texts).strip()
 
+        # 先判截断：预算被思考吃光时是"没有正文"，但真正的原因是这个
         if data.get("stop_reason") == "max_tokens":
+            think_chars = sum(len(str(b.get("thinking", ""))) for b in thinking)
+            if text:
+                detail = "正文被截断，JSON 必然不完整"
+            elif thinking:
+                detail = f"思考块占满了预算（{len(thinking)} 个 thinking / {think_chars} 字），正文一个字都没留下"
+            else:
+                detail = "没有任何正文"
             raise LLMError(
-                f"agent={agent} 的输出被 max_tokens={self.max_tokens} 截断，"
-                "JSON 必然不完整；调大 max_tokens 或把 section 拆小。"
+                f"agent={agent} 的输出被 max_tokens={self.max_tokens} 截断：{detail}。"
+                "调大 --max-tokens（DeepSeek 这个端点接受 64000），或把任务拆小。"
+            )
+
+        if not text:
+            kinds = sorted({b.get("type", "?") for b in blocks if isinstance(b, dict)}) or ["空"]
+            raise LLMError(
+                f"agent={agent} 的响应里没有文本块（只有 {kinds}）：{str(data)[:300]}"
             )
         return text
 

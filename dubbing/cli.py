@@ -17,12 +17,13 @@ from pathlib import Path
 from .counting import count_syllables
 from .export import write_lyrics
 from .report import list_runs, render_run, table
-from .llm import LLMError, NeedsLLM, build_client, load_dotenv
+from .llm import DEFAULT_MAX_TOKENS, LLMError, NeedsLLM, build_client, load_dotenv
 from .models import SchemaError, Violation
 from .orchestrator import (
     DEFAULT_MAX_ROUNDS,
     DEFAULT_ROOT,
     Step,
+    compose_request,
     plan_requests,
     run_song,
 )
@@ -175,6 +176,35 @@ def cmd_show(args: argparse.Namespace) -> int:
 
     if not printed:
         print("还没有产物。先跑一次：python -m dubbing run --song <id> --client api")
+    return 0
+
+
+def cmd_prompt(args: argparse.Namespace) -> int:
+    song = load_song(args.song, root=Path(args.root))
+    store = SongStore(Path(args.root), args.song)
+
+    if args.run:
+        payload = store.load_request(args.run)
+        meta = store.load_meta(args.run)
+        system = payload["messages"]["system"]
+        user = payload["messages"]["user"]
+        head = f"# {args.run}（agent {meta.get('agent')}）真实发出去的请求"
+    else:
+        request = compose_request(
+            args.song, agent=args.agent, section=args.section, root=Path(args.root)
+        )
+        system, user = request.system, request.user
+        where = f"，section {args.section}" if args.section else "，section 取第一个可译段"
+        head = f"# {song.id} 现拼的请求（agent {args.agent}{where}）"
+
+    print(head)
+    print(f"# system {len(system)} 字 / user {len(user)} 字")
+    print()
+    print("=" * 20, "system", "=" * 20)
+    print(system)
+    print()
+    print("=" * 21, "user", "=" * 21)
+    print(user)
     return 0
 
 
@@ -379,6 +409,13 @@ def main(argv: list[str] | None = None) -> int:
     p_show.add_argument("--run", default=None, help="直接看某次 run 的产物")
     p_show.set_defaults(func=cmd_show)
 
+    p_prompt = sub.add_parser("prompt", help="看某个 agent 收到的提示词与数据")
+    p_prompt.add_argument("--song", required=True)
+    p_prompt.add_argument("--agent", choices=["a", "b"], default="b")
+    p_prompt.add_argument("--section", default=None, help="不给就取第一个可译段")
+    p_prompt.add_argument("--run", default=None, help="直接看某次真实调用的 request.json")
+    p_prompt.set_defaults(func=cmd_prompt)
+
     p_export = sub.add_parser("export", help="导出歌词文件（lyrics.zh.txt / lyrics.md）")
     p_export.add_argument("--song", required=True)
     p_export.add_argument("--out", default=None, help="输出目录，默认 data/songs/<id>/")
@@ -438,7 +475,7 @@ def main(argv: list[str] | None = None) -> int:
     p_run.add_argument(
         "--temperature-b", type=float, default=None, help="只覆盖 B（写译词）的温度"
     )
-    p_run.add_argument("--max-tokens", type=int, default=8000)
+    p_run.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS)
     p_run.set_defaults(func=cmd_run)
 
     args = parser.parse_args(argv)

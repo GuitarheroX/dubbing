@@ -13,3 +13,6 @@ data/songs/*/archive/
 data/songs/*/state.yaml
 data/songs/*/preview/
 data/songs/*/view.json
+
+# 本地编辑器配置不进仓库
+.vscode/
