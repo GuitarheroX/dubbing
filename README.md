@@ -59,7 +59,7 @@ cp .env.example .env
 # 单曲重新生成，归档保留旧运行记录
 python -m dubbing run --song kotozute --client api --keep-history
 
-# 全库重新生成；两个 LOVE 2000 目录会分别运行
+# 全库重新生成；
 python -m dubbing run --all --client api --keep-history
 
 # 仅处理尚未通过的段落，复用已有 A 分析

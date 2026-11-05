@@ -204,11 +204,8 @@ A 的任务是发散（把意象摊开），B 的任务是收敛（把字塞进�
 
 ```bash
 # A 放开，B 收紧
-python -m dubbing run --song kotozute --client api --temperature-a 1.2 --temperature-b 0.4
+python -m dubbing run --song kotozute --client api --temperature-a 2.0 --temperature-b 0.4
 ```
-
-经验区间：A 用 1.0–1.3，容易出偏一点但有意思的意象；B 用 0.3–0.6，字数更稳、'自由地' 这种偷懒解更少。
-默认 0.7 是两者的折中值，适合先跑通。
 
 每次调用的实际温度记在 `runs/<id>/meta.json` 的 `temperature` 字段里，`temperature_by_agent`
 的覆盖只影响对应 agent，不会串。
