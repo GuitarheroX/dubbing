@@ -1,0 +1,21 @@
+{
+  "id": "1b0dc284-43cb-4090-91d1-6a169b8891b9",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"暗中有光照进来 我想伸出手\",\"现在想和你说话\",\"看着朝阳 开始染上色彩\",\"已经自由了\",\"已经自由了\",\"我现在睁开了眼睛\",\"现在想和你说话\",\"值得爱的日子 开始染上色彩\",\"已经自由了\",\"已经自由了\",\"飞\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 158,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 63,
+    "service_tier": "standard"
+  }
+}

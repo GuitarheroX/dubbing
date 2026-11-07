@@ -1,0 +1,10 @@
+{
+  "song": "love-2000",
+  "variant": "paper-annotated",
+  "run": "run-20261105T124246025046Z-9e0103b6",
+  "status": "completed",
+  "partial_export": false,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "source_directory": "data/songs/love-2000/baselines/paper-annotated/run-20261105T124246025046Z-9e0103b6"
+}

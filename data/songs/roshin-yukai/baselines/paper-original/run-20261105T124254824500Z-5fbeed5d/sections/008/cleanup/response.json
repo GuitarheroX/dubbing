@@ -1,0 +1,21 @@
+{
+  "id": "0307815a-5c2d-4a02-a734-96d67d2ed9b2",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"核聚变炉啊\",\"试着跳进去的话那样的话\",\"一定能像睡着般消失而去吧\",\"没有我的早晨\",\"比现在更加美好\",\"所有齿轮都咬合了\",\"一定是那样的世界\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 141,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 46,
+    "service_tier": "standard"
+  }
+}

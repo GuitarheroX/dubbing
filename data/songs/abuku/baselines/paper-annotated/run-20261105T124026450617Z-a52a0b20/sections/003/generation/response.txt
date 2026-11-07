@@ -1,0 +1,38 @@
+1. 与其思念那飘逝的云 (10 syllables: 与-其-思-念-那-飘-逝-的-云) ❌ 9 — let me recount: 与其思念那飘逝的云 = yǔ-qí-sī-niàn-nà-piāo-shì-de-yún = 9. Need 10.
+
+Let me carefully craft each line to exactly 10, 7, 10, 6 syllables with an AABB-style rhyme matching the source (source rhyme: ら/え/ど/で — lines 1&3 don't rhyme, 2&4 don't rhyme either; actually source has no strict rhyme). I'll aim for a consistent rhyme scheme (e.g., lines 2 and 4 rhyme).
+
+B1-01 (10 syllables, pattern 4-3-3):
+"与其空想那过眼云烟" = yǔ-qí-kōng-xiǎng-nà-guò-yǎn-yún-yān = 10 ✓
+Rhyme end: yān (an)
+
+B1-02 (7 syllables, pattern 4-3):
+"向着远方长嚎" = xiàng-zhe-yuǎn-fāng-cháng-háo = 7 ✓
+Rhyme end: háo (ao)
+
+B1-03 (10 syllables, pattern 4-3-3):
+"连喘息的空隙都没有" = lián-chuǎn-xī-de-kòng-xì-dōu-méi-yǒu = 10 ✓
+Rhyme end: yǒu (ou)
+
+B1-04 (6 syllables, pattern 3-3):
+"痛苦的这般" = tòng-kǔ-de-zhè-bān = 5. Need 6: "痛苦的这一切" = tòng-kǔ-de-zhè-yī-qiè = 6 ✓
+Rhyme end: qiè (ie)
+
+Rhyme check: line2 háo (ao), line4 qiè (ie) — don't match. Adjust line 4 to end in -ao: "痛苦难熬" = tòng-kǔ-nán-áo = 4. Need 6: "这般痛苦难熬" = zhè-bān-tòng-kǔ-nán-áo = 6 ✓ end áo (ao) — rhymes with line 2 háo ✓.
+
+Line 1 end yān, line 3 end yǒu — source also lacks cross rhyme, acceptable. But to be safe, keep same theme and a rhyme pattern; source lines 1&3 end ら/ど (no rhyme), 2&4 end え/で (near rhyme e/de). My 2&4 rhyme ao ✓.
+
+Final verification:
+1. 与其空想那过眼云烟 — 与(1)其(2)空(3)想(4)那(5)过(6)眼(7)云(8)烟(9) = 9! Recount: 与-其-空-想-那-过-眼-云-烟 = 9. Need 10. Add: "与其空想着那过眼云烟" = 与-其-空-想-着-那-过-眼-云-烟 = 10 ✓ pattern 4-3-3: 与其空想/着那过/眼云烟 — ok as guidance.
+
+2. 向着远方长嚎 = 向-着-远-方-长-嚎 = 6! Recount: 向(1)着(2)远(3)方(4)长(5)嚎(6) = 6. Need 7. "向着那远方长嚎" = 向-着-那-远-方-长-嚎 = 7 ✓
+
+3. 连喘息的空隙都没有 = 连-喘-息-的-空-隙-都-没-有 = 9! Recount: 连(1)喘(2)息(3)的(4)空(5)隙(6)都(7)没(8)有(9) = 9. Need 10. "连喘息的那空隙都没有" = 连-喘-息-的-那-空-隙-都-没-有 = 10 ✓
+
+4. 这般痛苦难熬 = 这-般-痛-苦-难-熬 = 6 ✓
+
+Rhyme: line2 嚎 háo, line4 熬 áo ✓ (ao). Line1 烟 yān, line3 有 yǒu — matches source's non-rhyming 1&3.
+
+```json
+{"lines": ["与其空想着那过眼云烟", "向着那远方长嚎", "连喘息的那空隙都没有", "这般痛苦难熬"]}
+```

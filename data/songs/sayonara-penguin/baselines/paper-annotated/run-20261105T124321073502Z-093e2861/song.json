@@ -1,0 +1,181 @@
+{
+  "song": {
+    "id": "sayonara-penguin",
+    "title": "さよならペンギン",
+    "artist": "",
+    "source_lang": "ja"
+  },
+  "sections": [
+    {
+      "id": "V1",
+      "role": "verse"
+    },
+    {
+      "id": "B1",
+      "role": "pre-chorus"
+    },
+    {
+      "id": "C1",
+      "role": "chorus"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "ja": "水明かり 新芽に跳ねれば",
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "pattern": [
+        5,
+        7
+      ]
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "ja": "君は少し 早歩き",
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "pattern": [
+        6,
+        5
+      ]
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "ja": "夜中の食べこぼしは 夢の地図",
+      "budget": {
+        "min": 15,
+        "max": 15
+      },
+      "pattern": [
+        10,
+        5
+      ]
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "ja": "新しい朝がくる",
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "pattern": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "B1-01",
+      "section": "B1",
+      "ja": "風が通る 風が運ぶ",
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "pattern": [
+        6,
+        6
+      ]
+    },
+    {
+      "id": "B1-02",
+      "section": "B1",
+      "ja": "ぼくらはわたげのように",
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "pattern": [
+        4,
+        6
+      ]
+    },
+    {
+      "id": "B1-03",
+      "section": "B1",
+      "ja": "街にまかれ それぞれに",
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "pattern": [
+        6,
+        5
+      ]
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "ja": "さよならペンギン",
+      "budget": {
+        "min": 6,
+        "max": 6
+      }
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "ja": "てくてく歩いて笑ってよ",
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "pattern": [
+        8,
+        4
+      ]
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "ja": "世界に恋して まばたきを",
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "pattern": [
+        8,
+        5
+      ]
+    },
+    {
+      "id": "C1-04",
+      "section": "C1",
+      "ja": "風が通る 風が運ぶ",
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "pattern": [
+        6,
+        6
+      ]
+    },
+    {
+      "id": "C1-05",
+      "section": "C1",
+      "ja": "なみだがおちた",
+      "budget": {
+        "min": 7,
+        "max": 7
+      }
+    },
+    {
+      "id": "C1-06",
+      "section": "C1",
+      "ja": "さよならペンギン",
+      "budget": {
+        "min": 7,
+        "max": 7
+      }
+    }
+  ]
+}

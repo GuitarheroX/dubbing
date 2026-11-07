@@ -1,0 +1,21 @@
+{
+  "id": "d215911d-8e68-4242-8b04-2deafeaa8bf7",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "爱究竟是从何处降临的呢\n我向自己的胸口轻声叩问\n虚假的东西我毫无兴趣啊\n只想去寻找到真实的那份\n我一直都在寻找着你呀"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 112,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 35,
+    "service_tier": "standard"
+  }
+}

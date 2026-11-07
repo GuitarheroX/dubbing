@@ -1,0 +1,10 @@
+{
+  "song": "sayonara-penguin",
+  "variant": "paper-original",
+  "run": "run-20261105T124312265878Z-d4acafc7",
+  "status": "completed",
+  "partial_export": false,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "source_directory": "data/songs/sayonara-penguin/baselines/paper-original/run-20261105T124312265878Z-d4acafc7"
+}

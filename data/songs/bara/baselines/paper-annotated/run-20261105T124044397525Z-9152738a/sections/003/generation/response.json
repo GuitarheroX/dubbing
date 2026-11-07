@@ -1,0 +1,21 @@
+{
+  "id": "1de0086c-b8a9-4af1-a999-735e156a276d",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "玫瑰是玫瑰　高贵地绽放  \n玫瑰是玫瑰　美丽地凋零"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 322,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 16,
+    "service_tier": "standard"
+  }
+}

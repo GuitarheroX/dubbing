@@ -1,0 +1,37 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+    "user": "気持ち 伝えることできなくて\nいろんな人生を浮かべ\n演じてみるの あなたの気を惹きたいから\noh, fly me to the star"
+  },
+  "data": {
+    "lyrics": [
+      "気持ち 伝えることできなくて",
+      "いろんな人生を浮かべ",
+      "演じてみるの あなたの気を惹きたいから",
+      "oh, fly me to the star"
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "気持ち 伝えることできなくて\nいろんな人生を浮かべ\n演じてみるの あなたの気を惹きたいから\noh, fly me to the star"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

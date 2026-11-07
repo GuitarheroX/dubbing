@@ -1,0 +1,542 @@
+{
+  "evaluated_phrases": 21,
+  "kept_phrases": 0,
+  "budget_pass_rate": 0.7142857142857143,
+  "mean_budget_distance": 0.5714285714285714,
+  "rule_pass_rate": 0.7142857142857143,
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "一阵狂风吹",
+      "sing_text": "一阵狂风吹",
+      "keep_source": false,
+      "actual": 5,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "两阵风吹过来了，我拔出草",
+      "sing_text": "两阵风吹过来了，我拔出草",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "终于空空荡荡",
+      "sing_text": "终于空空荡荡",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "走向那下风处，只有我",
+      "sing_text": "走向那下风处，只有我",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-05",
+      "section": "V1",
+      "model_text": "草原上立着的影",
+      "sing_text": "草原上立着的影",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 7,
+        "max": 7
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-06",
+      "section": "V1",
+      "model_text": "我便是那蓝色的风啊",
+      "sing_text": "我便是那蓝色的风啊",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-07",
+      "section": "V1",
+      "model_text": "飘摇着",
+      "sing_text": "飘摇着",
+      "keep_source": false,
+      "actual": 3,
+      "budget": {
+        "min": 3,
+        "max": 3
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V2-01",
+      "section": "V2",
+      "model_text": "狂风一阵，天放晴",
+      "sing_text": "狂风一阵，天放晴",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 7,
+        "max": 7
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V2-02",
+      "section": "V2",
+      "model_text": "我正走在，道路之上",
+      "sing_text": "我正走在，道路之上",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V2-03",
+      "section": "V2",
+      "model_text": "我昂首阔步",
+      "sing_text": "我昂首阔步",
+      "keep_source": false,
+      "actual": 5,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V2-04",
+      "section": "V2",
+      "model_text": "就在那顺风的方向，只有你",
+      "sing_text": "就在那顺风的方向，只有你",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V2-05",
+      "section": "V2",
+      "model_text": "草原上站着的影",
+      "sing_text": "草原上站着的影",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 7,
+        "max": 7
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V2-06",
+      "section": "V2",
+      "model_text": "那候鸟落下的白羽根",
+      "sing_text": "那候鸟落下的白羽根",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V2-07",
+      "section": "V2",
+      "model_text": "我心中的那白色之风",
+      "sing_text": "我心中的那白色之风",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V2-08",
+      "section": "V2",
+      "model_text": "随风靡",
+      "sing_text": "随风靡",
+      "keep_source": false,
+      "actual": 3,
+      "budget": {
+        "min": 3,
+        "max": 3
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "迎风而行，穿过花丛",
+      "sing_text": "迎风而行，穿过花丛",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "穿过云层，只我一人向下风处",
+      "sing_text": "穿过云层，只我一人向下风处",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "model_text": "黎明时分，快些前行",
+      "sing_text": "黎明时分，快些前行",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-04",
+      "section": "C1",
+      "model_text": "这青草与灵魂的气息",
+      "sing_text": "这青草与灵魂的气息",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-05",
+      "section": "C1",
+      "model_text": "穿过风，穿过天空",
+      "sing_text": "穿过风，穿过天空",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-06",
+      "section": "C1",
+      "model_text": "穿过云层，只我一人向下风处",
+      "sing_text": "穿过云层，只我一人向下风处",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    }
+  ],
+  "sections": [
+    {
+      "section": "V1",
+      "draft_run": "run-20261105T124230779561Z-aa9bdecf",
+      "verdict": "pass",
+      "violations": [
+        {
+          "phrase_id": "V1-02",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            11,
+            11
+          ],
+          "actual": 11,
+          "fix": "去掉标点；停顿用空格表达"
+        },
+        {
+          "phrase_id": "V1-04",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            9,
+            9
+          ],
+          "actual": 9,
+          "fix": "去掉标点；停顿用空格表达"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "V1-01",
+          "V1-02",
+          "V1-03",
+          "V1-04",
+          "V1-05",
+          "V1-06",
+          "V1-07"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "V2",
+      "draft_run": "run-20261105T124230779561Z-aa9bdecf",
+      "verdict": "pass",
+      "violations": [
+        {
+          "phrase_id": "V2-01",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            7,
+            7
+          ],
+          "actual": 7,
+          "fix": "去掉标点；停顿用空格表达"
+        },
+        {
+          "phrase_id": "V2-02",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            8,
+            8
+          ],
+          "actual": 8,
+          "fix": "去掉标点；停顿用空格表达"
+        },
+        {
+          "phrase_id": "V2-04",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            11,
+            11
+          ],
+          "actual": 11,
+          "fix": "去掉标点；停顿用空格表达"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "V2-01",
+          "V2-02",
+          "V2-03",
+          "V2-04",
+          "V2-05",
+          "V2-06",
+          "V2-07",
+          "V2-08"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "C1",
+      "draft_run": "run-20261105T124230779561Z-aa9bdecf",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "C1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            10,
+            10
+          ],
+          "actual": 8,
+          "fix": "差 2 字，补到 10 字以上"
+        },
+        {
+          "phrase_id": "C1-01",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            10,
+            10
+          ],
+          "actual": 8,
+          "fix": "去掉标点；停顿用空格表达"
+        },
+        {
+          "phrase_id": "C1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            13,
+            13
+          ],
+          "actual": 12,
+          "fix": "差 1 字，补到 13 字以上"
+        },
+        {
+          "phrase_id": "C1-02",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            13,
+            13
+          ],
+          "actual": 12,
+          "fix": "去掉标点；停顿用空格表达"
+        },
+        {
+          "phrase_id": "C1-03",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            10,
+            10
+          ],
+          "actual": 8,
+          "fix": "差 2 字，补到 10 字以上"
+        },
+        {
+          "phrase_id": "C1-03",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            10,
+            10
+          ],
+          "actual": 8,
+          "fix": "去掉标点；停顿用空格表达"
+        },
+        {
+          "phrase_id": "C1-04",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 9,
+          "fix": "差 3 字，补到 12 字以上"
+        },
+        {
+          "phrase_id": "C1-05",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            10,
+            10
+          ],
+          "actual": 7,
+          "fix": "差 3 字，补到 10 字以上"
+        },
+        {
+          "phrase_id": "C1-05",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            10,
+            10
+          ],
+          "actual": 7,
+          "fix": "去掉标点；停顿用空格表达"
+        },
+        {
+          "phrase_id": "C1-06",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            13,
+            13
+          ],
+          "actual": 12,
+          "fix": "差 1 字，补到 13 字以上"
+        },
+        {
+          "phrase_id": "C1-06",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            13,
+            13
+          ],
+          "actual": 12,
+          "fix": "去掉标点；停顿用空格表达"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "C1-01",
+          "C1-02",
+          "C1-03",
+          "C1-04",
+          "C1-05",
+          "C1-06"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    }
+  ],
+  "note": "仅为人工预算和规则的事后评测，不是论文原始节奏距离，也不代表真人可唱性评分。"
+}

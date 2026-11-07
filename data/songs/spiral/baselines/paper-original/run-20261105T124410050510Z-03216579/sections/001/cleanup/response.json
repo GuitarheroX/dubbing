@@ -1,0 +1,21 @@
+{
+  "id": "928e9ce3-9616-4dfe-bba3-7d6c6b619dfc",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"画出的地图已被撕裂\",\"世界仍停留在那一天\",\"我又再次\",\"把责任推给了别人\",\"真让人厌烦啊\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 126,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 31,
+    "service_tier": "standard"
+  }
+}

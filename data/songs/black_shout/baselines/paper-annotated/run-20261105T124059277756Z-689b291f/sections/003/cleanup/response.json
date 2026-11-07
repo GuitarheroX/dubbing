@@ -1,0 +1,21 @@
+{
+  "id": "8e852751-5827-4174-b4b6-6bd09257aecc",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"阻碍之物 嫉妒\",\"甩落而去 冲动\",\"我的颜色 本能\",\"想要夺回所以…！\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 135,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 28,
+    "service_tier": "standard"
+  }
+}

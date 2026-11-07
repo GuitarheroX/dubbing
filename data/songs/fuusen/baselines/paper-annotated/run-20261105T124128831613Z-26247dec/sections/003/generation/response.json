@@ -1,0 +1,21 @@
+{
+  "id": "35de1c9c-e459-4e5e-b3f9-2a055353e470",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "1. 若一切化为乌有 那全都是你的错吧 (12 syllables)\n2. 就算这样说着无数次继续挥拳打下去 (14 syllables)\n3. 就连那一切是否都能漂亮地吞咽下去呢 (14 syllables)"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 370,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 51,
+    "service_tier": "standard"
+  }
+}

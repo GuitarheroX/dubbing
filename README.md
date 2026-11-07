@@ -97,6 +97,19 @@ python -m dubbing view --song kotozute
 
 ## 开发与测试
 
+### 论文双 baseline
+
+另提供论文 Exp.4 的两组对照：`paper-original` 保留原提示、不传人工标注；`paper-annotated` 加入人工预算区间和分组。两组共用当前模型配置，按段生成并独立保存结果，不覆盖已有单提示词 baseline 或主流水线产物。
+
+```bash
+python baseline/run_paper_baselines.py --all --variant both --dry-run
+python baseline/run_paper_baselines.py --all --variant both --client api
+```
+
+“原样”指提示和输入方式，当前模型与清理步骤的差异会明确记录，不代表论文整套实验的严格复现。用法、输出和出处见 [baseline/PAPER_BASELINES.md](baseline/PAPER_BASELINES.md)。
+
+### 测试
+
 ```bash
 python -m pytest
 ```

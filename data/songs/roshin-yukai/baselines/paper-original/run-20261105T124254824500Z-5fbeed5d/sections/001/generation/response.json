@@ -1,0 +1,21 @@
+{
+  "id": "3d16c553-1eca-4153-a576-1e211987d447",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "街灯璀璨明亮\n乙醚麻醉的冰冷\n无法入睡凌晨两点\n一切都急速改变\n燃油耗尽的打火机\n胃中灼烧般的感受\n如果一切都是谎言\n那该有多好啊真的"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 127,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 43,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "evaluated_phrases": 13,
+  "kept_phrases": 0,
+  "budget_pass_rate": 0.7692307692307693,
+  "mean_budget_distance": 0.46153846153846156,
+  "rule_pass_rate": 0.7692307692307693,
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "水面上的光斑跳跃在新芽上",
+      "sing_text": "水面上的光斑跳跃在新芽上",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "你稍微加快了脚步向前走",
+      "sing_text": "你稍微加快了脚步向前走",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "夜半里掉落的食物碎屑是梦的地图",
+      "sing_text": "夜半里掉落的食物碎屑是梦的地图",
+      "keep_source": false,
+      "actual": 15,
+      "budget": {
+        "min": 15,
+        "max": 15
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "崭新的早晨即将到来",
+      "sing_text": "崭新的早晨即将到来",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "B1-01",
+      "section": "B1",
+      "model_text": "风穿行而过 风轻轻搬运",
+      "sing_text": "风穿行而过 风轻轻搬运",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-02",
+      "section": "B1",
+      "model_text": "我们就像那蒲公英",
+      "sing_text": "我们就像那蒲公英",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-03",
+      "section": "B1",
+      "model_text": "散落街巷中 各自飘零",
+      "sing_text": "散落街巷中 各自飘零",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "再见了小企鹅",
+      "sing_text": "再见了小企鹅",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "一步一步地走着欢笑着看看",
+      "sing_text": "一步一步地走着欢笑着看看",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "model_text": "恋上这世界然后轻轻眨一眨眼",
+      "sing_text": "恋上这世界然后轻轻眨一眨眼",
+      "keep_source": false,
+      "actual": 13,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-04",
+      "section": "C1",
+      "model_text": "风儿轻轻吹过这里风儿吹来",
+      "sing_text": "风儿轻轻吹过这里风儿吹来",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-05",
+      "section": "C1",
+      "model_text": "那眼泪掉下来了",
+      "sing_text": "那眼泪掉下来了",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 7,
+        "max": 7
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-06",
+      "section": "C1",
+      "model_text": "再见了呀小企鹅",
+      "sing_text": "再见了呀小企鹅",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 7,
+        "max": 7
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    }
+  ],
+  "sections": [
+    {
+      "section": "V1",
+      "draft_run": "run-20261105T124321073502Z-093e2861",
+      "verdict": "pass",
+      "violations": [],
+      "changes": {
+        "rewritten": [
+          "V1-01",
+          "V1-02",
+          "V1-03",
+          "V1-04"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "B1",
+      "draft_run": "run-20261105T124321073502Z-093e2861",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "B1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 10,
+          "fix": "差 2 字，补到 12 字以上"
+        },
+        {
+          "phrase_id": "B1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            10,
+            10
+          ],
+          "actual": 8,
+          "fix": "差 2 字，补到 10 字以上"
+        },
+        {
+          "phrase_id": "B1-03",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            11,
+            11
+          ],
+          "actual": 9,
+          "fix": "差 2 字，补到 11 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "B1-01",
+          "B1-02",
+          "B1-03"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "C1",
+      "draft_run": "run-20261105T124321073502Z-093e2861",
+      "verdict": "pass",
+      "violations": [],
+      "changes": {
+        "rewritten": [
+          "C1-01",
+          "C1-02",
+          "C1-03",
+          "C1-04",
+          "C1-05",
+          "C1-06"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    }
+  ],
+  "note": "仅为人工预算和规则的事后评测，不是论文原始节奏距离，也不代表真人可唱性评分。"
+}

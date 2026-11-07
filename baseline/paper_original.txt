@@ -1,0 +1,1 @@
+Translate the passage line by line into {target_language} with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.

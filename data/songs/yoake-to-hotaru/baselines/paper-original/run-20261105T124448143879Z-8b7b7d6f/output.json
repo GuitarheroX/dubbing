@@ -1,0 +1,173 @@
+{
+  "song_id": "yoake-to-hotaru",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "淡月令人醉",
+      "sing_text": "淡月令人醉",
+      "keep_source": false,
+      "actual": 5,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 8,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "暗处脚下看不见",
+      "sing_text": "暗处脚下看不见",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "摔倒也未察觉",
+      "sing_text": "摔倒也未察觉",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 7,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "远夜星光晕染开",
+      "sing_text": "远夜星光晕染开",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-05",
+      "section": "V1",
+      "model_text": "找不到想做的事",
+      "sing_text": "找不到想做的事",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 6,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-06",
+      "section": "V1",
+      "model_text": "装作匆忙低着头",
+      "sing_text": "装作匆忙低着头",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-07",
+      "section": "V1",
+      "model_text": "摔倒后被人嘲笑",
+      "sing_text": "摔倒后被人嘲笑",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 7,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-08",
+      "section": "V1",
+      "model_text": "假装没注意到",
+      "sing_text": "假装没注意到",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 5,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "无形的歌谣描绘着清晨的模样",
+      "sing_text": "无形的歌谣描绘着清晨的模样",
+      "keep_source": false,
+      "actual": 13,
+      "budget": {
+        "min": 15,
+        "max": 15
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "浅浅的浅浅的夏之彼方",
+      "sing_text": "浅浅的浅浅的夏之彼方",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "model_text": "看见了你并不冰冷的手掌",
+      "sing_text": "看见了你并不冰冷的手掌",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 16,
+        "max": 16
+      },
+      "budget_distance": 5,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-04",
+      "section": "C1",
+      "model_text": "淡薄天空 黎明的萤光",
+      "sing_text": "淡薄天空 黎明的萤光",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    }
+  ]
+}

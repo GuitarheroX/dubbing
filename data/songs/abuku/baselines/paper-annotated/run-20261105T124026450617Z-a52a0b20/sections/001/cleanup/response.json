@@ -1,0 +1,21 @@
+{
+  "id": "5e4144a1-a444-4bad-9fdd-9bab8e5537fd",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"啊，无可奈何地\",\"我心中躁动的兽\",\"水面浮现又破灭的泡沫\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 195,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 24,
+    "service_tier": "standard"
+  }
+}

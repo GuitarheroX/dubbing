@@ -1,0 +1,21 @@
+{
+  "id": "5e0b8200-92af-493f-9520-43b580268a37",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "箱中的小小家\n两人并肩厨房的小窗\n窗帘那头的回忆庭院里\n埋下一缕春日阳光\n偶尔浇上一点水\n当小小的枇杷结出果时\n请忘了我吧"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 131,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 45,
+    "service_tier": "standard"
+  }
+}

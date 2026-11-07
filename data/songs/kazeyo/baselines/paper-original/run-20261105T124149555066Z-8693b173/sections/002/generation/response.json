@@ -1,0 +1,21 @@
+{
+  "id": "323f526a-1512-4104-9f6b-0b10c7ef096a",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "今日的 载着悲伤\n明天的 运送喜悦\n全部 风都带走\n前往该去的地方"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 100,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 22,
+    "service_tier": "standard"
+  }
+}

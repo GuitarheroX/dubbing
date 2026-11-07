@@ -1,0 +1,21 @@
+{
+  "id": "fb6e20d0-33ca-432f-9923-c7eebebe508e",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"lines\": [\n    \"带我走吧\",\n    \"哦，飞向那星\"\n  ]\n}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 193,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 23,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "3e002480-37bc-49bc-8ce7-651e16dc067e",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"什么都没了的话 是你的错吧\",\"这样说着继续打了好多次\",\"连那也能漂亮地吞下去吗\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 340,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 29,
+    "service_tier": "standard"
+  }
+}

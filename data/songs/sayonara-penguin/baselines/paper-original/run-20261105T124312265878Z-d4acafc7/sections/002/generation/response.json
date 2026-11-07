@@ -1,0 +1,21 @@
+{
+  "id": "d3562208-c27d-4a6d-9ff0-35d8bb8067a7",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "风儿穿行 风儿传送\n我们如蒲公英绒\n散落城中 各自飘零"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 91,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 21,
+    "service_tier": "standard"
+  }
+}

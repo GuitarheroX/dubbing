@@ -1,0 +1,21 @@
+{
+  "id": "7bf8a03d-0130-406b-b86b-efbe42296ada",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"把真心都给我吧\",\"把那花束全都献给你吧\",\"就让那摇曳着的发丝随风轻轻飘拂\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1078,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 30,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "08459e18-19c2-4c6d-beea-e1c53db77610",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "鸟儿为何能在天空飞翔？\n猫咪为何总是睡个不停？\n你今天会活出怎样的模样？\n全部 全部 全部\n一起去寻找吧"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 115,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 28,
+    "service_tier": "standard"
+  }
+}

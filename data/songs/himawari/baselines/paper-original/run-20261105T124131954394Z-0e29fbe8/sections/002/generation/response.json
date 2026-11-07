@@ -1,0 +1,21 @@
+{
+  "id": "7b0b08a8-5142-4751-9a29-736b855b031a",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "夏日海滨赤足行\n唤你之间足已湿\n忘却波浪干肌肤\n你牵引之手燃我身"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 103,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 24,
+    "service_tier": "standard"
+  }
+}

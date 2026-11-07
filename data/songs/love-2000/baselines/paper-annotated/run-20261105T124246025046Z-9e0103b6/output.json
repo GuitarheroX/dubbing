@@ -1,0 +1,243 @@
+{
+  "song_id": "love-2000",
+  "phrases": [
+    {
+      "id": "I1-01",
+      "section": "I1",
+      "model_text": "爱情究竟是从什么地方飘来的哦",
+      "sing_text": "爱情究竟是从什么地方飘来的哦",
+      "keep_source": false,
+      "actual": 14,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "I1-02",
+      "section": "I1",
+      "model_text": "我向自己的内心深处去坦白",
+      "sing_text": "我向自己的内心深处去坦白",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "I1-03",
+      "section": "I1",
+      "model_text": "对虚假的东西我毫无兴趣哦",
+      "sing_text": "对虚假的东西我毫无兴趣哦",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "I1-04",
+      "section": "I1",
+      "model_text": "我只想凝视着那一份真爱",
+      "sing_text": "我只想凝视着那一份真爱",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "悲伤的新闻和那些无聊闲话",
+      "sing_text": "悲伤的新闻和那些无聊闲话",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "从早上就那么让人厌烦呢",
+      "sing_text": "从早上就那么让人厌烦呢",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "今天比平时多",
+      "sing_text": "今天比平时多",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "风儿感觉舒服所以呢",
+      "sing_text": "风儿感觉舒服所以呢",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-05",
+      "section": "V1",
+      "model_text": "换上快乐心情出发呢",
+      "sing_text": "换上快乐心情出发呢",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "B1-01",
+      "section": "B1",
+      "model_text": "从未能察觉",
+      "sing_text": "从未能察觉",
+      "keep_source": false,
+      "actual": 5,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-02",
+      "section": "B1",
+      "model_text": "想必是太爱撒娇了吧",
+      "sing_text": "想必是太爱撒娇了吧",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-03",
+      "section": "B1",
+      "model_text": "所以想爱自己再去爱他人",
+      "sing_text": "所以想爱自己再去爱他人",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "budget_distance": 6,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "爱情到底是从什么地方而来的呢",
+      "sing_text": "爱情到底是从什么地方而来的呢",
+      "keep_source": false,
+      "actual": 14,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "我问自己的心它到底在哪里",
+      "sing_text": "我问自己的心它到底在哪里",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "model_text": "假的东西我根本就不会在意",
+      "sing_text": "假的东西我根本就不会在意",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-04",
+      "section": "C1",
+      "model_text": "我只想去找到那真正的爱",
+      "sing_text": "我只想去找到那真正的爱",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-05",
+      "section": "C1",
+      "model_text": "我一直寻找的那个人是你",
+      "sing_text": "我一直寻找的那个人是你",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    }
+  ]
+}

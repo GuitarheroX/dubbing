@@ -1,0 +1,97 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the provided budget.min to budget.max syllable count per line, inclusive, instead of matching the source mora count, and verify by counting syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.\n\nThe input is a JSON object containing phrases in performance order. Each phrase contains its original lyrics in ja. budget is the human-annotated target syllable range. An optional pattern gives human-annotated within-line groups; use it as guidance, not an additional hard constraint. For keep_source: true, reproduce ja unchanged. budget: null means no target syllable limit. Produce one lyric line for every input phrase in order. Do not translate the field names or include the annotation numbers as lyrics.",
+    "user": "{\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"ja\": \"眠りから目覚めたら\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      }\n    },\n    {\n      \"id\": \"V1-02\",\n      \"ja\": \"ひらかれたページの上にひとり\",\n      \"budget\": {\n        \"min\": 14,\n        \"max\": 14\n      }\n    },\n    {\n      \"id\": \"V1-03\",\n      \"ja\": \"見回せど見えない\",\n      \"budget\": {\n        \"min\": 9,\n        \"max\": 9\n      }\n    },\n    {\n      \"id\": \"V1-04\",\n      \"ja\": \"あても出口も\",\n      \"budget\": {\n        \"min\": 7,\n        \"max\": 7\n      }\n    },\n    {\n      \"id\": \"V1-05\",\n      \"ja\": \"そして聞こえたのは\",\n      \"budget\": {\n        \"min\": 9,\n        \"max\": 9\n      }\n    },\n    {\n      \"id\": \"V1-06\",\n      \"ja\": \"名前を呼んでるあなたの声\",\n      \"budget\": {\n        \"min\": 14,\n        \"max\": 14\n      }\n    },\n    {\n      \"id\": \"V1-07\",\n      \"ja\": \"手探りの言葉と\",\n      \"budget\": {\n        \"min\": 9,\n        \"max\": 9\n      }\n    },\n    {\n      \"id\": \"V1-08\",\n      \"ja\": \"歩き出した\",\n      \"budget\": {\n        \"min\": 6,\n        \"max\": 6\n      }\n    }\n  ]\n}"
+  },
+  "data": {
+    "phrases": [
+      {
+        "id": "V1-01",
+        "ja": "眠りから目覚めたら",
+        "budget": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      {
+        "id": "V1-02",
+        "ja": "ひらかれたページの上にひとり",
+        "budget": {
+          "min": 14,
+          "max": 14
+        }
+      },
+      {
+        "id": "V1-03",
+        "ja": "見回せど見えない",
+        "budget": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      {
+        "id": "V1-04",
+        "ja": "あても出口も",
+        "budget": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      {
+        "id": "V1-05",
+        "ja": "そして聞こえたのは",
+        "budget": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      {
+        "id": "V1-06",
+        "ja": "名前を呼んでるあなたの声",
+        "budget": {
+          "min": 14,
+          "max": 14
+        }
+      },
+      {
+        "id": "V1-07",
+        "ja": "手探りの言葉と",
+        "budget": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      {
+        "id": "V1-08",
+        "ja": "歩き出した",
+        "budget": {
+          "min": 6,
+          "max": 6
+        }
+      }
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the provided budget.min to budget.max syllable count per line, inclusive, instead of matching the source mora count, and verify by counting syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.\n\nThe input is a JSON object containing phrases in performance order. Each phrase contains its original lyrics in ja. budget is the human-annotated target syllable range. An optional pattern gives human-annotated within-line groups; use it as guidance, not an additional hard constraint. For keep_source: true, reproduce ja unchanged. budget: null means no target syllable limit. Produce one lyric line for every input phrase in order. Do not translate the field names or include the annotation numbers as lyrics.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"ja\": \"眠りから目覚めたら\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      }\n    },\n    {\n      \"id\": \"V1-02\",\n      \"ja\": \"ひらかれたページの上にひとり\",\n      \"budget\": {\n        \"min\": 14,\n        \"max\": 14\n      }\n    },\n    {\n      \"id\": \"V1-03\",\n      \"ja\": \"見回せど見えない\",\n      \"budget\": {\n        \"min\": 9,\n        \"max\": 9\n      }\n    },\n    {\n      \"id\": \"V1-04\",\n      \"ja\": \"あても出口も\",\n      \"budget\": {\n        \"min\": 7,\n        \"max\": 7\n      }\n    },\n    {\n      \"id\": \"V1-05\",\n      \"ja\": \"そして聞こえたのは\",\n      \"budget\": {\n        \"min\": 9,\n        \"max\": 9\n      }\n    },\n    {\n      \"id\": \"V1-06\",\n      \"ja\": \"名前を呼んでるあなたの声\",\n      \"budget\": {\n        \"min\": 14,\n        \"max\": 14\n      }\n    },\n    {\n      \"id\": \"V1-07\",\n      \"ja\": \"手探りの言葉と\",\n      \"budget\": {\n        \"min\": 9,\n        \"max\": 9\n      }\n    },\n    {\n      \"id\": \"V1-08\",\n      \"ja\": \"歩き出した\",\n      \"budget\": {\n        \"min\": 6,\n        \"max\": 6\n      }\n    }\n  ]\n}"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

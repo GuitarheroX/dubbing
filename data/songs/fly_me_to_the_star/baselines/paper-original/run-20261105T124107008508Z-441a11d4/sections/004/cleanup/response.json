@@ -1,0 +1,21 @@
+{
+  "id": "3ff9b36b-3adb-4a53-aa5d-d420ee21a6af",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"黎明宣告夜将尽 鸟儿啊\",\"此刻停住时钟的针吧\",\"流星轻轻滑向晨光 洒落消逝\",\"oh, fly me to the star\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1087,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 42,
+    "service_tier": "standard"
+  }
+}

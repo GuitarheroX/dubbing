@@ -1,0 +1,21 @@
+{
+  "id": "28daef45-dfec-4be3-bfc5-773321c06e08",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"悲伤的 NEWS 和 无关紧要的话\",\"从早上开始就受够了那种事\",\"今天比平时更加\",\"风令人舒畅惬意呢\",\"换上快乐的心情吧\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 135,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 40,
+    "service_tier": "standard"
+  }
+}

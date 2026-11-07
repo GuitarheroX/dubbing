@@ -1,0 +1,21 @@
+{
+  "id": "eab78ef0-c5cd-42ec-9ffb-3be1fd68f51e",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"终有一天这小小歌谣\",\"你一定会把它忘掉\",\"我却会永远记得牢\",\"即使长大成人后\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 149,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 29,
+    "service_tier": "standard"
+  }
+}

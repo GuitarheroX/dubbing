@@ -1,0 +1,21 @@
+{
+  "id": "f5bfcbab-6d70-4b33-bdba-317876564e99",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"空气被抽干后\"\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"干瘪的我啊\"\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"啊已是你的所有物\"\n    }\n  ]\n}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 367,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 84,
+    "service_tier": "standard"
+  }
+}

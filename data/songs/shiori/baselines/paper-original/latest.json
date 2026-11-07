@@ -1,0 +1,10 @@
+{
+  "song": "shiori",
+  "variant": "paper-original",
+  "run": "run-20261105T124340644652Z-14f9efa8",
+  "status": "completed",
+  "partial_export": false,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "source_directory": "data/songs/shiori/baselines/paper-original/run-20261105T124340644652Z-14f9efa8"
+}

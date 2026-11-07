@@ -1,0 +1,285 @@
+{
+  "song_id": "know_me",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "总是一样地渴求着",
+      "sing_text": "总是一样地渴求着",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 5,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "沉默着就好吗",
+      "sing_text": "沉默着就好吗",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "如你所愿倒着走下去",
+      "sing_text": "如你所愿倒着走下去",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "像断了气一样",
+      "sing_text": "像断了气一样",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-01",
+      "section": "V2",
+      "model_text": "潜藏的忧愁啊",
+      "sing_text": "潜藏的忧愁啊",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-02",
+      "section": "V2",
+      "model_text": "怎么也无法坦率",
+      "sing_text": "怎么也无法坦率",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-03",
+      "section": "V2",
+      "model_text": "和谁都难以相互理解",
+      "sing_text": "和谁都难以相互理解",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-04",
+      "section": "V2",
+      "model_text": "连自己也是",
+      "sing_text": "连自己也是",
+      "keep_source": false,
+      "actual": 5,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "B1-01",
+      "section": "B1",
+      "model_text": "命令 故意地感受",
+      "sing_text": "命令 故意地感受",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-02",
+      "section": "B1",
+      "model_text": "订正 无为地观透",
+      "sing_text": "订正 无为地观透",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-03",
+      "section": "B1",
+      "model_text": "安宁之中掺杂罪",
+      "sing_text": "安宁之中掺杂罪",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-04",
+      "section": "B1",
+      "model_text": "当然吗",
+      "sing_text": "当然吗",
+      "keep_source": false,
+      "actual": 3,
+      "budget": {
+        "min": 3,
+        "max": 3
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "带着熟悉的神情笑吧",
+      "sing_text": "带着熟悉的神情笑吧",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "无底的恐惧在心中",
+      "sing_text": "无底的恐惧在心中",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "model_text": "给我平凡普通的爱吧",
+      "sing_text": "给我平凡普通的爱吧",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-04",
+      "section": "C1",
+      "model_text": "You know me",
+      "sing_text": "You know me",
+      "keep_source": false,
+      "actual": 3,
+      "budget": {
+        "min": 3,
+        "max": 3
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-05",
+      "section": "C1",
+      "model_text": "装作懂得跳着舞吗",
+      "sing_text": "装作懂得跳着舞吗",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-06",
+      "section": "C1",
+      "model_text": "心底被填满了吗",
+      "sing_text": "心底被填满了吗",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-07",
+      "section": "C1",
+      "model_text": "别放开我别停下啊",
+      "sing_text": "别放开我别停下啊",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-08",
+      "section": "C1",
+      "model_text": "并非独自一人啊",
+      "sing_text": "并非独自一人啊",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 7,
+        "max": 7
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    }
+  ]
+}

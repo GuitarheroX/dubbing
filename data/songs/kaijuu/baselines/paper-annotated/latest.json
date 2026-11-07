@@ -1,0 +1,10 @@
+{
+  "song": "kaijuu",
+  "variant": "paper-annotated",
+  "run": "run-20261105T124146932199Z-f37cce18",
+  "status": "completed",
+  "partial_export": false,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "source_directory": "data/songs/kaijuu/baselines/paper-annotated/run-20261105T124146932199Z-f37cce18"
+}

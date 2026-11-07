@@ -1,0 +1,6 @@
+1. 星星为什么在闪耀呢 (12 syllables: xīng xīng wèi shén me zài shǎn yào ne)
+2. 云儿为什么在天空游荡 (12 syllables: yún ér wèi shén me zài tiān kōng yóu dàng)
+3. 人们为什么把梦想描绘 (12 syllables: rén men wèi shén me bǎ mèng xiǎng miáo huì)
+4. 难道没有答案吗 (10 syllables: nán dào méi yǒu dá àn ma)
+
+Rhyme check (final phonemes): ne / dàng / huì / ma — original has no strict rhyme pattern across lines either (の/の/の/な), so no rhyme constraint is enforced. Theme preserved: stars shining, clouds swimming in sky, people dreaming, no answers.

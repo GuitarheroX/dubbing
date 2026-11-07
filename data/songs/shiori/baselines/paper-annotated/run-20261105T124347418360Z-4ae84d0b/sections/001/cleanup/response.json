@@ -1,0 +1,21 @@
+{
+  "id": "e269be94-a36e-4eca-96a2-30a26d9ad146",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"“普通”或“理所当然”到底是什么呢\",\"用现在手中握着的这把尺子\",\"却完全无法好好地测量出来\",\"吐出又再次吸入的不安之中\",\"我就这样任其摆布伫立不动\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 175,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 50,
+    "service_tier": "standard"
+  }
+}

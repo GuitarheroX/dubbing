@@ -1,0 +1,21 @@
+{
+  "id": "7157eac2-f9e6-410a-934d-5f03509784af",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "1. 风穿行而过 风轻轻搬运  \n2. 我们就像那蒲公英  \n3. 散落街巷中 各自飘零"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 370,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 32,
+    "service_tier": "standard"
+  }
+}

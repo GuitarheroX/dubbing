@@ -1,0 +1,21 @@
+{
+  "id": "e426bb4c-1948-4c56-b91f-9b193a706d39",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"一阵狂风吹\",\"两阵风吹过来了，我拔出草\",\"终于空空荡荡\",\"走向那下风处，只有我\",\"草原上立着的影\",\"我便是那蓝色的风啊\",\"飘摇着\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 917,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 48,
+    "service_tier": "standard"
+  }
+}

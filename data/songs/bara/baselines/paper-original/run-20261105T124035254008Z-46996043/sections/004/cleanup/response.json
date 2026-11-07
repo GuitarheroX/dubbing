@@ -1,0 +1,21 @@
+{
+  "id": "d79ab424-9783-4100-8ce8-dfa8b654e3b1",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"哪颗星啊 轮回之时\",\"消散而去 是我吧\",\"平凡的那 人生啊\",\"无法实现 身虽如此\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 510,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 32,
+    "service_tier": "standard"
+  }
+}

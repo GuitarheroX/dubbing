@@ -1,0 +1,32 @@
+Here are the line-by-line Chinese translations, verified for syllable count, rhyme, and theme:
+
+**V2-01** 「いつか見た終演」
+→ **曾见过的终演**
+- Syllables: 曾(1)见(2)过(3)的(4)终(5)演(6) = **6** ✓ (6–6)
+- Rhyme: ends in **-an** (演 yǎn)
+
+**V2-02** 「当然といずれ見える運命」
+→ **当然终将显现的命数**
+- Syllables: 当(1)然(2)终(3)将(4)显(5)现(6)的(7)命(8)数(9)... let me recount: 当/然/终/将/显/现/的/命/数 = **9** — need 10.
+- Adjust: **当然终将显现的命数啊**
+  - 当(1)然(2)终(3)将(4)显(5)现(6)的(7)命(8)数(9)啊(10) = **10** ✓ (10–10)
+- Rhyme: ends in **-a** (啊 a) — does not match -an. Revise ending to keep rhyme with line 1/3.
+- Try: **当然终将显现的命盘** → 当(1)然(2)终(3)将(4)显(5)现(6)的(7)命(8)盘(9) = 9. Add one: **当然终将会显现的命盘** = 当(1)然(2)终(3)将(4)会(5)显(6)现(7)的(8)命(9)盘(10) = **10** ✓
+- Rhyme: ends **-an** (盘 pán) ✓ matches 演 (-an)
+
+**V2-03** 「いつも見えていない」
+→ **总是看不见**
+- Syllables: 总(1)是(2)看(3)不(4)见(5) = **5** ✓ (5–5)
+- Rhyme: ends **-ian** (见 jiàn) — close to -an family ✓
+
+**Rhyme check (final phonemes):**
+- Line 1: 演 → **-an**
+- Line 2: 盘 → **-an**
+- Line 3: 见 → **-ian** (same -an rhyme family) ✓
+
+**Final output:**
+1. 曾见过的终演
+2. 当然终将会显现的命盘
+3. 总是看不见
+
+Theme preserved: "a finale once seen," "a fate that will surely come into view," "always unseen."

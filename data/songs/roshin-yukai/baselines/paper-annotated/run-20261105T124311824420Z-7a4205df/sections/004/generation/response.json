@@ -1,0 +1,21 @@
+{
+  "id": "9ffe244f-78c4-413d-a4d5-b4572a8d3b75",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "阳台的另一侧  \n楼梯上缓缓升起的声响  \n天色开始阴沉  \n窗玻璃上 落进房间  \n扩散的黄昏  \n哭肿了般的太阳红  \n像融化般一点一点  \n一点一点死去的世界  \n我梦见勒住你的脖颈  \n春风中摇曳的窗帘  \n从干裂的嘴唇中  \n溢出的话语如泡沫"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 781,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 70,
+    "service_tier": "standard"
+  }
+}

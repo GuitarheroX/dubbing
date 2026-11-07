@@ -1,0 +1,10 @@
+{
+  "song": "spiral",
+  "variant": "paper-annotated",
+  "run": "run-20261105T124415791262Z-bda14bee",
+  "status": "completed",
+  "partial_export": false,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "source_directory": "data/songs/spiral/baselines/paper-annotated/run-20261105T124415791262Z-bda14bee"
+}

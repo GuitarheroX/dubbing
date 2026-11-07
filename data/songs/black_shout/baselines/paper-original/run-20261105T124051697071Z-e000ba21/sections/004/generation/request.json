@@ -1,0 +1,41 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+    "user": "例え明日が\n行き止まりでも\n自分の手で\n切り開くんだ\nすくむ身体\n強く抱いて\n覚悟で踏み出し\n叶えたい夢　勝ち取れ今すぐに！"
+  },
+  "data": {
+    "lyrics": [
+      "例え明日が",
+      "行き止まりでも",
+      "自分の手で",
+      "切り開くんだ",
+      "すくむ身体",
+      "強く抱いて",
+      "覚悟で踏み出し",
+      "叶えたい夢　勝ち取れ今すぐに！"
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "例え明日が\n行き止まりでも\n自分の手で\n切り開くんだ\nすくむ身体\n強く抱いて\n覚悟で踏み出し\n叶えたい夢　勝ち取れ今すぐに！"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "song": {
+    "id": "bara_wa_utsukushiku_chiru",
+    "title": "薔薇は美しく散る",
+    "artist": "鈴木宏子",
+    "source_lang": "ja"
+  },
+  "sections": [
+    {
+      "id": "V1",
+      "role": "verse"
+    },
+    {
+      "id": "B1",
+      "role": "pre-chorus"
+    },
+    {
+      "id": "C1",
+      "role": "chorus"
+    },
+    {
+      "id": "V2",
+      "role": "verse"
+    },
+    {
+      "id": "B2",
+      "role": "pre-chorus"
+    },
+    {
+      "id": "C2",
+      "role": "chorus"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "ja": "草むらに　名も知れず",
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "pattern": [
+        5,
+        5
+      ]
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "ja": "咲いている　花ならば",
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "pattern": [
+        5,
+        5
+      ]
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "ja": "ただ風を　受けながら",
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "pattern": [
+        5,
+        5
+      ]
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "ja": "そよいでいれば　いいけれど",
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "pattern": [
+        7,
+        5
+      ]
+    },
+    {
+      "id": "B1-01",
+      "section": "B1",
+      "ja": "私はバラのさだめに生まれた",
+      "budget": {
+        "min": 15,
+        "max": 15
+      },
+      "pattern": [
+        4,
+        3,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "B1-02",
+      "section": "B1",
+      "ja": "華やかに激しく生きろと生まれた",
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "pattern": [
+        5,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "ja": "バラはバラは　気高く咲いて",
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "pattern": [
+        3,
+        3,
+        8
+      ]
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "ja": "バラはバラは　美しく散る",
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "pattern": [
+        3,
+        3,
+        7
+      ]
+    },
+    {
+      "id": "V2-01",
+      "section": "V2",
+      "ja": "どの星が　めぐる時",
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "pattern": [
+        5,
+        5
+      ]
+    },
+    {
+      "id": "V2-02",
+      "section": "V2",
+      "ja": "散ってゆく　私だろう",
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "pattern": [
+        5,
+        5
+      ]
+    },
+    {
+      "id": "V2-03",
+      "section": "V2",
+      "ja": "平凡な　人生は",
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "pattern": [
+        5,
+        5
+      ]
+    },
+    {
+      "id": "V2-04",
+      "section": "V2",
+      "ja": "かなえられない　身だけれど",
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "pattern": [
+        7,
+        5
+      ]
+    },
+    {
+      "id": "B2-01",
+      "section": "B2",
+      "ja": "私はバラの　命をさずかり",
+      "budget": {
+        "min": 15,
+        "max": 15
+      },
+      "pattern": [
+        4,
+        3,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "B2-02",
+      "section": "B2",
+      "ja": "情熱を燃やして生きてくいつでも",
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "pattern": [
+        5,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "id": "C2-01",
+      "section": "C2",
+      "ja": "バラはバラは　気高く咲いて",
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "pattern": [
+        3,
+        3,
+        8
+      ]
+    },
+    {
+      "id": "C2-02",
+      "section": "C2",
+      "ja": "バラはバラは　美しく散る",
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "pattern": [
+        3,
+        3,
+        7
+      ]
+    }
+  ]
+}

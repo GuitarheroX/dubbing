@@ -1,0 +1,819 @@
+{
+  "evaluated_phrases": 28,
+  "kept_phrases": 0,
+  "budget_pass_rate": 0.2857142857142857,
+  "mean_budget_distance": 1.75,
+  "rule_pass_rate": 0.2857142857142857,
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "鸟儿为何能在天空飞翔？",
+      "sing_text": "鸟儿为何能在天空飞翔？",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "猫咪为何总是睡得安详？",
+      "sing_text": "猫咪为何总是睡得安详？",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "你今日要活出怎样模样？",
+      "sing_text": "你今日要活出怎样模样？",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "全部 全部 全部",
+      "sing_text": "全部 全部 全部",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-05",
+      "section": "V1",
+      "model_text": "一起去寻找吧",
+      "sing_text": "一起去寻找吧",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V2-01",
+      "section": "V2",
+      "model_text": "为何晨光总将我照亮？",
+      "sing_text": "为何晨光总将我照亮？",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-02",
+      "section": "V2",
+      "model_text": "为何夜晚总让人心伤？",
+      "sing_text": "为何夜晚总让人心伤？",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-03",
+      "section": "V2",
+      "model_text": "悲伤的事各分一半",
+      "sing_text": "悲伤的事各分一半",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-04",
+      "section": "V2",
+      "model_text": "若能那样该多好",
+      "sing_text": "若能那样该多好",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-01",
+      "section": "B1",
+      "model_text": "有时候欢笑有时候烦恼忧愁",
+      "sing_text": "有时候欢笑有时候烦恼忧愁",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "B1-02",
+      "section": "B1",
+      "model_text": "在这一个广阔世界的角落里",
+      "sing_text": "在这一个广阔世界的角落里",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "B1-03",
+      "section": "B1",
+      "model_text": "我们一起来探索宇宙奥秘",
+      "sing_text": "我们一起来探索宇宙奥秘",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "B1-04",
+      "section": "B1",
+      "model_text": "我们把它解开看吧",
+      "sing_text": "我们把它解开看吧",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "星星为什么在闪耀呢",
+      "sing_text": "星星为什么在闪耀呢",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "云儿为什么在天空游荡",
+      "sing_text": "云儿为什么在天空游荡",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "model_text": "人们为什么把梦想描绘",
+      "sing_text": "人们为什么把梦想描绘",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-04",
+      "section": "C1",
+      "model_text": "难道没有答案吗",
+      "sing_text": "难道没有答案吗",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "D1-01",
+      "section": "D1",
+      "model_text": "终有一天这小小歌谣",
+      "sing_text": "终有一天这小小歌谣",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "D1-02",
+      "section": "D1",
+      "model_text": "你一定会把它忘掉",
+      "sing_text": "你一定会把它忘掉",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "D1-03",
+      "section": "D1",
+      "model_text": "我却会永远记得牢",
+      "sing_text": "我却会永远记得牢",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "D1-04",
+      "section": "D1",
+      "model_text": "即使长大成人后",
+      "sing_text": "即使长大成人后",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V3-01",
+      "section": "V3",
+      "model_text": "今天我们聊些什么呢？",
+      "sing_text": "今天我们聊些什么呢？",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V3-02",
+      "section": "V3",
+      "model_text": "和你一起唱什么歌呢？",
+      "sing_text": "和你一起唱什么歌呢？",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V3-03",
+      "section": "V3",
+      "model_text": "连无人知晓的花儿也",
+      "sing_text": "连无人知晓的花儿也",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "O1-01",
+      "section": "O1",
+      "model_text": "全部 全部 全部",
+      "sing_text": "全部 全部 全部",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "O1-02",
+      "section": "O1",
+      "model_text": "一起 去寻找",
+      "sing_text": "一起 去寻找",
+      "keep_source": false,
+      "actual": 5,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "O1-03",
+      "section": "O1",
+      "model_text": "全部 全部 全部",
+      "sing_text": "全部 全部 全部",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "O1-04",
+      "section": "O1",
+      "model_text": "一起 去寻找",
+      "sing_text": "一起 去寻找",
+      "keep_source": false,
+      "actual": 5,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    }
+  ],
+  "sections": [
+    {
+      "section": "V1",
+      "draft_run": "run-20261105T124427203784Z-bf14ab3a",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "V1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 10,
+          "fix": "差 2 字，补到 12 字以上"
+        },
+        {
+          "phrase_id": "V1-01",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 10,
+          "fix": "去掉标点；停顿用空格表达"
+        },
+        {
+          "phrase_id": "V1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 10,
+          "fix": "差 2 字，补到 12 字以上"
+        },
+        {
+          "phrase_id": "V1-02",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 10,
+          "fix": "去掉标点；停顿用空格表达"
+        },
+        {
+          "phrase_id": "V1-03",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 10,
+          "fix": "差 2 字，补到 12 字以上"
+        },
+        {
+          "phrase_id": "V1-03",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 10,
+          "fix": "去掉标点；停顿用空格表达"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "V1-01",
+          "V1-02",
+          "V1-03",
+          "V1-04",
+          "V1-05"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "V2",
+      "draft_run": "run-20261105T124427203784Z-bf14ab3a",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "V2-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 9,
+          "fix": "差 3 字，补到 12 字以上"
+        },
+        {
+          "phrase_id": "V2-01",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 9,
+          "fix": "去掉标点；停顿用空格表达"
+        },
+        {
+          "phrase_id": "V2-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 9,
+          "fix": "差 3 字，补到 12 字以上"
+        },
+        {
+          "phrase_id": "V2-02",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 9,
+          "fix": "去掉标点；停顿用空格表达"
+        },
+        {
+          "phrase_id": "V2-03",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            9,
+            9
+          ],
+          "actual": 8,
+          "fix": "差 1 字，补到 9 字以上"
+        },
+        {
+          "phrase_id": "V2-04",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            9,
+            9
+          ],
+          "actual": 7,
+          "fix": "差 2 字，补到 9 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "V2-01",
+          "V2-02",
+          "V2-03",
+          "V2-04"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "B1",
+      "draft_run": "run-20261105T124427203784Z-bf14ab3a",
+      "verdict": "pass",
+      "violations": [],
+      "changes": {
+        "rewritten": [
+          "B1-01",
+          "B1-02",
+          "B1-03",
+          "B1-04"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "C1",
+      "draft_run": "run-20261105T124427203784Z-bf14ab3a",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "C1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 9,
+          "fix": "差 3 字，补到 12 字以上"
+        },
+        {
+          "phrase_id": "C1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 10,
+          "fix": "差 2 字，补到 12 字以上"
+        },
+        {
+          "phrase_id": "C1-03",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 10,
+          "fix": "差 2 字，补到 12 字以上"
+        },
+        {
+          "phrase_id": "C1-04",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            10,
+            10
+          ],
+          "actual": 7,
+          "fix": "差 3 字，补到 10 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "C1-01",
+          "C1-02",
+          "C1-03",
+          "C1-04"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "D1",
+      "draft_run": "run-20261105T124427203784Z-bf14ab3a",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "D1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 9,
+          "fix": "差 3 字，补到 12 字以上"
+        },
+        {
+          "phrase_id": "D1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 8,
+          "fix": "差 4 字，补到 12 字以上"
+        },
+        {
+          "phrase_id": "D1-03",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 8,
+          "fix": "差 4 字，补到 12 字以上"
+        },
+        {
+          "phrase_id": "D1-04",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            9,
+            9
+          ],
+          "actual": 7,
+          "fix": "差 2 字，补到 9 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "D1-01",
+          "D1-02",
+          "D1-03",
+          "D1-04"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "V3",
+      "draft_run": "run-20261105T124427203784Z-bf14ab3a",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "V3-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 9,
+          "fix": "差 3 字，补到 12 字以上"
+        },
+        {
+          "phrase_id": "V3-01",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 9,
+          "fix": "去掉标点；停顿用空格表达"
+        },
+        {
+          "phrase_id": "V3-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 9,
+          "fix": "差 3 字，补到 12 字以上"
+        },
+        {
+          "phrase_id": "V3-02",
+          "code": "PUNCT",
+          "severity": "soft",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 9,
+          "fix": "去掉标点；停顿用空格表达"
+        },
+        {
+          "phrase_id": "V3-03",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            12,
+            12
+          ],
+          "actual": 9,
+          "fix": "差 3 字，补到 12 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "V3-01",
+          "V3-02",
+          "V3-03"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "O1",
+      "draft_run": "run-20261105T124427203784Z-bf14ab3a",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "O1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            6,
+            6
+          ],
+          "actual": 5,
+          "fix": "差 1 字，补到 6 字以上"
+        },
+        {
+          "phrase_id": "O1-04",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            6,
+            6
+          ],
+          "actual": 5,
+          "fix": "差 1 字，补到 6 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "O1-01",
+          "O1-02",
+          "O1-03",
+          "O1-04"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    }
+  ],
+  "note": "仅为人工预算和规则的事后评测，不是论文原始节奏距离，也不代表真人可唱性评分。"
+}

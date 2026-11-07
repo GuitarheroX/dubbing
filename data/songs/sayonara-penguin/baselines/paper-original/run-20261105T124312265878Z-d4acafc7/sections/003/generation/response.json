@@ -1,0 +1,21 @@
+{
+  "id": "7cf6367f-3591-4093-8449-d5e0f75b8f9d",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "再见企鹅\n一步一步走着笑着吧\n恋上世界 眨眨眼\n风穿过 风运送\n眼泪落下\n再见企鹅"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 119,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 28,
+    "service_tier": "standard"
+  }
+}

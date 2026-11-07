@@ -1,0 +1,21 @@
+{
+  "id": "2c7f469b-6981-4976-92fd-1d154d6931e8",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"比起追忆流逝的云\",\"向遥远远方长嚎\",\"连喘息的空隙都没有\",\"那样痛苦啊\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 124,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 29,
+    "service_tier": "standard"
+  }
+}

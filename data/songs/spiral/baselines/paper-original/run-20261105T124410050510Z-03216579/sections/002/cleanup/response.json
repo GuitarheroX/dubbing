@@ -1,0 +1,21 @@
+{
+  "id": "cfeb7eed-8e53-448a-ab8a-a5f434f53e86",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"就这样装作一直在等待着什么\",\"从这里我能够重新开始吗\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 113,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 18,
+    "service_tier": "standard"
+  }
+}

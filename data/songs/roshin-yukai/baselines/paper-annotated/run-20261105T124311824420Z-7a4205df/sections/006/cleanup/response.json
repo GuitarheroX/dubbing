@@ -1,0 +1,21 @@
+{
+  "id": "dd3a5ba7-3377-47f9-a52d-6404640bb57c",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"时钟的秒针在走\",\"电视里的主持人们\",\"明明就在那里\",\"看不见的某个人\",\"笑声传来\",\"饱和着又回荡\",\"アレグロ･アジテート\",\"耳鸣不停不消失不停止\",\"アレグロ･アジテート\",\"耳鸣不停不消失不停止\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 439,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 68,
+    "service_tier": "standard"
+  }
+}

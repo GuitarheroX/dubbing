@@ -1,0 +1,173 @@
+{
+  "song_id": "kazeyo",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "黄昏时城镇的寂寥",
+      "sing_text": "黄昏时城镇的寂寥",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "人们变幻的空虚",
+      "sing_text": "人们变幻的空虚",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "全都载着风儿远去",
+      "sing_text": "全都载着风儿远去",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "乘着流转的云",
+      "sing_text": "乘着流转的云",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-01",
+      "section": "V2",
+      "model_text": "今日的 载着悲伤",
+      "sing_text": "今日的 载着悲伤",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-02",
+      "section": "V2",
+      "model_text": "明天的 运送喜悦",
+      "sing_text": "明天的 运送喜悦",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-03",
+      "section": "V2",
+      "model_text": "全部 风都带走",
+      "sing_text": "全部 风都带走",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-04",
+      "section": "V2",
+      "model_text": "前往该去的地方",
+      "sing_text": "前往该去的地方",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 7,
+        "max": 7
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "B1-01",
+      "section": "B1",
+      "model_text": "狂风呼啸 漂流流转",
+      "sing_text": "狂风呼啸 漂流流转",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-02",
+      "section": "B1",
+      "model_text": "如今已到 这般地方",
+      "sing_text": "如今已到 这般地方",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-03",
+      "section": "B1",
+      "model_text": "被吹散 轻轻摇荡",
+      "sing_text": "被吹散 轻轻摇荡",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-04",
+      "section": "B1",
+      "model_text": "忽然想问 这里是何处",
+      "sing_text": "忽然想问 这里是何处",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    }
+  ]
+}

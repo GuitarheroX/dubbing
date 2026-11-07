@@ -1,0 +1,129 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the provided budget.min to budget.max syllable count per line, inclusive, instead of matching the source mora count, and verify by counting syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.\n\nThe input is a JSON object containing phrases in performance order. Each phrase contains its original lyrics in ja. budget is the human-annotated target syllable range. An optional pattern gives human-annotated within-line groups; use it as guidance, not an additional hard constraint. For keep_source: true, reproduce ja unchanged. budget: null means no target syllable limit. Produce one lyric line for every input phrase in order. Do not translate the field names or include the annotation numbers as lyrics.",
+    "user": "{\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"ja\": \"私はどんどん軽くなる\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        6,\n        5\n      ]\n    },\n    {\n      \"id\": \"V1-02\",\n      \"ja\": \"貴方は何でも奪い取る\",\n      \"budget\": {\n        \"min\": 12,\n        \"max\": 12\n      },\n      \"pattern\": [\n        7,\n        5\n      ]\n    },\n    {\n      \"id\": \"V1-03\",\n      \"ja\": \"どんなことでも吸い込んで\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      },\n      \"pattern\": [\n        6,\n        4\n      ]\n    },\n    {\n      \"id\": \"V1-04\",\n      \"ja\": \"飲み込んでいってしまうんだ\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      },\n      \"pattern\": [\n        6,\n        4\n      ]\n    },\n    {\n      \"id\": \"V1-05\",\n      \"ja\": \"私はどんどん弱くなる\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        6,\n        5\n      ]\n    },\n    {\n      \"id\": \"V1-06\",\n      \"ja\": \"心の中の黒いシミも\",\n      \"budget\": {\n        \"min\": 13,\n        \"max\": 13\n      },\n      \"pattern\": [\n        7,\n        6\n      ]\n    },\n    {\n      \"id\": \"V1-07\",\n      \"ja\": \"さっぱり洗ってくれるから\",\n      \"budget\": {\n        \"min\": 12,\n        \"max\": 12\n      },\n      \"pattern\": [\n        7,\n        5\n      ]\n    },\n    {\n      \"id\": \"V1-08\",\n      \"ja\": \"何もしなくてもよくなる\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        7,\n        4\n      ]\n    }\n  ]\n}"
+  },
+  "data": {
+    "phrases": [
+      {
+        "id": "V1-01",
+        "ja": "私はどんどん軽くなる",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          6,
+          5
+        ]
+      },
+      {
+        "id": "V1-02",
+        "ja": "貴方は何でも奪い取る",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          7,
+          5
+        ]
+      },
+      {
+        "id": "V1-03",
+        "ja": "どんなことでも吸い込んで",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          6,
+          4
+        ]
+      },
+      {
+        "id": "V1-04",
+        "ja": "飲み込んでいってしまうんだ",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          6,
+          4
+        ]
+      },
+      {
+        "id": "V1-05",
+        "ja": "私はどんどん弱くなる",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          6,
+          5
+        ]
+      },
+      {
+        "id": "V1-06",
+        "ja": "心の中の黒いシミも",
+        "budget": {
+          "min": 13,
+          "max": 13
+        },
+        "pattern": [
+          7,
+          6
+        ]
+      },
+      {
+        "id": "V1-07",
+        "ja": "さっぱり洗ってくれるから",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          7,
+          5
+        ]
+      },
+      {
+        "id": "V1-08",
+        "ja": "何もしなくてもよくなる",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          7,
+          4
+        ]
+      }
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the provided budget.min to budget.max syllable count per line, inclusive, instead of matching the source mora count, and verify by counting syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.\n\nThe input is a JSON object containing phrases in performance order. Each phrase contains its original lyrics in ja. budget is the human-annotated target syllable range. An optional pattern gives human-annotated within-line groups; use it as guidance, not an additional hard constraint. For keep_source: true, reproduce ja unchanged. budget: null means no target syllable limit. Produce one lyric line for every input phrase in order. Do not translate the field names or include the annotation numbers as lyrics.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"ja\": \"私はどんどん軽くなる\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        6,\n        5\n      ]\n    },\n    {\n      \"id\": \"V1-02\",\n      \"ja\": \"貴方は何でも奪い取る\",\n      \"budget\": {\n        \"min\": 12,\n        \"max\": 12\n      },\n      \"pattern\": [\n        7,\n        5\n      ]\n    },\n    {\n      \"id\": \"V1-03\",\n      \"ja\": \"どんなことでも吸い込んで\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      },\n      \"pattern\": [\n        6,\n        4\n      ]\n    },\n    {\n      \"id\": \"V1-04\",\n      \"ja\": \"飲み込んでいってしまうんだ\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      },\n      \"pattern\": [\n        6,\n        4\n      ]\n    },\n    {\n      \"id\": \"V1-05\",\n      \"ja\": \"私はどんどん弱くなる\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        6,\n        5\n      ]\n    },\n    {\n      \"id\": \"V1-06\",\n      \"ja\": \"心の中の黒いシミも\",\n      \"budget\": {\n        \"min\": 13,\n        \"max\": 13\n      },\n      \"pattern\": [\n        7,\n        6\n      ]\n    },\n    {\n      \"id\": \"V1-07\",\n      \"ja\": \"さっぱり洗ってくれるから\",\n      \"budget\": {\n        \"min\": 12,\n        \"max\": 12\n      },\n      \"pattern\": [\n        7,\n        5\n      ]\n    },\n    {\n      \"id\": \"V1-08\",\n      \"ja\": \"何もしなくてもよくなる\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        7,\n        4\n      ]\n    }\n  ]\n}"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "song": "abuku",
+  "variant": "paper-original",
+  "run": "run-20261105T124026449384Z-5f73a80c",
+  "status": "completed",
+  "partial_export": false,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "source_directory": "data/songs/abuku/baselines/paper-original/run-20261105T124026449384Z-5f73a80c"
+}

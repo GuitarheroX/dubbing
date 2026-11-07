@@ -1,0 +1,21 @@
+{
+  "id": "2a50d395-7949-44d9-b840-0c888944a797",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"曾见过的风景\",\"茫然中终将看见的流星\",\"想一直凝望你\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 237,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 23,
+    "service_tier": "standard"
+  }
+}

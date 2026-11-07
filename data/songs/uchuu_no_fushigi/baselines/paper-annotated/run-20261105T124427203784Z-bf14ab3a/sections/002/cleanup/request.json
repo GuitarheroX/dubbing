@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "1. 为何晨光总将我照亮？ (12 syllables: wèi hé chén guāng zǒng jiāng wǒ zhào liàng)\n2. 为何夜晚总让人心伤？ (12 syllables: wèi hé yè wǎn zǒng ràng rén xīn shāng)\n3. 悲伤的事各分一半 (9 syllables: bēi shāng de shì gè fēn yī bàn)\n4. 若能那样该多好 (9 syllables: ruò néng nà yàng gāi duō hǎo)\n\nRhyme check (final phonemes): 1. liàng (iàng) 2. shāng (āng) 3. bàn (àn) 4. hǎo (ǎo). Lines 1–3 rhyme on the -àng/-àn nasal ending; line 4 ends on -ǎo, matching the source's non-rhyming final line (ね / ne). Theme preserved throughout."
+  },
+  "data": {
+    "response": "1. 为何晨光总将我照亮？ (12 syllables: wèi hé chén guāng zǒng jiāng wǒ zhào liàng)\n2. 为何夜晚总让人心伤？ (12 syllables: wèi hé yè wǎn zǒng ràng rén xīn shāng)\n3. 悲伤的事各分一半 (9 syllables: bēi shāng de shì gè fēn yī bàn)\n4. 若能那样该多好 (9 syllables: ruò néng nà yàng gāi duō hǎo)\n\nRhyme check (final phonemes): 1. liàng (iàng) 2. shāng (āng) 3. bàn (àn) 4. hǎo (ǎo). Lines 1–3 rhyme on the -àng/-àn nasal ending; line 4 ends on -ǎo, matching the source's non-rhyming final line (ね / ne). Theme preserved throughout."
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "1. 为何晨光总将我照亮？ (12 syllables: wèi hé chén guāng zǒng jiāng wǒ zhào liàng)\n2. 为何夜晚总让人心伤？ (12 syllables: wèi hé yè wǎn zǒng ràng rén xīn shāng)\n3. 悲伤的事各分一半 (9 syllables: bēi shāng de shì gè fēn yī bàn)\n4. 若能那样该多好 (9 syllables: ruò néng nà yàng gāi duō hǎo)\n\nRhyme check (final phonemes): 1. liàng (iàng) 2. shāng (āng) 3. bàn (àn) 4. hǎo (ǎo). Lines 1–3 rhyme on the -àng/-àn nasal ending; line 4 ends on -ǎo, matching the source's non-rhyming final line (ね / ne). Theme preserved throughout."
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

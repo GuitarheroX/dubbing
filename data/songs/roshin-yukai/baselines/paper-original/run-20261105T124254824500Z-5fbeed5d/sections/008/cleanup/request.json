@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "核聚变炉啊\n试着跳进去的话那样的话\n一定能像睡着般消失而去吧\n没有我的早晨\n比现在更加美好\n所有齿轮都咬合了\n一定是那样的世界"
+  },
+  "data": {
+    "response": "核聚变炉啊\n试着跳进去的话那样的话\n一定能像睡着般消失而去吧\n没有我的早晨\n比现在更加美好\n所有齿轮都咬合了\n一定是那样的世界"
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "核聚变炉啊\n试着跳进去的话那样的话\n一定能像睡着般消失而去吧\n没有我的早晨\n比现在更加美好\n所有齿轮都咬合了\n一定是那样的世界"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

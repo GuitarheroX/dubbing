@@ -1,0 +1,21 @@
+{
+  "id": "eca1ca39-f611-4582-866b-a70ba39f6896",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"再见了小企鹅\",\"一步一步地走着欢笑着看看\",\"恋上这世界然后轻轻眨一眨眼\",\"风儿轻轻吹过这里风儿吹来\",\"那眼泪掉下来了\",\"再见了呀小企鹅\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 2224,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 51,
+    "service_tier": "standard"
+  }
+}

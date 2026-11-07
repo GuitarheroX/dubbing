@@ -1,0 +1,21 @@
+{
+  "id": "4b3c68bf-fe4f-4b89-9cc3-5066456e9d0f",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"爱究竟是从何处降临的呢\",\"我向自己的胸膛发问\",\"虚假的东西我毫无兴趣\",\"只想凝视真实的一切\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 125,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 30,
+    "service_tier": "standard"
+  }
+}

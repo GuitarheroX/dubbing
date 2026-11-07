@@ -1,0 +1,6 @@
+1. 哪颗星在轮回转动（10 syllables: na3 ke4 xing1 zai4 lun2 hui2 zhuan3 dong4 — 10）
+2. 消散而去的是我吧（10 syllables: xiao1 san4 er2 qu4 de5 shi4 wo3 ba5 — 10）
+3. 平凡无奇的人生啊（10 syllables: ping2 fan2 wu2 qi2 de5 ren2 sheng1 a5 — 10）
+4. 虽是无法实现的身躯（12 syllables: sui1 shi4 wu2 fa3 shi2 xian4 de5 shen1 qu1 — 12）
+
+Rhyme check (final phonemes): 动 dòng / 吧 ba / 啊 a / 躯 qū — lines 2 and 3 rhyme (a), lines 1 and 4 do not match each other; the source has no strict end-rhyme pattern, so this is acceptable. Theme preserved: wandering stars, fading self, ordinary life, unfulfilled body.

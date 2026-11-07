@@ -1,0 +1,21 @@
+{
+  "id": "2ce2402a-aa61-4bf5-9c7a-11807ed0efcc",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"我一直注视着你\",\"仿佛已把孤独抛在身后\",\"今夜月亮也向我微笑\",\"请看向我这边\",\"oh, 带我飞向星辰\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 302,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 36,
+    "service_tier": "standard"
+  }
+}

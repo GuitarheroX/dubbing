@@ -1,0 +1,21 @@
+{
+  "id": "b0e617a7-d080-489e-a13f-401a76996b0a",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"这样的日子我已经受够\",\"永远这种东西根本不存在\",\"在终结来临之前\",\"试着迈出一步\",\"一边接纳着\",\"一边祈祷着\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 166,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 34,
+    "service_tier": "standard"
+  }
+}

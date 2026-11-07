@@ -1,0 +1,21 @@
+{
+  "id": "8350b104-5217-4053-8c2c-87c2da27a7a8",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"这样的日子已经够了\",\"没有什么会永远存在\",\"在渐渐走向终结之前\",\"试着迈出一步\",\"一边接受着\",\"一边祈祷着\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 129,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 34,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the provided budget.min to budget.max syllable count per line, inclusive, instead of matching the source mora count, and verify by counting syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.\n\nThe input is a JSON object containing phrases in performance order. Each phrase contains its original lyrics in ja. budget is the human-annotated target syllable range. An optional pattern gives human-annotated within-line groups; use it as guidance, not an additional hard constraint. For keep_source: true, reproduce ja unchanged. budget: null means no target syllable limit. Produce one lyric line for every input phrase in order. Do not translate the field names or include the annotation numbers as lyrics.",
+    "user": "{\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"ja\": \"どこまでも行ける気がした\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        5,\n        6\n      ]\n    },\n    {\n      \"id\": \"C1-02\",\n      \"ja\": \"あの時の僕はどこだ\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        6,\n        5\n      ]\n    },\n    {\n      \"id\": \"C1-03\",\n      \"ja\": \"きっと大人になったとか\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      },\n      \"pattern\": [\n        2,\n        4,\n        4\n      ]\n    },\n    {\n      \"id\": \"C1-04\",\n      \"ja\": \"そういうことじゃなくてさ\",\n      \"budget\": {\n        \"min\": 9,\n        \"max\": 9\n      },\n      \"pattern\": [\n        2,\n        7\n      ]\n    },\n    {\n      \"id\": \"C1-05\",\n      \"ja\": \"あと少しだけの勇気で\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        5,\n        6\n      ]\n    },\n    {\n      \"id\": \"C1-06\",\n      \"ja\": \"変えられた明日はあった\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        5,\n        6\n      ]\n    },\n    {\n      \"id\": \"C1-07\",\n      \"ja\": \"それさえ気づけなかったんだ\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      },\n      \"pattern\": [\n        3,\n        7\n      ]\n    }\n  ]\n}"
+  },
+  "data": {
+    "phrases": [
+      {
+        "id": "C1-01",
+        "ja": "どこまでも行ける気がした",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          5,
+          6
+        ]
+      },
+      {
+        "id": "C1-02",
+        "ja": "あの時の僕はどこだ",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          6,
+          5
+        ]
+      },
+      {
+        "id": "C1-03",
+        "ja": "きっと大人になったとか",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          2,
+          4,
+          4
+        ]
+      },
+      {
+        "id": "C1-04",
+        "ja": "そういうことじゃなくてさ",
+        "budget": {
+          "min": 9,
+          "max": 9
+        },
+        "pattern": [
+          2,
+          7
+        ]
+      },
+      {
+        "id": "C1-05",
+        "ja": "あと少しだけの勇気で",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          5,
+          6
+        ]
+      },
+      {
+        "id": "C1-06",
+        "ja": "変えられた明日はあった",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          5,
+          6
+        ]
+      },
+      {
+        "id": "C1-07",
+        "ja": "それさえ気づけなかったんだ",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          3,
+          7
+        ]
+      }
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the provided budget.min to budget.max syllable count per line, inclusive, instead of matching the source mora count, and verify by counting syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.\n\nThe input is a JSON object containing phrases in performance order. Each phrase contains its original lyrics in ja. budget is the human-annotated target syllable range. An optional pattern gives human-annotated within-line groups; use it as guidance, not an additional hard constraint. For keep_source: true, reproduce ja unchanged. budget: null means no target syllable limit. Produce one lyric line for every input phrase in order. Do not translate the field names or include the annotation numbers as lyrics.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"ja\": \"どこまでも行ける気がした\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        5,\n        6\n      ]\n    },\n    {\n      \"id\": \"C1-02\",\n      \"ja\": \"あの時の僕はどこだ\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        6,\n        5\n      ]\n    },\n    {\n      \"id\": \"C1-03\",\n      \"ja\": \"きっと大人になったとか\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      },\n      \"pattern\": [\n        2,\n        4,\n        4\n      ]\n    },\n    {\n      \"id\": \"C1-04\",\n      \"ja\": \"そういうことじゃなくてさ\",\n      \"budget\": {\n        \"min\": 9,\n        \"max\": 9\n      },\n      \"pattern\": [\n        2,\n        7\n      ]\n    },\n    {\n      \"id\": \"C1-05\",\n      \"ja\": \"あと少しだけの勇気で\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        5,\n        6\n      ]\n    },\n    {\n      \"id\": \"C1-06\",\n      \"ja\": \"変えられた明日はあった\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        5,\n        6\n      ]\n    },\n    {\n      \"id\": \"C1-07\",\n      \"ja\": \"それさえ気づけなかったんだ\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      },\n      \"pattern\": [\n        3,\n        7\n      ]\n    }\n  ]\n}"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

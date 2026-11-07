@@ -1,0 +1,10 @@
+{
+  "song": "roshin-yukai",
+  "variant": "paper-original",
+  "run": "run-20261105T124254824500Z-5fbeed5d",
+  "status": "completed",
+  "partial_export": false,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "source_directory": "data/songs/roshin-yukai/baselines/paper-original/run-20261105T124254824500Z-5fbeed5d"
+}

@@ -1,0 +1,10 @@
+{
+  "song": "abuku",
+  "variant": "paper-annotated",
+  "run": "run-20261105T124026450617Z-a52a0b20",
+  "status": "completed",
+  "partial_export": false,
+  "model": "deepseek-flash",
+  "thinking": "disabled",
+  "source_directory": "data/songs/abuku/baselines/paper-annotated/run-20261105T124026450617Z-a52a0b20"
+}

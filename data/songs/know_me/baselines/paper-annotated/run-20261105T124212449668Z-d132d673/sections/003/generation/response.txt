@@ -1,0 +1,22 @@
+1. 命令 故意地感受 (8 syllables: mìng-lìng gù-yì-de gǎn-shòu) — rhyme: -òu
+2. 订正 无为地观望 (8 syllables: dìng-zhèng wú-wéi-de guān-wàng) — rhyme: -àng
+3. 安宁之中掺杂着罪 (9 syllables: ān-níng zhī-zhōng chān-zá-zhe zuì) — rhyme: -uì
+4. 当然吗 (3 syllables: dāng-rán-ma) — rhyme: -a
+
+Rhyme check: lines 1 and 3 end in -òu/-uì (not matching), so let me revise to preserve the source rhyme pattern. The source rhymes: 感じて (te), 観じて (te), 混ざる (ru), 当然か (ka) — pattern A A B C.
+
+Revised:
+1. 命令 故意地感知 (8: mìng-lìng gù-yì-de gǎn-zhī) — rhyme: -ī
+2. 订正 无为地观视 (8: dìng-zhèng wú-wéi-de guān-shì) — rhyme: -ì (close but not identical)
+
+Let me enforce exact final-phoneme rhyme for lines 1-2:
+1. 命令 故意地感受 (8: mìng-lìng gù-yì-de gǎn-shòu) — -òu
+2. 订正 无为地观透 (8: dìng-zhèng wú-wéi-de guān-tòu) — -òu ✓
+3. 安宁之中掺杂罪 (9: ān-níng zhī-zhōng chān-zá zuì) — -uì
+4. 当然吗 (3: dāng-rán-ma) — -a ✓
+
+Final answer:
+1. 命令 故意地感受
+2. 订正 无为地观透
+3. 安宁之中掺杂罪
+4. 当然吗

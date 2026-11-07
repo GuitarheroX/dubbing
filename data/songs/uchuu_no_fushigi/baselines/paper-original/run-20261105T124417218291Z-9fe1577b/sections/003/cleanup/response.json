@@ -1,0 +1,21 @@
+{
+  "id": "9fc39682-56e5-4cf2-ac93-4fc5703d2bb2",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"笑着烦恼着\",\"在这广阔世界的角落里\",\"我们一起把宇宙的奥秘\",\"试着解开吧\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 383,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 24,
+    "service_tier": "standard"
+  }
+}

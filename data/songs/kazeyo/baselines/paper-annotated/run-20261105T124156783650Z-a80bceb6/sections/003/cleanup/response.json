@@ -1,0 +1,21 @@
+{
+  "id": "1fc8d088-58a5-4d28-8a5b-2c7e86bb2e3d",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"狂风呼啸着 漂泊流浪\",\"如今已到 这般境地\",\"被吹散去 轻轻摇晃着\",\"忽然想到 这是何处\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 305,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 33,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "3732af41-b05e-4916-a237-b696ce2113f7",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "未曾察觉\n想必是太依赖了吧\n所以想先爱自己再去爱别人"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 89,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 17,
+    "service_tier": "standard"
+  }
+}

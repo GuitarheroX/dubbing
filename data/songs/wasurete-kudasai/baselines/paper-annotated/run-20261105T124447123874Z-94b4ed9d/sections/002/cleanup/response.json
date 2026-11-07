@@ -1,0 +1,21 @@
+{
+  "id": "501cf95c-4715-48dc-9b0a-b930de05ba2c",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"小小箱中的家\",\"两人并排厨房的小窗\",\"窗帘外回忆中的庭院\",\"把一缕春光埋进土里\",\"偶尔给它浇上一点水\",\"小枇杷结出果实时\",\"请把它忘了吧\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 291,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 53,
+    "service_tier": "standard"
+  }
+}

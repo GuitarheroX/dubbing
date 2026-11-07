@@ -1,0 +1,571 @@
+{
+  "evaluated_phrases": 20,
+  "kept_phrases": 0,
+  "budget_pass_rate": 0.0,
+  "mean_budget_distance": 1.4,
+  "rule_pass_rate": 0.0,
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "睡醒睁开双眼的时候",
+      "sing_text": "睡醒睁开双眼的时候",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "翻开书页之上独自一人",
+      "sing_text": "翻开书页之上独自一人",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "四处张望却看不见",
+      "sing_text": "四处张望却看不见",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "没有方向没有出口",
+      "sing_text": "没有方向没有出口",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 7,
+        "max": 7
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-05",
+      "section": "V1",
+      "model_text": "然后我听见的是",
+      "sing_text": "然后我听见的是",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-06",
+      "section": "V1",
+      "model_text": "呼唤着我名字的你的声音",
+      "sing_text": "呼唤着我名字的你的声音",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-07",
+      "section": "V1",
+      "model_text": "摸索着说出的言语",
+      "sing_text": "摸索着说出的言语",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-08",
+      "section": "V1",
+      "model_text": "迈步向前走",
+      "sing_text": "迈步向前走",
+      "keep_source": false,
+      "actual": 5,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-01",
+      "section": "B1",
+      "model_text": "用零散的节奏",
+      "sing_text": "用零散的节奏",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-02",
+      "section": "B1",
+      "model_text": "若你哼唱请听我说",
+      "sing_text": "若你哼唱请听我说",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "世界崩解的声音传来",
+      "sing_text": "世界崩解的声音传来",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "朝我涌来",
+      "sing_text": "朝我涌来",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "model_text": "朝我涌来",
+      "sing_text": "朝我涌来",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-04",
+      "section": "C1",
+      "model_text": "清晨到来",
+      "sing_text": "清晨到来",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-05",
+      "section": "C1",
+      "model_text": "在未来回首的你身旁",
+      "sing_text": "在未来回首的你身旁",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-06",
+      "section": "C1",
+      "model_text": "挥一挥手",
+      "sing_text": "挥一挥手",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-07",
+      "section": "C1",
+      "model_text": "划桨前行",
+      "sing_text": "划桨前行",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-08",
+      "section": "C1",
+      "model_text": "划桨前行",
+      "sing_text": "划桨前行",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-09",
+      "section": "C1",
+      "model_text": "要去何方",
+      "sing_text": "要去何方",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-10",
+      "section": "C1",
+      "model_text": "无论何方",
+      "sing_text": "无论何方",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    }
+  ],
+  "sections": [
+    {
+      "section": "V1",
+      "draft_run": "run-20261105T124405442039Z-abf3db57",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "V1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            10,
+            10
+          ],
+          "actual": 9,
+          "fix": "差 1 字，补到 10 字以上"
+        },
+        {
+          "phrase_id": "V1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            14,
+            14
+          ],
+          "actual": 10,
+          "fix": "差 4 字，补到 14 字以上"
+        },
+        {
+          "phrase_id": "V1-03",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            9,
+            9
+          ],
+          "actual": 8,
+          "fix": "差 1 字，补到 9 字以上"
+        },
+        {
+          "phrase_id": "V1-04",
+          "code": "OVER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            7,
+            7
+          ],
+          "actual": 8,
+          "fix": "超出 1 字，压到 7 字以内"
+        },
+        {
+          "phrase_id": "V1-05",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            9,
+            9
+          ],
+          "actual": 7,
+          "fix": "差 2 字，补到 9 字以上"
+        },
+        {
+          "phrase_id": "V1-06",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            14,
+            14
+          ],
+          "actual": 11,
+          "fix": "差 3 字，补到 14 字以上"
+        },
+        {
+          "phrase_id": "V1-07",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            9,
+            9
+          ],
+          "actual": 8,
+          "fix": "差 1 字，补到 9 字以上"
+        },
+        {
+          "phrase_id": "V1-08",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            6,
+            6
+          ],
+          "actual": 5,
+          "fix": "差 1 字，补到 6 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "V1-01",
+          "V1-02",
+          "V1-03",
+          "V1-04",
+          "V1-05",
+          "V1-06",
+          "V1-07",
+          "V1-08"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "B1",
+      "draft_run": "run-20261105T124405442039Z-abf3db57",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "B1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            8,
+            8
+          ],
+          "actual": 6,
+          "fix": "差 2 字，补到 8 字以上"
+        },
+        {
+          "phrase_id": "B1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            9,
+            9
+          ],
+          "actual": 8,
+          "fix": "差 1 字，补到 9 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "B1-01",
+          "B1-02"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    },
+    {
+      "section": "C1",
+      "draft_run": "run-20261105T124405442039Z-abf3db57",
+      "verdict": "fail",
+      "violations": [
+        {
+          "phrase_id": "C1-01",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            10,
+            10
+          ],
+          "actual": 9,
+          "fix": "差 1 字，补到 10 字以上"
+        },
+        {
+          "phrase_id": "C1-02",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            5,
+            5
+          ],
+          "actual": 4,
+          "fix": "差 1 字，补到 5 字以上"
+        },
+        {
+          "phrase_id": "C1-03",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            5,
+            5
+          ],
+          "actual": 4,
+          "fix": "差 1 字，补到 5 字以上"
+        },
+        {
+          "phrase_id": "C1-04",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            5,
+            5
+          ],
+          "actual": 4,
+          "fix": "差 1 字，补到 5 字以上"
+        },
+        {
+          "phrase_id": "C1-05",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            11,
+            11
+          ],
+          "actual": 9,
+          "fix": "差 2 字，补到 11 字以上"
+        },
+        {
+          "phrase_id": "C1-06",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            5,
+            5
+          ],
+          "actual": 4,
+          "fix": "差 1 字，补到 5 字以上"
+        },
+        {
+          "phrase_id": "C1-07",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            5,
+            5
+          ],
+          "actual": 4,
+          "fix": "差 1 字，补到 5 字以上"
+        },
+        {
+          "phrase_id": "C1-08",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            5,
+            5
+          ],
+          "actual": 4,
+          "fix": "差 1 字，补到 5 字以上"
+        },
+        {
+          "phrase_id": "C1-09",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            5,
+            5
+          ],
+          "actual": 4,
+          "fix": "差 1 字，补到 5 字以上"
+        },
+        {
+          "phrase_id": "C1-10",
+          "code": "UNDER_BUDGET",
+          "severity": "hard",
+          "expected": [
+            5,
+            5
+          ],
+          "actual": 4,
+          "fix": "差 1 字，补到 5 字以上"
+        }
+      ],
+      "changes": {
+        "rewritten": [
+          "C1-01",
+          "C1-02",
+          "C1-03",
+          "C1-04",
+          "C1-05",
+          "C1-06",
+          "C1-07",
+          "C1-08",
+          "C1-09",
+          "C1-10"
+        ],
+        "unchanged": []
+      },
+      "regressions": []
+    }
+  ],
+  "note": "仅为人工预算和规则的事后评测，不是论文原始节奏距离，也不代表真人可唱性评分。"
+}

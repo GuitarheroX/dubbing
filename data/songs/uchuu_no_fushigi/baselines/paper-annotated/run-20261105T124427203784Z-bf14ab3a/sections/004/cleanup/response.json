@@ -1,0 +1,21 @@
+{
+  "id": "5c8b669d-2262-41e8-ba9d-26509a447059",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"星星为什么在闪耀呢\",\"云儿为什么在天空游荡\",\"人们为什么把梦想描绘\",\"难道没有答案吗\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 287,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 30,
+    "service_tier": "standard"
+  }
+}

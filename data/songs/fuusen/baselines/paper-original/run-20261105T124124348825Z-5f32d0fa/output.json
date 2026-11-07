@@ -1,0 +1,201 @@
+{
+  "song_id": "fuusen",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "我渐渐变得轻盈",
+      "sing_text": "我渐渐变得轻盈",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "你把一切都夺去",
+      "sing_text": "你把一切都夺去",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 5,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "无论什么都能吸入",
+      "sing_text": "无论什么都能吸入",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "全都吞噬殆尽",
+      "sing_text": "全都吞噬殆尽",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-05",
+      "section": "V1",
+      "model_text": "我渐渐变得虚弱",
+      "sing_text": "我渐渐变得虚弱",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-06",
+      "section": "V1",
+      "model_text": "心中的黑色污渍",
+      "sing_text": "心中的黑色污渍",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 6,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-07",
+      "section": "V1",
+      "model_text": "也被彻底洗净",
+      "sing_text": "也被彻底洗净",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 6,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-08",
+      "section": "V1",
+      "model_text": "于是什么都不用做也好",
+      "sing_text": "于是什么都不用做也好",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-01",
+      "section": "B1",
+      "model_text": "空气被抽干",
+      "sing_text": "空气被抽干",
+      "keep_source": false,
+      "actual": 5,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-02",
+      "section": "B1",
+      "model_text": "干瘪的我啊",
+      "sing_text": "干瘪的我啊",
+      "keep_source": false,
+      "actual": 5,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-03",
+      "section": "B1",
+      "model_text": "呜呼已是你的所有物",
+      "sing_text": "呜呼已是你的所有物",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "什么都没了的话 是你的错吧",
+      "sing_text": "什么都没了的话 是你的错吧",
+      "keep_source": false,
+      "actual": 12,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "这样说着继续打了好多次",
+      "sing_text": "这样说着继续打了好多次",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "model_text": "连那也能漂亮地吞下去吗",
+      "sing_text": "连那也能漂亮地吞下去吗",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    }
+  ]
+}

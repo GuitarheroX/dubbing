@@ -1,0 +1,21 @@
+{
+  "id": "20bd34cc-135e-4103-bfb7-f55565d493ec",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"lines\":[\"给我你的心啊\",\"我送你一束鲜花\",\"任那摇曳长发就随风轻轻地飘摆\",\"请给我一句话\",\"你哼的那支歌啊\",\"在漫长漫长迷宫的尽头就把它放下来\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 2705,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 48,
+    "service_tier": "standard"
+  }
+}

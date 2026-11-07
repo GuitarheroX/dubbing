@@ -1,0 +1,40 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+    "user": "突風一吹き\n二吹き、私は草を抜け\nとうとうがらんどう\n行く風下、私だけ\n草原に立った影\n私は青い風\n靡く"
+  },
+  "data": {
+    "lyrics": [
+      "突風一吹き",
+      "二吹き、私は草を抜け",
+      "とうとうがらんどう",
+      "行く風下、私だけ",
+      "草原に立った影",
+      "私は青い風",
+      "靡く"
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "突風一吹き\n二吹き、私は草を抜け\nとうとうがらんどう\n行く風下、私だけ\n草原に立った影\n私は青い風\n靡く"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

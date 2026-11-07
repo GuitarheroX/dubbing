@@ -1,0 +1,21 @@
+{
+  "id": "38b94e3a-7f2c-42bb-9950-231891ad127f",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"phrases\": [\n    {\n      \"id\": \"O1-01\",\n      \"zh\": \"带我走吧\",\n      \"syllables\": 4,\n      \"rhyme\": \"a\"\n    },\n    {\n      \"id\": \"O1-02\",\n      \"zh\": \"哦，飞向那星\",\n      \"syllables\": 6,\n      \"rhyme\": \"ing\"\n    }\n  ]\n}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 302,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 92,
+    "service_tier": "standard"
+  }
+}

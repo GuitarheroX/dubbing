@@ -1,0 +1,229 @@
+{
+  "song_id": "bara_wa_utsukushiku_chiru",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "草丛中啊 名字无人知",
+      "sing_text": "草丛中啊 名字无人知",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "静静绽放着 若是野花时",
+      "sing_text": "静静绽放着 若是野花时",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "只需迎着那 清风拂过来",
+      "sing_text": "只需迎着那 清风拂过来",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 0,
+      "verdict": "pass"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "轻轻摇曳着 那样便足矣",
+      "sing_text": "轻轻摇曳着 那样便足矣",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-01",
+      "section": "B1",
+      "model_text": "我生为玫瑰的命运",
+      "sing_text": "我生为玫瑰的命运",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 15,
+        "max": 15
+      },
+      "budget_distance": 7,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-02",
+      "section": "B1",
+      "model_text": "生来要绚烂而激烈地活",
+      "sing_text": "生来要绚烂而激烈地活",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "budget_distance": 7,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "玫瑰是玫瑰　高贵地绽放",
+      "sing_text": "玫瑰是玫瑰　高贵地绽放",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "玫瑰是玫瑰　美丽地凋零",
+      "sing_text": "玫瑰是玫瑰　美丽地凋零",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-01",
+      "section": "V2",
+      "model_text": "哪颗星啊 轮回之时",
+      "sing_text": "哪颗星啊 轮回之时",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-02",
+      "section": "V2",
+      "model_text": "消散而去 是我吧",
+      "sing_text": "消散而去 是我吧",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-03",
+      "section": "V2",
+      "model_text": "平凡的那 人生啊",
+      "sing_text": "平凡的那 人生啊",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V2-04",
+      "section": "V2",
+      "model_text": "无法实现 身虽如此",
+      "sing_text": "无法实现 身虽如此",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 12,
+        "max": 12
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "B2-01",
+      "section": "B2",
+      "model_text": "我受玫瑰之　生命所赐予",
+      "sing_text": "我受玫瑰之　生命所赐予",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 15,
+        "max": 15
+      },
+      "budget_distance": 5,
+      "verdict": "fail"
+    },
+    {
+      "id": "B2-02",
+      "section": "B2",
+      "model_text": "热情燃烧着活下去永远",
+      "sing_text": "热情燃烧着活下去永远",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 17,
+        "max": 17
+      },
+      "budget_distance": 7,
+      "verdict": "fail"
+    },
+    {
+      "id": "C2-01",
+      "section": "C2",
+      "model_text": "玫瑰是玫瑰　高贵地绽放",
+      "sing_text": "玫瑰是玫瑰　高贵地绽放",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "C2-02",
+      "section": "C2",
+      "model_text": "玫瑰是玫瑰　美丽地凋零",
+      "sing_text": "玫瑰是玫瑰　美丽地凋零",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 13,
+        "max": 13
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "song_id": "sonare",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "section": "V1",
+      "model_text": "从睡梦中睁开双眼",
+      "sing_text": "从睡梦中睁开双眼",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-02",
+      "section": "V1",
+      "model_text": "在摊开的书页上独自一人",
+      "sing_text": "在摊开的书页上独自一人",
+      "keep_source": false,
+      "actual": 11,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-03",
+      "section": "V1",
+      "model_text": "四处张望却看不见",
+      "sing_text": "四处张望却看不见",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-04",
+      "section": "V1",
+      "model_text": "目标和出口都没有",
+      "sing_text": "目标和出口都没有",
+      "keep_source": false,
+      "actual": 8,
+      "budget": {
+        "min": 7,
+        "max": 7
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-05",
+      "section": "V1",
+      "model_text": "然后我听见的是",
+      "sing_text": "然后我听见的是",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-06",
+      "section": "V1",
+      "model_text": "呼唤我名字的你的声音",
+      "sing_text": "呼唤我名字的你的声音",
+      "keep_source": false,
+      "actual": 10,
+      "budget": {
+        "min": 14,
+        "max": 14
+      },
+      "budget_distance": 4,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-07",
+      "section": "V1",
+      "model_text": "摸索着的话语和",
+      "sing_text": "摸索着的话语和",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "V1-08",
+      "section": "V1",
+      "model_text": "开始迈出的脚步",
+      "sing_text": "开始迈出的脚步",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 6,
+        "max": 6
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-01",
+      "section": "B1",
+      "model_text": "零散的节奏中",
+      "sing_text": "零散的节奏中",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 8,
+        "max": 8
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "B1-02",
+      "section": "B1",
+      "model_text": "若能哼唱请听",
+      "sing_text": "若能哼唱请听",
+      "keep_source": false,
+      "actual": 6,
+      "budget": {
+        "min": 9,
+        "max": 9
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-01",
+      "section": "C1",
+      "model_text": "世界解开的声音",
+      "sing_text": "世界解开的声音",
+      "keep_source": false,
+      "actual": 7,
+      "budget": {
+        "min": 10,
+        "max": 10
+      },
+      "budget_distance": 3,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-02",
+      "section": "C1",
+      "model_text": "朝我传来",
+      "sing_text": "朝我传来",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-03",
+      "section": "C1",
+      "model_text": "朝我传来",
+      "sing_text": "朝我传来",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-04",
+      "section": "C1",
+      "model_text": "清晨到来",
+      "sing_text": "清晨到来",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-05",
+      "section": "C1",
+      "model_text": "在未来回头的你面前",
+      "sing_text": "在未来回头的你面前",
+      "keep_source": false,
+      "actual": 9,
+      "budget": {
+        "min": 11,
+        "max": 11
+      },
+      "budget_distance": 2,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-06",
+      "section": "C1",
+      "model_text": "挥一挥手",
+      "sing_text": "挥一挥手",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-07",
+      "section": "C1",
+      "model_text": "划船前行",
+      "sing_text": "划船前行",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-08",
+      "section": "C1",
+      "model_text": "划船前行",
+      "sing_text": "划船前行",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-09",
+      "section": "C1",
+      "model_text": "要去哪里",
+      "sing_text": "要去哪里",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    },
+    {
+      "id": "C1-10",
+      "section": "C1",
+      "model_text": "无论哪里",
+      "sing_text": "无论哪里",
+      "keep_source": false,
+      "actual": 4,
+      "budget": {
+        "min": 5,
+        "max": 5
+      },
+      "budget_distance": 1,
+      "verdict": "fail"
+    }
+  ]
+}

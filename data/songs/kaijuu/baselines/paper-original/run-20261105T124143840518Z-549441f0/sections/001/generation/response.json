@@ -1,0 +1,21 @@
+{
+  "id": "6520ab8a-9442-4920-a504-8c02d1192b25",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "无论多少次\n无论多少次呼喊\n即使成为这暗夜中的怪兽\n我仍想留在这里啊\n这个秘密"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 98,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 24,
+    "service_tier": "standard"
+  }
+}
