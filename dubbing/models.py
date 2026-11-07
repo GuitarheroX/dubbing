@@ -4,7 +4,7 @@
 
 1. L0：``Song`` —— 由人标注，agent 只读。
 2. 产物：``Analysis``（A）/ ``Draft``（B）/ ``Review``（C）。
-3. 视图与状态：``View`` / ``State``。
+3. 视图：``View``（由 ``song.yaml`` + 一个 run 目录装配，不是存储的真相）。
 
 所有 ``from_json`` 只做形状与自洽性校验（字段在不在、类型对不对、
 区间反没反），跨对象引用（比如 section id 是否存在）交给调用方，
@@ -31,8 +31,6 @@ __all__ = [
     "Review",
     "ViewRow",
     "View",
-    "SectionState",
-    "State",
 ]
 
 
@@ -639,63 +637,3 @@ class View:
 
     def to_json(self) -> dict[str, Any]:
         return {"song_id": self.song_id, "rows": [r.to_json() for r in self.rows]}
-
-
-# --------------------------------------------------------------------------
-# 状态
-# --------------------------------------------------------------------------
-
-
-@dataclass
-class SectionState:
-    draft: str | None = None
-    review: str | None = None
-    round: int = 0
-    verdict: str | None = None  # "pass" | "fail" | "exhausted" | "skipped"
-
-    def to_json(self) -> dict[str, Any]:
-        d: dict[str, Any] = {"round": self.round}
-        for k in ("draft", "review", "verdict"):
-            v = getattr(self, k)
-            if v is not None:
-                d[k] = v
-        return d
-
-    @classmethod
-    def from_json(cls, obj: Any) -> "SectionState":
-        m = _require_mapping(obj, "section_state")
-        return cls(
-            draft=m.get("draft"),
-            review=m.get("review"),
-            round=int(m.get("round", 0)),
-            verdict=m.get("verdict"),
-        )
-
-
-@dataclass
-class State:
-    analysis: str | None = None
-    sections: dict[str, SectionState] = field(default_factory=dict)
-
-    def of(self, sid: str) -> SectionState:
-        return self.sections.setdefault(sid, SectionState())
-
-    def to_json(self) -> dict[str, Any]:
-        out: dict[str, Any] = {"sections": {k: v.to_json() for k, v in self.sections.items()}}
-        if self.analysis is not None:
-            out["song_level"] = {"analysis": self.analysis}
-        return out
-
-    @classmethod
-    def from_json(cls, obj: Any) -> "State":
-        if obj is None:
-            return cls()
-        m = _require_mapping(obj, "state")
-        song_level = m.get("song_level") or {}
-        sections = m.get("sections") or {}
-        return cls(
-            analysis=song_level.get("analysis"),
-            sections={
-                str(k): SectionState.from_json(v) for k, v in _require_mapping(sections, "state.sections").items()
-            },
-        )

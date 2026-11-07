@@ -1,7 +1,7 @@
 """查看：每个 agent 到底产出了什么。
 
-三份产物各有自己的形状，直接 cat ``output.json`` 很难读，所以这里给每类产物
-一个面向人的渲染：
+一个 run 目录里每个 agent 只有 ``request/output/meta`` 三个文件，直接 cat
+``output.json`` 很难读，所以这里给每类产物一个面向人的渲染：
 
 - A：体会（主题 / 情绪走向 / 质地 / 意象池 / 分段情绪 / 叙事）
 - B：某一段的译词（原文 / 译词 / 字数 / 预算 / 自查说明）
@@ -14,19 +14,19 @@ import unicodedata
 from typing import Any
 
 from .counting import count_syllables
-from .models import Analysis, Draft, Review, Song, State
-from .store import SongStore
+from .models import Analysis, Draft, Review, Song
+from .store import RunStore, section_index
+from .view import load_draft, load_review
 
 __all__ = [
     "text_width",
     "pad",
     "table",
-    "current_run_ids",
     "list_runs",
     "render_analysis",
     "render_draft",
     "render_review",
-    "render_run",
+    "render_record",
 ]
 
 
@@ -50,62 +50,47 @@ def table(rows: list[list[str]], *, gap: str = "  ") -> str:
     )
 
 
-def _meta_or_empty(store: SongStore, run_id: str) -> dict[str, Any]:
-    """进程被中断的 run 可能只有 request.json，没有 meta。"""
-    try:
-        return store.load_meta(run_id)
-    except FileNotFoundError:
-        return {}
+# --------------------------------------------------------------------------
+# run 列表
+# --------------------------------------------------------------------------
 
 
-def current_run_ids(state: State) -> set[str]:
-    ids = set()
-    if state.analysis:
-        ids.add(state.analysis)
-    for ss in state.sections.values():
-        for rid in (ss.draft, ss.review):
-            if rid:
-                ids.add(rid)
-    return ids
+def _run_model(store: RunStore, run_id: str, song: Song) -> str:
+    for agent, index in [("A", None), *[("B", i) for i in range(1, len(song.sections) + 1)]]:
+        meta = store.read_meta(run_id, agent, index)  # type: ignore[arg-type]
+        if meta.get("model"):
+            return str(meta["model"])
+    return "-"
 
 
-def list_runs(store: SongStore, state: State) -> list[dict[str, Any]]:
-    """按时间顺序列出所有 run，并标出当前视图用的是哪几个。"""
-    current = current_run_ids(state)
+def list_runs(store: RunStore, song: Song) -> list[dict[str, Any]]:
+    """按时间顺序列出所有 run；标出 ``latest.json`` 指的是哪一个。"""
+    latest = store.read_latest()
+    current = latest.get("run")
     rows: list[dict[str, Any]] = []
-    for rid in store.run_ids():
-        meta = _meta_or_empty(store, rid)
-        out: dict[str, Any] = {}
-        if store.has_run(rid):
-            out = store.load_output(rid)
-
-        agent = meta.get("agent") or SongStore._agent_of(rid) or "?"
-        if agent == "a":
-            note = f"{len(out.get('sections', {}))} 段"
-        elif agent == "b":
-            note = f"{len(out.get('phrases', []))} 句"
-        elif agent == "c":
-            note = out.get("verdict", "?")
-            if out.get("violations"):
-                note += f"（{len(out['violations'])} 条）"
-        else:
-            note = ""
-
-        if meta.get("abandoned"):
-            note = f"未完成：{str(meta['abandoned'])[:40]}"
-        elif not meta:
-            note = "未完成（进程中断）"
-
-        usage = meta.get("usage") or {}
+    for rid in store.list_runs():
+        passed = 0
+        total = 0
+        for sid in song.section_ids:
+            if not song.translatable_of(sid):
+                continue
+            total += 1
+            review = load_review(store, rid, section_index(song, sid))
+            if review is not None and review.verdict == "pass":
+                passed += 1
+        meta = store.read_meta(rid, "A") if store.has_output(rid, "A") else {}
+        usage = meta.get("usage") if isinstance(meta, dict) else None
         rows.append(
             {
                 "run_id": rid,
-                "agent": agent,
-                "model": meta.get("model") or "-",
-                "round": meta.get("round"),
-                "out_tokens": usage.get("output_tokens"),
-                "note": note,
-                "current": rid in current,
+                "current": rid == current,
+                "model": _run_model(store, rid, song),
+                "has_a": store.has_output(rid, "A"),
+                "passed": passed,
+                "total": total,
+                "status": (latest.get("status") if rid == current else None) or "",
+                "lyrics": (store.run_dir(rid) / "lyrics.zh.txt").is_file(),
+                "out_tokens": (usage or {}).get("output_tokens") if isinstance(usage, dict) else None,
             }
         )
     return rows
@@ -178,7 +163,7 @@ def render_draft(run_id: str, song: Song, draft: Draft) -> str:
 
 def render_review(run_id: str, review: Review) -> str:
     out = [f"C 的检查　run {run_id}　section {review.section}", ""]
-    out.append(f"结论：{review.verdict}　（draft {review.draft_run}）")
+    out.append(f"结论：{review.verdict}")
     if review.violations:
         out.append("违规：")
         for v in review.violations:
@@ -198,19 +183,26 @@ def render_review(run_id: str, review: Review) -> str:
     return "\n".join(out).rstrip() + "\n"
 
 
-def render_run(store: SongStore, song: Song, run_id: str) -> str:
-    """按 run 的 agent 自动选择渲染方式。"""
-    meta = _meta_or_empty(store, run_id)
-    if not meta:
-        return f"{run_id}：未完成（没有 meta.json，可能进程中断）\n"
-    if meta.get("abandoned"):
-        return f"{run_id}（{meta.get('agent')}）：未完成——{meta['abandoned']}\n"
-    out = store.load_output(run_id)
-    agent = meta.get("agent")
+def render_record(song: Song, store: RunStore, run_id: str, agent: str, section: str | None) -> str:
+    """按 agent 选择渲染方式；``section`` 只对 B / C 有意义。"""
+    agent = agent.lower()
     if agent == "a":
-        return render_analysis(run_id, Analysis.from_json(out))
+        payload = store.load_output(run_id, "A")
+        if payload is None:
+            return f"{run_id}：A 还没有产物\n"
+        return render_analysis(run_id, Analysis.from_json(payload))
+    if section is None:
+        if not song.translatable_of(song.section_ids[0]):
+            section = next((s for s in song.section_ids if song.translatable_of(s)), None)
+        else:
+            section = song.section_ids[0]
+    if section is None:
+        return f"{run_id}：这首歌没有可译的 section\n"
+    index = section_index(song, section)
     if agent == "b":
-        return render_draft(run_id, song, Draft.from_json(out))
+        draft = load_draft(store, run_id, index)
+        return f"{run_id}：{section} 还没有 B 产物\n" if draft is None else render_draft(run_id, song, draft)
     if agent == "c":
-        return render_review(run_id, Review.from_json(out))
-    return f"{run_id}：未知 agent {agent!r}\n"
+        review = load_review(store, run_id, index)
+        return f"{run_id}：{section} 还没有 C 产物\n" if review is None else render_review(run_id, review)
+    return f"未知 agent {agent!r}\n"

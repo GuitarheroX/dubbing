@@ -1,29 +1,37 @@
+"""论文 Exp.4 两组 baseline：原样组与人工标注组，生成 + 同模型清理。"""
+
 import json
 
 import pytest
 
-from baseline.run_paper_baselines import (
+from baseline.run_baselines import (
     BaselineOutputError,
     PaperClient,
     align_lines,
-    build_request,
+    build_paper_request,
     main,
     parse_lines,
-    run_one,
+    run_paper,
 )
 from dubbing.llm import LLMError, ScriptedClient
 from dubbing.models import Song
+from dubbing.store import RunStore
 
 from helpers import phrase, song_json, write_song
 
 
 def _song():
-    raw = song_json("test", ["V1", "C1"], [
-        {"id": "V1-01", "section": "V1", "ja": "あ", "budget": {"min": 12, "max": 13}, "pattern": [6, 6]},
-        phrase("V1-02", "V1", "La la", keep_source=True),
-        phrase("C1-01", "C1", "あ", 4),
-    ])
-    return Song.from_json(raw)
+    return Song.from_json(
+        song_json(
+            "test",
+            ["V1", "C1"],
+            [
+                {"id": "V1-01", "section": "V1", "ja": "あ", "budget": {"min": 12, "max": 13}, "pattern": [6, 6]},
+                phrase("V1-02", "V1", "La la", keep_source=True),
+                phrase("C1-01", "C1", "い", 4),
+            ],
+        )
+    )
 
 
 def _script():
@@ -40,15 +48,15 @@ def test_original_input_is_invariant_to_human_annotations():
     changed = song.to_json()
     changed["phrases"][0].update(budget={"min": 8, "max": 8}, pattern=[3, 5], notes="人工备注")
     changed["phrases"][1].update(keep_source=False, budget={"min": 2, "max": 3})
-    before = build_request(song, "V1", "paper-original")
-    after = build_request(Song.from_json(changed), "V1", "paper-original")
+    before = build_paper_request(song, "V1", "paper-original")
+    after = build_paper_request(Song.from_json(changed), "V1", "paper-original")
     assert before == after
     assert before.user.splitlines() == ["あ", "La la"]
-    assert build_request(song, "C1", "paper-original").user == "あ"
+    assert build_paper_request(song, "C1", "paper-original").user == "い"
 
 
 def test_annotations_preserve_interval_pattern_and_kept_source():
-    request = build_request(_song(), "V1", "paper-annotated")
+    request = build_paper_request(_song(), "V1", "paper-annotated")
     rows = json.loads(request.user)["phrases"]
     assert rows[0]["budget"] == {"min": 12, "max": 13}
     assert rows[0]["pattern"] == [6, 6]
@@ -58,49 +66,57 @@ def test_annotations_preserve_interval_pattern_and_kept_source():
 
 
 @pytest.mark.parametrize("variant", ["paper-original", "paper-annotated"])
-def test_runs_by_section_cleans_aligns_and_evaluates_without_feedback(tmp_path, variant):
+def test_runs_by_section_cleans_aligns_and_writes_lyrics(tmp_path, variant):
     client = ScriptedClient(_script())
-    out = run_one(_song(), variant, client, out=tmp_path)
-    report = json.loads((out / "report.json").read_text())
-    assert len(client.calls) == 4  # 每段生成一次、清理一次；没有规则返修
+    out = tmp_path / variant
+    run_dir = run_paper(_song(), variant, client, out=out)
+
+    # 每段生成一次、清理一次；没有规则返修
+    assert len(client.calls) == 4
     assert client.calls[1]["user"] == "第一段原始输出，包含解释。"
     assert client.calls[3]["user"] == "第二段原始输出。"
-    assert report["evaluated_phrases"] == 2
-    assert report["kept_phrases"] == 1
-    assert report["budget_pass_rate"] == 1
-    assert report["mean_budget_distance"] == 0
-    assert [p["id"] for p in report["phrases"]] == ["V1-01", "V1-02", "C1-01"]
-    assert report["phrases"][1]["model_text"] == "随便"
-    assert report["phrases"][1]["sing_text"] == "La la"
-    assert report["phrases"][1]["verdict"] == "skip"
-    assert "La la" in (out / "lyrics.zh.txt").read_text()
-    assert (out / "sections/001/generation/response.txt").read_text() == client.calls[1]["user"]
-    assert json.loads((out / "meta.json").read_text())["status"] == "completed"
-    assert json.loads((out / "config.json").read_text())["fidelity"]["manual_verification"] == "pending"
+
+    store = RunStore(out)
+    run_id = store.latest_run()
+    assert run_dir == store.run_dir(run_id)
+    generation = store.read_output(run_id, "generation", 1)
+    assert generation["section"] == "V1"
+    assert generation["source"] == "cleanup.lines"
+    assert [p["id"] for p in generation["phrases"]] == ["V1-01", "V1-02"]
+    assert store.read_output(run_id, "cleanup", 1)["lines"] == ["一二三四五六七八九十天地", "随便"]
+    for agent in ("generation", "cleanup"):
+        names = sorted(p.name for p in store.record_dir(run_id, agent, 1).iterdir())
+        assert names == ["meta.json", "output.json", "request.json"]
+    assert (run_dir / "lyrics.zh.txt").is_file()
+    assert (run_dir / "lyrics.md").is_file()
+    assert store.read_latest()["status"] == "completed"
 
 
 def test_rule_failure_is_reported_without_repair_or_changing_lyrics(tmp_path):
     responses = _script()
     responses[1] = json.dumps({"lines": ["少字", "随便"]})
     client = ScriptedClient(responses)
-    out = run_one(_song(), "paper-annotated", client, out=tmp_path)
-    report = json.loads((out / "report.json").read_text())
-    assert len(client.calls) == 4
-    assert report["budget_pass_rate"] == 0.5
-    assert report["phrases"][0]["budget_distance"] == 10
-    assert report["phrases"][0]["sing_text"] == "少字"
-    assert report["phrases"][0]["verdict"] == "fail"
+    out = tmp_path / "paper-annotated"
+    run_dir = run_paper(_song(), "paper-annotated", client, out=out)
+
+    assert len(client.calls) == 4  # 预算不过也不返修
+    text = (run_dir / "lyrics.zh.txt").read_text(encoding="utf-8")
+    assert "少字" in text
+    md = (run_dir / "lyrics.md").read_text(encoding="utf-8")
+    assert "fail" in md
 
 
 def test_extra_line_is_failure_instead_of_silently_dropping_title(tmp_path):
     client = ScriptedClient(["原始歌词", json.dumps({"lines": ["疑似标题", "第一句", "第二句"]})])
+    out = tmp_path / "paper-original"
     with pytest.raises(BaselineOutputError, match="3 行，预期 2 行"):
-        run_one(_song(), "paper-original", client, out=tmp_path)
-    run_dir = next((tmp_path / "paper-original").iterdir())
-    assert json.loads((run_dir / "meta.json").read_text())["status"] == "failed"
-    assert (run_dir / "sections/001/generation/response.txt").read_text() == "原始歌词"
-    assert (run_dir / "sections/001/cleanup/response.txt").exists()
-    assert not (run_dir / "lyrics.zh.txt").exists()
+        run_paper(_song(), "paper-original", client, out=out)
+
+    store = RunStore(out)
+    run_id = store.latest_run()
+    assert store.read_meta(run_id, "generation", 1)["raw_response"] == "原始歌词"
+    assert "abandoned" in store.read_meta(run_id, "cleanup", 1)
+    assert not (store.run_dir(run_id) / "lyrics.zh.txt").exists()
     assert len(client.calls) == 2
 
 
@@ -113,8 +129,10 @@ def test_cleanup_rejects_unusable_line_mapping(payload):
 def test_dry_runs_are_isolated_and_do_not_touch_existing_products(root, monkeypatch):
     write_song(root, "demo", ["S1"], [phrase("P1", "S1", "あ", 4)])
     directory = root / "demo"
-    for filename in ("state.yaml", "baseline.txt", "lyrics.zh.txt", "lyrics.md"):
-        (directory / filename).write_text("existing content", encoding="utf-8")
+    song_before = (directory / "song.yaml").read_text(encoding="utf-8")
+    # 旧布局的遗留文件：新代码不该碰它们
+    (directory / "baseline.txt").write_text("legacy", encoding="utf-8")
+
     def forbidden_call(*args, **kwargs):
         raise AssertionError("dry run must not contact the API")
     monkeypatch.setattr(PaperClient, "complete", forbidden_call)
@@ -122,16 +140,16 @@ def test_dry_runs_are_isolated_and_do_not_touch_existing_products(root, monkeypa
     monkeypatch.setenv("DUBBING_TEMPERATURE", "0.4")
     for _ in range(2):
         assert main(["--root", str(root), "--all", "--dry-run"]) == 0
-    configs = list(directory.glob("baselines/*/*/config.json"))
-    assert len(configs) == 4
-    assert {json.loads(p.read_text())["model"] for p in configs} == {"current-project-model"}
-    assert {json.loads(p.read_text())["temperature_requested"] for p in configs} == {0.4}
-    for filename in ("state.yaml", "baseline.txt", "lyrics.zh.txt", "lyrics.md"):
-        assert (directory / filename).read_text() == "existing content"
+    assert len(list(directory.glob("baselines/*/*/sections/001/generation/request.json"))) == 4
+    assert len(list(directory.glob("baselines/one-shot/*/sections/001/B/request.json"))) == 2
+    assert (directory / "song.yaml").read_text(encoding="utf-8") == song_before
+    assert (directory / "baseline.txt").read_text(encoding="utf-8") == "legacy"
     assert not list(directory.glob("baselines/**/response.txt"))
+    assert not list(directory.glob("baselines/**/output.json"))
 
 
 def test_paid_calls_require_explicit_api_flag(root):
+    write_song(root, "demo", ["S1"], [phrase("P1", "S1", "あ", 4)])
     assert main(["--root", str(root), "--all"]) == 2
     assert not list(root.rglob("baselines"))
 
@@ -153,23 +171,21 @@ def test_both_variants_share_current_model_and_save_call_usage(root, monkeypatch
         seen.append(json)
         return Response(next(responses))
     monkeypatch.setattr("dubbing.llm.requests.post", post)
-    assert main(["--root", str(root), "--all", "--client", "api"]) == 0
+    assert main(["--root", str(root), "--all", "--baseline", "paper", "--client", "api"]) == 0
     assert len(seen) == 4
     assert {body["model"] for body in seen} == {"configured-current-model"}
     assert {body["temperature"] for body in seen} == {0.4}
     assert seen[0]["messages"][0]["content"][0]["text"] == "あ"
     annotated = json.loads(seen[2]["messages"][0]["content"][0]["text"])
     assert annotated["phrases"][0]["budget"] == {"min": 4, "max": 4}
-    reports = list((root / "demo/baselines").glob("*/*/report.json"))
-    assert len(reports) == 2
-    assert sorted(json.loads(p.read_text())["budget_pass_rate"] for p in reports) == [0, 1]
-    for meta_file in (root / "demo/baselines").glob("*/*/meta.json"):
-        calls = json.loads(meta_file.read_text())["calls"]
-        assert [c["stage"] for c in calls] == ["generation", "cleanup"]
-        assert all(c["usage"]["output_tokens"] == 5 for c in calls)
+
+    for meta_file in (root / "demo/baselines").glob("*/*/sections/001/*/meta.json"):
+        meta = json.loads(meta_file.read_text())
+        assert meta["model"] == "configured-current-model"
+        assert meta["usage"]["output_tokens"] == 5
 
 
-def test_api_failure_saves_full_response_and_no_api_key(tmp_path, monkeypatch):
+def test_api_failure_is_recorded_and_no_api_key_is_written(tmp_path, monkeypatch):
     payload = {"content": [{"type": "thinking", "thinking": "fixture"}], "stop_reason": "max_tokens", "usage": {"output_tokens": 10}}
     class Response:
         status_code = 200
@@ -177,11 +193,14 @@ def test_api_failure_saves_full_response_and_no_api_key(tmp_path, monkeypatch):
             return payload
     monkeypatch.setattr("dubbing.llm.requests.post", lambda *args, **kwargs: Response())
     client = PaperClient(api_key="private-test-key", model="current-model", max_retries=1)
+    out = tmp_path / "paper-original"
     with pytest.raises(LLMError, match="max_tokens"):
-        run_one(_song(), "paper-original", client, out=tmp_path)
-    response_file = next(tmp_path.glob("**/response.json"))
-    assert json.loads(response_file.read_text()) == payload
-    assert all("private-test-key" not in p.read_text() for p in tmp_path.rglob("*") if p.is_file())
+        run_paper(_song(), "paper-original", client, out=out)
+
+    store = RunStore(out)
+    meta = store.read_meta(store.latest_run(), "generation", 1)
+    assert "abandoned" in meta
+    assert all("private-test-key" not in p.read_text() for p in out.rglob("*") if p.is_file())
 
 
 def test_openai_gateway_protocol_and_usage(monkeypatch):
@@ -220,8 +239,8 @@ def test_parallel_cli_keeps_results_in_directory_alias(root):
     import shutil
     write_song(root, "internal-id", ["S1"], [phrase("P1", "S1", "あ", 4)])
     shutil.move(str(root / "internal-id"), str(root / "directory-name"))
-    assert main(["--root", str(root), "--all", "--jobs", "2", "--dry-run"]) == 0
-    assert len(list((root / "directory-name").glob("baselines/*/*/config.json"))) == 2
+    assert main(["--root", str(root), "--all", "--baseline", "one-shot", "--jobs", "2", "--dry-run"]) == 0
+    assert len(list((root / "directory-name").glob("baselines/one-shot/*/sections/001/B/request.json"))) == 1
     assert not (root / "internal-id").exists()
 
 
@@ -277,33 +296,3 @@ def test_anthropic_thinking_disabled_request_and_response_check(monkeypatch, rea
         assert client.complete(agent="baseline", system="prompt", user="lyrics") == "译词"
     assert bodies[0]["thinking"] == {"type": "disabled"}
     assert client.last_thinking_observation["reasoning_content_present"] is reasoning
-
-
-def test_resume_reuses_generation_and_archives_failed_cleanup_attempt(tmp_path):
-    first = ScriptedClient(["第一段原始输出，包含解释。"])
-    with pytest.raises(LLMError):
-        run_one(_song(), "paper-original", first, out=tmp_path)
-    directory = next((tmp_path / "paper-original").iterdir())
-    second = ScriptedClient(_script()[1:])
-    assert run_one(_song(), "paper-original", second, out=tmp_path, resume_dir=directory) == directory
-    assert len(second.calls) == 3
-    assert second.calls[0]["user"] == "第一段原始输出，包含解释。"
-    assert list((directory / "sections/001/cleanup/attempts").glob("*/meta.json"))
-    meta = json.loads((directory / "meta.json").read_text())
-    assert meta["status"] == "completed"
-    assert meta["calls"][0]["reused"] is True
-    assert meta["attempt_history"][0]["previous_status"] == "failed"
-    unused = ScriptedClient([])
-    assert run_one(_song(), "paper-original", unused, out=tmp_path, resume_dir=directory) == directory
-    assert unused.calls == []
-
-
-def test_resume_rejects_changed_input_without_overwriting_snapshot(tmp_path):
-    client = ScriptedClient(_script())
-    directory = run_one(_song(), "paper-original", client, out=tmp_path)
-    snapshot = (directory / "song.json").read_bytes()
-    raw = _song().to_json()
-    raw["phrases"][0]["ja"] = "different original"
-    with pytest.raises(ValueError, match="设置不同"):
-        run_one(Song.from_json(raw), "paper-original", ScriptedClient([]), out=tmp_path, resume_dir=directory)
-    assert (directory / "song.json").read_bytes() == snapshot

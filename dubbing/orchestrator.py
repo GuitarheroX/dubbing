@@ -1,11 +1,16 @@
 """编排：A 一次 → 每个 section 循环（B → C → 不合格就带着 prev_zh 重来）。
 
-结构就是 README 里那条 workflow。没有引入 LangGraph：节点与边的形状已经
-一一对应（``ensure_analysis`` / ``attempt_section`` / 循环边），换成 LangGraph
-时把这里的状态换成它的 State、把这两个函数换成节点即可。
+结构就是 README 里那条 workflow。**一次 ``run_song`` 产生一个 run 目录**：
 
-状态一律落盘：``state.yaml`` 存指针，产物在 ``runs/``。所以中断后重跑
-会从上次的 draft 继续，而不是从零开始。
+    data/songs/<song_id>/workflow/run-<ts>-<hash>/
+        A/                      # 整曲一次
+        sections/001/B/         # 这一段最终一轮的译词
+        sections/001/C/         # 这一段的规则检查
+        lyrics.zh.txt / lyrics.md
+
+每个 agent 目录固定 ``request.json`` / ``output.json`` / ``meta.json`` 三个文件；
+多轮返修只保留**最终一轮**（返修过程仍能从该轮 request 里的反馈和 ``prev_zh`` 看到）。
+``--only`` / ``--skip-done`` 会把没重跑的段落整份抄进新 run，所以每个 run 都是完整快照。
 """
 
 from __future__ import annotations
@@ -16,11 +21,12 @@ from typing import Callable
 
 from . import checks
 from .agents import build_a_request, build_b_request, parse_a_output, parse_b_output
+from .export import write_lyrics
 from .llm import LLMClient, LLMError, NeedsLLM, extract_json
-from .models import Analysis, Draft, Review, SchemaError, Song, State
+from .models import Analysis, Draft, Review, SchemaError, Song
 from .prompting import prompt_hash
 from .song import load_song
-from .store import Request, Run, SongStore
+from .store import Request, RunStore, run_base, section_index
 from .view import build_view, load_draft, load_review
 
 __all__ = [
@@ -30,10 +36,15 @@ __all__ = [
     "SectionOutcome",
     "run_song",
     "plan_requests",
+    "workflow_store",
 ]
 
 DEFAULT_ROOT = Path("data/songs")
 DEFAULT_MAX_ROUNDS = 3
+
+
+def workflow_store(root: Path | str | None, song_id: str) -> RunStore:
+    return RunStore(run_base(root or DEFAULT_ROOT, song_id, "workflow"))
 
 
 @dataclass(frozen=True)
@@ -54,8 +65,6 @@ class SectionOutcome:
     section: str
     status: str  # "passed" | "exhausted" | "skipped" | "reused"
     rounds: int = 0
-    draft_run: str | None = None
-    review_run: str | None = None
     hard: int = 0
     soft: int = 0
     regressions: tuple[str, ...] = ()
@@ -65,10 +74,11 @@ class SectionOutcome:
 @dataclass
 class SongOutcome:
     song_id: str
-    analysis_run: str | None = None
+    run_id: str | None = None
     analysis_reused: bool = False
     sections: list[SectionOutcome] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
+    lyrics_paths: list[Path] = field(default_factory=list)
 
     @property
     def ok(self) -> bool:
@@ -77,12 +87,15 @@ class SongOutcome:
 
 def _meta(agent: str, llm: LLMClient, system: str, **extra: object) -> dict[str, object]:
     meta: dict[str, object] = {
-        "agent": agent,
         "model": getattr(llm, "model", llm.name),
         "client": llm.name,
         "prompt_hash": prompt_hash(system),
         **extra,
     }
+    for key, attr in (("base_url", "base_url"), ("protocol", "protocol")):
+        value = getattr(llm, attr, None)
+        if value is not None:
+            meta[key] = value
     usage = getattr(llm, "last_usage", None)
     if usage:
         meta["usage"] = usage
@@ -92,20 +105,25 @@ def _meta(agent: str, llm: LLMClient, system: str, **extra: object) -> dict[str,
     return meta
 
 
-def _call(
-    store: SongStore, run: Run, llm: LLMClient, *, agent: str, request: Request
+def _invoke(
+    store: RunStore,
+    run_id: str,
+    agent: str,
+    llm: LLMClient,
+    request: Request,
+    *,
+    section_index_: int | None = None,
 ) -> str:
+    """写 request.json → 调模型。失败时把原因和已落盘位置写进 meta.json。"""
+    directory = store.prepare(run_id, agent, request, section_index_=section_index_)
     try:
-        text = llm.complete(agent=agent, system=request.system, user=request.user)
+        return llm.complete(agent=agent.lower(), system=request.system, user=request.user)
     except NeedsLLM as exc:
-        store.abandon(run, reason="needs-llm")
-        raise NeedsLLM(f"{exc}\n本次入参已落盘：{run.request_path}") from exc
+        store.abandon(run_id, agent, reason="needs-llm", section_index_=section_index_)
+        raise NeedsLLM(f"{exc}\n本次入参已落盘：{directory / 'request.json'}") from exc
     except LLMError as exc:
-        store.abandon(run, reason=f"error: {exc}")
-        raise LLMError(f"{exc}\n本次入参已落盘：{run.request_path}") from exc
-
-    store.write_response(run, text)
-    return text
+        store.abandon(run_id, agent, reason=f"error: {exc}", section_index_=section_index_)
+        raise LLMError(f"{exc}\n本次入参已落盘：{directory / 'request.json'}") from exc
 
 
 # --------------------------------------------------------------------------
@@ -115,21 +133,23 @@ def _call(
 
 def ensure_analysis(
     song: Song,
-    store: SongStore,
-    state: State,
+    store: RunStore,
+    run_id: str,
+    source_run: str | None,
     llm: LLMClient,
     *,
     force: bool = False,
     on_step: StepHook | None = None,
-) -> tuple[Analysis, str, bool, list[str]]:
-    """返回 ``(analysis, run_id, reused, warnings)``。"""
+) -> tuple[Analysis, bool, list[str]]:
+    """返回 ``(analysis, reused, warnings)``。可以复用时就整份抄进新 run。"""
 
     def emit(step: Step) -> None:
         if on_step is not None:
             on_step(step)
 
-    if not force and store.has_run(state.analysis):
-        analysis = Analysis.from_json(store.load_output(state.analysis))  # type: ignore[arg-type]
+    if not force and store.has_output(source_run, "A"):
+        store.copy_record(source_run, run_id, "A")  # type: ignore[arg-type]
+        analysis = Analysis.from_json(store.read_output(run_id, "A"))
         missing = [sid for sid in song.section_ids if sid not in analysis.sections]
         warnings: list[str] = []
         if missing:
@@ -140,22 +160,25 @@ def ensure_analysis(
             emit(Step("a", "done", note=f"复用上一版，缺 {'/'.join(missing)}"))
         else:
             emit(Step("a", "done", note="复用上一版"))
-        return analysis, state.analysis, True, warnings  # type: ignore[return-value]
+        return analysis, True, warnings
 
     emit(Step("a", "start", note="体会整首歌"))
     request = build_a_request(song)
-    run = store.new_run("a", request)
-    raw = _call(store, run, llm, agent="a", request=request)
+    raw = _invoke(store, run_id, "A", llm, request)
     try:
         analysis, warnings = parse_a_output(extract_json(raw), song)
     except (LLMError, SchemaError) as exc:
-        store.abandon(run, reason=f"解析失败：{exc}")
+        store.abandon(run_id, "A", reason=f"解析失败：{exc}", raw_response=raw)
         raise
-    store.finish(run, analysis.to_json(), meta=_meta("a", llm, request.system, warnings=warnings))
-    state.analysis = run.id
-    store.save_state(state)
+    store.finish(
+        run_id,
+        "A",
+        analysis.to_json(),
+        meta=_meta("a", llm, request.system, warnings=warnings),
+        raw_response=raw,
+    )
     emit(Step("a", "done", note=f"{len(analysis.sections)} 段"))
-    return analysis, run.id, False, warnings
+    return analysis, False, warnings
 
 
 # --------------------------------------------------------------------------
@@ -163,8 +186,8 @@ def ensure_analysis(
 # --------------------------------------------------------------------------
 
 
-def _accepted_texts(song: Song, state: State, store: SongStore, focus: str) -> dict[str, str]:
-    view = build_view(song, state, store)
+def _accepted_texts(song: Song, store: RunStore, run_id: str, focus: str) -> dict[str, str]:
+    view = build_view(song, store, run_id)
     return view.accepted_texts(exclude={p.id for p in song.phrases_of(focus)})
 
 
@@ -180,8 +203,9 @@ def _review_request(song: Song, section: str, draft: Draft, prev: Draft | None) 
 
 def attempt_section(
     song: Song,
-    store: SongStore,
-    state: State,
+    store: RunStore,
+    run_id: str,
+    source_run: str | None,
     analysis: Analysis,
     llm: LLMClient,
     section: str,
@@ -191,34 +215,31 @@ def attempt_section(
     fresh: bool = True,
     on_step: StepHook | None = None,
 ) -> SectionOutcome:
-    ss = state.of(section)
+    index = section_index(song, section)
 
     def emit(step: Step) -> None:
         if on_step is not None:
             on_step(step)
 
     if not song.translatable_of(section):
-        ss.verdict = "skipped"
-        store.save_state(state)
         emit(Step("b", "done", section=section, note="整段保留原文，跳过"))
         return SectionOutcome(section=section, status="skipped")
 
-    if skip_done and ss.verdict == "pass" and store.has_run(ss.draft):
-        emit(Step("b", "done", section=section, note="已完成，跳过"))
-        return SectionOutcome(
-            section=section,
-            status="reused",
-            draft_run=ss.draft,
-            review_run=ss.review,
-        )
+    if skip_done and store.has_output(source_run, "C", index):
+        review = Review.from_json(store.read_output(source_run, "C", index))  # type: ignore[arg-type]
+        if review.verdict == "pass":
+            store.copy_record(source_run, run_id, "B", section_index_=index)  # type: ignore[arg-type]
+            store.copy_record(source_run, run_id, "C", section_index_=index)  # type: ignore[arg-type]
+            emit(Step("b", "done", section=section, note="已完成，跳过"))
+            return SectionOutcome(section=section, status="reused")
 
     # fresh：忽略这一段已有的译文，从零开始（旧 run 仍在磁盘上，不会被删）
-    prev_draft: Draft | None = None if fresh else load_draft(store, ss.draft)
-    prev_review: Review | None = None if fresh else load_review(store, ss.review)
+    prev_draft = None if fresh else load_draft(store, source_run, index)
+    prev_review = None if fresh else load_review(store, source_run, index)
 
     outcome = SectionOutcome(section=section, status="exhausted")
     for attempt in range(1, max_rounds + 1):
-        accepted = _accepted_texts(song, state, store, section)
+        accepted = _accepted_texts(song, store, run_id, section)
         prev_texts = prev_draft.texts() if prev_draft is not None else None
         request = build_b_request(
             song,
@@ -229,32 +250,38 @@ def attempt_section(
             feedback=prev_review.violations if prev_review is not None else (),
         )
         emit(Step("b", "start", section=section, note=f"第 {attempt} 轮"))
-        run = store.new_run("b", request)
-        raw = _call(store, run, llm, agent="b", request=request)
+        raw = _invoke(store, run_id, "B", llm, request, section_index_=index)
         try:
             draft, warnings = parse_b_output(extract_json(raw), song, section)
         except (LLMError, SchemaError) as exc:
-            store.abandon(run, reason=f"解析失败：{exc}")
+            store.abandon(run_id, "B", reason=f"解析失败：{exc}", raw_response=raw, section_index_=index)
             raise
         store.finish(
-            run,
+            run_id,
+            "B",
             draft.to_json(),
             meta=_meta("b", llm, request.system, round=attempt, warnings=warnings),
+            raw_response=raw,
+            section_index_=index,
         )
 
         review = checks.review(
             song,
             section,
             draft,
-            draft_run=run.id,
+            draft_run=run_id,
             prev_draft=prev_draft,
             prev_review=prev_review,
         )
-        review_run = store.new_run("c", _review_request(song, section, draft, prev_draft))
-        store.finish(review_run, review.to_json(), meta={"agent": "c", "rule_based": True})
+        store.prepare(run_id, "C", _review_request(song, section, draft, prev_draft), section_index_=index)
+        store.finish(
+            run_id,
+            "C",
+            review.to_json(),
+            meta={"rule_based": True},
+            section_index_=index,
+        )
 
-        ss.draft, ss.review, ss.round, ss.verdict = run.id, review_run.id, attempt, review.verdict
-        store.save_state(state)
         soft = len(review.violations) - len(review.hard)
         emit(
             Step(
@@ -269,10 +296,8 @@ def attempt_section(
             section=section,
             status="passed" if review.verdict == "pass" else "exhausted",
             rounds=attempt,
-            draft_run=run.id,
-            review_run=review_run.id,
             hard=len(review.hard),
-            soft=len(review.violations) - len(review.hard),
+            soft=soft,
             regressions=review.regressions,
             warnings=warnings,
         )
@@ -306,22 +331,30 @@ def run_song(
         unknown = sorted(only - set(song.section_ids))
         if unknown:
             raise KeyError(f"没有这些 section：{unknown}，可选 {list(song.section_ids)}")
-    store = SongStore(root or DEFAULT_ROOT, song_id)
-    state = store.load_state()
+    store = workflow_store(root, song_id)
+    source_run = store.latest_run()
+    run_id = store.new_run()
 
-    analysis, analysis_run, reused, warnings = ensure_analysis(
-        song, store, state, llm, force=redo_analysis, on_step=on_step
+    analysis, reused, warnings = ensure_analysis(
+        song, store, run_id, source_run, llm, force=redo_analysis, on_step=on_step
     )
-    outcome = SongOutcome(song_id=song_id, analysis_run=analysis_run, analysis_reused=reused)
+    outcome = SongOutcome(song_id=song_id, run_id=run_id, analysis_reused=reused)
     outcome.warnings.extend(warnings)
 
-    targets = [s for s in song.sections if only is None or s.id in only]
-    for section in targets:
+    for section in song.sections:
+        index = section_index(song, section.id)
+        if only is not None and section.id not in only:
+            # 没被点名的段落整份抄过来，保证这个 run 仍是完整快照
+            if source_run is not None:
+                store.copy_record(source_run, run_id, "B", section_index_=index)
+                store.copy_record(source_run, run_id, "C", section_index_=index)
+            continue
         outcome.sections.append(
             attempt_section(
                 song,
                 store,
-                state,
+                run_id,
+                source_run,
                 analysis,
                 llm,
                 section.id,
@@ -331,7 +364,15 @@ def run_song(
                 on_step=on_step,
             )
         )
-    store.save_state(state)
+
+    view = build_view(song, store, run_id)
+    outcome.lyrics_paths = write_lyrics(song, view, store.run_dir(run_id))
+    store.set_latest(
+        run_id,
+        song=song_id,
+        status="completed" if outcome.ok else "incomplete",
+        model=getattr(llm, "model", llm.name),
+    )
     return outcome
 
 
@@ -343,14 +384,14 @@ def compose_request(
     root: Path | None = None,
     fresh: bool = True,
 ) -> Request:
-    """现拼一份"如果现在要调用，会发出去什么"的请求（不调用模型）。
+    """现拼一份“如果现在要调用，会发出去什么”的请求（不调用模型）。
 
-    跟真实调用唯一的差别：返修轮次里 C 的结论不会出现，因为这里没有"上一轮"。
-    想看带反馈的原样请求，用 ``--run <id>`` 读 ``runs/<id>/request.json``。
+    跟真实调用唯一的差别：返修轮次里 C 的结论不会出现，因为这里没有“上一轮”。
+    想看带反馈的原样请求，用 ``--run <id>`` 读 ``sections/NNN/B/request.json``。
     """
     song = load_song(song_id, root=root)
-    store = SongStore(root or DEFAULT_ROOT, song_id)
-    state = store.load_state()
+    store = workflow_store(root, song_id)
+    source_run = store.latest_run()
 
     if agent == "a":
         return build_a_request(song)
@@ -363,17 +404,17 @@ def compose_request(
         raise KeyError(f"未知 section {section!r}，可选 {list(song.section_ids)}")
 
     analysis = (
-        Analysis.from_json(store.load_output(state.analysis))  # type: ignore[arg-type]
-        if store.has_run(state.analysis)
+        Analysis.from_json(store.read_output(source_run, "A"))  # type: ignore[arg-type]
+        if store.has_output(source_run, "A")
         else Analysis(theme="", emotional_arc="", narrative="")
     )
-    ss = state.sections.get(section)
-    prev = None if fresh else load_draft(store, ss.draft if ss is not None else None)
+    index = section_index(song, section)
+    prev = None if fresh else load_draft(store, source_run, index)
     return build_b_request(
         song,
         analysis,
         focus=section,
-        accepted=_accepted_texts(song, state, store, section),
+        accepted=_accepted_texts(song, store, source_run, section) if source_run else {},
         prev_texts=prev.texts() if prev is not None else None,
     )
 
@@ -387,32 +428,34 @@ def plan_requests(
 ) -> list[tuple[str, Request]]:
     """渲染出所有待发请求但不调用模型（给 ``--dry-run`` 用）。"""
     song = load_song(song_id, root=root)
-    store = SongStore(root or DEFAULT_ROOT, song_id)
-    state = store.load_state()
+    store = workflow_store(root, song_id)
+    source_run = store.latest_run()
 
     plan: list[tuple[str, Request]] = []
-    if not store.has_run(state.analysis):
-        plan.append(("a", build_a_request(song)))
+    if not store.has_output(source_run, "A"):
+        plan.append(("A", build_a_request(song)))
         # 没有 A 的产物时，B 的 analysis 只能留空
         analysis = Analysis(theme="", emotional_arc="", narrative="")
     else:
-        analysis = Analysis.from_json(store.load_output(state.analysis))  # type: ignore[arg-type]
+        analysis = Analysis.from_json(store.read_output(source_run, "A"))  # type: ignore[arg-type]
 
     for section in song.sections:
-        ss = state.sections.get(section.id)
         if not song.translatable_of(section.id):
             continue
-        if skip_done and ss is not None and ss.verdict == "pass" and store.has_run(ss.draft):
-            continue
-        prev = None if fresh else load_draft(store, ss.draft if ss is not None else None)
+        index = section_index(song, section.id)
+        if skip_done and store.has_output(source_run, "C", index):
+            review = Review.from_json(store.read_output(source_run, "C", index))  # type: ignore[arg-type]
+            if review.verdict == "pass":
+                continue
+        prev = None if fresh else load_draft(store, source_run, index)
         plan.append(
             (
-                f"b:{section.id}",
+                f"B-{section.id}",
                 build_b_request(
                     song,
                     analysis,
                     focus=section.id,
-                    accepted=_accepted_texts(song, state, store, section.id),
+                    accepted=_accepted_texts(song, store, source_run, section.id) if source_run else {},
                     prev_texts=prev.texts() if prev is not None else None,
                 ),
             )

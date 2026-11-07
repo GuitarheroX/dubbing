@@ -1,38 +1,52 @@
-"""视图装配：由 ``song.yaml`` + ``state.yaml`` 指向的 run 拼出"当前全曲长什么样"。
+"""视图装配：由 ``song.yaml`` + **一个 run 目录**拼出“当前全曲长什么样”。
 
-视图是导出的结果，不是存储的真相；删掉它随时可以重算。
+一个 run 自带全部产物（A 在 run 根，B/C 在 ``sections/NNN/`` 下），所以装配
+只需要 ``song`` + ``run_id``，不再需要一个单独的指针文件。视图是导出的结果，
+不是存储的真相；删掉它随时可以重算。
 """
 
 from __future__ import annotations
 
-from .models import Draft, Review, Song, State, View, ViewRow
-from .store import SongStore
+from .models import Draft, Review, Song, View, ViewRow
+from .store import RunStore, section_index
 
-__all__ = ["build_view", "load_draft", "load_review"]
-
-
-def load_draft(store: SongStore, run_id: str | None) -> Draft | None:
-    if not run_id or not store.has_run(run_id):
-        return None
-    return Draft.from_json(store.load_output(run_id))
+__all__ = ["build_view", "load_draft", "load_review", "run_section_verdicts"]
 
 
-def load_review(store: SongStore, run_id: str | None) -> Review | None:
-    if not run_id or not store.has_run(run_id):
-        return None
-    return Review.from_json(store.load_output(run_id))
+def load_draft(store: RunStore, run_id: str | None, index: int) -> Draft | None:
+    payload = store.load_output(run_id, "B", index)
+    return None if payload is None else Draft.from_json(payload)
 
 
-def build_view(song: Song, state: State, store: SongStore) -> View:
-    rows: list[ViewRow] = []
+def load_review(store: RunStore, run_id: str | None, index: int) -> Review | None:
+    payload = store.load_output(run_id, "C", index)
+    return None if payload is None else Review.from_json(payload)
 
+
+def run_section_verdicts(song: Song, store: RunStore, run_id: str | None) -> dict[str, str]:
+    """每个 section 的最终结论：``pass`` / ``fail`` / ``pending`` / ``skipped``。"""
+    out: dict[str, str] = {}
+    for idx, sid in enumerate(song.section_ids, 1):
+        if not song.translatable_of(sid):
+            out[sid] = "skipped"
+            continue
+        review = load_review(store, run_id, idx)
+        if review is None:
+            out[sid] = "pending"
+        else:
+            out[sid] = review.verdict
+    return out
+
+
+def build_view(song: Song, store: RunStore, run_id: str | None) -> View:
     drafts: dict[str, Draft | None] = {}
     reviews: dict[str, Review | None] = {}
     for sid in song.section_ids:
-        ss = state.sections.get(sid)
-        drafts[sid] = load_draft(store, ss.draft if ss else None)
-        reviews[sid] = load_review(store, ss.review if ss else None)
+        idx = section_index(song, sid)
+        drafts[sid] = load_draft(store, run_id, idx)
+        reviews[sid] = load_review(store, run_id, idx)
 
+    rows: list[ViewRow] = []
     for p in song.phrases:
         if p.keep_source:
             rows.append(
@@ -59,7 +73,6 @@ def build_view(song: Song, state: State, store: SongStore) -> View:
         else:
             verdict = "pending"
 
-        ss = state.sections.get(p.section)
         rows.append(
             ViewRow(
                 phrase_id=p.id,
@@ -69,7 +82,7 @@ def build_view(song: Song, state: State, store: SongStore) -> View:
                 lang="zh" if text else None,
                 sing_text=text,
                 verdict=verdict,
-                draft_run=ss.draft if ss else None,
+                draft_run=run_id,
             )
         )
 

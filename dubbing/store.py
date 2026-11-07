@@ -1,13 +1,23 @@
-"""磁盘布局：run 目录、``meta.json``、``state.yaml``。
+"""磁盘布局：**一次运行 = 一个 run 目录**，目录里每个 agent 只有三个文件。
 
-一次 run = 一次 agent 调用 = 一个目录，永不覆盖：
+workflow 与各 baseline 共用同一套布局：
 
-    data/songs/<song_id>/runs/<ts>_<agent>_<input_hash>/
-        request.json    调用的完整入参（渲染后的 messages + 结构化数据）
-        output.json     产物
-        meta.json       血缘：model / prompt_hash / input_hash / ts
+    <base>/                                  # data/songs/<id>/workflow
+      latest.json                            # 只记“当前 run 是哪个”
+      run-<UTC 时间戳>-<8 位随机>/
+        A/{request,output,meta}.json         # 整曲层的 agent；只有 workflow 的 A 在这里
+        sections/001/B/{request,output,meta}.json
+        sections/001/C/{request,output,meta}.json
+        sections/002/...
+        lyrics.zh.txt
+        lyrics.md
 
-``state.yaml`` 只放指针，决定"当前视图由哪几个 run 拼成"。
+- ``request.json``：这次调用的完整入参，调用前就落盘，方便“API 还没接”时先检查。
+- ``output.json``：解析后的产物（Analysis / Draft / Review / lines）。
+- ``meta.json``：模型、用量、提示词 hash、轮次等血缘信息；模型原始正文也存在这里
+  的 ``raw_response`` 字段，所以解析失败也留得住证据，不必再多一个 ``response.txt``。
+
+一个 run 目录自带全部产物，``latest.json`` 不参与拼装视图，只回答“现在看哪一次”。
 """
 
 from __future__ import annotations
@@ -19,12 +29,21 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from uuid import uuid4
 
-import yaml
+from .models import Song
 
-from .models import State
+__all__ = [
+    "Request",
+    "RunStore",
+    "RECORD_FILES",
+    "section_index",
+    "run_base",
+]
 
-__all__ = ["Request", "Run", "SongStore"]
+#: 每个 agent 目录固定只有这三个文件。
+RECORD_FILES = ("request.json", "output.json", "meta.json")
+RUN_PREFIX = "run-"
 
 
 def _canonical(obj: Any) -> str:
@@ -37,6 +56,19 @@ def _hash(*parts: str) -> str:
         h.update(p.encode("utf-8"))
         h.update(b"\x00")
     return h.hexdigest()
+
+
+def section_index(song: Song, section_id: str) -> int:
+    """段落在 ``song.yaml`` 里的 1 起序号，决定 ``sections/001`` 这个名字。"""
+    ids = song.section_ids
+    if section_id not in ids:
+        raise KeyError(f"未知 section {section_id!r}，可选 {list(ids)}")
+    return ids.index(section_id) + 1
+
+
+def run_base(root: Path | str, song_id: str, name: str = "workflow") -> Path:
+    """``name`` 取 ``workflow`` 或 ``baselines/<baseline 名>``。"""
+    return Path(root) / song_id / name
 
 
 @dataclass(frozen=True)
@@ -57,149 +89,199 @@ class Request:
         return _hash(self.system, self.user, _canonical(self.data))
 
 
-@dataclass(frozen=True)
-class Run:
-    id: str
-    dir: Path
-    agent: str
-    input_hash: str
+class RunStore:
+    """管理 ``<base>/`` 下的若干 run 目录。``base`` 由调用方给定。
 
-    @property
-    def request_path(self) -> Path:
-        return self.dir / "request.json"
+    workflow 用 ``data/songs/<id>/workflow``；baseline 用
+    ``data/songs/<id>/baselines/<名字>``。两者结构完全一样。
+    """
 
-    @property
-    def output_path(self) -> Path:
-        return self.dir / "output.json"
+    def __init__(self, base: Path | str) -> None:
+        self.base = Path(base)
+        self.latest_path = self.base / "latest.json"
 
-    @property
-    def meta_path(self) -> Path:
-        return self.dir / "meta.json"
+    # -- run 目录 --------------------------------------------------------
 
+    def new_run(self) -> str:
+        """建一个新 run 目录，返回 run id。时间戳保证排序即先后。"""
+        return self._new_dir(RUN_PREFIX)
 
-class SongStore:
-    def __init__(self, root: Path | str, song_id: str) -> None:
-        self.root = Path(root)
-        self.song_id = song_id
-        self.song_dir = self.root / song_id
-        self.runs_dir = self.song_dir / "runs"
-        self.state_path = self.song_dir / "state.yaml"
+    def new_preview(self) -> str:
+        """``--dry-run`` 用的目录。不叫 ``run-``，所以 ``list_runs`` / ``latest_run`` 看不见它。"""
+        return self._new_dir("preview-")
 
-    # -- runs ------------------------------------------------------------
+    def _new_dir(self, prefix: str) -> str:
+        self.base.mkdir(parents=True, exist_ok=True)
+        rid = f"{prefix}{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')}-{uuid4().hex[:8]}"
+        (self.base / rid).mkdir(parents=True, exist_ok=False)
+        return rid
 
-    def new_run(self, agent: str, request: Request) -> Run:
-        """建目录并写下 ``request.json``。调用前就落盘，便于"API 还没接"时检查入参。"""
-        digest = request.digest()
-        ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S")
-        base = f"{ts}_{agent}_{digest[:6]}"
-        rid = base
-        n = 2
-        while (self.runs_dir / rid).exists():
-            rid = f"{base}-{n}"
-            n += 1
-        run = Run(id=rid, dir=self.runs_dir / rid, agent=agent, input_hash=digest)
-        run.dir.mkdir(parents=True, exist_ok=False)
-        self._write(run.request_path, request.to_json())
-        return run
+    def run_dir(self, run_id: str) -> Path:
+        return self.base / run_id
 
-    def finish(self, run: Run, output: dict[str, Any], *, meta: dict[str, Any]) -> None:
-        self._write(run.output_path, output)
-        self._write(
-            run.meta_path,
-            {
-                "agent": run.agent,
-                "run_id": run.id,
-                "input_hash": run.input_hash,
-                "finished_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                **meta,
-            },
-        )
-
-    def write_response(self, run: Run, text: str) -> None:
-        """把模型原始输出落盘。解析失败时这是唯一能复盘的证据。"""
-        (run.dir / "response.txt").write_text(text, encoding="utf-8")
-
-    def abandon(self, run: Run, *, reason: str) -> None:
-        self._write(
-            run.meta_path,
-            {
-                "agent": run.agent,
-                "run_id": run.id,
-                "input_hash": run.input_hash,
-                "abandoned": reason,
-                "finished_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-            },
-        )
-
-    def has_run(self, run_id: str | None) -> bool:
-        return bool(run_id) and (self.runs_dir / str(run_id) / "output.json").is_file()
-
-    def load_output(self, run_id: str) -> dict[str, Any]:
-        path = self.runs_dir / run_id / "output.json"
-        if not path.is_file():
-            raise FileNotFoundError(f"run {run_id} 没有 output.json：{path}")
-        return json.loads(path.read_text(encoding="utf-8"))
-
-    def load_request(self, run_id: str) -> dict[str, Any]:
-        path = self.runs_dir / run_id / "request.json"
-        if not path.is_file():
-            raise FileNotFoundError(f"run {run_id} 没有 request.json：{path}")
-        return json.loads(path.read_text(encoding="utf-8"))
-
-    def load_meta(self, run_id: str) -> dict[str, Any]:
-        return json.loads((self.runs_dir / run_id / "meta.json").read_text(encoding="utf-8"))
-
-    def run_ids(self, agent: str | None = None) -> list[str]:
-        if not self.runs_dir.is_dir():
+    def list_runs(self) -> list[str]:
+        if not self.base.is_dir():
             return []
-        ids = sorted(p.name for p in self.runs_dir.iterdir() if p.is_dir())
-        if agent is None:
-            return ids
-        return [r for r in ids if self._agent_of(r) == agent]
+        return sorted(
+            p.name for p in self.base.iterdir() if p.is_dir() and p.name.startswith(RUN_PREFIX)
+        )
+
+    def latest_run(self) -> str | None:
+        """``latest.json`` 指向的 run；文件缺失或指向已删除的目录时退回最新的一个。"""
+        if self.latest_path.is_file():
+            data = self.read_latest()
+            rid = data.get("run")
+            if isinstance(rid, str) and (self.base / rid).is_dir():
+                return rid
+        runs = self.list_runs()
+        return runs[-1] if runs else None
+
+    def read_latest(self) -> dict[str, Any]:
+        if not self.latest_path.is_file():
+            return {}
+        try:
+            data = json.loads(self.latest_path.read_text(encoding="utf-8"))
+        except ValueError:
+            return {}
+        return data if isinstance(data, dict) else {}
+
+    def set_latest(self, run_id: str, **extra: Any) -> None:
+        payload: dict[str, Any] = {
+            "run": run_id,
+            "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        }
+        payload.update(extra)
+        self._write(self.latest_path, payload)
+
+    # -- 单个 agent 的三个文件 -------------------------------------------
+
+    def record_dir(self, run_id: str, agent: str, section_index_: int | None = None) -> Path:
+        """``section_index_`` 为 None 表示整曲层的 agent（如 workflow 的 A）。"""
+        root = self.run_dir(run_id)
+        if section_index_ is None:
+            return root / agent
+        return root / "sections" / f"{section_index_:03d}" / agent
+
+    def prepare(
+        self, run_id: str, agent: str, request: Request, *, section_index_: int | None = None
+    ) -> Path:
+        """写下 ``request.json``。调用前落盘。"""
+        directory = self.record_dir(run_id, agent, section_index_)
+        directory.mkdir(parents=True, exist_ok=True)
+        self._write(directory / "request.json", request.to_json())
+        return directory
+
+    def finish(
+        self,
+        run_id: str,
+        agent: str,
+        output: dict[str, Any],
+        *,
+        meta: dict[str, Any] | None = None,
+        raw_response: str | None = None,
+        section_index_: int | None = None,
+    ) -> Path:
+        directory = self.record_dir(run_id, agent, section_index_)
+        directory.mkdir(parents=True, exist_ok=True)
+        self._write(directory / "output.json", output)
+        self._write(directory / "meta.json", self._meta(agent, meta, raw_response))
+        return directory
+
+    def abandon(
+        self,
+        run_id: str,
+        agent: str,
+        *,
+        reason: str,
+        meta: dict[str, Any] | None = None,
+        raw_response: str | None = None,
+        section_index_: int | None = None,
+    ) -> Path:
+        directory = self.record_dir(run_id, agent, section_index_)
+        directory.mkdir(parents=True, exist_ok=True)
+        payload = self._meta(agent, meta, raw_response)
+        payload["abandoned"] = reason
+        self._write(directory / "meta.json", payload)
+        return directory
 
     @staticmethod
-    def _agent_of(run_id: str) -> str:
-        parts = run_id.split("_")
-        return parts[1] if len(parts) > 1 else ""
+    def _meta(agent: str, meta: dict[str, Any] | None, raw_response: str | None) -> dict[str, Any]:
+        payload: dict[str, Any] = {"agent": agent}
+        if raw_response is not None:
+            payload["raw_response"] = raw_response
+        payload["finished_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        payload.update(meta or {})
+        return payload
 
-    # -- 清空 ------------------------------------------------------------
+    # -- 读 --------------------------------------------------------------
 
-    def reset(self, *, keep_history: bool = False) -> dict[str, object]:
-        """删除全部 run 与 state。``keep_history=True`` 时改为移进 ``archive/<ts>/``。
+    def has_output(self, run_id: str | None, agent: str, section_index_: int | None = None) -> bool:
+        if not run_id:
+            return False
+        return (self.record_dir(run_id, agent, section_index_) / "output.json").is_file()
 
-        返回做掉了什么，给命令行报一句。
-        """
-        run_ids = self.run_ids()
-        moved_to: Path | None = None
-        if keep_history and run_ids:
-            stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S")
-            moved_to = self.song_dir / "archive" / stamp
-            moved_to.mkdir(parents=True, exist_ok=True)
-            for rid in run_ids:
-                shutil.move(str(self.runs_dir / rid), str(moved_to / rid))
-        else:
-            shutil.rmtree(self.runs_dir, ignore_errors=True)
+    def read_request(self, run_id: str, agent: str, section_index_: int | None = None) -> dict[str, Any]:
+        path = self.record_dir(run_id, agent, section_index_) / "request.json"
+        if not path.is_file():
+            raise FileNotFoundError(f"{run_id}/{agent} 没有 request.json：{path}")
+        return self._read(path)
 
-        had_state = self.state_path.is_file()
-        self.state_path.unlink(missing_ok=True)
-        return {"runs": len(run_ids), "state": had_state, "archive": moved_to}
+    def read_output(self, run_id: str, agent: str, section_index_: int | None = None) -> dict[str, Any]:
+        path = self.record_dir(run_id, agent, section_index_) / "output.json"
+        if not path.is_file():
+            raise FileNotFoundError(f"{run_id}/{agent} 没有 output.json：{path}")
+        return self._read(path)
 
-    # -- state -----------------------------------------------------------
+    def read_meta(self, run_id: str, agent: str, section_index_: int | None = None) -> dict[str, Any]:
+        path = self.record_dir(run_id, agent, section_index_) / "meta.json"
+        if not path.is_file():
+            return {}
+        return self._read(path)
 
-    def load_state(self) -> State:
-        if not self.state_path.is_file():
-            return State()
-        raw = yaml.safe_load(self.state_path.read_text(encoding="utf-8"))
-        return State.from_json(raw)
+    def load_output(
+        self, run_id: str | None, agent: str, section_index_: int | None = None
+    ) -> dict[str, Any] | None:
+        """没有 output.json 就返回 None，方便“这一段的这一轮还没跑”。"""
+        if not self.has_output(run_id, agent, section_index_):
+            return None
+        return self.read_output(run_id, agent, section_index_)  # type: ignore[arg-type]
 
-    def save_state(self, state: State) -> None:
-        self.state_path.parent.mkdir(parents=True, exist_ok=True)
-        text = yaml.safe_dump(
-            state.to_json(), allow_unicode=True, sort_keys=False, default_flow_style=False
-        )
-        self.state_path.write_text(text, encoding="utf-8")
+    # -- 复制 ------------------------------------------------------------
+
+    def copy_record(
+        self,
+        src_run: str,
+        dst_run: str,
+        agent: str,
+        *,
+        section_index_: int | None = None,
+    ) -> bool:
+        """把一个 agent 目录整份抄进另一个 run（``--skip-done`` / ``--only`` 用）。"""
+        src = self.record_dir(src_run, agent, section_index_)
+        if not src.is_dir():
+            return False
+        dst = self.record_dir(dst_run, agent, section_index_)
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        if dst.exists():
+            shutil.rmtree(dst)
+        shutil.copytree(src, dst)
+        return True
+
+    def section_indexes(self, run_id: str) -> list[int]:
+        """run 里出现过的段号，升序。"""
+        root = self.run_dir(run_id) / "sections"
+        if not root.is_dir():
+            return []
+        return sorted(int(p.name) for p in root.iterdir() if p.is_dir() and p.name.isdigit())
 
     # -- 内部 ------------------------------------------------------------
+
+    @staticmethod
+    def _read(path: Path) -> dict[str, Any]:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(data, dict):
+            raise ValueError(f"{path} 不是 JSON 对象")
+        return data
 
     @staticmethod
     def _write(path: Path, obj: Any) -> None:

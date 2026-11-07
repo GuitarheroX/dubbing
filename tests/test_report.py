@@ -1,18 +1,16 @@
 """人看的渲染：每个 agent 的产物长什么样，以及 runs / show 的数据来源。"""
 
-from dubbing.models import Analysis, Draft, Review
-from dubbing.orchestrator import run_song
 from dubbing.llm import ScriptedClient
+from dubbing.models import Analysis, Draft, Review
+from dubbing.orchestrator import run_song, workflow_store
 from dubbing.report import (
-    current_run_ids,
     list_runs,
     render_analysis,
     render_draft,
     render_review,
-    render_run,
+    render_record,
 )
 from dubbing.song import load_song
-from dubbing.store import SongStore
 
 from helpers import analysis_json, draft_json, make_song, phrase, scripted, write_song
 
@@ -93,43 +91,46 @@ def _run_pipeline(root):
             "b": scripted(draft_json("S1", {"P1": "一二三", "P2": "四五六"})),
         }
     )
-    run_song("t", client, root=root)
-    return SongStore(root, "t")
+    outcome = run_song("t", client, root=root)
+    return workflow_store(root, "t"), load_song("t", root=root), outcome
 
 
-def test_list_runs_marks_the_current_ones(root):
-    store = _run_pipeline(root)
-    state = store.load_state()
-    rows = list_runs(store, state)
+def test_list_runs_marks_the_current_one(root):
+    store, song, outcome = _run_pipeline(root)
+    rows = list_runs(store, song)
 
-    assert {r["agent"] for r in rows} == {"a", "b", "c"}
-    current = [r for r in rows if r["current"]]
-    assert {r["agent"] for r in current} == {"a", "b", "c"}
-    assert current_run_ids(state) == {r["run_id"] for r in current}
-
-    b_row = next(r for r in rows if r["agent"] == "b")
-    assert b_row["note"] == "2 句"
-    c_row = next(r for r in rows if r["agent"] == "c")
-    assert c_row["note"] == "pass"
-
-
-def test_list_runs_survives_an_interrupted_run(root):
-    store = _run_pipeline(root)
-    broken = store.runs_dir / "20260101T000000_b_abcdef"
-    broken.mkdir()
-    (broken / "request.json").write_text("{}", encoding="utf-8")
-
-    rows = list_runs(store, store.load_state())
-    busy = next(r for r in rows if r["run_id"] == broken.name)
-    assert busy["agent"] == "b"
-    assert "未完成" in busy["note"]
+    assert len(rows) == 1
+    row = rows[0]
+    assert row["run_id"] == outcome.run_id
+    assert row["current"] is True
+    assert row["model"] == "scripted"
+    assert row["has_a"] is True
+    assert (row["passed"], row["total"]) == (1, 1)
+    assert row["status"] == "completed"
+    assert row["lyrics"] is True
 
 
-def test_render_run_dispatches_by_agent(root):
-    store = _run_pipeline(root)
-    state = store.load_state()
-    song = load_song("t", root=root)
+def test_list_runs_shows_older_runs_too(root):
+    store, song, first = _run_pipeline(root)
+    second = run_song(
+        "t",
+        ScriptedClient(
+            {
+                "a": [],
+                "b": scripted(draft_json("S1", {"P1": "四五六", "P2": "七八九"})),
+            }
+        ),
+        root=root,
+    )
+    rows = list_runs(store, song)
+    assert [r["run_id"] for r in rows] == [first.run_id, second.run_id]
+    assert [r["current"] for r in rows] == [False, True]
 
-    assert render_run(store, song, state.analysis).startswith("A 的体会")
-    assert "B 的译词" in render_run(store, song, state.sections["S1"].draft)
-    assert "C 的检查" in render_run(store, song, state.sections["S1"].review)
+
+def test_render_record_dispatches_by_agent(root):
+    store, song, outcome = _run_pipeline(root)
+
+    assert render_record(song, store, outcome.run_id, "a", None).startswith("A 的体会")
+    assert "B 的译词" in render_record(song, store, outcome.run_id, "b", "S1")
+    assert "C 的检查" in render_record(song, store, outcome.run_id, "c", "S1")
+    assert "还没有 B 产物" in render_record(song, store, "run-nope", "b", "S1")

@@ -1,1 +1,0 @@
-{"section":"B1","phrases":[{"id":"B1-01","zh":"都给我 都给我 都给我","chars":9,"self_check":{"budget":[9,9],"ok":true,"note":"三段各三字 用空格断开 保留原句的三次重复和压抑的贪心"}}]}

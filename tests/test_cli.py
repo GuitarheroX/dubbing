@@ -19,16 +19,18 @@ def test_songs_lists_budget(root, capsys):
     out = capsys.readouterr().out
     assert "测试歌" in out
     assert "1 段 / 2 句 / 预算共 4 字" in out
+    assert "workflow 0 run" in out
 
 
-def test_dry_run_writes_preview(root, capsys):
+def test_dry_run_writes_preview_under_workflow(root, capsys):
     _song(root)
     assert main(["--root", str(root), "run", "--song", "t", "--dry-run"]) == 0
 
-    preview = root / "t" / "preview"
-    assert (preview / "a.system.md").is_file()
-    assert (preview / "a.data.json").is_file()
-    assert (preview / "b-S1.data.json").is_file()
+    previews = list((root / "t" / "workflow").glob("preview-*"))
+    assert len(previews) == 1
+    assert (previews[0] / "A.system.md").is_file()
+    assert (previews[0] / "A.data.json").is_file()
+    assert (previews[0] / "B-S1.data.json").is_file()
     assert "没有调用任何模型" in capsys.readouterr().out
 
 
@@ -46,7 +48,9 @@ def test_run_without_api_exits_2_and_keeps_request(root, capsys):
     assert main(["--root", str(root), "run", "--song", "t"]) == 2
     err = capsys.readouterr().err
     assert "request.json" in err
-    assert len(list((root / "t" / "runs").glob("*/request.json"))) == 1
+    store = root / "t" / "workflow"
+    requests = list(store.glob("run-*/A/request.json"))
+    assert len(requests) == 1
 
 
 def test_api_client_without_key_exits_1(root, capsys, monkeypatch):
@@ -61,13 +65,10 @@ def test_api_client_without_key_exits_1(root, capsys, monkeypatch):
     assert "API key" in err
 
 
-def test_export_command_writes_lyrics(root, capsys):
+def test_export_without_a_run_is_an_error(root, capsys):
     _song(root)
-    assert main(["--root", str(root), "export", "--song", "t"]) == 0
-    assert (root / "t" / "lyrics.zh.txt").is_file()
-    assert (root / "t" / "lyrics.md").is_file()
-    out = capsys.readouterr().out
-    assert "lyrics.zh.txt" in out
+    assert main(["--root", str(root), "export", "--song", "t"]) == 1
+    assert "没有可导出的歌词" in capsys.readouterr().err
 
 
 def test_runs_and_show_commands_work_without_products(root, capsys):
@@ -76,10 +77,10 @@ def test_runs_and_show_commands_work_without_products(root, capsys):
     assert "还没有任何 run" in capsys.readouterr().out
 
     assert main(["--root", str(root), "show", "--song", "t"]) == 0
-    assert "还没有产物" in capsys.readouterr().out
+    assert "还没有任何 run" in capsys.readouterr().out
 
 
-# -- 默认清空 ------------------------------------------------------------
+# -- 每次 run 一个目录 ----------------------------------------------------
 
 
 def _scripted(section="S1", text="一二三四"):
@@ -95,93 +96,83 @@ def _scripted(section="S1", text="一二三四"):
     )
 
 
-def test_default_run_wipes_and_does_not_reuse_anything(root, monkeypatch, capsys):
+def test_each_run_makes_a_new_directory_and_reuses_analysis(root, monkeypatch, capsys):
     from dubbing import cli
 
     _song(root)
     monkeypatch.setattr(cli, "build_client", lambda *a, **k: _scripted())
     assert main(["--root", str(root), "run", "--song", "t", "--client", "api"]) == 0
 
-    runs_dir = root / "t" / "runs"
-    assert len(list(runs_dir.iterdir())) == 3  # a + b + c
+    workflow = root / "t" / "workflow"
+    first = sorted(p.name for p in workflow.glob("run-*"))
+    assert len(first) == 1
 
     second = _scripted()
     monkeypatch.setattr(cli, "build_client", lambda *a, **k: second)
     assert main(["--root", str(root), "run", "--song", "t", "--client", "api"]) == 0
 
-    # A 也必须重跑，不许复用
-    assert [c["agent"] for c in second.calls] == ["a", "b"]
-    # 旧结果被删干净，只剩这一轮的
-    assert len(list(runs_dir.iterdir())) == 3
-    assert "已删除旧结果" in capsys.readouterr().err
+    # 新 run 新目录，旧的不动
+    assert len(sorted(workflow.glob("run-*"))) == 2
+    # A 复用，不重复花钱；B 重跑
+    assert [c["agent"] for c in second.calls] == ["b"]
+    assert (workflow / "latest.json").is_file()
+    assert len(list(workflow.glob("run-*/lyrics.zh.txt"))) == 2
 
 
-def test_keep_history_archives_instead_of_deleting(root, monkeypatch):
+def test_redo_analysis_forces_a_fresh_a(root, monkeypatch):
     from dubbing import cli
 
     _song(root)
     monkeypatch.setattr(cli, "build_client", lambda *a, **k: _scripted())
     main(["--root", str(root), "run", "--song", "t", "--client", "api"])
-    first_runs = {p.name for p in (root / "t" / "runs").iterdir()}
 
-    monkeypatch.setattr(cli, "build_client", lambda *a, **k: _scripted())
+    second = _scripted()
+    monkeypatch.setattr(cli, "build_client", lambda *a, **k: second)
     assert (
-        main(
-            [
-                "--root",
-                str(root),
-                "run",
-                "--song",
-                "t",
-                "--client",
-                "api",
-                "--keep-history",
-            ]
-        )
+        main(["--root", str(root), "run", "--song", "t", "--client", "api", "--redo-analysis"])
         == 0
     )
-
-    archives = list((root / "t" / "archive").glob("*"))
-    assert len(archives) == 1
-    assert {p.name for p in archives[0].iterdir()} == first_runs
+    assert [c["agent"] for c in second.calls] == ["a", "b"]
 
 
-def test_only_does_not_wipe_other_sections(root, monkeypatch):
+def test_only_carries_other_sections_and_reuses_analysis(root, monkeypatch):
     from dubbing import cli
 
     _song(root)
     monkeypatch.setattr(cli, "build_client", lambda *a, **k: _scripted())
     main(["--root", str(root), "run", "--song", "t", "--client", "api"])
-    before = {p.name for p in (root / "t" / "runs").iterdir()}
+    workflow = root / "t" / "workflow"
+    before = {p.name for p in workflow.glob("run-*")}
 
     used = _scripted()
     monkeypatch.setattr(cli, "build_client", lambda *a, **k: used)
     assert (
-        main(
-            ["--root", str(root), "run", "--song", "t", "--client", "api", "--only", "S1"]
-        )
+        main(["--root", str(root), "run", "--song", "t", "--client", "api", "--only", "S1"])
         == 0
     )
 
-    after = {p.name for p in (root / "t" / "runs").iterdir()}
+    after = {p.name for p in workflow.glob("run-*")}
     assert before <= after          # 旧 run 还在
     assert [c["agent"] for c in used.calls] == ["b"]  # A 复用，没重跑
 
 
-def test_pending_client_never_wipes(root, monkeypatch, capsys):
+def test_pending_client_does_not_touch_previous_runs(root, monkeypatch, capsys):
     from dubbing import cli
 
     real_build_client = cli.build_client
     _song(root)
     monkeypatch.setattr(cli, "build_client", lambda *a, **k: _scripted())
     main(["--root", str(root), "run", "--song", "t", "--client", "api"])
-    before = {p.name for p in (root / "t" / "runs").iterdir()}
+    workflow = root / "t" / "workflow"
+    before = {p.name for p in workflow.glob("run-*")}
     capsys.readouterr()
 
     monkeypatch.setattr(cli, "build_client", real_build_client)
     assert main(["--root", str(root), "run", "--song", "t"]) == 2
-    assert {p.name for p in (root / "t" / "runs").iterdir()}.issuperset(before)
-    assert "pending 客户端不清空" in capsys.readouterr().err
+    after = {p.name for p in workflow.glob("run-*")}
+    assert before <= after
+    assert len(after) == len(before) + 1  # pending 那次只留下入参
+    assert "停在模型调用处" in capsys.readouterr().err
 
 
 # -- 批量 ----------------------------------------------------------------
@@ -221,8 +212,8 @@ def test_all_runs_every_song(root, monkeypatch):
     assert main(["--root", str(root), "run", "--all", "--client", "api"]) == 0
 
     for sid in ("s1", "s2"):
-        assert (root / sid / "state.yaml").is_file()
-        assert (root / sid / "lyrics.zh.txt").is_file()
+        assert (root / sid / "workflow" / "latest.json").is_file()
+        assert len(list((root / sid / "workflow").glob("run-*/lyrics.zh.txt"))) == 1
 
 
 def test_song_can_be_repeated(root, monkeypatch):
@@ -236,8 +227,8 @@ def test_song_can_be_repeated(root, monkeypatch):
         )
         == 0
     )
-    assert (root / "s1" / "state.yaml").is_file()
-    assert (root / "s2" / "state.yaml").is_file()
+    assert (root / "s1" / "workflow" / "latest.json").is_file()
+    assert (root / "s2" / "workflow" / "latest.json").is_file()
 
 
 def test_batch_keeps_going_after_one_song_fails(root, monkeypatch, capsys):
@@ -266,7 +257,7 @@ def test_batch_keeps_going_after_one_song_fails(root, monkeypatch, capsys):
     out = capsys.readouterr().out
     assert "1 首成功 / 1 首失败" in out
     assert "✗ s1" in out
-    assert (root / "s2" / "state.yaml").is_file()
+    assert (root / "s2" / "workflow" / "latest.json").is_file()
 
 
 def test_prompt_command_prints_system_and_user(root, capsys):
@@ -281,22 +272,14 @@ def test_prompt_command_prints_system_and_user(root, capsys):
     assert "system" in out and "user" in out
 
 
-def test_prompt_command_reads_a_real_run(root, capsys):
+def test_prompt_command_reads_a_real_run(root, capsys, monkeypatch):
     from dubbing import cli
-    from dubbing.store import SongStore
 
     _song(root)
-    monkeypatch_client = _scripted()
-    import dubbing.cli as cli_mod
+    monkeypatch.setattr(cli, "build_client", lambda *a, **k: _scripted())
+    main(["--root", str(root), "run", "--song", "t", "--client", "api"])
 
-    original = cli_mod.build_client
-    cli_mod.build_client = lambda *a, **k: monkeypatch_client
-    try:
-        main(["--root", str(root), "run", "--song", "t", "--client", "api"])
-    finally:
-        cli_mod.build_client = original
-
-    run_id = SongStore(root, "t").load_state().sections["S1"].draft
+    run_id = sorted(p.name for p in (root / "t" / "workflow").glob("run-*"))[0]
     capsys.readouterr()
     assert main(["--root", str(root), "prompt", "--song", "t", "--run", run_id]) == 0
     out = capsys.readouterr().out

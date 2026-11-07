@@ -1,9 +1,0 @@
-1. 小小箱中的家 (6+5=11) ✓
-2. 两人并排厨房的小窗 (7+3+4=14) ✓
-3. 窗帘外回忆中的庭院 (6+8=14) ✓
-4. 把一缕春光埋进土里 (7+5=12) ✓
-5. 偶尔给它浇上一点水 (8+5=13) ✓
-6. 小枇杷结出果实时 (6+4=10) ✓
-7. 请把它忘了吧 (7) ✓
-
-Rhyme check (final phoneme per line): 家(ia) / 窗(uang) / 院(uan) / 里(i) / 水(ui) / 时(i) / 吧(a) — no consistent rhyme pattern is present in the source either, so no rhyme scheme is imposed.

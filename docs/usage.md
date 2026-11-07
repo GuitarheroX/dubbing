@@ -4,11 +4,11 @@
 
 ## 环境
 
-只需要 Python ≥ 3.11 和 `pyyaml`，测试用 `pytest`。
+只需要 Python ≥ 3.11，运行依赖 `pyyaml` 和 `requests`，测试用 `pytest`。
 
 ```bash
 conda activate base
-python -m pytest            # 44 个测试，跑完不到 1 秒
+python -m pytest            # 171 个测试，跑完不到 1 秒
 ```
 
 ## 三条命令
@@ -17,7 +17,7 @@ python -m pytest            # 44 个测试，跑完不到 1 秒
 python -m dubbing songs                     # 歌库里有什么
 python -m dubbing run     --song kotozute   # 跑一首（带进度）
 python -m dubbing run     --all             # 跑歌库里所有歌
-python -m dubbing runs    --song kotozute   # 所有 run，标出当前用的是哪版
+python -m dubbing runs    --song kotozute   # 所有 run，标出 latest.json 指的是哪一次
 python -m dubbing prompt  --song kotozute   # 看 B 收到的提示词与数据
 python -m dubbing show    --song kotozute   # 看 A / B / C 各自的产物
 python -m dubbing view    --song kotozute   # 调试视图（每句状态）
@@ -34,9 +34,10 @@ python -m dubbing prompt --song kotozute --agent b --section B1 --run <run_id>  
 `prompt` 打印两段：`system`（`prompts/shared.md` + `prompts/b.md` 拼起来的，约 2100 字）和
 `user`（这次要喂的数据，约 6-8k 字）。
 
-- 不加 `--run` 是**现拼**：按当前 `song.yaml`、`state.yaml` 算出的"如果现在调用会发什么"，
-  返修反馈不会出现（没有"上一轮"）。
-- 加 `--run` 是**原样回放**：直接读 `runs/<id>/request.json`，包括返修轮里 C 的结论。
+- 不加 `--run` 是**现拼**：按当前 `song.yaml` 和上一 run 算出的“如果现在调用会发什么”，
+  返修反馈不会出现（没有“上一轮”）。
+- 加 `--run` 是**原样回放**：读那个 run 的 `sections/NNN/B/request.json`（用 `--agent` /
+  `--section` 选具体哪一条），包括返修轮里 C 的结论。
 - 只想看提示词文本本身，不看数据：`prompts/shared.md` 和 `prompts/b.md`，顺序拼起来就是。
 
 ### 看每个 agent 的产物
@@ -53,25 +54,22 @@ python -m dubbing show --song kotozute --run <run_id>         # 直接看某一�
 三种渲染各有侧重：A 是散文（主题 / 情绪走向 / 意象池 / 叙事），B 是表格（原文 / 译词 /
 字数 / 预算 / 自查说明），C 是结论（verdict / 违规 / 改了哪些 / 有没有回归）。
 
-`runs` 列出所有历史 run，`*` 标的是当前视图正在用的那一版：
+`runs` 列出这首歌的每一次运行，`*` 标的是 `latest.json` 指向的那一次：
 
 ```
-   run_id                    agent  模型            轮  tokens  说明
-*  20261027T143532_a_f07bdb  A      deepseek-flash      1988    4 段
-*  20261027T150039_b_961b90  B      deepseek-flash  1   3605    11 句
-*  20261027T150056_c_1268ec  C      -                           pass
+   run_id                         模型            A   段落      歌词  tokens  状态
+*  run-20261103T173709Z-eb63194f  deepseek-flash  有  4/4 pass  有    2286    completed
 ```
 
 ### 批量跑
 
 ```bash
-python -m dubbing run --all --client api          # 全部重来
-python -m dubbing run --all --client api --keep-history
+python -m dubbing run --all --client api               # 每首各新建一个 run
 python -m dubbing run --song a --song b --client api   # 指定几首
-python -m dubbing run --all --dry-run             # 只看规模，不调用
+python -m dubbing run --all --dry-run                  # 只渲染请求，不调用
 ```
 
-- 每首歌**独立**套用 `run` 的语义（默认是清空重来，逐首清空）；
+- 每首歌**独立**新建自己的 run 目录，互不影响；
 - 一首失败不会中断整批，最后打印 `N 首成功 / M 首失败` 和失败清单；
 - 例外是 exit 2（需要 API / 需要人工），那种情况直接停下，因为后面的歌会以同样原因失败；
 - 顺序是 `songs` 的排序，逐首打印 `=== [3/10] kotozute ===` 这样的分隔。
@@ -95,10 +93,10 @@ python -m dubbing run --all --dry-run             # 只看规模，不调用
 
 返修时轮次会往上加，一眼能看出卡在哪一段。
 
-成品歌词有两个文件，`run` 跑完会自动写：
+成品歌词有两个文件，`run` 跑完会写进这一次的 run 目录：
 
-- `data/songs/<id>/lyrics.zh.txt` —— 纯中文，按段落分开，直接唱或复制；
-- `data/songs/<id>/lyrics.md` —— 原文 / 译词 / 字数 / 状态对照表，校对语义用。
+- `data/songs/<id>/workflow/<run_id>/lyrics.zh.txt` —— 纯中文，按段落分开，直接唱或复制；
+- `data/songs/<id>/workflow/<run_id>/lyrics.md` —— 原文 / 译词 / 字数 / 状态对照表，校对语义用。
 
 只跑某一段（省 token，改一句就重跑一段）：
 
@@ -108,40 +106,38 @@ python -m dubbing run --song kotozute --client api --only C1
 
 `run` 的几种语义，别搞混：
 
-| 命令 | 旧结果 | A | B / C |
+| 命令 | 旧 run | A | B / C |
 |---|---|---|---|
-| `run`（默认） | **删掉**（`state.yaml` + `runs/`） | 重跑 | 全部重跑 |
-| `run --keep-history` | 移进 `archive/<时间戳>/` | 重跑 | 全部重跑 |
+| `run`（默认） | 保留在盘上 | 复用 | 全部重跑 |
+| `run --redo-analysis` | 保留 | 重跑 | 全部重跑 |
 | `run --continue` | 保留 | 复用 | 重跑，旧译文作为 `prev_zh` |
-| `run --skip-done` | 保留 | 复用 | 只跑没定稿的段 |
-| `run --only C1` | 保留 | 复用 | 只跑 C1 |
+| `run --skip-done` | 保留 | 复用 | 已定稿的段整份抄过来 |
+| `run --only C1` | 保留 | 复用 | 只重跑 C1，其余段抄过来 |
 
-默认是**彻底重来**：什么都不复用，A 也会重新体会一遍。适合"这一版整体不满意"。
+默认**新建一个 run、B/C 从头写**，但 **A 复用上一 run 的产物**（A 是整曲一次，白跑一遍纯浪费）。
+想让 A 也重新体会，加 `--redo-analysis`。
 
-两个保护：
+旧 run 永远不删，所以新的一跑中途失败（网络、额度）也不会破坏任何已有结果；
+`latest.json` 只在整首跑完后才指向新 run。
 
-- **pending 客户端不清空**。没加 `--client api` 时只渲染请求就停，这时候清空纯属白删，
-  所以会直接拒绝并提示加 `--client api`。
-- **`--only` / `--continue` / `--skip-done` 都不清空**。这几个本来就是"局部动手"的意思。
+- **pending 客户端**（没加 `--client api`）只把入参写进新 run 就停，旧 run 不受影响。
+- **`--only` / `--continue` / `--skip-done`** 会把没重跑的段落整份抄进新 run，
+  所以每个 run 都是完整快照。
 
-清空的代价是真实的：新的一跑如果中途失败（网络、额度），旧结果已经不在了。
-想留退路就加 `--keep-history`，旧 run 会整批移进 `archive/<时间戳>/`，`runs` 和 `show`
-里看不到它们，但磁盘上还在。
-
-`run` 默认**不会真的调用模型**：它把渲染好的入参写到 `runs/<id>/request.json`，
-然后停下并告诉你去哪里看。想先看请求长什么样（完全不产生 run 目录）：
+`run` 默认**不会真的调用模型**：它把渲染好的入参写到新 run 的 `A/request.json`，
+然后停下并告诉你去哪里看。想先看请求长什么样（只写请求、不调用）：
 
 ```bash
 python -m dubbing run --song kotozute --dry-run
 ```
 
-它会写出四对文件到 `data/songs/kotozute/preview/`：
+它会写出若干对文件到 `data/songs/kotozute/workflow/preview-<时间戳>/`：
 
 ```
-a.system.md      a 的提示词（共享总提示词 + 角色提示词）
-a.data.json      a 的入参数据
-b-V1.system.md   b 在某一段的提示词
-b-V1.data.json   b 在该段的入参数据（全曲乐句 + 预算 + 焦点段）
+A.system.md      A 的提示词（共享总提示词 + 角色提示词）
+A.data.json      A 的入参数据
+B-V1.system.md   B 在某一段的提示词
+B-V1.data.json   B 在该段的入参数据（全曲乐句 + 预算 + 焦点段）
 ```
 
 ## 接 API
@@ -207,14 +203,15 @@ A 的任务是发散（把意象摊开），B 的任务是收敛（把字塞进�
 python -m dubbing run --song kotozute --client api --temperature-a 2.0 --temperature-b 0.4
 ```
 
-每次调用的实际温度记在 `runs/<id>/meta.json` 的 `temperature` 字段里，`temperature_by_agent`
+每次调用的实际温度记在该次调用的 `meta.json` 的 `temperature` 字段里（例如
+`workflow/<run>/sections/003/B/meta.json`），`temperature_by_agent`
 的覆盖只影响对应 agent，不会串。
 
 几个行为：
 
 - **重试**：429 与 5xx 重试 3 次（指数退避，认 `Retry-After`）；4xx 直接报错不重试，因为那是请求本身有问题。
 - **截断**：`stop_reason == max_tokens` 会明确报错，而不是拿半截 JSON 去解析。真遇到就调大 `--max-tokens` 或把 section 拆小。
-- **用量**：每次调用的 `usage` 记进 `runs/<id>/meta.json`。
+- **用量**：每次调用的 `usage` 记进该次调用的 `meta.json`。
 - **thinking 块**：响应里若有 `thinking` 块会被跳过，只取 `text` 块——否则推理过程会污染 JSON。
 - **返修**：C 不合格时，下一轮会把 C 的结论（哪句、超几个字、怎么改）渲染进 B 的消息，
   B 才知道要改什么。这段反馈只存在于消息里，不写入任何数据文件。
@@ -265,21 +262,45 @@ section 的 `role` 是按位置和重复关系粗略推测的（副歌、pre-cho
 导入后建议人工复核。分句合计与总字数不一致时会打印 `!` 警告并尽量修复；
 不想让它猜，加 `--strict` 直接报错。
 
+## 跑 baseline
+
+对照组用统一入口，用 `--baseline` 选：
+
+```bash
+python baseline/run_baselines.py --song kotozute --baseline all --dry-run   # 先预览
+python baseline/run_baselines.py --all --baseline paper --client api
+python baseline/run_baselines.py --song kotozute --baseline one-shot --client api
+```
+
+- `one-shot`：workflow 的提示词 + 单次调用，没有 A 分析、没有 C 检查与返修（消融对照）；
+- `paper-original` / `paper-annotated`：论文 Exp.4 的两组；后者传人工预算与分组。
+
+输出组织与 workflow 一样，落在 `baselines/<名字>/<run_id>/`。
+详见 [../baseline/PAPER_BASELINES.md](../baseline/PAPER_BASELINES.md)。
+
 ## 目录会变成什么样
+
+每首歌目录下只有 `song.yaml` 和两个并列的子目录：
 
 ```
 data/songs/kotozute/
-  song.yaml                      人标的，agent 只读
-  state.yaml                     指针：当前视图由哪几个 run 拼成（gitignore）
-  runs/20261027T075359_a_088264/
-    request.json                 渲染后的入参
-    output.json                  产物
-    meta.json                    model / prompt_hash / input_hash
-  preview/                       --dry-run 的产物（gitignore）
+  song.yaml
+  workflow/                                  # 我们自己的 A→B→C 流水线
+    latest.json                              # 只回答“现在看哪一次”
+    run-20261103T173709Z-eb63194f/
+      A/{request,output,meta}.json
+      sections/001/B/{request,output,meta}.json
+      sections/001/C/{request,output,meta}.json
+      lyrics.zh.txt / lyrics.md
+  baselines/                                 # 对照组，结构完全一样
+    one-shot/  paper-original/  paper-annotated/
 ```
 
-`state.yaml` 只存指针，所以回滚就是改指针；`runs/` 永不覆盖，所以任何一版译词
-都能追到"哪次调用、哪版提示词、什么入参"。
+每个 agent 目录**固定三个文件**：`request.json`（调用前就落盘）、`output.json`（产物）、
+`meta.json`（模型 / 用量 / prompt_hash / 轮次；模型原始正文在 `raw_response` 里）。
+
+一次运行一个 run 目录、永不覆盖，所以任何一版译词都能追到“哪次调用、哪版提示词、什么入参”；
+`latest.json` 只决定 `view` / `export` / `runs` 默认看哪一次，想换一版就改它（或直接 `--run <id>`）。
 
 ## 几个容易踩的点
 

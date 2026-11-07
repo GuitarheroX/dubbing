@@ -8,13 +8,14 @@ __pycache__/
 .venv/
 .DS_Store
 
-# 运行产物：一次 run 一个目录，体积会增长；state.yaml 是运行状态，不入库
-data/songs/*/runs/
-data/songs/*/archive/
-data/songs/*/state.yaml
-data/songs/*/preview/
-data/songs/*/view.json
+# 运行记录：一次运行一个 run 目录，体积会增长，不入库。
+# workflow/ 与 baselines/ 下的请求、产物、歌词都是每次运行现生成的；
+# baseline_batches/ 是这些运行的批次汇总，同样不入库。
+# 入库的只有 song.yaml（人工标注）、data/lyrics.txt 和代码 / 文档。
+data/songs/*/workflow/
 data/songs/*/baselines/
+data/songs/*/preview/
+data/baseline_batches/
 
 # 本地编辑器配置不进仓库
 .vscode/

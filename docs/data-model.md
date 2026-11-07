@@ -23,7 +23,7 @@ song → sections → phrases
 | C1-01 | C1 | 沈むように溶けてゆくように | 12 | 按 section | … | pass |
 | C1-05 | C1 | 君の声がする | null | 按 section | 君の声がする | skip |
 
-这张表是**视图**，不是存储：真相是 `song.yaml` + 一次次的 run 文件，`state.yaml` 决定哪几个 run 拼成当前视图。
+这张表是**视图**，不是存储：真相是 `song.yaml` + 一个 run 目录，`latest.json` 只决定默认看哪一次。
 
 ## 2. L0：`song.yaml`（人工标注，agent 只读）
 
@@ -132,7 +132,7 @@ A 的输入是**原文 + 段落结构，不含 `budget`**。给了预算它就�
 ```
 
 - `self_check` 不是约束，是让 B 自己数一遍。C 拿自报值与规则值比一次，能提前抓出"以为写了 12 字其实 14 字"。
-- 产物文件只描述结果，不描述血缘（没有 `from_rev` 之类）；血缘在 run 元数据和 `state.yaml` 里。
+- 产物文件只描述结果，不描述血缘（没有 `from_rev` 之类）；血缘在每个 agent 目录的 `meta.json` 里。
 - `keep_source` 的乐句不出现在输出里（见第 6 节）。
 
 ## 5. C：规则检查
@@ -194,15 +194,23 @@ B 修改有问题的句子时，顺手微调相邻句子可能更好，因此**�
 
 ## 8. 文件组织
 
+每首歌目录下只有 `song.yaml` 和两个并列的子目录。workflow 与各 baseline **共用同一套 run 目录布局**，将来做 `workflow_v1` 也只是同层的兄弟目录。
+
 ```
 data/songs/<song_id>/
   song.yaml                       # L0，人工，agent 只读
-  runs/<ts>_<agent>_<hash>/
-    request.json                  # 渲染后的入参，调用前就落盘
-    output.json
-    meta.json                     # model, prompt_hash, input_hash, ts
-  preview/                        # --dry-run 的产物
-state.yaml
+  workflow/                       # 我们自己的 A→B→C 流水线
+    latest.json                   # 只回答“现在看哪一次”
+    run-<UTC 时间戳>-<8 位随机>/
+      A/{request,output,meta}.json                    # A 整曲一次
+      sections/001/B/{request,output,meta}.json       # 这一段最终一轮
+      sections/001/C/{request,output,meta}.json
+      sections/002/...
+      lyrics.zh.txt / lyrics.md
+  baselines/                      # 对照组，结构完全一样
+    one-shot/                     # workflow 提示词 + 单次调用，无 A/C
+    paper-original/
+    paper-annotated/
 
 prompts/
   shared.md                       # A / B 共用的总提示词
@@ -213,31 +221,30 @@ corpus/                           # 预留：A 的华语歌词参考语料
 evals/                            # 预留：真人评分
 ```
 
+- **一次运行 = 一个 run 目录**，重跑新建目录，旧的不动。
+- 每个 agent 目录固定三个文件：`request.json`（调用前就落盘）、`output.json`（解析后的产物）、`meta.json`（血缘；模型原始正文在 `raw_response` 字段里）。
+- `sections/NNN` 的 `NNN` 是段落在 `song.yaml` 里的 1 起序号；段落 id 本身在 `output.json`（B 的 Draft、C 的 Review 都带 `section`）里。
+- 多轮返修只保留最终一轮；返修经过仍能从该轮 request 的反馈文本与 `prev_zh` 看到。
+
 不用"一首歌一个大 JSON"：人工标注与 agent 产物混写会带来覆盖风险和 diff 噪声，也无法并行跑多个 run 对比。
 
-### 8.1 `state.yaml`
+### 8.1 `latest.json`
 
-```yaml
-song_level:
-  analysis: 20261027T075359_a_088264      # A 整曲一次
-sections:
-  V1: {round: 1, draft: …_b_1a2b3c, review: …_c_4d5e6f, verdict: pass}
-  C1: {round: 2, draft: …_b_7g8h9i, review: …_c_0j1k2l, verdict: exhausted}
+```json
+{"run": "run-20261105T124213284041Z-6a094698", "updated_at": "…", "song": "kotozute", "status": "completed"}
 ```
 
-`verdict` 取 `pass` / `fail` / `exhausted` / `skipped`。
+它不参与拼装视图——一个 run 目录自带全部产物，`view` / `export` / `runs` 只是默认看它指向的那一次。回滚就是改这个指针（或直接 `--run <id>`）。
 
-指针只决定"当前视图由哪几个 run 拼成"，回滚就是改指针。
+### 8.2 与 LangGraph 的对应
 
-### 8.2 LangGraph 的 state
-
-只放指针与小对象：`song_id`、`section_id`（当前 focus）、`round`、三个 run id。大块文本留在磁盘上，checkpointer 不会膨胀，人工介入也只需要改 `focus` 重跑某一段。
+编排器的状态只有“当前 run、当前 section、第几轮”，形状与 LangGraph 的 State 一一对应；大块文本留在磁盘上，checkpointer 不会膨胀。换成 LangGraph 时，把 `ensure_analysis` / `attempt_section` 两个函数换成节点即可。
 
 ## 9. MVP 范围
 
 做：
 
-- `song.yaml` + A 整曲输出 + B 段级生成 + C 的两条规则（`OVER_BUDGET` / `UNDER_BUDGET`）+ `state.yaml`
+- `song.yaml` + 一个 workflow run 目录（A 整曲输出 + B 段级生成 + C 的两条规则 `OVER_BUDGET` / `UNDER_BUDGET`）
 - `keep_source`（含在 MVP 里，因为它会影响 B 的输入契约，事后加要改契约结构）
 - `pattern`（同样影响 B 的输入契约，先只透传、不约束）
 

@@ -1,4 +1,0 @@
-1. 就这样装作一直在等待着什么 (18 syllables)
-2. 从这儿我还能重新开始吗 (14 syllables)
-
-Rhyme check: Line 1 ends with "么" (me), Line 2 ends with "吗" (ma) — the original Japanese lines do not share a rhyme either (の/no vs か/ka), so no rhyme constraint is imposed. Theme preserved: pretending to wait for something / asking whether one can start over.

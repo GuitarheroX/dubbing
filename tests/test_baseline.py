@@ -1,64 +1,112 @@
-"""baseline 的输入拼装。"""
+"""one-shot baseline：workflow 的 B 提示词 + 单次调用，没有 A 分析、没有 C 复查。"""
 
-from baseline.run_baseline import compose, lyrics_block, suspicious_lines
+import json
 
-from helpers import make_song, phrase
+from baseline.run_baselines import build_one_shot_request, run_one_shot
+from dubbing.llm import ScriptedClient
+from dubbing.models import Song
+from dubbing.store import RunStore
+from dubbing.view import build_view
+
+from helpers import draft_json, phrase, song_json
 
 
 def _song():
-    return make_song(
-        "t",
-        ["S1", "S2"],
-        [
-            phrase("A-01", "S1", "ああああ", 4),
-            dict(phrase("A-02", "S1", "いいいいいい", 12), pattern=[3, 4, 5]),
-            phrase("B-01", "S2", "らら", keep_source=True),
-            phrase("B-02", "S2", "ううう", 3),
-        ],
+    return Song.from_json(
+        song_json(
+            "test",
+            ["V1", "C1"],
+            [
+                phrase("V1-01", "V1", "あああ", 6),
+                phrase("V1-02", "V1", "らら", keep_source=True),
+                phrase("C1-01", "C1", "いい", 4),
+            ],
+        )
     )
 
 
-def test_lyrics_block_layout():
-    block, skipped = lyrics_block(_song())
-    lines = block.splitlines()
+def test_one_shot_input_is_the_workflow_prompt_with_full_context():
+    request = build_one_shot_request(_song(), "C1", {"V1-01": "一二三四五六"})
+    # 用的是 workflow 的 shared.md + b.md
+    assert "# 共同前提" in request.system
+    assert "写词的人" in request.system
 
-    assert lines[0] == "测试歌"  # 第一行是标题
-    assert lines[1] == "ああああ 4"  # 没 pattern 就只有总数
-    assert lines[2] == "いいいいいい 12 3 4 5"  # 有 pattern 再接分段
-    assert skipped == ["B-01"]  # 保留原文的跳过
-    assert lines[-1] == "ううう 3"
-
-
-def test_keep_source_lines_are_not_emitted():
-    block, _ = lyrics_block(_song())
-    assert "らら" not in block
-
-
-def test_compose_puts_prompt_in_system_and_lyrics_in_user():
-    system, user = compose(_song())
-    assert system.rstrip().endswith("歌词：")
-    assert user.startswith("测试歌")
-    assert "ああああ 4" in user
+    rows = {r["id"]: r for r in request.data["phrases"]}
+    assert set(rows) == {"V1-01", "V1-02", "C1-01"}      # 整首歌都看得到
+    assert rows["V1-01"]["zh"] == "一二三四五六"          # 已经译好的段
+    assert rows["V1-02"]["keep_source"] is True
+    assert rows["C1-01"]["budget"] == {"min": 4, "max": 4}
+    assert request.data["focus"] == "C1"
+    # 没有 A 的体会：analysis 是空的，也永远不会有反馈
+    assert request.data["analysis"]["overall"]["theme"] == ""
+    assert request.data["analysis"]["imagery_pool"] == []
 
 
-def test_suspicious_lines_flags_numbers():
-    assert suspicious_lines("夜色之中街灯璀璨华丽\n下一句") == []
-    assert suspicious_lines("1. 夜色\n2. 下一句")
-    assert suspicious_lines("夜色之中（10）\n下一句")
+def test_one_shot_runs_section_by_section_and_carries_accepted_texts(tmp_path):
+    song = _song()
+    client = ScriptedClient(
+        {
+            "b": [
+                json.dumps(draft_json("V1", {"V1-01": "一二三四五六"}), ensure_ascii=False),
+                json.dumps(draft_json("C1", {"C1-01": "一二三四"}), ensure_ascii=False),
+            ]
+        }
+    )
+    out = tmp_path / "one-shot"
+    run_one_shot(song, client, out=out)
+
+    assert [c["agent"] for c in client.calls] == ["b", "b"]
+    first = json.loads(client.calls[0]["user"].split("```json")[1].split("```")[0])
+    assert first["focus"] == "V1"
+    assert "zh" not in {r["id"]: r for r in first["phrases"]}["C1-01"]
+    # 第二段能看到第一段已定稿的译词
+    second = json.loads(client.calls[1]["user"].split("```json")[1].split("```")[0])
+    assert {r["id"]: r for r in second["phrases"]}["V1-01"]["zh"] == "一二三四五六"
 
 
-def test_prompt_says_not_to_output_the_title():
-    from baseline.run_baseline import PROMPT_PATH
+def test_one_shot_writes_one_run_with_three_files_per_record(tmp_path):
+    song = _song()
+    client = ScriptedClient(
+        {
+            "b": [
+                json.dumps(draft_json("V1", {"V1-01": "一二三四五六"}), ensure_ascii=False),
+                json.dumps(draft_json("C1", {"C1-01": "一二三四"}), ensure_ascii=False),
+            ]
+        }
+    )
+    out = tmp_path / "one-shot"
+    run_one_shot(song, client, out=out)
 
-    text = PROMPT_PATH.read_text(encoding="utf-8")
-    assert "第一行是标题" in text
-    assert "不要翻译它" in text
+    store = RunStore(out)
+    run_id = store.latest_run()
+    assert run_id is not None
+    for index in (1, 2):
+        names = sorted(p.name for p in store.record_dir(run_id, "B", index).iterdir())
+        assert names == ["meta.json", "output.json", "request.json"]
+    run_dir = store.run_dir(run_id)
+    assert (run_dir / "lyrics.zh.txt").is_file()
+    assert (run_dir / "lyrics.md").is_file()
+    # one-shot 不产生 C 记录
+    assert not store.has_output(run_id, "C", 1)
+
+    view = build_view(song, store, run_id)
+    assert view.row("V1-02").verdict == "skip"
+    assert view.row("V1-01").sing_text == "一二三四五六"
+    assert view.row("C1-01").sing_text == "一二三四"
 
 
-def test_prompt_asks_for_lyrics_only():
-    from baseline.run_baseline import PROMPT_PATH
+def test_one_shot_dry_run_writes_requests_only(tmp_path):
+    song = _song()
+    client = ScriptedClient([])
+    out = tmp_path / "one-shot"
+    run_one_shot(song, client, out=out, dry_run=True)
 
-    text = PROMPT_PATH.read_text(encoding="utf-8")
-    assert "只输出中文歌词" in text
-    assert "不要输出序号" in text
-    assert text.rstrip().endswith("歌词：")
+    store = RunStore(out)
+    assert client.calls == []  # 一次模型都没调
+    previews = list(out.glob("preview-*"))
+    assert len(previews) == 1
+    assert (previews[0] / "sections" / "001" / "B" / "request.json").is_file()
+    assert not (previews[0] / "sections" / "001" / "B" / "output.json").exists()
+    # 预览不算一次运行
+    assert store.list_runs() == []
+    assert store.latest_run() is None

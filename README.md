@@ -28,7 +28,7 @@
 - 代码在 `dubbing/`，规范见 [docs/data-model.md](docs/data-model.md)，操作见 [docs/usage.md](docs/usage.md)。
 - 模型调用已接通 DeepSeek 的 Anthropic 兼容端点（`dubbing/llm.py`）。默认使用 `pending` 客户端，在需要模型调用的位置保存请求并暂停；配置 API Key 后加 `--client api` 才真正调用，也可以通过 `DUBBING_CLIENT` 环境变量指定客户端。
 - `final_20_song` 分支已收录 **20 首歌曲的 21 个数据版本，共 432 个乐句**。其中 `love-2000` 和 `love_2000` 是 `LOVE 2000` 的两套分句与预算版本，均予以保留。
-- 本分支同时保存各首歌的译词、当前运行状态和历史运行记录。当前快照的 432 个乐句均为 `pass` 或 `skip`；这只表示通过程序规则，最终仍需真人试唱评判。
+- 本分支同时保存各首歌的译词与运行记录，组织方式见下面的「目录布局」以及 [docs/data-model.md](docs/data-model.md)。当前快照的 432 个乐句均为 `pass` 或 `skip`；这只表示通过程序规则，最终仍需真人试唱评判。
 - 批量导入标注文本：`python scripts/import_lyrics.py data/lyrics.txt`，
   输入格式与选项见 [docs/usage.md](docs/usage.md)。
 
@@ -56,22 +56,25 @@ cp .env.example .env
 ## 常用命令
 
 ```bash
-# 单曲重新生成，归档保留旧运行记录
-python -m dubbing run --song kotozute --client api --keep-history
+# 单曲重新生成（新建一个 run；A 复用上一 run，不重复花钱）
+python -m dubbing run --song kotozute --client api
 
-# 全库重新生成；
-python -m dubbing run --all --client api --keep-history
+# 连 A（整曲体会）也重跑
+python -m dubbing run --song kotozute --client api --redo-analysis
+
+# 全库各新建一个 run（旧 run 都留着）
+python -m dubbing run --all --client api
 
 # 仅处理尚未通过的段落，复用已有 A 分析
 python -m dubbing run --all --client api --skip-done
 
 # 只运行指定的几首
-python -m dubbing run --song kazeyo --song spiral --client api --keep-history
+python -m dubbing run --song kazeyo --song spiral --client api
 
 # 仅重跑一个段落；加 --continue 可使用该段上一版译词继续修改
 python -m dubbing run --song shiori --only C1 --client api
 
-# 预览当前状态下的初始请求，不调用模型
+# 预览这一次会发出去的初始请求，不调用模型
 python -m dubbing run --all --dry-run
 
 # 查看分析、历史记录和当前译词
@@ -80,33 +83,63 @@ python -m dubbing runs --song kotozute
 python -m dubbing view --song kotozute
 ```
 
-真实运行默认会删除目标歌曲的旧 `runs/` 与 `state.yaml` 后从头生成；`--keep-history` 会把旧 run 移入 `archive/`，但仍会重建当前状态。`--only`、`--continue`、`--skip-done` 都保留已有记录。各选项的详细语义见 [docs/usage.md](docs/usage.md)。
+真实运行每次都在 `workflow/` 下新建一个 run 目录，旧 run 保留不动，`latest.json` 指向这一次。A（整曲体会）默认复用上一 run 的产物，不再花钱；`--redo-analysis` 强制重跑 A。`--continue` 以上一 run 的译文为起点重跑；`--skip-done`、`--only` 会把没重跑的段落整份抄进新 run，所以每个 run 都是完整快照。各选项的详细语义见 [docs/usage.md](docs/usage.md)。
 
-`--dry-run` 会写入 `preview/`，可能复用已有 A 分析，不预测后续返修次数，因此不能作为完整重跑的精确请求数或费用估计。
+`--dry-run` 会写入 `workflow/preview-<时间戳>/`，只渲染请求、不调用模型。
 
-## 数据准备与运行结果
+## 目录布局
+
+每首歌目录下只有 `song.yaml` 和两个并列的子目录；将来若做 workflow 改进版，也放成同一层的兄弟目录（例如 `workflow_v1/`）。
+
+```text
+data/songs/<song_id>/
+  song.yaml                       # 人工标注，agent 只读
+  workflow/                       # 我们自己的 A→B→C 流水线
+    latest.json                   # 只回答“现在看哪一次”
+    run-<UTC 时间戳>-<8 位随机>/
+      A/{request,output,meta}.json
+      sections/001/B/{request,output,meta}.json
+      sections/001/C/{request,output,meta}.json
+      sections/002/...
+      lyrics.zh.txt / lyrics.md
+  baselines/                      # 对照组，结构与 workflow 完全一致
+    one-shot/                     # workflow 提示词 + 单次调用（消融：没有 A/C）
+    paper-original/               # 论文 Exp.4 原指令
+    paper-annotated/              # 论文 Exp.4 + 人工预算区间与分组
+```
+
+- **一次运行 = 一个 run 目录**，重跑新建目录，旧的不动；`latest.json` 决定 `view` / `export` / `runs` 默认看哪一次。
+- 每个 agent 目录固定**三个文件**：`request.json`（调用前就落盘）、`output.json`（解析后的产物）、`meta.json`（模型、用量、提示词 hash、轮次等血缘；模型原始正文存在 `meta.json` 的 `raw_response` 里，解析失败也留得住）。
+- A 是整曲一次，放在 run 根；B / C 按段落放在 `sections/NNN/`（`NNN` 是 `song.yaml` 里的段落序号）。多轮返修只保留**最终一轮**，返修过程仍能从该轮 request 里的反馈和 `prev_zh` 看到。
+
+## 结果与运行记录
 
 - 新歌放在 `data/songs/<song_id>/song.yaml`，按 `song / sections / phrases` 组织。人工确认乐句顺序和音节预算，重复演唱的歌词也分别列出。
 - `budget` 支持固定值和区间。可选的 `pattern` 各项须为正整数，合计必须落在预算范围内，否则加载会报错；它目前只为 B 提供参考，C 不检查译词是否按该分组断句。
 - `keep_source: true` 仅支持整句保留原文，此时预算必须为空，也不能填写 `pattern`。目前尚不支持行内片段保留，括号内的英文不会自动从计数中排除。
 - `scripts/import_lyrics.py` 将已标注的「歌词 总字数 [分组字数...]」文本转换为 YAML，不会根据原始歌词自动确认预算。可先运行 `python scripts/import_lyrics.py data/lyrics.txt --dry-run --strict` 检查输入；已有文件默认跳过，`--force` 才会覆盖。
 - 当前程序不读取音频、MIDI 或乐谱来自动校准预算。文本估算需要人工对照演唱复核，不能将日语音拍数或音符数直接当作已经确认的中文可唱字位。
-- 每首歌完成运行后，自动写出 `lyrics.zh.txt`（演唱文本，含保留的原文）与 `lyrics.md`（原文、译词、字数、预算和状态对照）。
-- `state.yaml` 保存当前 A / B / C 产物的指针；`runs/` 保存请求、解析后的输出、元数据，以及已取得的 A / B 模型正文 `response.txt`。失败记录可能没有正文或输出文件。
-- 本分支已将运行结果作为快照纳入 Git；`.gitignore` 仍默认忽略新增运行文件，后续若要提交这些文件，需显式选择并使用 `git add -f`。手动编辑导出歌词不会更新 run 或状态，再次导出会按状态重新生成。
+- 每次 `run` 结束后，在该 run 目录写下 `lyrics.zh.txt`（演唱文本，含保留的原文）与 `lyrics.md`（原文、译词、字数、预算和状态对照）。
+- 运行记录（`workflow/` 与 `baselines/`）默认进 [.gitignore](.gitignore)，**不入库**；入库的只有 `song.yaml`（人工标注）和代码 / 文档。想临时归档某一次运行，显式 `git add -f <该 run 目录>`。手动编辑导出歌词不会更新 run，再次导出会按 run 重新生成。
 
 ## 开发与测试
 
-### 论文双 baseline
+### baseline
 
-另提供论文 Exp.4 的两组对照：`paper-original` 保留原提示、不传人工标注；`paper-annotated` 加入人工预算区间和分组。两组共用当前模型配置，按段生成并独立保存结果，不覆盖已有单提示词 baseline 或主流水线产物。
+统一入口是 [baseline/run_baselines.py](baseline/run_baselines.py)，用 `--baseline` 选对照组：
+
+- `one-shot`：用 workflow 的提示词（`prompts/shared.md` + `prompts/b.md`），按段推进、翻译当前段时能看到整首歌词和已经定稿的部分，但**只调一次 B**，没有 A 的意境分析、也没有 C 的检查与返修。它是 workflow 的消融对照。
+- `paper-original` / `paper-annotated`：论文 Exp.4 的两组对照。前者保留原指令、不传人工标注；后者把计数目标换成人工作答的预算区间，并附分组与保留标记。
+
+三者的输出组织与 workflow 完全一致（`baselines/<名字>/<run_id>/sections/NNN/...`），因此改天加 `workflow_v1` 也只是同一层的兄弟目录。
 
 ```bash
-python baseline/run_paper_baselines.py --all --variant both --dry-run
-python baseline/run_paper_baselines.py --all --variant both --client api
+python baseline/run_baselines.py --all --baseline all --dry-run
+python baseline/run_baselines.py --all --baseline paper --client api
+python baseline/run_baselines.py --song kotozute --baseline one-shot --client api
 ```
 
-“原样”指提示和输入方式，当前模型与清理步骤的差异会明确记录，不代表论文整套实验的严格复现。用法、输出和出处见 [baseline/PAPER_BASELINES.md](baseline/PAPER_BASELINES.md)。
+“原样”指论文那组的提示和输入方式；当前模型、采样与清理步骤的差异逐条记在每个 `meta.json` 里，不代表论文整套实验的严格复现。用法、输出和出处见 [baseline/PAPER_BASELINES.md](baseline/PAPER_BASELINES.md)。
 
 ### 测试
 
