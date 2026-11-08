@@ -44,7 +44,7 @@
 
 ## 快速开始
 
-需要 Python ≥ 3.11，运行依赖为 PyYAML、Requests（跑 workflow-RAG 还要 `.[rag]`，即 chromadb；在本机跑嵌入再加 `.[embed]`）。建议从源码以可编辑方式安装，并在项目根目录执行命令，以便读取歌曲和提示词文件。
+需要 Python ≥ 3.11，运行依赖为 PyYAML、Requests、json-repair（跑 workflow-RAG 还要 `.[rag]`，即 chromadb；在本机跑嵌入再加 `.[embed]`）。建议从源码以可编辑方式安装，并在项目根目录执行命令，以便读取歌曲和提示词文件。
 
 ```bash
 python -m venv .venv

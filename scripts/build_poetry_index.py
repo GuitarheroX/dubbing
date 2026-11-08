@@ -175,6 +175,18 @@ def _index_id(collection: str, model: str, max_tokens: int, override: str | None
     return f"poetry_stanza{max_tokens}_{slug}_v1"
 
 
+def _rel(path: Path | str) -> str:
+    """写进 manifest 的路径尽量记成相对仓库根，这样这份文件可以入库、换机器也读得懂。
+
+    不在仓库里（例如 ``/data/models/...``）就保持原样。
+    """
+    p = Path(path)
+    try:
+        return str(p.resolve().relative_to(REPO_ROOT))
+    except (ValueError, OSError):
+        return str(path)
+
+
 class _Progress:
     """每 PROGRESS_EVERY 条报一次进度。"""
 
@@ -590,13 +602,13 @@ def main(argv: list[str] | None = None) -> int:
 
     corpus = (
         {
-            "chunks_file": str(chunks_path),
+            "chunks_file": _rel(chunks_path),
             "chunks": total_chunks,
             "sha1": vector_meta.chunks_sha1 if vector_meta else "",
         }
         if offline
         else {
-            "path": str(root),
+            "path": _rel(root),
             "poems": stats["poems"],
             "skipped": stats["skipped"],
             "duplicates": stats["duplicates"],
@@ -606,7 +618,7 @@ def main(argv: list[str] | None = None) -> int:
     manifest = {
         "index_id": index_id,
         "collection": args.collection,
-        "db": str(db_dir),
+        "db": _rel(db_dir),
         "source": source,
         "corpus": corpus,
         "model": {

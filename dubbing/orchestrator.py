@@ -35,7 +35,7 @@ from .agents import (
     parse_perceiver_output,
 )
 from .export import write_lyrics
-from .llm import LLMClient, LLMError, NeedsLLM, extract_json
+from .llm import LLMClient, LLMError, NeedsLLM, extract_json_parsed
 from .models import Analysis, Draft, LookupResult, PoetryHit, Review, SchemaError, Song
 from .prompting import prompt_hash
 from .song import load_song
@@ -221,7 +221,8 @@ def ensure_analysis(
     request = build_perceiver_request(song)
     raw = _invoke(store, run_id, "perceiver", llm, request)
     try:
-        analysis, warnings = parse_perceiver_output(extract_json(raw), song)
+        parsed = extract_json_parsed(raw)
+        analysis, warnings = parse_perceiver_output(parsed.value, song)
     except (LLMError, SchemaError) as exc:
         store.abandon(run_id, "perceiver", reason=f"解析失败：{exc}", raw_response=raw)
         raise
@@ -229,7 +230,9 @@ def ensure_analysis(
         run_id,
         "perceiver",
         analysis.to_json(),
-        meta=_meta("perceiver", llm, request.system, warnings=warnings),
+        meta=_meta(
+            "perceiver", llm, request.system, warnings=warnings, json_repaired=parsed.repaired
+        ),
         raw_response=raw,
     )
     emit(Step("perceiver", "done", note=f"{len(analysis.sections)} 段"))
@@ -276,7 +279,8 @@ def _call_draft(
         store, run_id, agent, llm, request, section_index_=index, llm_agent=llm_agent
     )
     try:
-        draft, warnings = parse_draft_output(extract_json(raw), song, section)
+        parsed = extract_json_parsed(raw)
+        draft, warnings = parse_draft_output(parsed.value, song, section)
     except (LLMError, SchemaError) as exc:
         store.abandon(
             run_id, agent, reason=f"解析失败：{exc}", raw_response=raw, section_index_=index
@@ -286,7 +290,14 @@ def _call_draft(
         run_id,
         agent,
         draft.to_json(),
-        meta=_meta(llm_agent or agent, llm, request.system, warnings=warnings, **meta),
+        meta=_meta(
+            llm_agent or agent,
+            llm,
+            request.system,
+            warnings=warnings,
+            json_repaired=parsed.repaired,
+            **meta,
+        ),
         raw_response=raw,
         section_index_=index,
     )

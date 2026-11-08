@@ -271,7 +271,7 @@ evals/                            # 预留：真人评分
 ```
 
 - **一次运行 = 一个 run 目录**，重跑新建目录，旧的不动。
-- 每个 agent 目录固定三个文件：`request.json`（调用前就落盘）、`output.json`（解析后的产物）、`meta.json`（血缘；模型原始正文在 `raw_response` 字段里）。`mimic_lookup` 不调模型，`meta.json` 里记的是检索参数与 `index_id`。
+- 每个 agent 目录固定三个文件：`request.json`（调用前就落盘）、`output.json`（解析后的产物）、`meta.json`（血缘；模型原始正文在 `raw_response` 字段里，解析时动用过 `json-repair` 兜底则记 `json_repaired: true`）。`mimic_lookup` 不调模型，`meta.json` 里记的是检索参数与 `index_id`。
 - `sections/NNN` 的 `NNN` 是段落在 `song.yaml` 里的 1 起序号；段落 id 本身在 `output.json`（writer 与 mimic 的 Draft、reviewer 的 Review 都带 `section`）里。
 - **最终文本在哪个目录取决于管线**：workflow 读 `writer`，rag 读 `mimic_write`；reviewer 两条管线同名。`view` / `export` / `runs` 只需要一个 `pipeline` 参数。
 - 多轮返修只保留最终一轮；返修经过仍能从该轮 request 的反馈文本与 `prev_zh` 看到。

@@ -7,7 +7,7 @@ name = "dubbing"
 version = "0.1.0"
 description = "日语歌歌词汉译配流水线：perceiver 体会意境，writer 写词，reviewer 规则核对可唱性"
 requires-python = ">=3.11"
-dependencies = ["pyyaml>=6", "requests>=2.31"]
+dependencies = ["pyyaml>=6", "requests>=2.31", "json-repair>=0.30"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]

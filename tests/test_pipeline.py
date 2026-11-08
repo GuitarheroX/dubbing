@@ -478,12 +478,12 @@ def test_stale_analysis_is_flagged_when_song_gained_a_section(root):
 
 
 def test_broken_json_keeps_the_raw_response(root):
-    """解析失败时，必须留下模型原话，否则没法复盘。"""
+    """连 json_repair 都救不回来时，必须留下模型原话，否则没法复盘。"""
     _make(root)
-    broken = '{"section": "S1", "phrases": ['
+    broken = "抱歉，这一段我写不出来。"
     client = _client({"perceiver": scripted(analysis_json(["S1", "S2"])), "writer": [broken]})
 
-    with pytest.raises(LLMError, match="不是合法 JSON"):
+    with pytest.raises(LLMError, match="找不到 JSON"):
         run_song("t", client, root=root)
 
     store = store_for(root, "t")
@@ -768,3 +768,54 @@ def test_lookup_result_round_trips_through_json():
     result = LookupResult(section="S1", query_text="q", k=4, hits=(HIT,), index_id="idx")
     again = LookupResult.from_json(result.to_json())
     assert again == result
+
+
+def test_repaired_json_is_recorded_in_meta(root):
+    """模型输出结构手滑（错括号）时用 json_repair 兜底，并在 meta 里留痕。"""
+    _make(root)
+    broken = (
+        '{"section": "S1", "phrases": ['
+        '{"id": "A-01", "zh": "一二三四", "chars": 4},'
+        '{"id": "A-02", "zh": "六七八九", "self_check": '
+        '{"budget": [4, 4], "ok": true, "note": "四字整"]}'
+        "]}"
+    )
+    client = _client(
+        {
+            "perceiver": scripted(analysis_json(["S1", "S2"])),
+            # 坏的那条要原样塞进去，不能过 scripted()——它会把字符串 json.dumps 成合法 JSON 字符串
+            "writer": [broken, *scripted(draft_json("S2", {"B-01": "一二三"}))],
+        }
+    )
+
+    outcome = run_song("t", client, root=root)
+
+    assert outcome.ok  # 修好之后这一轮就过了，不必重来
+    store = store_for(root, "t")
+    assert store.read_meta(outcome.run_id, "writer", 1)["json_repaired"] is True
+    assert store.read_meta(outcome.run_id, "writer", 2)["json_repaired"] is False
+    assert store.read_output(outcome.run_id, "writer", 1)["phrases"][1]["zh"] == "六七八九"
+
+
+def test_truncated_output_becomes_an_incomplete_draft_and_fails_review(root):
+    """截断的输出被修成不完整草稿：由 reviewer 报 UNDER_BUDGET，而不是整轮崩掉。"""
+    _make(root)
+    truncated = (
+        '{"section": "S1", "phrases": [{"id": "A-01", "zh": "一二三四", "chars": 4}, '
+        '{"id": "A-02", "zh": "六'
+    )
+    client = _client(
+        {
+            "perceiver": scripted(analysis_json(["S1", "S2"])),
+            "writer": [truncated],
+        }
+    )
+
+    outcome = run_song("t", client, root=root, only={"S1"}, max_rounds=1)
+
+    assert outcome.sections[0].status == "exhausted"
+    store = store_for(root, "t")
+    assert store.read_meta(outcome.run_id, "writer", 1)["json_repaired"] is True
+    review = store.read_output(outcome.run_id, "reviewer", 1)
+    assert review["verdict"] == "fail"
+    assert any(v["code"] == "UNDER_BUDGET" for v in review["violations"])

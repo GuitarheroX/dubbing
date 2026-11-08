@@ -24,7 +24,9 @@ from __future__ import annotations
 import json
 import os
 import re
+import sys
 import time
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Protocol, runtime_checkable
 
@@ -39,6 +41,8 @@ __all__ = [
     "APIClient",
     "ScriptedClient",
     "extract_json",
+    "extract_json_parsed",
+    "ParsedJSON",
     "build_client",
     "DEFAULT_BASE_URL",
     "DEFAULT_MODEL",
@@ -345,10 +349,65 @@ def _around(text: str, pos: int, width: int = 70) -> str:
     return f"…{snippet}…"
 
 
-def extract_json(text: str) -> Any:
-    """从模型输出里取出 JSON。
+def _merge_early_closed_array(items: list) -> Any:
+    """把"被提前的 ``]`` 截断的数组"接回去。
 
-    容忍三件事：```json 围栏、前后废话、字符串里的裸控制字符（模型偶尔不转义换行）。
+    ``json_repair`` 遇到 ``{"phrases": [a, b, c]}`` 里 ``c`` 收尾写成 ``]`` 时，会把
+    ``phrases`` 提前关掉，剩下的元素变成根对象的**兄弟**：``[{...,phrases:[a,b]}, c, d]``。
+    这里把兄弟接回根对象里**唯一**那个"对象数组"字段——只有这种形状才合并，其余原样取第一个。
+    """
+    head, *rest = items
+    if not isinstance(head, dict) or not rest or not all(isinstance(x, dict) for x in rest):
+        return head if isinstance(head, dict) else items
+    arrays = [
+        key
+        for key, value in head.items()
+        if isinstance(value, list) and value and all(isinstance(x, dict) for x in value)
+    ]
+    if len(arrays) == 1:
+        head[arrays[0]] = [*head[arrays[0]], *rest]
+    return head
+
+
+def _repair_json(candidate: str) -> Any | None:
+    """``json_repair`` 兜底。只在严格解析失败后用一次，救不回来就返回 ``None``。
+
+    它有时把对象多包一层数组（`[{...}]`），有时因为括号错位把数组元素甩成兄弟对象；
+    本项目的产物顶层永远是单个对象，所以统一取第一个 dict，并把甩出去的兄弟接回去。
+    空结果一律当失败。
+    """
+    try:
+        import json_repair  # type: ignore
+    except ImportError:  # 没装就当作没有兜底
+        return None
+    try:
+        fixed = json_repair.loads(candidate)
+    except Exception:  # json_repair 自己的异常类型不稳定
+        return None
+    if isinstance(fixed, list) and fixed:
+        fixed = _merge_early_closed_array(fixed)
+    if isinstance(fixed, dict) and fixed:
+        return fixed
+    if isinstance(fixed, list) and fixed:
+        return fixed
+    return None
+
+
+@dataclass(frozen=True)
+class ParsedJSON:
+    """``extract_json_parsed`` 的结果：产物本身 + 是否动用了兜底修复。"""
+
+    value: Any
+    repaired: bool = False
+
+
+def extract_json_parsed(text: str, *, repair: bool = True) -> ParsedJSON:
+    """从模型输出里取出 JSON，返回 ``(产物, 是否修复)``。
+
+    容忍四件事：```json 围栏、前后废话、字符串里的裸控制字符（模型偶尔不转义换行），
+    以及**结构性的手滑**——比如把 ``self_check`` 的闭括号写成 ``]``。最后一种交给
+    ``json_repair`` 兜底；用了它会在 stderr 留一句警告，调用方也可以把
+    ``repaired`` 记进 meta（本项目的编排器就会记 ``json_repaired``）。
     """
     stripped = text.strip()
     if "{" not in stripped:
@@ -366,15 +425,31 @@ def extract_json(text: str) -> Any:
     errors: list[json.JSONDecodeError] = []
     for cand in candidates:
         try:
-            return _decode(cand)
+            return ParsedJSON(_decode(cand), False)
         except json.JSONDecodeError as exc:
             errors.append(exc)
+
+    if repair:
+        for cand in candidates:
+            fixed = _repair_json(cand)
+            if fixed is not None:
+                print(
+                    "警告：模型输出不是合法 JSON，已用 json_repair 兜底修复"
+                    f"（原文已存进 meta.json 的 raw_response）",
+                    file=sys.stderr,
+                )
+                return ParsedJSON(fixed, True)
 
     worst = max(errors, key=lambda e: e.pos)
     raise LLMError(
         f"模型输出不是合法 JSON：{worst.msg}"
         f"（第 {worst.lineno} 行第 {worst.colno} 列）\n附近：{_around(text, worst.pos)}"
     )
+
+
+def extract_json(text: str, *, repair: bool = True) -> Any:
+    """只要产物、不关心有没有修复时用这个。"""
+    return extract_json_parsed(text, repair=repair).value
 
 
 def build_client(kind: str | None = None, **kwargs: Any) -> LLMClient:

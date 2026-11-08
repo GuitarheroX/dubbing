@@ -4,7 +4,7 @@
 
 ## 环境
 
-需要 Python ≥ 3.11。基础运行依赖只有 `pyyaml` 和 `requests`；测试用 `pytest`。
+需要 Python ≥ 3.11。基础运行依赖是 `pyyaml`、`requests`、`json-repair`；测试用 `pytest`。
 rag 管线另外两组可选依赖，按需装：
 
 - `.[rag]` —— `chromadb`，本地向量库（跑 rag 管线、`poetry-search` 都要）；
@@ -248,6 +248,10 @@ python -m dubbing run --song kotozute --client api --temperature-perceiver 2.0 -
 - **截断**：`stop_reason == max_tokens` 会明确报错，而不是拿半截 JSON 去解析。真遇到就调大 `--max-tokens` 或把 section 拆小。
 - **用量**：每次调用的 `usage` 记进该次调用的 `meta.json`。
 - **thinking 块**：响应里若有 `thinking` 块会被跳过，只取 `text` 块——否则推理过程会污染 JSON。
+- **解析兜底**：模型偶尔把括号写错（比如 `self_check` 用 `]` 收尾），标准解析失败后会交给
+  `json-repair` 再试一次。修好了会在 stderr 打一句警告，该次调用的 `meta.json` 记
+  `"json_repaired": true`，模型原文仍在 `raw_response` 里；救不回来才算真正的解析失败。
+  截断的响应修出来是不完整草稿，缺的句子按空句处理，交给 reviewer 报 `EMPTY` / `UNDER_BUDGET`。
 - **返修**：reviewer 不合格时，下一轮会把它的结论（哪句、超几个字、怎么改）渲染进写词人的消息，
   写词的人才知道要改什么——workflow 里回 `writer`，rag 里只回 `mimic_write`（检索结果复用，
   不重新检索）。这段反馈只存在于消息里，不写入任何数据文件。

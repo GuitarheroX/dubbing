@@ -551,3 +551,10 @@ def test_verify_runs_before_ingest_and_leaves_the_index_alone(tmp_path, monkeypa
     assert code == 1
     assert "索引没有动" in capsys.readouterr().err
     assert ChromaStore(out / "chroma", "poetry_stanza256_v1").count() == before
+
+
+def test_rel_keeps_repo_paths_relative():
+    """manifest 里的路径要能入库：仓库内的记相对路径，仓库外的保持原样。"""
+    assert mod._rel(mod.REPO_ROOT / "data" / "poetry" / "chroma") == "data/poetry/chroma"
+    assert mod._rel(mod.REPO_ROOT / "data" / "poetry" / "chunks.jsonl") == "data/poetry/chunks.jsonl"
+    assert mod._rel("/tmp/elsewhere/chroma") == "/tmp/elsewhere/chroma"

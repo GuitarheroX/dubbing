@@ -354,8 +354,91 @@ def test_extract_json_tolerates_raw_control_characters():
 
 
 def test_extract_json_reports_position_and_context():
+    # 关掉兜底才走严格解析的报错路径：这条测的是诊断信息本身
     with pytest.raises(LLMError) as err:
-        extract_json('{"a": 1, "b" }')
+        extract_json('{"a": 1, "b" }', repair=False)
     msg = str(err.value)
     assert "第 1 行" in msg
     assert "附近" in msg
+
+
+# -- json_repair 兜底 ----------------------------------------------------
+
+#: 真实的失败输出（sayonara-penguin / C1）：第 3 句的 self_check 用 `]` 收尾，应为 `}`。
+MISMATCHED_BRACKET = """{
+  "section": "C1",
+  "phrases": [
+    {"id": "C1-01", "zh": "再见啦 小企鹅", "chars": 6,
+     "self_check": {"budget": [6, 6], "ok": true, "note": "整句一段"}},
+    {"id": "C1-03", "zh": "爱上这世界的瞬间 记得眨眨眼", "chars": 13,
+     "self_check": {"budget": [13, 13], "ok": true, "note": "8+5 对上 pattern 的瞬间更紧"]}
+  ]
+}"""
+
+
+def test_extract_json_repairs_a_mismatched_bracket():
+    parsed = llm_mod.extract_json_parsed(MISMATCHED_BRACKET)
+
+    assert parsed.repaired is True
+    assert parsed.value["section"] == "C1"
+    assert [p["id"] for p in parsed.value["phrases"]] == ["C1-01", "C1-03"]
+    assert parsed.value["phrases"][1]["chars"] == 13
+
+
+def test_extract_json_repairs_a_missing_comma():
+    parsed = llm_mod.extract_json_parsed('{"a": 1 "b": 2}')
+    assert parsed.repaired is True
+    assert parsed.value == {"a": 1, "b": 2}
+
+
+def test_extract_json_does_not_repair_valid_json():
+    parsed = llm_mod.extract_json_parsed('{"a": 1}')
+    assert parsed.repaired is False
+    assert parsed.value == {"a": 1}
+
+
+def test_extract_json_repair_can_be_disabled():
+    with pytest.raises(LLMError, match="不是合法 JSON"):
+        llm_mod.extract_json_parsed(MISMATCHED_BRACKET, repair=False)
+
+
+def test_extract_json_still_raises_when_unfixable(capsys):
+    with pytest.raises(LLMError, match="找不到 JSON"):
+        extract_json("完全不是 JSON")
+    assert "json_repair" not in capsys.readouterr().err  # 没修复就不该打那句警告
+
+
+def test_extract_json_warns_on_stderr_when_it_repairs(capsys):
+    extract_json(MISMATCHED_BRACKET)
+    assert "json_repair" in capsys.readouterr().err
+
+
+def test_extract_json_unwraps_a_single_object_array():
+    """json_repair 有时把对象多包一层数组。"""
+    parsed = llm_mod.extract_json_parsed('{"a": {"b": 1, "c": [2, 3], "d": "x"]}')
+    assert parsed.repaired is True
+    assert parsed.value == {"a": {"b": 1, "c": [2, 3], "d": "x"}}
+
+
+def test_extract_json_reconnects_phrases_after_an_early_closed_array():
+    """真实的失败形态：某个 self_check 用 `]` 收尾，把 phrases 提前关掉，后面几句被甩成兄弟对象。
+
+    只在"根对象里恰好有唯一一个对象数组"时把兄弟接回去，别的情况不要乱合并。
+    """
+    broken = (
+        '{"section": "C1", "phrases": ['
+        '{"id": "C1-01", "zh": "甲"},'
+        '{"id": "C1-02", "zh": "乙", "self_check": {"budget": [4, 4], "ok": true, "note": "x"]},'
+        '{"id": "C1-03", "zh": "丙"}'
+        "]}"
+    )
+    parsed = llm_mod.extract_json_parsed(broken)
+
+    assert parsed.repaired is True
+    assert [p["id"] for p in parsed.value["phrases"]] == ["C1-01", "C1-02", "C1-03"]
+
+
+def test_repair_does_not_merge_unrelated_objects():
+    """根对象里没有"对象数组"时不能乱接，取第一个对象就好。"""
+    fixed = llm_mod._repair_json('{"a": 1}, {"b": 2}')
+    assert fixed == {"a": 1}

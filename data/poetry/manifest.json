@@ -1,0 +1,26 @@
+{
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "collection": "poetry_stanza256_v1",
+  "db": "data/poetry/chroma",
+  "source": "vectors",
+  "corpus": {
+    "chunks_file": "data/poetry/chunks.jsonl",
+    "chunks": 261424,
+    "sha1": "ee5dff93748900545b5bc2d23e6309d49932263d"
+  },
+  "model": {
+    "name": "BAAI/bge-large-zh-v1.5",
+    "dim": 1024,
+    "pooling": "cls",
+    "normalize": true,
+    "instruction": null
+  },
+  "chunking": {
+    "unit": "stanza",
+    "max_tokens": 256,
+    "overlap": 0,
+    "tokenizer": "unknown(offline)"
+  },
+  "stored": 261424,
+  "built_at": "2026-11-08T10:13:39+00:00"
+}
