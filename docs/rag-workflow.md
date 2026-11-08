@@ -333,8 +333,8 @@ mimic（`references[].title` 已经有这一项）。
 ────                                   ────
 ① 切块 → chunks.jsonl
    仓库 + chunks.jsonl  ──上传──▶
-                                       ② scripts/server_embed.sh
-                                          （配环境 + GPU 编码）
+                                       ② embed_poetry.py
+                                          （GPU 编码；依赖见 requirements.txt）
                      ◀──下载──         vectors.npy + vectors.json
 ③ build_poetry_index.py --vectors … → 本地 Chroma
 ```
@@ -355,12 +355,14 @@ mimic（`references[].title` 已经有这一项）。
 rsync -a --exclude data --exclude .git ./ user@host:~/dubbing/
 rsync -a data/poetry/chunks.jsonl user@host:~/dubbing/data/poetry/
 
-# 服务器：配环境 + 编码（先 --limit 2000 验证，再全量）
+# 服务器：先建环境装依赖（一次），再编码（先 --limit 2000 验证，再全量）
 ssh user@host
 cd ~/dubbing
-bash scripts/server_embed.sh --chunks data/poetry/chunks.jsonl --limit 2000 \
+python -m venv .venv-embed && source .venv-embed/bin/activate
+pip install -r requirements.txt
+python scripts/embed_poetry.py --chunks data/poetry/chunks.jsonl --limit 2000 \
     --out data/poetry/vectors.head.npy --device cuda
-bash scripts/server_embed.sh --chunks data/poetry/chunks.jsonl \
+python scripts/embed_poetry.py --chunks data/poetry/chunks.jsonl \
     --out data/poetry/vectors.npy --device cuda --batch 64
 
 # 下行
@@ -379,8 +381,9 @@ python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --verify 
   Chroma 用 cosine 距离，排序不受 dtype 影响。
 - **`--verify N` 值得跑一次**：它用本机现算的向量和文件里的比余弦相似度。两边模型或池化不一致时
   检索会静默变差，这是唯一能提前发现的地方。
-- 服务器上需要 `sentence-transformers`（`server_embed.sh` 会装）；模型默认让它在第一次运行时下载，
-  国内网络可以 `--mirror https://hf-mirror.com`，离线机器可以先把模型目录拷过去再用 `--model /path`。
+- 服务器上的依赖只有 `requirements.txt` 里那两行（`numpy` + `sentence-transformers`，torch 会被带进来）；
+  模型默认在第一次运行时下载，国内网络可以 `export HF_ENDPOINT=https://hf-mirror.com`，
+  离线机器可以先把模型目录拷过去再用 `--model /path`。
 - 实测：26 万条 × 1024 维 fp16，本机灌库约 5 分钟（约 860 块/秒）。
 
 **备选**：本机能连到 GPU 服务器时，也可以不起 TEI/vLLM 之外的任何东西——不给 `--vectors`，
@@ -516,8 +519,8 @@ python -m dubbing poetry-search "末班车的尾灯" --k 4 --embed-url http://gp
 | 跨段去重 | `--rag-dedupe-peers` | 关（同一 chunk 全曲只用一次；开它会改变召回，需在报告里注明） |
 | writer 失败重试 | `--writer-retry` | 关 |
 
-服务器那边的入口是 `scripts/server_embed.sh`（自己的选项：`--env-dir` / `--model` / `--mirror` /
-`--skip-install`，其余参数原样转给 `scripts/embed_poetry.py`）。
+服务器那边的入口就是 `scripts/embed_poetry.py`，它只依赖 `requirements.txt` 里的
+`numpy` + `sentence-transformers`（torch 会被带进来），环境自己建。
 
 ## 10. 评测
 

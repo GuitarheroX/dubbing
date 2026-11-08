@@ -6,7 +6,8 @@
 1. 【本机】递归读 ``sheepzh/poetry`` 的 ``data/<诗人>_<拼音>/<诗标题>.pt``，按**诗节**切块
    （一个诗节一个 chunk、不重叠、超长才拆、上限 ``--max-tokens``），写 ``chunks.jsonl``；
 2. 【本机 → 服务器】把仓库和 ``chunks.jsonl`` 拷上去；
-3. 【服务器】``scripts/server_embed.sh`` 配环境 + 用 GPU 跑到 ``vectors.npy`` + ``vectors.json``；
+3. 【服务器】``scripts/embed_poetry.py`` 用 GPU 跑到 ``vectors.npy`` + ``vectors.json``
+   （只依赖根目录 ``requirements.txt``）；
 4. 【服务器 → 本机】把这两个文件拷回来；
 5. 【本机】``--vectors vectors.npy`` 把它们灌进本地 Chroma，并写 ``manifest.json``。
 
@@ -30,7 +31,7 @@ OpenAI 兼容的嵌入端点（TEI / vLLM）。两种模式产出的 Chroma 索�
     # ① 先看能不能切、切出多少块（不联网、不建库）
     python scripts/build_poetry_index.py --poetry-root data/poetry/raw --dry-run
 
-    # ③④ 服务器上跑向量（详见 scripts/server_embed.sh 头部注释）
+    # ③④ 服务器上跑向量（详见 scripts/embed_poetry.py 头部注释与 requirements.txt）
 
     # ⑤ 灌库 + 抽查 5 条，确认服务器与本机算出来的向量一致
     python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --verify 5 --reset

@@ -1,0 +1,19 @@
+# 服务器上「用 GPU 把诗句编码成向量」这一步的依赖（scripts/embed_poetry.py）。
+#
+# 本机跑 workflow、切块、把向量灌进 Chroma 都不需要这些；客户端依赖见 pyproject.toml。
+#
+# 环境自己建，例如：
+#   python -m venv .venv-embed
+#   source .venv-embed/bin/activate
+#   pip install -r requirements.txt
+#   python scripts/embed_poetry.py --chunks data/poetry/chunks.jsonl \
+#       --out data/poetry/vectors.npy --device cuda --batch 64
+#
+# torch 由 sentence-transformers 带进来。若要指定 CUDA 版本，先按 pytorch.org 的指引单独装 torch，
+# 例如：pip install torch --index-url https://download.pytorch.org/whl/cu124
+#
+# 国内下载模型慢：export HF_ENDPOINT=https://hf-mirror.com
+# 离线机器：先把模型目录拷过去，编码时用 --model /path/to/bge-large-zh-v1.5
+
+numpy>=1.24
+sentence-transformers>=2.2

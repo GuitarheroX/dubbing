@@ -181,9 +181,15 @@ python scripts/build_poetry_index.py --poetry-root data/poetry/raw --dry-run
 rsync -a --exclude data --exclude .git ./ user@host:~/dubbing/
 rsync -a data/poetry/chunks.jsonl user@host:~/dubbing/data/poetry/
 
-# 4. 服务器：一键配环境 + 用 GPU 编码（先 --limit 2000 验证再全量）
-ssh user@host 'cd ~/dubbing && bash scripts/server_embed.sh \
-    --chunks data/poetry/chunks.jsonl --out data/poetry/vectors.npy --device cuda --batch 64'
+# 4. 服务器：自己建环境、装依赖，再用 GPU 编码（以下在服务器上；先 --limit 2000 验证再全量）
+ssh user@host
+cd ~/dubbing
+python -m venv .venv-embed && source .venv-embed/bin/activate
+pip install -r requirements.txt
+python scripts/embed_poetry.py --chunks data/poetry/chunks.jsonl --limit 2000 \
+    --out data/poetry/vectors.head.npy --device cuda
+python scripts/embed_poetry.py --chunks data/poetry/chunks.jsonl \
+    --out data/poetry/vectors.npy --device cuda --batch 64
 
 # 5. 下载向量，本机灌库；--verify 5 会顺带核对两边算出来的向量是否一致
 rsync -a user@host:~/dubbing/data/poetry/vectors.npy  data/poetry/

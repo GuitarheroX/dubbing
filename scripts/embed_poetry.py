@@ -5,9 +5,10 @@
 再用 ``scripts/build_poetry_index.py --vectors`` 灌进本地 Chroma。整条链路里本机不需要 GPU，
 也不需要起任何嵌入服务。
 
-服务器上准备：
+服务器上准备（仓库根目录有 ``requirements.txt``，环境自己建）：
 
-    pip install sentence-transformers          # 会自动带上 torch
+    python -m venv .venv-embed && source .venv-embed/bin/activate
+    pip install -r requirements.txt            # numpy + sentence-transformers（会带上 torch）
     # 有网就让它自己下模型；没网就先把模型目录拷过去，用 --model /path/to/bge-large-zh-v1.5
 
 先跑一小段验证（强烈建议）：
