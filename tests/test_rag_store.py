@@ -89,3 +89,14 @@ def test_upsert_rejects_mismatched_lengths(tmp_path):
     store = _store(tmp_path)
     with pytest.raises(StoreError, match="长度不一致"):
         store.upsert(ids=["a"], documents=["x", "y"], metadatas=[{}], embeddings=[[1.0]])
+
+
+def test_query_accepts_a_numpy_row(tmp_path):
+    """直接传 numpy 行（fp16）也要能查：这是 --verify / 手写脚本最容易踩的坑。"""
+    import numpy as np
+
+    store = _store(tmp_path)
+    _seed(store)
+    row = np.asarray([1.0, 0.0, 0.0], dtype="float16")
+    hits = store.query(row, 1)
+    assert hits[0].chunk_id == "a#s1"

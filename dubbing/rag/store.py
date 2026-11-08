@@ -148,7 +148,9 @@ class ChromaStore:
             return []
         want = k if not exclude else min(candidate_cap, k + len(exclude) + k)
         result = self._collection.query(
-            query_embeddings=[list(embedding)],
+            # 显式转成 Python float：传入 numpy 行时，list(row) 得到的是 np.float16 标量，
+            # Chroma 会以"不认识的类型"拒掉
+            query_embeddings=[[float(x) for x in embedding]],
             n_results=want,
             include=["documents", "metadatas", "distances"],
         )
