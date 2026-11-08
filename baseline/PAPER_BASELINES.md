@@ -80,4 +80,4 @@ paper 组每段调用两次：一次生成，一次由同模型清理输出格�
 
 ## 从旧布局迁移
 
-旧的 `runs/` + `state.yaml` 与论文组的 `config.json` / `report.json` 等已由 [scripts/migrate_layout.py](../scripts/migrate_layout.py) 整理掉。该脚本是一次性的，默认只预览，加 `--apply` 才落盘。
+旧的 `runs/` + `state.yaml` 与论文组的 `config.json` / `report.json` 等，早已由一次性的 `scripts/migrate_layout.py` 整理掉（脚本跑完即删，默认只预览、加 `--apply` 才落盘）。

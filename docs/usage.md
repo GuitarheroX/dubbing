@@ -4,11 +4,16 @@
 
 ## 环境
 
-只需要 Python ≥ 3.11，运行依赖 `pyyaml` 和 `requests`，测试用 `pytest`。
+需要 Python ≥ 3.11。基础运行依赖只有 `pyyaml` 和 `requests`；测试用 `pytest`。
+rag 管线另外两组可选依赖，按需装：
+
+- `.[rag]` —— `chromadb`，本地向量库（跑 rag 管线、`poetry-search` 都要）；
+- `.[embed]` —— `sentence-transformers`，在本机算**查询**向量（只灌库不需要它；只走 HTTP 端点也不需要）。
 
 ```bash
-conda activate base
-python -m pytest            # 171 个测试，跑完不到 1 秒
+conda activate dubbing          # 或你自己的虚拟环境
+python -m pytest                # 280 个测试，1 秒左右
+pip install -e ".[dev,rag,embed]"   # 只跑 workflow 的话 ".[dev]" 就够
 ```
 
 ## 三条命令
@@ -22,7 +27,7 @@ python -m dubbing prompt  --song kotozute   # 看 writer 收到的提示词与�
 python -m dubbing show    --song kotozute   # 看 perceiver / writer / reviewer 各自的产物
 python -m dubbing view    --song kotozute   # 调试视图（每句状态）
 python -m dubbing export  --song kotozute   # 导出成品歌词
-python -m dubbing poetry-search "一句中文" --k 4   # 直接查本地现代诗索引
+python -m dubbing poetry-search "一句中文" --k 4 --embed-local   # 直接查本地现代诗索引
 ```
 
 ### 看某个 agent 收到的提示词
@@ -254,21 +259,50 @@ python -m dubbing run --song kotozute --client api --temperature-perceiver 2.0 -
 **严格字数归 mimic**——workflow 里则只剩 reviewer 的返修意见，这个差别正是两条管线要对比的，
 方案细节见 [rag-workflow.md](rag-workflow.md)。
 
-先建本地索引（语料与切块规则见 rag-workflow.md 第 7 节）：
+先建本地索引。索引分两台机器建：**本机切块 → 服务器用 GPU 出向量 → 本机灌进 Chroma**。
+本机不需要 GPU，也不需要起任何嵌入服务。目录组织与参数见 [rag-workflow.md](rag-workflow.md) 第 7 节。
 
 ```bash
-# 只解析 + 切块 + 统计，不联网、不建库
+# ① 本机：解析 + 切块 + 统计（不联网、不建库），顺带写出 data/poetry/chunks.jsonl
 python scripts/build_poetry_index.py --poetry-root data/poetry/raw --dry-run
 
-# 先拿子集跑通；嵌入走 GPU 上的 OpenAI 兼容端点（DUBBING_EMBED_URL）
-python scripts/build_poetry_index.py --poetry-root data/poetry/raw --limit 20000
+# ② 上传：仓库（脚本要用）+ 切块文件
+rsync -a --exclude data --exclude .git ./ user@host:~/dubbing/
+rsync -a data/poetry/chunks.jsonl user@host:~/dubbing/data/poetry/
+
+# ③ 服务器：自建环境装依赖（根目录 requirements.txt），再用 GPU 编码
+ssh user@host
+cd ~/dubbing
+python -m venv .venv-embed && source .venv-embed/bin/activate
+pip install -r requirements.txt
+python scripts/embed_poetry.py --chunks data/poetry/chunks.jsonl --limit 2000 \
+    --out data/poetry/vectors.head.npy --device cuda          # 先用 2000 条跑通
+python scripts/embed_poetry.py --chunks data/poetry/chunks.jsonl \
+    --out data/poetry/vectors.npy --device cuda --batch 64    # 全量
+
+# ④ 下载向量；先抽查 5 条（不写索引），再灌库
+rsync -a user@host:~/dubbing/data/poetry/vectors.npy  data/poetry/
+rsync -a user@host:~/dubbing/data/poetry/vectors.json data/poetry/
+python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --verify 5 --skip-ingest
+python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --reset
 ```
+
+几条容易忘的：
+
+- `--limit N` 会**同时**把用到的 chunks 另存成 `chunks.limit{N}.jsonl`；灌库时要 `--chunks` 指它，
+  否则条数对不上（`vectors.json` 里的 sha1 也是对着这份截断文件算的）。
+- `--verify N` 用本机模型现算几条、和文件里的比余弦相似度，应当接近 1.0。它在灌库**之前**跑，
+  不过就停下、不动已有索引；`--skip-ingest` 表示只验不灌。
+- `--reset` 只在**换模型 / 改 `--max-tokens` / 换语料**时需要（旧 chunk_id 会残留成"不存在的诗句"）。
+  同一套重跑、或从子集扩到全量（id 是超集）都不需要。
+- 本机下载模型时如果被 SOCKS 代理挡住（报 `socksio` 缺失或 `Could not resolve the revision`），
+  要么 `pip install socksio`，要么 `env -u all_proxy` 直连。
 
 建好之后：
 
 ```bash
-python -m dubbing run --song kotozute --pipeline rag --client api
-python -m dubbing poetry-search "一句中文" --k 4   # 不跑流程，直接查索引、看命中分数
+python -m dubbing run --song kotozute --pipeline rag --client api --embed-local
+python -m dubbing poetry-search "一句中文" --k 4 --embed-local   # 不跑流程，直接查索引、看命中分数
 ```
 
 产物在 `data/songs/<id>/workflow_rag/`，每段四个目录：
@@ -295,6 +329,14 @@ sections/NNN/reviewer/      检查结论
 | `--embed-local` | 本机推理（需要 sentence-transformers） | 关 |
 | `--rag-dedupe-peers` | 跨段去重：已经用过的 chunk 不再召回（开了会改变召回） | 关 |
 | `--writer-retry` | mimic 各轮都没过时，再让 writer 带评审意见重出初版 | 关 |
+
+**查询期必须能算向量。** 灌库不用模型，但每次检索都要把"这一段译文"编码成向量：
+
+- 本机模型：`--embed-local`（或 `DUBBING_EMBED_LOCAL=1`），模型默认 `BAAI/bge-large-zh-v1.5`，
+  第一次会下到 `~/.cache/huggingface`（约 1.3 GB）；Apple 芯片可加 `DUBBING_EMBED_DEVICE=mps`；
+- 或者仍然连一个 OpenAI 兼容端点：`--embed-url http://gpu:8080/v1/embeddings`。
+
+两边用的必须是**同一个模型、同一种池化**，否则检索会静默变差——`--verify` 就是查这个的。
 
 `--dry-run` 渲染不出 mimic 的真实入参（初版与参考要等 writer 与检索跑完），只能核对提示词与
 字段形状。
@@ -411,6 +453,22 @@ data/songs/kotozute/
 两条管线各有自己的 `latest.json`，只决定 `view` / `export` / `runs` 默认看哪一次，
 想换一版就改它（或直接 `--run <id>`）。
 
+索引资产不在歌目录里，单独放在 `data/poetry/`。除了 `manifest.json`，其余都不入库：
+
+```
+data/poetry/
+  raw/                    语料 clone（sheepzh/poetry）
+  chunks.jsonl            切块中间产物（要上传给服务器）
+  chunks.limit2000.jsonl  --limit 跑出来的子集，与 head 向量配套
+  vectors.npy             服务器产出的向量（fp16，26 万条约 535 MB）
+  vectors.json            配对说明：模型、维度、条数、chunks 的 sha1
+  chroma/                 本地向量库（26 万条约 1.6 GB）
+  manifest.json           索引血缘：index_id、模型、切块参数、建库时间
+```
+
+`manifest.json` 的 `index_id` 会被写进每一次 `mimic_lookup/meta.json`，所以任何一版译词都能追到
+"它当时查的是哪份索引"。
+
 ## 几个容易踩的点
 
 - **严格字数归谁**：writer 的提示词只说“大概几个字”，不要求精确数字数。workflow 里字数约束
@@ -423,3 +481,9 @@ data/songs/kotozute/
   `CHAR_MISMATCH` 只在写词的人自报了 `chars` 时才有意义——现在只有 rag 的 mimic 会报。
 - **`keep_source` 的句子不会出现在写词人的输出里**。装配时 `sing_text` 直接取原文，
   reviewer 跳过它。
+- **灌库不需要模型，查询需要。** `build_poetry_index.py --vectors` 只读向量文件；
+  但 `poetry-search` 和 rag 管线每次检索都要编码查询，所以本机得装 `.[embed]` 并加 `--embed-local`。
+- **索引与向量必须同源。** `vectors.json` 记着 `chunks.jsonl` 的 sha1，条数 / 维度 / sha1 任何一项不对，
+  灌库前就会报错——这正是为了防止"换了切块参数，向量还是旧的"。
+- **`--reset` 不是"清空这次导入的"，是"清空整个 collection"**。换模型或改切块参数时该加；
+  同一套重跑、或从子集扩到全量（id 是超集）时不该加。

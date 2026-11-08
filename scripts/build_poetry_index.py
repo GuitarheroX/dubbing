@@ -33,8 +33,13 @@ OpenAI 兼容的嵌入端点（TEI / vLLM）。两种模式产出的 Chroma 索�
 
     # ③④ 服务器上跑向量（详见 scripts/embed_poetry.py 头部注释与 requirements.txt）
 
-    # ⑤ 灌库 + 抽查 5 条，确认服务器与本机算出来的向量一致
-    python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --verify 5 --reset
+    # ⑤ 先抽查 5 条（不写索引）：确认服务器与本机算出来的向量一致
+    python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --verify 5 --skip-ingest
+
+    # ⑥ 再灌库
+    python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --reset
+
+    （--verify 也可以和灌库写在一条命令里：它在灌库**之前**跑，对不上就停下、不动已有索引。）
 
     # 备选：直接连嵌入服务（有 GPU 服务且网络可达时）
     DUBBING_EMBED_URL=http://gpu:8080/v1/embeddings \\
@@ -373,7 +378,13 @@ def build_parser() -> argparse.ArgumentParser:
         type=int,
         default=0,
         metavar="N",
-        help="离线模式下抽查 N 条：本机现算向量与文件里的比对（需要本机有 sentence-transformers）",
+        help="离线模式下抽查 N 条：本机现算向量与文件里的比对（需要本机有 sentence-transformers）。"
+        "在灌库之前跑，对不上就停下、不动已有索引",
+    )
+    parser.add_argument(
+        "--skip-ingest",
+        action="store_true",
+        help="只校验向量文件（可与 --verify 一起用），不写索引。索引已经建好时用它复验",
     )
     parser.add_argument("--reset", action="store_true", help="先清空 collection 再写")
     parser.add_argument("--dry-run", action="store_true", help="只解析 + 切块 + 统计，不嵌入、不建库")
@@ -460,30 +471,14 @@ def main(argv: list[str] | None = None) -> int:
             print(f"（--dry-run：没有嵌入、没有建库）index_id 会是 {index_id}", file=sys.stderr)
             return 0
 
-    db_dir = out_dir / "chroma"
-    try:
-        store = ChromaStore(db_dir, args.collection, create=True)
-    except StoreError as exc:
-        print(f"打不开本地索引：{exc}", file=sys.stderr)
-        return 1
-
-    existing = store.count()
-    if args.reset:
-        store.reset()
-        existing = 0
-    elif existing:
-        print(
-            f"注意：collection 里已有 {existing} 条。同一 chunk_id 会被覆盖，"
-            "但语料或切块参数变过就会留下旧块——建议加 --reset。",
-            file=sys.stderr,
-        )
-
     embedding = None
     vectors = None
     vector_meta = None
     dimension: int | None = None
 
     if offline:
+        # 先校验文件本身、再抽查。这两步都不需要索引，所以放在 open Chroma 之前：
+        # 校验不过就退出，既不白等几分钟灌库，也不会碰掉已有的索引。
         try:
             vectors, vector_meta = load_vectors(
                 args.vectors,
@@ -500,10 +495,32 @@ def main(argv: list[str] | None = None) -> int:
         source = "vectors"
         print(
             f"向量：{vectors.shape[0]} 条 × {vectors.shape[1]} 维"
-            f"（{vector_meta.dtype}，模型 {model_name}）\n"
-            f"开始灌库（不调嵌入服务）：每批 {args.batch}",
+            f"（{vector_meta.dtype}，模型 {model_name}）",
             file=sys.stderr,
         )
+        if args.verify > 0:
+            try:
+                code = _verify_vectors(
+                    chunks_path,
+                    vectors,
+                    model=model_name,
+                    samples=args.verify,
+                    device=None,
+                )
+            except EmbeddingError as exc:
+                print(
+                    f"\n抽查需要本机也能加载同一个模型：{exc}\n"
+                    "（向量文件本身没问题；修好本机环境再来，索引还没动）",
+                    file=sys.stderr,
+                )
+                return 1
+            if code:
+                print("抽查不一致，已停下，索引没有动。", file=sys.stderr)
+                return code
+        if args.skip_ingest:
+            print("\n--skip-ingest：校验完就走，没有写索引。", file=sys.stderr)
+            return 0
+        print(f"开始灌库（不调嵌入服务）：每批 {args.batch}", file=sys.stderr)
     else:
         try:
             embedding = build_embedding_client(
@@ -521,6 +538,24 @@ def main(argv: list[str] | None = None) -> int:
         print(
             f"开始嵌入：{total_chunks} 块 → {embedding.name}({embedding.model})"
             f"，每批 {args.batch}",
+            file=sys.stderr,
+        )
+
+    db_dir = out_dir / "chroma"
+    try:
+        store = ChromaStore(db_dir, args.collection, create=True)
+    except StoreError as exc:
+        print(f"打不开本地索引：{exc}", file=sys.stderr)
+        return 1
+
+    existing = store.count()
+    if args.reset:
+        store.reset()
+        existing = 0
+    elif existing:
+        print(
+            f"注意：collection 里已有 {existing} 条。同一 chunk_id 会被覆盖，"
+            "但语料或切块参数变过就会留下旧块——建议加 --reset。",
             file=sys.stderr,
         )
 
@@ -598,19 +633,6 @@ def main(argv: list[str] | None = None) -> int:
         f"耗时 {time.time() - started:.0f} 秒",
         file=sys.stderr,
     )
-
-    if offline and args.verify > 0:
-        try:
-            return _verify_vectors(
-                chunks_path, vectors, model=model_name, samples=args.verify, device=None
-            )
-        except EmbeddingError as exc:
-            print(
-                f"\n抽查需要本机也能加载同一个模型：{exc}\n"
-                "（索引已经建好了，这条只是校验；本机装了 sentence-transformers 就能跑）",
-                file=sys.stderr,
-            )
-            return 1
     return 0
 
 

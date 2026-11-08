@@ -369,8 +369,11 @@ python scripts/embed_poetry.py --chunks data/poetry/chunks.jsonl \
 rsync -a user@host:~/dubbing/data/poetry/vectors.npy  data/poetry/
 rsync -a user@host:~/dubbing/data/poetry/vectors.json data/poetry/
 
-# 本机灌库 + 抽查 5 条（确认服务器与本机算出来的向量一致）
-python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --verify 5 --reset
+# 本机：先抽查 5 条（不写索引），确认服务器与本机算出来的向量一致
+python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --verify 5 --skip-ingest
+
+# 再灌库
+python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --reset
 ```
 
 几个要点：
@@ -380,7 +383,8 @@ python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --verify 
 - **`--dtype float16`** 让文件小一半（26 万条 × 1024 维：fp32 约 1.07 GB，fp16 约 535 MB）。
   Chroma 用 cosine 距离，排序不受 dtype 影响。
 - **`--verify N` 值得跑一次**：它用本机现算的向量和文件里的比余弦相似度。两边模型或池化不一致时
-  检索会静默变差，这是唯一能提前发现的地方。
+  检索会静默变差，这是唯一能提前发现的地方。它在灌库**之前**跑，抽查不过就直接退出、
+  不碰已有索引；配合 `--skip-ingest` 可以只验不灌（索引已经建好时复验用）。
 - 服务器上的依赖只有 `requirements.txt` 里那两行（`numpy` + `sentence-transformers`，torch 会被带进来）；
   模型默认在第一次运行时下载，国内网络可以 `export HF_ENDPOINT=https://hf-mirror.com`，
   离线机器可以先把模型目录拷过去再用 `--model /path`。
@@ -514,7 +518,8 @@ python -m dubbing poetry-search "末班车的尾灯" --k 4 --embed-url http://gp
 | 查询期嵌入（HTTP） | `--embed-url` / `DUBBING_EMBED_URL` | `http://127.0.0.1:8080/v1/embeddings` |
 | 嵌入模型名 | `--embed-model` / `DUBBING_EMBED_MODEL` | `BAAI/bge-large-zh-v1.5` |
 | 建库：离线向量 | `--vectors` + `--chunks`（`build_poetry_index.py`） | 不给就边切边嵌 |
-| 建库：向量自检 | `--verify N` | 0（关；建议首次建库时跑 5） |
+| 建库：向量自检 | `--verify N` | 0（关；建议首次建库时跑 5）。在灌库**之前**跑，不过就停下 |
+| 建库：只验不灌 | `--skip-ingest` | 关（索引已建好时复验用） |
 | 建库：切块上限 | `--max-tokens` | 256 |
 | 跨段去重 | `--rag-dedupe-peers` | 关（同一 chunk 全曲只用一次；开它会改变召回，需在报告里注明） |
 | writer 失败重试 | `--writer-retry` | 关 |

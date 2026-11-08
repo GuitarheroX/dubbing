@@ -191,10 +191,11 @@ python scripts/embed_poetry.py --chunks data/poetry/chunks.jsonl --limit 2000 \
 python scripts/embed_poetry.py --chunks data/poetry/chunks.jsonl \
     --out data/poetry/vectors.npy --device cuda --batch 64
 
-# 5. 下载向量，本机灌库；--verify 5 会顺带核对两边算出来的向量是否一致
+# 5. 下载向量；先抽查 5 条（不写索引），再灌库
 rsync -a user@host:~/dubbing/data/poetry/vectors.npy  data/poetry/
 rsync -a user@host:~/dubbing/data/poetry/vectors.json data/poetry/
-python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --verify 5 --reset
+python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --verify 5 --skip-ingest
+python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --reset
 
 # 6. 抽查召回（查询期也要同一个模型：本机装 .[embed] 并设 DUBBING_EMBED_LOCAL=1）
 pip install -e ".[embed]"

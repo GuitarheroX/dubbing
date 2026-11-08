@@ -333,8 +333,6 @@ def test_offline_vectors_respect_batch_size(tmp_path):
 
 
 def test_offline_mode_reports_a_mismatched_chunks_file(tmp_path, capsys):
-    from dubbing.rag.store import ChromaStore
-
     chunks = _write_chunks_jsonl(tmp_path / "chunks.jsonl", 3)
     vectors_path = _make_vectors_file(
         chunks, tmp_path / "vectors.npy", [[1.0, 0.0], [0.0, 1.0], [1.0, 0.0]], dim=2
@@ -352,8 +350,8 @@ def test_offline_mode_reports_a_mismatched_chunks_file(tmp_path, capsys):
     err = capsys.readouterr().err
     assert "向量文件不可用" in err
     assert "对不上" in err
-    # 校验没过就不该写进任何向量（Chroma 目录会被建出来，但 collection 是空的）
-    assert ChromaStore(out / "chroma", "poetry_stanza256_v1").count() == 0
+    # 校验放在开库之前：失败连 chroma 目录都不该建出来
+    assert not (out / "chroma").exists()
 
 
 def test_offline_mode_reports_a_count_mismatch(tmp_path, capsys):
@@ -466,3 +464,90 @@ def test_verify_flags_inconsistent_vectors(tmp_path, monkeypatch, capsys):
 
     assert code == 1
     assert "警告" in capsys.readouterr().err
+
+
+def test_skip_ingest_only_verifies(tmp_path, monkeypatch, capsys):
+    """索引已经建好时，只想复验向量：不能重跑 5 分钟的灌库。"""
+    chunks = _write_chunks_jsonl(tmp_path / "chunks.jsonl", 2)
+    vectors_path = _make_vectors_file(
+        chunks, tmp_path / "vectors.npy", [[1.0, 0.0]] * 2, dim=2
+    )
+
+    class FakeLocal:
+        def __init__(self, model, device=None, batch_size=64):
+            self.model = model
+
+        def embed(self, texts):
+            return [[1.0, 0.0] for _ in texts]
+
+    monkeypatch.setattr("dubbing.rag.embedding.LocalEmbeddingClient", FakeLocal)
+    out = tmp_path / "index"
+
+    code = mod.main(
+        [
+            "--vectors",
+            str(vectors_path),
+            "--chunks",
+            str(chunks),
+            "--out",
+            str(out),
+            "--verify",
+            "1",
+            "--skip-ingest",
+            "--quiet",
+        ]
+    )
+
+    assert code == 0
+    assert not (out / "chroma").exists()          # 一条都没写
+    err = capsys.readouterr().err
+    assert "一致" in err
+    assert "--skip-ingest" in err
+
+
+def test_verify_runs_before_ingest_and_leaves_the_index_alone(tmp_path, monkeypatch, capsys):
+    """抽查不一致时必须直接停，且不能把已有索引清掉。"""
+    pytest.importorskip("chromadb")
+    from dubbing.rag.store import ChromaStore
+
+    chunks = _write_chunks_jsonl(tmp_path / "chunks.jsonl", 2)
+    vectors_path = _make_vectors_file(chunks, tmp_path / "vectors.npy", [[1.0, 0.0]] * 2, dim=2)
+    out = tmp_path / "index"
+
+    # 先建一份"旧索引"
+    assert (
+        mod.main(
+            ["--vectors", str(vectors_path), "--chunks", str(chunks), "--out", str(out), "--quiet"]
+        )
+        == 0
+    )
+    before = ChromaStore(out / "chroma", "poetry_stanza256_v1").count()
+    assert before == 2
+
+    class WrongLocal:
+        def __init__(self, model, device=None, batch_size=64):
+            self.model = model
+
+        def embed(self, texts):
+            return [[0.0, 1.0] for _ in texts]
+
+    monkeypatch.setattr("dubbing.rag.embedding.LocalEmbeddingClient", WrongLocal)
+
+    code = mod.main(
+        [
+            "--vectors",
+            str(vectors_path),
+            "--chunks",
+            str(chunks),
+            "--out",
+            str(out),
+            "--verify",
+            "1",
+            "--reset",       # 就算带了 --reset，也不该先清库
+            "--quiet",
+        ]
+    )
+
+    assert code == 1
+    assert "索引没有动" in capsys.readouterr().err
+    assert ChromaStore(out / "chroma", "poetry_stanza256_v1").count() == before
