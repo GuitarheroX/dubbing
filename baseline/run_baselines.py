@@ -14,7 +14,7 @@
 
     data/songs/<song_id>/baselines/<名字>/<run_id>/
       latest.json                      # 在 <名字>/ 下，指向当前 run
-      sections/001/B/{request,output,meta}.json        # one-shot
+      sections/001/writer/{request,output,meta}.json        # one-shot
       sections/001/generation/{request,output,meta}.json   # paper-*
       sections/001/cleanup/{request,output,meta}.json
       lyrics.zh.txt
@@ -40,7 +40,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from dubbing.agents import build_b_request, parse_b_output  # noqa: E402
+from dubbing.agents import build_writer_request, parse_draft_output  # noqa: E402
 from dubbing.checks import review  # noqa: E402
 from dubbing.export import write_lyrics  # noqa: E402
 from dubbing.llm import (  # noqa: E402
@@ -98,7 +98,7 @@ def _base(root: Path | str, song_id: str, baseline: str) -> Path:
 def build_one_shot_request(song: Song, section: str, accepted: dict[str, str]) -> Request:
     """workflow 的 B 提示词 + 全曲上下文，但没有 A 分析、没有上一轮反馈。"""
     analysis = Analysis(theme="", emotional_arc="", narrative="")
-    return build_b_request(song, analysis, focus=section, accepted=accepted, prev_texts=None)
+    return build_writer_request(song, analysis, focus=section, accepted=accepted, prev_texts=None)
 
 
 def build_paper_request(song: Song, section: str, variant: str) -> Request:
@@ -380,25 +380,25 @@ def run_one_shot(song: Song, client: LLMClient, *, out: Path, dry_run: bool = Fa
             continue
         request = build_one_shot_request(song, section.id, texts)
         if dry_run:
-            store.prepare(run_id, "B", request, section_index_=index)
+            store.prepare(run_id, "writer", request, section_index_=index)
             continue
 
         print(f"[one-shot] {song.id} / {section.id} 生成", file=sys.stderr)
         raw = _call(
-            store, run_id, "B", request, client,
-            index=index, llm_agent="b", extra_meta={"section": section.id},
+            store, run_id, "writer", request, client,
+            index=index, llm_agent="writer", extra_meta={"section": section.id},
         )
         try:
-            draft, warnings = parse_b_output(extract_json(raw), song, section.id)
+            draft, warnings = parse_draft_output(extract_json(raw), song, section.id)
         except (LLMError, ValueError) as exc:
             store.abandon(
-                run_id, "B", reason=f"解析失败：{exc}", raw_response=raw,
-                meta=_meta("B", client, request.system, section=section.id), section_index_=index,
+                run_id, "writer", reason=f"解析失败：{exc}", raw_response=raw,
+                meta=_meta("writer", client, request.system, section=section.id), section_index_=index,
             )
             raise
         store.finish(
-            run_id, "B", draft.to_json(),
-            meta=_meta("B", client, request.system, section=section.id, warnings=warnings),
+            run_id, "writer", draft.to_json(),
+            meta=_meta("writer", client, request.system, section=section.id, warnings=warnings),
             raw_response=raw, section_index_=index,
         )
         texts.update(draft.texts())

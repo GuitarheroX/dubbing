@@ -28,9 +28,9 @@ def test_dry_run_writes_preview_under_workflow(root, capsys):
 
     previews = list((root / "t" / "workflow").glob("preview-*"))
     assert len(previews) == 1
-    assert (previews[0] / "A.system.md").is_file()
-    assert (previews[0] / "A.data.json").is_file()
-    assert (previews[0] / "B-S1.data.json").is_file()
+    assert (previews[0] / "perceiver.system.md").is_file()
+    assert (previews[0] / "perceiver.data.json").is_file()
+    assert (previews[0] / "writer-S1.data.json").is_file()
     assert "没有调用任何模型" in capsys.readouterr().out
 
 
@@ -49,7 +49,7 @@ def test_run_without_api_exits_2_and_keeps_request(root, capsys):
     err = capsys.readouterr().err
     assert "request.json" in err
     store = root / "t" / "workflow"
-    requests = list(store.glob("run-*/A/request.json"))
+    requests = list(store.glob("run-*/perceiver/request.json"))
     assert len(requests) == 1
 
 
@@ -90,8 +90,8 @@ def _scripted(section="S1", text="一二三四"):
 
     return ScriptedClient(
         {
-            "a": scripted(analysis_json([section])),
-            "b": scripted(draft_json(section, {"A-01": text})),
+            "perceiver": scripted(analysis_json([section])),
+            "writer": scripted(draft_json(section, {"A-01": text})),
         }
     )
 
@@ -113,8 +113,8 @@ def test_each_run_makes_a_new_directory_and_reuses_analysis(root, monkeypatch, c
 
     # 新 run 新目录，旧的不动
     assert len(sorted(workflow.glob("run-*"))) == 2
-    # A 复用，不重复花钱；B 重跑
-    assert [c["agent"] for c in second.calls] == ["b"]
+    # perceiver 复用，不重复花钱；writer 重跑
+    assert [c["agent"] for c in second.calls] == ["writer"]
     assert (workflow / "latest.json").is_file()
     assert len(list(workflow.glob("run-*/lyrics.zh.txt"))) == 2
 
@@ -132,7 +132,7 @@ def test_redo_analysis_forces_a_fresh_a(root, monkeypatch):
         main(["--root", str(root), "run", "--song", "t", "--client", "api", "--redo-analysis"])
         == 0
     )
-    assert [c["agent"] for c in second.calls] == ["a", "b"]
+    assert [c["agent"] for c in second.calls] == ["perceiver", "writer"]
 
 
 def test_only_carries_other_sections_and_reuses_analysis(root, monkeypatch):
@@ -153,7 +153,7 @@ def test_only_carries_other_sections_and_reuses_analysis(root, monkeypatch):
 
     after = {p.name for p in workflow.glob("run-*")}
     assert before <= after          # 旧 run 还在
-    assert [c["agent"] for c in used.calls] == ["b"]  # A 复用，没重跑
+    assert [c["agent"] for c in used.calls] == ["writer"]  # perceiver 复用，没重跑
 
 
 def test_pending_client_does_not_touch_previous_runs(root, monkeypatch, capsys):
@@ -190,8 +190,8 @@ def _multi(count, section="S1", text="一二三四"):
 
     return ScriptedClient(
         {
-            "a": scripted(*[analysis_json([section]) for _ in range(count)]),
-            "b": scripted(*[draft_json(section, {"A-01": text}) for _ in range(count)]),
+            "perceiver": scripted(*[analysis_json([section]) for _ in range(count)]),
+            "writer": scripted(*[draft_json(section, {"A-01": text}) for _ in range(count)]),
         }
     )
 
@@ -242,8 +242,8 @@ def test_batch_keeps_going_after_one_song_fails(root, monkeypatch, capsys):
 
     client = ScriptedClient(
         {
-            "a": scripted(analysis_json(["S1"]), analysis_json(["S1"])),
-            "b": scripted(
+            "perceiver": scripted(analysis_json(["S1"]), analysis_json(["S1"])),
+            "writer": scripted(
                 draft_json("S1", {"A-01": "一二三四五"}),
                 draft_json("S1", {"A-01": "一二三四五"}),
                 draft_json("S1", {"A-01": "一二三四五"}),
@@ -263,11 +263,11 @@ def test_batch_keeps_going_after_one_song_fails(root, monkeypatch, capsys):
 def test_prompt_command_prints_system_and_user(root, capsys):
     _song(root)
     assert (
-        main(["--root", str(root), "prompt", "--song", "t", "--agent", "b", "--section", "S1"])
+        main(["--root", str(root), "prompt", "--song", "t", "--agent", "writer", "--section", "S1"])
         == 0
     )
     out = capsys.readouterr().out
-    assert "# 共同前提" in out          # system = shared.md + b.md
+    assert "# 共同前提" in out          # system = shared.md + writer.md
     assert "本次任务数据（JSON）" in out  # user = 数据
     assert "system" in out and "user" in out
 

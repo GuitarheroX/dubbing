@@ -141,7 +141,7 @@ def test_dry_runs_are_isolated_and_do_not_touch_existing_products(root, monkeypa
     for _ in range(2):
         assert main(["--root", str(root), "--all", "--dry-run"]) == 0
     assert len(list(directory.glob("baselines/*/*/sections/001/generation/request.json"))) == 4
-    assert len(list(directory.glob("baselines/one-shot/*/sections/001/B/request.json"))) == 2
+    assert len(list(directory.glob("baselines/one-shot/*/sections/001/writer/request.json"))) == 2
     assert (directory / "song.yaml").read_text(encoding="utf-8") == song_before
     assert (directory / "baseline.txt").read_text(encoding="utf-8") == "legacy"
     assert not list(directory.glob("baselines/**/response.txt"))
@@ -240,7 +240,7 @@ def test_parallel_cli_keeps_results_in_directory_alias(root):
     write_song(root, "internal-id", ["S1"], [phrase("P1", "S1", "あ", 4)])
     shutil.move(str(root / "internal-id"), str(root / "directory-name"))
     assert main(["--root", str(root), "--all", "--baseline", "one-shot", "--jobs", "2", "--dry-run"]) == 0
-    assert len(list((root / "directory-name").glob("baselines/one-shot/*/sections/001/B/request.json"))) == 1
+    assert len(list((root / "directory-name").glob("baselines/one-shot/*/sections/001/writer/request.json"))) == 1
     assert not (root / "internal-id").exists()
 
 

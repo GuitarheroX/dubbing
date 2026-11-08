@@ -19,27 +19,38 @@
 - 评测无需严格的量化。本项目不注重严谨的科学性，而是更加注重实用性。歌词的意境，情感，甚至可唱性都是难以量化的。最终的评判，应该是真人来感受歌词并试着唱出来，然后给译词打分，因此评测比较主观。
 
 ## Workflow
--  使用三个 Agent A B C，分别用来处理情感意象，产生译词，以及检查译词是否满足约束。其中 A 和 B 使用 AI，C 基于规则。
-- A 拿到歌词原文后，体会其中的意象与情感，用合适的方式表达出来作为输出传给 B；B 拿到歌词原文，每一句歌词应该产生的音节数（这一部分由人工标注），以及 A 的输出，然后基于此生成一份译文；C 拿到 B 的译文后，检测每一句歌词是否满足了可唱性约束。如果不满足的话，将不满足的地方传输 B，让 B 修改自己的输出。
+- 使用三个 Agent：`perceiver`（体会情感意象）、`writer`（产生译词）、`reviewer`（检查译词是否满足约束）。`perceiver` 和 `writer` 使用 AI，`reviewer` 基于规则。
+- `perceiver` 拿到歌词原文后，体会其中的意象与情感，用合适的方式表达出来作为输出传给 `writer`；`writer` 拿到歌词原文、每一句歌词大概该唱几个字（这一部分由人工标注），以及 `perceiver` 的输出，写成初版译文；`reviewer` 拿到译文后，检测每一句歌词是否满足了可唱性约束。如果不满足，就把不满足的地方传回去修改。
+- **严格对齐字数归"改写的人"**：`workflow` 管线里这件事由 `reviewer` 的返修意见承担（`writer` 只被告知"大概几个字"，不数字数）；`rag` 管线里由 `mimic` 承担（它的提示词里保留了完整的硬约束）。
 - 可以使用 LangGraph 作为框架。
-- 当前版本使用普通 Python 实现上述编排，尚未引入 LangGraph；A、B 调用模型，C 使用确定性的规则检查，每段默认最多生成 / 检查 3 轮。
+- 当前版本使用普通 Python 实现上述编排，尚未引入 LangGraph；两个 AI agent 调用模型，`reviewer` 使用确定性的规则检查，每段默认最多生成 / 检查 3 轮。
+
+## workflow-RAG
+- 与 workflow **并列**的第二条管线，用来和它做对比：`perceiver → writer → mimic（检索 + 改写）→ reviewer`。
+- `writer` 先写初版；`mimic` 拿初版译文去检索现代诗语料（`sheepzh/poetry`，bge-large-zh-v1.5 + 本地 Chroma），参考检索到的诗句把初版改写成第二版，并**严格对齐音节**；`reviewer` 检查第二版，不合格只回 `mimic` 重写，**检索结果复用、不重新检索**。
+- `mimic` 是一个 agent、两个部分：`mimic_lookup`（不调模型，落盘查询与命中）和 `mimic_write`（调模型改写）。产物落在 `data/songs/<id>/workflow_rag/`。
+- 完整方案（索引构建、切块规则、提示词分工、配置项）见 [docs/rag-workflow.md](docs/rag-workflow.md)。
 
 ## 实现
-- 代码在 `dubbing/`，规范见 [docs/data-model.md](docs/data-model.md)，操作见 [docs/usage.md](docs/usage.md)。
+- 代码在 `dubbing/`，规范见 [docs/data-model.md](docs/data-model.md)，操作见 [docs/usage.md](docs/usage.md)，RAG 方案见 [docs/rag-workflow.md](docs/rag-workflow.md)。
+- 两条管线共用 `song.yaml`、run 目录布局、`reviewer` 的规则与歌词导出，差别只在中间多不多一个 `mimic`。
 - 模型调用已接通 DeepSeek 的 Anthropic 兼容端点（`dubbing/llm.py`）。默认使用 `pending` 客户端，在需要模型调用的位置保存请求并暂停；配置 API Key 后加 `--client api` 才真正调用，也可以通过 `DUBBING_CLIENT` 环境变量指定客户端。
 - `final_20_song` 分支已收录 **20 首歌曲的 21 个数据版本，共 432 个乐句**。其中 `love-2000` 和 `love_2000` 是 `LOVE 2000` 的两套分句与预算版本，均予以保留。
 - 本分支同时保存各首歌的译词与运行记录，组织方式见下面的「目录布局」以及 [docs/data-model.md](docs/data-model.md)。当前快照的 432 个乐句均为 `pass` 或 `skip`；这只表示通过程序规则，最终仍需真人试唱评判。
+- 跑 rag 管线前要先建索引：`python scripts/build_poetry_index.py --poetry-root data/poetry/raw`（语料先 `git clone https://github.com/sheepzh/poetry data/poetry/raw`）。`chromadb` 是可选依赖：`python -m pip install -e ".[rag]"`。
+- 改名之前产生的 run 目录（`A/`、`B/`、`C/`）用 `python scripts/migrate_run_agents.py --all` 一次性改到新名。
 - 批量导入标注文本：`python scripts/import_lyrics.py data/lyrics.txt`，
   输入格式与选项见 [docs/usage.md](docs/usage.md)。
 
 ## 快速开始
 
-需要 Python ≥ 3.11，运行依赖为 PyYAML、Requests。建议从源码以可编辑方式安装，并在项目根目录执行命令，以便读取歌曲和提示词文件。
+需要 Python ≥ 3.11，运行依赖为 PyYAML、Requests（跑 workflow-RAG 还要 `.[rag]`，即 chromadb）。建议从源码以可编辑方式安装，并在项目根目录执行命令，以便读取歌曲和提示词文件。
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e ".[dev]"
+# 要跑 rag 管线时再加：python -m pip install -e ".[dev,rag]"
 
 # 不需要 API Key，即可查看本分支已有的歌库与结果
 python -m dubbing songs
@@ -56,16 +67,16 @@ cp .env.example .env
 ## 常用命令
 
 ```bash
-# 单曲重新生成（新建一个 run；A 复用上一 run，不重复花钱）
+# 单曲重新生成（新建一个 run；perceiver 复用上一 run，不重复花钱）
 python -m dubbing run --song kotozute --client api
 
-# 连 A（整曲体会）也重跑
+# 连 perceiver（整曲体会）也重跑
 python -m dubbing run --song kotozute --client api --redo-analysis
 
 # 全库各新建一个 run（旧 run 都留着）
 python -m dubbing run --all --client api
 
-# 仅处理尚未通过的段落，复用已有 A 分析
+# 仅处理尚未通过的段落，复用已有 perceiver 分析
 python -m dubbing run --all --client api --skip-done
 
 # 只运行指定的几首
@@ -74,53 +85,66 @@ python -m dubbing run --song kazeyo --song spiral --client api
 # 仅重跑一个段落；加 --continue 可使用该段上一版译词继续修改
 python -m dubbing run --song shiori --only C1 --client api
 
+# 跑 workfow-RAG（先建好本地索引，见「实现」）
+python -m dubbing run --song kotozute --pipeline rag --client api
+
 # 预览这一次会发出去的初始请求，不调用模型
 python -m dubbing run --all --dry-run
 
 # 查看分析、历史记录和当前译词
-python -m dubbing show --song kotozute --agent a
+python -m dubbing show --song kotozute --agent perceiver
+python -m dubbing show --song kotozute --pipeline rag       # rag 管线的四个 agent
+python -m dubbing poetry-search "末班车的尾灯"               # 直接查本地诗句索引
 python -m dubbing runs --song kotozute
-python -m dubbing view --song kotozute
+python -m dubbing view --song kotozute --pipeline rag
 ```
 
-真实运行每次都在 `workflow/` 下新建一个 run 目录，旧 run 保留不动，`latest.json` 指向这一次。A（整曲体会）默认复用上一 run 的产物，不再花钱；`--redo-analysis` 强制重跑 A。`--continue` 以上一 run 的译文为起点重跑；`--skip-done`、`--only` 会把没重跑的段落整份抄进新 run，所以每个 run 都是完整快照。各选项的详细语义见 [docs/usage.md](docs/usage.md)。
+真实运行每次都在 `<管线>/` 下新建一个 run 目录，旧 run 保留不动，`latest.json` 指向这一次。`perceiver`（整曲体会）默认复用上一 run 的产物，不再花钱；`--redo-analysis` 强制重跑它。`--continue` 以上一 run 的译文为起点重跑；`--skip-done`、`--only` 会把没重跑的段落整份抄进新 run，所以每个 run 都是完整快照。各选项的详细语义见 [docs/usage.md](docs/usage.md)。
 
-`--dry-run` 会写入 `workflow/preview-<时间戳>/`，只渲染请求、不调用模型。
+`--dry-run` 会写入 `<管线>/preview-<时间戳>/`，只渲染请求、不调用模型。
 
 ## 目录布局
 
-每首歌目录下只有 `song.yaml` 和两个并列的子目录；将来若做 workflow 改进版，也放成同一层的兄弟目录（例如 `workflow_v1/`）。
+每首歌目录下只有 `song.yaml` 和几个并列的子目录；两条管线各自一个目录，baseline 一组目录。
 
 ```text
 data/songs/<song_id>/
   song.yaml                       # 人工标注，agent 只读
-  workflow/                       # 我们自己的 A→B→C 流水线
+  workflow/                       # perceiver→writer→reviewer
     latest.json                   # 只回答“现在看哪一次”
     run-<UTC 时间戳>-<8 位随机>/
-      A/{request,output,meta}.json
-      sections/001/B/{request,output,meta}.json
-      sections/001/C/{request,output,meta}.json
+      perceiver/{request,output,meta}.json
+      sections/001/writer/{request,output,meta}.json
+      sections/001/reviewer/{request,output,meta}.json
       sections/002/...
       lyrics.zh.txt / lyrics.md
+  workflow_rag/                   # perceiver→writer→mimic（检索+改写）→reviewer，结构同上
+    run-.../
+      perceiver/…
+      sections/001/writer/…              # 初版
+      sections/001/mimic_lookup/…        # 查询文本 + 命中诗句（不调模型）
+      sections/001/mimic_write/…         # 最终译词
+      sections/001/reviewer/…
   baselines/                      # 对照组，结构与 workflow 完全一致
-    one-shot/                     # workflow 提示词 + 单次调用（消融：没有 A/C）
+    one-shot/                     # workflow 提示词 + 单次调用（消融：没有 perceiver/reviewer）
     paper-original/               # 论文 Exp.4 原指令
     paper-annotated/              # 论文 Exp.4 + 人工预算区间与分组
 ```
 
-- **一次运行 = 一个 run 目录**，重跑新建目录，旧的不动；`latest.json` 决定 `view` / `export` / `runs` 默认看哪一次。
+- **一次运行 = 一个 run 目录**，重跑新建目录，旧的不动；`latest.json` 决定 `view` / `export` / `runs` 默认看哪一次。`--pipeline` 决定看哪条管线。
 - 每个 agent 目录固定**三个文件**：`request.json`（调用前就落盘）、`output.json`（解析后的产物）、`meta.json`（模型、用量、提示词 hash、轮次等血缘；模型原始正文存在 `meta.json` 的 `raw_response` 里，解析失败也留得住）。
-- A 是整曲一次，放在 run 根；B / C 按段落放在 `sections/NNN/`（`NNN` 是 `song.yaml` 里的段落序号）。多轮返修只保留**最终一轮**，返修过程仍能从该轮 request 里的反馈和 `prev_zh` 看到。
+- `perceiver` 是整曲一次，放在 run 根；其余 agent 按段落放在 `sections/NNN/`（`NNN` 是 `song.yaml` 里的段落序号）。多轮返修只保留**最终一轮**，返修过程仍能从该轮 request 里的反馈和 `prev_zh` 看到。
+- `mimic_lookup` 虽然不调模型，也照样落盘三个文件：查询文本、命中诗句与分数、`index_id`——否则"这一版为什么好"没法归因。
 
 ## 结果与运行记录
 
 - 新歌放在 `data/songs/<song_id>/song.yaml`，按 `song / sections / phrases` 组织。人工确认乐句顺序和音节预算，重复演唱的歌词也分别列出。
-- `budget` 支持固定值和区间。可选的 `pattern` 各项须为正整数，合计必须落在预算范围内，否则加载会报错；它目前只为 B 提供参考，C 不检查译词是否按该分组断句。
+- `budget` 支持固定值和区间。可选的 `pattern` 各项须为正整数，合计必须落在预算范围内，否则加载会报错；它目前只为写词的人提供参考，`reviewer` 不检查译词是否按该分组断句。
 - `keep_source: true` 仅支持整句保留原文，此时预算必须为空，也不能填写 `pattern`。目前尚不支持行内片段保留，括号内的英文不会自动从计数中排除。
 - `scripts/import_lyrics.py` 将已标注的「歌词 总字数 [分组字数...]」文本转换为 YAML，不会根据原始歌词自动确认预算。可先运行 `python scripts/import_lyrics.py data/lyrics.txt --dry-run --strict` 检查输入；已有文件默认跳过，`--force` 才会覆盖。
 - 当前程序不读取音频、MIDI 或乐谱来自动校准预算。文本估算需要人工对照演唱复核，不能将日语音拍数或音符数直接当作已经确认的中文可唱字位。
 - 每次 `run` 结束后，在该 run 目录写下 `lyrics.zh.txt`（演唱文本，含保留的原文）与 `lyrics.md`（原文、译词、字数、预算和状态对照）。
-- 运行记录（`workflow/` 与 `baselines/`）默认进 [.gitignore](.gitignore)，**不入库**；入库的只有 `song.yaml`（人工标注）和代码 / 文档。想临时归档某一次运行，显式 `git add -f <该 run 目录>`。手动编辑导出歌词不会更新 run，再次导出会按 run 重新生成。
+- 运行记录（`workflow/`、`workflow_rag/` 与 `baselines/`）默认进 [.gitignore](.gitignore)，**不入库**；入库的只有 `song.yaml`（人工标注）和代码 / 文档。想临时归档某一次运行，显式 `git add -f <该 run 目录>`。手动编辑导出歌词不会更新 run，再次导出会按 run 重新生成。RAG 的语料副本与本地索引（`data/poetry/`）同样不入库，但索引的 `manifest.json` 例外——它很小，而且是重要血缘。
 
 ## 开发与测试
 
@@ -128,7 +152,7 @@ data/songs/<song_id>/
 
 统一入口是 [baseline/run_baselines.py](baseline/run_baselines.py)，用 `--baseline` 选对照组：
 
-- `one-shot`：用 workflow 的提示词（`prompts/shared.md` + `prompts/b.md`），按段推进、翻译当前段时能看到整首歌词和已经定稿的部分，但**只调一次 B**，没有 A 的意境分析、也没有 C 的检查与返修。它是 workflow 的消融对照。
+- `one-shot`：用 workflow 的提示词（`prompts/shared.md` + `prompts/writer.md`），按段推进、翻译当前段时能看到整首歌词和已经定稿的部分，但**只调一次 writer**，没有 perceiver 的意境分析、也没有 reviewer 的检查与返修。它是 workflow 的消融对照。
 - `paper-original` / `paper-annotated`：论文 Exp.4 的两组对照。前者保留原指令、不传人工标注；后者把计数目标换成人工作答的预算区间，并附分组与保留标记。
 
 三者的输出组织与 workflow 完全一致（`baselines/<名字>/<run_id>/sections/NNN/...`），因此改天加 `workflow_v1` 也只是同一层的兄弟目录。
@@ -141,10 +165,32 @@ python baseline/run_baselines.py --song kotozute --baseline one-shot --client ap
 
 “原样”指论文那组的提示和输入方式；当前模型、采样与清理步骤的差异逐条记在每个 `meta.json` 里，不代表论文整套实验的严格复现。用法、输出和出处见 [baseline/PAPER_BASELINES.md](baseline/PAPER_BASELINES.md)。
 
+### RAG 检索资产
+
+```bash
+# 1. 取语料（约 15M 字，克隆一次即可）
+git clone --depth 1 https://github.com/sheepzh/poetry data/poetry/raw
+
+# 2. 只看切块结果，不联网、不建库
+python scripts/build_poetry_index.py --poetry-root data/poetry/raw --dry-run
+
+# 3. 真建库：嵌入请求发到 GPU 服务器上的 OpenAI 兼容端点
+DUBBING_EMBED_URL=http://<gpu-host>:8080/v1/embeddings \
+  python scripts/build_poetry_index.py --poetry-root data/poetry/raw
+
+# 4. 抽查召回（调 k、试查询写法）
+python -m dubbing poetry-search "末班车的尾灯" --k 4
+
+# 5. 改名之前产生的 run
+python scripts/migrate_run_agents.py --all --dry-run
+```
+
+切块、嵌入、Chroma 的参数与理由见 [docs/rag-workflow.md](docs/rag-workflow.md) 第 7 节；`chromadb` 装在跑流程的那台机器上，语料与索引都不入库。
+
 ### 测试
 
 ```bash
 python -m pytest
 ```
 
-测试使用临时数据、脚本化响应或 mock，不调用真实模型 API。提示词集中在 `prompts/shared.md`、`prompts/a.md`、`prompts/b.md`；歌曲数据与提示词分开维护。数据设计见 [docs/data-model.md](docs/data-model.md)，完整操作说明见 [docs/usage.md](docs/usage.md)。
+测试使用临时数据、脚本化响应或 mock，不调用真实模型 API，也不需要 GPU：嵌入与向量库都用替身，没装 `chromadb` 时相关用例自动跳过。提示词集中在 `prompts/shared.md`、`prompts/perceiver.md`、`prompts/writer.md`、`prompts/mimic.md`；歌曲数据与提示词分开维护。数据设计见 [docs/data-model.md](docs/data-model.md)，完整操作说明见 [docs/usage.md](docs/usage.md)，RAG 方案见 [docs/rag-workflow.md](docs/rag-workflow.md)。

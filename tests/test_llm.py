@@ -306,30 +306,45 @@ def test_temperature_from_env(monkeypatch, key):
 
 def test_temperature_can_differ_per_agent(monkeypatch, key):
     monkeypatch.delenv("DUBBING_TEMPERATURE", raising=False)
-    monkeypatch.delenv("DUBBING_TEMPERATURE_A", raising=False)
-    monkeypatch.delenv("DUBBING_TEMPERATURE_B", raising=False)
+    monkeypatch.delenv("DUBBING_TEMPERATURE_PERCEIVER", raising=False)
+    monkeypatch.delenv("DUBBING_TEMPERATURE_WRITER", raising=False)
     seen = _capture_body(monkeypatch)
-    client = APIClient(temperature_by_agent={"a": 1.2, "b": 0.4})
+    client = APIClient(temperature_by_agent={"perceiver": 1.2, "writer": 0.4})
 
-    client.complete(agent="a", system="s", user="u")
+    client.complete(agent="perceiver", system="s", user="u")
     assert seen["temperature"] == 1.2
     assert client.last_temperature == 1.2
 
-    client.complete(agent="b", system="s", user="u")
+    client.complete(agent="writer", system="s", user="u")
     assert seen["temperature"] == 0.4
 
 
 def test_per_agent_temperature_from_env(monkeypatch, key):
-    monkeypatch.delenv("DUBBING_TEMPERATURE_A", raising=False)
-    monkeypatch.setenv("DUBBING_TEMPERATURE_B", "0.3")
+    monkeypatch.delenv("DUBBING_TEMPERATURE_PERCEIVER", raising=False)
+    monkeypatch.setenv("DUBBING_TEMPERATURE_WRITER", "0.3")
     seen = _capture_body(monkeypatch)
     client = APIClient()
 
-    client.complete(agent="b", system="s", user="u")
+    client.complete(agent="writer", system="s", user="u")
     assert seen["temperature"] == 0.3
 
-    client.complete(agent="a", system="s", user="u")
+    client.complete(agent="perceiver", system="s", user="u")
     assert seen["temperature"] == 0.7  # 没设的用通用值
+
+
+def test_mimic_temperature_defaults_to_1_5(monkeypatch, key):
+    monkeypatch.delenv("DUBBING_TEMPERATURE", raising=False)
+    monkeypatch.delenv("DUBBING_TEMPERATURE_MIMIC", raising=False)
+    seen = _capture_body(monkeypatch)
+    APIClient().complete(agent="mimic", system="s", user="u")
+    assert seen["temperature"] == 1.5
+
+
+def test_mimic_temperature_can_be_overridden(monkeypatch, key):
+    monkeypatch.setenv("DUBBING_TEMPERATURE_MIMIC", "0.9")
+    seen = _capture_body(monkeypatch)
+    APIClient(temperature_by_agent={"mimic": 0.2}).complete(agent="mimic", system="s", user="u")
+    assert seen["temperature"] == 0.2  # 显式传参优先于环境变量
 
 
 def test_extract_json_tolerates_raw_control_characters():

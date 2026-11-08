@@ -4,11 +4,11 @@
 
 | 名字 | 生成提示 | 模型实际收到的数据 | 架构 |
 | --- | --- | --- | --- |
-| `one-shot` | workflow 的 `prompts/shared.md` + `prompts/b.md` | 整首歌的每个乐句（`id` / `ja` / `budget` / `pattern` / `keep_source`）、**已经定稿的其他段译词**、`focus`；`analysis` 传空 | 按段推进、**只调一次 B**；没有 A 的意境分析，没有 C 的检查与返修 |
-| `paper-original` | 论文 §3 Exp.4，`target language` 替换为 Chinese | 当前段落的完整原歌词，一行一句；不传预算、分组、保留标记、标题或 A 分析 | 每段「生成 + 同模型清理格式」，不返修 |
+| `one-shot` | workflow 的 `prompts/shared.md` + `prompts/writer.md` | 整首歌的每个乐句（`id` / `ja` / `budget` / `pattern` / `keep_source`）、**已经定稿的其他段译词**、`focus`；`analysis` 传空 | 按段推进、**只调一次 writer**；没有 perceiver 的意境分析，没有 reviewer 的检查与返修 |
+| `paper-original` | 论文 §3 Exp.4，`target language` 替换为 Chinese | 当前段落的完整原歌词，一行一句；不传预算、分组、保留标记、标题或 perceiver 分析 | 每段「生成 + 同模型清理格式」，不返修 |
 | `paper-annotated` | Exp.4 的人工预算适配版 | 当前段落的 `id`、`ja`、完整 `budget.min/max`、可选 `pattern` 与 `keep_source` | 同上 |
 
-`one-shot` 是 workflow 的消融对照：workflow 在信息上给它的（整首歌、已定稿的部分、人工预算与分组）它都有，唯一的差别是**没有 workflow 架构本身**——不跑 A 的体会，也没有「C 检查 → 带 prev_zh 返修」的闭环。这样两边的差距才指向架构而不是信息量。
+`one-shot` 是 workflow 的消融对照：workflow 在信息上给它的（整首歌、已定稿的部分、人工预算与分组）它都有，唯一的差别是**没有 workflow 架构本身**——不跑 perceiver 的体会，也没有「reviewer 检查 → 带 prev_zh 返修」的闭环。这样两边的差距才指向架构而不是信息量。
 
 两篇论文组保留按原文 mora / syllable 对齐、押韵与主题的要求；标注组把计数目标换成人工作者给出的预算区间，并说明 `pattern` 只是参考、`keep_source` 的句子原样输出。
 
@@ -48,7 +48,7 @@ python baseline/run_baselines.py --all --baseline paper-original --client api
 data/songs/<song_id>/baselines/<名字>/
   latest.json                       # 指向当前 run
   run-<UTC 时间戳>-<8 位随机>/
-    sections/001/B/{request,output,meta}.json          # one-shot
+    sections/001/writer/{request,output,meta}.json          # one-shot
     sections/001/generation/{request,output,meta}.json # paper-*
     sections/001/cleanup/{request,output,meta}.json    # paper-*
     sections/002/...

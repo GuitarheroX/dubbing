@@ -1,16 +1,18 @@
 """人看的渲染：每个 agent 的产物长什么样，以及 runs / show 的数据来源。"""
 
 from dubbing.llm import ScriptedClient
-from dubbing.models import Analysis, Draft, Review
-from dubbing.orchestrator import run_song, workflow_store
+from dubbing.models import Analysis, Draft, LookupResult, PoetryHit, Review
+from dubbing.orchestrator import run_song, store_for
 from dubbing.report import (
     list_runs,
     render_analysis,
     render_draft,
+    render_lookup,
     render_review,
     render_record,
 )
 from dubbing.song import load_song
+from dubbing.view import build_view
 
 from helpers import analysis_json, draft_json, make_song, phrase, scripted, write_song
 
@@ -41,10 +43,45 @@ def test_render_draft_shows_counts_and_self_check():
             ],
         }
     )
-    text = render_draft("r2", SONG, draft)
+    text = render_draft("r2", SONG, draft, agent="mimic_write")
     assert "一二三" in text and "四五六" in text
     assert "↳ 三字整" in text
     assert "3-3" in text
+    assert "mimic" in text
+
+
+def test_render_lookup_shows_query_and_hits():
+    result = LookupResult(
+        section="S1",
+        query_text="一二三\n四五六",
+        k=4,
+        hits=(
+            PoetryHit(
+                chunk_id="顾城_gucheng/一代人#s1",
+                text="黑夜给了我黑色的眼睛",
+                score=0.7123,
+                title="一代人",
+                poet="顾城",
+            ),
+        ),
+        collection="poetry_stanza256_v1",
+        index_id="poetry_stanza256_v1",
+    )
+    text = render_lookup("r2", result)
+    assert "一二三" in text
+    assert "0.7123" in text
+    assert "《一代人》" in text and "顾城" in text
+    assert "黑夜给了我黑色的眼睛" in text
+
+
+def test_render_lookup_handles_empty_and_skipped():
+    empty = render_lookup("r2", LookupResult(section="S1", query_text="q", k=4))
+    assert "命中：无" in empty
+
+    skipped = render_lookup(
+        "r2", LookupResult(section="S1", query_text="", k=4, skipped="empty-query")
+    )
+    assert "empty-query" in skipped
 
 
 def test_render_review_lists_violations_and_changes():
@@ -87,12 +124,12 @@ def _run_pipeline(root):
     )
     client = ScriptedClient(
         {
-            "a": scripted(analysis_json(["S1"])),
-            "b": scripted(draft_json("S1", {"P1": "一二三", "P2": "四五六"})),
+            "perceiver": scripted(analysis_json(["S1"])),
+            "writer": scripted(draft_json("S1", {"P1": "一二三", "P2": "四五六"})),
         }
     )
     outcome = run_song("t", client, root=root)
-    return workflow_store(root, "t"), load_song("t", root=root), outcome
+    return store_for(root, "t"), load_song("t", root=root), outcome
 
 
 def test_list_runs_marks_the_current_one(root):
@@ -104,7 +141,7 @@ def test_list_runs_marks_the_current_one(root):
     assert row["run_id"] == outcome.run_id
     assert row["current"] is True
     assert row["model"] == "scripted"
-    assert row["has_a"] is True
+    assert row["has_perceiver"] is True
     assert (row["passed"], row["total"]) == (1, 1)
     assert row["status"] == "completed"
     assert row["lyrics"] is True
@@ -116,8 +153,8 @@ def test_list_runs_shows_older_runs_too(root):
         "t",
         ScriptedClient(
             {
-                "a": [],
-                "b": scripted(draft_json("S1", {"P1": "四五六", "P2": "七八九"})),
+                "perceiver": [],
+                "writer": scripted(draft_json("S1", {"P1": "四五六", "P2": "七八九"})),
             }
         ),
         root=root,
@@ -130,7 +167,43 @@ def test_list_runs_shows_older_runs_too(root):
 def test_render_record_dispatches_by_agent(root):
     store, song, outcome = _run_pipeline(root)
 
-    assert render_record(song, store, outcome.run_id, "a", None).startswith("A 的体会")
-    assert "B 的译词" in render_record(song, store, outcome.run_id, "b", "S1")
-    assert "C 的检查" in render_record(song, store, outcome.run_id, "c", "S1")
-    assert "还没有 B 产物" in render_record(song, store, "run-nope", "b", "S1")
+    assert render_record(song, store, outcome.run_id, "perceiver", None).startswith("perceiver")
+    assert "writer" in render_record(song, store, outcome.run_id, "writer", "S1")
+    assert "reviewer 的检查" in render_record(song, store, outcome.run_id, "reviewer", "S1")
+    assert "还没有 writer 产物" in render_record(song, store, "run-nope", "writer", "S1")
+
+
+def test_render_record_can_show_the_rag_side(root):
+    """rag 管线的三个 agent 都能单独查看。"""
+    write_song(root, "t", ["S1"], [phrase("P1", "S1", "あああ", 3)])
+    client = ScriptedClient(
+        {
+            "perceiver": scripted(analysis_json(["S1"])),
+            "writer": scripted(draft_json("S1", {"P1": "初版"})),
+            "mimic": scripted(draft_json("S1", {"P1": "一二三"})),
+        }
+    )
+
+    class FakeRetriever:
+        k = 4
+        collection = "c"
+        index_id = "idx"
+
+        def search(self, query_text, *, k=None, exclude=None):
+            return [
+                PoetryHit(
+                    chunk_id="x#s1", text="黑夜给了我黑色的眼睛", score=0.5, title="一代人", poet="顾城"
+                )
+            ]
+
+    outcome = run_song(
+        "t", client, root=root, pipeline="rag", retriever=FakeRetriever(), only={"S1"}
+    )
+    store = store_for(root, "t", "rag")
+    song = load_song("t", root=root)
+
+    assert "初版" in render_record(song, store, outcome.run_id, "writer", "S1")
+    assert "黑夜给了我黑色的眼睛" in render_record(song, store, outcome.run_id, "mimic_lookup", "S1")
+    assert "一二三" in render_record(song, store, outcome.run_id, "mimic_write", "S1")
+    # 装配视图时取的是 mimic_write（rag 管线的最终文本）
+    assert build_view(song, store, outcome.run_id, pipeline="rag").row("P1").sing_text == "一二三"

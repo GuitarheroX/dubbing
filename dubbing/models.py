@@ -3,7 +3,8 @@
 三类东西：
 
 1. L0：``Song`` —— 由人标注，agent 只读。
-2. 产物：``Analysis``（A）/ ``Draft``（B）/ ``Review``（C）。
+2. 产物：``Analysis``（perceiver）/ ``Draft``（writer 与 mimic_write）/ ``Review``（reviewer）/
+   ``LookupResult``（mimic_lookup）。
 3. 视图：``View``（由 ``song.yaml`` + 一个 run 目录装配，不是存储的真相）。
 
 所有 ``from_json`` 只做形状与自洽性校验（字段在不在、类型对不对、
@@ -29,6 +30,8 @@ __all__ = [
     "Violation",
     "Changes",
     "Review",
+    "PoetryHit",
+    "LookupResult",
     "ViewRow",
     "View",
 ]
@@ -580,6 +583,117 @@ class Review:
             "violations": [v.to_json() for v in self.violations],
             "changes": self.changes.to_json(),
             "regressions": list(self.regressions),
+        }
+
+
+# --------------------------------------------------------------------------
+# 检索：mimic 的检索产物（workflow-RAG）
+# --------------------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class PoetryHit:
+    """一条检索到的诗节。``score`` 是余弦相似度（Chroma 距离取反）。"""
+
+    chunk_id: str
+    text: str
+    score: float = 0.0
+    title: str = ""
+    poet: str = ""
+    poem_id: str = ""
+    stanza_idx: int | None = None
+
+    @classmethod
+    def from_json(cls, obj: Any, where: str = "hit") -> "PoetryHit":
+        m = _require_mapping(obj, where)
+        chunk_id = _str(m, "chunk_id", where)
+        at = f"{where}[{chunk_id}]"
+        score = m.get("score", 0.0)
+        if isinstance(score, bool) or not isinstance(score, (int, float)):
+            raise SchemaError(f"{at}.score: 期望数字，得到 {type(score).__name__}")
+        stanza = m.get("stanza_idx")
+        if stanza is not None and (isinstance(stanza, bool) or not isinstance(stanza, int)):
+            raise SchemaError(f"{at}.stanza_idx: 期望整数或 null")
+        return cls(
+            chunk_id=chunk_id,
+            text=_str(m, "text", at),
+            score=float(score),
+            title=_str(m, "title", at, default=""),
+            poet=_str(m, "poet", at, default=""),
+            poem_id=_str(m, "poem_id", at, default=""),
+            stanza_idx=stanza,
+        )
+
+    def to_json(self) -> dict[str, Any]:
+        return {
+            "chunk_id": self.chunk_id,
+            "title": self.title,
+            "poet": self.poet,
+            "poem_id": self.poem_id,
+            "stanza_idx": self.stanza_idx,
+            "score": round(self.score, 6),
+            "text": self.text,
+        }
+
+
+@dataclass(frozen=True)
+class LookupResult:
+    """mimic 检索部分的产物：查询文本、命中诗句与索引血缘。
+
+    ``skipped`` 非空表示这次检索被跳过（当前只有 ``empty-query``：整段没有可译译文，
+    没有东西可以拿去检索）。跳过也要落盘，否则"没检索"和"检索没命中"分不清。
+    """
+
+    section: str
+    query_text: str
+    k: int
+    hits: tuple[PoetryHit, ...] = ()
+    collection: str = ""
+    index_id: str = ""
+    skipped: str = ""
+
+    @property
+    def used(self) -> bool:
+        return bool(self.hits)
+
+    def references(self) -> list[dict[str, Any]]:
+        """给 mimic 写作部分的形态：只留它用得上的字段。"""
+        return [
+            {
+                "chunk_id": h.chunk_id,
+                "title": h.title,
+                "poet": h.poet,
+                "text": h.text,
+                "score": round(h.score, 4),
+            }
+            for h in self.hits
+        ]
+
+    @classmethod
+    def from_json(cls, obj: Any, where: str = "lookup") -> "LookupResult":
+        m = _require_mapping(obj, where)
+        raw_hits = _list(m, "hits", where)
+        return cls(
+            section=_str(m, "section", where),
+            query_text=_str(m, "query_text", where, default=""),
+            k=_int(m, "k", where),
+            hits=tuple(
+                PoetryHit.from_json(h, f"{where}.hits[{i}]") for i, h in enumerate(raw_hits)
+            ),
+            collection=_str(m, "collection", where, default=""),
+            index_id=_str(m, "index_id", where, default=""),
+            skipped=_str(m, "skipped", where, default=""),
+        )
+
+    def to_json(self) -> dict[str, Any]:
+        return {
+            "section": self.section,
+            "query_text": self.query_text,
+            "k": self.k,
+            "collection": self.collection,
+            "index_id": self.index_id,
+            "skipped": self.skipped,
+            "hits": [h.to_json() for h in self.hits],
         }
 
 

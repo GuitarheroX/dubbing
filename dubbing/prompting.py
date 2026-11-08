@@ -1,7 +1,7 @@
 """提示词装载。
 
-A 和 B 共用一个总提示词（``prompts/shared.md``），再各自拼上角色提示词
-（``prompts/a.md`` / ``prompts/b.md``）。拼好的整段文本会算一个 hash 记进
+三个角色共用一个总提示词（``prompts/shared.md``），再各自拼上角色提示词
+（``prompts/perceiver.md`` / ``writer.md`` / ``mimic.md``）。拼好的整段文本会算一个 hash 记进
 ``meta.json``，这样"这版译词是哪版提示词产出的"永远查得到。
 
 注意：凡是"该怎么写""别写什么"的要求都只应出现在这几个文件里，
@@ -16,7 +16,7 @@ from pathlib import Path
 
 __all__ = ["prompts_dir", "load_prompt", "system_for", "prompt_hash", "ROLES"]
 
-ROLES = ("a", "b")
+ROLES = ("perceiver", "writer", "mimic")
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 
 

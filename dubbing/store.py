@@ -1,19 +1,21 @@
 """磁盘布局：**一次运行 = 一个 run 目录**，目录里每个 agent 只有三个文件。
 
-workflow 与各 baseline 共用同一套布局：
+workflow / workflow-RAG 与各 baseline 共用同一套布局：
 
-    <base>/                                  # data/songs/<id>/workflow
+    <base>/                                  # data/songs/<id>/workflow（或 workflow_rag）
       latest.json                            # 只记“当前 run 是哪个”
       run-<UTC 时间戳>-<8 位随机>/
-        A/{request,output,meta}.json         # 整曲层的 agent；只有 workflow 的 A 在这里
-        sections/001/B/{request,output,meta}.json
-        sections/001/C/{request,output,meta}.json
+        perceiver/{request,output,meta}.json # 整曲层的 agent；只有 workflow 系的 perceiver 在这里
+        sections/001/writer/{request,output,meta}.json
+        sections/001/mimic_lookup/{request,output,meta}.json   # 只有 rag 管线有
+        sections/001/mimic_write/{request,output,meta}.json    # 只有 rag 管线有
+        sections/001/reviewer/{request,output,meta}.json
         sections/002/...
         lyrics.zh.txt
         lyrics.md
 
 - ``request.json``：这次调用的完整入参，调用前就落盘，方便“API 还没接”时先检查。
-- ``output.json``：解析后的产物（Analysis / Draft / Review / lines）。
+- ``output.json``：解析后的产物（Analysis / Draft / LookupResult / Review / lines）。
 - ``meta.json``：模型、用量、提示词 hash、轮次等血缘信息；模型原始正文也存在这里
   的 ``raw_response`` 字段，所以解析失败也留得住证据，不必再多一个 ``response.txt``。
 
@@ -156,7 +158,7 @@ class RunStore:
     # -- 单个 agent 的三个文件 -------------------------------------------
 
     def record_dir(self, run_id: str, agent: str, section_index_: int | None = None) -> Path:
-        """``section_index_`` 为 None 表示整曲层的 agent（如 workflow 的 A）。"""
+        """``section_index_`` 为 None 表示整曲层的 agent（如 perceiver）。"""
         root = self.run_dir(run_id)
         if section_index_ is None:
             return root / agent

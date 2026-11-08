@@ -1,4 +1,4 @@
-"""one-shot baseline：workflow 的 B 提示词 + 单次调用，没有 A 分析、没有 C 复查。"""
+"""one-shot baseline：workflow 的 writer 提示词 + 单次调用，没有 perceiver 分析、没有 reviewer 复查。"""
 
 import json
 
@@ -46,7 +46,7 @@ def test_one_shot_runs_section_by_section_and_carries_accepted_texts(tmp_path):
     song = _song()
     client = ScriptedClient(
         {
-            "b": [
+            "writer": [
                 json.dumps(draft_json("V1", {"V1-01": "一二三四五六"}), ensure_ascii=False),
                 json.dumps(draft_json("C1", {"C1-01": "一二三四"}), ensure_ascii=False),
             ]
@@ -55,7 +55,7 @@ def test_one_shot_runs_section_by_section_and_carries_accepted_texts(tmp_path):
     out = tmp_path / "one-shot"
     run_one_shot(song, client, out=out)
 
-    assert [c["agent"] for c in client.calls] == ["b", "b"]
+    assert [c["agent"] for c in client.calls] == ["writer", "writer"]
     first = json.loads(client.calls[0]["user"].split("```json")[1].split("```")[0])
     assert first["focus"] == "V1"
     assert "zh" not in {r["id"]: r for r in first["phrases"]}["C1-01"]
@@ -68,7 +68,7 @@ def test_one_shot_writes_one_run_with_three_files_per_record(tmp_path):
     song = _song()
     client = ScriptedClient(
         {
-            "b": [
+            "writer": [
                 json.dumps(draft_json("V1", {"V1-01": "一二三四五六"}), ensure_ascii=False),
                 json.dumps(draft_json("C1", {"C1-01": "一二三四"}), ensure_ascii=False),
             ]
@@ -81,13 +81,13 @@ def test_one_shot_writes_one_run_with_three_files_per_record(tmp_path):
     run_id = store.latest_run()
     assert run_id is not None
     for index in (1, 2):
-        names = sorted(p.name for p in store.record_dir(run_id, "B", index).iterdir())
+        names = sorted(p.name for p in store.record_dir(run_id, "writer", index).iterdir())
         assert names == ["meta.json", "output.json", "request.json"]
     run_dir = store.run_dir(run_id)
     assert (run_dir / "lyrics.zh.txt").is_file()
     assert (run_dir / "lyrics.md").is_file()
-    # one-shot 不产生 C 记录
-    assert not store.has_output(run_id, "C", 1)
+    # one-shot 不产生 reviewer 记录
+    assert not store.has_output(run_id, "reviewer", 1)
 
     view = build_view(song, store, run_id)
     assert view.row("V1-02").verdict == "skip"
@@ -105,8 +105,8 @@ def test_one_shot_dry_run_writes_requests_only(tmp_path):
     assert client.calls == []  # 一次模型都没调
     previews = list(out.glob("preview-*"))
     assert len(previews) == 1
-    assert (previews[0] / "sections" / "001" / "B" / "request.json").is_file()
-    assert not (previews[0] / "sections" / "001" / "B" / "output.json").exists()
+    assert (previews[0] / "sections" / "001" / "writer" / "request.json").is_file()
+    assert not (previews[0] / "sections" / "001" / "writer" / "output.json").exists()
     # 预览不算一次运行
     assert store.list_runs() == []
     assert store.latest_run() is None

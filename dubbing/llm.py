@@ -12,7 +12,8 @@
 - ``DUBBING_MODEL``      默认 ``deepseek-flash``
 - ``DUBBING_BASE_URL``   默认 ``https://api.deepseek.com/anthropic``
 - ``DUBBING_TEMPERATURE`` 默认 0.7
-- ``DUBBING_TEMPERATURE_A`` / ``DUBBING_TEMPERATURE_B`` 单独给某个 agent 设温度
+- ``DUBBING_TEMPERATURE_PERCEIVER`` / ``DUBBING_TEMPERATURE_WRITER`` / ``DUBBING_TEMPERATURE_MIMIC``
+  单独给某个角色设温度；``mimic`` 的默认值是 1.5（要在字数约束下改写，需要更放开的手脚）
 
 ``complete`` 返回**原始文本**，解析 JSON 由调用方负责（见 ``extract_json``），
 这样模型偶尔多吐一句解释也不会把流程炸掉。
@@ -48,6 +49,9 @@ __all__ = [
 DEFAULT_BASE_URL = "https://api.deepseek.com/anthropic"
 DEFAULT_MODEL = "deepseek-flash"
 DEFAULT_TEMPERATURE = 0.7
+#: 角色默认温度：mimic 要在字数约束下放开手脚改写，默认比通用值高。
+#: perceiver / writer 不在这里设，沿用 DEFAULT_TEMPERATURE（或环境变量）。
+DEFAULT_TEMPERATURE_BY_AGENT = {"mimic": 1.5}
 #: 输出上限。思考块也算在里面，长任务要么调大，要么把任务拆小。
 DEFAULT_MAX_TOKENS = 16000
 _KEY_ENVS = ("DEEPSEEK_API_KEY", "ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN")
@@ -157,11 +161,17 @@ class APIClient:
             temperature = float(os.environ.get("DUBBING_TEMPERATURE") or DEFAULT_TEMPERATURE)
         self.temperature = temperature
 
-        per_agent = dict(temperature_by_agent or {})
-        for agent, var in (("a", "DUBBING_TEMPERATURE_A"), ("b", "DUBBING_TEMPERATURE_B")):
-            if agent not in per_agent and os.environ.get(var):
+        per_agent = dict(DEFAULT_TEMPERATURE_BY_AGENT)
+        for agent, var in (
+            ("perceiver", "DUBBING_TEMPERATURE_PERCEIVER"),
+            ("writer", "DUBBING_TEMPERATURE_WRITER"),
+            ("mimic", "DUBBING_TEMPERATURE_MIMIC"),
+        ):
+            if os.environ.get(var):
                 per_agent[agent] = float(os.environ[var])
-        #: 按 agent 覆盖温度：A 要发散，B 要严谨，两者不该用同一个值
+        # 显式传入的（CLI）优先于环境变量
+        per_agent.update(temperature_by_agent or {})
+        #: 按 agent 覆盖温度：perceiver 要发散，mimic 要在字数约束下改词，两者不该用同一个值
         self.temperature_by_agent = per_agent
         self.timeout = timeout
         self.max_retries = max_retries

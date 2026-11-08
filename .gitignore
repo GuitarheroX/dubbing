@@ -13,9 +13,16 @@ __pycache__/
 # baseline_batches/ 是这些运行的批次汇总，同样不入库。
 # 入库的只有 song.yaml（人工标注）、data/lyrics.txt 和代码 / 文档。
 data/songs/*/workflow/
+data/songs/*/workflow_rag/
 data/songs/*/baselines/
 data/songs/*/preview/
 data/baseline_batches/
+
+# RAG 资产：语料副本、切块中间产物、本地 Chroma 索引都不入库。
+# 只有索引的 manifest.json 值得归档（很小，而且是重要血缘）。
+# 注意用 data/poetry/* 而不是 data/poetry/：整目录被忽略时，下面的 ! 例外不生效。
+data/poetry/*
+!data/poetry/manifest.json
 
 # 本地编辑器配置不进仓库
 .vscode/

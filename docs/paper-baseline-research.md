@@ -35,7 +35,7 @@ Strategies (§3): 1 direct; 2 line alignment; 3 rhythm/rhyme/theme constraints; 
 
 建议保留现有 baseline 为 legacy，另建 paper 策略入口和独立结果目录。主 baseline 选择 Exp.4；Exp.2 做简单对照，Exp.7 做保留整曲上下文的对照，Exp.6 作为可选的两轮节奏修订。选择 Exp.4 是实验成本与约束明确程度的取舍，不是宣称它已被证明最适合本项目。
 
-应区分两组实验：`paper-original` 尽量保留原论文的计数目标和指令；`paper-adapted-budget` 仅先把计数目标换为本项目人工 budget。后续任何提示词、输入字段或清洗变化分别留记录。不要给这些 baseline 接入 A 或 C 的额外修订，否则无法识别 prompting 策略本身的效果。另设 B-only、去 A、去 C 的消融，判断现有流水线的收益来源。
+应区分两组实验：`paper-original` 尽量保留原论文的计数目标和指令；`paper-adapted-budget` 仅先把计数目标换为本项目人工 budget。后续任何提示词、输入字段或清洗变化分别留记录。不要给这些 baseline 接入 perceiver 或 reviewer 的额外修订，否则无法识别 prompting 策略本身的效果。另设 writer-only、去 perceiver、去 reviewer 的消融，判断现有流水线的收益来源。
 
 根据主线程本地审阅，当时有 20 首、421 句，其中 3 句保留原文、418 句可译；10 首已有 `baseline.txt`。当时那个 `baseline/run_baseline.py`（后来已被 `one-shot` 取代，见文末）按全曲一次调用，省略无 budget 句、把区间预算取上界，并在输出多一行时删除首行。它需要增加可靠的逐句对齐和原始输出留存；不能沿用该首行删除规则承担论文实验的清洗。当前 API 封装还需要支持任意消息历史和显式 `top_p`，才能实现逐段同对话实验。
 
@@ -47,4 +47,4 @@ Strategies (§3): 1 direct; 2 line alignment; 3 rhythm/rhyme/theme constraints; 
 
 按后续确定的范围，先实现 Exp.4 两组：保留原生成提示的 `paper-original`，以及传入人工 budget / pattern 的 `paper-annotated`；两组都使用当前项目模型。三组 baseline 现在合并到统一入口 [run_baselines.py](../baseline/run_baselines.py)，输出组织与 workflow 一致（`baselines/<名字>/<run_id>/sections/NNN/...`），详细对应关系与差异见 [baseline 说明](../baseline/PAPER_BASELINES.md)。
 
-原先那个「整曲一次调用」的 legacy baseline 已被 `one-shot` 取代：它改用 workflow 的提示词（`prompts/shared.md` + `prompts/b.md`）、按段推进并带上已经定稿的其他段，只是不跑 A 的意境分析与 C 的检查返修，从而把「架构」单独隔离出来。原样指生成提示，不表示模型、解码参数、消息包装和清洗环节与论文完全一致。其他策略、原论文音系指标与人评流程尚未实现。
+原先那个「整曲一次调用」的 legacy baseline 已被 `one-shot` 取代：它改用 workflow 的提示词（`prompts/shared.md` + `prompts/writer.md`）、按段推进并带上已经定稿的其他段，只是不跑 perceiver 的意境分析与 reviewer 的检查返修，从而把「架构」单独隔离出来。原样指生成提示，不表示模型、解码参数、消息包装和清洗环节与论文完全一致。其他策略、原论文音系指标与人评流程尚未实现。

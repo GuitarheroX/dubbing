@@ -22,8 +22,18 @@ def _isolated_env(monkeypatch):
         "DUBBING_MODEL",
         "DUBBING_BASE_URL",
         "DUBBING_TEMPERATURE",
-        "DUBBING_TEMPERATURE_A",
-        "DUBBING_TEMPERATURE_B",
+        "DUBBING_TEMPERATURE_PERCEIVER",
+        "DUBBING_TEMPERATURE_WRITER",
+        "DUBBING_TEMPERATURE_MIMIC",
+        "DUBBING_PIPELINE",
+        "DUBBING_RAG_DB",
+        "DUBBING_RAG_COLLECTION",
+        "DUBBING_RAG_K",
+        "DUBBING_EMBED_URL",
+        "DUBBING_EMBED_MODEL",
+        "DUBBING_EMBED_API_KEY",
+        "DUBBING_EMBED_LOCAL",
+        "DUBBING_EMBED_DEVICE",
     ):
         monkeypatch.delenv(name, raising=False)
     yield

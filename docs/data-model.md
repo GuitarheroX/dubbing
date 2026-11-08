@@ -6,7 +6,7 @@
 
 **数据只存事实，不存指令。**
 
-原文、分句、音节预算、已经产出的文本，是事实；"该怎么写""别写什么"，属于提示词。要往 schema 里加字段，先问它是不是在替 B 做决定；如果是，就放进 `prompts/`。
+原文、分句、音节预算、已经产出的文本，是事实；"该怎么写""别写什么"，属于提示词。要往 schema 里加字段，先问它是不是在替写词的人做决定；如果是，就放进 `prompts/`。
 
 ## 1. 主干：一张乐句表
 
@@ -18,7 +18,7 @@ song → sections → phrases
 
 全流程共用同一份乐句列表，用 `phrase_id` 对齐：
 
-| phrase_id | section | ja | budget | A 的分析 | zh | C 的检查 |
+| phrase_id | section | ja | budget | perceiver 的分析 | zh | reviewer 的检查 |
 |---|---|---|---|---|---|---|
 | C1-01 | C1 | 沈むように溶けてゆくように | 12 | 按 section | … | pass |
 | C1-05 | C1 | 君の声がする | null | 按 section | 君の声がする | skip |
@@ -47,25 +47,25 @@ phrases:            # 顺序即演唱顺序
 
 字段说明：
 
-- `budget`：人工决定的可唱汉字数，结构固定为 `{min, max}`。**MVP 阶段 `min == max`**，退化为定值；将来放开成区间时，数据结构与 C 的比较逻辑都不变。
-- `budget: null`：不设约束的乐句（纯语气词、拖长音），C 跳过。
+- `budget`：人工决定的可唱汉字数，结构固定为 `{min, max}`。**MVP 阶段 `min == max`**，退化为定值；将来放开成区间时，数据结构与 reviewer 的比较逻辑都不变。
+- `budget: null`：不设约束的乐句（纯语气词、拖长音），reviewer 跳过。
 - `pattern`：这一句在旋律上被切成几段、每段几个音，例如 `[3, 4, 5]` 表示三部分共 12 个音。
   省略即"整句一段"（等价于 `[budget.max]`）。约束：每段必须是正整数、合计必须落在 `budget`
-  区间内、不能和 `keep_source` 同时出现。**目前它只是给 B 看的旋律信息，C 不检查、
-  也不要求译词按它断句**——所以标错了不会让流程失败，但会误导 B。
+  区间内、不能和 `keep_source` 同时出现。**目前它只是给写词的人（writer 与 mimic）看的旋律
+  信息，reviewer 不检查、也不要求译词按它断句**——所以标错了不会让流程失败，但会误导写词的人。
 - `keep_source: true`：本句保留原文，不翻译。见第 6 节。
 - `notes`：给人看的自由文本，agent 不读。
 
-## 3. A：情感与意象
+## 3. perceiver：情感与意象
 
-A 的输入是**原文 + 段落结构，不含 `budget`**。给了预算它就会开始数字数、开始翻译，而这不是 A 的职责。
+perceiver 的输入是**原文 + 段落结构，不含 `budget`**。给了预算它就会开始数字数、开始翻译，而这不是它的职责。
 
 ```json
 {
   "overall": {
     "theme": "…",
     "emotional_arc": "V1 压抑 → C1 爆发 → 结尾自我放逐",
-    "narrative": "（一段故事化的体会，给 B 读语感）",
+    "narrative": "（一段故事化的体会，给写词的人读语感）",
     "tone_words": ["窒息感", "自毁式的温柔"]
   },
   "imagery_pool": [
@@ -77,16 +77,21 @@ A 的输入是**原文 + 段落结构，不含 `budget`**。给了预算它就�
 }
 ```
 
-- 全部是描述，没有一处是给 B 的指令。
+- 全部是描述，没有一处是给写词的人的指令。
 - `sections[].id` 是唯一的结构耦合点，必须取自 `song.yaml`。
 - 整曲一次跑完，不按段跑。
 - 刻意不做的：逐句提示（会把整段语感打碎）、语料检索引用（`references`）、各类"不要…"清单（属于提示词）。
+  这里说的"不做检索"只针对 perceiver：它到现在也不碰任何语料。检索只发生在 rag 管线的 mimic
+  写作阶段（见 [rag-workflow.md](rag-workflow.md)），query 取自 writer 的初版译文，perceiver
+  的产物里依然没有 `references` 这个字段。
 
-## 4. B：生成译词
+## 4. writer：生成译词
+
+两条管线都要 writer：workflow 里它的输出就是最终译词，rag 里它只出**初版**，后面由 mimic 检索与改写（见 4.4）。
 
 ### 4.1 调用粒度
 
-按 **section** 生成。B 能看到全曲（防止前后意象撞车、语气漂移），但只对 `focus` 指定的那一段负责。
+按 **section** 生成。writer 能看到全曲（防止前后意象撞车、语气漂移），但只对 `focus` 指定的那一段负责。rag 的 mimic 写作部分也是这个粒度：它拿到 writer 的初版与检索到的诗句，仍然只对本段负责。
 
 ### 4.2 输入
 
@@ -106,7 +111,7 @@ A 的输入是**原文 + 段落结构，不含 `budget`**。给了预算它就�
 
 三个文本字段的含义严格区分：
 
-| 字段 | 含义 | B 能否改 |
+| 字段 | 含义 | 能否改 |
 |---|---|---|
 | `zh` | 其他段的定稿译文 | 只读参考 |
 | `prev_zh` | 本段上一版译文（首轮无此字段） | 可改 |
@@ -114,12 +119,27 @@ A 的输入是**原文 + 段落结构，不含 `budget`**。给了预算它就�
 
 `prev_zh` 不叫 `zh`，是因为同一段既要给出旧译文、又允许它改；一个字段承担两种含义会误导。
 
-返修轮次还会在消息里（不在 `data` 里）附上一段 C 的结论：哪几句不合格、超几个字、怎么改。
+返修轮次还会在消息里（不在 `data` 里）附上一段 reviewer 的结论：哪几句不合格、超几个字、怎么改。
 数据仍然只放事实，这段反馈是消息文本，不落进 `song.yaml`，也不落进产物。
 
-**返修轮次与首轮的输入形状完全一致**，只是多了若干 `prev_zh`。编排器不需要两套构造逻辑。
+**返修轮次与首轮的输入形状完全一致**，只是多了若干 `prev_zh`。编排器不需要两套构造逻辑；
+rag 里返修只回 mimic 的写作阶段，入参再多一个 `draft`（writer 的初版）与 `references`，
+检索结果复用，不重新检索。
 
 ### 4.3 输出
+
+writer 只要 `{id, zh}`——它被告知"大概几个字"，不要求精确数字数：
+
+```json
+{
+  "section": "C1",
+  "phrases": [
+    {"id": "C1-01", "zh": "像要沉下去 又像要融化"}
+  ]
+}
+```
+
+rag 的 mimic 是负责严格字数的那一个，它的产物多两个字段：
 
 ```json
 {
@@ -131,18 +151,36 @@ A 的输入是**原文 + 段落结构，不含 `budget`**。给了预算它就�
 }
 ```
 
-- `self_check` 不是约束，是让 B 自己数一遍。C 拿自报值与规则值比一次，能提前抓出"以为写了 12 字其实 14 字"。
+- `chars` / `self_check` 都是**可选的**，解析器对两者都宽容：writer 不报不会出错，mimic 报了才用得上。
+- `self_check` 不是约束，是让 mimic 自己数一遍。reviewer 拿自报值与规则值比一次，能提前抓出"以为写了 12 字其实 14 字"。
+- 两条管线的字数约束强度不同：workflow 的 writer 不报字数，严格对齐只剩 reviewer 的返修意见；rag 里由 mimic 的提示词硬约束，返修也只回它。
 - 产物文件只描述结果，不描述血缘（没有 `from_rev` 之类）；血缘在每个 agent 目录的 `meta.json` 里。
 - `keep_source` 的乐句不出现在输出里（见第 6 节）。
 
-## 5. C：规则检查
+### 4.4 mimic：检索 + 改写（rag 管线）
 
-按 section 检查，与 B 对齐。
+mimic 是一个 agent、两个部分，各占一个目录：**检索**（`mimic_lookup`，不调模型）与**写作**
+（`mimic_write`）。
+
+- 检索的入参是 `{section, query_text, k, collection}`；`query_text` 把本段 writer 初版里**可译
+  乐句的译文**按顺序拼成多行。产物 `LookupResult` 记下查询、命中的诗句与分数、`collection` 与
+  `index_id`——"这一版为什么更好"要能归因，所以检索结果和模型产物一样落盘。
+- 写作的入参 = **writer 的入参 + `draft`（writer 初版）+ `references`（检索到的诗句）**，
+  所以编排器复用同一套 `phrases` 渲染。`references` 只读、可用可不用，`draft` 可以大改。
+- 输出形状见 4.3 的第二段。检索只做一次，返修只回写作部分，`references` 不变。
+- 温度默认 **1.5**，比通用的 0.7 松：它要在字数硬约束下改词。
+
+现代诗语料、切块、嵌入与 Chroma 的细节都在 [rag-workflow.md](rag-workflow.md) 第 7 节。
+
+## 5. reviewer：规则检查
+
+按 section 检查，与写词的人对齐：workflow 查 writer 的产物，rag 查 mimic 的写作产物（`mimic_write`），
+两条管线共用同一套规则，`reviewer` 目录同名。
 
 ```json
 {
   "section": "C1",
-  "draft_run": "c1_b.0011",
+  "draft_run": "c1_writer.0011",
   "verdict": "fail",
   "violations": [
     {"phrase_id": "C1-02", "code": "OVER_BUDGET", "expected": [12, 12], "actual": 15,
@@ -158,14 +196,14 @@ A 的输入是**原文 + 段落结构，不含 `budget`**。给了预算它就�
 
 - `code` 用固定枚举，分软硬两档：
   - 硬（计入 `verdict`）：`OVER_BUDGET` / `UNDER_BUDGET` / `EMPTY` / `NON_ZH` / `DUPLICATE`
-  - 软（只提示）：`PUNCT` / `CHAR_MISMATCH`（自报字数与实际不符）
-- `fix` 只活在 C → B 的那一轮消息里，不落进长期数据。
+  - 软（只提示）：`PUNCT` / `CHAR_MISMATCH`（自报字数与实际不符；只有 rag 的 mimic 会自报 `chars`，writer 不报就不会触发）
+- `fix` 只活在 reviewer → 写词人的那一轮消息里，不落进长期数据。
 - `changes.rewritten` 包含原本合格的句子，只供人看，**不算违规**。
 - `regressions`：上一轮合格、本轮不合格。它不产生新规则，但会影响 `verdict`——否则返修会让质量缓慢下滑而无人察觉。
 
 ### 5.1 漂移：不约束，但可见
 
-B 修改有问题的句子时，顺手微调相邻句子可能更好，因此**不硬性要求**已有的合格译文保持原样。代价是段级重跑可能引入新问题，所以 C 要做增量比较，输入同时拿到「当前 draft」和「上一版 draft + 上一版 report」。
+写词的人修改有问题的句子时，顺手微调相邻句子可能更好，因此**不硬性要求**已有的合格译文保持原样。代价是段级重跑可能引入新问题，所以 reviewer 要做增量比较，输入同时拿到「当前 draft」和「上一版 draft + 上一版 report」。
 
 ## 6. `keep_source`：保留原文的乐句
 
@@ -174,12 +212,12 @@ B 修改有问题的句子时，顺手微调相邻句子可能更好，因此**�
 规则：
 
 1. `keep_source: true` 的乐句，`budget` 必须为 `null`。同时填了两者是自相矛盾的标注，加载 `song.yaml` 时**直接报错**——这类矛盾几乎总是复制粘贴残留，让它当场暴露比悄悄忽略更省事。
-2. **不由 B 产出**。B 在输入里能看到这句原文（需要它才能写出衔接），但它不是产出对象。
+2. **不由写词的人产出**。写词的人（writer 与 mimic）在输入里能看到这句原文（需要它才能写出衔接），但它不是产出对象。
 3. 装配视图时 `zh := ja`。
-4. C 跳过该句，`verdict` 记为 `skip`。
-5. 解析 B 的输出时，若出现这些 id，丢弃并记 warning。这是解析层的兜底，不是 C 的规则。
+4. reviewer 跳过该句，`verdict` 记为 `skip`。
+5. 解析写词人的输出时，若出现这些 id，丢弃并记 warning。这是解析层的兜底，不是 reviewer 的规则。
 
-这样"不要改动"是结构性的保证——B 根本交不出这一行——不需要写进提示词去请求 B 遵守。
+这样"不要改动"是结构性的保证——写词的人根本交不出这一行——不需要写进提示词去请求谁遵守。
 
 ## 7. 视图
 
@@ -194,36 +232,48 @@ B 修改有问题的句子时，顺手微调相邻句子可能更好，因此**�
 
 ## 8. 文件组织
 
-每首歌目录下只有 `song.yaml` 和两个并列的子目录。workflow 与各 baseline **共用同一套 run 目录布局**，将来做 `workflow_v1` 也只是同层的兄弟目录。
+每首歌目录下只有 `song.yaml` 和三个并列的子目录。两条管线与各 baseline **共用同一套 run 目录布局**，将来做 `workflow_v1` 也只是同层的兄弟目录。
 
 ```
 data/songs/<song_id>/
   song.yaml                       # L0，人工，agent 只读
-  workflow/                       # 我们自己的 A→B→C 流水线
+  workflow/                       # perceiver → writer → reviewer
     latest.json                   # 只回答“现在看哪一次”
     run-<UTC 时间戳>-<8 位随机>/
-      A/{request,output,meta}.json                    # A 整曲一次
-      sections/001/B/{request,output,meta}.json       # 这一段最终一轮
-      sections/001/C/{request,output,meta}.json
+      perceiver/{request,output,meta}.json              # 整曲一次
+      sections/001/writer/{request,output,meta}.json     # 这一段最终一轮
+      sections/001/reviewer/{request,output,meta}.json
+      sections/002/...
+      lyrics.zh.txt / lyrics.md
+  workflow_rag/                   # perceiver → writer → mimic（检索 + 改写）→ reviewer
+    latest.json
+    run-<UTC 时间戳>-<8 位随机>/
+      perceiver/{request,output,meta}.json              # 整曲一次
+      sections/001/writer/{request,output,meta}.json     # 初版
+      sections/001/mimic_lookup/{request,output,meta}.json   # 检索参数与命中，不调模型
+      sections/001/mimic_write/{request,output,meta}.json    # 这一段最终一轮
+      sections/001/reviewer/{request,output,meta}.json
       sections/002/...
       lyrics.zh.txt / lyrics.md
   baselines/                      # 对照组，结构完全一样
-    one-shot/                     # workflow 提示词 + 单次调用，无 A/C
+    one-shot/                     # workflow 提示词 + 单次调用，无 perceiver/reviewer
     paper-original/
     paper-annotated/
 
 prompts/
-  shared.md                       # A / B 共用的总提示词
-  a.md
-  b.md
+  shared.md                       # perceiver / writer / mimic 共用的总提示词
+  perceiver.md
+  writer.md
+  mimic.md                        # 严格字数 + 怎么用检索到的诗句
 
-corpus/                           # 预留：A 的华语歌词参考语料
+corpus/                           # 预留：给写词人的华语歌词参考语料（现役检索走 data/poetry/）
 evals/                            # 预留：真人评分
 ```
 
 - **一次运行 = 一个 run 目录**，重跑新建目录，旧的不动。
-- 每个 agent 目录固定三个文件：`request.json`（调用前就落盘）、`output.json`（解析后的产物）、`meta.json`（血缘；模型原始正文在 `raw_response` 字段里）。
-- `sections/NNN` 的 `NNN` 是段落在 `song.yaml` 里的 1 起序号；段落 id 本身在 `output.json`（B 的 Draft、C 的 Review 都带 `section`）里。
+- 每个 agent 目录固定三个文件：`request.json`（调用前就落盘）、`output.json`（解析后的产物）、`meta.json`（血缘；模型原始正文在 `raw_response` 字段里）。`mimic_lookup` 不调模型，`meta.json` 里记的是检索参数与 `index_id`。
+- `sections/NNN` 的 `NNN` 是段落在 `song.yaml` 里的 1 起序号；段落 id 本身在 `output.json`（writer 与 mimic 的 Draft、reviewer 的 Review 都带 `section`）里。
+- **最终文本在哪个目录取决于管线**：workflow 读 `writer`，rag 读 `mimic_write`；reviewer 两条管线同名。`view` / `export` / `runs` 只需要一个 `pipeline` 参数。
 - 多轮返修只保留最终一轮；返修经过仍能从该轮 request 的反馈文本与 `prev_zh` 看到。
 
 不用"一首歌一个大 JSON"：人工标注与 agent 产物混写会带来覆盖风险和 diff 噪声，也无法并行跑多个 run 对比。
@@ -231,10 +281,10 @@ evals/                            # 预留：真人评分
 ### 8.1 `latest.json`
 
 ```json
-{"run": "run-20261105T124213284041Z-6a094698", "updated_at": "…", "song": "kotozute", "status": "completed"}
+{"run": "run-20261105T124213284041Z-6a094698", "updated_at": "…", "song": "kotozute", "pipeline": "workflow", "status": "completed"}
 ```
 
-它不参与拼装视图——一个 run 目录自带全部产物，`view` / `export` / `runs` 只是默认看它指向的那一次。回滚就是改这个指针（或直接 `--run <id>`）。
+它不参与拼装视图——一个 run 目录自带全部产物，`view` / `export` / `runs` 只是默认看它指向的那一次。两条管线各有自己的 `latest.json`，`pipeline` 字段再记一遍它是谁。回滚就是改这个指针（或直接 `--run <id>`）。
 
 ### 8.2 与 LangGraph 的对应
 
@@ -244,14 +294,14 @@ evals/                            # 预留：真人评分
 
 做：
 
-- `song.yaml` + 一个 workflow run 目录（A 整曲输出 + B 段级生成 + C 的两条规则 `OVER_BUDGET` / `UNDER_BUDGET`）
-- `keep_source`（含在 MVP 里，因为它会影响 B 的输入契约，事后加要改契约结构）
-- `pattern`（同样影响 B 的输入契约，先只透传、不约束）
+- `song.yaml` + 一个 workflow run 目录（perceiver 整曲输出 + writer 段级生成 + reviewer 的两条规则 `OVER_BUDGET` / `UNDER_BUDGET`）
+- `keep_source`（含在 MVP 里，因为它会影响写词人的输入契约，事后加要改契约结构）
+- `pattern`（同样影响写词人的输入契约，先只透传、不约束）
 
 暂不做（加进去不改变结构）：
 
 - `budget` 放开成真正的区间（MVP 里 `min == max`）
 - 跨行借还字数（`borrow`）
 - `pattern` 的强制检查（现在只透传给人看）
-- A 的语料检索（`references`）
+- perceiver 的语料检索（`references`）——检索只发生在 rag 管线的 mimic 写作阶段，见 [rag-workflow.md](rag-workflow.md)
 - 原文 ↔ 译文的行内词对齐
