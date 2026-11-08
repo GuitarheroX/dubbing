@@ -11,8 +11,10 @@ dependencies = ["pyyaml>=6", "requests>=2.31"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
-#: workflow-RAG 才需要：本地 Chroma 向量库（嵌入服务在 GPU 服务器上，单独部署）
+#: workflow-RAG 才需要：本地 Chroma 向量库
 rag = ["chromadb>=1.0"]
+#: 需要在本机或服务器上跑嵌入时才装（会带上 torch）；只走 HTTP 端点或用现成向量文件时不用装
+embed = ["sentence-transformers>=2.2"]
 
 [project.scripts]
 dubbing = "dubbing.cli:main"

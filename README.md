@@ -37,14 +37,14 @@
 - 模型调用已接通 DeepSeek 的 Anthropic 兼容端点（`dubbing/llm.py`）。默认使用 `pending` 客户端，在需要模型调用的位置保存请求并暂停；配置 API Key 后加 `--client api` 才真正调用，也可以通过 `DUBBING_CLIENT` 环境变量指定客户端。
 - `final_20_song` 分支已收录 **20 首歌曲的 21 个数据版本，共 432 个乐句**。其中 `love-2000` 和 `love_2000` 是 `LOVE 2000` 的两套分句与预算版本，均予以保留。
 - 本分支同时保存各首歌的译词与运行记录，组织方式见下面的「目录布局」以及 [docs/data-model.md](docs/data-model.md)。当前快照的 432 个乐句均为 `pass` 或 `skip`；这只表示通过程序规则，最终仍需真人试唱评判。
-- 跑 rag 管线前要先建索引：`python scripts/build_poetry_index.py --poetry-root data/poetry/raw`（语料先 `git clone https://github.com/sheepzh/poetry data/poetry/raw`）。`chromadb` 是可选依赖：`python -m pip install -e ".[rag]"`。
+- 跑 rag 管线前要先建索引（本机切块 → 服务器出向量 → 本机灌库，见下面「RAG 检索资产」）。`chromadb` 是可选依赖：`python -m pip install -e ".[rag]"`；查询期在本机跑嵌入时再加 `.[embed]`。
 - 改名之前产生的 run 目录（`A/`、`B/`、`C/`）用 `python scripts/migrate_run_agents.py --all` 一次性改到新名。
 - 批量导入标注文本：`python scripts/import_lyrics.py data/lyrics.txt`，
   输入格式与选项见 [docs/usage.md](docs/usage.md)。
 
 ## 快速开始
 
-需要 Python ≥ 3.11，运行依赖为 PyYAML、Requests（跑 workflow-RAG 还要 `.[rag]`，即 chromadb）。建议从源码以可编辑方式安装，并在项目根目录执行命令，以便读取歌曲和提示词文件。
+需要 Python ≥ 3.11，运行依赖为 PyYAML、Requests（跑 workflow-RAG 还要 `.[rag]`，即 chromadb；在本机跑嵌入再加 `.[embed]`）。建议从源码以可编辑方式安装，并在项目根目录执行命令，以便读取歌曲和提示词文件。
 
 ```bash
 python -m venv .venv
@@ -167,24 +167,40 @@ python baseline/run_baselines.py --song kotozute --baseline one-shot --client ap
 
 ### RAG 检索资产
 
+索引分两台机器建：**本机切块 → 服务器用 GPU 出向量 → 本机灌进 Chroma**。本机不需要 GPU，
+也不需要起任何嵌入服务。
+
 ```bash
 # 1. 取语料（约 15M 字，克隆一次即可）
 git clone --depth 1 https://github.com/sheepzh/poetry data/poetry/raw
 
-# 2. 只看切块结果，不联网、不建库
+# 2. 本机切块：只看统计，不联网、不建库（顺手写出 data/poetry/chunks.jsonl）
 python scripts/build_poetry_index.py --poetry-root data/poetry/raw --dry-run
 
-# 3. 真建库：嵌入请求发到 GPU 服务器上的 OpenAI 兼容端点
-DUBBING_EMBED_URL=http://<gpu-host>:8080/v1/embeddings \
-  python scripts/build_poetry_index.py --poetry-root data/poetry/raw
+# 3. 上传：仓库（脚本要用）+ chunks.jsonl
+rsync -a --exclude data --exclude .git ./ user@host:~/dubbing/
+rsync -a data/poetry/chunks.jsonl user@host:~/dubbing/data/poetry/
 
-# 4. 抽查召回（调 k、试查询写法）
-python -m dubbing poetry-search "末班车的尾灯" --k 4
+# 4. 服务器：一键配环境 + 用 GPU 编码（先 --limit 2000 验证再全量）
+ssh user@host 'cd ~/dubbing && bash scripts/server_embed.sh \
+    --chunks data/poetry/chunks.jsonl --out data/poetry/vectors.npy --device cuda --batch 64'
 
-# 5. 改名之前产生的 run
+# 5. 下载向量，本机灌库；--verify 5 会顺带核对两边算出来的向量是否一致
+rsync -a user@host:~/dubbing/data/poetry/vectors.npy  data/poetry/
+rsync -a user@host:~/dubbing/data/poetry/vectors.json data/poetry/
+python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --verify 5 --reset
+
+# 6. 抽查召回（查询期也要同一个模型：本机装 .[embed] 并设 DUBBING_EMBED_LOCAL=1）
+pip install -e ".[embed]"
+DUBBING_EMBED_LOCAL=1 python -m dubbing poetry-search "末班车的尾灯" --k 4
+
+# 7. 改名之前产生的 run
 python scripts/migrate_run_agents.py --all --dry-run
 ```
 
+目录组织、参数与理由见 [docs/rag-workflow.md](docs/rag-workflow.md) 第 7 节。要点：`vectors.json`
+里记着 `chunks.jsonl` 的 sha1，换过切块参数却没重跑向量会当场报错；`--dtype float16` 能让传输文件小一半。
+语料、中间产物与索引都不入库，只有 `data/poetry/manifest.json` 例外。
 切块、嵌入、Chroma 的参数与理由见 [docs/rag-workflow.md](docs/rag-workflow.md) 第 7 节；`chromadb` 装在跑流程的那台机器上，语料与索引都不入库。
 
 ### 测试

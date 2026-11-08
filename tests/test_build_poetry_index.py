@@ -1,6 +1,7 @@
 """建库脚本：语料 → 切块 → （可选的）嵌入与本地 Chroma。
 
-嵌入与向量库都用替身，不联网；没装 chromadb 时只跑 --dry-run 那条。
+两条路都测：在线（边切边调嵌入端点）与离线（服务器给向量，本机只灌库）。
+嵌入、向量与向量库都用替身，不联网；没装 chromadb 时只跑 --dry-run 与 --vectors 的报错分支。
 """
 
 import importlib.util
@@ -208,3 +209,260 @@ def test_long_stanza_is_split_during_the_build(tmp_path):
     assert [r["part_idx"] for r in rows] == [1, 2, 3]
     assert all(r["n_parts"] == 3 for r in rows)
     assert all(r["tokens"] <= 25 for r in rows)
+
+
+# -- 离线向量：服务器给向量，本机只灌库 ----------------------------------
+
+
+def _write_chunks_jsonl(path: Path, count: int) -> Path:
+    """手写一份 chunks.jsonl（字段与 Chunk 一致），免得依赖切块细节。"""
+    with path.open("w", encoding="utf-8") as fh:
+        for i in range(1, count + 1):
+            row = {
+                "chunk_id": f"p_x/诗#{i}",
+                "poem_id": "p_x/诗",
+                "poet": "p",
+                "title": "诗",
+                "date": "",
+                "stanza_idx": i,
+                "part_idx": 1,
+                "n_parts": 1,
+                "text": f"第{i}节诗句",
+                "chars": 5,
+                "tokens": 5,
+            }
+            fh.write(json.dumps(row, ensure_ascii=False) + "\n")
+    return path
+
+
+def _make_vectors_file(chunks: Path, vectors_path: Path, rows, *, dim, model="stub-model", sha=None):
+    from dubbing.rag.vectors import VectorMeta, file_sha1, save_vectors
+
+    meta = VectorMeta(
+        model=model,
+        dim=dim,
+        count=len(rows),
+        dtype="float32",
+        chunks_file=str(chunks),
+        chunks_sha1=sha if sha is not None else file_sha1(chunks),
+    )
+    save_vectors(vectors_path, rows, meta)
+    return vectors_path
+
+
+def test_offline_vectors_are_ingested_without_any_embedding_service(tmp_path):
+    pytest.importorskip("chromadb")
+    from dubbing.rag.store import ChromaStore, read_manifest
+
+    chunks = _write_chunks_jsonl(tmp_path / "chunks.jsonl", 4)
+    vectors_path = _make_vectors_file(
+        chunks,
+        tmp_path / "vectors.npy",
+        [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0], [1.0, 0.0, 0.0]],
+        dim=3,
+    )
+    out = tmp_path / "index"
+
+    assert (
+        mod.main(
+            [
+                "--vectors",
+                str(vectors_path),
+                "--chunks",
+                str(chunks),
+                "--out",
+                str(out),
+                "--quiet",
+            ]
+        )
+        == 0
+    )
+
+    store = ChromaStore(out / "chroma", "poetry_stanza256_v1")
+    assert store.count() == 4
+    hit = store.query([1.0, 0.0, 0.0], 1)[0]
+    assert hit.chunk_id in {"p_x/诗#1", "p_x/诗#4"}   # 余弦相同，取到哪条都算对
+    assert hit.title == "诗" and hit.poet == "p"
+
+    manifest = read_manifest(out / "chroma")
+    assert manifest["source"] == "vectors"
+    assert manifest["index_id"] == "poetry_stanza256_stub-model_v1"
+    assert manifest["model"] == {
+        "name": "stub-model",
+        "dim": 3,
+        "pooling": "cls",
+        "normalize": True,
+        "instruction": None,
+    }
+    assert manifest["corpus"]["chunks"] == 4
+    assert manifest["corpus"]["sha1"]
+    assert manifest["chunking"]["tokenizer"] == "unknown(offline)"
+    assert manifest["stored"] == 4
+
+
+def test_offline_vectors_respect_batch_size(tmp_path):
+    pytest.importorskip("chromadb")
+    from dubbing.rag.store import ChromaStore
+
+    chunks = _write_chunks_jsonl(tmp_path / "chunks.jsonl", 5)
+    vectors_path = _make_vectors_file(
+        chunks,
+        tmp_path / "vectors.npy",
+        [[float(i), 0.0] for i in range(1, 6)],
+        dim=2,
+    )
+    out = tmp_path / "index"
+
+    assert (
+        mod.main(
+            [
+                "--vectors",
+                str(vectors_path),
+                "--chunks",
+                str(chunks),
+                "--out",
+                str(out),
+                "--batch",
+                "2",
+                "--quiet",
+            ]
+        )
+        == 0
+    )
+    assert ChromaStore(out / "chroma", "poetry_stanza256_v1").count() == 5
+
+
+def test_offline_mode_reports_a_mismatched_chunks_file(tmp_path, capsys):
+    from dubbing.rag.store import ChromaStore
+
+    chunks = _write_chunks_jsonl(tmp_path / "chunks.jsonl", 3)
+    vectors_path = _make_vectors_file(
+        chunks, tmp_path / "vectors.npy", [[1.0, 0.0], [0.0, 1.0], [1.0, 0.0]], dim=2
+    )
+    # 切块文件被改过（行数不变，内容变了）→ sha1 对不上
+    text = chunks.read_text(encoding="utf-8").replace("第1节诗句", "改过的第一节")
+    chunks.write_text(text, encoding="utf-8")
+
+    out = tmp_path / "index"
+    code = mod.main(
+        ["--vectors", str(vectors_path), "--chunks", str(chunks), "--out", str(out), "--quiet"]
+    )
+
+    assert code == 1
+    err = capsys.readouterr().err
+    assert "向量文件不可用" in err
+    assert "对不上" in err
+    # 校验没过就不该写进任何向量（Chroma 目录会被建出来，但 collection 是空的）
+    assert ChromaStore(out / "chroma", "poetry_stanza256_v1").count() == 0
+
+
+def test_offline_mode_reports_a_count_mismatch(tmp_path, capsys):
+    chunks = _write_chunks_jsonl(tmp_path / "chunks.jsonl", 3)
+    vectors_path = _make_vectors_file(
+        chunks, tmp_path / "vectors.npy", [[1.0, 0.0], [0.0, 1.0]], dim=2
+    )  # 少了 1 条
+    out = tmp_path / "index"
+
+    assert (
+        mod.main(
+            ["--vectors", str(vectors_path), "--chunks", str(chunks), "--out", str(out), "--quiet"]
+        )
+        == 1
+    )
+    assert "向量文件不可用" in capsys.readouterr().err
+
+
+def test_offline_mode_needs_the_chunks_file(tmp_path, capsys):
+    vectors_path = tmp_path / "vectors.npy"
+    vectors_path.write_bytes(b"")
+    assert (
+        mod.main(
+            [
+                "--vectors",
+                str(vectors_path),
+                "--chunks",
+                str(tmp_path / "nope.jsonl"),
+                "--out",
+                str(tmp_path / "index"),
+            ]
+        )
+        == 1
+    )
+    assert "找不到切块文件" in capsys.readouterr().err
+
+
+def test_offline_mode_rejects_dry_run(tmp_path, capsys):
+    assert mod.main(["--vectors", str(tmp_path / "v.npy"), "--dry-run"]) == 2
+    assert "--dry-run 是给切块用的" in capsys.readouterr().err
+
+
+def test_verify_accepts_matching_vectors(tmp_path, monkeypatch, capsys):
+    pytest.importorskip("chromadb")
+    chunks = _write_chunks_jsonl(tmp_path / "chunks.jsonl", 3)
+    vectors_path = _make_vectors_file(
+        chunks, tmp_path / "vectors.npy", [[1.0, 0.0, 0.0]] * 3, dim=3
+    )
+
+    class FakeLocal:
+        def __init__(self, model, device=None, batch_size=64):
+            self.model = model
+
+        def embed(self, texts):
+            return [[1.0, 0.0, 0.0] for _ in texts]
+
+    monkeypatch.setattr("dubbing.rag.embedding.LocalEmbeddingClient", FakeLocal)
+    out = tmp_path / "index"
+
+    code = mod.main(
+        [
+            "--vectors",
+            str(vectors_path),
+            "--chunks",
+            str(chunks),
+            "--out",
+            str(out),
+            "--verify",
+            "2",
+            "--quiet",
+        ]
+    )
+
+    assert code == 0
+    err = capsys.readouterr().err
+    assert "抽查 2 条" in err
+    assert "一致" in err
+
+
+def test_verify_flags_inconsistent_vectors(tmp_path, monkeypatch, capsys):
+    pytest.importorskip("chromadb")
+    chunks = _write_chunks_jsonl(tmp_path / "chunks.jsonl", 3)
+    vectors_path = _make_vectors_file(
+        chunks, tmp_path / "vectors.npy", [[1.0, 0.0, 0.0]] * 3, dim=3
+    )
+
+    class WrongLocal:
+        def __init__(self, model, device=None, batch_size=64):
+            self.model = model
+
+        def embed(self, texts):
+            return [[0.0, 1.0, 0.0] for _ in texts]   # 与文件里的向量完全不同
+
+    monkeypatch.setattr("dubbing.rag.embedding.LocalEmbeddingClient", WrongLocal)
+    out = tmp_path / "index"
+
+    code = mod.main(
+        [
+            "--vectors",
+            str(vectors_path),
+            "--chunks",
+            str(chunks),
+            "--out",
+            str(out),
+            "--verify",
+            "1",
+            "--quiet",
+        ]
+    )
+
+    assert code == 1
+    assert "警告" in capsys.readouterr().err

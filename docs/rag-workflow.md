@@ -324,46 +324,97 @@ mimic（`references[].title` 已经有这一项）。
 让"命中一个分块"能认出它属于同一节。实测 stanza 多在 40 token 上下，这个降级路径大部分时候不会触发，
 但必须写——否则遇到一部长诗就会静默丢内容。
 
-### 7.4 嵌入（GPU 服务器）
+### 7.4 向量怎么算：两台机器分工
 
-- **服务形态**：在服务器上部署 `bge-large-zh-v1.5`，推荐 `text-embeddings-inference`（TEI），
-  它暴露 OpenAI 兼容的 `/v1/embeddings`，自带动态批处理与 fp16；它同时服务建库和查询期，路径统一。
-  备选：vLLM 的 embedding 模式，或一个 FlagEmbedding 的 FastAPI 小脚本。
-- **参数**：CLS pooling + **L2 normalize**；**不使用 instruction**——bge v1.5 的设计目标就是
-  "无需 instruction 也能检索"（[BGE 文档](https://bge-model.com/bge/bge_v1_v1.5.html)）。
-  如果将来要加，规则是**只给查询加、chunk 不加**，并且写进 manifest。
-- **离线建库**：批量 128–256 条一次请求。按 15M 字估算，chunk 数大约在 **30–40 万**量级，
-  单张 GPU 上是分钟级，成本可以忽略。
-- **查询期**：同一模型、同一归一化 → 向量与建库时一致。因此查询既可以走服务器 HTTP，
-  也可以本地 CPU（每段 1 条查询，几百毫秒），后者让流程自包含。
+本机**不需要 GPU，也不需要起任何嵌入服务**。向量在服务器上算好，用文件来回传：
 
-### 7.5 Chroma（本地部署）
+```text
+本机                                   服务器
+────                                   ────
+① 切块 → chunks.jsonl
+   仓库 + chunks.jsonl  ──上传──▶
+                                       ② scripts/server_embed.sh
+                                          （配环境 + GPU 编码）
+                     ◀──下载──         vectors.npy + vectors.json
+③ build_poetry_index.py --vectors … → 本地 Chroma
+```
+
+目录组织（`--out` 默认 `data/poetry`）：
+
+| 文件 | 谁产出 | 去向 |
+|---|---|---|
+| `raw/` | 本机 `git clone` 语料 | 只在服务器上需要一起传 |
+| `chunks.jsonl` | 本机切块（`--dry-run` 也会写） | **上传**给服务器 |
+| `vectors.npy` | 服务器 `embed_poetry.py` | **下载**回本机 |
+| `vectors.json` | 同上，配对说明 | 与 `.npy` 一起下载 |
+| `chroma/` | 本机灌库 | 本机 |
+| `manifest.json` | 本机灌库 | 本机，建议入库 |
+
+```bash
+# 上行：仓库（脚本要用）+ 切块文件
+rsync -a --exclude data --exclude .git ./ user@host:~/dubbing/
+rsync -a data/poetry/chunks.jsonl user@host:~/dubbing/data/poetry/
+
+# 服务器：配环境 + 编码（先 --limit 2000 验证，再全量）
+ssh user@host
+cd ~/dubbing
+bash scripts/server_embed.sh --chunks data/poetry/chunks.jsonl --limit 2000 \
+    --out data/poetry/vectors.head.npy --device cuda
+bash scripts/server_embed.sh --chunks data/poetry/chunks.jsonl \
+    --out data/poetry/vectors.npy --device cuda --batch 64
+
+# 下行
+rsync -a user@host:~/dubbing/data/poetry/vectors.npy  data/poetry/
+rsync -a user@host:~/dubbing/data/poetry/vectors.json data/poetry/
+
+# 本机灌库 + 抽查 5 条（确认服务器与本机算出来的向量一致）
+python scripts/build_poetry_index.py --vectors data/poetry/vectors.npy --verify 5 --reset
+```
+
+几个要点：
+
+- **`vectors.json` 里记着 `chunks.jsonl` 的 sha1**，灌库时会核对。换过切块参数却没重跑向量，
+  会当场报错而不是悄悄用错位的向量——这是这条分工里最容易犯的错。
+- **`--dtype float16`** 让文件小一半（26 万条 × 1024 维：fp32 约 1.07 GB，fp16 约 535 MB）。
+  Chroma 用 cosine 距离，排序不受 dtype 影响。
+- **`--verify N` 值得跑一次**：它用本机现算的向量和文件里的比余弦相似度。两边模型或池化不一致时
+  检索会静默变差，这是唯一能提前发现的地方。
+- 服务器上需要 `sentence-transformers`（`server_embed.sh` 会装）；模型默认让它在第一次运行时下载，
+  国内网络可以 `--mirror https://hf-mirror.com`，离线机器可以先把模型目录拷过去再用 `--model /path`。
+- 实测：26 万条 × 1024 维 fp16，本机灌库约 5 分钟（约 860 块/秒）。
+
+**备选**：本机能连到 GPU 服务器时，也可以不起 TEI/vLLM 之外的任何东西——不给 `--vectors`，
+直接让脚本边切边调一个 OpenAI 兼容的 `/v1/embeddings`（`DUBBING_EMBED_URL=…`）。两种模式的索引没有区别。
+
+### 7.5 查询期也要同一个模型
+
+建库的向量来自服务器，但**查询**（每段 1 次）是在本机发生的，必须用同一个模型：
+
+- 本机装 `sentence-transformers`（`pip install -e ".[embed]"`），设 `DUBBING_EMBED_LOCAL=1`；
+- `DUBBING_EMBED_MODEL` 指向 HF 名或模型目录，Apple 芯片可以 `DUBBING_EMBED_DEVICE=mps`；
+- 每首歌十几条短查询，CPU 也够（几百毫秒一条）。
+
+参数上一律 **CLS pooling + L2 normalize**，**不使用 instruction**——bge v1.5 的设计目标就是
+"无需 instruction 也能检索"（[BGE 文档](https://bge-model.com/bge/bge_v1_v1.5.html)）。
+真要加 instruction，规则是**只给查询加、chunk 不加**，并且写进 manifest。
+
+### 7.6 Chroma（本地部署）
 
 - **形态**：`chromadb.PersistentClient`，**本地目录**，默认 `data/poetry/chroma`。不启服务端、
   不用 HttpClient。
-- **建库与查询都在本地**：建库脚本只需要把嵌入请求发到 GPU 服务器，向量与索引都写在本地磁盘，
-  因此索引天然就在跑流程的那台机器上。想先在服务器上建也行，`chroma/` 目录是 SQLite + HNSW 文件，
-  整个目录拷过来即可。
-- **内存**：40 万 × 1024 维 float32 ≈ **1.6 GB 向量**，加 HNSW 图约 2–3 GB 常驻；本地进程
-  读写并发不友好，但本方案只有"建库时单进程写 + 跑流程时单进程只读"，不会冲突。
-  磁盘紧张或内存吃紧时先用 `--limit 20000` 建一个子集索引。
+- **内存**：26 万 × 1024 维，索引常驻约 1–2 GB。磁盘/内存紧张时用 `--limit` 建子集索引。
+  灌库走 `mmap`，本机内存占用与向量文件大小无关。
 - **Collection**：`metadata={"hnsw:space": "cosine"}`；
   **`embedding_function=None` 并显式传入向量**——Chroma 默认会加载一个英文 MiniLM 帮你嵌，
   这是最经典的翻车点。
-- **id**：`<诗人拼音>/<诗slug>#s<节号>#p<分块号>`，人可读、可反查。
+- **id**：`<诗人目录>/<诗slug>#s<节号>#p<分块号>`，人可读、可反查。
 - **metadata 只放标量**（Chroma 的限制）；列表要存就序列化成字符串。
-- **依赖**：`chromadb` 放在 `[rag]` 可选依赖里（`pip install -e ".[rag]"`），只有这条管线需要。
-  它对 Python 版本有要求：chromadb 1.x 依赖 `onnxruntime`，而 `onnxruntime` 目前没有 Python 3.15 的轮子
-  （3.12 / 3.14 都可以）。我们不用 Chroma 自带的嵌入函数，所以实在装不上 onnxruntime 时，
-  可以用 `pip install --no-deps chromadb` 再按它的元数据手工装其余依赖来绕开——但这属于权宜之计，
-  正式环境建议用有 `onnxruntime` 轮子的 Python 版本。
-
-### 7.6 查询期
-
-- 查询文本的构造见 4.2：**本段可译乐句的 `zh`**；
-- 单次嵌入、top-k（默认 **4**）、不设阈值、不做融合；
-- 一个 stanza 约 40 token，4 条约 160 token，参考部分的上下文成本可以忽略；
-- 相似度分数原样落盘（`hits[].score`），供事后分析检索质量。
+- **依赖**：`chromadb` 在 `[rag]` 可选依赖里（`pip install -e ".[rag]"`）；本机/服务器上要跑嵌入时
+  再装 `[embed]`。chromadb 1.x 依赖 `onnxruntime`，目前没有 Python 3.15 的轮子（3.12 / 3.14 可以）；
+  我们不用 Chroma 自带的嵌入函数，所以 `pip install --no-deps chromadb` + 手工装其余依赖也能绕开，
+  但正式环境建议用有 `onnxruntime` 轮子的 Python 版本。
+- **查询**：单次嵌入、top-k 默认 **4**、不设阈值、不做融合；一个 stanza 约 40 token，4 条约 160 token。
+  命中分数原样落盘（`hits[].score`），供事后看检索质量。
 
 ### 7.7 `index_id` 与 manifest
 
@@ -372,22 +423,33 @@ mimic（`references[].title` 已经有这一项）。
 ```json
 {
   "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
-  "corpus": {"repo": "sheepzh/poetry", "commit": "…", "poems": 0, "chunks": 0},
-  "model": {"name": "BAAI/bge-large-zh-v1.5", "revision": "…", "dim": 1024,
+  "source": "vectors",
+  "corpus": {"chunks_file": "…/chunks.jsonl", "chunks": 261424, "sha1": "…"},
+  "model": {"name": "BAAI/bge-large-zh-v1.5", "dim": 1024,
             "pooling": "cls", "normalize": true, "instruction": null},
   "chunking": {"unit": "stanza", "max_tokens": 256, "overlap": 0,
-               "tokenizer": "BAAI/bge-large-zh-v1.5"},
+               "tokenizer": "transformers:BAAI/bge-large-zh-v1.5"},
+  "stored": 261424,
   "built_at": "…"
 }
 ```
+
+``source`` 取 ``vectors``（服务器出向量）或 ``http`` / ``local``（边切边嵌）。
+走 `--vectors` 时 `corpus.path` 换成 `chunks_file` + `sha1`，因为这条路径根本不读语料。
 
 **每一条 `mimic_lookup/meta.json` 都要记 `index_id`。** 两个月后要解释两次 run 的差异，
 唯一能依靠的就是它。
 
 ### 7.8 调试命令
 
-建议加一个 `python -m dubbing poetry-search "一句词" --k 8`，直接打印命中诗句与分数。
-调 `k`、试查询写法、抽查召回质量都靠它——否则只能靠猜。
+```bash
+# 有本机模型时（--embed-local）
+DUBBING_EMBED_LOCAL=1 python -m dubbing poetry-search "末班车的尾灯" --k 4
+# 或者仍然走一个 OpenAI 兼容端点
+python -m dubbing poetry-search "末班车的尾灯" --k 4 --embed-url http://gpu:8080/v1/embeddings
+```
+
+它直接打印命中诗句与分数。调 `k`、试查询写法、抽查召回质量都靠它——否则只能靠猜。
 
 ## 8. 改名与迁移
 
@@ -444,11 +506,18 @@ mimic（`references[].title` 已经有这一项）。
 | mimic 温度 | `--temperature-mimic` / `DUBBING_TEMPERATURE_MIMIC` | **1.5** |
 | 检索条数 `k` | `--rag-k` / `DUBBING_RAG_K` | **4** |
 | 本地索引目录 | `--rag-db` / `DUBBING_RAG_DB` | `data/poetry/chroma` |
-| 嵌入服务 | `--embed-url` / `DUBBING_EMBED_URL` | `http://127.0.0.1:8080/v1/embeddings`（GPU 服务器请用环境变量覆盖） |
-| 嵌入模型名 | `--embed-model` / `DUBBING_EMBED_MODEL` | `BAAI/bge-large-zh-v1.5` |
 | collection | `DUBBING_RAG_COLLECTION` | `poetry_stanza256_v1` |
+| 查询期嵌入（本机） | `--embed-local` / `DUBBING_EMBED_LOCAL=1` + `DUBBING_EMBED_DEVICE` | 关（默认走下面的 HTTP 端点） |
+| 查询期嵌入（HTTP） | `--embed-url` / `DUBBING_EMBED_URL` | `http://127.0.0.1:8080/v1/embeddings` |
+| 嵌入模型名 | `--embed-model` / `DUBBING_EMBED_MODEL` | `BAAI/bge-large-zh-v1.5` |
+| 建库：离线向量 | `--vectors` + `--chunks`（`build_poetry_index.py`） | 不给就边切边嵌 |
+| 建库：向量自检 | `--verify N` | 0（关；建议首次建库时跑 5） |
+| 建库：切块上限 | `--max-tokens` | 256 |
 | 跨段去重 | `--rag-dedupe-peers` | 关（同一 chunk 全曲只用一次；开它会改变召回，需在报告里注明） |
 | writer 失败重试 | `--writer-retry` | 关 |
+
+服务器那边的入口是 `scripts/server_embed.sh`（自己的选项：`--env-dir` / `--model` / `--mirror` /
+`--skip-install`，其余参数原样转给 `scripts/embed_poetry.py`）。
 
 ## 10. 评测
 
