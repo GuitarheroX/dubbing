@@ -24,7 +24,14 @@ from pathlib import Path
 
 from .counting import count_syllables
 from .export import write_lyrics
-from .llm import DEFAULT_MAX_TOKENS, LLMError, NeedsLLM, build_client, load_dotenv
+from .llm import (
+    DEFAULT_MAX_TOKENS,
+    THINKING_CHOICES,
+    LLMError,
+    NeedsLLM,
+    build_client,
+    load_dotenv,
+)
 from .models import SchemaError, Violation
 from .orchestrator import (
     DEFAULT_MAX_ROUNDS,
@@ -319,6 +326,8 @@ def _run_one(song_id: str, args: argparse.Namespace, root: Path) -> int:
         }
         or None,
         max_tokens=args.max_tokens,
+        thinking=args.thinking,
+        reasoning_effort=args.reasoning_effort,
     )
     try:
         outcome = run_song(
@@ -604,6 +613,18 @@ def main(argv: list[str] | None = None) -> int:
         help="只覆盖 mimic（严格改写）的温度，默认 1.5",
     )
     p_run.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS)
+    p_run.add_argument(
+        "--thinking",
+        choices=THINKING_CHOICES,
+        default=None,
+        help="是否让模型思考：disabled=显式关闭（默认；deepseek-flash 默认开着思考）、"
+        "enabled=显式开启、none=不发这个字段、由端点默认决定",
+    )
+    p_run.add_argument(
+        "--reasoning-effort",
+        default=None,
+        help="思考强度（如 low / high / max）；不发就不指定",
+    )
 
     rag = p_run.add_argument_group("rag 管线")
     rag.add_argument("--rag-k", type=int, default=None, help=f"检索条数，默认 {DEFAULT_RAG_K}")

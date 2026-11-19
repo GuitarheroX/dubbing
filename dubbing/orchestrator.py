@@ -141,7 +141,13 @@ def _meta(agent: str, llm: LLMClient, system: str, **extra: object) -> dict[str,
         "prompt_hash": prompt_hash(system),
         **extra,
     }
-    for key, attr in (("base_url", "base_url"), ("protocol", "protocol")):
+    for key, attr in (
+        ("base_url", "base_url"),
+        ("protocol", "protocol"),
+        # 记下这次到底要不要模型思考：换了默认值之后，旧 run 的质量差异才解释得清
+        ("thinking", "thinking"),
+        ("reasoning_effort", "reasoning_effort"),
+    ):
         value = getattr(llm, attr, None)
         if value is not None:
             meta[key] = value

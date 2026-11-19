@@ -92,7 +92,8 @@ def test_ignores_thinking_blocks(monkeypatch, key):
             }
         ),
     )
-    assert APIClient().complete(agent="a", system="s", user="u") == '{"ok": true}'
+    # 用 thinking="none"：这里测的是"thinking 块会被跳过"，不是"关掉了还会不会想"
+    assert APIClient(thinking="none").complete(agent="a", system="s", user="u") == '{"ok": true}'
 
 
 def test_model_and_base_url_from_env(monkeypatch, key):
@@ -442,3 +443,88 @@ def test_repair_does_not_merge_unrelated_objects():
     """根对象里没有"对象数组"时不能乱接，取第一个对象就好。"""
     fixed = llm_mod._repair_json('{"a": 1}, {"b": 2}')
     assert fixed == {"a": 1}
+
+
+# -- 思考模式 -----------------------------------------------------------
+
+
+def test_thinking_is_disabled_by_default(monkeypatch, key):
+    """deepseek-flash 默认开着思考（强度 high），流水线默认显式关掉。"""
+    seen = _capture_body(monkeypatch)
+    APIClient().complete(agent="writer", system="s", user="u")
+
+    assert seen["thinking"] == {"type": "disabled"}
+    assert "reasoning_effort" not in seen
+
+
+def test_thinking_none_omits_the_field(monkeypatch, key):
+    seen = _capture_body(monkeypatch)
+    APIClient(thinking="none").complete(agent="writer", system="s", user="u")
+
+    assert "thinking" not in seen
+
+
+def test_thinking_can_be_enabled_with_effort(monkeypatch, key):
+    seen = _capture_body(monkeypatch)
+    APIClient(thinking="enabled", reasoning_effort="max").complete(agent="mimic", system="s", user="u")
+
+    assert seen["thinking"] == {"type": "enabled"}
+    assert seen["reasoning_effort"] == "max"
+
+
+def test_thinking_from_env(monkeypatch, key):
+    monkeypatch.setenv("DUBBING_THINKING", "none")
+    seen = _capture_body(monkeypatch)
+    APIClient().complete(agent="writer", system="s", user="u")
+    assert "thinking" not in seen
+
+
+def test_thinking_rejects_unknown_values(key):
+    with pytest.raises(ValueError, match="未知 thinking"):
+        APIClient(thinking="sometimes")
+
+
+def test_disabled_thinking_that_still_thinks_is_an_error(monkeypatch, key):
+    """说了关就别偷偷想：端点不认这个开关时要报错，而不是继续付推理的钱。"""
+    monkeypatch.setattr(
+        llm_mod.requests,
+        "post",
+        lambda *a, **k: FakeResponse(
+            payload={
+                "content": [
+                    {"type": "thinking", "thinking": "其实我还是想了"},
+                    {"type": "text", "text": '{"ok": true}'},
+                ],
+                "stop_reason": "end_turn",
+            }
+        ),
+    )
+    with pytest.raises(LLMError, match="thinking.type=disabled"):
+        APIClient().complete(agent="writer", system="s", user="u")
+
+
+def test_disabled_thinking_rejects_reasoning_tokens(monkeypatch, key):
+    monkeypatch.setattr(
+        llm_mod.requests,
+        "post",
+        lambda *a, **k: _ok(
+            '{"ok": true}', usage={"input_tokens": 1, "output_tokens": 9,
+                                   "output_tokens_details": {"reasoning_tokens": 9}}
+        ),
+    )
+    with pytest.raises(LLMError, match="思考 token=9"):
+        APIClient().complete(agent="writer", system="s", user="u")
+
+
+def test_disabled_thinking_rejects_thinking_tokens(monkeypatch, key):
+    """这个端点把思考 token 记成 thinking_tokens（不是 reasoning_tokens）。"""
+    monkeypatch.setattr(
+        llm_mod.requests,
+        "post",
+        lambda *a, **k: _ok(
+            '{"ok": true}', usage={"input_tokens": 1, "output_tokens": 9,
+                                   "output_tokens_details": {"thinking_tokens": 5}}
+        ),
+    )
+    with pytest.raises(LLMError, match="思考 token=5"):
+        APIClient().complete(agent="writer", system="s", user="u")

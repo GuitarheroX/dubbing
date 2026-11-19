@@ -173,11 +173,13 @@ class PaperClient(APIClient):
     def __init__(self, *args, protocol: str = "anthropic", thinking: str | None = None, **kwargs) -> None:
         if protocol not in ("anthropic", "openai"):
             raise ValueError(f"未知接口协议：{protocol}")
-        self.protocol = protocol
         if thinking not in (None, "enabled", "disabled"):
             raise ValueError(f"未知思考设置：{thinking}")
-        self.thinking = thinking
         super().__init__(*args, **kwargs)
+        # 注意放在 super() 之后：父类会给 self.thinking 一个默认值（disabled），
+        # 而基线的语义是"不传就不发这个字段"（None）。
+        self.protocol = protocol
+        self.thinking = thinking
 
     @property
     def url(self) -> str:
