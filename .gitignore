@@ -16,6 +16,8 @@ data/songs/*/workflow/
 data/songs/*/workflow_rag/
 data/songs/*/baselines/
 data/songs/*/preview/
+data/songs/*/workflow_without_ai_reviewer
+data/songs/*/workflow_without_ai_reviewer_and_rag
 data/baseline_batches/
 
 # RAG 资产：语料副本、切块中间产物、本地 Chroma 索引都不入库。
