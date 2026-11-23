@@ -1,0 +1,21 @@
+{
+  "id": "c7e06b95-8e3b-452a-b514-cd251a273b67",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"准确传达“玫瑰是玫瑰”的重复结构与“高贵绽放/美丽凋零”的核心语义\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"emotion\":{\"score\":5,\"reason\":\"保留原句庄重、宿命感的情绪与意境\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"“玫瑰是玫瑰”略直译但可理解，整体顺口\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"重复结构有力，但“是”字稍显平直\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"与A相同，核心信息准确\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"emotion\":{\"score\":5,\"reason\":\"情绪方向与强度充分保留\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"“玫瑰是玫瑰”稍生硬但整体可唱\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰，表达有力但略平\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"保留玫瑰绽放凋落主旨，但“一身深红”“一瓣瓣”为增补意象，且“开/落”弱化了“气高”\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪基本一致，但“深红”“一瓣瓣”偏柔美，削弱原句的凛然宿命感\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，节奏感强\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明，但增补意象略偏离原主题\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“高傲地盛开”“美丽地凋散”基本准确，但“气高”译为“高傲”略偏\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，庄重感稍弱\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"“玫瑰啊玫瑰”自然顺口，“凋散”稍生\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"表达清晰，但“凋散”不如“凋零”有力\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“开到最盛时”“散得从容”为增补，偏离原句简洁的“绽放/散落”\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"emotion\":{\"score\":3,\"reason\":\"“从容”改变了原句宿命式的悲壮感，情绪偏移\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"naturalness\":{\"score\":3,\"reason\":\"“开到最盛时”稍冗长，与短句节奏不协调\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"有表达但增补意象分散了原句的凝练力量\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“骄傲地绽放”“美丽地凋散”基本准确，“骄傲”略偏“气高”\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，庄重感稍弱\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"“玫瑰啊玫瑰”自然，“凋散”稍生\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"表达清晰有力，但“凋散”略欠凝练\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 492,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 1029,
+    "service_tier": "standard"
+  }
+}

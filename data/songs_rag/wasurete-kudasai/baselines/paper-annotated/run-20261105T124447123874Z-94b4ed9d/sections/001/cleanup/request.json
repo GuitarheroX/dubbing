@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "1) 把我的心（5，需7）→ 请把我的心（5，需7）→ 请收下我的心（7）✓\n2) 送你一束花（5，需8）→ 我送你一束鲜花（7，需8）→ 我要送你一束鲜花（8）✓\n3) 只让摇曳的发丝随风飘散（11，需15）→ 只让那摇曳的发丝随风轻轻飘散（14，需15）→ 只让那摇曳的发丝随着风轻轻飘散（15）✓\n\n最终：\n请收下我的心\n我要送你一束鲜花\n只让那摇曳的发丝随着风轻轻飘散\n\n韵脚核对：心(xin)、花(hua)、散(san)——原词韵脚为を(o)、を(o)、て(e)，不押韵，此处亦不押韵 ✓"
+  },
+  "data": {
+    "response": "1) 把我的心（5，需7）→ 请把我的心（5，需7）→ 请收下我的心（7）✓\n2) 送你一束花（5，需8）→ 我送你一束鲜花（7，需8）→ 我要送你一束鲜花（8）✓\n3) 只让摇曳的发丝随风飘散（11，需15）→ 只让那摇曳的发丝随风轻轻飘散（14，需15）→ 只让那摇曳的发丝随着风轻轻飘散（15）✓\n\n最终：\n请收下我的心\n我要送你一束鲜花\n只让那摇曳的发丝随着风轻轻飘散\n\n韵脚核对：心(xin)、花(hua)、散(san)——原词韵脚为を(o)、を(o)、て(e)，不押韵，此处亦不押韵 ✓"
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "1) 把我的心（5，需7）→ 请把我的心（5，需7）→ 请收下我的心（7）✓\n2) 送你一束花（5，需8）→ 我送你一束鲜花（7，需8）→ 我要送你一束鲜花（8）✓\n3) 只让摇曳的发丝随风飘散（11，需15）→ 只让那摇曳的发丝随风轻轻飘散（14，需15）→ 只让那摇曳的发丝随着风轻轻飘散（15）✓\n\n最终：\n请收下我的心\n我要送你一束鲜花\n只让那摇曳的发丝随着风轻轻飘散\n\n韵脚核对：心(xin)、花(hua)、散(san)——原词韵脚为を(o)、を(o)、て(e)，不押韵，此处亦不押韵 ✓"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

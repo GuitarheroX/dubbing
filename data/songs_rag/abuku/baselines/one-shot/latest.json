@@ -1,0 +1,9 @@
+{
+  "run": "run-20261108T132336807909Z-10c6b56b",
+  "updated_at": "2026-11-08T13:23:42+00:00",
+  "song": "abuku",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "passed": 7,
+  "total": 17
+}

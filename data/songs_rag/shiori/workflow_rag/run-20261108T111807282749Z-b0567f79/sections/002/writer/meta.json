@@ -1,0 +1,21 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"太笨拙的我 空转着不停\"\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"我总是害怕着受伤 转身逃亡\"\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"现实太硬 纸页软 来回跑 哄哄我 在字里安眠\"\n    },\n    {\n      \"id\": \"V2-04\",\n      \"zh\": \"あぁ\"\n    },\n    {\n      \"id\": \"V2-05\",\n      \"zh\": \"这世界为何啊 难活得要命\"\n    },\n    {\n      \"id\": \"V2-06\",\n      \"zh\": \"可是啊 可是啊\"\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:19:39+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [
+    "V2-04: 该句保留原文，不应产出译词，已忽略"
+  ],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3057,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 3693,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

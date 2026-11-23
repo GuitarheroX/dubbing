@@ -1,0 +1,8 @@
+{
+  "run": "run-20261105T124026450617Z-a52a0b20",
+  "updated_at": "2026-11-07T06:09:06+00:00",
+  "song": "abuku",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "baseline": "paper-annotated"
+}

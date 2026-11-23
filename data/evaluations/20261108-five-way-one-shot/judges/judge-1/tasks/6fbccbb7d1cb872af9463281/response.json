@@ -1,0 +1,21 @@
+{
+  "id": "70e52d54-75cc-46f0-adb5-cf8ce689b083",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原意：C1-01保留“烧梦”而非“烧成灰”，C1-02“纯白颜色”对应“白い色”且不添柴火意象，C1-03“为欢喜的火添火”准确传达“火に火をつけ”，C1-04“泡沫般的零钱”兼顾“泡銭”与“泡”的意象，C1-05“不会冷却的言语的双手”忠实于“冷めない言葉の両手”，C1-07“捧起一掬”对应“掬う”。B多处改写偏离核心语义（如C1-02“作柴火”、C1-05“接住火星”、C1-07“捧一把光”），虽更华丽但误读较多。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\",\"C1-07\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 378,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 218,
+    "service_tier": "standard"
+  }
+}

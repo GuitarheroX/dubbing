@@ -1,0 +1,44 @@
+{
+  "section": "B1",
+  "phrases": [
+    {
+      "id": "B1-01",
+      "zh": "空气被抽干 我",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "前四字连读占四音 后三字占四音 空格断句"
+      }
+    },
+    {
+      "id": "B1-02",
+      "zh": "瘪下去的我 啊",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "前四字占四音 后三字占四音 空格断句"
+      }
+    },
+    {
+      "id": "B1-03",
+      "zh": "呜呼 已是你的 所有物",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "两字三字三字对应 pattern 2 3 3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "27a99ea5-cfa2-4c77-a51a-783068180c99",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原句的被动与所属关系：B1-01保留“空气被抽干”的被动感，B1-02“瘪下去的我”自然承接，B1-03“已是你的所有物”准确传达“所有物”的物化意味。B的B1-02“皱在掌心”属额外意象，B1-03“你所有”略弱化名词性归属，整体表现力虽强但语义偏移稍多。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 318,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 128,
+    "service_tier": "standard"
+  }
+}

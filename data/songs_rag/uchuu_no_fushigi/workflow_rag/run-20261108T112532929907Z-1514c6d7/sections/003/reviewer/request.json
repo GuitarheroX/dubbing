@@ -1,0 +1,120 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "phrases": [
+      {
+        "id": "B1-01",
+        "section": "B1",
+        "ja": "笑ったり悩んでみたり",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          5,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "B1-02",
+        "section": "B1",
+        "ja": "この広い世界のすみっこで",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          2,
+          3,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "B1-03",
+        "section": "B1",
+        "ja": "僕らでうちゅうのふしぎ",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          4,
+          7
+        ]
+      },
+      {
+        "id": "B1-04",
+        "section": "B1",
+        "ja": "解き明かしてみよう",
+        "budget": {
+          "min": 8,
+          "max": 8
+        }
+      }
+    ],
+    "draft": {
+      "section": "B1",
+      "phrases": [
+        {
+          "id": "B1-01",
+          "zh": "笑出了眼泪 也试着 皱起眉头",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "5+3+4 按 pattern 空格断开；用具体身体动作替掉初版偏虚的「跳」"
+          }
+        },
+        {
+          "id": "B1-02",
+          "zh": "世界 那么大 我们蹲 小小角落",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "2+3+3+4；借参考里「大也是…小也是…」的大小对置骨架，换成世界与角落"
+          }
+        },
+        {
+          "id": "B1-03",
+          "zh": "我们一起 踮脚够宇宙秘密",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "4+7；把「问」改成踮脚的够，孩子的动作更实"
+          }
+        },
+        {
+          "id": "B1-04",
+          "zh": "一起去一层层解开",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "整句一段；补「一层层」承接上句的秘密，也凑满八字"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

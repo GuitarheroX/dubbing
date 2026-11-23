@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 1.383,
+  "usage": {
+    "input_tokens": 220,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 58,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": false,
+    "human_annotations_in_generation": true,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "cleanup",
+  "variant": "paper-annotated",
+  "migrated_from": "run-20261105T124225072660Z-e0452048",
+  "raw_response": "{\"lines\":[\"黑暗中阳光照进 我想伸出手\",\"现在想和你说话\",\"看着朝阳 染上色彩\",\"自由地\",\"自由地\",\"我如今已睁开了双眼\",\"现在想和你说话\",\"可爱的日子 染上色彩\",\"自由地\",\"自由地\",\"飞翔\"]}"
+}

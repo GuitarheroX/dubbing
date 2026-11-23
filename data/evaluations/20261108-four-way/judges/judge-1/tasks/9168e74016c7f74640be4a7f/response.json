@@ -1,0 +1,21 @@
+{
+  "id": "b68567e9-9df4-472d-9108-e3dc81fef9db",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"V1-01将“无可奈何”转为胸口火，V1-02“骨头里”偏离“私に”，V1-03保留泡沫意象但增补无声破碎，主旨部分保留。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"emotion\":{\"score\":4,\"reason\":\"压抑躁动与泡沫消逝的无力感方向一致，情绪强度较足。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文歌词顺口，断句自然，仅“碎无声”略文。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“胸口有火”“骨头里有兽”意象鲜明，服务躁动主题。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"三句核心信息准确：无可奈何、体内蠢动之兽、水面浮现即消的泡沫。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向准确，但表达偏直译，张力稍弱。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"naturalness\":{\"score\":3,\"reason\":\"“无可奈何般”“浮现又浮现即消失”较生硬，可理解但不够顺口。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"意象忠实但表达普通，缺乏歌词的凝练力度。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心语义保留；“心中躁动”较“私に蠢く”略偏移，“浮现又破灭”简化了反复浮现。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"emotion\":{\"score\":4,\"reason\":\"无奈与躁动情绪基本一致，泡沫破灭的虚无感保留。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文简洁顺口，符合歌词文体。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但较平实，意象力度一般。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"V1-01将“无可奈何”转为按不住翻涌，V1-02“胸腔”偏离“私に”，V1-03增补“没有声音又一颗”，核心意象保留但改写较多。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"emotion\":{\"score\":4,\"reason\":\"躁动压抑与泡沫不断破灭的情绪方向一致，强度充分。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"断句口语化顺口，符合歌词节奏。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“按不住的在翻涌”“鼓起来又破掉”意象生动，服务主题。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1340,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 847,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "section": "C1",
+  "phrases": [
+    {
+      "id": "C1-01",
+      "zh": "一遍一遍",
+      "chars": 4,
+      "self_check": {
+        "budget": [
+          4,
+          4
+        ],
+        "ok": true,
+        "note": "四字整句，对应四个音符"
+      }
+    },
+    {
+      "id": "C1-02",
+      "zh": "一遍一遍呼喊",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "前四后二，与旋律切分一致"
+      }
+    },
+    {
+      "id": "C1-03",
+      "zh": "就算变成这暗夜里的怪兽",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          15,
+          15
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象到15字"
+      }
+    },
+    {
+      "id": "C1-04",
+      "zh": "有些话我想留在这里",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          13,
+          13
+        ],
+        "ok": false,
+        "note": "字数不足，需补到13字"
+      }
+    },
+    {
+      "id": "C1-05",
+      "zh": "这个秘密啊",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": false,
+        "note": "字数不足，需补到6字"
+      }
+    }
+  ]
+}

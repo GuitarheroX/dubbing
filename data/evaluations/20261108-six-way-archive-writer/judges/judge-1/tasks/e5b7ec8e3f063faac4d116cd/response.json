@@ -1,0 +1,21 @@
+{
+  "id": "b591ec42-9bd5-40b0-a9b5-d28a810bc468",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更简洁自然，保留原文超现实吞噬意象；B多处添加原文没有的“穿梭”“饮入腹”，且“几十回里”生硬。A的“星群”“一一咀嚼”更凝练有表现力。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 525,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 93,
+    "service_tier": "standard"
+  }
+}

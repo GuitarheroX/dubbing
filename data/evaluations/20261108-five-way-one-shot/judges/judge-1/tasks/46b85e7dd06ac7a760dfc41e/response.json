@@ -1,0 +1,21 @@
+{
+  "id": "0478161c-a546-4068-88b5-e3fd6f39d0e8",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原句的克制与冷感：B1-01“勒住你的脖颈”直接对应“首を締める”，B的“双手掐住”加戏且更暴力；B1-02 A的“洒满阳光的午后”自然简洁，B“亮得几乎发疼”属额外扩展；B1-03 A“纤细的喉咙跳动着”保留原意象，B“细瘦”略偏；B1-04两者均可，A“快要哭出来的眼神”更贴合“泣き出しそうな眼”。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 335,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 153,
+    "service_tier": "standard"
+  }
+}

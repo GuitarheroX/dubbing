@@ -1,0 +1,21 @@
+{
+  "id": "c24a0e70-99ab-404a-8f00-676a493ce1f7",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心意象基本准确，'焚烧着梦想'略偏'焼け'的祈使/放任语气，'泡銭'译为'零钱'保留原意\",\"phrase_ids\":[\"C1-01\",\"C1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"整体情绪方向一致，'悠然悠然'稍显平淡，未充分传达'悠々'的放任燃烧感\",\"phrase_ids\":[\"C1-01\"]},\"naturalness\":{\"score\":3,\"reason\":\"'用不会冷却的话语双手'语序生硬，'我只想要在喜悦之火上把火点燃'略冗\",\"phrase_ids\":[\"C1-03\",\"C1-05\"]},\"expressiveness\":{\"score\":3,\"reason\":\"意象基本传达但表达普通，'些许的零钱'较平\",\"phrase_ids\":[\"C1-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息保留，'零钱泡泡'混入'泡'字略增义，'烧不尽的所有'稍抽象\",\"phrase_ids\":[\"C1-04\",\"C1-06\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，'悠悠悠悠'较自然，整体略平\",\"phrase_ids\":[\"C1-01\"]},\"naturalness\":{\"score\":3,\"reason\":\"'话语之双手'文言式连接生硬，'只想捧起就好'略拗\",\"phrase_ids\":[\"C1-05\",\"C1-07\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达可理解但意象不够鲜明，'零钱泡泡'略杂\",\"phrase_ids\":[\"C1-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"'烧成灰'强化了'焼け'但增'成灰'义，'湿冷的零钱'添加原文没有的修饰，'还热的词'改写'冷めない言葉'方向略偏\",\"phrase_ids\":[\"C1-01\",\"C1-04\",\"C1-05\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪强度较好，燃烧与捧取的意境传达较充分\",\"phrase_ids\":[\"C1-03\",\"C1-07\"]},\"naturalness\":{\"score\":4,\"reason\":\"断句节奏适合歌词，'一双手 捧起来 还热的词'略跳但可理解\",\"phrase_ids\":[\"C1-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象较鲜明，'烧成灰''湿冷的零钱'有画面感\",\"phrase_ids\":[\"C1-01\",\"C1-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"'白得作柴火''接住火星''捧一把光'大幅增改意象，'铜板'替换'泡銭'，偏离核心语义\",\"phrase_ids\":[\"C1-02\",\"C1-05\",\"C1-07\"]},\"emotion\":{\"score\":3,\"reason\":\"燃烧情绪方向一致，但'作柴火''接住火星'改变意境细节\",\"phrase_ids\":[\"C1-02\",\"C1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，节奏感强，适合歌词\",\"phrase_ids\":[\"C1-01\",\"C1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明有力，但部分为增补而非原文所有\",\"phrase_ids\":[\"C1-02\",\"C1-07\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1532,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 780,
+    "service_tier": "standard"
+  }
+}

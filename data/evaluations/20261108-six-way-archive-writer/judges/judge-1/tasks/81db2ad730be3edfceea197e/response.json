@@ -1,0 +1,21 @@
+{
+  "id": "3b73c748-c3ee-433d-b029-9157e2bbc264",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更准确自然地传达原意：V1-01保留“撕裂”的力度，V1-02“停留在那一天”贴合原句，V1-04“把责任推给了别人”清晰对应“誰かのせいにした”；A的“别人家”“烦哪”偏口语俏皮，削弱了自责情绪。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1087,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 108,
+    "service_tier": "standard"
+  }
+}

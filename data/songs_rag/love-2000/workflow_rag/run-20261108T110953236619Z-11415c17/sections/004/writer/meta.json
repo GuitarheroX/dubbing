@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\"section\":\"C1\",\"phrases\":[{\"id\":\"C1-01\",\"zh\":\"爱从何来 又往哪去 住进谁的胸口\"},{\"id\":\"C1-02\",\"zh\":\"手贴胸口 轻轻问 心是否诚实\"},{\"id\":\"C1-03\",\"zh\":\"假货摆得再亮 也不多看一眼\"},{\"id\":\"C1-04\",\"zh\":\"只想找到真的 眼神不闪躲\"},{\"id\":\"C1-05\",\"zh\":\"我一直寻找的 那个人是你\"}]}",
+  "finished_at": "2026-11-08T11:11:40+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 1896,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1920,
+    "output_tokens": 2355,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

@@ -1,0 +1,21 @@
+{
+  "id": "bfd323a3-141c-4e45-aebc-8ddc3b6c66e4",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"心跳交叠、不安因你消失、只映我一人等核心信息准确。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\"]},\"emotion\":{\"score\":5,\"reason\":\"依恋与不安的强弱保留，末句独占欲明确。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文顺口，歌词文体自然。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰但偏平实，末句稍显直白。\",\"phrase_ids\":[\"C1-01\",\"C1-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心语义准确，'因为怕'衔接自然。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"emotion\":{\"score\":5,\"reason\":\"不安与独占欲情绪保留充分。\",\"phrase_ids\":[\"C1-02\",\"C1-03\",\"C1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，'别再映出谁'略口语但可接受。\",\"phrase_ids\":[\"C1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"'随时会消失'有画面，整体表达清楚。\",\"phrase_ids\":[\"C1-03\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"各句核心信息准确，'似乎要消失'贴合原意。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向正确，但'请不要映出'稍显礼貌平淡。\",\"phrase_ids\":[\"C1-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文流畅自然，符合歌词文体。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"表达清楚但意象较常规。\",\"phrase_ids\":[\"C1-01\",\"C1-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"心跳与独占欲保留，但'星屑散开''没理由'增添原无意象与因果偏移。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\"]},\"emotion\":{\"score\":3,\"reason\":\"不安情绪在，但'星屑散开'改变消失的质感，局部偏离。\",\"phrase_ids\":[\"C1-03\"]},\"naturalness\":{\"score\":3,\"reason\":\"断句碎片化，'别的影都别留'生硬。\",\"phrase_ids\":[\"C1-01\",\"C1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"'星屑散开'意象鲜明，但服务主题略偏。\",\"phrase_ids\":[\"C1-03\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"主旨保留，但'像风一松手就散''星河'等改写增添原无比喻。\",\"phrase_ids\":[\"C1-03\",\"C1-05\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向一致，但'散无痕'偏空灵，弱化原句具体不安。\",\"phrase_ids\":[\"C1-03\"]},\"naturalness\":{\"score\":3,\"reason\":\"多处断句与'别容下别人半个身影'生硬。\",\"phrase_ids\":[\"C1-02\",\"C1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象较鲜明，但部分堆叠。\",\"phrase_ids\":[\"C1-03\",\"C1-04\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息基本准确，但'消失在人海里'增添原无场景。\",\"phrase_ids\":[\"C1-03\"]},\"emotion\":{\"score\":4,\"reason\":\"依恋与不安保留，'只怕你'衔接略突兀。\",\"phrase_ids\":[\"C1-02\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文顺口自然，歌词感好。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"'人海里'有画面，整体表达清楚。\",\"phrase_ids\":[\"C1-03\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 946,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 1063,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "section": "C1",
+  "draft_run": "20261103T173321_b_cb0842",
+  "verdict": "pass",
+  "violations": [],
+  "changes": {
+    "rewritten": [
+      "C1-01",
+      "C1-02",
+      "C1-03",
+      "C1-04"
+    ],
+    "unchanged": []
+  },
+  "regressions": []
+}

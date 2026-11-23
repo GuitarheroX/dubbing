@@ -1,0 +1,21 @@
+{
+  "id": "5b1a7838-7bbb-401b-8716-6727803dbd3b",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"心意难言、扮演他人以吸引注意的核心保留，但“镜中人换陌生脸”把“浮现种种人生”具体化为换脸，略有偏移\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"emotion\":{\"score\":4,\"reason\":\"羞怯、渴望被看见的情绪传达充分，稍显戏剧化\",\"phrase_ids\":[\"V2-01\",\"V2-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，歌词感强，个别断句略碎\",\"phrase_ids\":[\"V2-01\",\"V2-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“停在唇边打转”“笑得笨拙”意象鲜明，服务主题\",\"phrase_ids\":[\"V2-01\",\"V2-03\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"心意难言、浮现人生、扮演以引注意均准确，仅“千万种”为增饰\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"emotion\":{\"score\":4,\"reason\":\"含蓄渴望的情绪方向一致，强度适中\",\"phrase_ids\":[\"V2-01\",\"V2-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"语句通顺，符合歌词文体，略平\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象较常规，缺少亮点\",\"phrase_ids\":[\"V2-02\",\"V2-03\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"三句核心信息准确对应，无增删偏移\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向正确但偏直白平淡，缺原词的羞怯张力\",\"phrase_ids\":[\"V2-01\",\"V2-03\"]},\"naturalness\":{\"score\":3,\"reason\":\"可理解但偏散文直译，“试着扮演”等略生硬\",\"phrase_ids\":[\"V2-03\"]},\"expressiveness\":{\"score\":2,\"reason\":\"近乎逐字翻译，意象与表达力弱\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"心意难言、人生浮现、扮演引注意均保留，“浮游”略改意象\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"emotion\":{\"score\":4,\"reason\":\"含蓄渴望情绪一致，稍显收敛\",\"phrase_ids\":[\"V2-01\",\"V2-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"顺口自然，歌词感尚可\",\"phrase_ids\":[\"V2-01\",\"V2-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"“眼底浮游”有画面，其余较普通\",\"phrase_ids\":[\"V2-02\",\"V2-03\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心语义基本准确，但“种种的人生啊”等语气词增饰，略拖沓\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向一致，但口语化“啊”削弱原词含蓄感\",\"phrase_ids\":[\"V2-01\",\"V2-03\"]},\"naturalness\":{\"score\":2,\"reason\":\"“我试着去扮演啊因为我真想吸引你的注意”冗长拗口，不符歌词文体\",\"phrase_ids\":[\"V2-03\"]},\"expressiveness\":{\"score\":2,\"reason\":\"表达松散，缺乏凝练意象\",\"phrase_ids\":[\"V2-01\",\"V2-03\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"心意难言、换人生、扮演讨喜均保留，“披上陌生模样”为合理引申\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"emotion\":{\"score\":4,\"reason\":\"羞怯与渴望被看见的情绪饱满，方向一致\",\"phrase_ids\":[\"V2-01\",\"V2-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"顺口有歌词韵律，断句略碎但可接受\",\"phrase_ids\":[\"V2-01\",\"V2-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“话到嘴边偏又咽回”“披上陌生模样”意象鲜明\",\"phrase_ids\":[\"V2-01\",\"V2-03\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 832,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 1047,
+    "service_tier": "standard"
+  }
+}

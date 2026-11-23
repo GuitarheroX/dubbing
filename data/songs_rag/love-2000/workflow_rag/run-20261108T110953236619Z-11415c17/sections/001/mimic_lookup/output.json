@@ -1,0 +1,46 @@
+{
+  "section": "I1",
+  "query_text": "爱从何来 又往何处 落在谁的胸口\n手贴胸口 问一问 心是否诚实\n假话和假面 我一点都不想要\n只想凝望真实 眼神不闪躲",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "布勒_bule/也没关系啊#s4",
+      "title": "也没关系啊",
+      "poet": "布勒",
+      "poem_id": "布勒_bule/也没关系啊",
+      "stanza_idx": 4,
+      "score": 0.671293,
+      "text": "百无一是是你我\n⠀\n一一交给时间\n是天大的谎话啊\n说谎不好\n你明白吗\n一定是还没真正爱过\n才想要自我禁锢\n⠀\n可又还妄想好好地老去"
+    },
+    {
+      "chunk_id": "梁粱_liangliang/谎言#s3",
+      "title": "谎言",
+      "poet": "梁粱",
+      "poem_id": "梁粱_liangliang/谎言",
+      "stanza_idx": 3,
+      "score": 0.665475,
+      "text": "我知道你只相信不爱才是谎言\n当我认真地告诉你\n我不会真爱\n你立刻会反诘\n不！不！那也是谎言"
+    },
+    {
+      "chunk_id": "方羡洲_fangxianzhou/为何你没来#s7",
+      "title": "为何你没来",
+      "poet": "方羡洲",
+      "poem_id": "方羡洲_fangxianzhou/为何你没来",
+      "stanza_idx": 7,
+      "score": 0.665022,
+      "text": "你为何没来\n为了爱情的神圣\n为了我们的约定\n爱与不爱\n你大可以坦诚告诉我\n让我苦苦盼望五年的你呀\n那怕见面时你对我说\n你已不再爱我\n虽然那样我心情会极度沮丧、颓废不振\n甚至有轻生的念头"
+    },
+    {
+      "chunk_id": "陈婷_chenting/诉说#s3",
+      "title": "诉说",
+      "poet": "陈婷",
+      "poem_id": "陈婷_chenting/诉说",
+      "stanza_idx": 3,
+      "score": 0.662506,
+      "text": "最深 最深的呼唤\n眉间舒展却又刹那回避\n不忍被你发现\n又渴望被你疼惜\n就像你的那本字典 你从未翻起\n却把我的心声全部 全部藏匿"
+    }
+  ]
+}

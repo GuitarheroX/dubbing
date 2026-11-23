@@ -1,0 +1,21 @@
+{
+  "id": "04e68a30-5e40-49ce-b684-d9866eb83769",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原文的燃烧/点燃意象与“泡銭”的轻贱感，C1-01“把梦点燃”保留“焼け”的使动方向，C1-03“添薪柴”自然承接火意象；B的C1-01“烧成灰”偏消极，C1-04“湿冷的零钱”添加了原文没有的触感，C1-05语序较生硬。A整体中文更顺，情绪更统一。\",\"phrase_ids\":[\"C1-01\",\"C1-03\",\"C1-04\",\"C1-05\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 374,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 138,
+    "service_tier": "standard"
+  }
+}

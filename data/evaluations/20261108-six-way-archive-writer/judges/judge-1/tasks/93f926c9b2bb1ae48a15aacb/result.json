@@ -1,0 +1,249 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "疑问核心保留，但“能飞上那片天空”略增限定，“活成什么模样”合理改写",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "童趣疑问与出发感基本保留，语气稍显规整",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "分句顺口，儿化与停顿自然，个别处略文",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "小鸟小猫意象清晰，“活成模样”有画面感",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“飞过那片天”偏离“在空中飞”；“睡在窗边”添加原文没有的地点",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "整体方向接近，但窗边等添加使童真疑问略散",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，短句适合歌词",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但较平，缺少鲜明意象",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“飞向天空”可接受；“睡眼惺忪”偏离一直睡；“活出怎样的梦”把“如何度过今天”改成梦想",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "局部偏离，梦的改写使情绪从日常疑问偏向抒情",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "语句通顺，歌词感尚可",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "“睡眼惺忪”有画面，但整体普通",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "三问核心准确，“睡个不停”贴合“ずっとねてる”，出发意保留",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-05"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "童真疑问与轻快出发感完整保留",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文自然顺口，问句与短句节奏好",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04",
+            "V1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象清楚但偏常规，服务主题稳妥",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心疑问保留；“睡得安详”比“一直睡”多出安详意味",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，安详略改童趣语气",
+          "phrase_ids": [
+            "V1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "通顺，但“你今日要活出怎样模样”稍紧",
+          "phrase_ids": [
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "表达清晰，“睡得安详”有画面",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“长出翅膀”替换飞行原因；“走怎样的小路”把“如何度过今天”具体化为路径，偏离明显",
+          "phrase_ids": [
+            "V1-01",
+            "V1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "童趣尚在，但意象改写使原疑问方向偏移",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "分句顺口，儿化与节奏自然",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "毛球、翅膀等意象鲜明，但部分服务了偏移主题",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        }
+      }
+    }
+  ]
+}

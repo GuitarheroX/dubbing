@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C3\",\n  \"phrases\": [\n    {\"id\": \"C3-01\", \"zh\": \"核融合炉啊\"},\n    {\"id\": \"C3-02\", \"zh\": \"如果纵身跃入那一刻\"},\n    {\"id\": \"C3-03\", \"zh\": \"一定能像沉睡般 消融不见\"},\n    {\"id\": \"C3-04\", \"zh\": \"没有我的清晨\"},\n    {\"id\": \"C3-05\", \"zh\": \"会比现在更加灿烂美好\"},\n    {\"id\": \"C3-06\", \"zh\": \"所有齿轮都严丝合缝\"},\n    {\"id\": \"C3-07\", \"zh\": \"一定是那样的世界\"}\n  ]\n}",
+  "finished_at": "2026-11-08T13:24:06+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "section": "C3",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 939,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 4352,
+    "output_tokens": 159,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

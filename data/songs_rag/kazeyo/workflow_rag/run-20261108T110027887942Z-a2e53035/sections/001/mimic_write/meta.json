@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\"section\":\"V1\",\"phrases\":[{\"id\":\"V1-01\",\"zh\":\"暮色沉 街也冷 卷帘门落下\",\"chars\":11,\"self_check\":{\"budget\":[11,11],\"ok\":true,\"note\":\"按3+3+5断句，暮色起句贴黄昏冷清\"}},{\"id\":\"V1-02\",\"zh\":\"人走散 屋也空 坐垫留个窝\",\"chars\":11,\"self_check\":{\"budget\":[11,11],\"ok\":true,\"note\":\"坐垫留个窝替代还陷着，避开句尾着\"}},{\"id\":\"V1-03\",\"zh\":\"全部 抱起来 风就往前走\",\"chars\":10,\"self_check\":{\"budget\":[10,10],\"ok\":true,\"note\":\"全部两字起拍，抱起来三字对上中段\"}},{\"id\":\"V1-04\",\"zh\":\"云流成了河 风踩着水走\",\"chars\":10,\"self_check\":{\"budget\":[10,10],\"ok\":true,\"note\":\"借云河意象，空格断成5+5\"}}]}",
+  "finished_at": "2026-11-08T11:01:42+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3155,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 6532,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

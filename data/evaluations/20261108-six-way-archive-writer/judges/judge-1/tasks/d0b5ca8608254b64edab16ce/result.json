@@ -1,0 +1,223 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“曾经望见”对应“いつか見た”，“等待终会出现”基本传达“いずれ見える”，但“等待”略增主动等待义",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "呆立与注视到底保留恍惚而执着的情绪，方向一致",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "断句顺口，歌词感强；“注视到底”稍显用力但可接受",
+          "phrase_ids": [
+            "V1-01",
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“呆立原地”与“注视到底”意象较鲜明，服务主题",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "三句核心信息基本准确；“呆望一颗终会来的流星”保留“いずれ見える”",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向一致，但“只想一直看”较平淡，恍惚感略弱",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "简洁顺口，符合歌词文体",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但意象普通，缺少更鲜明的画面",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“迟来的流星”将“いずれ見える”改为迟到，语义有偏移；“恍惚”对应呆然尚可",
+          "phrase_ids": [
+            "V1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "整体情绪接近，但“迟来”带来等待落空感，与原句将见之意略偏",
+          "phrase_ids": [
+            "V1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文自然顺口，“凝望”适合歌词",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达尚可，但“迟来的流星”意象虽具体却偏离原意",
+          "phrase_ids": [
+            "V1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“仿佛望见流星划落”把“いずれ見える”改成仿佛看见，且“划落”增添原句没有的坠落意象，核心偏移明显",
+          "phrase_ids": [
+            "V1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "茫然与凝望保留部分情绪，但“划落”带来消逝感，与原句期待将见不同",
+          "phrase_ids": [
+            "V1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文流畅，断句自然",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“流星划落”画面鲜明，但服务的是偏移后的意象",
+          "phrase_ids": [
+            "V1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "前两句基本准确，但“想一直凝望你”增添原文没有的“你”，改变对象关系",
+          "phrase_ids": [
+            "V1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "整体情绪方向接近，但末句转向对“你”的凝望，情绪对象偏移",
+          "phrase_ids": [
+            "V1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文自然，歌词感较好",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "“茫然中终将看见”有画面，但末句“凝望你”较普通且偏离",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“曾几何时见过”对应“いつか見た”，“终将望见”对应“いずれ見える”，核心准确",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "茫然、终将、凝望不停保留恍惚而执着的情绪",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“总是想要凝望不停”稍长但可唱",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“茫然之间终将望见”意象较鲜明，服务主题",
+          "phrase_ids": [
+            "V1-02"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173603_b_a029a2",
+  "input_hash": "a029a28157ba10ca9ad49d90fbc25454226270c52bf261174eed59a348ae85fd",
+  "finished_at": "2026-11-03T17:36:18+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 1376,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2432,
+    "output_tokens": 2692,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\"section\": \"V1\", \"phrases\": [{\"id\": \"V1-01\", \"zh\": \"曾见过的风景\", \"chars\": 6, \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"整句六字，一口气唱完，不留空格\"}}, {\"id\": \"V1-02\", \"zh\": \"呆望一颗终会来的流星\", \"chars\": 10, \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"「呆望」压住呆然那口气，后面八音一口气落到流星上\"}}, {\"id\": \"V1-03\", \"zh\": \"只想一直看\", \"chars\": 5, \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"五字整句，尾字落在看，与下段看不见呼应\"}}]}",
+  "migrated_from": "20261103T173603_b_a029a2"
+}

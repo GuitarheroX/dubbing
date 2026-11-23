@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"我竟没有察觉\"\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"也许是我太习惯依赖你\"\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"所以 先好好爱自己 再张开双手 去爱别人\"\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:11:15+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2237,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 1574,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

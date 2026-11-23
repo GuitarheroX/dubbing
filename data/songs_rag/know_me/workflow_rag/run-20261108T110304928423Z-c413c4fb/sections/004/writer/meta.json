@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\"id\": \"C1-01\", \"zh\": \"就用那副 懂我的笑脸\"},\n    {\"id\": \"C1-02\", \"zh\": \"我怕那口井 深不见底\"},\n    {\"id\": \"C1-03\", \"zh\": \"就给我一份 最普通的爱\"},\n    {\"id\": \"C1-04\", \"zh\": \"You know me\"},\n    {\"id\": \"C1-05\", \"zh\": \"装作懂了 就跳起舞来\"},\n    {\"id\": \"C1-06\", \"zh\": \"那一口井 会被填满吗\"},\n    {\"id\": \"C1-07\", \"zh\": \"别放开我 也别停下\"},\n    {\"id\": \"C1-08\", \"zh\": \"我不是 一个人吧\"}\n  ]\n}",
+  "finished_at": "2026-11-08T11:05:06+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2265,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1920,
+    "output_tokens": 2446,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

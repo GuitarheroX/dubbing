@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T113339921949Z-0953431b",
+  "updated_at": "2026-11-08T11:35:14+00:00",
+  "song": "yoake-to-hotaru",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

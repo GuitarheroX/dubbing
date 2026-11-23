@@ -1,0 +1,21 @@
+{
+  "id": "5b9e23cb-0228-4568-9f11-0c9953eb8f9d",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A在保持核心语义的同时更具歌词感与表现力：C1-01“降临人间/无声却很明亮”虽为意象扩展，但未偏离“爱从何处来”的追问；C1-02“听心跳回答”自然承接“问心”；C1-03“橱窗里的假货”将“ニセモノ”具象化且口语自然；C1-04、C1-05均准确传达“只想找真实的爱”和“一直寻找你”。B语义基本准确但偏直译、句式较散，C1-02“它到底在哪里”略偏离“问自己胸口”的原意重心，整体表现力弱于A。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 365,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 184,
+    "service_tier": "standard"
+  }
+}

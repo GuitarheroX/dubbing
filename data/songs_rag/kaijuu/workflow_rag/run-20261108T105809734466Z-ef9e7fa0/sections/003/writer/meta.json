@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C2\",\n  \"phrases\": [\n    {\"id\": \"C2-01\", \"zh\": \"站在山丘上 抬眼数星星 风贴着草尖 胸口空出一片凉\"},\n    {\"id\": \"C2-02\", \"zh\": \"晨光染红手 昨夜的寂寞 醒来就忘 忘得 干净又陌生\"},\n    {\"id\": \"C2-03\", \"zh\": \"世界停在 半截的楼 露着骨头\"},\n    {\"id\": \"C2-04\", \"zh\": \"所以我 还想知道\"},\n    {\"id\": \"C2-05\", \"zh\": \"就像怪兽一样 远远地喊你 喊到哑\"},\n    {\"id\": \"C2-06\", \"zh\": \"喊声传出去 又散了\"}\n  ]\n}",
+  "finished_at": "2026-11-08T11:00:07+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2464,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 1781,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

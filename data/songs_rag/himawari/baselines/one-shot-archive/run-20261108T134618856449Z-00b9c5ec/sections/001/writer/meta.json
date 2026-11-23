@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"I1\",\n  \"phrases\": [\n    {\n      \"id\": \"I1-01\",\n      \"zh\": \"我想把这条命 轻轻交到你手心\",\n      \"chars\": 17,\n      \"self_check\": {\"budget\": [17, 17], \"ok\": true, \"note\": \"前段九字后段八字，空格断句\"}\n    },\n    {\n      \"id\": \"I1-02\",\n      \"zh\": \"我想把这条命 轻轻交到你手心\",\n      \"chars\": 17,\n      \"self_check\": {\"budget\": [17, 17], \"ok\": true, \"note\": \"重复句保持完全相同\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:20+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "I1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1127,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 155,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

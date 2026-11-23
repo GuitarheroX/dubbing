@@ -1,0 +1,57 @@
+{
+  "section": "V2",
+  "phrases": [
+    {
+      "id": "V2-01",
+      "zh": "哪颗星辰 轮回流转",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": true,
+        "note": "5+5，对应旋律两段"
+      }
+    },
+    {
+      "id": "V2-02",
+      "zh": "凋落飘散 是我吧",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "少一字，需补"
+      }
+    },
+    {
+      "id": "V2-03",
+      "zh": "平凡人生 无可奈",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "少一字，需补"
+      }
+    },
+    {
+      "id": "V2-04",
+      "zh": "无法实现 这身躯啊",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "少两字，需补"
+      }
+    }
+  ]
+}

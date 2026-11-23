@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 1.908,
+  "usage": {
+    "input_tokens": 109,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 192,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": true,
+    "human_annotations_in_generation": false,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "generation",
+  "variant": "paper-original",
+  "migrated_from": "run-20261105T124051697071Z-e000ba21",
+  "raw_response": "1) 每行音节数（以平假名/音节计）与原句对应：\n充满不安的（5）\n世间法则啊（5）\n与焦躁一同（6）\n夺走自由啊（6）\n黑白之雨啊（5）\n遮蔽这世界（5）\n天空嘲笑般沉落（8）\n\n2) 韵式：原句各行末音为 た/は/に/く/が/て/だ，押 -a/-a/-i/-u/-a/-e/-a 的交错韵；译文行末音节为 的/啊/同/啊/啊/界/落，押 -e/-a/-ong/-a/-a/-ie/-uo，保留首尾与中段回环的韵感。\n\n3) 主题：不安、焦躁、自由被夺、黑白之雨遮蔽世界、天空嘲弄并沉落，均已保留。"
+}

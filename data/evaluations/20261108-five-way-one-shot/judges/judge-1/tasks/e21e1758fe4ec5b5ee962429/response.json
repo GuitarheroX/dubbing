@@ -1,0 +1,21 @@
+{
+  "id": "135bf846-7a6b-46dc-a0cf-0ab67b873b0c",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"准确传达风穿行与运送、如蒲公英般散落街中各自飘零的核心意象\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"emotion\":{\"score\":5,\"reason\":\"轻盈飘散与离别的淡淡惆怅保留充分\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"naturalness\":{\"score\":5,\"reason\":\"顺口自然，符合歌词文体\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰但“传送”略平，整体服务主题\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"蒲公英散落城市各方的核心保留，但“载着光”增添原文没有的光意象\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"emotion\":{\"score\":4,\"reason\":\"飘散离别情绪基本一致，光意象略偏明亮\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“风载着光”稍显跳脱\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“各落一方”有画面感，表达较有力\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"蒲公英意象保留，但“这房间”“带走你和我”改变空间与人物关系，“发芽”增添原文没有的生长结局\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"emotion\":{\"score\":3,\"reason\":\"离别飘散基调在，但“发芽”转向希望，情绪方向局部偏移\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文流畅，但“风穿过这房间”与后文街景衔接略突兀\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“各自去发芽”意象鲜明，但偏离原主题\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"风穿长街、蒲公英散落远方核心保留，“带走些什么”较模糊但未大改\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"emotion\":{\"score\":4,\"reason\":\"飘散离别的惆怅基本一致\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"naturalness\":{\"score\":5,\"reason\":\"顺口自然，长街街口衔接流畅\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“各自去远方”有画面，但“带走些什么”略空泛\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"风穿行搬运、如蒲公英散落街巷各自飘零，核心信息准确\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"emotion\":{\"score\":5,\"reason\":\"轻盈与飘零的惆怅保留充分\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“风轻轻搬运”稍显生硬\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“轻轻搬运”有拟人趣味，意象清晰\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 721,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 943,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "1c4d7463-d440-42e1-87a6-4e18aa288ed2",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原意：C1-01“能去任何地方”对应“どこまでも行ける”，A“伸手够到天边”改写了意象；C1-03“想必是已经长大成人”保留推测语气，A“变得成熟/沉默”偏移；C1-05“只需再添一点勇气”准确对应“あと少しだけの勇気で”，A“推开的门”是额外添加。A在C1-06、C1-07表现自然，但整体语义忠实度不及B。\",\"phrase_ids\":[\"C1-01\",\"C1-03\",\"C1-05\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 579,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 143,
+    "service_tier": "standard"
+  }
+}

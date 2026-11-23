@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C1",
+    "query_text": "世界哗啦散开的那声音\n朝我跑过来\n朝我跑过来\n晨光漫上来\n在未来那头回过头来的你\n我挥一挥手\n桨落进水里\n桨落进水里\n要去哪儿呢\n去哪儿都行",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

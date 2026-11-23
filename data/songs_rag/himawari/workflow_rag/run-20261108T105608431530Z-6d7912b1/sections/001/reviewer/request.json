@@ -1,0 +1,69 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "I1",
+    "phrases": [
+      {
+        "id": "I1-01",
+        "section": "I1",
+        "ja": "私の命をあなたにあげたい",
+        "budget": {
+          "min": 17,
+          "max": 17
+        },
+        "pattern": [
+          9,
+          8
+        ]
+      },
+      {
+        "id": "I1-02",
+        "section": "I1",
+        "ja": "私の命をあなたにあげたい",
+        "budget": {
+          "min": 17,
+          "max": 17
+        },
+        "pattern": [
+          9,
+          8
+        ]
+      }
+    ],
+    "draft": {
+      "section": "I1",
+      "phrases": [
+        {
+          "id": "I1-01",
+          "zh": "想把我的命都交给你 像海风吹过你脸颊",
+          "chars": 17,
+          "self_check": {
+            "budget": [
+              17,
+              17
+            ],
+            "ok": true,
+            "note": "前9字后8字，按 pattern 空格断开；保留初版意象，重复句完全一致"
+          }
+        },
+        {
+          "id": "I1-02",
+          "zh": "想把我的命都交给你 像海风吹过你脸颊",
+          "chars": 17,
+          "self_check": {
+            "budget": [
+              17,
+              17
+            ],
+            "ok": true,
+            "note": "与 I1-01 完全重复，呼应原曲两句相同；字数前9后8"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

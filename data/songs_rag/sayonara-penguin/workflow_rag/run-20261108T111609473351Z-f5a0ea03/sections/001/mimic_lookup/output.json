@@ -1,0 +1,46 @@
+{
+  "section": "V1",
+  "query_text": "水光跳起来 落在新芽肩头\n你轻轻快走 赶在黎明前头\n夜半散落的碎屑 拼成梦的地图\n新的清晨 正轻轻醒来",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "林志敏_linzhimin/山水#s4",
+      "title": "山水",
+      "poet": "林志敏",
+      "poem_id": "林志敏_linzhimin/山水",
+      "stanza_idx": 4,
+      "score": 0.710917,
+      "text": "一片落叶唤醒一株新芽\n季节自尽头转身\n昨日我在夜空题了字\n亮成山头顿悟的星群\n今朝化为晨雾\n凝结草叶花瓣的露珠\n留下透彻"
+    },
+    {
+      "chunk_id": "马启代_maqidai/做第一个在春天里奔跑的人#s3",
+      "title": "做第一个在春天里奔跑的人",
+      "poet": "马启代",
+      "poem_id": "马启代_maqidai/做第一个在春天里奔跑的人",
+      "stanza_idx": 3,
+      "score": 0.702298,
+      "text": "跑着跑着身后的风就会和煦起来\n那些绿色的嫩芽正赶往枝头\n冬眠者的梦马上就要醒了\n万物都应该自由自在、生机勃勃"
+    },
+    {
+      "chunk_id": "舒婷_shuting/小窗之歌#s2",
+      "title": "小窗之歌",
+      "poet": "舒婷",
+      "poem_id": "舒婷_shuting/小窗之歌",
+      "stanza_idx": 2,
+      "score": 0.70107,
+      "text": "风过早地打扫天空\n夜还在沿街拾取碎片\n所有的花芽和嫩枝\n必须再经一番晨霜\n虽然黎明并不遥远"
+    },
+    {
+      "chunk_id": "李育敏_liyumin/火柴#s1",
+      "title": "火柴",
+      "poet": "李育敏",
+      "poem_id": "李育敏_liyumin/火柴",
+      "stanza_idx": 1,
+      "score": 0.697101,
+      "text": "我擦亮了自己和一个清晨\n只用了一个纸盒子和你\n你还年轻\n拥有尚未打籽的棉絮\n初秋的早上日光懒散，花落急"
+    }
+  ]
+}

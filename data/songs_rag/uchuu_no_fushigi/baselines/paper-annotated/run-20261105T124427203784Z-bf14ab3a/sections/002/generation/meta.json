@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 1.967,
+  "usage": {
+    "input_tokens": 453,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 208,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": false,
+    "human_annotations_in_generation": true,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "generation",
+  "variant": "paper-annotated",
+  "migrated_from": "run-20261105T124427203784Z-bf14ab3a",
+  "raw_response": "1. 为何晨光总将我照亮？ (12 syllables: wèi hé chén guāng zǒng jiāng wǒ zhào liàng)\n2. 为何夜晚总让人心伤？ (12 syllables: wèi hé yè wǎn zǒng ràng rén xīn shāng)\n3. 悲伤的事各分一半 (9 syllables: bēi shāng de shì gè fēn yī bàn)\n4. 若能那样该多好 (9 syllables: ruò néng nà yàng gāi duō hǎo)\n\nRhyme check (final phonemes): 1. liàng (iàng) 2. shāng (āng) 3. bàn (àn) 4. hǎo (ǎo). Lines 1–3 rhyme on the -àng/-àn nasal ending; line 4 ends on -ǎo, matching the source's non-rhyming final line (ね / ne). Theme preserved throughout."
+}

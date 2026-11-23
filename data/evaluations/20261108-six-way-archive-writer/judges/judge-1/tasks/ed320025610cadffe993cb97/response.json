@@ -1,0 +1,21 @@
+{
+  "id": "1001d225-456c-4a1e-95f1-a2b68dcd31f3",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更简洁自然，B1-03“再去爱你”直接呼应原文“人を愛して”且与C1“あなたをずっと探してた”形成情感线索；B的“再把心打开 拥抱别人”较冗长且偏离“人を愛して”的泛指爱他人之意。B1-01、B1-02两版均达意，A的“后知后觉才懂”略具表现力。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 240,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 124,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"不数流云 不回头 仰起头\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"按4/3/3断句，空格只作停顿；不数流云接后文数烧不完的东西\"\n      }\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"向最远方 放声嚎\",\n      \"chars\": 7,\n      \"self_check\": {\n        \"budget\": [7, 7],\n        \"ok\": true,\n        \"note\": \"按4/3断句，嚎字收束，对应遥かへ遠吠え\"\n      }\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"气没喘匀 喉咙紧 还想喊\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"按4/3/3断句，气没喘匀对应息継ぐ暇もない\"\n      }\n    },\n    {\n      \"id\": \"B1-04\",\n      \"zh\": \"那点痛 才痛快\",\n      \"chars\": 6,\n      \"self_check\": {\n        \"budget\": [6, 6],\n        \"ok\": true,\n        \"note\": \"按3/3断句，重复痛字保留又苦又痛快的劲儿\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T10:43:28+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3018,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1792,
+    "output_tokens": 8637,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

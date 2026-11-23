@@ -1,0 +1,9 @@
+{
+  "run": "run-20261108T132358850519Z-0826a389",
+  "updated_at": "2026-11-08T13:24:02+00:00",
+  "song": "sonare",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "passed": 1,
+  "total": 20
+}

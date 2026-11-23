@@ -1,0 +1,8 @@
+{
+  "run": "run-20261105T124452750701Z-8207bcae",
+  "updated_at": "2026-11-07T06:09:06+00:00",
+  "song": "yoake-to-hotaru",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "baseline": "paper-annotated"
+}

@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\"id\": \"V2-01\", \"zh\": \"阳台外面 天色暗了\"},\n    {\"id\": \"V2-02\", \"zh\": \"楼梯上 一级一级的脚步\"},\n    {\"id\": \"V2-03\", \"zh\": \"天空慢慢 蒙上一层灰\"},\n    {\"id\": \"V2-04\", \"zh\": \"落在窗玻璃上 又落进房间\"},\n    {\"id\": \"V2-05\", \"zh\": \"黄昏漫开 一层层晕染\"},\n    {\"id\": \"V2-06\", \"zh\": \"像哭肿的眼 太阳红得发烫\"},\n    {\"id\": \"V2-07\", \"zh\": \"像要化掉一样 一点一点\"},\n    {\"id\": \"V2-08\", \"zh\": \"这世界一点一点 死在我眼前\"},\n    {\"id\": \"V2-09\", \"zh\": \"我又梦见自己 双手掐住你的咽喉\"},\n    {\"id\": \"V2-10\", \"zh\": \"春风里 窗帘轻轻地摇\"},\n    {\"id\": \"V2-11\", \"zh\": \"从干裂的唇间 一个字一个字\"},\n    {\"id\": \"V2-12\", \"zh\": \"说出口的话 像泡泡一样破掉\"}\n  ]\n}",
+  "finished_at": "2026-11-08T11:13:48+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 4590,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2176,
+    "output_tokens": 1569,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

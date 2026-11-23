@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\"id\": \"B1-01\", \"zh\": \"挡路的阻碍 嫉妒\"},\n    {\"id\": \"B1-02\", \"zh\": \"全部甩开 冲动\"},\n    {\"id\": \"B1-03\", \"zh\": \"属于我的色 本能\"},\n    {\"id\": \"B1-04\", \"zh\": \"我要夺回 现在\"}\n  ]\n}",
+  "finished_at": "2026-11-08T13:23:40+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "section": "B1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1447,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1664,
+    "output_tokens": 98,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

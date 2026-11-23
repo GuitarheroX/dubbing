@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "1. 哪怕明天是 (6 syllables: nǎ pà míng tiān shì) — rhyme: i\n2. 走到了尽头 (7 syllables: zǒu dào le jìn tóu) — rhyme: ou\n3. 用自己的手 (6 syllables: yòng zì jǐ de shǒu) — rhyme: ou\n4. 去开辟出路 (7 syllables: qù kāi pì chū lù) — rhyme: u\n5. 蜷缩的身体 (6 syllables: quán suō de shēn tǐ) — rhyme: i\n6. 请紧紧拥抱 (7 syllables: qǐng jǐn jǐn yōng bào) — rhyme: ao\n7. 以觉悟迈步 (7 syllables: yǐ jué wù mài bù) — rhyme: u\n8. 想实现的梦 现在就赢取到手！ (16 syllables: xiǎng shí xiàn de mèng / xiàn zài jiù yíng qǔ dào shǒu) — rhyme: ou\n\nRhyme pattern check (line-final phonemes): 1-i, 2-ou, 3-ou, 4-u, 5-i, 6-ao, 7-u, 8-ou. The source rhyme scheme is not strictly uniform; the translation preserves the prominent ou-rhyme in lines 2, 3, and 8, with line 4 and 7 sharing u, and lines 1 and 5 sharing i. Syllable counts verified per line: 6, 7, 6, 7, 6, 7, 7, 16."
+  },
+  "data": {
+    "response": "1. 哪怕明天是 (6 syllables: nǎ pà míng tiān shì) — rhyme: i\n2. 走到了尽头 (7 syllables: zǒu dào le jìn tóu) — rhyme: ou\n3. 用自己的手 (6 syllables: yòng zì jǐ de shǒu) — rhyme: ou\n4. 去开辟出路 (7 syllables: qù kāi pì chū lù) — rhyme: u\n5. 蜷缩的身体 (6 syllables: quán suō de shēn tǐ) — rhyme: i\n6. 请紧紧拥抱 (7 syllables: qǐng jǐn jǐn yōng bào) — rhyme: ao\n7. 以觉悟迈步 (7 syllables: yǐ jué wù mài bù) — rhyme: u\n8. 想实现的梦 现在就赢取到手！ (16 syllables: xiǎng shí xiàn de mèng / xiàn zài jiù yíng qǔ dào shǒu) — rhyme: ou\n\nRhyme pattern check (line-final phonemes): 1-i, 2-ou, 3-ou, 4-u, 5-i, 6-ao, 7-u, 8-ou. The source rhyme scheme is not strictly uniform; the translation preserves the prominent ou-rhyme in lines 2, 3, and 8, with line 4 and 7 sharing u, and lines 1 and 5 sharing i. Syllable counts verified per line: 6, 7, 6, 7, 6, 7, 7, 16."
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "1. 哪怕明天是 (6 syllables: nǎ pà míng tiān shì) — rhyme: i\n2. 走到了尽头 (7 syllables: zǒu dào le jìn tóu) — rhyme: ou\n3. 用自己的手 (6 syllables: yòng zì jǐ de shǒu) — rhyme: ou\n4. 去开辟出路 (7 syllables: qù kāi pì chū lù) — rhyme: u\n5. 蜷缩的身体 (6 syllables: quán suō de shēn tǐ) — rhyme: i\n6. 请紧紧拥抱 (7 syllables: qǐng jǐn jǐn yōng bào) — rhyme: ao\n7. 以觉悟迈步 (7 syllables: yǐ jué wù mài bù) — rhyme: u\n8. 想实现的梦 现在就赢取到手！ (16 syllables: xiǎng shí xiàn de mèng / xiàn zài jiù yíng qǔ dào shǒu) — rhyme: ou\n\nRhyme pattern check (line-final phonemes): 1-i, 2-ou, 3-ou, 4-u, 5-i, 6-ao, 7-u, 8-ou. The source rhyme scheme is not strictly uniform; the translation preserves the prominent ou-rhyme in lines 2, 3, and 8, with line 4 and 7 sharing u, and lines 1 and 5 sharing i. Syllable counts verified per line: 6, 7, 6, 7, 6, 7, 7, 16."
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

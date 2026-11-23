@@ -1,0 +1,21 @@
+{
+  "id": "c7a85f4e-b5da-4fa9-a52a-0068a4f72742",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A的中文更自然、有画面感，情绪流动顺畅；B偏文言压缩，虽简洁但表现力较弱。两版核心语义均基本准确，A在“赤着双脚奔跑”“点燃我的身体”等处更具感染力。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 404,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 83,
+    "service_tier": "standard"
+  }
+}

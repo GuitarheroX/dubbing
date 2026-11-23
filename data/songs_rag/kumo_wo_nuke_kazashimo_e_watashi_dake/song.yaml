@@ -1,0 +1,40 @@
+song:
+  id: kumo_wo_nuke_kazashimo_e_watashi_dake
+  title: 雲を抜け風下へ私だけ
+  artist: ヨルシカ
+  source_lang: ja
+
+# budget：按照日语发声音节数估算；未根据音频或乐谱核对实际旋律音符数。
+# pattern：暂定的短句分组，非已确认的演唱节奏；所有分组之和等于 budget。
+sections:
+  - {id: V1, role: verse}
+  - {id: V2, role: verse}
+  - {id: C1, role: chorus}
+
+phrases:
+  # ===== V1 =====
+  - {id: V1-01, section: V1, ja: "突風一吹き", budget: {min: 5, max: 5}, pattern: [2, 3]}
+  - {id: V1-02, section: V1, ja: "二吹き、私は草を抜け", budget: {min: 11, max: 11}, pattern: [3, 4, 4]}
+  - {id: V1-03, section: V1, ja: "とうとうがらんどう", budget: {min: 6, max: 6}, pattern: [2, 4]}
+  - {id: V1-04, section: V1, ja: "行く風下、私だけ", budget: {min: 9, max: 9}, pattern: [4, 5]}
+  - {id: V1-05, section: V1, ja: "草原に立った影", budget: {min: 7, max: 7}, pattern: [2, 3, 2]}
+  - {id: V1-06, section: V1, ja: "私は青い風", budget: {min: 9, max: 9}, pattern: [4, 5]}
+  - {id: V1-07, section: V1, ja: "靡く", budget: {min: 3, max: 3}, pattern: [3]}
+
+  # ===== V2 =====
+  - {id: V2-01, section: V2, ja: "突風一吹き、晴れ", budget: {min: 7, max: 7}, pattern: [2, 3, 2]}
+  - {id: V2-02, section: V2, ja: "私は道の上", budget: {min: 8, max: 8}, pattern: [4, 4]}
+  - {id: V2-03, section: V2, ja: "とうとうと闊歩", budget: {min: 5, max: 5}, pattern: [2, 3]}
+  - {id: V2-04, section: V2, ja: "その風下、お前だけ", budget: {min: 11, max: 11}, pattern: [2, 4, 5]}
+  - {id: V2-05, section: V2, ja: "草原に立った影", budget: {min: 7, max: 7}, pattern: [2, 3, 2]}
+  - {id: V2-06, section: V2, ja: "渡りの白い羽根", budget: {min: 9, max: 9}, pattern: [4, 5]}
+  - {id: V2-07, section: V2, ja: "私の白い風", budget: {min: 9, max: 9}, pattern: [4, 5]}
+  - {id: V2-08, section: V2, ja: "靡く", budget: {min: 3, max: 3}, pattern: [3]}
+
+  # ===== C1 =====
+  - {id: C1-01, section: C1, ja: "風を受け、花を抜け", budget: {min: 10, max: 10}, pattern: [5, 5]}
+  - {id: C1-02, section: C1, ja: "雲を抜け風下へ私だけ", budget: {min: 13, max: 13}, pattern: [5, 3, 5]}
+  - {id: C1-03, section: C1, ja: "朝ぼらけ、早く行け", budget: {min: 10, max: 10}, pattern: [5, 5]}
+  - {id: C1-04, section: C1, ja: "この草と魂の匂い", budget: {min: 12, max: 12}, pattern: [5, 4, 3]}
+  - {id: C1-05, section: C1, ja: "風を抜け、空を抜け", budget: {min: 10, max: 10}, pattern: [3, 2, 3, 2]}
+  - {id: C1-06, section: C1, ja: "雲を抜け風下へ私だけ", budget: {min: 13, max: 13}, pattern: [5, 3, 5]}

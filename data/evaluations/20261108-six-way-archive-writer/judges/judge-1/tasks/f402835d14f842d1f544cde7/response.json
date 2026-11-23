@@ -1,0 +1,21 @@
+{
+  "id": "98c8ab9b-bd5b-41e0-9310-eadf7e2dc6a4",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"风穿行/搬运、如蒲公英、散落街巷各自飘零，核心意象与被动散落关系准确\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"emotion\":{\"score\":5,\"reason\":\"轻盈飘散与淡淡离散感保留充分\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"naturalness\":{\"score\":5,\"reason\":\"顺口自然，符合歌词文体\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰，但“轻轻搬运”略弱于原句的承载感\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"蒲公英飘散保留，但“带着梦”增补原无信息，“各自生根”改变被动散落为扎根\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"emotion\":{\"score\":3,\"reason\":\"方向大体一致，但“生根”带来安定感，偏离飘零情绪\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"较顺口，个别搭配普通\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通，增补的“梦”未增强主题\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"“这房间”“带走你和我”添加原无场景与人物关系，后句“发芽”也改变散落状态\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"emotion\":{\"score\":3,\"reason\":\"蒲公英飘散情绪尚在，但房间与带走你我使意境偏移\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"naturalness\":{\"score\":3,\"reason\":\"可理解，但“风穿过这房间”与后句拼接略生硬\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"有画面但添加成分分散主题\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"风穿街巷、绒毛飘散、撒向城市各落一方，核心保留；“载着光”为合理增补\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"emotion\":{\"score\":4,\"reason\":\"飘散离散感基本保留，略偏明亮\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"naturalness\":{\"score\":5,\"reason\":\"简洁顺口，歌词感强\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“各落一方”凝练有力，意象统一\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"蒲公英绒毛与吹散保留，但“带走些什么”模糊化，“街口”“远方”改变原“街にまかれ”的散落范围\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"emotion\":{\"score\":3,\"reason\":\"离散感在，但“带走些什么”偏空泛，情绪略散\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"较自然，长句稍显松散\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，“带走些什么”缺乏具体意象\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"风穿行传送、如蒲公英绒、散落城中各自飘零，核心准确；“传送”略泛\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"emotion\":{\"score\":4,\"reason\":\"轻盈飘零情绪保留较好\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"“风儿”略童谣化但整体顺口，“蒲公英绒”稍简\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"意象清楚但“传送”“蒲公英绒”表现力普通\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 691,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 1156,
+    "service_tier": "standard"
+  }
+}

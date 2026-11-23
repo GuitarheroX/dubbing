@@ -1,0 +1,21 @@
+{
+  "id": "0620e62f-328f-4e57-9fde-a02ac7b6ae9e",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"保留疑问与分担忧伤的主旨，但“照我眼睛”“熄了灯就变空荡”加入原文没有的具体意象，偏离原句。\",\"phrase_ids\":[\"V2-01\",\"V2-02\"]},\"emotion\":{\"score\":4,\"reason\":\"童趣疑问与温柔愿望基本保留，语气亲切。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"分句节奏顺口，“能这样就多好你说呢”略绕但可唱。\",\"phrase_ids\":[\"V2-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“掰一半分给你”意象鲜明，服务分享悲伤的主题。\",\"phrase_ids\":[\"V2-03\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"四句核心信息准确：晨光为何照我、夜为何寂、悲伤对半分、若能如此多好。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，偏书面而稍弱于原歌的稚气。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文通顺，“寂凉”稍文雅但可接受。\",\"phrase_ids\":[\"V2-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但较平实，意象与语气不够鲜明。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"主旨准确，但“晨光总将我照亮”弱化了“朝は僕を照らす”的疑问对象，“各分一半”略改分担方向。\",\"phrase_ids\":[\"V2-01\",\"V2-03\"]},\"emotion\":{\"score\":4,\"reason\":\"疑问与温柔愿望保留，整体略偏抒情。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"四句都顺口自然，符合歌词文体。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通，缺少原句的童趣细节。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"“偏爱地落我肩上”“把房间吹得空荡”加入原文没有的具体场景，末句“一人分一半”改变原意。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-04\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向大体保留，但“偏爱”带出被选中的意味，与原句单纯疑问有偏移。\",\"phrase_ids\":[\"V2-01\"]},\"naturalness\":{\"score\":4,\"reason\":\"分句节奏顺口，“要是能够一人分一半”稍拗口。\",\"phrase_ids\":[\"V2-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“掰两半各一半”意象鲜明，画面感强。\",\"phrase_ids\":[\"V2-03\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"前三句准确，末句“能这样就好了呢”保留愿望，但“心慌”较“寂しくなる”略强。\",\"phrase_ids\":[\"V2-02\",\"V2-04\"]},\"emotion\":{\"score\":4,\"reason\":\"疑问与温柔语气基本一致，“心慌”使夜晚情绪稍紧张。\",\"phrase_ids\":[\"V2-02\"]},\"naturalness\":{\"score\":5,\"reason\":\"四句都自然顺口，接近口语歌词。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但较平实，意象不够鲜明。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 814,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 989,
+    "service_tier": "standard"
+  }
+}

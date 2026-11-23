@@ -1,0 +1,57 @@
+{
+  "section": "B1",
+  "phrases": [
+    {
+      "id": "B1-01",
+      "zh": "风呼啸 飘零飘零",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    },
+    {
+      "id": "B1-02",
+      "zh": "此刻已 身在何处",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    },
+    {
+      "id": "B1-03",
+      "zh": "被吹散 轻轻摇荡",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    },
+    {
+      "id": "B1-04",
+      "zh": "忽念起 此处何方",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    }
+  ]
+}

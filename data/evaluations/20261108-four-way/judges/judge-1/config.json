@@ -1,0 +1,17 @@
+{
+  "input_hash": "3fb64c59f359cd5ecca8a63d2b38610b36d134bafeab0d820ad63c513d7d54f6",
+  "seed": 0,
+  "limit": null,
+  "prompts": {
+    "score": "8f3a37bb372693ffb23a4fbd4bc4c0cea00e99b33dd7d74c8c68b3ed5659c9fb",
+    "pair": "0c45b7db09fb91e4f60e7415de6ae54624597bb05f6fc913a109cbd9c481833f"
+  },
+  "client": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com/anthropic",
+    "protocol": "anthropic",
+    "thinking": "disabled",
+    "temperature": 0,
+    "max_tokens": 6000
+  }
+}

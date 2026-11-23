@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"悠悠悠悠 把梦烧成灰\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"前四字连读占第一段四拍 后五字收在梦与灰上\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"灵魂里那 纯白 纯白 的火色\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"按4/2/2/3断 保留原文纯白的重复 末三字收火色\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"把喜悦的火 点亮 烧旺 就这点心愿\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"5/2/2/5对齐 点亮烧旺两处动作顶住中间两个短拍\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"想象是 几枚湿冷的零钱\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"留初版原句 三字加七字 湿冷对泡銭的潮气\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"一双手 捧起来 还热的词\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"由3/2/5改为3/3/4 砍掉虚词 保留词还热的触感\"}\n    },\n    {\n      \"id\": \"C1-06\",\n      \"zh\": \"数一数那些 烧不尽 的东西\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"5/3/3对齐 烧不化改成烧不尽 更贴燃え尽きない\"}\n    },\n    {\n      \"id\": \"C1-07\",\n      \"zh\": \"我只想 捧起一捧\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"3/4收尾 用捧的动作落地 不添语气字\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T10:44:08+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3156,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2048,
+    "output_tokens": 4471,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

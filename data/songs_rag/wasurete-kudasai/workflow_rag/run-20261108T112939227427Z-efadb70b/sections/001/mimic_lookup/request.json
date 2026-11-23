@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "I1",
+    "query_text": "一颗心 全都给你\n一束花 轻轻递给你\n任长发在风里摇 不去拉住也不去管",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

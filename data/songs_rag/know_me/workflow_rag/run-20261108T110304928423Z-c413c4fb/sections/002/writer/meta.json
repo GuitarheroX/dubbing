@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\"section\": \"V2\", \"phrases\": [{\"id\": \"V2-01\", \"zh\": \"沉在水底的 一层浑浊\"}, {\"id\": \"V2-02\", \"zh\": \"想服个软 却咬紧了牙关\"}, {\"id\": \"V2-03\", \"zh\": \"隔着耳机 谁都接不住谁\"}, {\"id\": \"V2-04\", \"zh\": \"认不出自己\"}]}",
+  "finished_at": "2026-11-08T11:04:03+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2804,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 1286,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

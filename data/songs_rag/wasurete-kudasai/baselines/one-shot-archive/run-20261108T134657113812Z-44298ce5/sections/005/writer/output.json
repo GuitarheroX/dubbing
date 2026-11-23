@@ -1,0 +1,96 @@
+{
+  "section": "V2",
+  "phrases": [
+    {
+      "id": "V2-01",
+      "zh": "一件一件 数来听听",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "需12字，当前9字，待补"
+      }
+    },
+    {
+      "id": "V2-02",
+      "zh": "你自己的人生里 你想去爱的又是什么",
+      "chars": 17,
+      "self_check": {
+        "budget": [
+          20,
+          20
+        ],
+        "ok": false,
+        "note": "需20字，当前17字，待补"
+      }
+    },
+    {
+      "id": "V2-03",
+      "zh": "难道 什么都没有吗",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": false,
+        "note": "需6字，当前8字，待减"
+      }
+    },
+    {
+      "id": "V2-04",
+      "zh": "海边那座 小小的车站",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "需11字，当前9字，待补"
+      }
+    },
+    {
+      "id": "V2-05",
+      "zh": "走五分钟 就到海岸线",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "需10字，当前9字，待补"
+      }
+    },
+    {
+      "id": "V2-06",
+      "zh": "和我一起看过的翡翠色",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "需12字，当前10字，待补"
+      }
+    },
+    {
+      "id": "V2-07",
+      "zh": "请你忘了我吧",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "与V1-07重复，保持"
+      }
+    }
+  ]
+}

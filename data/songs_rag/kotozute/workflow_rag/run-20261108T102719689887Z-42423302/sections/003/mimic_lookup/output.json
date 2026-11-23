@@ -1,0 +1,46 @@
+{
+  "section": "B1",
+  "query_text": "攥紧过去 一甩手 未来\n总在遇见 却只想把视线移开\n比那 旧我 更远些\n比光 更远些",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "夏宇_xiayu/鞋#s5",
+      "title": "鞋",
+      "poet": "夏宇",
+      "poem_id": "夏宇_xiayu/鞋",
+      "stanza_idx": 5,
+      "score": 0.654845,
+      "text": "你只是光光的脚丫搁在几上\n读信\n读我梦见我还要走好远\n好远的路\n我将比现在更忧郁些\n固执些\n破旧些\n一天比\n一天\n更像\n你穿的\n那双\n鞋"
+    },
+    {
+      "chunk_id": "去影_quying/看不见的事物#s5",
+      "title": "看不见的事物",
+      "poet": "去影",
+      "poem_id": "去影_quying/看不见的事物",
+      "stanza_idx": 5,
+      "score": 0.65153,
+      "text": "在远方 有人给我安慰 给我拥抱 给我短暂的慰籍\n她给我疗毒 像自己复杂的身世 烧光所有等待的眼神"
+    },
+    {
+      "chunk_id": "中岛_zhongdao/分开#s1",
+      "title": "分开",
+      "poet": "中岛",
+      "poem_id": "中岛_zhongdao/分开",
+      "stanza_idx": 1,
+      "score": 0.650478,
+      "text": "分开手\n分开看不见的刀光\n灿烂的年龄\n分开奇妙的欲望\n分开去的路\n分开为你投来的目光"
+    },
+    {
+      "chunk_id": "苏浅_suqian/给诗，或者爱#s1",
+      "title": "给诗，或者爱",
+      "poet": "苏浅",
+      "poem_id": "苏浅_suqian/给诗，或者爱",
+      "stanza_idx": 1,
+      "score": 0.649952,
+      "text": "我喜欢过你么，我还会喜欢\n我厌倦过你么，我还会厌倦\n你在我的手上我扔掉你\n而你等在另一条路上与我相遇"
+    }
+  ]
+}

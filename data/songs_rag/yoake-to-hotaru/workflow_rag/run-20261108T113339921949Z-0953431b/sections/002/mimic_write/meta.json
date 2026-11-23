@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "```json\n{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"唱没有形状的歌谣 描出天亮的模样\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"8+7断句，与pattern[8,7]一致；保留初版骨架，把「用」改为「唱」，让「歌」真的发出声音\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"浅浅的 浅浅的 夏天的那一头\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"3/3/6按pattern用空格断开，两组「浅浅的」对应原文的浅い浅い重复\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"看见你不冷的手心 摊开在夏天那一头\",\n      \"chars\": 16,\n      \"self_check\": {\"budget\": [16, 16], \"ok\": true, \"note\": \"8+8；「手のひら」落在手心更具体，句尾与上一句的「夏天的那一头」呼应，借了参考诗「我看见……」的起句骨架\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"淡蓝天空 破晓前一只萤火\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"中间空格断成短句；「淡蓝」替掉「淡淡」更见颜色，「破晓前」不再与C1-01的「天亮」撞词\"}\n    }\n  ]\n}\n```",
+  "finished_at": "2026-11-08T11:35:14+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3146,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 4313,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

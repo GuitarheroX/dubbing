@@ -1,0 +1,196 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "phrases": [
+      {
+        "id": "V1-01",
+        "section": "V1",
+        "ja": "箱の中の小さい家の",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          6,
+          5
+        ]
+      },
+      {
+        "id": "V1-02",
+        "section": "V1",
+        "ja": "二人で並んだキッチンの小窓の",
+        "budget": {
+          "min": 14,
+          "max": 14
+        },
+        "pattern": [
+          7,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "V1-03",
+        "section": "V1",
+        "ja": "カーテンの先の思い出の庭に",
+        "budget": {
+          "min": 14,
+          "max": 14
+        },
+        "pattern": [
+          6,
+          8
+        ]
+      },
+      {
+        "id": "V1-04",
+        "section": "V1",
+        "ja": "春の日差しを一つ埋めて",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          7,
+          5
+        ]
+      },
+      {
+        "id": "V1-05",
+        "section": "V1",
+        "ja": "たまには少しの水をやって",
+        "budget": {
+          "min": 13,
+          "max": 13
+        },
+        "pattern": [
+          8,
+          5
+        ]
+      },
+      {
+        "id": "V1-06",
+        "section": "V1",
+        "ja": "小さな枇杷が生ったとき",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          6,
+          4
+        ]
+      },
+      {
+        "id": "V1-07",
+        "section": "V1",
+        "ja": "忘れてください",
+        "budget": {
+          "min": 7,
+          "max": 7
+        }
+      }
+    ],
+    "draft": {
+      "section": "V1",
+      "phrases": [
+        {
+          "id": "V1-01",
+          "zh": "记忆的箱子里 小小一个家",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "前段六字后段五字，贴合旋律切分"
+          }
+        },
+        {
+          "id": "V1-02",
+          "zh": "两个人并肩站着 小厨房 那扇小窗",
+          "chars": 14,
+          "self_check": {
+            "budget": [
+              14,
+              14
+            ],
+            "ok": true,
+            "note": "按七、三、四字分段，保留初版画面"
+          }
+        },
+        {
+          "id": "V1-03",
+          "zh": "窗帘的那一边 是回忆里那座庭院",
+          "chars": 14,
+          "self_check": {
+            "budget": [
+              14,
+              14
+            ],
+            "ok": true,
+            "note": "六字加八字，借箱中旧物的句式但不照搬"
+          }
+        },
+        {
+          "id": "V1-04",
+          "zh": "把一束春日阳光 埋进泥土里",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "七字加五字，埋春光像埋种子"
+          }
+        },
+        {
+          "id": "V1-05",
+          "zh": "偶尔也浇上一点水 等它醒过来",
+          "chars": 13,
+          "self_check": {
+            "budget": [
+              13,
+              13
+            ],
+            "ok": true,
+            "note": "八字加五字，用醒过来替代长出来更轻"
+          }
+        },
+        {
+          "id": "V1-06",
+          "zh": "小小的枇杷树 结出果时",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "六字加四字，保留枇杷结果的时间点"
+          }
+        },
+        {
+          "id": "V1-07",
+          "zh": "请你把我忘掉吧",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "避开句尾了字，意思仍是轻声请求遗忘"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

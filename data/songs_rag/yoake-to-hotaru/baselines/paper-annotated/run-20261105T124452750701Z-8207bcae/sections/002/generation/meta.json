@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 1.33,
+  "usage": {
+    "input_tokens": 303,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 128,
+    "output_tokens": 103,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": false,
+    "human_annotations_in_generation": true,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "generation",
+  "variant": "paper-annotated",
+  "migrated_from": "run-20261105T124452750701Z-8207bcae",
+  "raw_response": "1. 用无形的歌描绘着黎明 (15 syllables)\n2. 在那浅浅的浅浅的夏日彼方 (12 syllables)\n3. 我看见了你不冰冷的手掌心 (16 syllables)\n4. 淡淡天空 黎明的萤火 (11 syllables)\n\nRhyme check (final phonemes): 明 (míng), 方 (fāng), 心 (xīn), 火 (huǒ) — no consistent rhyme, matching the source which also lacks a strict rhyme pattern."
+}

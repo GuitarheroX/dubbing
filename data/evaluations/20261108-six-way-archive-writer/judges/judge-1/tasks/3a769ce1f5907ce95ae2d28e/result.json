@@ -1,0 +1,226 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "保留“生来注定是玫瑰命运”的核心，但“如那风云”是原文没有的附加意象，略增偏移",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "宿命感与激烈活着的方向保留，但“风云”使情绪稍显外扩",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“是那朵玫瑰花的命运”偏口语冗长，“如那风云”略生硬",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达可懂，但“风云”与玫瑰主题衔接不够紧密",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“生为玫瑰的命运”“绚烂而激烈地活”基本对应原文，但“生为”略压缩了“被赋予宿命”的意味",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "宿命与热烈情绪保留，但整体较简淡",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "简洁顺口，符合歌词短句，但“生为玫瑰的命运”稍文白夹杂",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但意象和力度普通",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“生来就是一朵玫瑰的命”“要华丽地激烈地活这一生”准确传达原文宿命与生存方式",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "宿命感和热烈活着的情绪方向、强度都保留充分",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "口语化歌词自然顺口，断句也符合歌词文体",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "表达有力且服务主题，但意象较直接，缺少额外亮点",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“玫瑰的宿命”“注定要华丽激烈地活一生”准确对应原文核心",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "宿命感与激烈生存的情绪保留充分",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文歌词表达自然顺口，节奏清晰",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "表达明确有力，但整体较平实",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“血脉只认得深红玫瑰”“一句命令”等大幅改写，加入原文没有的血脉、命令意象，偏离“生来背负玫瑰宿命”的核心",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "激烈燃烧的情绪方向接近，但“命令”“不得不燃”使情绪更压迫，偏离原文明亮的宿命感",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“不得不燃”“烧到最烈”可理解但多处生硬，断句碎片化",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象鲜明、有冲击力，但部分意象服务的是改写后的主题",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "保留玫瑰宿命与华美激烈，但“一身深红”“落得激烈”等添加了原文没有的凋落与颜色意象，语义有偏移",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "宿命与热烈情绪基本保留，但“落得激烈”引入悲壮感，略偏",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“命里注定 是玫瑰 一身深红 生来盛放”断句较碎，“落得激烈”搭配略生硬",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象较鲜明，但部分附加意象与原文主题衔接不够自然",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "4209cc06-b336-4063-945c-c6237b53161f",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心意象基本准确，但“イロハ”译为“法则”略窄，“嘲笑い沈んだ”的主语关系稍模糊\",\"phrase_ids\":[\"V1-02\",\"V1-07\"]},\"emotion\":{\"score\":3,\"reason\":\"压抑不安的基调保留，但语气偏平，缺少原句的沉重推进感\",\"phrase_ids\":[\"V1-03\",\"V1-07\"]},\"naturalness\":{\"score\":3,\"reason\":\"“与焦躁一同”“夺走自由啊”等句可理解但生硬，句尾“啊”略凑\",\"phrase_ids\":[\"V1-03\",\"V1-04\",\"V1-05\"]},\"expressiveness\":{\"score\":3,\"reason\":\"意象基本到位但表达普通，缺少鲜明张力\",\"phrase_ids\":[\"V1-05\",\"V1-07\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“世间百态无常”偏离“イロハ”的规矩/入门义，“自由被夺走光”口语化改写尚可但略失原意\",\"phrase_ids\":[\"V1-02\",\"V1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向一致，但“心房”“身旁”等词偏柔，削弱原句压迫感\",\"phrase_ids\":[\"V1-01\",\"V1-03\"]},\"naturalness\":{\"score\":3,\"reason\":\"整体顺口，但“夺走光”“沉没无声”略凑韵生硬\",\"phrase_ids\":[\"V1-04\",\"V1-07\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达通顺但意象普通，缺乏力度\",\"phrase_ids\":[\"V1-05\",\"V1-07\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息保留，“イロハ”译为“规矩密密麻麻”合理扩展；“天空冷笑我往下沉”将嘲笑与沉落关系明确化，属合理补充\",\"phrase_ids\":[\"V1-02\",\"V1-07\"]},\"emotion\":{\"score\":4,\"reason\":\"压抑、焦躁与下沉感传达较充分，情绪方向一致\",\"phrase_ids\":[\"V1-01\",\"V1-07\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文流畅有歌词感，个别句如“把整个世界都藏起”稍平\",\"phrase_ids\":[\"V1-06\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“漫过喉咙”“悄悄掏走”等意象鲜明，服务主题\",\"phrase_ids\":[\"V1-01\",\"V1-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心语义准确，“一寸一寸抽走自由”合理具象化；“天空垂眼俯视着我 笑我下沉”将嘲笑与沉落关系明确化，属可接受补充\",\"phrase_ids\":[\"V1-04\",\"V1-07\"]},\"emotion\":{\"score\":4,\"reason\":\"焦躁、被剥夺与下沉的压抑感传达充分\",\"phrase_ids\":[\"V1-03\",\"V1-07\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文自然有节奏，“焦躁在骨头里发痒”略奇但可接受\",\"phrase_ids\":[\"V1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“骨头里发痒”“一寸一寸抽走”意象鲜明有力\",\"phrase_ids\":[\"V1-03\",\"V1-04\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1415,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 773,
+    "service_tier": "standard"
+  }
+}

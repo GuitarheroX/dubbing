@@ -1,0 +1,83 @@
+{
+  "section": "C1",
+  "phrases": [
+    {
+      "id": "C1-01",
+      "zh": "迎着风 穿过花丛",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "实际9字，需补一字"
+      }
+    },
+    {
+      "id": "C1-02",
+      "zh": "穿过云 顺风去 只剩我一人",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          13,
+          13
+        ],
+        "ok": false,
+        "note": "实际12字，需补一字"
+      }
+    },
+    {
+      "id": "C1-03",
+      "zh": "天微明 快些走 别回头",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": true,
+        "note": "5+5分段"
+      }
+    },
+    {
+      "id": "C1-04",
+      "zh": "这青草 和灵魂的 气息",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "实际10字，需补两字"
+      }
+    },
+    {
+      "id": "C1-05",
+      "zh": "穿过风 穿过 天空 穿过",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": true,
+        "note": "3+2+3+2分段"
+      }
+    },
+    {
+      "id": "C1-06",
+      "zh": "穿过云 顺风去 只剩我一人",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          13,
+          13
+        ],
+        "ok": false,
+        "note": "实际12字，需补一字"
+      }
+    }
+  ]
+}

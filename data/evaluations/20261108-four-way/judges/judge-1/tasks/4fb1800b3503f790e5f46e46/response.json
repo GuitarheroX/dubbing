@@ -1,0 +1,21 @@
+{
+  "id": "d5f64ee7-2a16-4c32-abf6-9c81b7beae2f",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A在保持核心语义（无法抑制的躁动、体内之兽、水面泡沫生灭）的同时，用“闷/烧不透”“骨头里”“碎了又生”等表达强化了压抑与循环的意境，中文更具表现力和歌词感；B虽准确自然，但偏直译、情绪张力较弱。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 267,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 96,
+    "service_tier": "standard"
+  }
+}

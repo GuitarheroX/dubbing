@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"B2\",\n  \"phrases\": [\n    {\n      \"id\": \"B2-01\",\n      \"zh\": \"我梦见 所有人都 一个一个 消失不见\",\n      \"chars\": 15,\n      \"self_check\": { \"budget\": [15, 15], \"ok\": true, \"note\": \"保留初版的四段式断句 3+4+4+4 正好 15 字，「一个一个」重复出逐个消失的慢速感\" }\n    },\n    {\n      \"id\": \"B2-02\",\n      \"zh\": \"午夜的房间 宽得发慌 静到能听见血在流\",\n      \"chars\": 17,\n      \"self_check\": { \"budget\": [17, 17], \"ok\": true, \"note\": \"保留初版「宽得发慌」，后半由「心跳」换成更细的体内声音，5+4+8 共 17；「静到」比「静得」更硬一点\" }\n    },\n    {\n      \"id\": \"B2-03\",\n      \"zh\": \"堵在胸口 出不去\",\n      \"chars\": 7,\n      \"self_check\": { \"budget\": [7, 7], \"ok\": true, \"note\": \"初版原样，4+3 共 7 字，空格即停顿\" }\n    },\n    {\n      \"id\": \"B2-04\",\n      \"zh\": \"连好好吸一口气 也都做不到\",\n      \"chars\": 12,\n      \"self_check\": { \"budget\": [12, 12], \"ok\": true, \"note\": \"把句尾的「了」换成「也」，7+5 共 12 字，唱出来收得更干脆\" }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:15:17+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3960,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 4096,
+    "output_tokens": 1939,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

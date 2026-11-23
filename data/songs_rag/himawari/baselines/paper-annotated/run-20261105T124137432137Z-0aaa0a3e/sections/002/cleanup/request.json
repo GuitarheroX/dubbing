@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "{\n  \"lyrics\": [\n    \"夏日海滨赤足奔跑不停\",\n    \"呼唤你时双脚已被水浸湿\",\n    \"忘却波浪肌肤已干涸\",\n    \"你牵我的手让我身体燃烧\"\n  ]\n}"
+  },
+  "data": {
+    "response": "{\n  \"lyrics\": [\n    \"夏日海滨赤足奔跑不停\",\n    \"呼唤你时双脚已被水浸湿\",\n    \"忘却波浪肌肤已干涸\",\n    \"你牵我的手让我身体燃烧\"\n  ]\n}"
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"lyrics\": [\n    \"夏日海滨赤足奔跑不停\",\n    \"呼唤你时双脚已被水浸湿\",\n    \"忘却波浪肌肤已干涸\",\n    \"你牵我的手让我身体燃烧\"\n  ]\n}"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

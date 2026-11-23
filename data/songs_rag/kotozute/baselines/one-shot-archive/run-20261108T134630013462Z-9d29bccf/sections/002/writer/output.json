@@ -1,0 +1,44 @@
+{
+  "section": "V2",
+  "phrases": [
+    {
+      "id": "V2-01",
+      "zh": "曾经望见 那终演",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "与V1-01结构呼应 终演对应终幕"
+      }
+    },
+    {
+      "id": "V2-02",
+      "zh": "理所当然 等待终会出现的命运",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": true,
+        "note": "与V1-02呼应 流星换命运"
+      }
+    },
+    {
+      "id": "V2-03",
+      "zh": "始终未能 看得清",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "与V1-03呼应 注视换看清"
+      }
+    }
+  ]
+}

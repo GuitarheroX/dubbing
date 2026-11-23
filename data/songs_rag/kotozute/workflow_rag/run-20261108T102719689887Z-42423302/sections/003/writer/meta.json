@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\"section\":\"B1\",\"phrases\":[{\"id\":\"B1-01\",\"zh\":\"攥紧过去 一甩手 未来\"},{\"id\":\"B1-02\",\"zh\":\"总在遇见 却只想把视线移开\"},{\"id\":\"B1-03\",\"zh\":\"比那 旧我 更远些\"},{\"id\":\"B1-04\",\"zh\":\"比光 更远些\"}]}",
+  "finished_at": "2026-11-08T10:28:46+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2526,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 3993,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

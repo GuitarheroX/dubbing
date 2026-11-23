@@ -1,0 +1,46 @@
+{
+  "section": "D1",
+  "query_text": "有一天 这首 小小的 歌会飘散\n你大概 某天 哼着它 就想不起\n我却会 一直 记得它 从哪儿来\n长成大人 以后 也不忘",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "李浔_lixun/背着幼小的歌上路#s2",
+      "title": "背着幼小的歌上路",
+      "poet": "李浔",
+      "poem_id": "李浔_lixun/背着幼小的歌上路",
+      "stanza_idx": 2,
+      "score": 0.694373,
+      "text": "你没有准备行李\n没有等所有的歌到齐了才走\n天巳暖了？ 路开出了新枝\n你背着幼小的歌走了\n不会有人知道\n这小小的歌会长得像谁"
+    },
+    {
+      "chunk_id": "丁泓_dinghong/致友人#s4",
+      "title": "致友人",
+      "poet": "丁泓",
+      "poem_id": "丁泓_dinghong/致友人",
+      "stanza_idx": 4,
+      "score": 0.689768,
+      "text": "就象柔轻的蒲公英\n花瓣如音符一样轻轻地飘落\n季节也许会开放出一个春天\n也许会将记忆悄悄地藏起"
+    },
+    {
+      "chunk_id": "范家骏_fanjiajun/墙#s19",
+      "title": "墙",
+      "poet": "范家骏",
+      "poem_id": "范家骏_fanjiajun/墙",
+      "stanza_idx": 19,
+      "score": 0.687693,
+      "text": "你走了以后\n我的听觉就开始渐渐收缩\n地上长出浅色的木耳\n我不知道下一个要离开我的会是什么\n我想念小时候在你怀里的湿度\n我想念在这个房里说过的话\n自己越来越狭长的脸\n想念你走的那天"
+    },
+    {
+      "chunk_id": "谢文弟_xiewendi/让我找到你#s1",
+      "title": "让我找到你",
+      "poet": "谢文弟",
+      "poem_id": "谢文弟_xiewendi/让我找到你",
+      "stanza_idx": 1,
+      "score": 0.685765,
+      "text": "今天是你的生日\n却不知道你在哪里\n我惦记着你的单纯\n从春天到冬天\n让我找到你\n直到花开花谢"
+    }
+  ]
+}

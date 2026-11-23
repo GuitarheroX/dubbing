@@ -1,0 +1,112 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the provided budget.min to budget.max syllable count per line, inclusive, instead of matching the source mora count, and verify by counting syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.\n\nThe input is a JSON object containing phrases in performance order. Each phrase contains its original lyrics in ja. budget is the human-annotated target syllable range. An optional pattern gives human-annotated within-line groups; use it as guidance, not an additional hard constraint. For keep_source: true, reproduce ja unchanged. budget: null means no target syllable limit. Produce one lyric line for every input phrase in order. Do not translate the field names or include the annotation numbers as lyrics.",
+    "user": "{\n  \"phrases\": [\n    {\n      \"id\": \"C2-01\",\n      \"ja\": \"丘の上で星を見ると感じるこの寂しさも\",\n      \"budget\": {\n        \"min\": 22,\n        \"max\": 22\n      },\n      \"pattern\": [\n        5,\n        5,\n        5,\n        7\n      ]\n    },\n    {\n      \"id\": \"C2-02\",\n      \"ja\": \"朝焼けで手が染まる頃にはもう忘れてるんだ\",\n      \"budget\": {\n        \"min\": 21,\n        \"max\": 21\n      },\n      \"pattern\": [\n        5,\n        5,\n        4,\n        2,\n        5\n      ]\n    },\n    {\n      \"id\": \"C2-03\",\n      \"ja\": \"この世界は好都合に未完成\",\n      \"budget\": {\n        \"min\": 12,\n        \"max\": 12\n      },\n      \"pattern\": [\n        4,\n        4,\n        4\n      ]\n    },\n    {\n      \"id\": \"C2-04\",\n      \"ja\": \"だから知りたいんだ\",\n      \"budget\": {\n        \"min\": 7,\n        \"max\": 7\n      },\n      \"pattern\": [\n        3,\n        4\n      ]\n    },\n    {\n      \"id\": \"C2-05\",\n      \"ja\": \"でも怪獣みたいに遠く遠く叫んでも\",\n      \"budget\": {\n        \"min\": 14,\n        \"max\": 14\n      },\n      \"pattern\": [\n        6,\n        5,\n        3\n      ]\n    },\n    {\n      \"id\": \"C2-06\",\n      \"ja\": \"また消えてしまうんだ\",\n      \"budget\": {\n        \"min\": 8,\n        \"max\": 8\n      },\n      \"pattern\": [\n        5,\n        3\n      ]\n    }\n  ]\n}"
+  },
+  "data": {
+    "phrases": [
+      {
+        "id": "C2-01",
+        "ja": "丘の上で星を見ると感じるこの寂しさも",
+        "budget": {
+          "min": 22,
+          "max": 22
+        },
+        "pattern": [
+          5,
+          5,
+          5,
+          7
+        ]
+      },
+      {
+        "id": "C2-02",
+        "ja": "朝焼けで手が染まる頃にはもう忘れてるんだ",
+        "budget": {
+          "min": 21,
+          "max": 21
+        },
+        "pattern": [
+          5,
+          5,
+          4,
+          2,
+          5
+        ]
+      },
+      {
+        "id": "C2-03",
+        "ja": "この世界は好都合に未完成",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "id": "C2-04",
+        "ja": "だから知りたいんだ",
+        "budget": {
+          "min": 7,
+          "max": 7
+        },
+        "pattern": [
+          3,
+          4
+        ]
+      },
+      {
+        "id": "C2-05",
+        "ja": "でも怪獣みたいに遠く遠く叫んでも",
+        "budget": {
+          "min": 14,
+          "max": 14
+        },
+        "pattern": [
+          6,
+          5,
+          3
+        ]
+      },
+      {
+        "id": "C2-06",
+        "ja": "また消えてしまうんだ",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          5,
+          3
+        ]
+      }
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the provided budget.min to budget.max syllable count per line, inclusive, instead of matching the source mora count, and verify by counting syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.\n\nThe input is a JSON object containing phrases in performance order. Each phrase contains its original lyrics in ja. budget is the human-annotated target syllable range. An optional pattern gives human-annotated within-line groups; use it as guidance, not an additional hard constraint. For keep_source: true, reproduce ja unchanged. budget: null means no target syllable limit. Produce one lyric line for every input phrase in order. Do not translate the field names or include the annotation numbers as lyrics.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"phrases\": [\n    {\n      \"id\": \"C2-01\",\n      \"ja\": \"丘の上で星を見ると感じるこの寂しさも\",\n      \"budget\": {\n        \"min\": 22,\n        \"max\": 22\n      },\n      \"pattern\": [\n        5,\n        5,\n        5,\n        7\n      ]\n    },\n    {\n      \"id\": \"C2-02\",\n      \"ja\": \"朝焼けで手が染まる頃にはもう忘れてるんだ\",\n      \"budget\": {\n        \"min\": 21,\n        \"max\": 21\n      },\n      \"pattern\": [\n        5,\n        5,\n        4,\n        2,\n        5\n      ]\n    },\n    {\n      \"id\": \"C2-03\",\n      \"ja\": \"この世界は好都合に未完成\",\n      \"budget\": {\n        \"min\": 12,\n        \"max\": 12\n      },\n      \"pattern\": [\n        4,\n        4,\n        4\n      ]\n    },\n    {\n      \"id\": \"C2-04\",\n      \"ja\": \"だから知りたいんだ\",\n      \"budget\": {\n        \"min\": 7,\n        \"max\": 7\n      },\n      \"pattern\": [\n        3,\n        4\n      ]\n    },\n    {\n      \"id\": \"C2-05\",\n      \"ja\": \"でも怪獣みたいに遠く遠く叫んでも\",\n      \"budget\": {\n        \"min\": 14,\n        \"max\": 14\n      },\n      \"pattern\": [\n        6,\n        5,\n        3\n      ]\n    },\n    {\n      \"id\": \"C2-06\",\n      \"ja\": \"また消えてしまうんだ\",\n      \"budget\": {\n        \"min\": 8,\n        \"max\": 8\n      },\n      \"pattern\": [\n        5,\n        3\n      ]\n    }\n  ]\n}"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

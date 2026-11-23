@@ -1,0 +1,46 @@
+{
+  "section": "V1",
+  "query_text": "曾见过的风景\n恍惚等一颗迟来的流星\n想一直望着",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "冰心_bingxin/繁星：一二七#s1",
+      "title": "繁星：一二七",
+      "poet": "冰心",
+      "poem_id": "冰心_bingxin/繁星：一二七",
+      "stanza_idx": 1,
+      "score": 0.66348,
+      "text": "流星\n飞走天空\n可能有一秒时的凝望\n然而这一瞥的光明\n已长久遗留在人的心怀里"
+    },
+    {
+      "chunk_id": "郝茂军_haomaojun/今夜我想是一颗流星#s1",
+      "title": "今夜我想是一颗流星",
+      "poet": "郝茂军",
+      "poem_id": "郝茂军_haomaojun/今夜我想是一颗流星",
+      "stanza_idx": 1,
+      "score": 0.65555,
+      "text": "今夜我想是一颗流星\n用最快的速度抵达故乡\n让还没有入睡的孩子看见我\n并许下美好的心愿"
+    },
+    {
+      "chunk_id": "巫昂_wuang/坐在一幅画的中央#s3",
+      "title": "坐在一幅画的中央",
+      "poet": "巫昂",
+      "poem_id": "巫昂_wuang/坐在一幅画的中央",
+      "stanza_idx": 3,
+      "score": 0.654506,
+      "text": "我贪求一转眼的林木\n也贪求一瞬间的河水\n所以\n迟迟不能到达\n让所有的人等待着\n空着手等待着"
+    },
+    {
+      "chunk_id": "余秀华_yuxiuhua/我想迟一点再写到它……#s3",
+      "title": "我想迟一点再写到它……",
+      "poet": "余秀华",
+      "poem_id": "余秀华_yuxiuhua/我想迟一点再写到它……",
+      "stanza_idx": 3,
+      "score": 0.653791,
+      "text": "我想迟一点写到一个人，迟一点抬头看见星空\n我想让这心中的块垒再重一点，直到塌下，粉碎我\n多么绝望啊：我遇见了最好的\n却不能给出一句赞美"
+    }
+  ]
+}

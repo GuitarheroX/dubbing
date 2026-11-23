@@ -1,0 +1,147 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C1",
+    "phrases": [
+      {
+        "id": "C1-01",
+        "section": "C1",
+        "ja": "何度でも",
+        "budget": {
+          "min": 4,
+          "max": 4
+        },
+        "pattern": [
+          4
+        ]
+      },
+      {
+        "id": "C1-02",
+        "section": "C1",
+        "ja": "何度でも叫ぶ",
+        "budget": {
+          "min": 6,
+          "max": 6
+        },
+        "pattern": [
+          4,
+          2
+        ]
+      },
+      {
+        "id": "C1-03",
+        "section": "C1",
+        "ja": "この暗い夜の怪獣になっても",
+        "budget": {
+          "min": 15,
+          "max": 15
+        },
+        "pattern": [
+          6,
+          5,
+          4
+        ]
+      },
+      {
+        "id": "C1-04",
+        "section": "C1",
+        "ja": "ここに残しておきたいんだよ",
+        "budget": {
+          "min": 13,
+          "max": 13
+        },
+        "pattern": [
+          3,
+          4,
+          6
+        ]
+      },
+      {
+        "id": "C1-05",
+        "section": "C1",
+        "ja": "この秘密を",
+        "budget": {
+          "min": 6,
+          "max": 6
+        },
+        "pattern": [
+          6
+        ]
+      }
+    ],
+    "draft": {
+      "section": "C1",
+      "phrases": [
+        {
+          "id": "C1-01",
+          "zh": "一遍一遍",
+          "chars": 4,
+          "self_check": {
+            "budget": [
+              4,
+              4
+            ],
+            "ok": true,
+            "note": "与下一句共用一个重复的头，保留原曲「何度でも」的复沓"
+          }
+        },
+        {
+          "id": "C1-02",
+          "zh": "一遍一遍地喊",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "前四字占 [4]，「地喊」占 [2]，与上句同头"
+          }
+        },
+        {
+          "id": "C1-03",
+          "zh": "变成这黑夜里 沉默的怪兽 也不逃走",
+          "chars": 15,
+          "self_check": {
+            "budget": [
+              15,
+              15
+            ],
+            "ok": true,
+            "note": "6+5+4 按 pattern 断开；用空格代替标点，「沉默」与后文的喊形成对照"
+          }
+        },
+        {
+          "id": "C1-04",
+          "zh": "想留下 一点什么 在夜的角落里",
+          "chars": 13,
+          "self_check": {
+            "budget": [
+              13,
+              13
+            ],
+            "ok": true,
+            "note": "3+4+6 对齐三段；沿用初版骨架，只把语序收紧"
+          }
+        },
+        {
+          "id": "C1-05",
+          "zh": "把这秘密留住",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "去掉了初版结尾的语气助词「啊」，用实词「留住」补足第六字，并与上句的「留下」呼应"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

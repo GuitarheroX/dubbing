@@ -1,0 +1,21 @@
+{
+  "id": "e3b9bb2f-1a1f-4d7c-89f1-8837ab3bff30",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原意且中文自然：C1-01“心跳交叠”准确传达鼓动重合，C1-02保留“不安”与“只怕你”的因果衔接，C1-03“消失在人海”虽为改写但情绪连贯，C1-04“只映着我 别映别人”清晰对应“私以外映さないで”。A的C1-03“像风一松手就散”偏离“你可能会不在”的核心语义，C1-04“别容下别人半个身影”略显冗赘。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 338,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 153,
+    "service_tier": "standard"
+  }
+}

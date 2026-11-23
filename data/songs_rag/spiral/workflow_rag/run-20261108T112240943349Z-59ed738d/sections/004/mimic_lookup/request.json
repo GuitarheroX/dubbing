@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "O1",
+    "query_text": "受够 一个人 熬到天亮\n没有什么 永远 可以等\n在灯火 全都熄灭 之前\n还是 抬起脚迈了一步\n一边 接受这一切\n一边 偷偷地祈祷",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

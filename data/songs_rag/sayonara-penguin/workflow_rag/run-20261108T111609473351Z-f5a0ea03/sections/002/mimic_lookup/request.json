@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "query_text": "风穿过了长街 风带走了我们\n像蒲公英 轻轻被风吹散\n被风吹到街角 各自去远方",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

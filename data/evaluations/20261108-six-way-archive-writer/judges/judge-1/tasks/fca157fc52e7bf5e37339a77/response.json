@@ -1,0 +1,21 @@
+{
+  "id": "407b355e-3608-47b5-b0db-d2392ecbf161",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更自然凝练，D1-02“把它忘掉哟”与D1-03“一直记着它哦”保留原歌亲密、轻声的语气；B的“慢慢”“一直 一直”有增饰，D1-04“也好”略生硬。两版核心语义均准确。\",\"phrase_ids\":[\"D1-01\",\"D1-02\",\"D1-03\",\"D1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 327,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 100,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "query_text": "一阵 风吹过\n第二阵 把我拔离 这片草丛\n终于 空得发凉\n顺着风去 只剩下我一个\n草原 立长影 一人\n我变成风 青蓝色的风\n随风飘",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

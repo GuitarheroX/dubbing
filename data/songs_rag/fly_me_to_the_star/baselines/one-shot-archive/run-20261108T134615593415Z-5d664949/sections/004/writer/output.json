@@ -1,0 +1,57 @@
+{
+  "section": "B1",
+  "phrases": [
+    {
+      "id": "B1-01",
+      "zh": "报晓的鸟 唱破黎明",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    },
+    {
+      "id": "B1-02",
+      "zh": "时钟的针 请你停一停",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "少一字，可加'那'"
+      }
+    },
+    {
+      "id": "B1-03",
+      "zh": "流星悄悄 划过清晨 滑落无声 散成微光",
+      "chars": 18,
+      "self_check": {
+        "budget": [
+          22,
+          22
+        ],
+        "ok": false,
+        "note": "缺四字，需扩充"
+      }
+    },
+    {
+      "id": "B1-04",
+      "zh": "oh fly me to the star",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "保留英文"
+      }
+    }
+  ]
+}

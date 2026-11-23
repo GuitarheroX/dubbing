@@ -1,0 +1,21 @@
+{
+  "id": "3de18a2e-ad83-4e30-a4cb-96526ed8c043",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A准确传达“生为玫瑰宿命”与“生来要绚烂激烈地活”，语义清晰自然；B将“さだめ”扩写为“血脉只认得深红玫瑰”并加入“命令”“烧到最烈”，偏离原意且表达较绕。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 220,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 84,
+    "service_tier": "standard"
+  }
+}

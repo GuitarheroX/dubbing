@@ -1,0 +1,51 @@
+{
+  "paired_songs": 19,
+  "budgeted_phrases": 380,
+  "llm_sections": 76,
+  "judge_tasks": 988,
+  "absolute_scores": {
+    "paper-original": {
+      "semantic": 4.560275689223058,
+      "emotion": 3.8474310776942358,
+      "naturalness": 3.995802005012531,
+      "expressiveness": 3.1895989974937344
+    },
+    "paper-annotated": {
+      "semantic": 4.345802005012532,
+      "emotion": 3.8302005012531324,
+      "naturalness": 3.747493734335839,
+      "expressiveness": 3.1342731829573935
+    },
+    "workflow": {
+      "semantic": 3.158521303258145,
+      "emotion": 3.6156015037593985,
+      "naturalness": 3.9620927318295736,
+      "expressiveness": 3.9174812030075183
+    },
+    "workflow-rag": {
+      "semantic": 3.254135338345865,
+      "emotion": 3.535338345864662,
+      "naturalness": 3.955952380952381,
+      "expressiveness": 3.911278195488722
+    }
+  },
+  "rag_vs_workflow": {
+    "a": "workflow-rag",
+    "b": "workflow",
+    "win_rate_a": 0.5787037037037037,
+    "micro_win_rate_a": 0.5462962962962963,
+    "planned_pairs": 76,
+    "stable_pairs": 54,
+    "unstable_pairs": 22,
+    "abstained_pairs": 0,
+    "missing_pairs": 0,
+    "stable_coverage": 0.7105263157894737,
+    "valid_songs": 18,
+    "stable_outcomes": {
+      "workflow-rag": 29,
+      "workflow": 24,
+      "tie": 1
+    }
+  },
+  "comet_status": "skipped"
+}

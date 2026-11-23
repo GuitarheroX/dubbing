@@ -1,0 +1,21 @@
+{
+  "id": "cfac2529-0ea4-400e-8539-fba9f8d9a956",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B1-01“未曾察觉”比“从未能察觉”更简洁自然；B1-02“太依赖了”比“太爱撒娇了”更贴合“甘えてた”在此处自我反思的语境，且不显轻佻；B1-03“先爱自己再去爱别人”清晰保留“自分愛して人を愛して”的先后与递进，整体更自然、克制。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 355,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 118,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\"id\": \"C1-01\", \"zh\": \"全部 全部 都是我\"},\n    {\"id\": \"C1-02\", \"zh\": \"纠结 抽泣 都是我\"},\n    {\"id\": \"C1-03\", \"zh\": \"全部 全部 抱紧吧\"},\n    {\"id\": \"C1-04\", \"zh\": \"稍微 睡吧\"},\n    {\"id\": \"C1-05\", \"zh\": \"痛痛 痛痛 飞走吧\"},\n    {\"id\": \"C1-06\", \"zh\": \"别让悲伤 把一切 都夺走\"},\n    {\"id\": \"C1-07\", \"zh\": \"我要 站在我这边 陪自己\"},\n    {\"id\": \"C1-08\", \"zh\": \"路还 很长 才走一半\"},\n    {\"id\": \"C1-09\", \"zh\": \"稍微 休息一下 也没关系\"},\n    {\"id\": \"C1-10\", \"zh\": \"不会有谁 来责备 我的停下\"}\n  ]\n}",
+  "finished_at": "2026-11-08T13:24:02+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "section": "C1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1440,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 239,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "24e9b62a-ae55-4793-8625-10e97f24ec6b",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B直译保留了“献出生命”的核心誓言感，简洁有力，适合副歌前的重复句；A的“摊在你手心”意象虽美，但把“献给你”改成了“摊开”，且加入“正午白亮的海面”使语义重心偏移，情绪从决绝誓言变为静态画面。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 312,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 384,
+    "output_tokens": 93,
+    "service_tier": "standard"
+  }
+}

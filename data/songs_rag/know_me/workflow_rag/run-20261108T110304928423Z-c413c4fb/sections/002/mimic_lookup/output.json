@@ -1,0 +1,46 @@
+{
+  "section": "V2",
+  "query_text": "沉在水底的 一层浑浊\n想服个软 却咬紧了牙关\n隔着耳机 谁都接不住谁\n认不出自己",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "池底_chidi/海怪#s2",
+      "title": "海怪",
+      "poet": "池底",
+      "poem_id": "池底_chidi/海怪",
+      "stanza_idx": 2,
+      "score": 0.701064,
+      "text": "如果人心像汪洋\n那么海潮必定浑浊\n如果我有不会干涸的腮\n那么我定要到海底去\n看看你埋没的秘密\n躲在哪个紧闭的壳里\n说着我听不见的海语"
+    },
+    {
+      "chunk_id": "池凌云_chilingyun/走进低洼的光#s3",
+      "title": "走进低洼的光",
+      "poet": "池凌云",
+      "poem_id": "池凌云_chilingyun/走进低洼的光",
+      "stanza_idx": 3,
+      "score": 0.700808,
+      "text": "迷茫而带有水气的光\n在嘈杂虚假的光的世界\n藏起自己模糊的脸\n沉入黑暗的深海"
+    },
+    {
+      "chunk_id": "抒亦凡_shuyifan/农妇书生#s2",
+      "title": "农妇书生",
+      "poet": "抒亦凡",
+      "poem_id": "抒亦凡_shuyifan/农妇书生",
+      "stanza_idx": 2,
+      "score": 0.688361,
+      "text": "你的声音溅起水\n我不识字的粗衣湿透\n你的手\n迟迟不伸不接"
+    },
+    {
+      "chunk_id": "梁平_liangping/试水的几种方式#s4",
+      "title": "试水的几种方式",
+      "poet": "梁平",
+      "poem_id": "梁平_liangping/试水的几种方式",
+      "stanza_idx": 4,
+      "score": 0.686353,
+      "text": "水的深浅是永远的谜\n试与不试一样\n解与不解一样\n所有的努力都是为难自己\n高估自己\n没有人能够站出来说\n那水，可以一眼望穿"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "aa9d447d-ebfc-4e27-8767-e734df0b838e",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原句结构与核心语义：C1-01保留“描绘清晨”而非B的“唱到天亮”改写；C1-03准确对应“看见你不冰冷的手掌”，B增“微微发光”属无据扩展；C1-02、C1-04两版均自然，A的“夏之彼方”“黎明的萤光”更凝练且意境一致。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 296,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 119,
+    "service_tier": "standard"
+  }
+}

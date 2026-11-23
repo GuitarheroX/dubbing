@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B2",
+    "query_text": "接过玫瑰 那宿命 披上深红 不再回头\n让热情点燃 每个呼吸 烧成火焰 烧到尽头",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

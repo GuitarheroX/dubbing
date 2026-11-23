@@ -1,0 +1,21 @@
+{
+  "id": "b964d60f-8578-4507-9d26-6f234637b0bd",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“过眼云烟”保留云之流逝意象，但略增成语色彩；“苦しいあれで”译为“这般痛苦难熬”较泛，未点明“あれ”的指代。\",\"phrase_ids\":[\"B1-01\",\"B1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"整体压抑、急促的情绪保留较好，末句略平。\",\"phrase_ids\":[\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"“与其空想着那过眼云烟”稍显书面，“连喘息的那空隙”略拗口但可理解。\",\"phrase_ids\":[\"B1-01\",\"B1-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通，“长嚎”尚可，末句空泛。\",\"phrase_ids\":[\"B1-02\",\"B1-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“追忆流逝的云”贴近原意；“那样痛苦啊”保留“あれ”的模糊指代，但略弱。\",\"phrase_ids\":[\"B1-01\",\"B1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向一致，但“向遥远远方”叠词削弱力度，整体偏平淡。\",\"phrase_ids\":[\"B1-02\"]},\"naturalness\":{\"score\":3,\"reason\":\"“向遥远远方长嚎”中“遥远远方”重复生硬，其余顺口。\",\"phrase_ids\":[\"B1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"有基本画面但“遥远远方”拖沓，末句较空。\",\"phrase_ids\":[\"B1-02\",\"B1-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“灼烧着胸口”将“苦しいあれで”具体化为灼烧感，属合理补充但改变了原句模糊指代；其余贴近。\",\"phrase_ids\":[\"B1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"急促、苦痛与远啸的情绪较充分，末句强化痛感。\",\"phrase_ids\":[\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"“向天涯 长啸一声”节奏自然，“连喘息都来不及的苦痛”稍文但可唱。\",\"phrase_ids\":[\"B1-02\",\"B1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“天涯”“长啸”意象鲜明，“灼烧着胸口”有力。\",\"phrase_ids\":[\"B1-02\",\"B1-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"“云飘远 就让它飘 我抬头”改写了“思うより”的比较关系；“喉咙发烫”为原文所无的具体化。\",\"phrase_ids\":[\"B1-01\",\"B1-03\"]},\"emotion\":{\"score\":3,\"reason\":\"嘶吼与灼痛的强度保留，但“就让它飘 我抬头”转向洒脱，偏离原句沉郁比较。\",\"phrase_ids\":[\"B1-01\"]},\"naturalness\":{\"score\":4,\"reason\":\"短句节奏顺口，符合歌词文体。\",\"phrase_ids\":[\"B1-01\",\"B1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“喉咙发烫”“烙在胸口”意象鲜明有力。\",\"phrase_ids\":[\"B1-03\",\"B1-04\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"“不数流云 不回头 仰起头”偏离“思うより”的比较结构；“那点痛 才痛快”将苦痛转为痛快，语义反转。\",\"phrase_ids\":[\"B1-01\",\"B1-04\"]},\"emotion\":{\"score\":2,\"reason\":\"末句“才痛快”把压抑苦痛扭为爽快，情绪方向明显偏移。\",\"phrase_ids\":[\"B1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"短句口语顺口，节奏感强。\",\"phrase_ids\":[\"B1-01\",\"B1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“气没喘匀 喉咙紧 还想喊”画面生动有力。\",\"phrase_ids\":[\"B1-03\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 844,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 979,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T110027887942Z-a2e53035",
+  "updated_at": "2026-11-08T11:03:00+00:00",
+  "song": "kazeyo",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

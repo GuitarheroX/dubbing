@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "1. 我受玫瑰之命而生 (9 syllables) — too short; need 15. Let me craft properly.\n\nLine 1 (15 syllables, rhyme A):\n我接受了玫瑰生命之赐予\nCount: 我(1)接(2)受(3)了(4)玫(5)瑰(6)生(7)命(8)之(9)赐(10)予(11) = 11. Need 15.\n\n我已然接受了那玫瑰的生命赐予\n我(1)已(2)然(3)接(4)受(5)了(6)那(7)玫(8)瑰(9)的(10)生(11)命(12)赐(13)予(14) = 14. Add one: 我已然接受了那玫瑰花的生命赐予 = 15. Rhyme end \"予\" (ü).\n\nLine 2 (17 syllables, rhyme B):\n燃烧着热情永远地活下去每一天\n燃(1)烧(2)着(3)热(4)情(5)永(6)远(7)地(8)活(9)下(10)去(11)每(12)一(13)天(14) = 14. Need 17.\n\n我燃烧着满腔热情永远地活下去每一天\n我(1)燃(2)烧(3)着(4)满(5)腔(6)热(7)情(8)永(9)远(10)地(11)活(12)下(13)去(14)每(15)一(16)天(17) = 17. End \"天\" (ian).\n\nRhyme check: line1 ends ü, line2 ends ian — not matching. Original ja: line1 ends り (ri), line2 ends も (mo). Not rhyming in source either. So no rhyme requirement to preserve beyond source (source doesn't rhyme). Good.\n\nVerify line1: 我已然接受了那玫瑰花的生命赐予\n我1 已2 然3 接4 受5 了6 那7 玫8 瑰9 花10 的11 生12 命13 赐14 予15 = 15 ✓\n\nLine2: 我燃烧着满腔热情永远地活下去每一天\n我1 燃2 烧3 着4 满5 腔6 热7 情8 永9 远10 地11 活12 下13 去14 每15 一16 天17 = 17 ✓\n\nTheme preserved: receiving rose's life, burning passion living on."
+  },
+  "data": {
+    "response": "1. 我受玫瑰之命而生 (9 syllables) — too short; need 15. Let me craft properly.\n\nLine 1 (15 syllables, rhyme A):\n我接受了玫瑰生命之赐予\nCount: 我(1)接(2)受(3)了(4)玫(5)瑰(6)生(7)命(8)之(9)赐(10)予(11) = 11. Need 15.\n\n我已然接受了那玫瑰的生命赐予\n我(1)已(2)然(3)接(4)受(5)了(6)那(7)玫(8)瑰(9)的(10)生(11)命(12)赐(13)予(14) = 14. Add one: 我已然接受了那玫瑰花的生命赐予 = 15. Rhyme end \"予\" (ü).\n\nLine 2 (17 syllables, rhyme B):\n燃烧着热情永远地活下去每一天\n燃(1)烧(2)着(3)热(4)情(5)永(6)远(7)地(8)活(9)下(10)去(11)每(12)一(13)天(14) = 14. Need 17.\n\n我燃烧着满腔热情永远地活下去每一天\n我(1)燃(2)烧(3)着(4)满(5)腔(6)热(7)情(8)永(9)远(10)地(11)活(12)下(13)去(14)每(15)一(16)天(17) = 17. End \"天\" (ian).\n\nRhyme check: line1 ends ü, line2 ends ian — not matching. Original ja: line1 ends り (ri), line2 ends も (mo). Not rhyming in source either. So no rhyme requirement to preserve beyond source (source doesn't rhyme). Good.\n\nVerify line1: 我已然接受了那玫瑰花的生命赐予\n我1 已2 然3 接4 受5 了6 那7 玫8 瑰9 花10 的11 生12 命13 赐14 予15 = 15 ✓\n\nLine2: 我燃烧着满腔热情永远地活下去每一天\n我1 燃2 烧3 着4 满5 腔6 热7 情8 永9 远10 地11 活12 下13 去14 每15 一16 天17 = 17 ✓\n\nTheme preserved: receiving rose's life, burning passion living on."
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "1. 我受玫瑰之命而生 (9 syllables) — too short; need 15. Let me craft properly.\n\nLine 1 (15 syllables, rhyme A):\n我接受了玫瑰生命之赐予\nCount: 我(1)接(2)受(3)了(4)玫(5)瑰(6)生(7)命(8)之(9)赐(10)予(11) = 11. Need 15.\n\n我已然接受了那玫瑰的生命赐予\n我(1)已(2)然(3)接(4)受(5)了(6)那(7)玫(8)瑰(9)的(10)生(11)命(12)赐(13)予(14) = 14. Add one: 我已然接受了那玫瑰花的生命赐予 = 15. Rhyme end \"予\" (ü).\n\nLine 2 (17 syllables, rhyme B):\n燃烧着热情永远地活下去每一天\n燃(1)烧(2)着(3)热(4)情(5)永(6)远(7)地(8)活(9)下(10)去(11)每(12)一(13)天(14) = 14. Need 17.\n\n我燃烧着满腔热情永远地活下去每一天\n我(1)燃(2)烧(3)着(4)满(5)腔(6)热(7)情(8)永(9)远(10)地(11)活(12)下(13)去(14)每(15)一(16)天(17) = 17. End \"天\" (ian).\n\nRhyme check: line1 ends ü, line2 ends ian — not matching. Original ja: line1 ends り (ri), line2 ends も (mo). Not rhyming in source either. So no rhyme requirement to preserve beyond source (source doesn't rhyme). Good.\n\nVerify line1: 我已然接受了那玫瑰花的生命赐予\n我1 已2 然3 接4 受5 了6 那7 玫8 瑰9 花10 的11 生12 命13 赐14 予15 = 15 ✓\n\nLine2: 我燃烧着满腔热情永远地活下去每一天\n我1 燃2 烧3 着4 满5 腔6 热7 情8 永9 远10 地11 活12 下13 去14 每15 一16 天17 = 17 ✓\n\nTheme preserved: receiving rose's life, burning passion living on."
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

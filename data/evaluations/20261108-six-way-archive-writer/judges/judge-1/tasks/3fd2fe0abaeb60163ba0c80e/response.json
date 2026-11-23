@@ -1,0 +1,21 @@
+{
+  "id": "3d4a9258-73d1-45a6-8f75-dd372e4ab2f7",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原词的克制、被动与逐渐被掏空的情绪，中文自然简洁；B加入“像气球”“像残风”“你胸口”等原文没有的意象，且“吞下去就消失无踪”弱化了“被吞没”的被动关系，表现力虽强但偏离核心语义。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\",\"V1-07\",\"V1-08\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 366,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 119,
+    "service_tier": "standard"
+  }
+}

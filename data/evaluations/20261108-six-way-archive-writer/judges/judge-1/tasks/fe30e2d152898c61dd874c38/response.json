@@ -1,0 +1,21 @@
+{
+  "id": "90444bd6-d84b-423a-93d4-b2d18afba893",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原文语义与语气：I1-01“究竟”对应疑问强调，I1-02“向自己的胸膛发问”准确自然；B的“悄悄”增添原文没有的修饰，“问自己胸口这颗心”略生硬。I1-04 A“真实的一切”比B“真实的光”更忠实，B的“光”属额外意象。两版I1-03相当。\",\"phrase_ids\":[\"I1-01\",\"I1-02\",\"I1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 230,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 117,
+    "service_tier": "standard"
+  }
+}

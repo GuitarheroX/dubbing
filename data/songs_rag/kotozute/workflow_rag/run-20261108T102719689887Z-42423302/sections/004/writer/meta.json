@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "```json\n{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\"id\": \"C1-01\", \"zh\": \"暗里 光漏了进来 想把手伸出去\"},\n    {\"id\": \"C1-02\", \"zh\": \"就现在 想和你说说话\"},\n    {\"id\": \"C1-03\", \"zh\": \"朝阳漫过窗沿 指尖染红\"},\n    {\"id\": \"C1-04\", \"zh\": \"自由了\"},\n    {\"id\": \"C1-05\", \"zh\": \"自由了\"},\n    {\"id\": \"C1-06\", \"zh\": \"而我 就在此刻 睁开了眼睛\"},\n    {\"id\": \"C1-07\", \"zh\": \"就现在 想和你说说话\"},\n    {\"id\": \"C1-08\", \"zh\": \"值得爱的日子 渐渐染红\"},\n    {\"id\": \"C1-09\", \"zh\": \"自由了\"},\n    {\"id\": \"C1-10\", \"zh\": \"自由了\"},\n    {\"id\": \"C1-11\", \"zh\": \"起飞\"}\n  ]\n}\n```",
+  "finished_at": "2026-11-08T10:29:14+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2454,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 1810,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

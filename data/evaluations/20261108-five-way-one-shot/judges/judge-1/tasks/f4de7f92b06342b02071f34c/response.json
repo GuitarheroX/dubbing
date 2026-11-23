@@ -1,0 +1,21 @@
+{
+  "id": "a1edf117-2e8f-424d-8e0c-4996c5ea1945",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原意：B1-02“太依赖”对应甘えてた，B则改成“被你爱”引入原文没有的对象；B1-03 A的“先爱自己再去爱别人”自然且保留“想试着”的语感，B的“张开双手”属额外扩展。B1-01两者均可，A更简洁。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 236,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 105,
+    "service_tier": "standard"
+  }
+}

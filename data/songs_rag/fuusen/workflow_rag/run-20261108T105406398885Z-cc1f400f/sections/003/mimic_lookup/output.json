@@ -1,0 +1,46 @@
+{
+  "section": "C1",
+  "query_text": "等我空得像房间 都是你害的\n我这样说出口 你手掌一遍遍落下\n连这句怨你的话 你也咽得干净吗",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "中岛_zhongdao/一个生命死后的回归#s1",
+      "title": "一个生命死后的回归",
+      "poet": "中岛",
+      "poem_id": "中岛_zhongdao/一个生命死后的回归",
+      "stanza_idx": 1,
+      "score": 0.709531,
+      "text": "我自由的身体在等候着\n你来接我\n语言渗透在黑暗的房间\n声音已经不再是你能听到的那种"
+    },
+    {
+      "chunk_id": "沉河_chenhe/最初#s1",
+      "title": "最初",
+      "poet": "沉河",
+      "poem_id": "沉河_chenhe/最初",
+      "stanza_idx": 1,
+      "score": 0.688441,
+      "text": "最初我是让这一天空过去\n最终我还是给你说了说话\n我们是身陷于魔套中的人\n纠缠来纠缠去仍两手空空\n谁的绳子也不曾系住了谁"
+    },
+    {
+      "chunk_id": "刘君一_liujunyi/天空#s5",
+      "title": "天空",
+      "poet": "刘君一",
+      "poem_id": "刘君一_liujunyi/天空",
+      "stanza_idx": 5,
+      "score": 0.684405,
+      "text": "天空\n你剥夺了我的一切\n只给我留下你\n你让我像你一样寂寞\n象你一样沉默\n让我只能爱你一个\n或者恨你一个\n让我无论怎样踮高脚尖\n都无法得到你"
+    },
+    {
+      "chunk_id": "雪野_2_xueye2/如果今生没有遇见你#s3",
+      "title": "如果今生没有遇见你",
+      "poet": "雪野_2",
+      "poem_id": "雪野_2_xueye2/如果今生没有遇见你",
+      "stanza_idx": 3,
+      "score": 0.682802,
+      "text": "我深知这是上苍的惩罚\n让我保持沉寂将一切深埋心底\n再用漫长的一生来苦苦忘记\n如若有来生我愿舍弃一切待你\n哪怕枯死成一堆灰烬\n让流血的伤口染红无垠天际"
+    }
+  ]
+}

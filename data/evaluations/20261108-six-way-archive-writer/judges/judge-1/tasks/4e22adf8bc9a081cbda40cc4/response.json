@@ -1,0 +1,21 @@
+{
+  "id": "dd7bdcf6-df37-40e6-9072-1ae12cff98b2",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原意：C1-01保留“爱从何来”的疑问，C1-02“问心是否诚实”对应自问，C1-03“只要真的”对应不喜虚假，C1-04“找到真的”对应只想见真实；B的C1-01“降临人间”偏宏大，C1-04“真实的脸”略窄。A中文更自然凝练，情绪连贯。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 372,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 132,
+    "service_tier": "standard"
+  }
+}

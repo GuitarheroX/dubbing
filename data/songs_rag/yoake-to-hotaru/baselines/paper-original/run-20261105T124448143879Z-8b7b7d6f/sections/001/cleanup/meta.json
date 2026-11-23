@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 1.022,
+  "usage": {
+    "input_tokens": 179,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 43,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": true,
+    "human_annotations_in_generation": false,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "cleanup",
+  "variant": "paper-original",
+  "migrated_from": "run-20261105T124448143879Z-8b7b7d6f",
+  "raw_response": "{\"lines\":[\"淡月令人醉\",\"暗处脚下看不见\",\"摔倒也未察觉\",\"远夜星光晕染开\",\"找不到想做的事\",\"装作匆忙低着头\",\"摔倒后被人嘲笑\",\"假装没注意到\"]}"
+}

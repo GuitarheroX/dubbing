@@ -1,0 +1,114 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "phrases": [
+      {
+        "id": "B1-01",
+        "section": "B1",
+        "ja": "過去を掴み捨てて未来",
+        "budget": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      {
+        "id": "B1-02",
+        "section": "B1",
+        "ja": "出会いし続けて目を逸らしたい",
+        "budget": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      {
+        "id": "B1-03",
+        "section": "B1",
+        "ja": "あの自分よりも",
+        "budget": {
+          "min": 7,
+          "max": 7
+        },
+        "pattern": [
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "B1-04",
+        "section": "B1",
+        "ja": "時空よりも",
+        "budget": {
+          "min": 5,
+          "max": 5
+        },
+        "pattern": [
+          2,
+          3
+        ]
+      }
+    ],
+    "draft": {
+      "section": "B1",
+      "phrases": [
+        {
+          "id": "B1-01",
+          "zh": "攥紧过去 甩开 朝未来",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "九字，空格只作停顿不计入字数"
+          }
+        },
+        {
+          "id": "B1-02",
+          "zh": "相逢还在继续 我却想别过脸",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "十二字，相逢与别过脸对应相遇和移开目光"
+          }
+        },
+        {
+          "id": "B1-03",
+          "zh": "越过 昨日 的自己",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "按 pattern 停在 2/2/3，空格不计字数"
+          }
+        },
+        {
+          "id": "B1-04",
+          "zh": "时空 都敢越",
+          "chars": 5,
+          "self_check": {
+            "budget": [
+              5,
+              5
+            ],
+            "ok": true,
+            "note": "按 pattern 停在 2/3，时空起句更利落"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

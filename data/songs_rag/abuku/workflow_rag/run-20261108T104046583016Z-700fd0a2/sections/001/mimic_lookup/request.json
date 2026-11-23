@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "query_text": "啊 按不住的 心翻涌\n我胸中 蠢动的野兽\n水面 浮起来又破开 无声息地 化泡沫",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

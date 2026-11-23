@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-11-08T13:28:46.811613+00:00",
+  "generation_command": "python -u -B baseline/run_baselines.py --root data/songs_rag --all --baseline one-shot --client api --thinking disabled --temperature 0.7 --jobs 3 --max-retries 5",
+  "generation_log": "/private/tmp/dubbing-one-shot-20261108-network.log",
+  "generation_completed_songs": 20,
+  "generation_failed_songs": 0,
+  "judge_log": "/private/tmp/dubbing-five-way-one-shot-judge.log",
+  "prior_evaluation": "/Users/mummy/dubbing/data/evaluations/20261108-four-way",
+  "new_evaluation": "/Users/mummy/dubbing/data/evaluations/20261108-five-way-one-shot",
+  "reused_pair_tasks": 912,
+  "new_planned_judge_tasks": 684,
+  "all_prior_candidates_identical": true,
+  "comet_status": "skipped",
+  "prior_report_sha256": "2b29ac89d01fd45efd771ada7acbc6532d862c0983a4110afb894cbd2862b718"
+}

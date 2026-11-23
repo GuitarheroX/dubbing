@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173926_b_a6990d",
+  "input_hash": "a6990d03dc98522eb596da13da9e95be1ecb79c49bedbb372818fa326c16b83d",
+  "finished_at": "2026-11-03T17:39:40+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 4827,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 3120,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"街灯太亮 照不暖空房间\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"空格断句不计字，实字十个\"\n      }\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"乙醚擦过皮肤 冷得没有痛\",\n      \"chars\": 11,\n      \"self_check\": {\n        \"budget\": [11, 11],\n        \"ok\": true,\n        \"note\": \"乙醚保留麻醉的冷感，空格处停顿\"\n      }\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"凌晨两点 睡意全无\",\n      \"chars\": 8,\n      \"self_check\": {\n        \"budget\": [8, 8],\n        \"ok\": true,\n        \"note\": \"午前二时化作凌晨两点，字数精确\"\n      }\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"一切都在急速地崩塌改变\",\n      \"chars\": 11,\n      \"self_check\": {\n        \"budget\": [11, 11],\n        \"ok\": true,\n        \"note\": \"急速对应原文，崩塌补足画面\"\n      }\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"油已用尽的打火机\",\n      \"chars\": 8,\n      \"self_check\": {\n        \"budget\": [8, 8],\n        \"ok\": true,\n        \"note\": \"无空格，八字连读\"\n      }\n    },\n    {\n      \"id\": \"V1-06\",\n      \"zh\": \"胃里灼烧 像有火慢慢啃咬\",\n      \"chars\": 11,\n      \"self_check\": {\n        \"budget\": [11, 11],\n        \"ok\": true,\n        \"note\": \"灼烧与啃咬都是身体内部的实感\"\n      }\n    },\n    {\n      \"id\": \"V1-07\",\n      \"zh\": \"如果这一切全都是假\",\n      \"chars\": 9,\n      \"self_check\": {\n        \"budget\": [9, 9],\n        \"ok\": true,\n        \"note\": \"句尾落在假字，不拖虚词\"\n      }\n    },\n    {\n      \"id\": \"V1-08\",\n      \"zh\": \"那该多好 可惜都不是\",\n      \"chars\": 9,\n      \"self_check\": {\n        \"budget\": [9, 9],\n        \"ok\": true,\n        \"note\": \"空格断句不计字，自嘲语气收束\"\n      }\n    }\n  ]\n}",
+  "migrated_from": "20261103T173926_b_a6990d"
+}

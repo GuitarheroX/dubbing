@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"风呼啸 飘零飘零\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": false, \"note\": \"字数不足，需补意象\"}\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"此刻已 身在何处\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": false, \"note\": \"字数不足，需补意象\"}\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"被吹散 轻轻摇荡\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": false, \"note\": \"字数不足，需补意象\"}\n    },\n    {\n      \"id\": \"B1-04\",\n      \"zh\": \"忽念起 此处何方\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": false, \"note\": \"字数不足，需补意象\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:30+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "B1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 890,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 275,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

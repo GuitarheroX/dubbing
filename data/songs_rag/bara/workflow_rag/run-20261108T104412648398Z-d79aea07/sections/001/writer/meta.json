@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\"section\":\"V1\",\"phrases\":[{\"id\":\"V1-01\",\"zh\":\"草丛最深处 一朵无名花\"},{\"id\":\"V1-02\",\"zh\":\"若我这一生 只安静盛开\"},{\"id\":\"V1-03\",\"zh\":\"只迎着风儿 轻轻地摇摆\"},{\"id\":\"V1-04\",\"zh\":\"若能一生只摇曳 那该有多好\"}]}",
+  "finished_at": "2026-11-08T10:44:47+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3046,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 2132,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

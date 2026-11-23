@@ -1,0 +1,46 @@
+{
+  "section": "V2",
+  "query_text": "啊 按不住的 这伤悲\n推着我 不肯歇的兽\n同一句话 念到掌心起了泡",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "姜了_jiangle/小淡词：131——出发#s1",
+      "title": "小淡词：131——出发",
+      "poet": "姜了",
+      "poem_id": "姜了_jiangle/小淡词：131——出发",
+      "stanza_idx": 1,
+      "score": 0.663616,
+      "text": "抓紧疼痛的短毛\n不得不出发\n不说出\n不愿被看见\n我正贴在一头兽身上\n想那些快乐\n都是蜻蜒点水\n兽要把我扔到哪\n兽消失只是再一次潜伏\n在一个地方\n我必然有所思"
+    },
+    {
+      "chunk_id": "祁国_qiguo/一个人#s4",
+      "title": "一个人",
+      "poet": "祁国",
+      "poem_id": "祁国_qiguo/一个人",
+      "stanza_idx": 4,
+      "score": 0.629795,
+      "text": "这几句胡乱写在手心的话\n被手背压得喘不过气来"
+    },
+    {
+      "chunk_id": "仲诗文_zhongshiwen/黄昏来临#s2",
+      "title": "黄昏来临",
+      "poet": "仲诗文",
+      "poem_id": "仲诗文_zhongshiwen/黄昏来临",
+      "stanza_idx": 2,
+      "score": 0.628293,
+      "text": "被悲怆揪住的心呀\n不要去理解脚下\n啃也啃不完的草\n善于收割的嘴巴呀\n不要去催促山下麦子"
+    },
+    {
+      "chunk_id": "丁文智_dingwenzhi/雨#s1",
+      "title": "雨",
+      "poet": "丁文智",
+      "poem_id": "丁文智_dingwenzhi/雨",
+      "stanza_idx": 1,
+      "score": 0.622113,
+      "text": "脸都由灰蒙蒙\n憋成锅底了\n绷紧的情绪\n还在压抑\n难道\n心思中觉不出\n泪\n是不耐久藏的"
+    }
+  ]
+}

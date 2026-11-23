@@ -1,0 +1,21 @@
+{
+  "id": "2258c3b4-1c00-41d9-a618-a1d5c049d06e",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更忠实于原文的简洁意象与动作顺序，中文自然且保留“星々”“未来から過去”等核心语义；B虽有表现力，但V1-02加入“落满舌尖”、V1-05加入“星屑”等扩展改变了原句的克制感，V1-06“融化在喉咙”也稍显添饰。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 911,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 256,
+    "output_tokens": 120,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "section": "C1",
+  "query_text": "一遍一遍\n一遍一遍地喊\n变成这黑夜里 无名的怪兽 也不回头\n想留下 一点什么 在夜的角落里\n把这个秘密啊",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "艾慕_aimu/止于发生#s5",
+      "title": "止于发生",
+      "poet": "艾慕",
+      "poem_id": "艾慕_aimu/止于发生",
+      "stanza_idx": 5,
+      "score": 0.711174,
+      "text": "需要这夜色无光\n释放不甘心的魔\n需要这黑暗掩饰\n交换一些语言与动作"
+    },
+    {
+      "chunk_id": "刘亚全_liuyaquan/望#s3",
+      "title": "望",
+      "poet": "刘亚全",
+      "poem_id": "刘亚全_liuyaquan/望",
+      "stanza_idx": 3,
+      "score": 0.691245,
+      "text": "遥望远方\n没有灯火的音讯\n这黑夜里\n只剩下孤零零的名字\n漆黑一片"
+    },
+    {
+      "chunk_id": "徐江_xujiang/霍尔斯特·斯维登堡·枯燥的一首诗#s6",
+      "title": "霍尔斯特·斯维登堡·枯燥的一首诗",
+      "poet": "徐江",
+      "poem_id": "徐江_xujiang/霍尔斯特·斯维登堡·枯燥的一首诗",
+      "stanza_idx": 6,
+      "score": 0.689184,
+      "text": "它们一次次远去\n你一次次被抛在黑暗里\n你痛苦\n但还能坚持\n你长久地找它们神奇的动力"
+    },
+    {
+      "chunk_id": "浮生_fusheng/诗先锋#s3",
+      "title": "诗先锋",
+      "poet": "浮生",
+      "poem_id": "浮生_fusheng/诗先锋",
+      "stanza_idx": 3,
+      "score": 0.681718,
+      "text": "似乎，我已把自己比作了独角兽\n可那，只是黑森林的传说，而\n这犄角，亦不过是无中生有。或许\n我只是我梦里的兽，一头孤寂的\n四处流浪的游吟小兽"
+    }
+  ]
+}

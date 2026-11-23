@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173358_b_b907c3",
+  "input_hash": "b907c3896a27d842460806a71b9971cb37883a81db51062b60e3e1d985208a13",
+  "finished_at": "2026-11-03T17:34:19+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2468,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 4408,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"一口 又一口\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"空格断开处对应旋律 2+3 的两段\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"红的蓝的星 落满舌尖\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"前五字「红的蓝的星」对第一段，后四字对第二段\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"从未来 嚼回过去\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"三字加四字，正好对上 3+4\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"一颗 又一颗\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"与 V1-01 结构重复，只换「一口」为「一颗」\"}\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"嚼碎星屑 咽几十遍\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"四字加四字，与旋律两段对齐\"}\n    },\n    {\n      \"id\": \"V1-06\",\n      \"zh\": \"融化在喉咙 喝完\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"五字加两字，末尾两字落在尾段短音\"}\n    }\n  ]\n}",
+  "migrated_from": "20261103T173358_b_b907c3"
+}

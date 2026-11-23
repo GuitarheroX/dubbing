@@ -1,0 +1,46 @@
+{
+  "section": "B1",
+  "query_text": "我竟没有察觉\n也许是我太习惯依赖你\n所以 先好好爱自己 再张开双手 去爱别人",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "雁西_yanxi/封闭爱情#s1",
+      "title": "封闭爱情",
+      "poet": "雁西",
+      "poem_id": "雁西_yanxi/封闭爱情",
+      "stanza_idx": 1,
+      "score": 0.680079,
+      "text": "出于习惯\n我封闭\n爱我的人你也封闭着\n为什么爱你或爱我\n可却对着对方关得更紧"
+    },
+    {
+      "chunk_id": "凡浓雨_fannongyu/孩子在大山#s2",
+      "title": "孩子在大山",
+      "poet": "凡浓雨",
+      "poem_id": "凡浓雨_fannongyu/孩子在大山",
+      "stanza_idx": 2,
+      "score": 0.671806,
+      "text": "习惯了不被得到\n便觉得\n天生就该没有\n踮起脚尖\n努力伸长双手\n依旧\n触碰不到天堂"
+    },
+    {
+      "chunk_id": "凡浓雨_fannongyu/在我透明的时候#s4",
+      "title": "在我透明的时候",
+      "poet": "凡浓雨",
+      "poem_id": "凡浓雨_fannongyu/在我透明的时候",
+      "stanza_idx": 4,
+      "score": 0.66064,
+      "text": "我习惯性\n把自己隐失在光的背后\n习惯性默默承受\n被漠视的无助\n无人注意到黑暗中曾泪光闪烁\n灯，总是亮得很离谱"
+    },
+    {
+      "chunk_id": "杨于军_yangyujun/给朋友的前妻#s4",
+      "title": "给朋友的前妻",
+      "poet": "杨于军",
+      "poem_id": "杨于军_yangyujun/给朋友的前妻",
+      "stanza_idx": 4,
+      "score": 0.655072,
+      "text": "我是否还会像从前\n把自己当作你\n忽略你善意的微笑\n忙碌的身影\n我从来没有注视过你\n担心我会在对你的注视中迷失自己"
+    }
+  ]
+}

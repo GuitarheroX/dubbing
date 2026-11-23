@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"啊 按不住的 心翻涌\"\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"我胸中 蠢动的野兽\"\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"水面 浮起来又破开 无声息地 化泡沫\"\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T10:41:17+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2905,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 1761,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

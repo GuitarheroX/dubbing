@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C1",
+    "query_text": "把心交到我手里\n把花束递到你手里\n让头发在风里摇 没有人伸手去按住\n把话都说给我听\n把鼻歌唱给我听\n长长的 长长的 迷宫尽头 我把它们放好",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达迎风、穿花、穿云、下风处独行、晨光、草与灵魂气息等核心信息",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03",
+            "C1-04",
+            "C1-05",
+            "C1-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "孤独前行与清晨气息基本保留，但“唯我独行”略偏书面，情绪稍平",
+          "phrase_ids": [
+            "C1-02",
+            "C1-06"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“向下风处唯我独行”稍显文绉绉",
+          "phrase_ids": [
+            "C1-02",
+            "C1-06"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象清晰，动作连贯，但表达偏常规",
+          "phrase_ids": [
+            "C1-01",
+            "C1-05"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心语义准确，下风处独行、穿风穿空等均保留",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03",
+            "C1-04",
+            "C1-05",
+            "C1-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "孤独与清晨氛围基本一致，语气较平实",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "较顺口，“只我一人向下风处”语序略生硬",
+          "phrase_ids": [
+            "C1-02",
+            "C1-06"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但意象普通，缺少力度",
+          "phrase_ids": [
+            "C1-05"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "主旨保留，但“别回头”为增译，“顺风去”与“風下”略有偏移",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "清晨赶路与孤独感较强，增译“别回头”强化了决绝情绪",
+          "phrase_ids": [
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "短句节奏自然，但C1-05“穿过”重复略碎",
+          "phrase_ids": [
+            "C1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "短句有推进感，“只剩我一人”较有画面",
+          "phrase_ids": [
+            "C1-02",
+            "C1-06"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心信息基本保留，“顺风而下”与“風下へ”略有语义偏移",
+          "phrase_ids": [
+            "C1-02",
+            "C1-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "孤独前行与黎明氛围基本一致，情绪平稳",
+          "phrase_ids": [
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "短句顺口自然，符合歌词文体",
+          "phrase_ids": [
+            "C1-01",
+            "C1-03",
+            "C1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏平实，意象不够鲜明",
+          "phrase_ids": [
+            "C1-05"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“风撞个满怀”“花从指缝开”“草的腥与魂搅成一股”等改写偏离原意，加入原词没有的动作与感官",
+          "phrase_ids": [
+            "C1-01",
+            "C1-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向大体保留，但“撞个满怀”“涌上来”使氛围更激烈，与原词清冷孤独感有偏移",
+          "phrase_ids": [
+            "C1-01",
+            "C1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "部分表达生动但“草的腥与魂搅成一股”较生硬",
+          "phrase_ids": [
+            "C1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象鲜明有冲击力，但部分服务的是新增画面而非原主题",
+          "phrase_ids": [
+            "C1-01",
+            "C1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“接住这阵风”“撞开一片花”“青草腥气里混着魂魄飘散开”等明显增译改写，偏离原词动作与气息描写",
+          "phrase_ids": [
+            "C1-01",
+            "C1-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪较激烈，“别停”重复强化冲劲，与原词清冷孤独氛围有偏移",
+          "phrase_ids": [
+            "C1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“接住这阵风”“撞开一片花”可理解但略生硬，重复“别停”稍显口号化",
+          "phrase_ids": [
+            "C1-01",
+            "C1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "画面感强、动作有力，但部分意象为新增且偏离原主题",
+          "phrase_ids": [
+            "C1-01",
+            "C1-04"
+          ]
+        }
+      }
+    }
+  ]
+}

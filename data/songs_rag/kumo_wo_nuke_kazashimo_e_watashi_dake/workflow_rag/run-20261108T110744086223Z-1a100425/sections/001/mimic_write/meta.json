@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"一阵 风穿过\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"2+3 断句，把「吹过」改成「穿过」，先埋下身体被风透过去的意象\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"第二阵 把我拔离 草的怀里\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"按 3+4+4 切分；「草的怀里」把草拟人，用被抱过再被拔走的感觉换掉直白的「这片草丛」\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"终于 空得发凉\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"2+4；保留初版「空得发凉」，凉的触感替掉「がらんどう」的直译\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"顺着风去 只剩我一个\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"初版多了一个「下」字，删去后正好 4+5\"}\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"草原 一道影 拉长\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"按 2+3+2；用「拉长」这个动作代替初版的「一人」，孤独感交给影子的长度\"}\n    },\n    {\n      \"id\": \"V1-06\",\n      \"zh\": \"我化成风 青蓝色的风\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"4+5；「变成」改「化成」，更轻，后半重复「风」字把颜色钉住\"}\n    },\n    {\n      \"id\": \"V1-07\",\n      \"zh\": \"随风飘\",\n      \"chars\": 3,\n      \"self_check\": {\"budget\": [3, 3], \"ok\": true, \"note\": \"整句一段三个音，收在「飘」上，接得住前一句的风\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:08:37+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3675,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 3471,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

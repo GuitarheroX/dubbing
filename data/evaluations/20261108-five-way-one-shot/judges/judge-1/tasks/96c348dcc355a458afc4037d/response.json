@@ -1,0 +1,21 @@
+{
+  "id": "d2f7251b-8df2-4f4e-9683-35708bf5c92a",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心信息准确：暗中有光、伸手、想说话、朝阳染色、觉醒、自由、飞均保留。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-06\",\"C1-08\",\"C1-11\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，但“已经自由了”偏陈述完成，略弱于原句的呼唤感。\",\"phrase_ids\":[\"C1-04\",\"C1-05\",\"C1-09\",\"C1-10\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文顺口自然，符合歌词文体。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-06\",\"C1-08\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰，表达稳妥，但“已经自由了”重复稍显平淡。\",\"phrase_ids\":[\"C1-04\",\"C1-05\",\"C1-09\",\"C1-10\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"整体准确，但“朝日漫过指尖”添加了原句没有的指尖意象，“多自由”弱化了“もう”的释放感。\",\"phrase_ids\":[\"C1-03\",\"C1-04\",\"C1-05\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，晨光与觉醒感较强，但“多自由”偏感叹而非释放宣告。\",\"phrase_ids\":[\"C1-04\",\"C1-05\",\"C1-09\",\"C1-10\"]},\"naturalness\":{\"score\":4,\"reason\":\"大体顺口，“暗里斜进一线日光”稍文，“朝日漫过指尖”略添设。\",\"phrase_ids\":[\"C1-01\",\"C1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“染成金色”“醒过来”有画面，但部分表达略散。\",\"phrase_ids\":[\"C1-03\",\"C1-06\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心语义准确，黑暗日光、伸手、想说话、朝阳染色、觉醒、自由、飞均保留。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-06\",\"C1-08\",\"C1-11\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，但“已经自由”略偏状态陈述，释放感稍弱。\",\"phrase_ids\":[\"C1-04\",\"C1-05\",\"C1-09\",\"C1-10\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体自然，但“值得去爱 的日子”断句略生硬。\",\"phrase_ids\":[\"C1-08\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰，表达稳妥，但“已经自由”重复稍平。\",\"phrase_ids\":[\"C1-04\",\"C1-05\",\"C1-09\",\"C1-10\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息基本保留，但“可爱的日子”偏离“愛すべき日”的“值得爱”含义，“自由地”弱化“もう自由に”的释放宣告。\",\"phrase_ids\":[\"C1-04\",\"C1-05\",\"C1-08\",\"C1-09\",\"C1-10\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向大体一致，但“自由地”偏方式状语，缺少原句的解放感。\",\"phrase_ids\":[\"C1-04\",\"C1-05\",\"C1-09\",\"C1-10\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，但“可爱的日子”搭配略偏日常可爱义。\",\"phrase_ids\":[\"C1-08\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，“自由地”重复较空泛。\",\"phrase_ids\":[\"C1-04\",\"C1-05\",\"C1-09\",\"C1-10\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"整体准确，但“飞走”比“飛ぶ”多出离开义，“好自由”弱化“もう自由に”的宣告感。\",\"phrase_ids\":[\"C1-04\",\"C1-05\",\"C1-09\",\"C1-10\",\"C1-11\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，晨光与觉醒感保留，但“好自由”偏感叹。\",\"phrase_ids\":[\"C1-04\",\"C1-05\",\"C1-09\",\"C1-10\"]},\"naturalness\":{\"score\":4,\"reason\":\"大体顺口，“我此刻终于醒来 睁开眼睛”稍显重复。\",\"phrase_ids\":[\"C1-06\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“慢慢染红”有画面，但“好自由”重复略平。\",\"phrase_ids\":[\"C1-03\",\"C1-04\",\"C1-05\",\"C1-08\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1628,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 1137,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "I1",
+    "phrases": [
+      {
+        "id": "I1-01",
+        "section": "I1",
+        "ja": "僕に心を",
+        "budget": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      {
+        "id": "I1-02",
+        "section": "I1",
+        "ja": "君に花束を",
+        "budget": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      {
+        "id": "I1-03",
+        "section": "I1",
+        "ja": "揺れる髪だけ靡くままにして",
+        "budget": {
+          "min": 15,
+          "max": 15
+        },
+        "pattern": [
+          7,
+          8
+        ]
+      }
+    ],
+    "draft": {
+      "section": "I1",
+      "phrases": [
+        {
+          "id": "I1-01",
+          "zh": "把你的心交给我",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "七字连读 可按三加四分句"
+          }
+        },
+        {
+          "id": "I1-02",
+          "zh": "把一束花放你手中",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "空格前为三字 后为五字"
+          }
+        },
+        {
+          "id": "I1-03",
+          "zh": "就让风掠过长发 任它散落在你肩头",
+          "chars": 15,
+          "self_check": {
+            "budget": [
+              15,
+              15
+            ],
+            "ok": true,
+            "note": "空格处为七加八断句"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

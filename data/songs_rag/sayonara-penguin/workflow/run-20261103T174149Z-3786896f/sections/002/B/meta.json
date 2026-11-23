@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T174124_b_df17a0",
+  "input_hash": "df17a04b53c645bb0125097d48ee629b87aee6519a644c8d1ebb15d73e97723d",
+  "finished_at": "2026-11-03T17:41:34+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2246,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 1959,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"风穿过这房间 风带走你和我\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"两个六字短句对应 pattern 6+6，中间空格断句，两句都以「风」起头保留原句重复感\"}\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"我们就像 蒲公英的绒毛\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"前四字「我们就像」占第一段，后六字「蒲公英的绒毛」占第二段\"}\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"散落在城市里 各自去发芽\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"六字「散落在城市里」加五字「各自去发芽」，接上一句绒毛被吹散的意象\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T174124_b_df17a0"
+}

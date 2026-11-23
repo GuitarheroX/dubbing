@@ -1,0 +1,225 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“挡我路的杂音”将“邪魔するもの”具象化但略添义，“甩开脚踝的手”偏离“振り落として”原意，“全部夺回来”扩大“取り戻したい”范围",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "反抗与夺回的强烈情绪保留，但“脚踝的手”意象带来额外画面",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“甩开脚踝的手”稍显突兀",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“杂音”“亮出颜色”较鲜明，服务主题",
+          "phrase_ids": [
+            "B1-01",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "四句均准确对应原意，未增删核心信息",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，但表达偏平直，冲击力稍弱",
+          "phrase_ids": [
+            "B1-02",
+            "B1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "简洁可读，“甩落而去”略文语但可接受",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "忠实但意象较平，缺少鲜明张力",
+          "phrase_ids": [
+            "B1-01",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“挡路的一切”“我本色不改”合理改写，“要把一切夺回手中”扩大宾语范围",
+          "phrase_ids": [
+            "B1-01",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "坚定反抗情绪保留，语气略柔",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "四句均顺口自然，符合歌词文体",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“我本色不改”有力，整体意象清晰",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "四句准确对应原意，“色彩”与“颜色”同义合理",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，但表达偏平直",
+          "phrase_ids": [
+            "B1-02",
+            "B1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "简洁可读，“甩落而去”略文语",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "忠实但意象普通，张力不足",
+          "phrase_ids": [
+            "B1-01",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“黑从骨里翻涌”“把黑夺回来”将“私の色”窄化为黑色，偏离原意；“贴上身那冲动”改变关系",
+          "phrase_ids": [
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "黑暗反抗情绪强烈，但与原曲色彩主题有偏移",
+          "phrase_ids": [
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“抖落贴上身那”语序生硬，“黑从骨里翻涌”可懂但拗口",
+          "phrase_ids": [
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“黑从骨里翻涌”意象鲜明有力",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“挡路的阻碍”语义重复，“我要夺回 现在”将“取り戻したい”改为夺回现在，偏移原意",
+          "phrase_ids": [
+            "B1-01",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向大致一致，但结尾“现在”削弱了夺回自我的意味",
+          "phrase_ids": [
+            "B1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“挡路的阻碍”略重复",
+          "phrase_ids": [
+            "B1-01"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，“属于我的色”尚可但整体张力一般",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        }
+      }
+    }
+  ]
+}

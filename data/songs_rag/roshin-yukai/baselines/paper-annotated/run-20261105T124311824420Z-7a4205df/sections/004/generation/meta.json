@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 1.25,
+  "usage": {
+    "input_tokens": 781,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 70,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": false,
+    "human_annotations_in_generation": true,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "generation",
+  "variant": "paper-annotated",
+  "migrated_from": "run-20261105T124311824420Z-7a4205df",
+  "raw_response": "阳台的另一侧  \n楼梯上缓缓升起的声响  \n天色开始阴沉  \n窗玻璃上 落进房间  \n扩散的黄昏  \n哭肿了般的太阳红  \n像融化般一点一点  \n一点一点死去的世界  \n我梦见勒住你的脖颈  \n春风中摇曳的窗帘  \n从干裂的嘴唇中  \n溢出的话语如泡沫"
+}

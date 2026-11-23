@@ -1,0 +1,123 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "phrases": [
+      {
+        "id": "B1-01",
+        "section": "B1",
+        "ja": "命令　故意を感じて",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          2,
+          4,
+          2
+        ]
+      },
+      {
+        "id": "B1-02",
+        "section": "B1",
+        "ja": "訂正　無為を観じて",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          2,
+          4,
+          2
+        ]
+      },
+      {
+        "id": "B1-03",
+        "section": "B1",
+        "ja": "安寧は罪が混ざる",
+        "budget": {
+          "min": 9,
+          "max": 9
+        },
+        "pattern": [
+          2,
+          4,
+          3
+        ]
+      },
+      {
+        "id": "B1-04",
+        "section": "B1",
+        "ja": "当然か",
+        "budget": {
+          "min": 3,
+          "max": 3
+        },
+        "pattern": [
+          3
+        ]
+      }
+    ],
+    "draft": {
+      "section": "B1",
+      "phrases": [
+        {
+          "id": "B1-01",
+          "zh": "命令 咬住那点 敌意",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "按 2/4/2 断成三截：命令(2) 咬住那点(4) 敌意(2)；把「故意」译成可咬住的敌意，接住 V2 那句「牙关咬紧」"
+          }
+        },
+        {
+          "id": "B1-02",
+          "zh": "订正 旁观那团 虚无",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "与上一句同构 2/4/2，「那点／那团」形成对仗；保留初版「旁观」「虚无」两个好词"
+          }
+        },
+        {
+          "id": "B1-03",
+          "zh": "安宁 掺一点罪 才完整",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "2/4/3；砍掉初版「罪恶感」的书面味，改成「才完整」的判断句，语气更冷更认命"
+          }
+        },
+        {
+          "id": "B1-04",
+          "zh": "当然吧",
+          "chars": 3,
+          "self_check": {
+            "budget": [
+              3,
+              3
+            ],
+            "ok": true,
+            "note": "三字整句，沿用初版，苦涩的自我定罪"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

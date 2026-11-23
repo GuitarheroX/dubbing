@@ -1,0 +1,43 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+    "user": "世界がほどける音が\nかけてくる\nかけてくる\n朝がくる\n未来で振り向くあなたに\n手を振って\n漕いで行く\n漕いで行く\nどこへ行こう\nどこへでも"
+  },
+  "data": {
+    "lyrics": [
+      "世界がほどける音が",
+      "かけてくる",
+      "かけてくる",
+      "朝がくる",
+      "未来で振り向くあなたに",
+      "手を振って",
+      "漕いで行く",
+      "漕いで行く",
+      "どこへ行こう",
+      "どこへでも"
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "世界がほどける音が\nかけてくる\nかけてくる\n朝がくる\n未来で振り向くあなたに\n手を振って\n漕いで行く\n漕いで行く\nどこへ行こう\nどこへでも"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

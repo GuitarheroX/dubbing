@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T104412648398Z-d79aea07",
+  "updated_at": "2026-11-08T10:47:49+00:00",
+  "song": "bara",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

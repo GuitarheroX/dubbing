@@ -1,0 +1,46 @@
+{
+  "section": "V1",
+  "query_text": "天色暗 街也静 卷帘门落下\n人走远 屋也空 坐垫还陷着\n全部 装进袖 风就往前走\n云像一条河 风踩着它走",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "小宽_xiaokuan/帘子#s1",
+      "title": "帘子",
+      "poet": "小宽",
+      "poem_id": "小宽_xiaokuan/帘子",
+      "stanza_idx": 1,
+      "score": 0.694956,
+      "text": "帘子垂下来\n外面黑了\n里面还亮堂堂\n夜里是多么静\n有火车在远处走\n我听不到了\n你也是\n我只看见墙上挂着画\n也看不见你\n看见你的帘子垂下来\n没有印出你的影子\n看见了风\n它力量不大\n只能把帘子掀开\n一个小角"
+    },
+    {
+      "chunk_id": "杨牧_yangmu/黑衣人#s1",
+      "title": "黑衣人",
+      "poet": "杨牧",
+      "poem_id": "杨牧_yangmu/黑衣人",
+      "stanza_idx": 1,
+      "score": 0.684511,
+      "text": "飘去，飘去。在我眼睫之间\n小立门外，忆忆涛声\n黑衣人是云啊！暴雨之前"
+    },
+    {
+      "chunk_id": "cc_cc/思念——给黄思齐#s1",
+      "title": "思念——给黄思齐",
+      "poet": "cc",
+      "poem_id": "cc_cc/思念——给黄思齐",
+      "stanza_idx": 1,
+      "score": 0.670128,
+      "text": "是晨星在窗櫺危垂着\n还是朝露底寒颤\n揉揉眼\n原是思念底珠串成帘\n每每在日夜拔河之际\n摇摇 晃晃\n整个世界底风景破碎在眼神底落寞里\n色彩底浓淡暗明亦随之崩析成泥\n形而上学底虚与有已无分野\n都纷纷跌坐在帘中"
+    },
+    {
+      "chunk_id": "钟顺文_zhongshunwen/放一把椅子#s1",
+      "title": "放一把椅子",
+      "poet": "钟顺文",
+      "poem_id": "钟顺文_zhongshunwen/放一把椅子",
+      "stanza_idx": 1,
+      "score": 0.668819,
+      "text": "在空林中\n放一把椅子\n让落叶坐坐\n让风坐坐\n让路过的云坐坐\n在空林中\n放一把椅子\n坐在落叶上\n坐在风上\n坐在路过的云上\n在空林中\n落叶是一把椅子\n风是一把椅子\n路过的云也是一把椅子\n在似满实虚的林中"
+    }
+  ]
+}

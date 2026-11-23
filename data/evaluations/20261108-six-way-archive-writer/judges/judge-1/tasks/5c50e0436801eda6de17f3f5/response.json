@@ -1,0 +1,21 @@
+{
+  "id": "46798b88-2f0c-42da-b566-a4bc729ebe6a",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原意：C1-01保留“声音”作主语，C1-02/03“传来”对应“かけてくる”的趋近感，C1-05“在未来回头的你面前”准确传达“未来で振り向くあなたに”的面向对象，C1-07/08“划船前行”保留“漕ぐ”的具体动作。A的C1-01“声音倾泻”与C1-05“你还在等待”偏离原句，C1-07/08“划向未来”改动了意象。B整体中文自然、情绪连贯。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-05\",\"C1-07\",\"C1-08\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 720,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 174,
+    "service_tier": "standard"
+  }
+}

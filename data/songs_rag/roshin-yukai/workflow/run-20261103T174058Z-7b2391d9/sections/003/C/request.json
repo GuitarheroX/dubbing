@@ -1,0 +1,149 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C1",
+    "phrases": [
+      {
+        "id": "C1-01",
+        "section": "C1",
+        "ja": "核融合炉にさ",
+        "budget": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      {
+        "id": "C1-02",
+        "section": "C1",
+        "ja": "飛び込んでみたいと思う",
+        "budget": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      {
+        "id": "C1-03",
+        "section": "C1",
+        "ja": "真っ青な光包まれて奇麗",
+        "budget": {
+          "min": 15,
+          "max": 15
+        }
+      },
+      {
+        "id": "C1-04",
+        "section": "C1",
+        "ja": "核融合炉にさ",
+        "budget": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      {
+        "id": "C1-05",
+        "section": "C1",
+        "ja": "飛び込んでみたらそしたら",
+        "budget": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      {
+        "id": "C1-06",
+        "section": "C1",
+        "ja": "すべてが許されるような気がして",
+        "budget": {
+          "min": 15,
+          "max": 15
+        }
+      }
+    ],
+    "draft": {
+      "section": "C1",
+      "phrases": [
+        {
+          "id": "C1-01",
+          "zh": "跳进炉心 那片蓝",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "炉心后断句，四字加三字"
+          }
+        },
+        {
+          "id": "C1-02",
+          "zh": "好想纵身一跃 被那光吞没",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "六字加五字，中间空格作停顿"
+          }
+        },
+        {
+          "id": "C1-03",
+          "zh": "一整片湛蓝的光 温柔裹住全身 多美",
+          "chars": 15,
+          "self_check": {
+            "budget": [
+              15,
+              15
+            ],
+            "ok": true,
+            "note": "七加六加二，两处空格断句"
+          }
+        },
+        {
+          "id": "C1-04",
+          "zh": "跳进炉心 那片蓝",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "与 C1-01 完全重复，保留原曲重复感"
+          }
+        },
+        {
+          "id": "C1-05",
+          "zh": "若是纵身一跃 会变成怎样",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "六字加五字，与 C1-02 同起句呼应"
+          }
+        },
+        {
+          "id": "C1-06",
+          "zh": "好像所有一切 都将被原谅 那种感觉",
+          "chars": 15,
+          "self_check": {
+            "budget": [
+              15,
+              15
+            ],
+            "ok": true,
+            "note": "六加五加四，空格分开三个小句"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

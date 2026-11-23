@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"曾见过的风景\",\n      \"chars\": 6,\n      \"self_check\": {\n        \"budget\": [6, 6],\n        \"ok\": true,\n        \"note\": \"保留初版意象，六字正好对上\"\n      }\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"恍惚等一颗迟来的流星\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"用迟来补出いずれ的等待感，十字整\"\n      }\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"想一直凝望\",\n      \"chars\": 5,\n      \"self_check\": {\n        \"budget\": [5, 5],\n        \"ok\": true,\n        \"note\": \"凝望替换望着，避开句尾着字\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:05:52+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 639,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3968,
+    "output_tokens": 1834,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

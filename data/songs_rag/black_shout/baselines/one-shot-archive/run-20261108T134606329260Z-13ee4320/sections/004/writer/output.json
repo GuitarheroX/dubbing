@@ -1,0 +1,109 @@
+{
+  "section": "C2",
+  "phrases": [
+    {
+      "id": "C2-01",
+      "zh": "哪怕明天是",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": false,
+        "note": "少一字，需补"
+      }
+    },
+    {
+      "id": "C2-02",
+      "zh": "无路可走的尽头",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "无路可走的尽头 七个字"
+      }
+    },
+    {
+      "id": "C2-03",
+      "zh": "凭我双手",
+      "chars": 4,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": false,
+        "note": "少两字，需补"
+      }
+    },
+    {
+      "id": "C2-04",
+      "zh": "劈开一道出口",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": false,
+        "note": "少一字，需补"
+      }
+    },
+    {
+      "id": "C2-05",
+      "zh": "颤抖的身体",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": false,
+        "note": "少一字，需补"
+      }
+    },
+    {
+      "id": "C2-06",
+      "zh": "用力抱紧它",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": false,
+        "note": "少两字，需补"
+      }
+    },
+    {
+      "id": "C2-07",
+      "zh": "带着觉悟迈步",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": false,
+        "note": "少一字，需补"
+      }
+    },
+    {
+      "id": "C2-08",
+      "zh": "想要实现的梦 现在就夺到手",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          16,
+          16
+        ],
+        "ok": false,
+        "note": "少四字，需补"
+      }
+    }
+  ]
+}

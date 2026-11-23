@@ -1,0 +1,70 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "悲伤的新闻 和无聊的闲话",
+      "chars": 14,
+      "self_check": {
+        "budget": [
+          14,
+          14
+        ],
+        "ok": true,
+        "note": "前四字加三字共七字，后五字加两字共七字，空格断句"
+      }
+    },
+    {
+      "id": "V1-02",
+      "zh": "从早上就听够 真的受够啦",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": true,
+        "note": "前四字后八字，空格分隔"
+      }
+    },
+    {
+      "id": "V1-03",
+      "zh": "今天比往常更想",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "整句六字"
+      }
+    },
+    {
+      "id": "V1-04",
+      "zh": "风吹得让人好舒服",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "整句九字"
+      }
+    },
+    {
+      "id": "V1-05",
+      "zh": "换上快乐的心情吧",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "五字加四字，空格断句"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T105809734466Z-ef9e7fa0",
+  "updated_at": "2026-11-08T11:00:22+00:00",
+  "song": "kaijuu",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

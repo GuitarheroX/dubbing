@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "1) 每行音节数（以平假名/音节计）与原句对应：\n充满不安的（5）\n世间法则啊（5）\n与焦躁一同（6）\n夺走自由啊（6）\n黑白之雨啊（5）\n遮蔽这世界（5）\n天空嘲笑般沉落（8）\n\n2) 韵式：原句各行末音为 た/は/に/く/が/て/だ，押 -a/-a/-i/-u/-a/-e/-a 的交错韵；译文行末音节为 的/啊/同/啊/啊/界/落，押 -e/-a/-ong/-a/-a/-ie/-uo，保留首尾与中段回环的韵感。\n\n3) 主题：不安、焦躁、自由被夺、黑白之雨遮蔽世界、天空嘲弄并沉落，均已保留。"
+  },
+  "data": {
+    "response": "1) 每行音节数（以平假名/音节计）与原句对应：\n充满不安的（5）\n世间法则啊（5）\n与焦躁一同（6）\n夺走自由啊（6）\n黑白之雨啊（5）\n遮蔽这世界（5）\n天空嘲笑般沉落（8）\n\n2) 韵式：原句各行末音为 た/は/に/く/が/て/だ，押 -a/-a/-i/-u/-a/-e/-a 的交错韵；译文行末音节为 的/啊/同/啊/啊/界/落，押 -e/-a/-ong/-a/-a/-ie/-uo，保留首尾与中段回环的韵感。\n\n3) 主题：不安、焦躁、自由被夺、黑白之雨遮蔽世界、天空嘲弄并沉落，均已保留。"
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "1) 每行音节数（以平假名/音节计）与原句对应：\n充满不安的（5）\n世间法则啊（5）\n与焦躁一同（6）\n夺走自由啊（6）\n黑白之雨啊（5）\n遮蔽这世界（5）\n天空嘲笑般沉落（8）\n\n2) 韵式：原句各行末音为 た/は/に/く/が/て/だ，押 -a/-a/-i/-u/-a/-e/-a 的交错韵；译文行末音节为 的/啊/同/啊/啊/界/落，押 -e/-a/-ong/-a/-a/-ie/-uo，保留首尾与中段回环的韵感。\n\n3) 主题：不安、焦躁、自由被夺、黑白之雨遮蔽世界、天空嘲弄并沉落，均已保留。"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

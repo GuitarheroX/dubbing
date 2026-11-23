@@ -1,0 +1,83 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "phrases": [
+      {
+        "id": "V1-01",
+        "section": "V1",
+        "ja": "いつか見た風景",
+        "budget": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      {
+        "id": "V1-02",
+        "section": "V1",
+        "ja": "呆然といずれ見える流星",
+        "budget": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      {
+        "id": "V1-03",
+        "section": "V1",
+        "ja": "いつも見ていたい",
+        "budget": {
+          "min": 5,
+          "max": 5
+        }
+      }
+    ],
+    "draft": {
+      "section": "V1",
+      "phrases": [
+        {
+          "id": "V1-01",
+          "zh": "曾见过的风景",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "保留初版原句，六字正好对上"
+          }
+        },
+        {
+          "id": "V1-02",
+          "zh": "怔怔 等一颗没来的流星",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "前两字一顿，用空格断开，照应呆然；「没来的」比「未至」更口语，接住原曲那种悬着等不到的钝感"
+          }
+        },
+        {
+          "id": "V1-03",
+          "zh": "想一直仰望",
+          "chars": 5,
+          "self_check": {
+            "budget": [
+              5,
+              5
+            ],
+            "ok": true,
+            "note": "沿用初版的仰望，把贪恋落在抬头的动作上，收尾不用「着」"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

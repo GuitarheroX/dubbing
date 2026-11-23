@@ -1,0 +1,194 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达“什么都不剩就怪你”“这样说还多次挥拳”“连这也能干净吞下吗”的核心信息",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "保留指责与被动承受的压抑感，但“挥拳不停”略强化动作，情绪稍偏激烈",
+          "phrase_ids": [
+            "C1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文顺口，符合歌词文体，断句自然",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“什么都不剩”“干净地吞下”意象清晰，表达有力",
+          "phrase_ids": [
+            "C1-01",
+            "C1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心语义基本准确，但“那全都是你的错吧”与“是否都能”稍显冗长，未明显误读",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向一致，但表达偏解释性，压抑与控诉的力度被稀释",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "可理解但“就算这样说着无数次继续挥拳打下去”等多处生硬冗长",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "意象保留但表达普通，缺乏凝练力度",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "C1-02将“这样说”改为“喊着全都怪你”，C1-03将“那”具体化为“落下的拳头”，有合理补充但改变了部分指代关系",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "控诉与承受的压抑感保留较好，“手一次次重重落下”强化了暴力意象",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文流畅自然，歌词感强",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“重重落下”“咽得干干净净”意象鲜明有力",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "C1-02将“这样说”改为“我这样说出口”，C1-03将“那”改为“这句怨你的话”，指代偏移，但整体主旨保留",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "指责与无力感保留较好，“你手掌一遍遍落下”有画面感",
+          "phrase_ids": [
+            "C1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，个别处如“等一切空掉以后”稍显口语化但可接受",
+          "phrase_ids": [
+            "C1-01"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“空掉”“咽得干净吗”意象清晰，表达较有力",
+          "phrase_ids": [
+            "C1-01",
+            "C1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心信息准确，贴近原文直译，无明显误读",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向一致但表达平淡，控诉与压抑的力度不足",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文可理解且较顺，但“这样说着继续打了好多次”偏口语叙述",
+          "phrase_ids": [
+            "C1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，意象不够鲜明，服务主题但缺乏力度",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        }
+      }
+    }
+  ]
+}

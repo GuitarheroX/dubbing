@@ -1,0 +1,209 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "保留被抽空、萎瘪、成为所有物的核心，但“皱在掌心”略增原文没有的意象",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "无力、被占有的情绪方向一致，语气稍柔",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "四字节奏顺口，“也罢”略口语化但可接受",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“皱在掌心”意象鲜明，服务被掌控主题",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“旧的气球”“旧物”把原文的萎瘪具体化为气球比喻，偏离原意象",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "被消耗、被物化的情绪仍在，但气球比喻使沉重感变轻",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，歌词感较强",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "气球意象鲜明，但属于新增比喻",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“抽空空气”“干瘪”“所有物”基本对应，但“枯萎”略增植物意象",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "无力与被占有感保留较好",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“我干瘪着枯萎”搭配略生硬，节奏不够顺",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏直白，“枯萎”与干瘪意象略重复",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "三句核心信息准确，未明显增删",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "无力、被占有的情绪保留，但语气较平",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文自然，略偏散文式但可唱",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "准确但意象与语气较普通",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心语义准确对应原文",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "叹息与无力感保留，“呜呼”稍文雅",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“呜呼已是”略书面",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但较平实，缺少突出意象",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    }
+  ]
+}

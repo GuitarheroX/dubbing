@@ -1,0 +1,21 @@
+{
+  "id": "9b089726-e5d3-4b7b-9dc4-8d9d4831946e",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原句的凝练与“呆然”的直感，V1-02“呆望一颗终会来的流星”保留了“いずれ見える”的未来指向；B的“仿佛望见流星划落”把未至之景改成已见之景，语义偏移，且“茫然间”稍显文饰。V1-01、V1-03两版自然度相当。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 211,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 118,
+    "service_tier": "standard"
+  }
+}

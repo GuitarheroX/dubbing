@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 1.766,
+  "usage": {
+    "input_tokens": 421,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 134,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": false,
+    "human_annotations_in_generation": true,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "generation",
+  "variant": "paper-annotated",
+  "migrated_from": "run-20261105T124212449668Z-d132d673",
+  "raw_response": "1. 潜藏的忧愁啊 (5+4=9 syllables)\n2. 怎么也无法坦率 (4+5=9 syllables)\n3. 和谁都难以相互理解 (4+6=10 syllables)\n4. 连自己也是 (5 syllables)\n\nRhyme check (final phoneme per line): 啊(a) / 率(üe→e) / 解(ie→e) / 是(i) — lines 2 and 3 share final \"e\"; original rhyme pattern preserved as loose end-rhyme. Theme preserved: hidden sorrow, inability to be honest, incompatibility with others, even oneself."
+}

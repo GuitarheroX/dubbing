@@ -1,0 +1,156 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心信息基本准确，'运送'略生硬但未偏离告别企鹅与风之意。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03",
+            "C1-04",
+            "C1-05",
+            "C1-06"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向一致但偏平淡，告别与泪的轻淡感保留不足。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "'风运送'生硬，'一步一步走着笑着吧'可理解但不够顺口。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "意象基本传达但表达普通，缺乏鲜明画面。",
+          "phrase_ids": [
+            "C1-03",
+            "C1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "'风带走你和我'增添原文没有的离别对象，'这房间'也属添加，核心有偏移。",
+          "phrase_ids": [
+            "C1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "告别与轻快摇摆的情绪较充分，泪落意象保留。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，'摇摇摆摆'贴合企鹅步态，个别句稍长。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "企鹅摇摆意象鲜明，'一滴眼泪掉下来'有画面感。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-05"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "'风带走些什么'模糊化，'我的企鹅'改变关系亲密度，'掉进风里'为添加。",
+          "phrase_ids": [
+            "C1-04",
+            "C1-05",
+            "C1-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "告别、眷恋与泪的情绪方向一致且较有层次。",
+          "phrase_ids": [
+            "C1-03",
+            "C1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文流畅，'摇摇摆摆地走下去'自然，个别句略文。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'掉进风里'意象统一，长街与风呼应较好。",
+          "phrase_ids": [
+            "C1-04",
+            "C1-05"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "'看看'语义空泛，'风儿吹来'偏离'运ぶ'的携带义，核心部分保留。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向一致但'风儿轻轻'偏甜软，与原曲轻淡惆怅略有偏差。",
+          "phrase_ids": [
+            "C1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "'走着欢笑着看看'堆叠生硬，'风儿轻轻吹过这里风儿吹来'重复拖沓。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，'看看'与重复的风句削弱画面力度。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-04"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\"section\": \"C1\", \"phrases\": [{\"id\": \"C1-01\", \"zh\": \"就算夜再黑\"}, {\"id\": \"C1-02\", \"zh\": \"此刻不再畏惧\"}, {\"id\": \"C1-03\", \"zh\": \"认定的路\"}, {\"id\": \"C1-04\", \"zh\": \"不再迷惘前行\"}, {\"id\": \"C1-05\", \"zh\": \"黑色也无妨\"}, {\"id\": \"C1-06\", \"zh\": \"不必是纯白\"}, {\"id\": \"C1-07\", \"zh\": \"击碎这荒唐\"}, {\"id\": \"C1-08\", \"zh\": \"我就在这里 此刻正真实地活着\"}]}",
+  "finished_at": "2026-11-08T13:23:38+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "section": "C1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 2959,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 158,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

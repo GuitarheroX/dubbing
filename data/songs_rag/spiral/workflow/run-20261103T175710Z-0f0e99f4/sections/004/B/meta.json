@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T175651_b_d50774",
+  "input_hash": "d507740c736489554c5d0e53ecc25cf05c8607a09cf7362e2171c72288a51654",
+  "finished_at": "2026-11-03T17:57:10+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2309,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1920,
+    "output_tokens": 3988,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"O1\",\n  \"phrases\": [\n    {\n      \"id\": \"O1-01\",\n      \"zh\": \"受够 一个人 原地打转\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"按 2/3/4 断成「受够」「一个人」「原地打转」；用打转的意象接 spiral 的停滞\"}\n    },\n    {\n      \"id\": \"O1-02\",\n      \"zh\": \"哪有什么能 永远 留下来\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"5/2/3 切分；「哪有什么能」五字连唱，「永远」两字落在转折音\"}\n    },\n    {\n      \"id\": \"O1-03\",\n      \"zh\": \"趁一切还没 走到尽头\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"5/4 切分；退潮前那一段沙滩的意思\"}\n    },\n    {\n      \"id\": \"O1-04\",\n      \"zh\": \"迈出 一步留下鞋印\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"前两字一顿起头，后六字连唱；鞋印留在原地，呼应全曲的循环感\"}\n    },\n    {\n      \"id\": \"O1-05\",\n      \"zh\": \"接受着 旧的我\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"整句一段六字，「着」在句中不落句尾\"}\n    },\n    {\n      \"id\": \"O1-06\",\n      \"zh\": \"祈祷着 别回头\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"3/3 切分；与上一句「接受着」保持同一句式，收束全曲\"}\n    }\n  ]\n}",
+  "migrated_from": "20261103T175651_b_d50774"
+}

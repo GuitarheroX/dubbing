@@ -1,0 +1,21 @@
+{
+  "id": "fbcba668-82fb-4a78-91aa-8f6e52a87b35",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"tie\",\"reason\":\"两份候选文本完全相同，均准确传达原文反复强调玫瑰高贵绽放、美丽凋零的核心语义，中文自然且保留歌词重复结构，无优劣可分。\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 459,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 384,
+    "output_tokens": 57,
+    "service_tier": "standard"
+  }
+}

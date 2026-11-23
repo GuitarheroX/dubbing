@@ -1,0 +1,21 @@
+{
+  "id": "26bbf7dc-5313-4b15-93dd-613fdf4a2884",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更凝练自然，情绪冷峻贴合原曲；V1-04“崩塌”虽略强于“变わる”但意境合理，V1-08“多轻松”是适度扩展；B多处“啊/呢/着”口语拖沓，V1-02“滋味”偏离麻醉冷感，V1-06“胃里面啊”生硬。\",\"phrase_ids\":[\"V1-02\",\"V1-04\",\"V1-06\",\"V1-08\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 610,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 114,
+    "service_tier": "standard"
+  }
+}

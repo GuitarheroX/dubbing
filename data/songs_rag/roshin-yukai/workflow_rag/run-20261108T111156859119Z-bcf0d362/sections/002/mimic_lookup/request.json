@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "query_text": "我又梦见自己 双手掐住你的脖颈\n满溢阳光的午后 亮得让人发疼\n看你细瘦的喉咙 在光里轻轻地跳\n我用快哭出来的眼睛 望着你",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

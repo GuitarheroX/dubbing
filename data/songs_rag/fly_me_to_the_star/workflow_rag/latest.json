@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T105019870421Z-2b5edf3d",
+  "updated_at": "2026-11-08T10:54:02+00:00",
+  "song": "fly_me_to_the_star",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

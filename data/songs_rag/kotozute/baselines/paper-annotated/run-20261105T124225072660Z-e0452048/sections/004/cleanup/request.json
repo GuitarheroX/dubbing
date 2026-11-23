@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "1. 黑暗中阳光照进 我想伸出手 (12 syllables)\n2. 现在想和你说话 (9 syllables)\n3. 看着朝阳 染上色彩 (10 syllables)\n4. 自由地 (3 syllables)\n5. 自由地 (3 syllables)\n6. 我如今已睁开了双眼 (11 syllables)\n7. 现在想和你说话 (9 syllables)\n8. 可爱的日子 染上色彩 (10 syllables)\n9. 自由地 (3 syllables)\n10. 自由地 (3 syllables)\n11. 飞翔 (2 syllables)"
+  },
+  "data": {
+    "response": "1. 黑暗中阳光照进 我想伸出手 (12 syllables)\n2. 现在想和你说话 (9 syllables)\n3. 看着朝阳 染上色彩 (10 syllables)\n4. 自由地 (3 syllables)\n5. 自由地 (3 syllables)\n6. 我如今已睁开了双眼 (11 syllables)\n7. 现在想和你说话 (9 syllables)\n8. 可爱的日子 染上色彩 (10 syllables)\n9. 自由地 (3 syllables)\n10. 自由地 (3 syllables)\n11. 飞翔 (2 syllables)"
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "1. 黑暗中阳光照进 我想伸出手 (12 syllables)\n2. 现在想和你说话 (9 syllables)\n3. 看着朝阳 染上色彩 (10 syllables)\n4. 自由地 (3 syllables)\n5. 自由地 (3 syllables)\n6. 我如今已睁开了双眼 (11 syllables)\n7. 现在想和你说话 (9 syllables)\n8. 可爱的日子 染上色彩 (10 syllables)\n9. 自由地 (3 syllables)\n10. 自由地 (3 syllables)\n11. 飞翔 (2 syllables)"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

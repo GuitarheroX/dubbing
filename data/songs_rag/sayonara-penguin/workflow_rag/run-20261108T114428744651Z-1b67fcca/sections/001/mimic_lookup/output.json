@@ -1,0 +1,46 @@
+{
+  "section": "V1",
+  "query_text": "水光点新芽 夜还半梦半醒着\n你总快走半步 影子轻轻晃\n桌上散落着夜宵的碎屑 拼成梦地图\n新的早晨 正悄悄走来",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "麦岸_maian/风的片断#s1",
+      "title": "风的片断",
+      "poet": "麦岸",
+      "poem_id": "麦岸_maian/风的片断",
+      "stanza_idx": 1,
+      "score": 0.696521,
+      "text": "梦悄悄爬上篱笆墙\n挥舞沾满露水的小手\n一个有草莓香的早晨\n从你心里慢慢走出来"
+    },
+    {
+      "chunk_id": "陈炜潘_chenweipan/夜宴#s7",
+      "title": "夜宴",
+      "poet": "陈炜潘",
+      "poem_id": "陈炜潘_chenweipan/夜宴",
+      "stanza_idx": 7,
+      "score": 0.690205,
+      "text": "树林的美梦\n酝酿久了开始显露出\n芽叶甜甜嫩嫩的色彩\n挑逗着露珠的心情\n晶莹闪亮仿佛花的灵魂\n欢歌还是呼救\n只因离傍晚实在太近了\n你伸出双手\n抓不到摸不着\n只能孤身室外\n睁开眼睛远远地看见"
+    },
+    {
+      "chunk_id": "陈耿雄_chengengxiong/又是#s1",
+      "title": "又是",
+      "poet": "陈耿雄",
+      "poem_id": "陈耿雄_chengengxiong/又是",
+      "stanza_idx": 1,
+      "score": 0.685966,
+      "text": "又是早起\n你刷牙\n我在镜前洗手\n又是午饭后\n你出门\n我倒头大睡\n又是夜深了\n我上床\n你关灯\n又是不安地入梦\n与回忆搏斗\n直到无梦可梦"
+    },
+    {
+      "chunk_id": "桔小灯_juxiaodeng/清晨#s3",
+      "title": "清晨",
+      "poet": "桔小灯",
+      "poem_id": "桔小灯_juxiaodeng/清晨",
+      "stanza_idx": 3,
+      "score": 0.685699,
+      "text": "半生逗留或行走 习惯就着清晨\n把植根于深夜的美梦\n在天亮之前放入明媚天空"
+    }
+  ]
+}

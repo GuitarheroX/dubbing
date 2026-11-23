@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"草丛深处 无名野花\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": false, \"note\": \"需补两字：\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"静静盛开 无人知晓\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": false, \"note\": \"需补两字：\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"只迎着风 轻轻摇摆\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": false, \"note\": \"需补两字：\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"就这样摇曳 度过一生\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": false, \"note\": \"需补三字：\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:08+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "V1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 2704,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 268,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

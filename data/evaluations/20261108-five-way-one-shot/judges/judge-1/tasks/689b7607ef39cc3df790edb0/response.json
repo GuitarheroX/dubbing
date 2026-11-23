@@ -1,0 +1,21 @@
+{
+  "id": "4abc4be6-3c94-407c-96c9-a355fc704bdb",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息基本准确，但“明天是墙”“把墙挖开”将“行き止まり”具体化为墙，略有增饰；“我自己弯腰抱紧”把“強く抱いて”的对象明确为自己，可接受但稍显具体。\",\"phrase_ids\":[\"C2-01\",\"C2-02\",\"C2-04\",\"C2-06\"]},\"emotion\":{\"score\":4,\"reason\":\"决心与自我鼓励的情绪保留较好，“攥紧觉悟”有力；但“一寸寸挖开”偏具体劳作感，略削弱原句的决绝气势。\",\"phrase_ids\":[\"C2-04\",\"C2-07\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“就算明天是墙”稍突兀，“我自己弯腰抱紧”略拗口但可理解。\",\"phrase_ids\":[\"C2-01\",\"C2-06\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“墙”“挖开”“抢进我怀里”意象鲜明，服务主题；个别表达略生硬。\",\"phrase_ids\":[\"C2-04\",\"C2-08\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“无路”“死墙”“撕开一条路”准确传达行き止まり与切り開く；“亲手夺回来”稍偏向夺回而非赢取，但可接受。\",\"phrase_ids\":[\"C2-01\",\"C2-02\",\"C2-04\",\"C2-08\"]},\"emotion\":{\"score\":5,\"reason\":\"决绝、抗争与自我拥抱的情绪方向与强度保留充分。\",\"phrase_ids\":[\"C2-04\",\"C2-06\",\"C2-07\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体流畅，“前路被堵成死墙”稍显堆叠，“把自己抱得更紧”自然。\",\"phrase_ids\":[\"C2-02\",\"C2-06\"]},\"expressiveness\":{\"score\":5,\"reason\":\"“撕开一条路”“攥着觉悟踏出去”意象有力，服务主题。\",\"phrase_ids\":[\"C2-04\",\"C2-07\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心语义保留，但“请紧紧拥抱”引入请求语气，改变了原句自我拥抱/抱紧自己的关系；“赢取到手”准确。\",\"phrase_ids\":[\"C2-06\",\"C2-08\"]},\"emotion\":{\"score\":3,\"reason\":\"整体方向一致，但“请紧紧拥抱”使情绪转向对他人请求，削弱自我决意。\",\"phrase_ids\":[\"C2-06\"]},\"naturalness\":{\"score\":4,\"reason\":\"较顺口，“以觉悟迈步”稍书面但可理解。\",\"phrase_ids\":[\"C2-07\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但偏平实，“去开辟出路”“以觉悟迈步”缺乏鲜明意象。\",\"phrase_ids\":[\"C2-04\",\"C2-07\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“已是尽头路”“亲手去劈开”准确；“紧紧地拥抱”未明确对象，可理解为自我拥抱，基本保留。\",\"phrase_ids\":[\"C2-02\",\"C2-04\",\"C2-06\"]},\"emotion\":{\"score\":4,\"reason\":\"决心与紧张感保留，但“以这份觉悟”后句未完，情绪收束稍弱。\",\"phrase_ids\":[\"C2-07\"]},\"naturalness\":{\"score\":3,\"reason\":\"“哪怕那明天”“已是尽头路”略生硬，“以这份觉悟”单独成句不完整。\",\"phrase_ids\":[\"C2-01\",\"C2-02\",\"C2-07\"]},\"expressiveness\":{\"score\":3,\"reason\":\"“亲手去劈开”有力，但整体偏平，末句“赢取它”普通。\",\"phrase_ids\":[\"C2-04\",\"C2-08\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“死路一条”“开辟道路”“夺取”核心准确；“紧紧拥抱住”未明确对象，基本可接受。\",\"phrase_ids\":[\"C2-02\",\"C2-04\",\"C2-06\",\"C2-08\"]},\"emotion\":{\"score\":4,\"reason\":\"决心与紧张情绪保留，但“决心迈出步”稍弱于原句的觉悟踏出。\",\"phrase_ids\":[\"C2-07\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“死路一条也”稍口语但可理解，“决心迈出步”略生硬。\",\"phrase_ids\":[\"C2-02\",\"C2-07\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通，“去开辟道路”“夺取”较平。\",\"phrase_ids\":[\"C2-04\",\"C2-08\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 996,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 1085,
+    "service_tier": "standard"
+  }
+}

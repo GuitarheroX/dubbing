@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T112939227427Z-efadb70b",
+  "updated_at": "2026-11-08T11:33:35+00:00",
+  "song": "wasurete-kudasai",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

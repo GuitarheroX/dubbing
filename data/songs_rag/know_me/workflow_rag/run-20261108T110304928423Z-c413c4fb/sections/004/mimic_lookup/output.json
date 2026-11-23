@@ -1,0 +1,46 @@
+{
+  "section": "C1",
+  "query_text": "就用那副 懂我的笑脸\n我怕那口井 深不见底\n就给我一份 最普通的爱\nYou know me\n装作懂了 就跳起舞来\n那一口井 会被填满吗\n别放开我 也别停下\n我不是 一个人吧",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "丘缓_qiuhuan/心事#s1",
+      "title": "心事",
+      "poet": "丘缓",
+      "poem_id": "丘缓_qiuhuan/心事",
+      "stanza_idx": 1,
+      "score": 0.71877,
+      "text": "我是一口\n会说谎的井\n不信？\n你来看我是不是\n渴着\n来看啊\n嘿嘿\n笨呆子\n一季的雨\n刚刚\n才\n停——"
+    },
+    {
+      "chunk_id": "野桥_yeqiao/我从不怀疑一口井的深度#s2",
+      "title": "我从不怀疑一口井的深度",
+      "poet": "野桥",
+      "poem_id": "野桥_yeqiao/我从不怀疑一口井的深度",
+      "stanza_idx": 2,
+      "score": 0.711028,
+      "text": "当我用整个身心向它探询\n我注定了一眼望不到底\n水声与浮世多么不同\n沉郁，冲动，有力\n似要将我的灵魂洞穿\n我对一口井孜孜不倦的热爱\n让我不愿飞翔，只想坠落"
+    },
+    {
+      "chunk_id": "荆棘草_jingjicao/你并不知道我的孤独#s1",
+      "title": "你并不知道我的孤独",
+      "poet": "荆棘草",
+      "poem_id": "荆棘草_jingjicao/你并不知道我的孤独",
+      "stanza_idx": 1,
+      "score": 0.691358,
+      "text": "你不是孤独的人\n你不会知道孤独的滋味\n你是孤独的人\n也并不知道我此时的孤独\n我的孤独\n是一口井望着天空的孤独"
+    },
+    {
+      "chunk_id": "匪君子_feijunzi/五月，坐在井底读信#s3",
+      "title": "五月，坐在井底读信",
+      "poet": "匪君子",
+      "poem_id": "匪君子_feijunzi/五月，坐在井底读信",
+      "stanza_idx": 3,
+      "score": 0.689294,
+      "text": "我坐在井底\n始终与天空保持距离\n任不期然飘落的花香沉浮水面\n不想掩饰一次深呼吸\n任雨落时\n井中溢满的心情涨起\n潮起潮落，可以在城市中央\n可以在井底的一次读信\n也可以不露痕迹"
+    }
+  ]
+}

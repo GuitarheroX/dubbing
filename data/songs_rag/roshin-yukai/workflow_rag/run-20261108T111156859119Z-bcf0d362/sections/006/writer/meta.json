@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\"section\":\"V3\",\"phrases\":[{\"id\":\"V3-01\",\"zh\":\"秒针在走 嗒嗒响\"},{\"id\":\"V3-02\",\"zh\":\"电视里 主持人 笑得假\"},{\"id\":\"V3-03\",\"zh\":\"明明在场 却好远\"},{\"id\":\"V3-04\",\"zh\":\"看不见的 谁在那边\"},{\"id\":\"V3-05\",\"zh\":\"笑声 一层层\"},{\"id\":\"V3-06\",\"zh\":\"饱和 回响 灌满耳朵\"},{\"id\":\"V3-08\",\"zh\":\"耳朵里 一直嗡嗡响 停不下来\"},{\"id\":\"V3-10\",\"zh\":\"耳朵里 一直嗡嗡响 停不下来\"}]}",
+  "finished_at": "2026-11-08T11:14:49+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3569,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3456,
+    "output_tokens": 2700,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

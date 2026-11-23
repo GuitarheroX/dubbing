@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T172816_b_c6a5a6",
+  "input_hash": "c6a5a6e007ea18bc7294453caac4b8563c6d289534c85ee2e458f359c477886f",
+  "finished_at": "2026-11-03T17:28:24+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 1425,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2432,
+    "output_tokens": 1691,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"草丛深处开 一朵无名花\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"5+5，空格断句，字数正好\"\n      }\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"若只是花开 无人来欣赏\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"5+5，对应两个乐节\"\n      }\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"只是迎着风 轻轻地摇晃\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"5+5，轻轻连读自然\"\n      }\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"就这样随风摇晃 本来也足够\",\n      \"chars\": 12,\n      \"self_check\": {\n        \"budget\": [12, 12],\n        \"ok\": true,\n        \"note\": \"7+5，前半句七字后半句五字\"\n      }\n    }\n  ]\n}",
+  "migrated_from": "20261103T172816_b_c6a5a6"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "97d7b675-f96b-4528-b6c5-f7df969ec4c0",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A在保持原意（被抽空、萎瘪、成为所有物）的同时，中文更凝练自然，意象更具体（“皱在掌心”强化了被掌控感），情绪更连贯；B的“我干瘪着枯萎”略显生硬重复，“呜呼”偏书面。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 315,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 92,
+    "service_tier": "standard"
+  }
+}

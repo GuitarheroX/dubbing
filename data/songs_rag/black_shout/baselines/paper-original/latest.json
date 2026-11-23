@@ -1,0 +1,8 @@
+{
+  "run": "run-20261105T124051697071Z-e000ba21",
+  "updated_at": "2026-11-07T06:09:06+00:00",
+  "song": "black_shout",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "baseline": "paper-original"
+}

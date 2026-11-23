@@ -1,0 +1,21 @@
+{
+  "id": "897bec8f-e8e0-4176-8f4c-b308dff29344",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原句疑问语气与“はんぶんこ”的分享感，中文自然且情绪连贯；B的“心慌”偏离“寂しくなる”的寂寞语义，“分你一半”略改单向，整体稍逊。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 312,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 86,
+    "service_tier": "standard"
+  }
+}

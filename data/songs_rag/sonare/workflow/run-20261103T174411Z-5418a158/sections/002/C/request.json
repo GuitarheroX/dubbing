@@ -1,0 +1,61 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "phrases": [
+      {
+        "id": "B1-01",
+        "section": "B1",
+        "ja": "ばらばらのリズムで",
+        "budget": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      {
+        "id": "B1-02",
+        "section": "B1",
+        "ja": "口ずさめたらきいて",
+        "budget": {
+          "min": 9,
+          "max": 9
+        }
+      }
+    ],
+    "draft": {
+      "section": "B1",
+      "phrases": [
+        {
+          "id": "B1-01",
+          "zh": "散乱的节奏里轻哼",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "整句一段，八个字正好落在八个音上"
+          }
+        },
+        {
+          "id": "B1-02",
+          "zh": "散落的音符 请你听听",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "中间空格作停顿，空格不计字，实字九个"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

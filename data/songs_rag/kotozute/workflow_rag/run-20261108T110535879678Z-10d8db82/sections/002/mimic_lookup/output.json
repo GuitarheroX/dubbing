@@ -1,0 +1,46 @@
+{
+  "section": "V2",
+  "query_text": "曾见过的散场\n理所当然 却迟迟不显形\n总是看不清",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "洪崇德_hongchongde/我们回来了#s5",
+      "title": "我们回来了",
+      "poet": "洪崇德",
+      "poem_id": "洪崇德_hongchongde/我们回来了",
+      "stanza_idx": 5,
+      "score": 0.678476,
+      "text": "是曾预知过的离开\n感伤难免有些\n为爱好群聚的一群人\n不再能全员到齐"
+    },
+    {
+      "chunk_id": "霍连军_huolianjun/以布施的精神去爱#s4",
+      "title": "以布施的精神去爱",
+      "poet": "霍连军",
+      "poem_id": "霍连军_huolianjun/以布施的精神去爱",
+      "stanza_idx": 4,
+      "score": 0.661605,
+      "text": "那天是朋友的邀约\n本来的主角却成为配角\n甚至连主角什么样子\n都是模糊不知"
+    },
+    {
+      "chunk_id": "陈炜潘_chenweipan/真相#s6",
+      "title": "真相",
+      "poet": "陈炜潘",
+      "poem_id": "陈炜潘_chenweipan/真相",
+      "stanza_idx": 6,
+      "score": 0.659009,
+      "text": "免不了原形毕露\n世界本来就是一团漆黑\n万物都是幻觉只因人的自我安慰\n为什么非要自寻烦恼\n何事不是无中生有"
+    },
+    {
+      "chunk_id": "马路明_maluming/忽然就成了瘸腿人#s6",
+      "title": "忽然就成了瘸腿人",
+      "poet": "马路明",
+      "poem_id": "马路明_maluming/忽然就成了瘸腿人",
+      "stanza_idx": 6,
+      "score": 0.647403,
+      "text": "他本该到达某个场合却不得不缺席\n他本该遇到的人成了别人的朋友"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "2b10d834-4592-4d00-8389-e9e981d42f6f",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"五句均准确对应原文核心信息，问爱、叩问内心、拒绝虚假、寻找真实、寻找你均保留\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\"]},\"emotion\":{\"score\":5,\"reason\":\"疑问、自省、坚定与深情方向一致，语气强弱贴合\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文顺口，歌词文体自然，轻声叩问等表达流畅\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰但偏平实，真实的那份略抽象\",\"phrase_ids\":[\"C1-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"C1-02将问爱改为问心在哪里，C1-04增补爱，C1-05改为寻找的人是你，核心有偏移\",\"phrase_ids\":[\"C1-02\",\"C1-04\",\"C1-05\"]},\"emotion\":{\"score\":3,\"reason\":\"整体方向尚可，但自省与寻找的细腻感被削弱\",\"phrase_ids\":[\"C1-02\",\"C1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"基本顺口，爱情到底是从什么地方而来的呢略冗长\",\"phrase_ids\":[\"C1-01\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，缺少鲜明意象\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"C1-01增补无声明亮，C1-03改为橱窗假货，C1-05增补人海身影，偏离原文意象\",\"phrase_ids\":[\"C1-01\",\"C1-03\",\"C1-05\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向大体保留，但明亮、橱窗等添加使意境偏移\",\"phrase_ids\":[\"C1-01\",\"C1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"断句节奏适合歌词，整体可读\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象较鲜明，但部分添加服务性不足\",\"phrase_ids\":[\"C1-01\",\"C1-03\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"C1-02省略问的内容，C1-03增补温柔多看一眼，C1-04改为真实的脸，C1-05改为你的出现，偏移明显\",\"phrase_ids\":[\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪大体一致，但真实的脸等表达使意境偏具体\",\"phrase_ids\":[\"C1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"较顺口，我轻声问自己心间略生硬\",\"phrase_ids\":[\"C1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，部分意象添加未增强主题\",\"phrase_ids\":[\"C1-03\",\"C1-04\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"C1-01增补又往哪去住进谁胸口，C1-03改为假货摆得亮，C1-05改为原来就是你，核心偏移较大\",\"phrase_ids\":[\"C1-01\",\"C1-03\",\"C1-05\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向尚可，但添加的追问与顿悟改变原曲细腻自省\",\"phrase_ids\":[\"C1-01\",\"C1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"歌词节奏自然，断句流畅\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明有力，但部分添加偏离主题\",\"phrase_ids\":[\"C1-01\",\"C1-03\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息基本保留，C1-02省略问的内容，C1-04改为真实的光略偏移\",\"phrase_ids\":[\"C1-02\",\"C1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"疑问、自省与寻找方向一致，情绪较贴合\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-05\"]},\"naturalness\":{\"score\":5,\"reason\":\"简洁顺口，符合歌词文体\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达平实，真实的光略空泛\",\"phrase_ids\":[\"C1-04\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1078,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 1137,
+    "service_tier": "standard"
+  }
+}

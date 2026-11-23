@@ -1,0 +1,21 @@
+{
+  "id": "88ce0fb2-7654-4a8d-9dd0-e3196b8d20cd",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“零散的节奏”准确对应ばらばら，“若你哼唱请听我说”基本传达口ずさめたらきいて，但“我说”略增主体。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"保留随意哼唱、邀请倾听的轻柔语气，情绪方向一致。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，“请听我说”稍显口语化但可接受。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通，未特别强化画面。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“零散的节奏中”对应原句，“若能哼唱请听”保留条件与请求，但省略宾语略模糊。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪基本一致，但“请听”收束较平，邀请感稍弱。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"naturalness\":{\"score\":3,\"reason\":\"“若能哼唱请听”可理解但句尾生硬，不够像自然歌词。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，缺少鲜明意象或语气亮点。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“凌乱的节拍”偏离ばらばら的零散感；“哼成歌 你听见吗”改变为疑问，与原请求语气有偏移。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"emotion\":{\"score\":3,\"reason\":\"整体仍属轻松哼唱氛围，但疑问句使情绪更外放、少了一点原句的柔和邀请。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文歌词感较强，节奏顺口。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“哼成歌 你听见吗”有互动感，表达较鲜明。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“散乱的节奏里轻哼”把“口ずさめたら”提前并入前句；“散落的音符”替换“口ずさめたら”，核心动作有偏移。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"emotion\":{\"score\":3,\"reason\":\"轻柔氛围保留，但“散落的音符”偏静态，少了原句“若能哼唱”的主动邀请。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文流畅，歌词文体自然。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“散落的音符”意象较鲜明，服务轻柔主题。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"“走两步”为明显增译；“哼得走调”把“口ずさめたら”改写成走调，核心语义偏移较大。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"emotion\":{\"score\":3,\"reason\":\"俏皮轻松方向尚可，但“走调”带来自嘲感，与原句温和邀请不完全一致。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"口语化中文顺口，有歌词感。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“走两步”“哼得走调”画面感强，但部分服务的是新增情境。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“零乱的节拍”接近ばらばら；“哼成歌请你听见”基本传达哼唱并请求倾听。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"保留轻柔邀请与哼唱氛围，情绪方向一致。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，“请你听见”稍书面但可接受。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但较平实，意象和语气亮点不多。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 458,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 1146,
+    "service_tier": "standard"
+  }
+}

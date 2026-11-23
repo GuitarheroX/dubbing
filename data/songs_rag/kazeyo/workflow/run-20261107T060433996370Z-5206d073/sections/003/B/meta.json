@@ -1,0 +1,19 @@
+{
+  "agent": "B",
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"风越吹越狂 卷起尘 卷起叶\",\n      \"chars\": 11,\n      \"self_check\": {\n        \"budget\": [11, 11],\n        \"ok\": true,\n        \"note\": \"按 5/3/3 断句，空格不计入字数，共 11 字\"\n      }\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"如今我 站在 无名空地中央\",\n      \"chars\": 11,\n      \"self_check\": {\n        \"budget\": [11, 11],\n        \"ok\": true,\n        \"note\": \"按 3/2/6 断句，“无名空地中央”六字连读\"\n      }\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"被风吹起来 轻轻摇 慢慢晃\",\n      \"chars\": 11,\n      \"self_check\": {\n        \"budget\": [11, 11],\n        \"ok\": true,\n        \"note\": \"按 5/3/3 断句，两个三字短句形成摇曳感\"\n      }\n    },\n    {\n      \"id\": \"B1-04\",\n      \"zh\": \"忽然 问自己 这里是 哪里\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"按 2/3/3/2 断句，四段合计 10 字\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-07T06:05:08+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 1784,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1664,
+    "output_tokens": 2316,
+    "service_tier": "standard"
+  },
+  "temperature": 2.0
+}

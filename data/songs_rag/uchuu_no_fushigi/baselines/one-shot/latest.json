@@ -1,0 +1,9 @@
+{
+  "run": "run-20261108T132402831875Z-901bb625",
+  "updated_at": "2026-11-08T13:24:11+00:00",
+  "song": "uchuu_no_fushigi",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "passed": 3,
+  "total": 28
+}

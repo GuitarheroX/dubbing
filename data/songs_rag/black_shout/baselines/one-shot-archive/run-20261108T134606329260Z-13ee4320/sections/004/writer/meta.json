@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C2\",\n  \"phrases\": [\n    {\n      \"id\": \"C2-01\",\n      \"zh\": \"哪怕明天是\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": false, \"note\": \"少一字，需补\"}\n    },\n    {\n      \"id\": \"C2-02\",\n      \"zh\": \"无路可走的尽头\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"无路可走的尽头 七个字\"}\n    },\n    {\n      \"id\": \"C2-03\",\n      \"zh\": \"凭我双手\",\n      \"chars\": 4,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": false, \"note\": \"少两字，需补\"}\n    },\n    {\n      \"id\": \"C2-04\",\n      \"zh\": \"劈开一道出口\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": false, \"note\": \"少一字，需补\"}\n    },\n    {\n      \"id\": \"C2-05\",\n      \"zh\": \"颤抖的身体\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": false, \"note\": \"少一字，需补\"}\n    },\n    {\n      \"id\": \"C2-06\",\n      \"zh\": \"用力抱紧它\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": false, \"note\": \"少两字，需补\"}\n    },\n    {\n      \"id\": \"C2-07\",\n      \"zh\": \"带着觉悟迈步\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": false, \"note\": \"少一字，需补\"}\n    },\n    {\n      \"id\": \"C2-08\",\n      \"zh\": \"想要实现的梦 现在就夺到手\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [16, 16], \"ok\": false, \"note\": \"少四字，需补\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:16+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "C2",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 937,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2304,
+    "output_tokens": 512,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

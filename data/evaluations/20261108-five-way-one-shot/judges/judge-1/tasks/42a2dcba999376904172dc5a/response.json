@@ -1,0 +1,21 @@
+{
+  "id": "1a5509f3-7df3-4f08-b6d5-de6678035d40",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原句的疑问与自省语气，语义准确自然；B的I1-01加入“往哪去/住进谁的胸口”扩展了原意，I1-02“心是否诚实”也偏离“向自己胸口发问”的核心，整体表现力虽强但改写幅度较大。\",\"phrase_ids\":[\"I1-01\",\"I1-02\",\"I1-03\",\"I1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 252,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 101,
+    "service_tier": "standard"
+  }
+}

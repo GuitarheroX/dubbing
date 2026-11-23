@@ -1,0 +1,21 @@
+{
+  "id": "d1a789d4-021e-48ee-8ec7-ff2af910d328",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"准确传达“承载今日悲伤、运送明日喜悦、风带走全部、去该去之处”，但“所有的那”略增限定。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，偏抒情但稍显铺陈，原句简洁感略弱。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“给带走”略口语化，“所有的那悲伤”稍拗。\",\"phrase_ids\":[\"V2-01\",\"V2-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通，基本服务主题。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心信息准确，简洁对应原句，未增删关键内容。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向保留，但较平直，原句的流动感稍弱。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"短句自然，符合歌词文体；“今日的 载着悲伤”略省略但可理解。\",\"phrase_ids\":[\"V2-01\",\"V2-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"清楚但偏朴素，缺少鲜明意象。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"将“悲しみ/喜び”具体化为“眼泪和叹息/笑声和亮光”，并增“收下/带上”，主旨尚存但偏移明显。\",\"phrase_ids\":[\"V2-01\",\"V2-02\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪更明亮具体，与原句沉静流动感有局部偏离。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“风提着”稍生硬但可理解。\",\"phrase_ids\":[\"V2-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象较鲜明，“风提着”有画面感，服务主题。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"“旧行李”“还没拆先上路”“影子也不留”等大幅增改，核心“悲伤/喜悦被风运送”被叙事化偏移。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"emotion\":{\"score\":2,\"reason\":\"加入旅途、旧行李等具体叙事，情绪由沉静流动转为俏皮漂泊，偏离较大。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"naturalness\":{\"score\":3,\"reason\":\"部分顺口，但“还没拆先上路”等表达生硬且节奏不匀。\",\"phrase_ids\":[\"V2-02\",\"V2-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"有具体意象和表达，但部分意象喧宾夺主。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1039,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 384,
+    "output_tokens": 835,
+    "service_tier": "standard"
+  }
+}

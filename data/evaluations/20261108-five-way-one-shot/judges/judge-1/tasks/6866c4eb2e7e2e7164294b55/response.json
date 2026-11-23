@@ -1,0 +1,21 @@
+{
+  "id": "96166c6f-2f0c-4bb8-ba12-34ea59f38fb3",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原文的叹息语气与“按不住/翻涌”的失控感，V1-02“胸腔里蠢动的野兽”自然且保留“私に”的内向性；V1-03“鼓起来又破掉”对应浮かんでは消える的反复意象，收束“又一颗”有表现力。A的“闷/烧不透”偏改写，V1-03“碎了又生”略增原文没有的再生意味。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 278,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 129,
+    "service_tier": "standard"
+  }
+}

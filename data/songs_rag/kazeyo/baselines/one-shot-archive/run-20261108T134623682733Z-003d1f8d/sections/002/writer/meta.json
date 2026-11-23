@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"今日 载着悲伤去远行\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"今日后空格断句，对应3音；载着悲伤去远行8字对应后两段\"}\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"明日 载着欢喜来敲门\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"明日后空格，载着欢喜来敲门8字\"}\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"全部 风都带它们走\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"全部后空格断句，风都带它们走7字\"}\n    },\n    {\n      \"id\": \"V2-04\",\n      \"zh\": \"去往该去的地方\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"整句7字，对应4+3\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:27+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "V2",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1095,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 308,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

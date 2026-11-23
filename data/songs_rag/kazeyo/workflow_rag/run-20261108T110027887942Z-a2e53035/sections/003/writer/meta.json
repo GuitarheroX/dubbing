@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\"id\": \"B1-01\", \"zh\": \"风卷起衣裳 吹啊吹 流啊流\"},\n    {\"id\": \"B1-02\", \"zh\": \"如今 竟落到 这么个地方\"},\n    {\"id\": \"B1-03\", \"zh\": \"风把我抛起 摇啊摇 晃啊晃\"},\n    {\"id\": \"B1-04\", \"zh\": \"忽然 笑一声 这儿是 哪儿\"}\n  ]\n}",
+  "finished_at": "2026-11-08T11:02:39+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2125,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 2222,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

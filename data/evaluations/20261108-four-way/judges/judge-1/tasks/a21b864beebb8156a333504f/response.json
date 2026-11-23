@@ -1,0 +1,21 @@
+{
+  "id": "9acfedda-5b33-4160-8056-30f3f23b0e72",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原文的吞噬意象与节奏感：V1-01保留“吃”的动作，V1-02“铺满舌尖”自然扩展星群入口的感官，V1-03“吃回过去”保留“吃”的重复并传达时间倒流，V1-05“嚼成碎末 咽到无味”比B的“反复咀嚼几十回里”更凝练且语义完整；B的V1-03“穿梭”偏离“吃”的核心动作，V1-06“饮入腹”稍显生硬。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 279,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 164,
+    "service_tier": "standard"
+  }
+}

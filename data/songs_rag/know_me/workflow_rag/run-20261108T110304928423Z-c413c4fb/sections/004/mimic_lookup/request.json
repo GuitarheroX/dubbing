@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C1",
+    "query_text": "就用那副 懂我的笑脸\n我怕那口井 深不见底\n就给我一份 最普通的爱\nYou know me\n装作懂了 就跳起舞来\n那一口井 会被填满吗\n别放开我 也别停下\n我不是 一个人吧",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

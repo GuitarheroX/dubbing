@@ -1,0 +1,21 @@
+{
+  "id": "da883f7f-cfec-4961-9abd-1121f20225f4",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"新闻与闲话、厌烦、风舒服、换快乐心情均保留；V1-03“比平时多”略含糊但未偏离。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"emotion\":{\"score\":4,\"reason\":\"厌烦转轻快的情绪方向保留，语气自然；略平淡。\",\"phrase_ids\":[\"V1-02\",\"V1-04\",\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“所以呢”“出发呢”略口语化但可接受。\",\"phrase_ids\":[\"V1-04\",\"V1-05\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通，缺少鲜明画面。\",\"phrase_ids\":[\"V1-01\",\"V1-05\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"核心情绪保留，但“电视播着”“塞满房间”“推开窗”“脱下旧睡衣”为新增具体场景，超出原文。\",\"phrase_ids\":[\"V1-01\",\"V1-04\",\"V1-05\"]},\"emotion\":{\"score\":4,\"reason\":\"从嘈杂到晴朗的轻快转向明确，情绪方向一致。\",\"phrase_ids\":[\"V1-02\",\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文流畅有歌词感，个别句稍散。\",\"phrase_ids\":[\"V1-01\",\"V1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“换上晴朗”等表达鲜明，服务主题。\",\"phrase_ids\":[\"V1-05\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"V1-03把“今天比平时”误接为“今天风比往常”，改变了句间关系；其余基本保留。\",\"phrase_ids\":[\"V1-03\",\"V1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向大体一致，但“温柔”替代“舒服”略偏，整体平淡。\",\"phrase_ids\":[\"V1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"短句顺口，符合歌词片段。\",\"phrase_ids\":[\"V1-01\",\"V1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通。\",\"phrase_ids\":[\"V1-04\",\"V1-05\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"新闻、闲话、厌烦、比平时、风舒畅、换快乐心情均准确对应。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"emotion\":{\"score\":4,\"reason\":\"厌烦到舒畅轻快的情绪保留充分，稍偏书面。\",\"phrase_ids\":[\"V1-02\",\"V1-04\",\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体自然，“NEWS”保留略突兀但可理解。\",\"phrase_ids\":[\"V1-01\"]},\"expressiveness\":{\"score\":3,\"reason\":\"准确但表达较平实，意象不够鲜明。\",\"phrase_ids\":[\"V1-04\",\"V1-05\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息保留；V1-03“更想”为新增情态，V1-02重复“受够”略强化。\",\"phrase_ids\":[\"V1-02\",\"V1-03\"]},\"emotion\":{\"score\":4,\"reason\":\"厌烦与轻快情绪方向一致，语气较有活力。\",\"phrase_ids\":[\"V1-02\",\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"顺口自然，重复“受够”略口语但可接受。\",\"phrase_ids\":[\"V1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚，意象普通。\",\"phrase_ids\":[\"V1-04\",\"V1-05\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"核心情绪保留，但“滚过屏幕”“绕耳边”“把闷住的心吹得发亮”等为新增意象，V1-03省略“比平时”。\",\"phrase_ids\":[\"V1-01\",\"V1-03\",\"V1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"从厌倦到轻快明朗的情绪方向一致且较鲜明。\",\"phrase_ids\":[\"V1-02\",\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文流畅有歌词感，个别搭配稍文艺。\",\"phrase_ids\":[\"V1-01\",\"V1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“换一身轻快”“吹得发亮”等意象鲜明。\",\"phrase_ids\":[\"V1-04\",\"V1-05\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 789,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 1101,
+    "service_tier": "standard"
+  }
+}

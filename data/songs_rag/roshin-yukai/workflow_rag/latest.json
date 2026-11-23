@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T111156859119Z-bcf0d362",
+  "updated_at": "2026-11-08T11:16:03+00:00",
+  "song": "roshin-yukai",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

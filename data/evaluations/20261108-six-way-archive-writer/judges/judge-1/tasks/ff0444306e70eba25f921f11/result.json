@@ -1,0 +1,226 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心信息基本准确，但C1-06增补“心里的光”属合理意象补充，C1-10“嫌我慢半拍”略增原意。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-06",
+            "C1-10"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "自嘲与自我接纳的温柔情绪保留较好，个别句略添俏皮。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-04",
+            "C1-10"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，C1-02“都是我模样”稍拗口，C1-10偏长但可唱。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-10"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“痛痛飞走”“站在自己这一边”等表达鲜明，服务主题。",
+          "phrase_ids": [
+            "C1-05",
+            "C1-07"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "语义准确，C1-03“抱紧吧”略弱化“抱きしめて”的自我拥抱对象，C1-05重复痛痛稍改节奏。",
+          "phrase_ids": [
+            "C1-03",
+            "C1-05"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，温柔自愈感保留，但部分句偏平。",
+          "phrase_ids": [
+            "C1-04",
+            "C1-09"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "简洁顺口，C1-08“还在 还在”重复自然。",
+          "phrase_ids": [
+            "C1-08"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但较朴素，意象与力度一般。",
+          "phrase_ids": [
+            "C1-06",
+            "C1-09"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心语义保留，C1-10“你”改变人称指向，C1-03“紧紧拥抱”对象略模糊。",
+          "phrase_ids": [
+            "C1-03",
+            "C1-10"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪基本一致但偏平淡，自我安抚的细腻感稍弱。",
+          "phrase_ids": [
+            "C1-04",
+            "C1-09"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "多处可理解但生硬，如C1-02无停顿堆叠、C1-09“也”悬空。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-09"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，缺少鲜明意象。",
+          "phrase_ids": [
+            "C1-05",
+            "C1-08"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "语义大体准确，C1-10“我的停下”略生造，C1-07增“陪自己”属合理补充。",
+          "phrase_ids": [
+            "C1-07",
+            "C1-10"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "自愈与自我陪伴情绪保留较好，方向一致。",
+          "phrase_ids": [
+            "C1-07",
+            "C1-09"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "断句多但可唱，C1-10“我的停下”明显不自然。",
+          "phrase_ids": [
+            "C1-10",
+            "C1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "有表达但普通，部分句因断词显得零碎。",
+          "phrase_ids": [
+            "C1-08",
+            "C1-10"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心信息准确，C1-02“黏黏糊糊”略偏原“うじうじ”的犹豫义，C1-09增“偷懒”属合理引申。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-09"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "温柔自愈情绪充分，个别句略添俏皮。",
+          "phrase_ids": [
+            "C1-09",
+            "C1-10"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口自然，C1-10稍长但可唱。",
+          "phrase_ids": [
+            "C1-10"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“最靠得住的同伴”“飞远一点”等表达鲜明有力。",
+          "phrase_ids": [
+            "C1-05",
+            "C1-07"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "语义基本准确，C1-02“闷闷 泣泣”略简省，C1-10增“放心吧”属合理补充。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-10"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，温柔安抚感保留。",
+          "phrase_ids": [
+            "C1-06",
+            "C1-09"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "顺口自然，C1-02“闷闷 泣泣”稍生但可接受。",
+          "phrase_ids": [
+            "C1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但较平实，意象力度一般。",
+          "phrase_ids": [
+            "C1-08",
+            "C1-09"
+          ]
+        }
+      }
+    }
+  ]
+}

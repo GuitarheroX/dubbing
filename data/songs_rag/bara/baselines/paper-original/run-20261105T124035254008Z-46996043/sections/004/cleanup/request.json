@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "哪颗星啊 轮回之时\n消散而去 是我吧\n平凡的那 人生啊\n无法实现 身虽如此\n\nMora count verification (hiragana syllables per line):\nLine 1: 哪(na)颗(ke)星(xing)啊(a) 轮(lun)回(hui)之(zhi)时(shi) — 无法以日语音节直接对应，但按中文音节计：na-ke-xing-a / lun-hui-zhi-shi = 8 syllables (原句 7 mora，近似)\nLine 2: 消(xiao)散(san)而(er)去(qu) 是(shi)我(wo)吧(ba) = 7 syllables (原句 7 mora ✓)\nLine 3: 平(ping)凡(fan)的(de)那(na) 人(ren)生(sheng)啊(a) = 7 syllables (原句 7 mora ✓)\nLine 4: 无(wu)法(fa)实(shi)现(xian) 身(shen)虽(sui)如(ru)此(ci) = 8 syllables (原句 8 mora ✓)\n\nRhyme pattern verification (final phoneme per line):\nLine 1 ends: shi (时) — 原句 ki\nLine 2 ends: ba (吧) — 原句 ro，与 line 4 押韵\nLine 3 ends: a (啊) — 原句 wa\nLine 4 ends: ci (此) — 原句 do，与 line 2 押韵\nRhyme pattern: lines 2 and 4 rhyme (a/ci 近似开口音)，对应原句 2、4 行 -ro/-do 押韵 ✓\n\nTheme: 星辰轮回、自我消散、平凡人生无法实现——与原作主题一致 ✓"
+  },
+  "data": {
+    "response": "哪颗星啊 轮回之时\n消散而去 是我吧\n平凡的那 人生啊\n无法实现 身虽如此\n\nMora count verification (hiragana syllables per line):\nLine 1: 哪(na)颗(ke)星(xing)啊(a) 轮(lun)回(hui)之(zhi)时(shi) — 无法以日语音节直接对应，但按中文音节计：na-ke-xing-a / lun-hui-zhi-shi = 8 syllables (原句 7 mora，近似)\nLine 2: 消(xiao)散(san)而(er)去(qu) 是(shi)我(wo)吧(ba) = 7 syllables (原句 7 mora ✓)\nLine 3: 平(ping)凡(fan)的(de)那(na) 人(ren)生(sheng)啊(a) = 7 syllables (原句 7 mora ✓)\nLine 4: 无(wu)法(fa)实(shi)现(xian) 身(shen)虽(sui)如(ru)此(ci) = 8 syllables (原句 8 mora ✓)\n\nRhyme pattern verification (final phoneme per line):\nLine 1 ends: shi (时) — 原句 ki\nLine 2 ends: ba (吧) — 原句 ro，与 line 4 押韵\nLine 3 ends: a (啊) — 原句 wa\nLine 4 ends: ci (此) — 原句 do，与 line 2 押韵\nRhyme pattern: lines 2 and 4 rhyme (a/ci 近似开口音)，对应原句 2、4 行 -ro/-do 押韵 ✓\n\nTheme: 星辰轮回、自我消散、平凡人生无法实现——与原作主题一致 ✓"
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "哪颗星啊 轮回之时\n消散而去 是我吧\n平凡的那 人生啊\n无法实现 身虽如此\n\nMora count verification (hiragana syllables per line):\nLine 1: 哪(na)颗(ke)星(xing)啊(a) 轮(lun)回(hui)之(zhi)时(shi) — 无法以日语音节直接对应，但按中文音节计：na-ke-xing-a / lun-hui-zhi-shi = 8 syllables (原句 7 mora，近似)\nLine 2: 消(xiao)散(san)而(er)去(qu) 是(shi)我(wo)吧(ba) = 7 syllables (原句 7 mora ✓)\nLine 3: 平(ping)凡(fan)的(de)那(na) 人(ren)生(sheng)啊(a) = 7 syllables (原句 7 mora ✓)\nLine 4: 无(wu)法(fa)实(shi)现(xian) 身(shen)虽(sui)如(ru)此(ci) = 8 syllables (原句 8 mora ✓)\n\nRhyme pattern verification (final phoneme per line):\nLine 1 ends: shi (时) — 原句 ki\nLine 2 ends: ba (吧) — 原句 ro，与 line 4 押韵\nLine 3 ends: a (啊) — 原句 wa\nLine 4 ends: ci (此) — 原句 do，与 line 2 押韵\nRhyme pattern: lines 2 and 4 rhyme (a/ci 近似开口音)，对应原句 2、4 行 -ro/-do 押韵 ✓\n\nTheme: 星辰轮回、自我消散、平凡人生无法实现——与原作主题一致 ✓"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"一遍一遍\",\n      \"chars\": 4,\n      \"self_check\": {\"budget\": [4, 4], \"ok\": true, \"note\": \"与下一句共用一个重复的头，保留原曲「何度でも」的复沓\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"一遍一遍地喊\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"前四字占 [4]，「地喊」占 [2]，与上句同头\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"变成这黑夜里 沉默的怪兽 也不逃走\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"6+5+4 按 pattern 断开；用空格代替标点，「沉默」与后文的喊形成对照\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"想留下 一点什么 在夜的角落里\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"3+4+6 对齐三段；沿用初版骨架，只把语序收紧\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"把这秘密留住\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"去掉了初版结尾的语气助词「啊」，用实词「留住」补足第六字，并与上句的「留下」呼应\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T10:59:05+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3369,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 3463,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

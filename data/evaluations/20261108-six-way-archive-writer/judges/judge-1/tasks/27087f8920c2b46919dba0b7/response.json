@@ -1,0 +1,21 @@
+{
+  "id": "1e134765-a257-4a81-a1b2-e3aefde1e94a",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更口语化、自然，情绪更贴近原曲轻快随性的语气；A的“受够了那种事”“令人舒畅惬意”偏书面，V1-03“更想”虽略增语义但衔接更顺。核心语义两版均未误读。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 333,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 97,
+    "service_tier": "standard"
+  }
+}

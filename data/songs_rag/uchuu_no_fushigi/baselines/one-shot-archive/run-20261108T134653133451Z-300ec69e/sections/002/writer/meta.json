@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"晨光为什么落在我肩上\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"3+2+3+4断句 晨光为什么落在我肩上\"}\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"夜色为什么让人心发慌\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"3+2+3+4断句 夜色为什么让人心发慌\"}\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"悲伤分我一半好不好\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"3+3+3断句 悲伤分我一半好不好\"}\n    },\n    {\n      \"id\": \"V2-04\",\n      \"zh\": \"若能这样该多好\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": false, \"note\": \"4+2+3断句 若能这样该多好 实为7字需补\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:57+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "V2",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 2273,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 313,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

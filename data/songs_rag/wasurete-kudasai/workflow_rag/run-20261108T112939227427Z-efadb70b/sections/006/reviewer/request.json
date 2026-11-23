@@ -1,0 +1,44 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B2",
+    "phrases": [
+      {
+        "id": "B2-01",
+        "section": "B2",
+        "ja": "僕に 僕に 僕に",
+        "budget": {
+          "min": 9,
+          "max": 9
+        },
+        "pattern": [
+          3,
+          3,
+          3
+        ]
+      }
+    ],
+    "draft": {
+      "section": "B2",
+      "phrases": [
+        {
+          "id": "B2-01",
+          "zh": "看着我 看着我 看着我",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "与B1同文重复 对应原曲三连重复 空格分段 每段三字"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

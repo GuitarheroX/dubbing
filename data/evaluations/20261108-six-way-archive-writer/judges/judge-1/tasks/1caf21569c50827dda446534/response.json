@@ -1,0 +1,21 @@
+{
+  "id": "1837144e-39ef-471e-a7f8-a7af5bee732e",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更简洁自然，语义准确：V1-01保留“画出的地图被撕裂”的被动结果，V1-02“仍停留在那一天”贴合原意，V1-04“把责任推给了别人”清楚表达诿责，V1-05“真让人厌烦啊”保留自嘲情绪。B虽更有修饰，但V1-01“亲手描绘”略增原文未明示的信息，V1-05“厌倦自己”稍改指向，整体不如A稳。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 325,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 147,
+    "service_tier": "standard"
+  }
+}

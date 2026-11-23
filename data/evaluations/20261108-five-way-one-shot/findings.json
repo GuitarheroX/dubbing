@@ -1,0 +1,86 @@
+{
+  "completed_songs": 20,
+  "paired_songs": 19,
+  "judge_tasks_completed": 1596,
+  "judge_tasks_reused": 912,
+  "judge_tasks_new": 684,
+  "budget_pass_rates": {
+    "paper-original": 0.12846834108444014,
+    "paper-annotated": 0.39808169127054577,
+    "workflow": 1.0,
+    "workflow-rag": 1.0,
+    "one-shot": 0.11644619570316164
+  },
+  "text_scores": {
+    "paper-original": {
+      "semantic": 4.4451127819548875,
+      "emotion": 3.7464912280701754,
+      "naturalness": 3.9260651629072685,
+      "expressiveness": 3.074248120300752
+    },
+    "paper-annotated": {
+      "semantic": 4.304323308270677,
+      "emotion": 3.760213032581454,
+      "naturalness": 3.6278195488721807,
+      "expressiveness": 3.032142857142857
+    },
+    "workflow": {
+      "semantic": 3.1284461152882206,
+      "emotion": 3.507456140350877,
+      "naturalness": 3.8736842105263154,
+      "expressiveness": 3.9117794486215542
+    },
+    "workflow-rag": {
+      "semantic": 3.1488721804511277,
+      "emotion": 3.4761904761904763,
+      "naturalness": 3.8490601503759394,
+      "expressiveness": 3.88859649122807
+    },
+    "one-shot": {
+      "semantic": 3.9635964912280706,
+      "emotion": 3.8538847117794486,
+      "naturalness": 4.226441102756892,
+      "expressiveness": 3.4216165413533837
+    }
+  },
+  "one_shot_preferences": [
+    {
+      "a": "one-shot",
+      "b": "paper-original",
+      "win_rate_a": 0.6281746031746032,
+      "stable_pairs": 53,
+      "unstable_pairs": 23,
+      "planned_pairs": 76
+    },
+    {
+      "a": "one-shot",
+      "b": "paper-annotated",
+      "win_rate_a": 0.7921052631578948,
+      "stable_pairs": 54,
+      "unstable_pairs": 22,
+      "planned_pairs": 76
+    },
+    {
+      "a": "one-shot",
+      "b": "workflow",
+      "win_rate_a": 0.881578947368421,
+      "stable_pairs": 60,
+      "unstable_pairs": 16,
+      "planned_pairs": 76
+    },
+    {
+      "a": "one-shot",
+      "b": "workflow-rag",
+      "win_rate_a": 0.8916040100250626,
+      "stable_pairs": 59,
+      "unstable_pairs": 17,
+      "planned_pairs": 76
+    }
+  ],
+  "interpretation": [
+    "当前 one-shot 在模型文本偏好上优于两条 workflow，但预算约束明显较弱。",
+    "one-shot 比两条 workflow 的核心语义、情绪意境和自然度分更高；两条 workflow 的表现力更高。",
+    "当前 one-shot 与历史 workflow 的 writer 系统提示词不同，不能用这一组直接证明移除 perceiver/reviewer 的因果效应。"
+  ],
+  "comet_status": "skipped"
+}

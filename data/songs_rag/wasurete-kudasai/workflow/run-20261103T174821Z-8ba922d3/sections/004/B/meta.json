@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T174656_b_01699d",
+  "input_hash": "01699d06086eb64f1033fbf4b9dabe273fa87ba368b4224c561627350c5ebec3",
+  "finished_at": "2026-11-03T17:47:30+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 3351,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2176,
+    "output_tokens": 6704,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"把你的心交给我\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"与I1-01完全相同，保留副歌重复；旋律 [3,4] 处断在「把你的」之后，连读无碍\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"把一束花放你手中\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"与I1-02相同；前三字「把一束」占第一段，后五字「花放你手中」占第二段\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"就让风掠过长发 任它散落在你肩头\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"与I1-03相同；空格断在 [7,8] 之间，前七字一波，后八字落下\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"把你的话交给我\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"与C1-01句式对称，「把你的」三字起，「话交给我」四字收\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"把你的哼唱递给我\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"与C1-02对称，前三后五；「哼唱」承接C1-04的「话」，越说越私密\"}\n    },\n    {\n      \"id\": \"C1-06\",\n      \"zh\": \"把一切 都搁在 长长迷宫 最远的那一头\",\n      \"chars\": 16,\n      \"self_check\": {\"budget\": [16, 16], \"ok\": true, \"note\": \"按 [3,3,4,6] 分四段空格：把一切／都搁在／长长迷宫／最远的那一头\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T174656_b_01699d"
+}

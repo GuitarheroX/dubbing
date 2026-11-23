@@ -1,0 +1,21 @@
+{
+  "id": "99ff2191-456f-401c-9d7e-6b6ccd459b6c",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“无处安放的伤悲”略偏“どうしようもなく”的无可奈何，但悲伤核心保留；“驱使我前行的兽”准确；“同义反复握紧的 手中泡影”基本对应。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"emotion\":{\"score\":4,\"reason\":\"悲伤与兽的驱动感保留，泡影意象略柔化但方向一致。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“同义反复握紧的 手中泡影”稍显堆叠但可理解。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“无处安放”“手中泡影”意象较鲜明，服务主题。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"“无可奈何地悲伤”准确对应“どうしようもなく悲しい”；“驱动我的野兽”准确；“同义反复握住的手中的泡沫”保留核心。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向准确，但表达偏直白，意境稍平。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"naturalness\":{\"score\":3,\"reason\":\"“同义反复握住的手中的泡沫”连用“的”较生硬。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"语义清楚但意象呈现普通，缺少张力。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"三句核心信息均准确，“驱使我内心的野兽”合理补充内心维度。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"emotion\":{\"score\":4,\"reason\":\"悲伤与兽的压迫感保留，整体略平但一致。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"较顺口，“同义反复紧握手中的泡沫”自然可读。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但偏常规，意象力度一般。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“无处安放的悲伤”略偏原意；“驱使我前行的兽”准确；“同义反复 握紧的手 泡沫”保留核心但断句略碎。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，泡影意象因断句稍弱。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"naturalness\":{\"score\":3,\"reason\":\"“同义反复 握紧的手 泡沫”节奏断裂，作为歌词可理解但生硬。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"前两句有力，末句意象松散。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"“胸口有雨落不尽”改写“どうしようもなく悲しい”为雨意象，偏离较大；“手心里有兽在低吼”改变“私を動かす”的驱动关系；“念头绕回原点 泡沫攥成空”部分保留同义反复与泡沫。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"emotion\":{\"score\":3,\"reason\":\"悲伤与兽的低吼氛围尚存，但原句的无可奈何与驱动感被替换。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文歌词感较强，断句顺口。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"雨、低吼、攥成空等意象鲜明，但部分服务的是改写后的意境。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“按不住的这悲伤”接近无可奈何；“推着我不肯停的兽”准确传达驱动；“绕圈的那句话 握碎成泡沫”合理对应同义反复与泡沫。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"emotion\":{\"score\":4,\"reason\":\"压抑、被驱动的情绪保留较好，末句略强化。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，歌词断句自然。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“按不住”“不肯停”“握碎成泡沫”较有张力。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 756,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 1295,
+    "service_tier": "standard"
+  }
+}

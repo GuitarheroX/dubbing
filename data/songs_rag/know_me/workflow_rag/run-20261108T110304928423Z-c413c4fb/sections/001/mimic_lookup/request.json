@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "query_text": "话一出口 就伸手去要 同样的暖\n闭上嘴 就好吗\n顺着你心愿 我倒着走 眼望着前\n像断了呼吸 那样静",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 0.867,
+  "usage": {
+    "input_tokens": 141,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 46,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": true,
+    "human_annotations_in_generation": false,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "cleanup",
+  "variant": "paper-original",
+  "migrated_from": "run-20261105T124254824500Z-5fbeed5d",
+  "raw_response": "{\"lines\":[\"核聚变炉啊\",\"试着跳进去的话那样的话\",\"一定能像睡着般消失而去吧\",\"没有我的早晨\",\"比现在更加美好\",\"所有齿轮都咬合了\",\"一定是那样的世界\"]}"
+}

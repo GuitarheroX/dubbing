@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"再见吧企鹅\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"五字唱六音 末字拖长一拍\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"摇摇摆摆走 一路笑着\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"前段六字后段四字 中间空格断句\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"恋上这世界 眨一眨眼\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"前段五字后段五字 空格处换气\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"风穿城而过 风带着梦\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"与B1-01同词 保持重复美\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"泪落了下来\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"五字唱七音 尾音延展\"}\n    },\n    {\n      \"id\": \"C1-06\",\n      \"zh\": \"再见吧企鹅\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"与C1-01呼应 重复收束\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:45+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "C1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 880,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 432,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

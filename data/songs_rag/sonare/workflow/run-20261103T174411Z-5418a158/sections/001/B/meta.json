@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T174351_b_9bdf3c",
+  "input_hash": "9bdf3c4f8e127802e3832c0c3843953113a6729f18657e322700488dc1ab9167",
+  "finished_at": "2026-11-03T17:43:57+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 2,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2509,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 1593,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"从漫长的梦里睁开眼睛\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"十一个字逐字核过，「从漫长的梦里睁开眼睛」=10，整句一口气唱完\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"我一个人站在翻开的空白页中央\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"逐字数 14 字，无空格，整句连贯\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"转过身 四面都看不见\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"「转过身」后空格断开，3+6 共 9 字\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"没有门也没有路\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"七个字，整句一段\"}\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"耳朵里 忽然落进一声\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"3+6 断句，共 9 字\"}\n    },\n    {\n      \"id\": \"V1-06\",\n      \"zh\": \"是你在叫我的名字 轻轻地 一声声\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"8+3+3，共 14 字，两处空格为停顿\"}\n    },\n    {\n      \"id\": \"V1-07\",\n      \"zh\": \"摸黑捡起散落的词语\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"九个字，整句一段\"}\n    },\n    {\n      \"id\": \"V1-08\",\n      \"zh\": \"开始迈出脚步\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"六个字，句尾不用「了」\"}\n    }\n  ]\n}",
+  "migrated_from": "20261103T174351_b_9bdf3c"
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"等一切空掉以后 都是你害的\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"前七字后五字，空格处停顿，字数正好十二\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"我这样说出口 你手掌一遍遍落下\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"按旋律切成六字加八字，保留初版手掌落下的意象\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"连这句怨你的话 你也咽得干净吗\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"七字加七字，用咽代吞，接住前句的暴力与吞没\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T10:56:03+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2108,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2176,
+    "output_tokens": 2260,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

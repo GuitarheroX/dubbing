@@ -1,0 +1,96 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "不安漫过我的喉咙",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "保留初版喉咙意象，八字整句"
+      }
+    },
+    {
+      "id": "V1-02",
+      "zh": "这世界定好的规矩",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "把イロハ落到规矩上，语气更冷硬"
+      }
+    },
+    {
+      "id": "V1-03",
+      "zh": "焦躁在骨头里发痒",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "保留初版身体感的焦躁"
+      }
+    },
+    {
+      "id": "V1-04",
+      "zh": "一寸一寸抽走自由",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "用一寸一寸替换一根一根，动作更贴皮肤"
+      }
+    },
+    {
+      "id": "V1-05",
+      "zh": "黑白两色的雨落下",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "保留モノクロ雨的核心意象"
+      }
+    },
+    {
+      "id": "V1-06",
+      "zh": "把整个世界都藏起",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "把城市改回世界，贴住原文世界を隠して"
+      }
+    },
+    {
+      "id": "V1-07",
+      "zh": "天空垂眼俯视着我 笑我下沉",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": true,
+        "note": "按 pattern 8+4 空格断句，前八后四"
+      }
+    }
+  ]
+}

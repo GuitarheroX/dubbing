@@ -1,0 +1,46 @@
+{
+  "section": "V1",
+  "query_text": "话一出口 就伸手去要 同样的暖\n闭上嘴 就好吗\n顺着你心愿 我倒着走 眼望着前\n像断了呼吸 那样静",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "杨维晨_yangweichen/若有所思#s1",
+      "title": "若有所思",
+      "poet": "杨维晨",
+      "poem_id": "杨维晨_yangweichen/若有所思",
+      "stanza_idx": 1,
+      "score": 0.695011,
+      "text": "歌声往前走\n没有什么被重覆\n事物来不及歪斜倾倒\n就迅速被越过\n决定不再睡去\n随着叹息的影\n在室内轻轻绕了一圈\n跟着来到窗外\n看见阳光时\n似乎停了停\n差一点点\n就又难过起来"
+    },
+    {
+      "chunk_id": "王寅_wangyin/巴黎已经令我心生厌倦#s1",
+      "title": "巴黎已经令我心生厌倦",
+      "poet": "王寅",
+      "poem_id": "王寅_wangyin/巴黎已经令我心生厌倦",
+      "stanza_idx": 1,
+      "score": 0.694844,
+      "text": "能请你把音乐关了吗\n能让这屋子里只剩下黑暗吗\n请让我闭上双眼\n放过这些无助的夜晚\n让我能够听得到你起伏的呼吸"
+    },
+    {
+      "chunk_id": "沐三宝_musanbao/丛林#s1",
+      "title": "丛林",
+      "poet": "沐三宝",
+      "poem_id": "沐三宝_musanbao/丛林",
+      "stanza_idx": 1,
+      "score": 0.682679,
+      "text": "你歪斜着脸\n吐纳着清新的空气\n顺着眼睑晨阳爬升过来\n光芒阻断你热烈的记忆\n褪去一件件梦的衣衫"
+    },
+    {
+      "chunk_id": "沙穗_shasui/弥留#s2",
+      "title": "弥留",
+      "poet": "沙穗",
+      "poem_id": "沙穗_shasui/弥留",
+      "stanza_idx": 2,
+      "score": 0.678516,
+      "text": "靠近我 让我在你的眼睛中找你\n从你的手心 找当初我迷过的路\n我走不出来 好苦"
+    }
+  ]
+}

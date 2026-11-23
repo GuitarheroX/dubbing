@@ -1,0 +1,21 @@
+{
+  "id": "007d27d0-5ee3-4dbe-af52-080764ab82cc",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更凝练自然，V1-02“恍惚等一颗迟来的流星”保留“呆然”与“终将看见”的意味且中文流畅；B的“呆立原地”偏动作化，“等待终会出现”较直译冗长。V1-01、V1-03两版语义均准确，A整体意境更统一。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 215,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 105,
+    "service_tier": "standard"
+  }
+}

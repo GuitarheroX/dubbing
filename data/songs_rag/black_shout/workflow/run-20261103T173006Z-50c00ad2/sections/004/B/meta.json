@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T172952_b_c6b932",
+  "input_hash": "c6b9325ea0abb5aef489964b272fa1164d5c5a6a6d0abe75414253cb9029fe50",
+  "finished_at": "2026-11-03T17:30:06+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 1990,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2304,
+    "output_tokens": 3002,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"C2\",\n  \"phrases\": [\n    {\n      \"id\": \"C2-01\",\n      \"zh\": \"就算明天无路\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"整句六字，对应原句六音\"}\n    },\n    {\n      \"id\": \"C2-02\",\n      \"zh\": \"前路被堵成死墙\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"整句七字，意象落在堵死的墙上\"}\n    },\n    {\n      \"id\": \"C2-03\",\n      \"zh\": \"用自己的手掌\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"整句六字，保留亲手动作\"}\n    },\n    {\n      \"id\": \"C2-04\",\n      \"zh\": \"亲手撕开一条路\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"整句七字，撕开对应切り開く\"}\n    },\n    {\n      \"id\": \"C2-05\",\n      \"zh\": \"身体还在发抖\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"整句六字，保留すくむ身体的身体感\"}\n    },\n    {\n      \"id\": \"C2-06\",\n      \"zh\": \"把自己抱得更紧\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"整句七字，自己抱自己是原句核心\"}\n    },\n    {\n      \"id\": \"C2-07\",\n      \"zh\": \"攥着觉悟踏出去\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"整句七字，觉悟落在脚上那一步\"}\n    },\n    {\n      \"id\": \"C2-08\",\n      \"zh\": \"我想要实现的梦 现在就要亲手夺回来\",\n      \"chars\": 16,\n      \"self_check\": {\"budget\": [16, 16], \"ok\": true, \"note\": \"按7+9空格断句，前段七字后段九字\"}\n    }\n  ]\n}",
+  "migrated_from": "20261103T172952_b_c6b932"
+}

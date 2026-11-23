@@ -1,0 +1,200 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心意象基本准确，'穿草而去'合理改写'草を抜け'，'青色的风'对应'青い風'；'とうとう'的终局感略弱。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04",
+            "V1-05",
+            "V1-06",
+            "V1-07"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "孤独、空荡与随风摇曳的情绪方向保留，'只剩我'传达出孤立感。",
+          "phrase_ids": [
+            "V1-03",
+            "V1-04",
+            "V1-07"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，'再一阵 我穿草而去'稍显跳跃但可理解。",
+          "phrase_ids": [
+            "V1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'青色的风''摇曳'意象清晰，简洁有力。",
+          "phrase_ids": [
+            "V1-06",
+            "V1-07"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "'两阵风'准确对应'二吹き'，'穿过草丛'与'草を抜け'略有偏移但可接受；'终于'补出'とうとう'。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04",
+            "V1-05",
+            "V1-06",
+            "V1-07"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "空荡、独行、飘摇的情绪基本一致。",
+          "phrase_ids": [
+            "V1-03",
+            "V1-04",
+            "V1-07"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "语句通顺，'走向下风处'自然。",
+          "phrase_ids": [
+            "V1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏平实，意象力度一般。",
+          "phrase_ids": [
+            "V1-05",
+            "V1-07"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "'草根拔落 剩一身空'将'草を抜け'与'がらんどう'合并改写，语义偏移较大；'风下只留我'尚可。",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03",
+            "V1-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "空荡与孤独保留，但'草根拔落'带来拔除感，情绪略偏。",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "'再吹时 草根拔落 剩一身空'生硬，'随风伏'稍拗。",
+          "phrase_ids": [
+            "V1-02",
+            "V1-07"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'一道影 拉长''空荡回响'意象较鲜明。",
+          "phrase_ids": [
+            "V1-03",
+            "V1-05"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "'我拔出草'误读为主动拔草，与'草を抜け'（穿过草）方向相反；其余基本准确。",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03",
+            "V1-04",
+            "V1-06"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "整体孤独感尚在，但'拔出草'的动作感削弱了随风穿行的意境。",
+          "phrase_ids": [
+            "V1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "'两阵风吹过来了，我拔出草'口语化且冗长，与歌词文体略不合。",
+          "phrase_ids": [
+            "V1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，'蓝色的风啊'稍显直白。",
+          "phrase_ids": [
+            "V1-06"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "'把我拔离 草的怀里'将'草を抜け'改写为被风拔离草，语义偏移；'青蓝色'增补颜色。",
+          "phrase_ids": [
+            "V1-02",
+            "V1-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "'空得发凉''只剩我一个'较好传达空荡孤独。",
+          "phrase_ids": [
+            "V1-03",
+            "V1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "'第二阵 把我拔离 草的怀里'生硬，'空得发凉'略突兀。",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'草的怀里''空得发凉''一道影 拉长'意象较鲜明。",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03",
+            "V1-05"
+          ]
+        }
+      }
+    }
+  ]
+}

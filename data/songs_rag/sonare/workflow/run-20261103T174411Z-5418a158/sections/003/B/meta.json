@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T174402_b_09a6ea",
+  "input_hash": "09a6ea64a86a4801437377ee24e1fb161689a2d2681d5e3c49cd8e1e3c1fc9e9",
+  "finished_at": "2026-11-03T17:44:11+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 1803,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1792,
+    "output_tokens": 2048,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"世界像线头松开的声音\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"整句一气连唱，不多不少十字\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"向我跑过来\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"连读五字，收在来字上开口\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"向我跑过来\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"与原曲重复句完全一致\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"晨光涌进来\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"五字，与上句同为来字收尾保持连贯\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"在未来回过头来的那个你\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"十一字连读，那个略轻唱\"}\n    },\n    {\n      \"id\": \"C1-06\",\n      \"zh\": \"我也挥挥手\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"五字，挥挥手略带连音\"}\n    },\n    {\n      \"id\": \"C1-07\",\n      \"zh\": \"一桨一桨划\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"叠字模拟划桨节奏，五字\"}\n    },\n    {\n      \"id\": \"C1-08\",\n      \"zh\": \"一桨一桨划\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"与原曲重复句完全一致\"}\n    },\n    {\n      \"id\": \"C1-09\",\n      \"zh\": \"往哪里去呢\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"五字，往字与下句呼应\"}\n    },\n    {\n      \"id\": \"C1-10\",\n      \"zh\": \"往哪里都行\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"五字，与上句共用往哪里，保留原曲重复感\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T174402_b_09a6ea"
+}

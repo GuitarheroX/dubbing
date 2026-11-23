@@ -1,0 +1,21 @@
+{
+  "id": "a351dc55-a58b-426f-864b-49f181c0bbed",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B用“纵身一跃而入”“湛蓝光芒包裹我”等表达更凝练且具画面感，情绪更贴合原曲的沉溺与释放；A的“真想跳进去试试看”“要是跳进去试了的话”偏口语、拖沓，削弱了意境。核心语义双方均未误读。\",\"phrase_ids\":[\"C1-02\",\"C1-03\",\"C1-05\",\"C1-06\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 397,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 102,
+    "service_tier": "standard"
+  }
+}

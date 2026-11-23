@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T110304928423Z-c413c4fb",
+  "updated_at": "2026-11-08T11:05:28+00:00",
+  "song": "know_me",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

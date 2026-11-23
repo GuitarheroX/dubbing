@@ -1,0 +1,46 @@
+{
+  "section": "B2",
+  "query_text": "接过玫瑰 那宿命 披上深红 不再回头\n让热情点燃 每个呼吸 烧成火焰 烧到尽头",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "兰淑贝_lanshubei/水与火的镜像#s3",
+      "title": "水与火的镜像",
+      "poet": "兰淑贝",
+      "poem_id": "兰淑贝_lanshubei/水与火的镜像",
+      "stanza_idx": 3,
+      "score": 0.692146,
+      "text": "允许玫瑰，绽燃为云的色调\n恰如允许一滴泪血的自由\n死为生烙印，再演译上万遍\n也不知以怎样彤言布阵，收局"
+    },
+    {
+      "chunk_id": "紫沫_zimo/怀墨#s2",
+      "title": "怀墨",
+      "poet": "紫沫",
+      "poem_id": "紫沫_zimo/怀墨",
+      "stanza_idx": 2,
+      "score": 0.687651,
+      "text": "烈焰中城市脸色发白\n似乎神经质，一瞬间\n便占领生命与信仰\n每一处楼顶玻璃发出尖叫\n直至山头塔巅，带孕身的玫瑰籽\n被潜入暖风掠去了魂灵儿\n磷火开始肆意摩擦往来的肉体"
+    },
+    {
+      "chunk_id": "池凌云_chilingyun/玫瑰栈道#s4",
+      "title": "玫瑰栈道",
+      "poet": "池凌云",
+      "poem_id": "池凌云_chilingyun/玫瑰栈道",
+      "stanza_idx": 4,
+      "score": 0.687456,
+      "text": "你从没停止过撷取\n缄默的玫瑰伤痕累累\n再一次带着温暖的色彩来临\n你弯下腰看见另一个方向\n渴望爱的人低下尊贵的头颅"
+    },
+    {
+      "chunk_id": "欧阳雄东_ouyangxiongdong/凤凰之名#s1",
+      "title": "凤凰之名",
+      "poet": "欧阳雄东",
+      "poem_id": "欧阳雄东_ouyangxiongdong/凤凰之名",
+      "stanza_idx": 1,
+      "score": 0.687216,
+      "text": "请允许我有自私\n在内心开垦荒芜\n用它种上一片玫瑰\n向太阳昂举高贵头颅\n让热烈驱走前生黯淡\n逃出世俗庸常困溺\n如果有十万朵惊艳\n就借凤凰之名\n拥抱浴火\n涅槃重生"
+    }
+  ]
+}

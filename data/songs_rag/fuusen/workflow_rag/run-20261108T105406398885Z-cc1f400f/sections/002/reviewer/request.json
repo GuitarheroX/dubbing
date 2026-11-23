@@ -1,0 +1,96 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "phrases": [
+      {
+        "id": "B1-01",
+        "section": "B1",
+        "ja": "空気を抜かれて",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": "B1-02",
+        "section": "B1",
+        "ja": "萎んだ私は",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": "B1-03",
+        "section": "B1",
+        "ja": "嗚呼もう貴方の所有物",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          2,
+          3,
+          3
+        ]
+      }
+    ],
+    "draft": {
+      "section": "B1",
+      "phrases": [
+        {
+          "id": "B1-01",
+          "zh": "气被抽走 慢慢变空",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "四加四，空格对应旋律前四音与后四音；保留初版的泄气意象"
+          }
+        },
+        {
+          "id": "B1-02",
+          "zh": "瘪掉的我 皱在掌心",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "四加四；借参考里「空瓶」被握住的骨架，换成气球被攥皱的触感"
+          }
+        },
+        {
+          "id": "B1-03",
+          "zh": "也罢 我已是 你所有",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "按 2/3/3 断句；以「也罢」代呜呼的叹声，末三字收在「你所有」留白"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

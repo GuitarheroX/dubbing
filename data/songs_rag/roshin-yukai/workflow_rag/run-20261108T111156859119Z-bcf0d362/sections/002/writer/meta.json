@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\"id\": \"B1-01\", \"zh\": \"我又梦见自己 双手掐住你的脖颈\"},\n    {\"id\": \"B1-02\", \"zh\": \"满溢阳光的午后 亮得让人发疼\"},\n    {\"id\": \"B1-03\", \"zh\": \"看你细瘦的喉咙 在光里轻轻地跳\"},\n    {\"id\": \"B1-04\", \"zh\": \"我用快哭出来的眼睛 望着你\"}\n  ]\n}",
+  "finished_at": "2026-11-08T11:12:45+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 5334,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 1406,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

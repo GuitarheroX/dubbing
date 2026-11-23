@@ -1,0 +1,226 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达“装作一直等待什么”和“从这里能否重新开始”的核心语义",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "保留自省与迟疑的情绪，但“装作”的无奈感略平",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文顺口自然，符合歌词文体",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "表达清晰有力，但意象较朴素",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心语义保留，但“不肯醒来”为原文所无的补充意象，略有偏移",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，附加的“不肯醒来”稍增沉重感",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，断句处稍显刻意",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“不肯醒来”增添画面感，服务主题",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“等一班不来的车”“等到路灯亮”将抽象的等待具体化为原文没有的场景，偏离核心",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "等待的无奈情绪尚存，但具体场景改变了原句的抽象自省",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文流畅有画面，但“就这样吧”语气略散",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象鲜明，但服务的是新增场景而非原主题",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 1,
+          "reason": "“楼梯转角”“等谁”“灯熄灭”大幅改写为原文没有的具体叙事，核心误读",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 2,
+          "reason": "情绪转向具体场景的怅惘，与原句的自责式自省偏离",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文自然有画面感",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象鲜明，但与原主题关联弱",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达“装作一直等待什么”和“能否重新开始”",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，稍显平实",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "顺口自然，符合歌词文体",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但较普通，缺乏亮点",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心语义保留，但“一直等下去”弱化了“装作”的伪装意味",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "等待与自省情绪基本一致",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "顺口自然",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达平实，意象普通",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    }
+  ]
+}

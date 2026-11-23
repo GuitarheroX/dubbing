@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T114428744651Z-1b67fcca",
+  "updated_at": "2026-11-08T11:45:54+00:00",
+  "song": "sayonara-penguin",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

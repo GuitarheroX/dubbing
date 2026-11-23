@@ -1,0 +1,21 @@
+{
+  "id": "d26f8527-1fd2-4c34-b5c0-2b2912b53fe7",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"三句均准确传达原意，第三句'也带上'合理衔接前文探索语境\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"emotion\":{\"score\":5,\"reason\":\"疑问语气与轻快期待感保留充分，'什么好呢'贴合原歌亲切口吻\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"naturalness\":{\"score\":5,\"reason\":\"断句自然顺口，符合歌词文体，'聊一些''一支'搭配得当\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰，'谁都没见过的花'有画面感，整体略平实但服务主题\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心信息准确，'并肩'为合理补充，'叫不出名字的花'与原意'谁都不知道的花'一致\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"emotion\":{\"score\":5,\"reason\":\"'呀'字增添亲切俏皮，情绪方向与强弱贴合原歌\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"naturalness\":{\"score\":5,\"reason\":\"口语化自然，节奏顺畅，符合歌词文体\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"expressiveness\":{\"score\":5,\"reason\":\"'并肩''叫不出名字'意象鲜明，表达有力且服务主题\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"'話'译为'故事'略有偏移，'歌'译为'歌谣'可接受，第三句'连谁都不曾知晓'准确\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"emotion\":{\"score\":4,\"reason\":\"疑问语气保留，但'故事''歌谣'稍显文雅，亲切感略减\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"句子通顺，但字数偏短、节奏较松，'怎样的'重复稍显单调\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但较普通，缺少鲜明意象\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"三句核心语义准确，'连无人知晓的花儿也'保留原句未完的衔接感\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"emotion\":{\"score\":4,\"reason\":\"疑问语气保留，但'聊些什么''什么歌'较平，亲切度略低于原文\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"通顺自然，但句式偏口语散文，歌词节奏感稍弱\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但平淡，意象不够鲜明\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"'話題''歌曲'语义基本准确，但'话题'较抽象，偏离原句具体亲切的'話'\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"emotion\":{\"score\":3,\"reason\":\"疑问保留但语气偏正式，原歌的亲切期待感明显减弱\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"naturalness\":{\"score\":3,\"reason\":\"可理解但'什么样的话题''什么样的歌曲'偏书面，不够顺口\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，'话题''歌曲'抽象，缺乏画面感\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 618,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 1019,
+    "service_tier": "standard"
+  }
+}

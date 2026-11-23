@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T172903_b_77e43a",
+  "input_hash": "77e43a5c460c157f263b5390ec2dd38bda48d4f560002c0e477404e4f4c85f4a",
+  "finished_at": "2026-11-03T17:29:07+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 1650,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2432,
+    "output_tokens": 628,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"C2\",\n  \"phrases\": [\n    {\n      \"id\": \"C2-01\",\n      \"zh\": \"玫瑰开 玫瑰开 一身深红高傲盛开\",\n      \"chars\": 14,\n      \"self_check\": {\n        \"budget\": [14, 14],\n        \"ok\": true,\n        \"note\": \"与C1同词重复，保留副歌回环；前3+3字对应两个短句，后8字连唱\"\n      }\n    },\n    {\n      \"id\": \"C2-02\",\n      \"zh\": \"玫瑰落 玫瑰落 一瓣瓣美丽散落\",\n      \"chars\": 13,\n      \"self_check\": {\n        \"budget\": [13, 13],\n        \"ok\": true,\n        \"note\": \"与C1同词重复，收束在落下；前3+3字对应两个短句，后7字连唱\"\n      }\n    }\n  ]\n}",
+  "migrated_from": "20261103T172903_b_77e43a"
+}

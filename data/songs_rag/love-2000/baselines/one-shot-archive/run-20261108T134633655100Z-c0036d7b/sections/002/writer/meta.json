@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"悲伤的新闻 和无聊的闲话\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"前四字加三字共七字，后五字加两字共七字，空格断句\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"从早上就听够 真的受够啦\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"前四字后八字，空格分隔\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"今天比往常更想\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"整句六字\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"风吹得让人好舒服\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"整句九字\"}\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"换上快乐的心情吧\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"五字加四字，空格断句\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:37+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "V1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1396,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 359,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T175838_b_c68e77",
+  "input_hash": "c68e77b928b4dbdb180b5a93259ed3c6b08f09a36f7a2ca7a6b4eae16af368d2",
+  "finished_at": "2026-11-03T17:58:57+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2804,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 3793,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"笨拙的双手 原地空转圈\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"5+5 对应旋律两段，空格断句\"\n      }\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"知道会疼就绕开走 躲进纸页\",\n      \"chars\": 12,\n      \"self_check\": {\n        \"budget\": [12, 12],\n        \"ok\": true,\n        \"note\": \"8+4，前半绕开疼处，后半躲进纸页\"\n      }\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"台灯底下 纸页间 来回跑 写一行 就当被安慰\",\n      \"chars\": 18,\n      \"self_check\": {\n        \"budget\": [18, 18],\n        \"ok\": true,\n        \"note\": \"4+3+3+3+5，按旋律切五段，空格标出停顿\"\n      }\n    },\n    {\n      \"id\": \"V2-05\",\n      \"zh\": \"这世界太难熬 人活得发慌\",\n      \"chars\": 11,\n      \"self_check\": {\n        \"budget\": [11, 11],\n        \"ok\": true,\n        \"note\": \"6+5，对应旋律两段\"\n      }\n    },\n    {\n      \"id\": \"V2-06\",\n      \"zh\": \"可是我 还是想\",\n      \"chars\": 6,\n      \"self_check\": {\n        \"budget\": [6, 6],\n        \"ok\": true,\n        \"note\": \"3+3，两句重复感，话没说完像原曲的「だけど」\"\n      }\n    }\n  ]\n}",
+  "migrated_from": "20261103T175838_b_c68e77"
+}

@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\"id\": \"C1-01\", \"zh\": \"悠悠悠悠 把梦烧成灰\"},\n    {\"id\": \"C1-02\", \"zh\": \"用魂魄那 纯白 纯白 的火色\"},\n    {\"id\": \"C1-03\", \"zh\": \"点着喜悦的火 添 一把 烧到通明\"},\n    {\"id\": \"C1-04\", \"zh\": \"想象是 几枚湿冷的零钱\"},\n    {\"id\": \"C1-05\", \"zh\": \"用双手 捧住 还没凉的词\"},\n    {\"id\": \"C1-06\", \"zh\": \"数一数那些 烧不化 的东西\"},\n    {\"id\": \"C1-07\", \"zh\": \"我只想 捧起一捧\"}\n  ]\n}",
+  "finished_at": "2026-11-08T10:43:41+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2281,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1792,
+    "output_tokens": 1984,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

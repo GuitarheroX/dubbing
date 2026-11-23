@@ -1,0 +1,167 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达“梦见所有人消失”，并保留“一个一个”的消逝感",
+          "phrase_ids": [
+            "B2-01"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "深夜空旷与心跳声强化了孤寂压迫感，与原句情绪一致",
+          "phrase_ids": [
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文顺口，断句符合歌词文体",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 5,
+          "reason": "“大得空旷”“静得能听见心跳声”意象鲜明且服务主题",
+          "phrase_ids": [
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心语义基本准确，但“无边无际的寂静重”语义不完整",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向一致，但“重”“难通”“从容”等表达削弱了窒息感",
+          "phrase_ids": [
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "naturalness": {
+          "score": 2,
+          "reason": "“寂静重”“难通”“不再顺畅而从容”生硬且不完整",
+          "phrase_ids": [
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 2,
+          "reason": "表达含混，意象和力度不足",
+          "phrase_ids": [
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心信息准确，简洁保留原意",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向正确但较平淡，缺少深夜孤寂的压迫感",
+          "phrase_ids": [
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文自然顺口，符合歌词文体",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但普通，意象不够鲜明",
+          "phrase_ids": [
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达所有人逐个消失及胸口堵塞、无法呼吸",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "“宽得发慌”“静到能听见血在流”强化了孤寂与窒息感，情绪充分",
+          "phrase_ids": [
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，但“静到能听见血在流”略突兀",
+          "phrase_ids": [
+            "B2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 5,
+          "reason": "意象鲜明有力，服务主题",
+          "phrase_ids": [
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        }
+      }
+    }
+  ]
+}

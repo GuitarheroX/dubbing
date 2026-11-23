@@ -1,0 +1,21 @@
+{
+  "id": "6a8df318-6312-41a1-9b7f-c58a973b956b",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B准确传达“愿将生命献给你”的核心语义，简洁自然；A后半句“像海风吹过你脸颊”是原文没有的添加，偏离了间奏重复句的凝练感，且与上下文“海风”意象重复冗余。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 308,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 384,
+    "output_tokens": 78,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "run": "run-20261108T134630013462Z-9d29bccf",
+  "updated_at": "2026-11-08T13:46:39+00:00",
+  "song": "kotozute",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "passed": 8,
+  "total": 21
+}

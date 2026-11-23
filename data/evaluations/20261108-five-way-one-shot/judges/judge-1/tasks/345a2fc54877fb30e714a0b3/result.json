@@ -1,0 +1,189 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“带我走吧”准确对应“連れてって”，“带我飞向星”保留fly me to the star的核心祈愿。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "恳求与向往的情绪方向一致，简洁有力。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "“带我 走吧”分句自然，“带我飞向星”略省但可唱可懂。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“飞向星”意象清晰，整体简洁服务主题。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“请带上我”贴合“連れてって”，英文原句完整保留。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "请求语气礼貌而稍弱，但向往情绪保留。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文自然，英文原句作为歌词常见且顺口。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏平实，英文原句未作中文转化。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“带我一起去”接近但多了同行意味；“飞向那星辰”丢失“带我”的使动核心。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向大体一致，但祈愿的迫切感被削弱。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文通顺，“哦，飞向那星辰”可唱。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "意象普通，缺少原文“带我”的牵引感。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“带我走吧”准确；“飞向那星”保留fly to star但省略me。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "恳求与向往情绪基本保留，稍显简略。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "“带我走吧”自然，“飞向那星”略生硬但可理解。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但“那星”稍显单薄。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“带我走吧”准确；“带我飞去星河”保留带我飞向星的核心，但“河”为增补意象。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "恳求与浪漫向往一致，星河略增梦幻感。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "“带 我飞去星河”分句可唱，整体通顺。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“星河”意象较鲜明，服务飞向星的主题。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02"
+          ]
+        }
+      }
+    }
+  ]
+}

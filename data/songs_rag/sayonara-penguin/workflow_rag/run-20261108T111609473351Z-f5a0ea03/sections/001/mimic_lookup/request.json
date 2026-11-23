@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "query_text": "水光跳起来 落在新芽肩头\n你轻轻快走 赶在黎明前头\n夜半散落的碎屑 拼成梦的地图\n新的清晨 正轻轻醒来",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

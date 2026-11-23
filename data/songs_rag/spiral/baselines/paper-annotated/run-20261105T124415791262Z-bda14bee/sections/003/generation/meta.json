@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 2.468,
+  "usage": {
+    "input_tokens": 619,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 320,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": false,
+    "human_annotations_in_generation": true,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "generation",
+  "variant": "paper-annotated",
+  "migrated_from": "run-20261105T124415791262Z-bda14bee",
+  "raw_response": "1. 我仿佛能去往任何地方 (11 syllables: wǒ fǎng fú néng qù wǎng rèn hé dì fāng)\n2. 那时的我如今在何方 (11 syllables: nà shí de wǒ rú jīn zài hé fāng)\n3. 想必已经长大成人了吧 (10 syllables: xiǎng bì yǐ jīng zhǎng dà chéng rén le ba)\n4. 并不是那样的事情啊 (9 syllables: bìng bú shì nà yàng de shì qíng a)\n5. 只凭一点点勇气的力量 (11 syllables: zhǐ píng yì diǎn diǎn yǒng qì de lì liàng)\n6. 曾有能被改变的明天啊 (11 syllables: céng yǒu néng bèi gǎi biàn de míng tiān a)\n7. 就连那一点都没能察觉 (10 syllables: jiù lián nà yì diǎn dōu méi néng chá jué)\n\nRhyme check (final phoneme per line): 1 fāng / 2 fāng / 3 ba / 4 a / 5 liàng / 6 a / 7 jué — lines 1–2 rhyme (ang), lines 4 and 6 rhyme (a), matching the source's rhyme pairs (1–2 -a, 4–6 -e/-a pattern preserved as a/a)."
+}

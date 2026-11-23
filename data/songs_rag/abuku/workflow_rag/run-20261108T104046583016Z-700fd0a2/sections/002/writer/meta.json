@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\"id\": \"V2-01\", \"zh\": \"啊 按不住的 这伤悲\"},\n    {\"id\": \"V2-02\", \"zh\": \"推着我 不肯歇的兽\"},\n    {\"id\": \"V2-03\", \"zh\": \"同一句话 念到掌心起了泡\"}\n  ]\n}",
+  "finished_at": "2026-11-08T10:41:48+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2694,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 1655,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

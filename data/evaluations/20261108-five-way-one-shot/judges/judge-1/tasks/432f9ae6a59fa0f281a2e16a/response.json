@@ -1,0 +1,21 @@
+{
+  "id": "b4d18302-94eb-47dc-8842-107805e84ba3",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“命令”“故意”“订正”“无为”“安宁掺罪”核心词基本对应，但“察觉到故意”略偏“故意を感じて”的被动感受，“凝视着无为”稍增主动观看意味。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"冷峻、自省、带罪感的情绪基本保留，末句“理所当然”语气肯定，略少原句反问的犹疑。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，歌词文体成立；“察觉到故意”稍显生硬，“凝视着无为”略文。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"意象清楚但偏直译，表达平稳，缺少更鲜明的张力。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心词义准确，“感到故意”“观察无为”贴近原句，末句保留疑问语气。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"冷静、疏离、带疑问的情绪方向一致，但表达较平。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":3,\"reason\":\"“感到故意”“观察无为”中文搭配不够自然，像直译；其余尚可。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"语义清楚但意象偏抽象、表达普通。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"“字里带刺 扎人”“划掉所有可能”明显改写原句，加入原文没有的敌意与否定可能；“底下掺进一点罪”也增补了“底下”“一点”等限定。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"emotion\":{\"score\":3,\"reason\":\"尖锐、不安的情绪方向尚可，但比原句更外显、更具攻击性，偏离冷峻内省。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，歌词感较强，但部分表达偏口语化。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“字里带刺”“划掉所有可能”意象鲜明有力，但服务的是改写后的情绪。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“命令”“订正”“安宁掺杂罪”保留核心，但“故意地感受”“无为地观透”把名词/状态副词化，语义偏移明显。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向大致冷静，但“故意地”“无为地”造成机械感，削弱原句的压抑张力。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"naturalness\":{\"score\":2,\"reason\":\"“故意地感受”“无为地观透”中文明显不自然，像生硬套用。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"expressiveness\":{\"score\":2,\"reason\":\"表达含混，抽象副词化使意象空泛。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"“咬住那点敌意”把“故意”改成“敌意”，“旁观那团虚无”把“无为”改成“虚无”，“才完整”增补原文没有的完整感，核心偏移较多。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"emotion\":{\"score\":3,\"reason\":\"冷峻、带罪感的氛围尚在，但“咬住”“才完整”使情绪更戏剧化、更肯定。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文较顺口，歌词节奏感较好。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“咬住那点敌意”“旁观那团虚无”意象鲜明，但部分服务于改写后的语义。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 813,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 1154,
+    "service_tier": "standard"
+  }
+}

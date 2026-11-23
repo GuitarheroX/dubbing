@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"就这样装作在等什么 一直等下去\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [18, 18], \"ok\": false, \"note\": \"字数不足，需补意象到18字\"}\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"从这里我还能重新来过吗\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": false, \"note\": \"字数不足，需补到14字\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:51+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "B1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1632,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 154,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

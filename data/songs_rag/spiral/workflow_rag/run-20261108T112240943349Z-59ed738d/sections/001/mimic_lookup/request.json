@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "query_text": "画好的地图 我亲手撕碎了\n世界停在 那一天的原地\n而我又一次\n把一切 都推给别人\n真没出息啊",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

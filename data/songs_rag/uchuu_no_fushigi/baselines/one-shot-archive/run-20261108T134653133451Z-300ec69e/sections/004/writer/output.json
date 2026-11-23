@@ -1,0 +1,57 @@
+{
+  "section": "C1",
+  "phrases": [
+    {
+      "id": "C1-01",
+      "zh": "星星为什么一直在闪烁",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "少一字，需补"
+      }
+    },
+    {
+      "id": "C1-02",
+      "zh": "云朵为什么在天空游泳",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "少一字，需补"
+      }
+    },
+    {
+      "id": "C1-03",
+      "zh": "人们为什么描绘着梦想",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "少一字，需补"
+      }
+    },
+    {
+      "id": "C1-04",
+      "zh": "答案会不会根本没有",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "少一字，需补"
+      }
+    }
+  ]
+}

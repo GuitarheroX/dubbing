@@ -1,0 +1,57 @@
+{
+  "section": "V2",
+  "phrases": [
+    {
+      "id": "V2-01",
+      "zh": "心事 藏在喉咙说不出口",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          14,
+          14
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    },
+    {
+      "id": "V2-02",
+      "zh": "世间百态 一一浮现",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": false,
+        "note": "差一字，补「在」"
+      }
+    },
+    {
+      "id": "V2-03",
+      "zh": "演着别人的故事 只想惹你回眸",
+      "chars": 13,
+      "self_check": {
+        "budget": [
+          18,
+          18
+        ],
+        "ok": false,
+        "note": "需补足五字"
+      }
+    },
+    {
+      "id": "V2-04",
+      "zh": "oh fly me to the star",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "保留英文"
+      }
+    }
+  ]
+}

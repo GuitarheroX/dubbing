@@ -1,0 +1,515 @@
+{
+  "archive_system_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "archive_files": {
+    "archive/shared.md": "29ea7bbe9aff6898f914509cee638e0cccd8a29d25142a2198af703f3248b2a4",
+    "archive/b.md": "765e6b18f49eb127de3b05c79e64aa63c01334c2d57690667cb8ee78931cfbd5"
+  },
+  "all_historical_workflow_systems_equal_archive": true,
+  "historical_workflow_requests": [
+    {
+      "song": "abuku",
+      "section": "V1",
+      "request": "data/songs_rag/abuku/workflow/run-20261103T172804Z-6698541f/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "abuku",
+      "section": "V2",
+      "request": "data/songs_rag/abuku/workflow/run-20261103T172804Z-6698541f/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "abuku",
+      "section": "B1",
+      "request": "data/songs_rag/abuku/workflow/run-20261103T172804Z-6698541f/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "abuku",
+      "section": "C1",
+      "request": "data/songs_rag/abuku/workflow/run-20261103T172804Z-6698541f/sections/004/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "bara",
+      "section": "V1",
+      "request": "data/songs_rag/bara/workflow/run-20261103T172907Z-f170da0d/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "bara",
+      "section": "B1",
+      "request": "data/songs_rag/bara/workflow/run-20261103T172907Z-f170da0d/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "bara",
+      "section": "C1",
+      "request": "data/songs_rag/bara/workflow/run-20261103T172907Z-f170da0d/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "bara",
+      "section": "V2",
+      "request": "data/songs_rag/bara/workflow/run-20261103T172907Z-f170da0d/sections/004/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "bara",
+      "section": "B2",
+      "request": "data/songs_rag/bara/workflow/run-20261103T172907Z-f170da0d/sections/005/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "bara",
+      "section": "C2",
+      "request": "data/songs_rag/bara/workflow/run-20261103T172907Z-f170da0d/sections/006/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "black_shout",
+      "section": "C1",
+      "request": "data/songs_rag/black_shout/workflow/run-20261103T173006Z-50c00ad2/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "black_shout",
+      "section": "V1",
+      "request": "data/songs_rag/black_shout/workflow/run-20261103T173006Z-50c00ad2/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "black_shout",
+      "section": "B1",
+      "request": "data/songs_rag/black_shout/workflow/run-20261103T173006Z-50c00ad2/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "black_shout",
+      "section": "C2",
+      "request": "data/songs_rag/black_shout/workflow/run-20261103T173006Z-50c00ad2/sections/004/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "section": "V1",
+      "request": "data/songs_rag/fly_me_to_the_star/workflow/run-20261103T173144Z-414b3bc6/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "section": "V2",
+      "request": "data/songs_rag/fly_me_to_the_star/workflow/run-20261103T173144Z-414b3bc6/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "section": "C1",
+      "request": "data/songs_rag/fly_me_to_the_star/workflow/run-20261103T173144Z-414b3bc6/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "section": "B1",
+      "request": "data/songs_rag/fly_me_to_the_star/workflow/run-20261103T173144Z-414b3bc6/sections/004/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "section": "O1",
+      "request": "data/songs_rag/fly_me_to_the_star/workflow/run-20261103T173144Z-414b3bc6/sections/005/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "fuusen",
+      "section": "V1",
+      "request": "data/songs_rag/fuusen/workflow/run-20261103T173258Z-7f90b59b/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "fuusen",
+      "section": "B1",
+      "request": "data/songs_rag/fuusen/workflow/run-20261103T173258Z-7f90b59b/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "fuusen",
+      "section": "C1",
+      "request": "data/songs_rag/fuusen/workflow/run-20261103T173258Z-7f90b59b/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "himawari",
+      "section": "I1",
+      "request": "data/songs_rag/himawari/workflow/run-20261103T173335Z-c1212659/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "himawari",
+      "section": "V1",
+      "request": "data/songs_rag/himawari/workflow/run-20261103T173335Z-c1212659/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "himawari",
+      "section": "C1",
+      "request": "data/songs_rag/himawari/workflow/run-20261103T173335Z-c1212659/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "kaijuu",
+      "section": "C1",
+      "request": "data/songs_rag/kaijuu/workflow/run-20261103T173441Z-d37a4eb6/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "kaijuu",
+      "section": "V1",
+      "request": "data/songs_rag/kaijuu/workflow/run-20261103T173441Z-d37a4eb6/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "kaijuu",
+      "section": "C2",
+      "request": "data/songs_rag/kaijuu/workflow/run-20261103T173441Z-d37a4eb6/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "kazeyo",
+      "section": "V1",
+      "request": "data/songs_rag/kazeyo/workflow/run-20261103T175604Z-678d490f/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "kazeyo",
+      "section": "V2",
+      "request": "data/songs_rag/kazeyo/workflow/run-20261103T175604Z-678d490f/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "kazeyo",
+      "section": "B1",
+      "request": "data/songs_rag/kazeyo/workflow/run-20261103T175604Z-678d490f/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "know_me",
+      "section": "V1",
+      "request": "data/songs_rag/know_me/workflow/run-20261103T173547Z-6b93189f/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "know_me",
+      "section": "V2",
+      "request": "data/songs_rag/know_me/workflow/run-20261103T173547Z-6b93189f/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "know_me",
+      "section": "B1",
+      "request": "data/songs_rag/know_me/workflow/run-20261103T173547Z-6b93189f/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "know_me",
+      "section": "C1",
+      "request": "data/songs_rag/know_me/workflow/run-20261103T173547Z-6b93189f/sections/004/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "kotozute",
+      "section": "V1",
+      "request": "data/songs_rag/kotozute/workflow/run-20261103T173709Z-eb63194f/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "kotozute",
+      "section": "V2",
+      "request": "data/songs_rag/kotozute/workflow/run-20261103T173709Z-eb63194f/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "kotozute",
+      "section": "B1",
+      "request": "data/songs_rag/kotozute/workflow/run-20261103T173709Z-eb63194f/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "kotozute",
+      "section": "C1",
+      "request": "data/songs_rag/kotozute/workflow/run-20261103T173709Z-eb63194f/sections/004/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "section": "V1",
+      "request": "data/songs_rag/kumo_wo_nuke_kazashimo_e_watashi_dake/workflow/run-20261103T175813Z-a6bbcc10/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "section": "V2",
+      "request": "data/songs_rag/kumo_wo_nuke_kazashimo_e_watashi_dake/workflow/run-20261103T175813Z-a6bbcc10/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "section": "C1",
+      "request": "data/songs_rag/kumo_wo_nuke_kazashimo_e_watashi_dake/workflow/run-20261103T175813Z-a6bbcc10/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "love-2000",
+      "section": "I1",
+      "request": "data/songs_rag/love-2000/workflow/run-20261103T173807Z-8b301b77/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "love-2000",
+      "section": "V1",
+      "request": "data/songs_rag/love-2000/workflow/run-20261103T173807Z-8b301b77/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "love-2000",
+      "section": "B1",
+      "request": "data/songs_rag/love-2000/workflow/run-20261103T173807Z-8b301b77/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "love-2000",
+      "section": "C1",
+      "request": "data/songs_rag/love-2000/workflow/run-20261103T173807Z-8b301b77/sections/004/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "roshin-yukai",
+      "section": "V1",
+      "request": "data/songs_rag/roshin-yukai/workflow/run-20261103T174058Z-7b2391d9/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "roshin-yukai",
+      "section": "B1",
+      "request": "data/songs_rag/roshin-yukai/workflow/run-20261103T174058Z-7b2391d9/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "roshin-yukai",
+      "section": "C1",
+      "request": "data/songs_rag/roshin-yukai/workflow/run-20261103T174058Z-7b2391d9/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "roshin-yukai",
+      "section": "V2",
+      "request": "data/songs_rag/roshin-yukai/workflow/run-20261103T174058Z-7b2391d9/sections/004/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "roshin-yukai",
+      "section": "C2",
+      "request": "data/songs_rag/roshin-yukai/workflow/run-20261103T174058Z-7b2391d9/sections/005/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "roshin-yukai",
+      "section": "V3",
+      "request": "data/songs_rag/roshin-yukai/workflow/run-20261103T174058Z-7b2391d9/sections/006/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "roshin-yukai",
+      "section": "B2",
+      "request": "data/songs_rag/roshin-yukai/workflow/run-20261103T174058Z-7b2391d9/sections/007/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "roshin-yukai",
+      "section": "C3",
+      "request": "data/songs_rag/roshin-yukai/workflow/run-20261103T174058Z-7b2391d9/sections/008/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "sayonara-penguin",
+      "section": "V1",
+      "request": "data/songs_rag/sayonara-penguin/workflow/run-20261103T174149Z-3786896f/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "sayonara-penguin",
+      "section": "B1",
+      "request": "data/songs_rag/sayonara-penguin/workflow/run-20261103T174149Z-3786896f/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "sayonara-penguin",
+      "section": "C1",
+      "request": "data/songs_rag/sayonara-penguin/workflow/run-20261103T174149Z-3786896f/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "shiori",
+      "section": "V1",
+      "request": "data/songs_rag/shiori/workflow/run-20261103T175921Z-8b43b279/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "shiori",
+      "section": "V2",
+      "request": "data/songs_rag/shiori/workflow/run-20261103T175921Z-8b43b279/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "shiori",
+      "section": "C1",
+      "request": "data/songs_rag/shiori/workflow/run-20261103T175921Z-8b43b279/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "sonare",
+      "section": "V1",
+      "request": "data/songs_rag/sonare/workflow/run-20261103T174411Z-5418a158/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "sonare",
+      "section": "B1",
+      "request": "data/songs_rag/sonare/workflow/run-20261103T174411Z-5418a158/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "sonare",
+      "section": "C1",
+      "request": "data/songs_rag/sonare/workflow/run-20261103T174411Z-5418a158/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "spiral",
+      "section": "V1",
+      "request": "data/songs_rag/spiral/workflow/run-20261103T175710Z-0f0e99f4/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "spiral",
+      "section": "B1",
+      "request": "data/songs_rag/spiral/workflow/run-20261103T175710Z-0f0e99f4/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "spiral",
+      "section": "C1",
+      "request": "data/songs_rag/spiral/workflow/run-20261103T175710Z-0f0e99f4/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "spiral",
+      "section": "O1",
+      "request": "data/songs_rag/spiral/workflow/run-20261103T175710Z-0f0e99f4/sections/004/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "section": "V1",
+      "request": "data/songs_rag/uchuu_no_fushigi/workflow/run-20261103T174558Z-df0104dc/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "section": "V2",
+      "request": "data/songs_rag/uchuu_no_fushigi/workflow/run-20261103T174558Z-df0104dc/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "section": "B1",
+      "request": "data/songs_rag/uchuu_no_fushigi/workflow/run-20261103T174558Z-df0104dc/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "section": "C1",
+      "request": "data/songs_rag/uchuu_no_fushigi/workflow/run-20261103T174558Z-df0104dc/sections/004/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "section": "D1",
+      "request": "data/songs_rag/uchuu_no_fushigi/workflow/run-20261103T174558Z-df0104dc/sections/005/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "section": "V3",
+      "request": "data/songs_rag/uchuu_no_fushigi/workflow/run-20261103T174558Z-df0104dc/sections/006/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "section": "O1",
+      "request": "data/songs_rag/uchuu_no_fushigi/workflow/run-20261103T174558Z-df0104dc/sections/007/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "wasurete-kudasai",
+      "section": "I1",
+      "request": "data/songs_rag/wasurete-kudasai/workflow/run-20261103T174821Z-8ba922d3/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "wasurete-kudasai",
+      "section": "V1",
+      "request": "data/songs_rag/wasurete-kudasai/workflow/run-20261103T174821Z-8ba922d3/sections/002/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "wasurete-kudasai",
+      "section": "B1",
+      "request": "data/songs_rag/wasurete-kudasai/workflow/run-20261103T174821Z-8ba922d3/sections/003/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "wasurete-kudasai",
+      "section": "C1",
+      "request": "data/songs_rag/wasurete-kudasai/workflow/run-20261103T174821Z-8ba922d3/sections/004/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "wasurete-kudasai",
+      "section": "V2",
+      "request": "data/songs_rag/wasurete-kudasai/workflow/run-20261103T174821Z-8ba922d3/sections/005/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "wasurete-kudasai",
+      "section": "B2",
+      "request": "data/songs_rag/wasurete-kudasai/workflow/run-20261103T174821Z-8ba922d3/sections/006/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "wasurete-kudasai",
+      "section": "C2",
+      "request": "data/songs_rag/wasurete-kudasai/workflow/run-20261103T174821Z-8ba922d3/sections/007/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "wasurete-kudasai",
+      "section": "V3",
+      "request": "data/songs_rag/wasurete-kudasai/workflow/run-20261103T174821Z-8ba922d3/sections/008/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "section": "V1",
+      "request": "data/songs_rag/yoake-to-hotaru/workflow/run-20261103T174901Z-b8ccef36/sections/001/B/request.json",
+      "system_equal_archive": true
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "section": "C1",
+      "request": "data/songs_rag/yoake-to-hotaru/workflow/run-20261103T174901Z-b8ccef36/sections/002/B/request.json",
+      "system_equal_archive": true
+    }
+  ],
+  "note": "归档组系统提示为 archive/shared.md 与 archive/b.md 原文拼接；输入构造、空分析、单次调用方式与新版 one-shot 相同。"
+}

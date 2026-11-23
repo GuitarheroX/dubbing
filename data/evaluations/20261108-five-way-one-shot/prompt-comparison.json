@@ -1,0 +1,165 @@
+{
+  "warning": "当前 one-shot 使用新版 writer 提示（字数仅大致参考，后续另有人对齐），历史 workflow 使用旧版严格字数提示；这不是仅移除 perceiver/reviewer 的严格架构消融。",
+  "profiles": [
+    {
+      "song": "abuku",
+      "workflow_request": "data/songs_rag/abuku/workflow/run-20261103T172804Z-6698541f/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/abuku/baselines/one-shot/run-20261108T132336807909Z-10c6b56b/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "bara",
+      "workflow_request": "data/songs_rag/bara/workflow/run-20261103T172907Z-f170da0d/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/bara/baselines/one-shot/run-20261108T132336808114Z-79f942b5/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "black_shout",
+      "workflow_request": "data/songs_rag/black_shout/workflow/run-20261103T173006Z-50c00ad2/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/black_shout/baselines/one-shot/run-20261108T132336808139Z-ecf26e43/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "workflow_request": "data/songs_rag/fly_me_to_the_star/workflow/run-20261103T173144Z-414b3bc6/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/fly_me_to_the_star/baselines/one-shot/run-20261108T132342648991Z-685855b4/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "fuusen",
+      "workflow_request": "data/songs_rag/fuusen/workflow/run-20261103T173258Z-7f90b59b/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/fuusen/baselines/one-shot/run-20261108T132342697236Z-37506fd1/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "himawari",
+      "workflow_request": "data/songs_rag/himawari/workflow/run-20261103T173335Z-c1212659/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/himawari/baselines/one-shot/run-20261108T132343604679Z-eacca8d3/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "kaijuu",
+      "workflow_request": "data/songs_rag/kaijuu/workflow/run-20261103T173441Z-d37a4eb6/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/kaijuu/baselines/one-shot/run-20261108T132345937258Z-9f50c486/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "kazeyo",
+      "workflow_request": "data/songs_rag/kazeyo/workflow/run-20261103T175604Z-678d490f/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/kazeyo/baselines/one-shot/run-20261108T132346566740Z-cfab27ae/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "know_me",
+      "workflow_request": "data/songs_rag/know_me/workflow/run-20261103T173547Z-6b93189f/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/know_me/baselines/one-shot/run-20261108T132348192500Z-da4f99bc/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "kotozute",
+      "workflow_request": "data/songs_rag/kotozute/workflow/run-20261103T173709Z-eb63194f/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/kotozute/baselines/one-shot/run-20261108T132349824662Z-3fb5ff66/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "workflow_request": "data/songs_rag/kumo_wo_nuke_kazashimo_e_watashi_dake/workflow/run-20261103T175813Z-a6bbcc10/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/kumo_wo_nuke_kazashimo_e_watashi_dake/baselines/one-shot/run-20261108T132350522579Z-dc6e8ee8/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "love-2000",
+      "workflow_request": "data/songs_rag/love-2000/workflow/run-20261103T173807Z-8b301b77/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/love-2000/baselines/one-shot/run-20261108T132353588490Z-7145bb70/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "roshin-yukai",
+      "workflow_request": "data/songs_rag/roshin-yukai/workflow/run-20261103T174058Z-7b2391d9/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/roshin-yukai/baselines/one-shot/run-20261108T132354376225Z-ba43879e/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "sayonara-penguin",
+      "workflow_request": "data/songs_rag/sayonara-penguin/workflow/run-20261103T174149Z-3786896f/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/sayonara-penguin/baselines/one-shot/run-20261108T132355404893Z-5b347582/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "shiori",
+      "workflow_request": "data/songs_rag/shiori/workflow/run-20261103T175921Z-8b43b279/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/shiori/baselines/one-shot/run-20261108T132358273350Z-074c6366/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "sonare",
+      "workflow_request": "data/songs_rag/sonare/workflow/run-20261103T174411Z-5418a158/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/sonare/baselines/one-shot/run-20261108T132358850519Z-0826a389/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "spiral",
+      "workflow_request": "data/songs_rag/spiral/workflow/run-20261103T175710Z-0f0e99f4/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/spiral/baselines/one-shot/run-20261108T132402747041Z-05b8b4d7/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "workflow_request": "data/songs_rag/uchuu_no_fushigi/workflow/run-20261103T174558Z-df0104dc/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/uchuu_no_fushigi/baselines/one-shot/run-20261108T132402831875Z-901bb625/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "wasurete-kudasai",
+      "workflow_request": "data/songs_rag/wasurete-kudasai/workflow/run-20261103T174821Z-8ba922d3/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/wasurete-kudasai/baselines/one-shot/run-20261108T132406388383Z-e65e3315/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "workflow_request": "data/songs_rag/yoake-to-hotaru/workflow/run-20261103T174901Z-b8ccef36/sections/001/B/request.json",
+      "one_shot_request": "data/songs_rag/yoake-to-hotaru/baselines/one-shot/run-20261108T132408473102Z-501754ad/sections/001/writer/request.json",
+      "system_prompts_equal": false,
+      "workflow_system_hash": "ffcced88395e06fa908a98750b08716581ce7d9a38809372ac008a1250f10cc4",
+      "one_shot_system_hash": "50a418e30408cd0e3a48ecf2acea9971cc961028da74cda1e0434943895ae5d3"
+    }
+  ]
+}

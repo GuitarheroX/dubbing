@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C1",
+    "query_text": "再见啦 小企鹅\n摇摇摆摆向前走 也要笑着啊\n爱上这世界的时候 记得眨眨眼\n风穿过了长街 风带走我和你\n一滴眼泪落下来\n再见啦 小企鹅",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

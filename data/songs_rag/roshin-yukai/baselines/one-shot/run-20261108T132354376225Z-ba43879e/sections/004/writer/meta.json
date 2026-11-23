@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\"id\": \"V2-01\", \"zh\": \"阳台外的天际\"},\n    {\"id\": \"V2-02\", \"zh\": \"楼梯上脚步声渐渐逼近\"},\n    {\"id\": \"V2-03\", \"zh\": \"天色开始阴沉\"},\n    {\"id\": \"V2-04\", \"zh\": \"在窗玻璃 在房间坠落\"},\n    {\"id\": \"V2-05\", \"zh\": \"暮色无声地扩散\"},\n    {\"id\": \"V2-06\", \"zh\": \"夕阳红得像哭肿的眼睛\"},\n    {\"id\": \"V2-07\", \"zh\": \"像要融化般 一点一点\"},\n    {\"id\": \"V2-08\", \"zh\": \"一点一点死去的世界\"},\n    {\"id\": \"V2-09\", \"zh\": \"梦见双手扼住你纤细的颈\"},\n    {\"id\": \"V2-10\", \"zh\": \"春风里摇动的窗帘\"},\n    {\"id\": \"V2-11\", \"zh\": \"从干裂的嘴唇间\"},\n    {\"id\": \"V2-12\", \"zh\": \"零落的言语像泡沫\"}\n  ]\n}",
+  "finished_at": "2026-11-08T13:24:01+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "section": "V2",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 2898,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2048,
+    "output_tokens": 263,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

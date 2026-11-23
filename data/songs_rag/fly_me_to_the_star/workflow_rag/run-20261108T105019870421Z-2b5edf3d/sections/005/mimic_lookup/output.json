@@ -1,0 +1,46 @@
+{
+  "section": "O1",
+  "query_text": "带我 走吧\noh 带我飞向星",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "骆一禾_luoyihe/带路人#s3",
+      "title": "带路人",
+      "poet": "骆一禾",
+      "poem_id": "骆一禾_luoyihe/带路人",
+      "stanza_idx": 3,
+      "score": 0.679585,
+      "text": "向前走吧带路人\n你看头上满天的星\n我和它们差不多\n一生里总有一次\n能把行人指引"
+    },
+    {
+      "chunk_id": "南人_nanren/清明时节#s3",
+      "title": "清明时节",
+      "poet": "南人",
+      "poem_id": "南人_nanren/清明时节",
+      "stanza_idx": 3,
+      "score": 0.614658,
+      "text": "眼看着就要带着我飞起来\n飞进白色的天堂"
+    },
+    {
+      "chunk_id": "骆一禾_luoyihe/带路人#s2",
+      "title": "带路人",
+      "poet": "骆一禾",
+      "poem_id": "骆一禾_luoyihe/带路人",
+      "stanza_idx": 2,
+      "score": 0.59984,
+      "text": "向前走吧带路人\n穿过那片枫树林\n探险队就在远方宿营\n现在我是带路人"
+    },
+    {
+      "chunk_id": "手心_shouxin/苍茫#s2",
+      "title": "苍茫",
+      "poet": "手心",
+      "poem_id": "手心_shouxin/苍茫",
+      "stanza_idx": 2,
+      "score": 0.597439,
+      "text": "探出头去\n我看到不只一颗星星\n顺着手势\n一起到达心之所向的远方"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "section": "V2",
+  "phrases": [
+    {
+      "id": "V2-01",
+      "zh": "笨拙地 原地打转",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": true,
+        "note": "5+5 对齐旋律切分"
+      }
+    },
+    {
+      "id": "V2-02",
+      "zh": "从受伤的可能 转身逃开",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": true,
+        "note": "8+4 对齐"
+      }
+    },
+    {
+      "id": "V2-03",
+      "zh": "现实和笔记本间 来回往返 独自安慰",
+      "chars": 18,
+      "self_check": {
+        "budget": [
+          18,
+          18
+        ],
+        "ok": true,
+        "note": "4+3+3+3+5 五段对齐"
+      }
+    },
+    {
+      "id": "V2-05",
+      "zh": "这世界为何如此 难以活下去",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": true,
+        "note": "6+5 对齐"
+      }
+    },
+    {
+      "id": "V2-06",
+      "zh": "可是啊 可是啊",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "3+3 对齐"
+      }
+    }
+  ]
+}

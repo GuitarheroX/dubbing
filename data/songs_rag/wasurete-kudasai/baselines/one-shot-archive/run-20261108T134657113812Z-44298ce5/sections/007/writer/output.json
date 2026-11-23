@@ -1,0 +1,83 @@
+{
+  "section": "C2",
+  "phrases": [
+    {
+      "id": "C2-01",
+      "zh": "收下这颗心",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "与C1-01保持完全重复"
+      }
+    },
+    {
+      "id": "C2-02",
+      "zh": "捧一束花给你",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "与C1-02保持完全重复"
+      }
+    },
+    {
+      "id": "C2-03",
+      "zh": "摇曳的长发 任它随风飘散吧",
+      "chars": 15,
+      "self_check": {
+        "budget": [
+          15,
+          15
+        ],
+        "ok": true,
+        "note": "与C1-03保持完全重复，空格处对应旋律分段"
+      }
+    },
+    {
+      "id": "C2-04",
+      "zh": "留一句话吧",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "与C1-04保持完全重复"
+      }
+    },
+    {
+      "id": "C2-05",
+      "zh": "哼你那段鼻歌",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "与C1-05保持完全重复"
+      }
+    },
+    {
+      "id": "C2-06",
+      "zh": "长长迷路尽头 请将我放下",
+      "chars": 16,
+      "self_check": {
+        "budget": [
+          16,
+          16
+        ],
+        "ok": true,
+        "note": "与C1-06保持完全重复，空格处对应旋律分段"
+      }
+    }
+  ]
+}

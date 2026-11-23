@@ -1,0 +1,188 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心意思基本准确，但“从未能察觉”略强化为始终未察觉，“太爱撒娇”稍偏可爱化。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "保留自省与温柔转向，但“太爱撒娇”使语气偏轻甜。",
+          "phrase_ids": [
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，歌词感尚可；“再去爱他人”稍书面。",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但意象普通，情绪推进较平。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“一直任性撒娇吧”把推测语气和“甘えてた”偏成任性，语义有偏移。",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "自省感被“任性”削弱，整体仍保留转向爱人的方向。",
+          "phrase_ids": [
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "句子顺口，“才想去爱别人啊”自然。",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，“任性撒娇”略俗套。",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“未曾察觉”“太依赖”“先爱自己再爱别人”准确对应原文。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "自省与温柔方向保留，但语气较平。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文简洁顺口，符合歌词文体。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "准确但表达较常规，缺少鲜明意象。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“太习惯被宠爱”把“甘えてた”改为被宠爱，且末句“把心打开 拥抱别人”扩展较多。",
+          "phrase_ids": [
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向大体保留，但“被宠爱”改变自省角度，末句更外放。",
+          "phrase_ids": [
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文流畅，但“再把心打开 拥抱别人”稍显散文化。",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“把心打开 拥抱别人”较有画面感，服务主题。",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“太习惯被你爱”把“甘えてた”明确改为被对方爱，人物关系偏移；“张开双手”也属增补。",
+          "phrase_ids": [
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "温柔自省仍在，但“被你爱”使情绪更指向特定关系。",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，歌词感尚可。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“张开双手 去爱别人”有动作感，表达较鲜明。",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        }
+      }
+    }
+  ]
+}

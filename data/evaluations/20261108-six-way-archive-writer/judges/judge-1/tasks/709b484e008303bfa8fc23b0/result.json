@@ -1,0 +1,240 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "保留普通/尺子/量不准/不安/站立核心，但V1-05“任风吹过身体”改写了“為すがまま”的被动放任语义。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04",
+            "V1-05"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "迷茫与无力感基本保留，V1-05意象转向风，情绪略偏。",
+          "phrase_ids": [
+            "V1-04",
+            "V1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文顺口，歌词文体自然。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04",
+            "V1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“不安的雾”“任风吹过”意象清晰，但后者偏离原意。",
+          "phrase_ids": [
+            "V1-04",
+            "V1-05"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "核心词保留，但V1-02增“刻着别人名字”、V1-03增“都不像我”、V1-05增“淹没我 不走”，补充超出原文。",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03",
+            "V1-05"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "不安与自我怀疑情绪方向一致且较强烈。",
+          "phrase_ids": [
+            "V1-04",
+            "V1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体可唱顺口，个别句略堆叠。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“堵在胸口”“淹没我”表达有力，但属增饰。",
+          "phrase_ids": [
+            "V1-04",
+            "V1-05"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "普通/理所当然、手中尺子、无法丈量、吐出吸入不安、任其摆布呆立均准确对应。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04",
+            "V1-05"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "迷茫无力与停滞感充分保留。",
+          "phrase_ids": [
+            "V1-03",
+            "V1-04",
+            "V1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "语义通顺，但“呆立不动”“任其摆布”稍书面，歌词感略平。",
+          "phrase_ids": [
+            "V1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "准确但表达偏直译，意象力度普通。",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03",
+            "V1-05"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "保留尺子量不准与不安，但V1-01“谁定的”改为质问、V1-02“刻度全是别人”为增义，V1-04“沉进肺里”改写。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "不安与被动情绪基本一致，质问语气略强化。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "较顺口，个别表达如“短一截”偏口语但可接受。",
+          "phrase_ids": [
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“刻度全是别人”“沉进肺里”意象鲜明，但属增饰。",
+          "phrase_ids": [
+            "V1-02",
+            "V1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "保留普通/尺子/量不清/不安/站立，但V1-03“量不出自己的形状”与V1-04“不安的潮水”为改写增义。",
+          "phrase_ids": [
+            "V1-03",
+            "V1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "迷茫无力方向一致，情绪略泛化。",
+          "phrase_ids": [
+            "V1-03",
+            "V1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，部分句偏散文化。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "“不安的潮水”等意象常见，表达普通。",
+          "phrase_ids": [
+            "V1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "普通/理所当然、手中尺子、无法测量、吐出吸入不安、任其摆布伫立均准确对应。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04",
+            "V1-05"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "迷茫、无力与停滞情绪完整保留。",
+          "phrase_ids": [
+            "V1-03",
+            "V1-04",
+            "V1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "通顺但偏书面，“伫立不动”歌词感稍弱。",
+          "phrase_ids": [
+            "V1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "准确但表达平实，意象力度一般。",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03",
+            "V1-05"
+          ]
+        }
+      }
+    }
+  ]
+}

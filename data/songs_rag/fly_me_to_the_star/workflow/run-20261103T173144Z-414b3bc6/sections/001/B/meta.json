@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173016_b_11990f",
+  "input_hash": "11990f310fcb07e21e50f8378ea0d9c0397307446b2f1911cfe32c9f9cd35a62",
+  "finished_at": "2026-11-03T17:30:33+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 1302,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2816,
+    "output_tokens": 3116,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"我一直 悄悄 凝望着你 不说话\",\n      \"chars\": 12,\n      \"self_check\": {\n        \"budget\": [12, 12],\n        \"ok\": true,\n        \"note\": \"三段空格对应旋律的 3/2/4/3 切分，「不说话」收住句尾，不拖虚字\"\n      }\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"孤独好像 被留在 门外 的夜色\",\n      \"chars\": 12,\n      \"self_check\": {\n        \"budget\": [12, 12],\n        \"ok\": true,\n        \"note\": \"按 4/3/2/3 断句；「的夜色」三个字放在最后一段音符上\"\n      }\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"今夜的 月亮也 弯起眼 对我笑\",\n      \"chars\": 12,\n      \"self_check\": {\n        \"budget\": [12, 12],\n        \"ok\": true,\n        \"note\": \"四段各三字，与 [3,3,3,3] 对齐；「弯起眼」用新月弯弯的形象\"\n      }\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"转过来 看着我\",\n      \"chars\": 6,\n      \"self_check\": {\n        \"budget\": [6, 6],\n        \"ok\": true,\n        \"note\": \"3+3 两段，正好是两个三字节奏\"\n      }\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"带 我飞去星河\",\n      \"chars\": 6,\n      \"self_check\": {\n        \"budget\": [6, 6],\n        \"ok\": true,\n        \"note\": \"第一个字占原曲「oh」那一拍，后面五字连唱，对应 [1,5]\"\n      }\n    }\n  ]\n}",
+  "migrated_from": "20261103T173016_b_11990f"
+}

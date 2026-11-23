@@ -1,0 +1,21 @@
+{
+  "id": "40734f3b-9c2c-4293-8774-17a3d0e06837",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B在V1-01用“总是”和“渴求”更贴近原文反复、强烈的情感，V1-03“走下去”比A的“行走”更自然，V1-04“像断了气一样”口语感更强、更贴合原文比喻；A的“仿佛已断了气息”稍显书面。两版核心语义均准确。\",\"phrase_ids\":[\"V1-01\",\"V1-03\",\"V1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 992,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 105,
+    "service_tier": "standard"
+  }
+}

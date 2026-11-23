@@ -1,0 +1,9 @@
+{
+  "run": "run-20261108T134624626797Z-15cc8a50",
+  "updated_at": "2026-11-08T13:46:33+00:00",
+  "song": "know_me",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "passed": 11,
+  "total": 20
+}

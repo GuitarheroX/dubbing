@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\"id\": \"C1-01\", \"zh\": \"向着炉心 那片蓝\"},\n    {\"id\": \"C1-02\", \"zh\": \"好想纵身跳进去 化成一片光\"},\n    {\"id\": \"C1-03\", \"zh\": \"被那一片湛蓝的光 温柔地吞没 多美\"},\n    {\"id\": \"C1-04\", \"zh\": \"向着炉心 那片蓝\"},\n    {\"id\": \"C1-05\", \"zh\": \"倘若就这样跳进去 又会怎样\"},\n    {\"id\": \"C1-06\", \"zh\": \"仿佛一切过错 都被原谅 连我也一样\"}\n  ]\n}",
+  "finished_at": "2026-11-08T11:13:09+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 4885,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1792,
+    "output_tokens": 1141,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

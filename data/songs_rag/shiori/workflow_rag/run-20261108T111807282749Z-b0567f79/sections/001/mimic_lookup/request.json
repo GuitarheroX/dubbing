@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "query_text": "什么才算普通 什么才算应该\n手里这把尺子 刻度都是别人\n怎么量 都差一截 都不像我\n吐出去又吸回来 还是那口不安\n我就这样站着不动 任它把我淹没",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

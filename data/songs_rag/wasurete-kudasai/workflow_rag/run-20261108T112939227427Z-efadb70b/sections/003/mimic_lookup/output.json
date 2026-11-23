@@ -1,0 +1,46 @@
+{
+  "section": "B1",
+  "query_text": "想着我 想着我 想着我",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "紫鹃_zijuan/我想#s8",
+      "title": "我想",
+      "poet": "紫鹃",
+      "poem_id": "紫鹃_zijuan/我想",
+      "stanza_idx": 8,
+      "score": 0.769663,
+      "text": "我想\n我想\n我想"
+    },
+    {
+      "chunk_id": "丑石_choushi/我在想#s4",
+      "title": "我在想",
+      "poet": "丑石",
+      "poem_id": "丑石_choushi/我在想",
+      "stanza_idx": 4,
+      "score": 0.739983,
+      "text": "我在想"
+    },
+    {
+      "chunk_id": "左净_zuojing/变形#s1",
+      "title": "变形",
+      "poet": "左净",
+      "poem_id": "左净_zuojing/变形",
+      "stanza_idx": 1,
+      "score": 0.728491,
+      "text": "我想着我就是你\n亲爱的\n我就是你"
+    },
+    {
+      "chunk_id": "丑石_choushi/珩琅山#s132",
+      "title": "珩琅山",
+      "poet": "丑石",
+      "poem_id": "丑石_choushi/珩琅山",
+      "stanza_idx": 132,
+      "score": 0.688418,
+      "text": "心里念着"
+    }
+  ]
+}

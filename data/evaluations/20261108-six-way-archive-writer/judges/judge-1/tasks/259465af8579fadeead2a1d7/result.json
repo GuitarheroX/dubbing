@@ -1,0 +1,250 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达“一切空掉后怪你”“反复殴打”“连这也能吞下吗”三层核心，且“怨你的话”合理补足宾语。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "保留受害者质问与施害者吞噬意象的压抑、控诉语气。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文顺口，歌词文体自然，“手掌一遍遍落下”有画面。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 5,
+          "reason": "“空掉”“咽得干净”意象鲜明，服务主题。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "C1-02把“我这样说”误为“你这样说”，且“挥拳”虽近但主语关系偏移；C1-03“被你吞下”尚可。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "控诉与吞噬感大体在，但C1-02主语错位削弱受害者视角。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体可读，“你这样说 一次次挥拳不停”略生硬。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，“挥拳不停”较直白。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心三层基本保留，但C1-03“那一切”指代模糊，弱化“连这也能吞下”的质问对象。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "控诉与压抑感保留，但句式偏长稍稀释情绪。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“就算这样说着无数次继续挥拳打下去”冗长生硬，“那一切是否都能”拗口。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "有表达但偏散文化，意象不够凝练。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "C1-01、C1-02基本准确，但C1-03增“痛”并改为“你也能吞下”，偏离“连这（话/殴打）也吞下”的宾语。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "控诉与吞噬感保留，C1-03“连这痛”强化痛感但略改焦点。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "简洁顺口，“连这痛 你也能干净吞下吗”自然。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“连这痛”意象有力，但语义偏移。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "C1-01、C1-02保留核心，但C1-02把“这样说”扩为“喊着全都怪你”尚可；C1-03把“吞下”对象改为“落下的拳头”，偏离原句质问“连这也能吞下吗”。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "控诉与暴力压抑感强，但C1-03焦点转移。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“手一次次重重落下”自然。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“重重落下”“咽得干干净净”意象鲜明。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "三层核心基本准确，C1-02“打了好多次”略弱化“这样说”与“继续”的持续感。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向对，但表达平淡，控诉力度不足。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "简洁可读，“这样说着继续打了好多次”稍口语松散。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，缺少鲜明意象。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03"
+          ]
+        }
+      }
+    }
+  ]
+}

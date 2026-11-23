@@ -1,0 +1,44 @@
+{
+  "section": "I1",
+  "phrases": [
+    {
+      "id": "I1-01",
+      "zh": "把我的心啊",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    },
+    {
+      "id": "I1-02",
+      "zh": "献你一束花",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    },
+    {
+      "id": "I1-03",
+      "zh": "摇曳的长发任它随风飘散吧",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          15,
+          15
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "f987b6c8-a717-44b3-b87d-d0872df24b55",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"保留吃星、未来到过去、反复咀嚼融化饮下的核心动作，但“落满舌尖”略增意象，“咽几十遍”把次数移到咽的动作上。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-05\",\"V1-06\"]},\"emotion\":{\"score\":4,\"reason\":\"吞食星群的奇诡、循环感基本保留，语气偏轻巧但方向一致。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"“一口又一口”“一颗又一颗”顺口，“融化在喉咙喝完”稍显断裂。\",\"phrase_ids\":[\"V1-01\",\"V1-04\",\"V1-06\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“星落满舌尖”“嚼碎星屑”意象鲜明，服务吞食星空的主题。\",\"phrase_ids\":[\"V1-02\",\"V1-05\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心动作保留，“吃颗星”把原文未明说的宾语具体化，“咽到无味”是合理补充但略改原意。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-05\",\"V1-06\"]},\"emotion\":{\"score\":4,\"reason\":\"缓慢吞食星群的氛围一致，略带抒情化。\",\"phrase_ids\":[\"V1-01\",\"V1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“溶成水以后喝下”自然。\",\"phrase_ids\":[\"V1-06\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“铺满舌尖”“嚼成碎末”有画面感。\",\"phrase_ids\":[\"V1-02\",\"V1-05\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"吃星、未来倒流回过去、反复咀嚼融化饮尽均保留，“满天星”略泛化星群。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-05\",\"V1-06\"]},\"emotion\":{\"score\":4,\"reason\":\"吞食与循环的情绪方向一致，稍平。\",\"phrase_ids\":[\"V1-01\",\"V1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"“慢慢吞下”“一口一口吞下”自然，“融化了就饮尽”可理解。\",\"phrase_ids\":[\"V1-01\",\"V1-04\",\"V1-06\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象较常规，缺少鲜明冲击。\",\"phrase_ids\":[\"V1-02\",\"V1-05\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"“渐渐吃掉”“按顺序吃掉”“咀嚼几十次”“融化了就喝下”准确对应原文动作与顺序。\",\"phrase_ids\":[\"V1-01\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\"]},\"emotion\":{\"score\":3,\"reason\":\"语义准确但语气偏说明性，奇诡吞食感被削弱。\",\"phrase_ids\":[\"V1-01\",\"V1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文通顺，“按顺序吃掉”稍显直白。\",\"phrase_ids\":[\"V1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"“红与蓝的群星”尚可，整体表达普通。\",\"phrase_ids\":[\"V1-02\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“星系”偏离“星々”，“穿梭”改动了吃的时间方向，“反复咀嚼几十回里”语义含混。\",\"phrase_ids\":[\"V1-02\",\"V1-03\",\"V1-05\"]},\"emotion\":{\"score\":3,\"reason\":\"吞食氛围仍在，但“穿梭”使动作感偏移。\",\"phrase_ids\":[\"V1-03\"]},\"naturalness\":{\"score\":2,\"reason\":\"“反复咀嚼几十回里”“饮入腹”生硬不自然。\",\"phrase_ids\":[\"V1-05\",\"V1-06\"]},\"expressiveness\":{\"score\":2,\"reason\":\"表达含混，“那星系”“饮入腹”削弱画面。\",\"phrase_ids\":[\"V1-02\",\"V1-06\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"吃星、未来到过去、反复咬碎融化喝下均保留，“一一咀嚼”对应顺序吃。\",\"phrase_ids\":[\"V1-01\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\"]},\"emotion\":{\"score\":4,\"reason\":\"短句节奏保留循环吞食的奇诡感。\",\"phrase_ids\":[\"V1-01\",\"V1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"断句式歌词自然，“融化后就喝下”顺口。\",\"phrase_ids\":[\"V1-06\"]},\"expressiveness\":{\"score\":3,\"reason\":\"意象清楚但较简省，表现力中等。\",\"phrase_ids\":[\"V1-02\",\"V1-05\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1182,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 1174,
+    "service_tier": "standard"
+  }
+}

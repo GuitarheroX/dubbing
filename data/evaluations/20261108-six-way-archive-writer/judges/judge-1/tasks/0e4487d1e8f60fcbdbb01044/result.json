@@ -1,0 +1,231 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达空气被抽干、干瘪、成为所有物的核心信息",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "无力与归属感保留，但“呜呼”稍显轻，情绪略平",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "三句均顺口自然，符合歌词文体",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象清晰但偏直白，表现力中上",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心语义准确，断句未改变信息",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，语气词位置略散",
+          "phrase_ids": [
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“空气被抽干 我”“瘪下去的我 啊”断句生硬，语感不顺",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达可理解但断句削弱力度",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "语义准确，“后”合理补充因果",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "无力感保留，“啊”较“呜呼”稍弱",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "三句顺口自然",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象清晰，表达稳妥但不算突出",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“慢慢变空”“皱在掌心”为增补意象，偏离原句的被动抽空与萎顿",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向大体一致，但“也罢”带出原词没有的认命洒脱感",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，歌词感较好",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“皱在掌心”意象鲜明，但服务的是增补画面",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“只剩皱褶”“旧的气球”“指间的旧物”大幅增补并改变比喻，核心信息偏移",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "颓败感保留，但“旧物”弱化了“所有物”的占有关系",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文流畅，歌词感尚可",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "气球意象鲜明有力，但属改写增补",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心信息准确，“枯萎”为合理引申",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "无力与归属感保留，情绪方向一致",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“我干瘪着枯萎”略生硬",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“干瘪着枯萎”有画面，表达较有力",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        }
+      }
+    }
+  ]
+}

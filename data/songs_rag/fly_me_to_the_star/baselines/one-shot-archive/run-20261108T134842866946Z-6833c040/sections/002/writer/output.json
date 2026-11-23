@@ -1,0 +1,57 @@
+{
+  "section": "V2",
+  "phrases": [
+    {
+      "id": "V2-01",
+      "zh": "心意 总说不出口 只能沉默",
+      "chars": 13,
+      "self_check": {
+        "budget": [
+          14,
+          14
+        ],
+        "ok": false,
+        "note": "少一字，需补"
+      }
+    },
+    {
+      "id": "V2-02",
+      "zh": "千万种人生 浮上心间",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "整句九字"
+      }
+    },
+    {
+      "id": "V2-03",
+      "zh": "演给你看 只为惹你回眸 一眼",
+      "chars": 14,
+      "self_check": {
+        "budget": [
+          18,
+          18
+        ],
+        "ok": false,
+        "note": "少四字，需补"
+      }
+    },
+    {
+      "id": "V2-04",
+      "zh": "oh 带我飞向星",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "oh算一字，共六字"
+      }
+    }
+  ]
+}

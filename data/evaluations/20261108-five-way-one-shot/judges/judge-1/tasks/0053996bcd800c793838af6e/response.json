@@ -1,0 +1,21 @@
+{
+  "id": "48540433-f818-4b13-945c-6414bed54332",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A准确传达“把生命交给你”的核心语义，中文自然且保留誓言式重复；B后半句“像海风吹过你脸颊”是原文没有的意象扩展，偏离了I1的纯粹奉献语气，且使重复句显得冗长。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 312,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 384,
+    "output_tokens": 78,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C1",
+    "query_text": "星星呀 为何 一整夜 眨着眼睛\n云朵呀 怎么 学鱼儿 游过天空\n人们呀 为何 总想要 种一个梦\n答案呀 也许 吹散在风里",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "query_text": "我竟没有察觉\n也许是我太习惯依赖你\n所以 先好好爱自己 再张开双手 去爱别人",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

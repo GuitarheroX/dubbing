@@ -1,0 +1,8 @@
+{
+  "run": "run-20261105T124146932199Z-f37cce18",
+  "updated_at": "2026-11-07T06:09:06+00:00",
+  "song": "kaijuu",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "baseline": "paper-annotated"
+}

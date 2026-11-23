@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "query_text": "一阵 风吹过 天晴\n我走在 空荡的路上\n大步 走成风\n风下 远远只有 你站在那里\n草原 一道影 拉长\n远飞的鸟 落下白羽毛\n我化成风 雪白色的风\n随风飘",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

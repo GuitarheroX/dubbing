@@ -1,0 +1,21 @@
+{
+  "id": "6250467d-4a24-4020-b20f-124cda932f6c",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"准确传达黄昏城镇寂寥、人心空虚、风载一切、乘流云漂泊的核心意象\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"寂寥空虚与漂泊感保留较好，情绪方向一致，略偏平\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺畅，歌词感尚可，个别句稍显书面\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"意象准确但表达较平实，缺少鲜明张力\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"主旨保留但加入街灯、屋檐、椅子、薄尘等具体场景，偏离原词的抽象概括\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"寂寥氛围尚在，但具体化场景使情绪偏向怀旧室内，与原词空茫感有偏移\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，节奏感较好，符合歌词文体\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象具体鲜明，画面感强，但部分意象为增补\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"核心风与云意象被改写，卷帘门、坐垫留窝、风踩水走等明显偏离原意\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"emotion\":{\"score\":2,\"reason\":\"情绪偏向市井生活细节，与原词空茫漂泊感差异较大\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"naturalness\":{\"score\":3,\"reason\":\"部分句子可理解，但坐垫留个窝、风踩着水走较生硬\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"有具体画面但意象混杂，服务主题不足\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息基本准确，空荡的虚空略重复，飘向天际为合理补充\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"寂寥空虚与远行感保留较好，情绪方向一致\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺畅，分顿节奏符合歌词，个别处稍显堆叠\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但偏平实，空荡的虚空略空泛\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"准确对应黄昏城镇寂寥、人们变幻空虚、风载一切远去、乘流转云\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，寂寥漂泊感保留，稍显平淡\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文自然顺口，歌词感尚可，略偏叙述\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达准确但较朴素，意象不够鲜明\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 809,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 1076,
+    "service_tier": "standard"
+  }
+}

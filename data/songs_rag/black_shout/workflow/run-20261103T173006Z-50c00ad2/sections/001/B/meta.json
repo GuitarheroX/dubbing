@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T172921_b_8416d5",
+  "input_hash": "8416d5edd28c6c61f05e5f6466bbcc1bcee1f48328aa8f7d2d397e30ee18863a",
+  "finished_at": "2026-11-03T17:29:31+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 1258,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2816,
+    "output_tokens": 2188,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"黑夜披在身上\",\n      \"chars\": 6,\n      \"self_check\": {\n        \"budget\": [6, 6],\n        \"ok\": true,\n        \"note\": \"整句一段，六字对应六音；把夜写成能披上的外套\"\n      }\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"此刻不后退半步\",\n      \"chars\": 7,\n      \"self_check\": {\n        \"budget\": [7, 7],\n        \"ok\": true,\n        \"note\": \"七个字精确对齐；不写颤抖，把那口气留到后段\"\n      }\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"只信这条窄路\",\n      \"chars\": 6,\n      \"self_check\": {\n        \"budget\": [6, 6],\n        \"ok\": true,\n        \"note\": \"六字；用窄路承接上句的半歩\"\n      }\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"不回头地往前走\",\n      \"chars\": 7,\n      \"self_check\": {\n        \"budget\": [7, 7],\n        \"ok\": true,\n        \"note\": \"七字连读，句尾落在走字，不上扬\"\n      }\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"黑色也算颜色\",\n      \"chars\": 6,\n      \"self_check\": {\n        \"budget\": [6, 6],\n        \"ok\": true,\n        \"note\": \"六字；点明主题的第一个转折\"\n      }\n    },\n    {\n      \"id\": \"C1-06\",\n      \"zh\": \"不必被洗成白色\",\n      \"chars\": 7,\n      \"self_check\": {\n        \"budget\": [7, 7],\n        \"ok\": true,\n        \"note\": \"七字，与上句颜色、颜色对仗；洗字带冷意\"\n      }\n    },\n    {\n      \"id\": \"C1-07\",\n      \"zh\": \"砸碎所有不讲理\",\n      \"chars\": 7,\n      \"self_check\": {\n        \"budget\": [7, 7],\n        \"ok\": true,\n        \"note\": \"七字，砸碎是手上的动作，不是抽象的反抗\"\n      }\n    },\n    {\n      \"id\": \"C1-08\",\n      \"zh\": \"我此刻就站在这 我活着呼吸就是证据\",\n      \"chars\": 16,\n      \"self_check\": {\n        \"budget\": [16, 16],\n        \"ok\": true,\n        \"note\": \"按 pattern 切成七加九；前半七字断在「这」，后半九字一气落到证据\"\n      }\n    }\n  ]\n}",
+  "migrated_from": "20261103T172921_b_8416d5"
+}

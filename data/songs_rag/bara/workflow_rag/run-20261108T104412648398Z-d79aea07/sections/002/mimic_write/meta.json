@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\"section\": \"B1\", \"phrases\": [{\"id\": \"B1-01\", \"zh\": \"我的血脉 只认得 深红玫瑰 不得不燃\", \"chars\": 15, \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"按 4/3/4/4 分段，空格对应旋律的四次落点；「不得不」借参考诗里「不得不怒放」的句式骨架，把「さだめに生まれた」写成血脉里认命的东西\"}}, {\"id\": \"B1-02\", \"zh\": \"生来就听见 一句命令 开得华美 烧到最烈\", \"chars\": 17, \"self_check\": {\"budget\": [17, 17], \"ok\": true, \"note\": \"5/4/4/4 逐段对上；「一句命令」呼应参考里的「命令我舞蹈」，把「生きろと生まれた」唱成一句被下达的旨意，开与烧对仗承接上句的火\"}}]}",
+  "finished_at": "2026-11-08T10:45:50+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3381,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 4952,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

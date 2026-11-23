@@ -1,0 +1,22 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"水光跃芽尖 夜半的梦还没醒\",\n      \"chars\": 12,\n      \"self_check\": {\n        \"budget\": [12, 12],\n        \"ok\": true,\n        \"note\": \"前五字对应[5]，后七字对应[7]；用芽尖承接新芽，保留水光跳动的细小希望。\"\n      }\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"你稍微快半步 影子轻轻晃\",\n      \"chars\": 11,\n      \"self_check\": {\n        \"budget\": [11, 11],\n        \"ok\": true,\n        \"note\": \"六字加五字，正好对上[6,5]；半步保留早歩き的轻微加快。\"\n      }\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"桌上那半夜吃剩的碎屑 拼成梦地图\",\n      \"chars\": 15,\n      \"self_check\": {\n        \"budget\": [15, 15],\n        \"ok\": true,\n        \"note\": \"十字加五字，对上[10,5]；碎屑拼成梦地图，保留日常狼藉里的亲密感。\"\n      }\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"新的早晨 从梦里走来\",\n      \"chars\": 9,\n      \"self_check\": {\n        \"budget\": [9, 9],\n        \"ok\": true,\n        \"note\": \"四字加五字，对上[4,5]；借参考里早晨从梦里走出的句式，但没有照搬词句。\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:45:06+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "json_repaired": false,
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 681,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3328,
+    "output_tokens": 4381,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

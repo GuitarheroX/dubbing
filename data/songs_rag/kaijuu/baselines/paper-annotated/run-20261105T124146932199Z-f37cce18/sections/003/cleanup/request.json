@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "1. 站在山丘上仰望星空，这份寂寞也涌上心头（22音节）\n2. 晨光染红双手的时候，早已把一切忘得干净（21音节）\n3. 这世界恰好未完成（12音节）\n4. 所以我才想要知道（7音节）\n5. 可就算像怪兽一样远远地远远地呼喊（14音节）\n6. 也还是会消失不见（8音节）\n\nRhyme check (final phonemes): 头(tóu) / 净(jìng) / 成(chéng) / 道(dào) / 喊(hǎn) / 见(jiàn) — 原歌词无统一押韵模式，译文各行韵脚分别为 ou/ing/eng/ao/an/ian，与原文行末元音（u/e/u/o/e/a）同样不构成规整押韵，主题保持一致。"
+  },
+  "data": {
+    "response": "1. 站在山丘上仰望星空，这份寂寞也涌上心头（22音节）\n2. 晨光染红双手的时候，早已把一切忘得干净（21音节）\n3. 这世界恰好未完成（12音节）\n4. 所以我才想要知道（7音节）\n5. 可就算像怪兽一样远远地远远地呼喊（14音节）\n6. 也还是会消失不见（8音节）\n\nRhyme check (final phonemes): 头(tóu) / 净(jìng) / 成(chéng) / 道(dào) / 喊(hǎn) / 见(jiàn) — 原歌词无统一押韵模式，译文各行韵脚分别为 ou/ing/eng/ao/an/ian，与原文行末元音（u/e/u/o/e/a）同样不构成规整押韵，主题保持一致。"
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "1. 站在山丘上仰望星空，这份寂寞也涌上心头（22音节）\n2. 晨光染红双手的时候，早已把一切忘得干净（21音节）\n3. 这世界恰好未完成（12音节）\n4. 所以我才想要知道（7音节）\n5. 可就算像怪兽一样远远地远远地呼喊（14音节）\n6. 也还是会消失不见（8音节）\n\nRhyme check (final phonemes): 头(tóu) / 净(jìng) / 成(chéng) / 道(dào) / 喊(hǎn) / 见(jiàn) — 原歌词无统一押韵模式，译文各行韵脚分别为 ou/ing/eng/ao/an/ian，与原文行末元音（u/e/u/o/e/a）同样不构成规整押韵，主题保持一致。"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

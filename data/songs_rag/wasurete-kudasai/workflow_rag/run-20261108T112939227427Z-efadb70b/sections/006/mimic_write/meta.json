@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\"section\":\"B2\",\"phrases\":[{\"id\":\"B2-01\",\"zh\":\"看着我 看着我 看着我\",\"chars\":9,\"self_check\":{\"budget\":[9,9],\"ok\":true,\"note\":\"与B1同文重复 对应原曲三连重复 空格分段 每段三字\"}}]}",
+  "finished_at": "2026-11-08T11:32:28+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3440,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2944,
+    "output_tokens": 547,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

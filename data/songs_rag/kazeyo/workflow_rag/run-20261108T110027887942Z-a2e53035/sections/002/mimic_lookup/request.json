@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "query_text": "今日的 眼泪和叹息 都收下\n明日的 笑声和亮光 都带上\n全部 风揽着 一路往前送\n去它该去 的地方",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

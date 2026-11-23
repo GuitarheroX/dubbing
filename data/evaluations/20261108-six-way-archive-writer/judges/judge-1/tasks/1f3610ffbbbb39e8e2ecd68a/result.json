@@ -1,0 +1,222 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心信息基本准确，但V1-01将“見とれてしまう”与“脚下黑了也不管”合并，略增主动放任意味；V1-08“没听”替代“没注意”有偏移。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-08"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "迷离、低头、装作无事的情绪方向保留，个别句略口语化但未改变氛围。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，V1-01两句拼接稍显跳脱，V1-07“笑声悬在背后”略生硬。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-07"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“晕成一片”“笑声悬在背后”等意象较鲜明，服务主题。",
+          "phrase_ids": [
+            "V1-04",
+            "V1-07"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "主旨保留，V1-03“还在原地发愣”为合理补充；V1-07“谁的笑声”略具体化但未改事件。",
+          "phrase_ids": [
+            "V1-03",
+            "V1-07"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "低头、迷惘、装作没听见的情绪一致，稍偏叙事化。",
+          "phrase_ids": [
+            "V1-06",
+            "V1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文流畅，V1-01“我忘了脚下的路”自然，个别句略散。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“晕开成一片雾”等表达有画面感，整体有力。",
+          "phrase_ids": [
+            "V1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心语义准确，V1-07“总被人笑”将原文“被笑的东西/模样”泛化为习惯性，略有偏移。",
+          "phrase_ids": [
+            "V1-07"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向一致，但表达偏简淡，迷离与自欺的层次较弱。",
+          "phrase_ids": [
+            "V1-03",
+            "V1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "短句顺口，符合歌词文体，略平。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-06"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "意象基本到位但较普通，缺少鲜明表达。",
+          "phrase_ids": [
+            "V1-04",
+            "V1-07"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心信息准确，V1-08“假装没注意到”贴近原意；V1-01省略“因为”但可接受。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-08"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向正确，但整体偏简略平淡，迷离氛围不足。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "短句自然可读，符合歌词片段，略欠连贯。",
+          "phrase_ids": [
+            "V1-02",
+            "V1-06"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但意象普通，缺少感染力。",
+          "phrase_ids": [
+            "V1-04",
+            "V1-07"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心语义保留，V1-07“被人嘲笑的模样”将原文“被笑的东西”转为模样，略有偏移；V1-01“所以”连接合理。",
+          "phrase_ids": [
+            "V1-07",
+            "V1-01"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "迷惘、低头、自欺的情绪基本保留，语气稍直白。",
+          "phrase_ids": [
+            "V1-05",
+            "V1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "可理解，但V1-01“淡月令我沉醉所以”句尾悬置，V1-07“的模样”略生硬。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-07"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，部分句偏直译，意象不够鲜明。",
+          "phrase_ids": [
+            "V1-04",
+            "V1-07"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心信息准确，V1-08“什么都没发生”较原文“没注意”略泛化，但未改主题。",
+          "phrase_ids": [
+            "V1-08"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "看痴、浑然不知、装作无事的情绪方向与强弱较贴合。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，V1-08“装作 什么都没发生”略口语但可接受。",
+          "phrase_ids": [
+            "V1-08"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“看痴了”“星子模糊”等表达有画面感，服务主题。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-04"
+          ]
+        }
+      }
+    }
+  ]
+}

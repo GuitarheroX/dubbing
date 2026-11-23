@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "```json\n{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"哪颗星转过 停在那一刻\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"5+5 断句；借 analysis 里「指针咔哒停在刻度」的骨架，把星写成会停住的东西\"}\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"散落的那人 应该就是我\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"沿用初版「散落的那人」，只把句尾改成更冷的断定，与 C1「散得从容」呼应\"}\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"平凡的活法 我也曾向往\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"5+5；避开句尾「过」，接 V1 那种看着野花心生柔软的口气\"}\n    },\n    {\n      \"id\": \"V2-04\",\n      \"zh\": \"命里给的这副身 不许我平凡\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"7+5；初版此处只有 11 字，补一个「不许我平凡」把 かなえられない 说成命的态度\"}\n    }\n  ]\n}\n```",
+  "finished_at": "2026-11-08T10:46:44+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2993,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2048,
+    "output_tokens": 2440,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

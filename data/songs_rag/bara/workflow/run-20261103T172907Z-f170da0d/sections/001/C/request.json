@@ -1,0 +1,121 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "phrases": [
+      {
+        "id": "V1-01",
+        "section": "V1",
+        "ja": "草むらに　名も知れず",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "V1-02",
+        "section": "V1",
+        "ja": "咲いている　花ならば",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "V1-03",
+        "section": "V1",
+        "ja": "ただ風を　受けながら",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "V1-04",
+        "section": "V1",
+        "ja": "そよいでいれば　いいけれど",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          7,
+          5
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V1",
+      "phrases": [
+        {
+          "id": "V1-01",
+          "zh": "草丛深处开 一朵无名花",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "5+5，空格断句，字数正好"
+          }
+        },
+        {
+          "id": "V1-02",
+          "zh": "若只是花开 无人来欣赏",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "5+5，对应两个乐节"
+          }
+        },
+        {
+          "id": "V1-03",
+          "zh": "只是迎着风 轻轻地摇晃",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "5+5，轻轻连读自然"
+          }
+        },
+        {
+          "id": "V1-04",
+          "zh": "就这样随风摇晃 本来也足够",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "7+5，前半句七字后半句五字"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "phrases": [
+      {
+        "id": "B1-01",
+        "section": "B1",
+        "ja": "風が通る 風が運ぶ",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          6,
+          6
+        ]
+      },
+      {
+        "id": "B1-02",
+        "section": "B1",
+        "ja": "ぼくらはわたげのように",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          4,
+          6
+        ]
+      },
+      {
+        "id": "B1-03",
+        "section": "B1",
+        "ja": "街にまかれ それぞれに",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          6,
+          5
+        ]
+      }
+    ],
+    "draft": {
+      "section": "B1",
+      "phrases": [
+        {
+          "id": "B1-01",
+          "zh": "风穿过这长街 风带走些什么",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "按[6,6]空格断句，前后各六字，保留「风」的重复"
+          }
+        },
+        {
+          "id": "B1-02",
+          "zh": "我们就像 蒲公英的绒毛",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "按[4,6]空格断句，前四后六，沿用初版意象"
+          }
+        },
+        {
+          "id": "B1-03",
+          "zh": "被吹散在街口 各自去远方",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "按[6,5]空格断句，前六后五，保留「各自去」的散开感"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

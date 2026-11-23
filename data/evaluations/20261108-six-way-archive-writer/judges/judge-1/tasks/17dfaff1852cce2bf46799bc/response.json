@@ -1,0 +1,21 @@
+{
+  "id": "ca3c54a2-a5e1-47ac-bfe0-625f4ac86dcf",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B在保持核心语义的同时更自然、更有表现力：C1-01“把梦点燃”比A“焚烧着梦想”更贴合“焼け”的祈使与火意象；C1-03“再添一把火”比A“把火点燃”更准确传达“火に火をつけ”的递进感；C1-04“泡沫般的零钱”保留“泡銭”的轻贱与泡沫意象，A“些许的零钱”略平；C1-07“一掬”比A“捧起来”更凝练且贴合“掬いたい”。A整体也通顺，但个别处语义偏移或表达稍弱。\",\"phrase_ids\":[\"C1-01\",\"C1-03\",\"C1-04\",\"C1-07\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 351,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 182,
+    "service_tier": "standard"
+  }
+}

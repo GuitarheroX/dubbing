@@ -11,6 +11,7 @@ dependencies = ["pyyaml>=6", "requests>=2.31", "json-repair>=0.30"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
+evaluation = ["unbabel-comet>=2.2.4,<3", "huggingface-hub>=0.20,<2"]
 #: workflow-RAG 才需要：本地 Chroma 向量库
 rag = ["chromadb>=1.0"]
 #: 需要在本机或服务器上跑嵌入时才装（会带上 torch）；只走 HTTP 端点或用现成向量文件时不用装
@@ -18,9 +19,13 @@ embed = ["sentence-transformers>=2.2"]
 
 [project.scripts]
 dubbing = "dubbing.cli:main"
+dubbing-evaluate = "evaluate.cli:main"
 
 [tool.setuptools]
-packages = ["dubbing", "dubbing.rag"]
+packages = ["dubbing", "dubbing.rag", "evaluate"]
+
+[tool.setuptools.package-data]
+evaluate = ["prompts/*.txt"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

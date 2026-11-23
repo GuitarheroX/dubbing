@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"水光跳起来 又落回新芽肩头\",\n      \"chars\": 12,\n      \"self_check\": {\n        \"budget\": [12, 12],\n        \"ok\": true,\n        \"note\": \"前五字对 5、后七字对 7；空格断在第一段旋律后，保留初版的「跳」，补「落回肩上」把水光写成一跳一落的小动作\"\n      }\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"你走得快半步 赶在破晓前\",\n      \"chars\": 11,\n      \"self_check\": {\n        \"budget\": [11, 11],\n        \"ok\": true,\n        \"note\": \"六加五对上 [6,5]；把「轻轻快走」改成「快半步」，贴住原词「少し早歩き」那点半掩的不舍\"\n      }\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"夜里吃剩的碎屑还发亮 是梦的地图\",\n      \"chars\": 15,\n      \"self_check\": {\n        \"budget\": [15, 15],\n        \"ok\": true,\n        \"note\": \"十字加五字对上 [10,5]；借舒婷「夜还在沿街拾取碎片」的句式骨架，换成桌上未扫的吃食碎屑，后五字直接落回「梦的地图」\"\n      }\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"新的清晨 正轻轻醒来\",\n      \"chars\": 9,\n      \"self_check\": {\n        \"budget\": [9, 9],\n        \"ok\": true,\n        \"note\": \"四加五对上 [4,5]，基本沿用初版，只把「新的清晨」与「醒来」之间留空格作停顿，句尾不收「了」「着」\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:16:58+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2715,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 2825,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

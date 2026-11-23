@@ -1,0 +1,57 @@
+{
+  "section": "D1",
+  "phrases": [
+    {
+      "id": "D1-01",
+      "zh": "也许 有一天 这小小歌谣",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "字数不足，需补一字"
+      }
+    },
+    {
+      "id": "D1-02",
+      "zh": "你一定会 慢慢 把它忘掉",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "字数不足，需补一字"
+      }
+    },
+    {
+      "id": "D1-03",
+      "zh": "我却一直 一直 把它记牢",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "字数不足，需补一字"
+      }
+    },
+    {
+      "id": "D1-04",
+      "zh": "就算 长大以后 也好",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "空格断句，字数正好"
+      }
+    }
+  ]
+}

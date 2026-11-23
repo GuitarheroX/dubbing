@@ -1,0 +1,21 @@
+{
+  "id": "4ee7d040-37d2-47fd-8327-d3543d702912",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更忠实于原文语义与情绪：B1-01保留“比起思念流云”的比较结构，B1-02“长嚎”对应远吠，B1-03准确传达无暇喘息，B1-04虽略简但未误读。B的改写幅度较大，B1-01加入“不回头/仰起头”属增义，B1-04“才痛快”改变了“痛苦”的原意，表现力虽强但偏离核心语义。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 239,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 137,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "61e1a7c0-922f-4a75-8c2d-eb88641bc4e0",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A在保持语义准确的同时更自然、更具情绪张力：V1-01“总是”强化反复感，V1-03“走下去”比“行走”更口语流畅，V1-04“像断了气一样”更贴近原文的窒息意象；B的V1-02问号虽保留疑问，但整体略生硬。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 992,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 107,
+    "service_tier": "standard"
+  }
+}

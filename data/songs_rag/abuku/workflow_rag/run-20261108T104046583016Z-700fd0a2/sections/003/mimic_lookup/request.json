@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "query_text": "不数流云 往哪儿 慢慢走\n朝最远方 长嚎吧\n气没喘匀 胸口烫 又再喊\n那点痛 才痛快",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

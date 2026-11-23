@@ -1,0 +1,189 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“零散的节奏”贴近“ばらばら”，“若你哼唱请听我说”基本传达“口ずさめたらきいて”，但“请听我说”略增说话意味。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "保留随意哼唱、希望被听见的轻柔邀请感，方向一致。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，“用零散的节奏”稍显书面但可唱。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但意象较平，缺少鲜明画面。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“散乱的节奏里轻哼”把“口ずさめたら”提前并入前句，后句“散落的音符”偏离“きいて”的请听对象。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "氛围轻柔接近，但“散落的音符”使请求听的对象偏移，情绪略散。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文歌词感较好，两句衔接自然。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“散落的音符”有画面感，整体较有表现力。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“走两步”明显添加原文没有的动作；“哼得走调”把“口ずさめたら”改写成走调，核心偏移。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "轻松随意感保留，但“走调”带自嘲色彩，与原句温和邀请略有偏离。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "口语顺口，像歌词，但语义添加明显。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“哼得走调也唱给你听”生动有记忆点，但服务的是改写后的情绪。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“凌乱的节拍”对应“ばらばらのリズム”，“哼成歌你听见吗”基本传达哼唱并请对方听。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "随意哼唱、期待被听见的情绪保留较好。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "两句都顺口自然，符合中文歌词文体。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“踩着凌乱的节拍”“哼成歌”有动作和声音画面，表达较有力。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“零散的节奏中”“若能哼唱请听”准确对应原文两句，核心信息完整。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "轻柔、试探性的邀请感保留，但略平。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文可理解且顺口，“若能哼唱请听”稍简但符合歌词省略。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "语义准确但表达较朴素，意象和力度普通。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    }
+  ]
+}

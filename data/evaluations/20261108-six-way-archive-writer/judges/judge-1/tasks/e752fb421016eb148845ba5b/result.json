@@ -1,0 +1,255 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“感到故意”“观察无为”基本对应原句，但“感到故意”略生硬；“安宁混入了罪”准确。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向大体保留，但表达偏直译，冷峻反思感不足。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 2,
+          "reason": "“感到故意”“观察无为”中文搭配不自然，像逐词直译。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 2,
+          "reason": "意象空泛，缺少歌词张力。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“字里带刺扎人”“划掉所有可能”明显偏离“故意を感じて”“無為を観じて”的核心语义。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "整体冷硬情绪尚可，但“扎人”“划掉可能”改变了原句的抽象反思气质。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，节奏感较好，但部分表达偏口语化。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“字里带刺”“划掉所有可能”意象鲜明，但服务的是改写后的语义。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“察觉到故意”“凝视着无为”“安宁里掺着罪意”均准确对应原句。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "冷峻、反思的情绪保留较好，末句“理所当然”略平。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“凝视着无为”稍文但可接受。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏平实，意象张力一般。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“故意地感受”“无为地观透”把名词误作副词，语义偏移；“当然吗”语气也略偏。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向大体一致，但副词化处理削弱了原句的抽象冷感。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 2,
+          "reason": "“故意地感受”“无为地观透”中文明显生硬。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 2,
+          "reason": "表达别扭，意象不清晰。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“咬住那点敌意”把“故意”误读为敌意；“旁观那团虚无”偏离“無為を観じて”；“才完整”为增义。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪强度尚可，但“敌意”“虚无”改变了原句的冷静观察感。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文流畅，节奏感好。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象鲜明有力，但部分来自改写而非原意。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“藏着多少故意”“冷眼看这无为”“总把罪掺进来”基本对应原句，末句略弱。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "冷峻、质疑的情绪保留较好。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口自然，适合歌词。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“冷眼看这无为”“总把罪掺进来”意象较鲜明，服务主题。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    }
+  ]
+}

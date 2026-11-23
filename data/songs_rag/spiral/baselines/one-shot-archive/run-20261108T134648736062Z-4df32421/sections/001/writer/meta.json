@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"亲手撕碎那幅地图\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": false, \"note\": \"字数不足，需补意象\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"世界停在那个夏天\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": false, \"note\": \"字数不足，需补意象\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"我又一次\",\n      \"chars\": 4,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": false, \"note\": \"字数不足，需补意象\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"把错推给别人\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": false, \"note\": \"字数不足，需补意象\"}\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"真让人厌烦啊\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": false, \"note\": \"字数超出，需删减\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:50+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "V1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1837,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 329,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "4f036431-3717-4d3a-8292-e226be575caf",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"“潜在忧虑”被具体化为水底浑浊，偏离原意；“耳机两端”添加了原文没有的意象，改变了“无法与人相互理解”的抽象关系。\",\"phrase_ids\":[\"V2-01\",\"V2-03\"]},\"emotion\":{\"score\":3,\"reason\":\"整体压抑、隔阂的情绪方向保留，但“耳机”意象使情绪更具体化、场景化，与原作的抽象内省略有偏移。\",\"phrase_ids\":[\"V2-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，歌词感强，但“沉在水底的 一层浑浊”搭配略生硬。\",\"phrase_ids\":[\"V2-01\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明有力，“牙关却咬紧”“接不住谁”有表现力，但部分意象偏离主题。\",\"phrase_ids\":[\"V2-02\",\"V2-03\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"四句均准确传达原文核心：潜藏忧虑、难以坦率、与谁都无法沟通、连自己也是。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"emotion\":{\"score\":4,\"reason\":\"内省、疏离、自我封闭的情绪方向准确，但表达较平直，情绪张力略弱。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文通顺自然，“怎么也难以坦率”稍显书面但可接受。\",\"phrase_ids\":[\"V2-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但偏直译，意象和力度普通，缺少歌词的凝练感。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“闷在心底的忧”基本对应潜在忧虑；“话到嘴边又咽回”改写为欲言又止，偏离“无法坦率”的原意；“说给空气”改变了“与谁都无法相互理解”的关系。\",\"phrase_ids\":[\"V2-02\",\"V2-03\"]},\"emotion\":{\"score\":3,\"reason\":\"孤独、内省的情绪方向保留，但“说给空气”使情绪偏向独白式孤独，与原作人际隔阂的意味有偏移。\",\"phrase_ids\":[\"V2-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文流畅，歌词感较好，“说给空气 没人接住的话”略绕但可理解。\",\"phrase_ids\":[\"V2-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“话到嘴边又咽回”“说给空气”意象生动，表现力较强，但部分偏离原意。\",\"phrase_ids\":[\"V2-02\",\"V2-03\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"四句准确对应原文：潜藏忧愁、无法坦诚、与谁都无法互相理解、连自己也是。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"emotion\":{\"score\":4,\"reason\":\"内省、疏离的情绪方向准确，但表达偏平实，情绪强度略弱。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文通顺自然，“怎么也无法坦诚相对”稍书面但流畅。\",\"phrase_ids\":[\"V2-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"语义清楚但偏直译，意象和力度普通，歌词凝练感不足。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"四句准确传达原文核心语义，无明显偏移。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"emotion\":{\"score\":4,\"reason\":\"内省、疏离的情绪方向准确，但表达平直，情绪张力略弱。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文通顺自然，“怎么也无法坦率”稍显书面但可接受。\",\"phrase_ids\":[\"V2-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但偏直译，意象和力度普通，缺少歌词的凝练感。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 671,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 1085,
+    "service_tier": "standard"
+  }
+}

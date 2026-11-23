@@ -1,0 +1,21 @@
+{
+  "id": "aa2c1b2a-006f-47da-9688-1fa7e25b8744",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更自然凝练，B1-01“过眼云烟”贴合原意且不生硬；B1-02“远方长嚎”比B的“遥远 长嚎”更完整；B1-03“连喘息的那空隙都没有”语义准确，B的“瞬间”略偏；B1-04“这般痛苦难熬”比B的“苦楚的 那份”更通顺、情绪更到位。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 233,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 127,
+    "service_tier": "standard"
+  }
+}

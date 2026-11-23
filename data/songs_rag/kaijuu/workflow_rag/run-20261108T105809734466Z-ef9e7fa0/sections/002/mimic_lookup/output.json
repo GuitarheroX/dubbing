@@ -1,0 +1,46 @@
+{
+  "section": "V1",
+  "query_text": "慢慢 吃颗星\n红与蓝的星 铺满舌尖\n从未来 吃回过去\n倒着 再吃下\n嚼碎几十遍 化成水\n溶成水以后 喝下",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "方群_fangqun/世说新语#s10",
+      "title": "世说新语",
+      "poet": "方群",
+      "poem_id": "方群_fangqun/世说新语",
+      "stanza_idx": 10,
+      "score": 0.762943,
+      "text": "一口一口慢慢慢慢地吃吃吃吃\n那些很饿很饿的感觉\n会在咀嚼的口腔中\n紧紧拥抱幸福"
+    },
+    {
+      "chunk_id": "半渡_bandu/宇宙汤#s2",
+      "title": "宇宙汤",
+      "poet": "半渡",
+      "poem_id": "半渡_bandu/宇宙汤",
+      "stanza_idx": 2,
+      "score": 0.719225,
+      "text": "无穷无尽的咀嚼形成多如牛毛的星云\n牙齿张开时漏进一些光芒\n更多的是被舌根包裹的黑暗\n它在唾液之中爆炸\n它在唾液的怀抱滞涨\n它和唾液面目全非 难分你我\n一直如此纠缠 一直胶着"
+    },
+    {
+      "chunk_id": "冷盈袖_lengyingxiu/仿佛天上的星辰在我手中多年#s1",
+      "title": "仿佛天上的星辰在我手中多年",
+      "poet": "冷盈袖",
+      "poem_id": "冷盈袖_lengyingxiu/仿佛天上的星辰在我手中多年",
+      "stanza_idx": 1,
+      "score": 0.677807,
+      "text": "白馒头细嚼\n甜味也就出来了\n然后喝几口水\n清淡的日子\n让人感到自身的洁净"
+    },
+    {
+      "chunk_id": "娜夜_naye/生活#s1",
+      "title": "生活",
+      "poet": "娜夜",
+      "poem_id": "娜夜_naye/生活",
+      "stanza_idx": 1,
+      "score": 0.67653,
+      "text": "我珍爱过你\n像小时候珍爱一颗黑糖球\n舔一口马上用糖纸包上\n再舔一口\n舔的越来越慢\n包的越来越快\n现在只剩下我和糖纸了\n我必须忍住：忧伤"
+    }
+  ]
+}

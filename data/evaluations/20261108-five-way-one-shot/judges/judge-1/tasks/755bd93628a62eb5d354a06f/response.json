@@ -1,0 +1,21 @@
+{
+  "id": "43cf33a0-01d8-4070-ba25-d50c22256bf3",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"准确传达“梦见所有人消失”，并合理补充“一个一个”的渐进感。\",\"phrase_ids\":[\"B2-01\",\"B2-02\",\"B2-03\",\"B2-04\"]},\"emotion\":{\"score\":5,\"reason\":\"空旷寂静与窒息感层层递进，情绪方向与强度贴合原词。\",\"phrase_ids\":[\"B2-01\",\"B2-02\",\"B2-03\",\"B2-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“静得能听见心跳声”略增意象但自然。\",\"phrase_ids\":[\"B2-02\"]},\"expressiveness\":{\"score\":5,\"reason\":\"“大得空旷”“咽不下”“完整的呼吸”意象鲜明有力。\",\"phrase_ids\":[\"B2-02\",\"B2-03\",\"B2-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心语义保留，但“无边无际”“重”等补充略偏移原词克制感。\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向一致，但“重”“从容”等措辞使压抑感偏散。\",\"phrase_ids\":[\"B2-02\",\"B2-03\",\"B2-04\"]},\"naturalness\":{\"score\":2,\"reason\":\"“寂静重”“难通”“不再顺畅而从容”生硬且为凑韵割裂。\",\"phrase_ids\":[\"B2-02\",\"B2-03\",\"B2-04\"]},\"expressiveness\":{\"score\":2,\"reason\":\"表达被韵脚牵制，意象空泛、语句不畅。\",\"phrase_ids\":[\"B2-02\",\"B2-03\",\"B2-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"四句均准确对应原意，无增删偏移。\",\"phrase_ids\":[\"B2-01\",\"B2-02\",\"B2-03\",\"B2-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向正确，但表达较平，压抑与窒息感稍弱。\",\"phrase_ids\":[\"B2-01\",\"B2-02\",\"B2-03\",\"B2-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"简洁顺口，符合歌词文体。\",\"phrase_ids\":[\"B2-01\",\"B2-02\",\"B2-03\",\"B2-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"准确但偏直译，意象与力度普通。\",\"phrase_ids\":[\"B2-02\",\"B2-03\",\"B2-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心信息准确，“寂静压下来”为合理意象补充。\",\"phrase_ids\":[\"B2-01\",\"B2-02\",\"B2-03\",\"B2-04\"]},\"emotion\":{\"score\":5,\"reason\":\"空旷、压迫、窒息感连贯，情绪强度贴合。\",\"phrase_ids\":[\"B2-02\",\"B2-03\",\"B2-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"短句顺口，节奏自然，符合歌词文体。\",\"phrase_ids\":[\"B2-01\",\"B2-02\",\"B2-03\",\"B2-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“压下来”“散不开”有力，但整体意象较常规。\",\"phrase_ids\":[\"B2-02\",\"B2-03\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心语义保留，但“血在流”为原词没有的强烈意象，略偏移。\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"emotion\":{\"score\":4,\"reason\":\"窒息与空旷感强，但“血在流”使情绪更惊悚，偏离原词克制。\",\"phrase_ids\":[\"B2-02\",\"B2-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“宽得发慌”自然，“血在流”略突兀。\",\"phrase_ids\":[\"B2-02\"]},\"expressiveness\":{\"score\":5,\"reason\":\"“宽得发慌”“吸一口气也都做不到”意象鲜明有力。\",\"phrase_ids\":[\"B2-02\",\"B2-04\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 429,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1664,
+    "output_tokens": 968,
+    "service_tier": "standard"
+  }
+}

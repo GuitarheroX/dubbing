@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"慢慢 吃颗星\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"2+3 断句，前两字一顿；「慢慢」重复两次，贴合原曲机械的节奏\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"红与蓝的星 铺满舌尖\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"5+4，沿用初版「铺满舌尖」，把星子落到味觉上，接住下一句的吃\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"从未来 吃回过去\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"3+4，保留初版原句，「吃回」把时间倒着咽的动作留住\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"一颗 再一颗\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"2+3，用重复的量词对应「順々に」，句式借了参考里「一口一口」那种数着吃的感觉\"}\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"嚼成碎末 咽到无味\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"改成 4+4 对齐旋律切分，含住「嚼碎」和嚼到没味道两层\"}\n    },\n    {\n      \"id\": \"V1-06\",\n      \"zh\": \"溶成水以后 喝下\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"5+2，末段只留两个音落在「喝下」这个动作上\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T10:59:56+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3356,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 5012,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

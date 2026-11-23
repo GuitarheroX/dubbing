@@ -1,0 +1,46 @@
+{
+  "section": "V1",
+  "query_text": "啊 按不住的 心翻涌\n我胸中 蠢动的野兽\n水面 浮起来又破开 无声息地 化泡沫",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "北墨_beimo/水灾：写在大雨中#s3",
+      "title": "水灾：写在大雨中",
+      "poet": "北墨",
+      "poem_id": "北墨_beimo/水灾：写在大雨中",
+      "stanza_idx": 3,
+      "score": 0.683639,
+      "text": "洪水打破心理平衡\n水自深沉的喉音中来\n暧昧的中心\n泪水爆发之际\n我的心还留在水的天堂\n我是属于水的多余"
+    },
+    {
+      "chunk_id": "吴晟_wucheng/忧伤之旅——忧伤西海岸之一#s4",
+      "title": "忧伤之旅——忧伤西海岸之一",
+      "poet": "吴晟",
+      "poem_id": "吴晟_wucheng/忧伤之旅——忧伤西海岸之一",
+      "stanza_idx": 4,
+      "score": 0.678723,
+      "text": "尽管海洋仍敞开无言胸膛\n潮水一遍一遍刷洗\n这受创斑斑的海岸\n再也没有能力承受\n放肆倾泄的贪欲"
+    },
+    {
+      "chunk_id": "海湄_haimei/为什么是荷花#s1",
+      "title": "为什么是荷花",
+      "poet": "海湄",
+      "poem_id": "海湄_haimei/为什么是荷花",
+      "stanza_idx": 1,
+      "score": 0.673329,
+      "text": "它们稀里哗啦的开了\n它们从水里冒出来，它们突然冲破了\n蓝天白云，它们呼啸着，带着水珠奔向天空\n当它们携着利刃出现在我面前\n发出野兽的喘息"
+    },
+    {
+      "chunk_id": "陈隽弘_chenjuanhong/讨·海#s5",
+      "title": "讨·海",
+      "poet": "陈隽弘",
+      "poem_id": "陈隽弘_chenjuanhong/讨·海",
+      "stanza_idx": 5,
+      "score": 0.672212,
+      "text": "一浪一浪涌动的心事\n对着圆形的窗口拍击\n今晚一个全身湿透的男人\n奋泳回来又被飘走"
+    }
+  ]
+}

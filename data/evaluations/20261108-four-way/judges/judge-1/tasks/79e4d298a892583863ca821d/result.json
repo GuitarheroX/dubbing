@@ -1,0 +1,152 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心意象基本准确，但“描いたまま”的持续状态未体现，C1-01略偏。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03",
+            "C1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "淡月、浅夏、萤光的清冷温柔氛围保留较好。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03",
+            "C1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“夏之彼方”稍文但可接受。",
+          "phrase_ids": [
+            "C1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象清晰，“淡薄天空 黎明的萤光”有画面感。",
+          "phrase_ids": [
+            "C1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心信息准确，“黎明”替代“朝”合理，但“描いたまま”状态略弱。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03",
+            "C1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "温柔清浅的夏夜氛围基本保留。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03",
+            "C1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "通顺自然，“夏日彼方”稍书面但流畅。",
+          "phrase_ids": [
+            "C1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏平实，意象力度一般。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“把黎明画在手心”误置对象，“浅夏末 薄如水”偏离原意，“有只萤火在晃”改变意象。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "整体仍偏清冷温柔，但“浅夏末”带来季节偏移。",
+          "phrase_ids": [
+            "C1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“浅夏末 薄如水 那头浮起天光”生硬且语义跳跃。",
+          "phrase_ids": [
+            "C1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "有画面尝试，但“有只萤火在晃”口语化削弱意境。",
+          "phrase_ids": [
+            "C1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“描出天亮的模样”尚可，但C1-03添加“摊开在夏天那一头”属增译偏移。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "氛围大体一致，但增译使情绪略散。",
+          "phrase_ids": [
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "节奏顺口，“浅浅的 浅浅的”重复自然。",
+          "phrase_ids": [
+            "C1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“破晓前一只萤火”意象鲜明。",
+          "phrase_ids": [
+            "C1-04"
+          ]
+        }
+      }
+    }
+  ]
+}

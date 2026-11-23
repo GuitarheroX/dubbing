@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T104046583016Z-700fd0a2",
+  "updated_at": "2026-11-08T10:44:08+00:00",
+  "song": "abuku",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

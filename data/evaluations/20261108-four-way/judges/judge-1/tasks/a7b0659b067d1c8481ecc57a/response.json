@@ -1,0 +1,21 @@
+{
+  "id": "4eda92e8-faf5-4b6e-8049-d0dc18b5c624",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B的“摊在你手心”更具体、有画面感，与“命をあげたい”的奉献感贴合；“正午白亮的海面”虽为扩展，但延续了海意象且不喧宾夺主。A的“像海风吹过你脸颊”较泛，且与“交给你”的决绝感略脱节。两者核心语义均未误读。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 198,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 107,
+    "service_tier": "standard"
+  }
+}

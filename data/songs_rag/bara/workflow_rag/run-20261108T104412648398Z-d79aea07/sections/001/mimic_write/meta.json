@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\"section\":\"V1\",\"phrases\":[{\"id\":\"V1-01\",\"zh\":\"草丛最深处 一朵无名花\",\"chars\":10,\"self_check\":{\"budget\":[10,10],\"ok\":true,\"note\":\"五字一顿，无名花点出不为人知的活法\"}},{\"id\":\"V1-02\",\"zh\":\"若我这一生 只安静盛开\",\"chars\":10,\"self_check\":{\"budget\":[10,10],\"ok\":true,\"note\":\"五字一顿，保留初版安静盛开的愿望\"}},{\"id\":\"V1-03\",\"zh\":\"只迎着风儿 轻轻地摇摆\",\"chars\":10,\"self_check\":{\"budget\":[10,10],\"ok\":true,\"note\":\"五字一顿，风里轻摇承接前句\"}},{\"id\":\"V1-04\",\"zh\":\"若能一生只摇曳 那该有多好\",\"chars\":12,\"self_check\":{\"budget\":[12,12],\"ok\":true,\"note\":\"七字加五字，用空格按旋律断开\"}}]}",
+  "finished_at": "2026-11-08T10:45:01+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3580,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 2124,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

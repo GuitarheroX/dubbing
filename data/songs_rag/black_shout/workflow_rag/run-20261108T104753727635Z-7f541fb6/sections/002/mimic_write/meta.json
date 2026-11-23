@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"不安漫过我的喉咙\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"保留初版喉咙意象，八字整句\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"这世界定好的规矩\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"把イロハ落到规矩上，语气更冷硬\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"焦躁在骨头里发痒\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"保留初版身体感的焦躁\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"一寸一寸抽走自由\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"用一寸一寸替换一根一根，动作更贴皮肤\"}\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"黑白两色的雨落下\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"保留モノクロ雨的核心意象\"}\n    },\n    {\n      \"id\": \"V1-06\",\n      \"zh\": \"把整个世界都藏起\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"把城市改回世界，贴住原文世界を隠して\"}\n    },\n    {\n      \"id\": \"V1-07\",\n      \"zh\": \"天空垂眼俯视着我 笑我下沉\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"按 pattern 8+4 空格断句，前八后四\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T10:49:08+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3897,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 2837,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

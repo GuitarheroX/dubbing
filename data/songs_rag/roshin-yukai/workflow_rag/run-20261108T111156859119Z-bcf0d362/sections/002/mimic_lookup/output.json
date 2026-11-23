@@ -1,0 +1,46 @@
+{
+  "section": "B1",
+  "query_text": "我又梦见自己 双手掐住你的脖颈\n满溢阳光的午后 亮得让人发疼\n看你细瘦的喉咙 在光里轻轻地跳\n我用快哭出来的眼睛 望着你",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "苏瓷瓷_sucici/柏拉图之恋#s5",
+      "title": "柏拉图之恋",
+      "poet": "苏瓷瓷",
+      "poem_id": "苏瓷瓷_sucici/柏拉图之恋",
+      "stanza_idx": 5,
+      "score": 0.712751,
+      "text": "我会想念你 像想念那只冰冷的手\n在身后突然扼住我的脖子 让我看到天空里洁白的床缛\n从此 我不敢扭头，我只能让身体越来越空\n空到能盛下你身边躺着的另一个人"
+    },
+    {
+      "chunk_id": "苗红年_miaohongnian/风也不是拐骗者#s3",
+      "title": "风也不是拐骗者",
+      "poet": "苗红年",
+      "poem_id": "苗红年_miaohongnian/风也不是拐骗者",
+      "stanza_idx": 3,
+      "score": 0.697345,
+      "text": "梦多出一双捏紧的手指。它要的薄礼\n私藏在我的枕下\n总是拿来一面镜框。给我怀想\n空白的肖像，谁在里面自在地板着脸\n把沉睡与闪烁过的挂上去，把时光里的痛像星星一样嵌入\n多年，好多年。无数年\n需要用划伤过手的钉子，钉在\n你早已被泪水掏空的双瞳里"
+    },
+    {
+      "chunk_id": "侯文基_houwenji/致故乡#s5",
+      "title": "致故乡",
+      "poet": "侯文基",
+      "poem_id": "侯文基_houwenji/致故乡",
+      "stanza_idx": 5,
+      "score": 0.697214,
+      "text": "在昨夜的梦中 隔着苍茫云雾\n又一次听到你用粗大的喉咙\n呼唤我的小名 我激动的热泪盈盈\n梦醒后 只有落寞的夜空"
+    },
+    {
+      "chunk_id": "陈耿雄_chengengxiong/又是#s1",
+      "title": "又是",
+      "poet": "陈耿雄",
+      "poem_id": "陈耿雄_chengengxiong/又是",
+      "stanza_idx": 1,
+      "score": 0.696973,
+      "text": "又是早起\n你刷牙\n我在镜前洗手\n又是午饭后\n你出门\n我倒头大睡\n又是夜深了\n我上床\n你关灯\n又是不安地入梦\n与回忆搏斗\n直到无梦可梦"
+    }
+  ]
+}

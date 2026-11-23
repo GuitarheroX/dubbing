@@ -1,0 +1,21 @@
+{
+  "id": "45f1f724-c229-4f22-8888-2d1ceda6e8ee",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更自然、有表现力，B1-01“攥紧过去 甩开 朝未来”保留“抓/舍/未来”的动作链且节奏感强；B1-02“别过脸”比“移开眼外”更地道；B1-03/04“越过……都敢越”情绪更连贯。B的B1-01“抓住过去丢弃走向未来”略生硬，B1-04“比时空更多”语义偏空。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 343,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 137,
+    "service_tier": "standard"
+  }
+}

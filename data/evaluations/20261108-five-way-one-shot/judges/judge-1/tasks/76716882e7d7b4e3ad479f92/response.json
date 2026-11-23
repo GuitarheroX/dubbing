@@ -1,0 +1,21 @@
+{
+  "id": "3291505e-8a3e-43fc-8574-33ceeaabf743",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更简洁自然，保留了原文递进与被动感；A部分表达冗长或偏离，如V1-04添加“回不来”、V1-08“一切太平”弱化原意。B的V1-07“被你洗得”准确体现施受关系，整体情绪更贴合。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\",\"V1-07\",\"V1-08\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 363,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 119,
+    "service_tier": "standard"
+  }
+}

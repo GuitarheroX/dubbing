@@ -1,0 +1,20 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\"id\": \"V1-01\", \"zh\": \"水光点新芽 夜还半梦半醒着\"},\n    {\"id\": \"V1-02\", \"zh\": \"你总快走半步 影子轻轻晃\"},\n    {\"id\": \"V1-03\", \"zh\": \"桌上散落着夜宵的碎屑 拼成梦地图\"},\n    {\"id\": \"V1-04\", \"zh\": \"新的早晨 正悄悄走来\"}\n  ]\n}",
+  "finished_at": "2026-11-08T11:44:38+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "json_repaired": false,
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 134,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3067,
+    "output_tokens": 1712,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

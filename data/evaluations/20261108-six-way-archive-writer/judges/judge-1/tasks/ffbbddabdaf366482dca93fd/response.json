@@ -1,0 +1,21 @@
+{
+  "id": "2bdbff88-086e-457d-b3f6-c57c8e5498e4",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"准确传达潜在忧愁、无法坦率、与人难沟通、连自己也是的核心语义\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，但表达较平直，缺少原句的压抑层次\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文顺口自然，符合歌词文体\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但偏直译，意象和力度普通\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"保留忧愁与沟通困难的主旨，但“话到嘴边又咽回”“说给空气”改写了原句的坦率与理解障碍\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向大体一致，但具体化为独白式意象，局部偏离原作的自我封闭感\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文流畅有歌词感，个别表达略绕\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象较鲜明，“说给空气”“没人接住”有表现力\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心信息准确，忧愁、无法坦率、无法相互理解、连自己也是均保留\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，但表达较平，压抑感稍弱\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"顺口自然，符合歌词文体\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但较普通，缺少鲜明意象\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"“浑浊”“耳机两端”“认不出自己”明显改写原意，忧愁变为浑浊，沟通障碍变为耳机意象，自我理解变为认不出自己\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"emotion\":{\"score\":3,\"reason\":\"整体仍有压抑疏离感，但具体意象使情绪偏移\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文较顺，有歌词感，个别搭配略生硬\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明有力，但部分服务的是改写后的主题\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心语义准确，潜藏忧愁、无法坦诚、无法互相理解、连自己也是均保留\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，但表达较平直，压抑层次略弱\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"顺口自然，符合歌词文体\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但普通，缺少鲜明意象\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心信息准确，忧愁、难以坦率、和谁说不通、连自己也是均保留\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，“说不通呢”略带口语叹息感，整体较平\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"顺口自然，口语化处理符合歌词文体\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但较普通，意象不突出\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\",\"V2-04\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 914,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 1261,
+    "service_tier": "standard"
+  }
+}

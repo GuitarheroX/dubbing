@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T174756_b_27f6ca",
+  "input_hash": "27f6caea41ec498c716b981546c2ef9f3f891182f380064ea739da1cb65afc8e",
+  "finished_at": "2026-11-03T17:48:00+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2391,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3328,
+    "output_tokens": 924,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"C2\",\n  \"phrases\": [\n    {\n      \"id\": \"C2-01\",\n      \"zh\": \"把你的心交给我\",\n      \"chars\": 7,\n      \"self_check\": {\n        \"budget\": [7, 7],\n        \"ok\": true,\n        \"note\": \"与C1同句保持重复，七字整句\"\n      }\n    },\n    {\n      \"id\": \"C2-02\",\n      \"zh\": \"把一束花放你手中\",\n      \"chars\": 8,\n      \"self_check\": {\n        \"budget\": [8, 8],\n        \"ok\": true,\n        \"note\": \"八字整句，与C1重复\"\n      }\n    },\n    {\n      \"id\": \"C2-03\",\n      \"zh\": \"就让风掠过长发 任它散落在你肩头\",\n      \"chars\": 15,\n      \"self_check\": {\n        \"budget\": [15, 15],\n        \"ok\": true,\n        \"note\": \"中间空格断句，前后七字加八字\"\n      }\n    },\n    {\n      \"id\": \"C2-04\",\n      \"zh\": \"把你的话交给我\",\n      \"chars\": 7,\n      \"self_check\": {\n        \"budget\": [7, 7],\n        \"ok\": true,\n        \"note\": \"七字整句，与C1保持一致\"\n      }\n    },\n    {\n      \"id\": \"C2-05\",\n      \"zh\": \"把你的哼唱递给我\",\n      \"chars\": 8,\n      \"self_check\": {\n        \"budget\": [8, 8],\n        \"ok\": true,\n        \"note\": \"八字整句，重复C1\"\n      }\n    },\n    {\n      \"id\": \"C2-06\",\n      \"zh\": \"把一切 都搁在 长长迷宫 最远的那一头\",\n      \"chars\": 16,\n      \"self_check\": {\n        \"budget\": [16, 16],\n        \"ok\": true,\n        \"note\": \"三处空格对应四段旋律，总字数为十六\"\n      }\n    }\n  ]\n}",
+  "migrated_from": "20261103T174756_b_27f6ca"
+}

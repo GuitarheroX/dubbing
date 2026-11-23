@@ -1,0 +1,21 @@
+{
+  "id": "d9305f1c-6fb8-4976-8ff1-dc4986458b62",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"各句核心信息准确，'被抛在身后'贴合'置いてきた'的语感\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"emotion\":{\"score\":5,\"reason\":\"注视、孤独释然、月笑相迎与请求回望的情绪层次完整保留\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"断句顺口，'今宵月光也对我微笑'自然有歌词味\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰但偏平实，'请看向我'略直白\",\"phrase_ids\":[\"V1-03\",\"V1-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"语义准确，'仿佛已把孤独抛在身后'忠实且合理\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"emotion\":{\"score\":5,\"reason\":\"温柔期待与月夜笑意保留充分\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文流畅自然，'请看向我这边'口语顺\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"表达稳妥但意象较常规，缺少亮点\",\"phrase_ids\":[\"V1-02\",\"V1-03\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"'站在你的视线之外'添加了原词没有的疏离设定，改变人物关系\",\"phrase_ids\":[\"V1-01\"]},\"emotion\":{\"score\":3,\"reason\":\"整体温柔方向一致，但'视线之外'带来单恋距离感，偏离原注视的亲近\",\"phrase_ids\":[\"V1-01\",\"V1-02\"]},\"naturalness\":{\"score\":3,\"reason\":\"断句碎片化，'轻轻来''带我飞向星'略生硬\",\"phrase_ids\":[\"V1-02\",\"V1-05\"]},\"expressiveness\":{\"score\":3,\"reason\":\"有画面但'门外''视线之外'意象堆叠且服务偏移主题\",\"phrase_ids\":[\"V1-01\",\"V1-02\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"'悄悄''不说话''门外夜色'等添加原词没有的隐秘与距离设定，'星河'改'星'\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-05\"]},\"emotion\":{\"score\":3,\"reason\":\"月笑与请求回望保留，但整体被'悄悄''门外'染上疏离感\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"naturalness\":{\"score\":3,\"reason\":\"'被留在门外的夜色'搭配别扭，'带 我飞去星河'断字生硬\",\"phrase_ids\":[\"V1-02\",\"V1-05\"]},\"expressiveness\":{\"score\":3,\"reason\":\"意象较多但部分空泛，'弯起眼'尚可\",\"phrase_ids\":[\"V1-03\",\"V1-04\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心语义准确，'已将孤独放下'合理对应'置いてきた'\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，'含笑相迎'稍偏正式，温柔感略淡\",\"phrase_ids\":[\"V1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，'含笑相迎'略书面化\",\"phrase_ids\":[\"V1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"表达清晰，'朝我这边看'直白有力但少余韵\",\"phrase_ids\":[\"V1-03\",\"V1-04\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 986,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 972,
+    "service_tier": "standard"
+  }
+}

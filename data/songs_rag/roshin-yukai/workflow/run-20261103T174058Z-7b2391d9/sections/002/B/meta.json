@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173940_b_53dd00",
+  "input_hash": "53dd00155deae24b48513536fa8f83270d61bd75e92c81601a2ebf588b6bc9d1",
+  "finished_at": "2026-11-03T17:39:46+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 4681,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 1363,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"梦见我双手 一寸一寸收紧你喉咙\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"空格断句，「一寸一寸」重复保留缓慢收紧的感觉\"}\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"午后的阳光 铺满地板 亮得刺眼\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"两处空格断成三段，对应旋律起伏\"}\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"你细细的喉咙 在我掌心轻轻跳动\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"空格分出前后半句，掌心与上句双手呼应\"}\n    },\n    {\n      \"id\": \"B1-04\",\n      \"zh\": \"我红着眼眶 只是静静望着你\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"「着」在句中不拖尾，收在「你」上\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T173940_b_53dd00"
+}

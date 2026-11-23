@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"暮色里 街巷空寂\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": false, \"note\": \"缺2字，需补意象\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"人世间 聚散无常\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": false, \"note\": \"缺2字，需补意象\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"全部 载着风远去\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": false, \"note\": \"缺2字，需补意象\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"流云间 乘风而行\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": false, \"note\": \"缺2字，需补意象\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:25+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "V1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1301,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 280,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

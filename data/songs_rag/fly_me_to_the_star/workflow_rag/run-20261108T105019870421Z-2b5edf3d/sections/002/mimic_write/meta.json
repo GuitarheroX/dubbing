@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"真心话 停在唇边 打转 咽回心里去\",\n      \"chars\": 14,\n      \"self_check\": {\n        \"budget\": [14, 14],\n        \"ok\": true,\n        \"note\": \"按 3+4+2+5 断句，真心话停在唇边打转，最后咽回，补足五字\"\n      }\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"镜中人 换一张 陌生脸\",\n      \"chars\": 9,\n      \"self_check\": {\n        \"budget\": [9, 9],\n        \"ok\": true,\n        \"note\": \"按 3+3+3 断句，镜中人换一张陌生脸，写试演不同人生\"\n      }\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"演成另一个我 笑得笨拙 只为 换你多看一眼\",\n      \"chars\": 18,\n      \"self_check\": {\n        \"budget\": [18, 18],\n        \"ok\": true,\n        \"note\": \"按 6+4+2+6 断句，保留初版笑得笨拙，末段换你多看一眼六字\"\n      }\n    },\n    {\n      \"id\": \"V2-04\",\n      \"zh\": \"oh 带我飞向星\",\n      \"chars\": 6,\n      \"self_check\": {\n        \"budget\": [6, 6],\n        \"ok\": true,\n        \"note\": \"与 V1-05 完全重复，oh 占第一拍，后五字对齐 1+5\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T10:52:29+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3588,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 6885,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

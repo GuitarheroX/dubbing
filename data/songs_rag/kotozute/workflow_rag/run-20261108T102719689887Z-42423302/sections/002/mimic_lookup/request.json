@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "query_text": "曾见过的散场\n理所当然 该来的停在眼角\n始终没看见",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "f654180e-e0b1-46c7-b358-4e9f74113f94",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原句的无奈与意象：V1-01保留“无可奈何”的情绪，V1-02“低语”虽弱于“蠢く”的蠕动感，但整体自然；V1-03准确传达泡沫浮起又消散的意象。B的V1-01“胸口有火烧不透”偏离原意，V1-02“骨头里蠕动”过度具象化，V1-03“破了又生”添加了原文没有的循环感，表现力强但语义偏移较多。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 401,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 140,
+    "service_tier": "standard"
+  }
+}

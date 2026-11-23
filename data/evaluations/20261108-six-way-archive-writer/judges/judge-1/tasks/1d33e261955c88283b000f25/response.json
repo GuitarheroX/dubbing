@@ -1,0 +1,21 @@
+{
+  "id": "a50ec69a-cdcb-42cd-88a7-830c1f3efe31",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"“带我一起去”准确对应“連れてって”，“飞向那星辰”保留fly me to the star的核心意象\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"emotion\":{\"score\":5,\"reason\":\"恳求与向往的情绪完整保留，语气自然\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"naturalness\":{\"score\":5,\"reason\":\"两行都顺口，符合歌词文体\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"表达清晰有力，但“那星辰”略常规\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"“带我走吧”准确传达“連れてって”，“飞向那星”保留核心意象\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"emotion\":{\"score\":5,\"reason\":\"恳求与飞向星空的情绪方向一致\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"naturalness\":{\"score\":5,\"reason\":\"简洁顺口，符合歌词短句\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清楚但“那星”稍显单薄\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“带我走吧”准确；“飞去星河”将star扩展为星河，意象偏移但可接受\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"向往情绪保留，但“星河”使原句更宏大，略改原意境\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"“带 我飞去星河”有空格断句，整体可唱但略生硬\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“星河”意象较鲜明，但偏离原词的单星指向\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“带我 走吧”语义准确；“oh 带我飞向星”保留核心动作与目标\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，但“oh”后接中文略削弱原句的呼唤感\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"naturalness\":{\"score\":3,\"reason\":\"“带我 走吧”空格断句不自然，“飞向星”结尾略生硬\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达可理解但较平淡，断句影响流畅\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"“请带上我”准确对应“連れてって”；英文原句完整保留\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"emotion\":{\"score\":5,\"reason\":\"恳求语气和原句呼唤感完整保留\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文句自然，但第二行保留英文，中文歌词整体感稍弱\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"原句保留有力，但未做中文转化，表现力依赖原文\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“带我飞”省略“走”，仍传达带离之意；“飞向星”保留核心\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"向往情绪保留，但“带我飞”比原句更轻快，略弱恳求感\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"短句顺口，但“带我飞”略口语化，“飞向星”稍生硬\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，意象较单薄\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 549,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 1040,
+    "service_tier": "standard"
+  }
+}

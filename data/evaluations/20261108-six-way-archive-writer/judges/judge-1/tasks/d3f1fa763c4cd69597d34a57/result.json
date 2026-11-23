@@ -1,0 +1,229 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "保留今日悲伤、明日喜悦、风带走、该去之处，但“眼泪和叹息”“笑声和亮光”替换原词具体意象，略有偏移",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，温柔流动感保留，但“都收下/都带上”稍显主动，弱化原句被动承载感",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“风提着”略生硬但可理解",
+          "phrase_ids": [
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“眼泪和叹息”“笑声和亮光”意象鲜明，服务主题",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达今日悲伤承载、明日喜悦运送、风全部带走、该去之处",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，但“所有的那”“给带走”稍显滞重，流动感略弱",
+          "phrase_ids": [
+            "V2-01",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“承载着今日所有的那悲伤”“全部都被那风儿给带走”语序和虚词偏生硬",
+          "phrase_ids": [
+            "V2-01",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏直译，意象和力度普通",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "保留悲伤、喜悦、风带走、该去之处，但“旧行李”“还没拆先上路”“影子也不留”增添原文没有的具体事件和意象，偏移较大",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪基调仍偏流动漂泊，但“旧行李”“还没拆”带来俏皮具体感，与原句沉静感有偏离",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口有歌词感，个别搭配略跳",
+          "phrase_ids": [
+            "V2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“旧行李”“影子也不留”意象鲜明有力，但部分服务的是新增意象而非原主题",
+          "phrase_ids": [
+            "V2-01",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心信息保留，但“悲伤的重量”“欢喜的微光”为合理补充意象，“回到”略改变“或るべき場所へ”的方向感",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，轻重对比和温柔感保留",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "短句顺口，节奏清晰，“风都轻轻带走”自然",
+          "phrase_ids": [
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“悲伤的重量”“欢喜的微光”对比鲜明，表达有力",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心信息基本保留，但省略“今日的/悲伤”之间的连接，且“载着悲伤”“运送喜悦”略简化原句结构",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向一致但表达平淡，缺少原句的承载与运送对比张力",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“今日的 载着悲伤”语法省略后略生硬，整体可理解",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 2,
+          "reason": "表达空泛，意象和力度不足",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "保留悲伤、喜悦、风带走、该去之处，但“去远行”“来敲门”改变原句被动承载运送的关系，增添拟人事件",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向大体一致，但“来敲门”带来轻快拟人感，与原句沉静流动感有偏离",
+          "phrase_ids": [
+            "V2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，歌词感较好",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "“去远行”“来敲门”有画面但偏俗套，整体表达普通",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        }
+      }
+    }
+  ]
+}

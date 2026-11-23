@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"盛夏耀眼的海面 赤脚踩进白浪\",\n      \"chars\": 13,\n      \"self_check\": {\n        \"budget\": [13, 13],\n        \"ok\": true,\n        \"note\": \"前七字后六字，正好卡住 7+6 的旋律切分\"\n      }\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"喊着你名字的间隙 海水漫过脚踝\",\n      \"chars\": 14,\n      \"self_check\": {\n        \"budget\": [14, 14],\n        \"ok\": true,\n        \"note\": \"前八字后六字，保留初版海水漫脚的画面\"\n      }\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"忘了海浪在推我 皮肤晒出盐粒\",\n      \"chars\": 13,\n      \"self_check\": {\n        \"budget\": [13, 13],\n        \"ok\": true,\n        \"note\": \"前七字后六字，用盐粒替代直说发干\"\n      }\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"你伸来的手心朝上 身体先烧起来\",\n      \"chars\": 14,\n      \"self_check\": {\n        \"budget\": [14, 14],\n        \"ok\": true,\n        \"note\": \"前八字后六字，承接初版手心朝上的意象\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T10:57:21+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2611,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 2838,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

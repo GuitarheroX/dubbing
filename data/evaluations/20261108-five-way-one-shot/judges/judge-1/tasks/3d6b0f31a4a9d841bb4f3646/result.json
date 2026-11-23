@@ -1,0 +1,206 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "水光与新芽意象保留，'弹响'略增动感；'追着你影子'为合理补充，'慢慢靠近'弱化'くる'的确定感。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "清晨轻快与夜梦氛围基本保留，'追着你影子'增添亲密感，整体方向一致。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "'新芽把春天弹响'稍显跳脱但可理解，其余顺口。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'弹响''连成梦地图'意象鲜明，服务主题。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心信息准确，'走得早'略偏'早歩き'（快步）之意，其余保留。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "清晨轻快与夜梦氛围保留，情绪方向一致但略平。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "表达顺口自然，符合歌词文体。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "意象清楚但表达普通，缺少亮点。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心语义保留，'残食'略生硬但对应食べこぼし，'跳上新芽时'主语略模糊。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向一致但偏平淡，清晨轻快感不足。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "'水光里 跳上新芽时''残食'等表达生硬，可理解但不够顺。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "有基本意象但表达普通，'残食'削弱画面美感。",
+          "phrase_ids": [
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "'夜半的梦还没醒'为原文所无的增补，'从梦里走来'改变'新しい朝がくる'的直陈，核心偏移明显。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "梦幻氛围增强但偏离原曲清晨轻快的基调，局部偏移。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，'夜半的梦还没醒'与前后衔接稍突兀。",
+          "phrase_ids": [
+            "V1-01"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'影子轻轻晃''拼成梦地图'意象鲜明有力。",
+          "phrase_ids": [
+            "V1-02",
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心信息准确，'光斑跳跃''加快脚步''碎屑是梦的地图''即将到来'均贴合原文。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，清晨轻快与夜梦氛围保留，但表达偏平。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体通顺，'夜半里掉落的食物碎屑'稍长但可接受。",
+          "phrase_ids": [
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "语义清楚但意象表达普通，缺少鲜明亮点。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-03"
+          ]
+        }
+      }
+    }
+  ]
+}

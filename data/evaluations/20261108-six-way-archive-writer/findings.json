@@ -1,0 +1,107 @@
+{
+  "completed_songs": 20,
+  "paired_songs": 19,
+  "judge_tasks_completed": 2356,
+  "judge_tasks_reused": 1520,
+  "judge_tasks_new": 836,
+  "budget_pass_rates": {
+    "paper-original": 0.12846834108444014,
+    "paper-annotated": 0.39808169127054577,
+    "workflow": 1.0,
+    "workflow-rag": 1.0,
+    "one-shot": 0.11644619570316164,
+    "one-shot-archive": 0.1496326973107159
+  },
+  "text_scores": {
+    "paper-original": {
+      "semantic": 4.508458646616541,
+      "emotion": 3.784147869674185,
+      "naturalness": 4.0439223057644105,
+      "expressiveness": 3.123809523809524
+    },
+    "paper-annotated": {
+      "semantic": 4.279573934837092,
+      "emotion": 3.782017543859649,
+      "naturalness": 3.73828320802005,
+      "expressiveness": 3.1335213032581457
+    },
+    "workflow": {
+      "semantic": 3.0540726817042607,
+      "emotion": 3.406390977443609,
+      "naturalness": 3.786591478696742,
+      "expressiveness": 3.889661654135338
+    },
+    "workflow-rag": {
+      "semantic": 3.192105263157895,
+      "emotion": 3.475187969924812,
+      "naturalness": 3.8637844611528824,
+      "expressiveness": 3.9090852130325815
+    },
+    "one-shot": {
+      "semantic": 3.957769423558897,
+      "emotion": 3.8103383458646616,
+      "naturalness": 4.3008145363408525,
+      "expressiveness": 3.5067042606516288
+    },
+    "one-shot-archive": {
+      "semantic": 4.084210526315789,
+      "emotion": 3.9710526315789476,
+      "naturalness": 4.196553884711779,
+      "expressiveness": 3.524812030075188
+    }
+  },
+  "archived_writer_preferences": [
+    {
+      "a": "one-shot-archive",
+      "b": "paper-original",
+      "win_rate_a": 0.5482456140350878,
+      "stable_pairs": 55,
+      "unstable_pairs": 21,
+      "planned_pairs": 76
+    },
+    {
+      "a": "one-shot-archive",
+      "b": "paper-annotated",
+      "win_rate_a": 0.6271929824561404,
+      "stable_pairs": 60,
+      "unstable_pairs": 16,
+      "planned_pairs": 76
+    },
+    {
+      "a": "one-shot-archive",
+      "b": "workflow",
+      "win_rate_a": 0.8885964912280702,
+      "stable_pairs": 63,
+      "unstable_pairs": 13,
+      "planned_pairs": 76
+    },
+    {
+      "a": "one-shot-archive",
+      "b": "workflow-rag",
+      "win_rate_a": 0.837218045112782,
+      "stable_pairs": 59,
+      "unstable_pairs": 17,
+      "planned_pairs": 76
+    },
+    {
+      "a": "one-shot-archive",
+      "b": "one-shot",
+      "win_rate_a": 0.388235294117647,
+      "stable_pairs": 50,
+      "unstable_pairs": 26,
+      "planned_pairs": 76
+    }
+  ],
+  "self_check_diagnostics": {
+    "incorrect_reported_counts": 239,
+    "reported_counts": 380,
+    "self_check_ok_but_budget_fail": 188
+  },
+  "interpretation": [
+    "归档提示词与历史 workflow writer 的系统提示一致，但单次调用预算通过率仍只有14.96%。",
+    "相较新版 one-shot，归档组的语义和情绪评分略高，自然度略低，表现力接近；现有证据不支持全面更优。",
+    "新版 one-shot 在稳定比较中对归档组的偏好胜率为61.18%，但26/76段顺序不稳定，且歌曲bootstrap区间覆盖50%。",
+    "与历史 workflow 的思考状态及生成时间尚未完全匹配；联合去除分析与返修不能区分各组件贡献。"
+  ],
+  "comet_status": "skipped"
+}

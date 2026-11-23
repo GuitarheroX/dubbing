@@ -1,0 +1,46 @@
+{
+  "section": "C1",
+  "query_text": "玫瑰啊 玫瑰啊 凛然地开到最盛时\n玫瑰啊 玫瑰啊 美丽地散得从容",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "陈强华_chenqianghua/Lost and Found#s8",
+      "title": "Lost and Found",
+      "poet": "陈强华",
+      "poem_id": "陈强华_chenqianghua/Lost and Found",
+      "stanza_idx": 8,
+      "score": 0.693981,
+      "text": "住在前面的朋友他们先来这里\n玫瑰已绽放你说要离去\n向你的梦投掷一朵朵玫瑰\n这人已臻至完美\n该是歇脚的时候\n脸上微笑，和停止生长的短髭"
+    },
+    {
+      "chunk_id": "谷语_guyu/圣途#s175",
+      "title": "圣途",
+      "poet": "谷语",
+      "poem_id": "谷语_guyu/圣途",
+      "stanza_idx": 175,
+      "score": 0.693889,
+      "text": "玫瑰已从天国降临\n“善心仁慈的人有福了”\n座位已在玫瑰上排好\n爱、慈悲、谦逊\n三位一体聚合之花蕊\n包蕴过去、现在和未来\n光之涌流，既是静又是动\n既是有限又是无垠\n既是一点又包蕴全世界\n是生又包含所有死\n是死又蕴藏所有生"
+    },
+    {
+      "chunk_id": "北塔_beita/北京中轴线：大杂院杂感#s17",
+      "title": "北京中轴线：大杂院杂感",
+      "poet": "北塔",
+      "poem_id": "北塔_beita/北京中轴线：大杂院杂感",
+      "stanza_idx": 17,
+      "score": 0.692855,
+      "text": "玫瑰似乎永远在墙外\n才会开得艳丽\n每一朵都是挤出来的笑容\n都在向路过的风邀宠"
+    },
+    {
+      "chunk_id": "邹崧蔚_zousongwei/黑暗中#s1p2",
+      "title": "黑暗中",
+      "poet": "邹崧蔚",
+      "poem_id": "邹崧蔚_zousongwei/黑暗中",
+      "stanza_idx": 1,
+      "score": 0.686671,
+      "text": "中心开放的玫瑰如太阳\n她的每一枚花瓣\n都到达了天极地限\n那只身夹黄袍的蜘蛛\n骑一匹矫健壮实的枣红马\n背上的双翅展开闪烁着锋利的寒光\n各色叶片都随寒光凌空蹈舞"
+    }
+  ]
+}

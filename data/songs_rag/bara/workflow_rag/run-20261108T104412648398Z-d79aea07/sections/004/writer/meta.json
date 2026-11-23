@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\"id\": \"V2-01\", \"zh\": \"问哪一颗星 转到那刻度\"},\n    {\"id\": \"V2-02\", \"zh\": \"散落的那人 原来就是我\"},\n    {\"id\": \"V2-03\", \"zh\": \"平凡地活着 那样的日子\"},\n    {\"id\": \"V2-04\", \"zh\": \"明知求也求不来 这具身躯\"}\n  ]\n}",
+  "finished_at": "2026-11-08T10:46:28+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2409,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1792,
+    "output_tokens": 1484,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

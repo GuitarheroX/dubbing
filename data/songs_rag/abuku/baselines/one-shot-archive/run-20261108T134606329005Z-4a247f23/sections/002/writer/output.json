@@ -1,0 +1,44 @@
+{
+  "section": "V2",
+  "phrases": [
+    {
+      "id": "V2-01",
+      "zh": "啊 无处安放的悲伤",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "首字单独成拍，后七字连读"
+      }
+    },
+    {
+      "id": "V2-02",
+      "zh": "驱使我前行的兽",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "前三后五断句"
+      }
+    },
+    {
+      "id": "V2-03",
+      "zh": "同义反复 握紧的手 泡沫",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": true,
+        "note": "六字加五字，中间空格表停顿"
+      }
+    }
+  ]
+}

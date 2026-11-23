@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"世界解开声音倾泻\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": false, \"note\": \"少2字，需要补\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"朝我奔来\",\n      \"chars\": 4,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": false, \"note\": \"少1字\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"朝我奔来\",\n      \"chars\": 4,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": false, \"note\": \"少1字\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"晨光醒来\",\n      \"chars\": 4,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": false, \"note\": \"少1字\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"未来转身的你还在等待\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": false, \"note\": \"少1字\"}\n    },\n    {\n      \"id\": \"C1-06\",\n      \"zh\": \"我挥着手\",\n      \"chars\": 4,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": false, \"note\": \"少1字\"}\n    },\n    {\n      \"id\": \"C1-07\",\n      \"zh\": \"划向未来\",\n      \"chars\": 4,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": false, \"note\": \"少1字\"}\n    },\n    {\n      \"id\": \"C1-08\",\n      \"zh\": \"划向未来\",\n      \"chars\": 4,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": false, \"note\": \"少1字\"}\n    },\n    {\n      \"id\": \"C1-09\",\n      \"zh\": \"去向何方\",\n      \"chars\": 4,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": false, \"note\": \"少1字\"}\n    },\n    {\n      \"id\": \"C1-10\",\n      \"zh\": \"去往任何地方\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": false, \"note\": \"多1字\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:53+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "C1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 866,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1792,
+    "output_tokens": 607,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

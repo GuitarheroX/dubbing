@@ -1,0 +1,37 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+    "user": "過去を掴み捨てて未来\n出会いし続けて目を逸らしたい\nあの自分よりも\n時空よりも"
+  },
+  "data": {
+    "lyrics": [
+      "過去を掴み捨てて未来",
+      "出会いし続けて目を逸らしたい",
+      "あの自分よりも",
+      "時空よりも"
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "過去を掴み捨てて未来\n出会いし続けて目を逸らしたい\nあの自分よりも\n時空よりも"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "score_contrasts": {
+    "one-shot-archive_minus_one-shot": {
+      "semantic": {
+        "songs": 19,
+        "difference_a_minus_b": 0.12644110275689222,
+        "ci95": [
+          -0.024561403508771982,
+          0.27819548872180444
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "a_better": 11,
+          "tied": 2,
+          "b_better": 6
+        }
+      },
+      "emotion": {
+        "songs": 19,
+        "difference_a_minus_b": 0.1607142857142857,
+        "ci95": [
+          -0.0021929824561403195,
+          0.33333333333333326
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "a_better": 9,
+          "b_better": 5,
+          "tied": 5
+        }
+      },
+      "naturalness": {
+        "songs": 19,
+        "difference_a_minus_b": -0.1042606516290727,
+        "ci95": [
+          -0.3060150375939849,
+          0.0952380952380953
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "b_better": 9,
+          "tied": 4,
+          "a_better": 6
+        }
+      },
+      "expressiveness": {
+        "songs": 19,
+        "difference_a_minus_b": 0.018107769423558927,
+        "ci95": [
+          -0.15676691729323303,
+          0.1819548872180452
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "b_better": 7,
+          "a_better": 9,
+          "tied": 3
+        }
+      }
+    },
+    "workflow_minus_one-shot-archive": {
+      "semantic": {
+        "songs": 19,
+        "difference_a_minus_b": -1.0301378446115288,
+        "ci95": [
+          -1.2178571428571427,
+          -0.831453634085213
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "b_better": 18,
+          "tied": 1
+        }
+      },
+      "emotion": {
+        "songs": 19,
+        "difference_a_minus_b": -0.5646616541353383,
+        "ci95": [
+          -0.7043859649122807,
+          -0.42869674185463663
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "b_better": 18,
+          "tied": 1
+        }
+      },
+      "naturalness": {
+        "songs": 19,
+        "difference_a_minus_b": -0.4099624060150376,
+        "ci95": [
+          -0.598872180451128,
+          -0.20789473684210527
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "b_better": 15,
+          "a_better": 2,
+          "tied": 2
+        }
+      },
+      "expressiveness": {
+        "songs": 19,
+        "difference_a_minus_b": 0.36484962406015037,
+        "ci95": [
+          0.20639097744360899,
+          0.5161654135338346
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "a_better": 15,
+          "tied": 2,
+          "b_better": 2
+        }
+      }
+    },
+    "workflow-rag_minus_one-shot-archive": {
+      "semantic": {
+        "songs": 19,
+        "difference_a_minus_b": -0.8921052631578947,
+        "ci95": [
+          -1.0745614035087718,
+          -0.7017543859649122
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "b_better": 18,
+          "tied": 1
+        }
+      },
+      "emotion": {
+        "songs": 19,
+        "difference_a_minus_b": -0.4958646616541353,
+        "ci95": [
+          -0.6587719298245613,
+          -0.33884711779448623
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "b_better": 15,
+          "tied": 4
+        }
+      },
+      "naturalness": {
+        "songs": 19,
+        "difference_a_minus_b": -0.3327694235588973,
+        "ci95": [
+          -0.5282581453634085,
+          -0.11140350877192988
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "tied": 3,
+          "b_better": 14,
+          "a_better": 2
+        }
+      },
+      "expressiveness": {
+        "songs": 19,
+        "difference_a_minus_b": 0.38427318295739343,
+        "ci95": [
+          0.20921052631578949,
+          0.5369674185463658
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "a_better": 16,
+          "tied": 2,
+          "b_better": 1
+        }
+      }
+    },
+    "one-shot-archive_minus_paper-original": {
+      "semantic": {
+        "songs": 19,
+        "difference_a_minus_b": -0.4242481203007518,
+        "ci95": [
+          -0.6243734335839599,
+          -0.2343358395989974
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "b_better": 14,
+          "tied": 3,
+          "a_better": 2
+        }
+      },
+      "emotion": {
+        "songs": 19,
+        "difference_a_minus_b": 0.18690476190476193,
+        "ci95": [
+          -0.007832080200501156,
+          0.37769423558897247
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "tied": 4,
+          "a_better": 11,
+          "b_better": 4
+        }
+      },
+      "naturalness": {
+        "songs": 19,
+        "difference_a_minus_b": 0.15263157894736845,
+        "ci95": [
+          -0.11491228070175433,
+          0.41228070175438597
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "a_better": 9,
+          "b_better": 7,
+          "tied": 3
+        }
+      },
+      "expressiveness": {
+        "songs": 19,
+        "difference_a_minus_b": 0.40100250626566425,
+        "ci95": [
+          0.24310776942355897,
+          0.5695488721804512
+        ],
+        "seed": 0,
+        "samples": 10000,
+        "song_comparison": {
+          "a_better": 13,
+          "tied": 6
+        }
+      }
+    }
+  },
+  "archived_writer_preferences": [
+    {
+      "a": "paper-original",
+      "b": "one-shot-archive",
+      "planned_pairs": 76,
+      "stable_pairs": 55,
+      "unstable_pairs": 21,
+      "abstained_pairs": 0,
+      "missing_pairs": 0,
+      "stable_coverage": 0.7236842105263158,
+      "win_rate_a": 0.4517543859649123,
+      "micro_win_rate_a": 0.4909090909090909,
+      "stable_counts": {
+        "one-shot-archive": 28,
+        "paper-original": 27
+      },
+      "ci95_win_rate_a": [
+        0.3157894736842105,
+        0.5833333333333334
+      ],
+      "valid_songs": 19
+    },
+    {
+      "a": "paper-annotated",
+      "b": "one-shot-archive",
+      "planned_pairs": 76,
+      "stable_pairs": 60,
+      "unstable_pairs": 16,
+      "abstained_pairs": 0,
+      "missing_pairs": 0,
+      "stable_coverage": 0.7894736842105263,
+      "win_rate_a": 0.37280701754385964,
+      "micro_win_rate_a": 0.35833333333333334,
+      "stable_counts": {
+        "paper-annotated": 21,
+        "one-shot-archive": 38,
+        "tie": 1
+      },
+      "ci95_win_rate_a": [
+        0.24561403508771928,
+        0.5043859649122807
+      ],
+      "valid_songs": 19
+    },
+    {
+      "a": "workflow",
+      "b": "one-shot-archive",
+      "planned_pairs": 76,
+      "stable_pairs": 63,
+      "unstable_pairs": 13,
+      "abstained_pairs": 0,
+      "missing_pairs": 0,
+      "stable_coverage": 0.8289473684210527,
+      "win_rate_a": 0.11140350877192982,
+      "micro_win_rate_a": 0.1111111111111111,
+      "stable_counts": {
+        "one-shot-archive": 56,
+        "workflow": 7
+      },
+      "ci95_win_rate_a": [
+        0.028070175438596467,
+        0.21228070175438596
+      ],
+      "valid_songs": 19
+    },
+    {
+      "a": "workflow-rag",
+      "b": "one-shot-archive",
+      "planned_pairs": 76,
+      "stable_pairs": 59,
+      "unstable_pairs": 17,
+      "abstained_pairs": 0,
+      "missing_pairs": 0,
+      "stable_coverage": 0.7763157894736842,
+      "win_rate_a": 0.16278195488721806,
+      "micro_win_rate_a": 0.15254237288135594,
+      "stable_counts": {
+        "one-shot-archive": 50,
+        "workflow-rag": 9
+      },
+      "ci95_win_rate_a": [
+        0.06992481203007522,
+        0.26754385964912275
+      ],
+      "valid_songs": 19
+    },
+    {
+      "a": "one-shot",
+      "b": "one-shot-archive",
+      "planned_pairs": 76,
+      "stable_pairs": 50,
+      "unstable_pairs": 26,
+      "abstained_pairs": 0,
+      "missing_pairs": 0,
+      "stable_coverage": 0.6578947368421053,
+      "win_rate_a": 0.611764705882353,
+      "micro_win_rate_a": 0.62,
+      "stable_counts": {
+        "one-shot-archive": 18,
+        "one-shot": 30,
+        "tie": 2
+      },
+      "ci95_win_rate_a": [
+        0.45294117647058824,
+        0.7647058823529411
+      ],
+      "valid_songs": 17
+    }
+  ],
+  "note": "区间按歌曲 bootstrap（10000 次、seed=0）；不覆盖模型偏差、生成采样、提示词差异或剔除顺序不稳定比较的影响。"
+}

@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "D1",
+    "query_text": "有一天 这首 小小的 歌会飘散\n你大概 某天 哼着它 就想不起\n我却会 一直 记得它 从哪儿来\n长成大人 以后 也不忘",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

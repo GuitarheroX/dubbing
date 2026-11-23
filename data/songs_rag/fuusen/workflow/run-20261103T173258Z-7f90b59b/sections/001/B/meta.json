@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173158_b_8663b2",
+  "input_hash": "8663b296988c261a5ae91b9f7a72731187a830a33e233bb5713cca5bb3cb718f",
+  "finished_at": "2026-11-03T17:32:30+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2316,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 7253,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"我悄悄漏着气 轻得像羽毛\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"前六字一顿，后五字一顿，空格的停顿落在旋律断点上\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"你伸进我的胸口 一件件掏空\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"前七后五，正好对住 7+5 的切分\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"什么都吸进来 不剩一点\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"六加四，空格处换气\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"一口一口咽下 影子不见\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"六加四，用叠字接住上一句的吞咽感\"}\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"我正一点一点 皱成一团纸\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"六加五，与首句句式呼应\"}\n    },\n    {\n      \"id\": \"V1-06\",\n      \"zh\": \"心口最里面那块 洗不掉的黑渍\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"七加六，正好对上 7+6\"}\n    },\n    {\n      \"id\": \"V1-07\",\n      \"zh\": \"你顺手就替我洗得 一点不留\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"八加四，略作调整让洗字延长占两音\"}\n    },\n    {\n      \"id\": \"V1-08\",\n      \"zh\": \"我什么都不用做 就会很好\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"七加四，落在 7+4 的收尾上\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T173158_b_8663b2"
+}

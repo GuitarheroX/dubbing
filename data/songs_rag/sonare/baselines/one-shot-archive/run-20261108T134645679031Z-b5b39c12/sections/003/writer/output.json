@@ -1,0 +1,135 @@
+{
+  "section": "C1",
+  "phrases": [
+    {
+      "id": "C1-01",
+      "zh": "世界解开声音倾泻",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "少2字，需要补"
+      }
+    },
+    {
+      "id": "C1-02",
+      "zh": "朝我奔来",
+      "chars": 4,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": false,
+        "note": "少1字"
+      }
+    },
+    {
+      "id": "C1-03",
+      "zh": "朝我奔来",
+      "chars": 4,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": false,
+        "note": "少1字"
+      }
+    },
+    {
+      "id": "C1-04",
+      "zh": "晨光醒来",
+      "chars": 4,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": false,
+        "note": "少1字"
+      }
+    },
+    {
+      "id": "C1-05",
+      "zh": "未来转身的你还在等待",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "少1字"
+      }
+    },
+    {
+      "id": "C1-06",
+      "zh": "我挥着手",
+      "chars": 4,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": false,
+        "note": "少1字"
+      }
+    },
+    {
+      "id": "C1-07",
+      "zh": "划向未来",
+      "chars": 4,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": false,
+        "note": "少1字"
+      }
+    },
+    {
+      "id": "C1-08",
+      "zh": "划向未来",
+      "chars": 4,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": false,
+        "note": "少1字"
+      }
+    },
+    {
+      "id": "C1-09",
+      "zh": "去向何方",
+      "chars": 4,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": false,
+        "note": "少1字"
+      }
+    },
+    {
+      "id": "C1-10",
+      "zh": "去往任何地方",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": false,
+        "note": "多1字"
+      }
+    }
+  ]
+}

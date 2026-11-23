@@ -1,0 +1,21 @@
+{
+  "id": "8b70712e-2c56-41c9-a739-4ba44c45e9da",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A在保持“无可奈何/体内兽/泡沫浮现又消失”核心语义的同时，中文更凝练有张力，意象更鲜明；B较贴字面但偏直译，表现力弱。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 908,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 71,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C1",
+    "query_text": "迎着风跑啊 穿过了花丛\n穿过云层 顺着风 只剩下我一个\n天刚泛起白 快一些走吧\n青草的腥气 混着魂魄 飘散\n穿过风 掠过 穿过天 掠过\n穿过云层 顺着风 只剩下我一个",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

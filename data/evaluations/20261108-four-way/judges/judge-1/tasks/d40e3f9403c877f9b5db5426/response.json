@@ -1,0 +1,21 @@
+{
+  "id": "5aeb1180-7b7d-4921-a824-78258ee09970",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"“带我走吧”准确对应“連れてって”，“带我飞去星河”保留fly me to the star的祈使与星意象。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"emotion\":{\"score\":5,\"reason\":\"恳求与向往的情绪完整，星河意象延续原曲浪漫氛围。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"naturalness\":{\"score\":5,\"reason\":\"两行都顺口，“带我走吧”“带我飞去星河”符合歌词文体。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"expressiveness\":{\"score\":5,\"reason\":\"“飞去星河”意象鲜明，短句有力，服务主题。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“带我走吧”准确，但“飞向那星”把star单数化且“那星”指代模糊，核心意象有偏移。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向大体保留，但“那星”较生硬，浪漫感减弱。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"naturalness\":{\"score\":3,\"reason\":\"“哦，飞向那星”可理解但“那星”不自然，像为凑字。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，“那星”缺乏鲜明意象。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“带我走吧”准确，“oh 带我飞向星”保留fly me to star的核心动作，但星意象略简。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"恳求与飞向星空的情绪基本保留，稍欠原句的轻盈感。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"“带我 走吧”和“oh 带我飞向星”都较顺口，略口语化。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“带我飞向星”有画面感，表达清晰但不算特别鲜明。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“带我一起去”接近“連れてって”但多了“一起”的关系暗示；“飞向那星辰”保留star意象。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"向往情绪保留，“一起去”略改变为同行感，但整体不冲突。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"“带我一起去”“飞向那星辰”都自然，稍偏书面。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“星辰”意象清晰，表达稳妥但略常规。\",\"phrase_ids\":[\"O1-01\",\"O1-02\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 541,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 765,
+    "service_tier": "standard"
+  }
+}

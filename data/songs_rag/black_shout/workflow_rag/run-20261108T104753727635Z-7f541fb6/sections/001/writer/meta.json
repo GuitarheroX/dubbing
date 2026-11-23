@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\"id\": \"C1-01\", \"zh\": \"就算夜色如墨\"},\n    {\"id\": \"C1-02\", \"zh\": \"此刻我不再闪躲\"},\n    {\"id\": \"C1-03\", \"zh\": \"信过的那条路\"},\n    {\"id\": \"C1-04\", \"zh\": \"不回头地往前走\"},\n    {\"id\": \"C1-05\", \"zh\": \"一身黑又何妨\"},\n    {\"id\": \"C1-06\", \"zh\": \"不必被洗成纯白\"},\n    {\"id\": \"C1-07\", \"zh\": \"砸碎所有不合理\"},\n    {\"id\": \"C1-08\", \"zh\": \"我就站在这世界 此刻我正拼命地活着\"}\n  ]\n}",
+  "finished_at": "2026-11-08T10:48:22+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3216,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 1902,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

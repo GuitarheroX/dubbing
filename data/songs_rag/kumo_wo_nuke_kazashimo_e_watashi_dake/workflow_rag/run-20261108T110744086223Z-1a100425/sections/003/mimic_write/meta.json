@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"接住这阵风 撞开一片花\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"五加五断句，接风与穿花都保留\"\n      }\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"穿出云层去 顺着风 只剩我一个\",\n      \"chars\": 13,\n      \"self_check\": {\n        \"budget\": [13, 13],\n        \"ok\": true,\n        \"note\": \"按五三五分句，云层与风下都落到\"\n      }\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"天刚泛白时 快走别回头\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"五加五，清晨催促感更硬\"\n      }\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"青草腥气里 混着魂魄 飘散开\",\n      \"chars\": 12,\n      \"self_check\": {\n        \"budget\": [12, 12],\n        \"ok\": true,\n        \"note\": \"五四三切分，草与魂的气味并置\"\n      }\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"穿过风 别停 穿过天 别停\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"三二三二，重复别停推进疾走感\"\n      }\n    },\n    {\n      \"id\": \"C1-06\",\n      \"zh\": \"穿出云层去 顺着风 只剩我一个\",\n      \"chars\": 13,\n      \"self_check\": {\n        \"budget\": [13, 13],\n        \"ok\": true,\n        \"note\": \"与原曲重复句保持完全相同的译法\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:09:49+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3247,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2048,
+    "output_tokens": 5931,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

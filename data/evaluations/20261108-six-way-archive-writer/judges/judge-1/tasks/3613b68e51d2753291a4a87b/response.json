@@ -1,0 +1,21 @@
+{
+  "id": "95c3a193-d1d5-413e-9496-60da27aed2ed",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原意：V1-01“无可奈何地”对应“どうしようもない”，A的“按不住”偏改写；V1-02“躁动的兽”自然且保留“私に”的所属感，A“胸腔里”虽生动但略增意象；V1-03 B简洁完整地传达“浮かんでは消えるあぶく”，A“没有声音”属原文未有的添加。整体B语义更稳、中文自然。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 265,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 130,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173139_b_edbebf",
+  "input_hash": "edbebfa3c1d1c42cc953fa0bdc751dda543bb18f936ef5b47d5d5c1a953bb08f",
+  "finished_at": "2026-11-03T17:31:44+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 1850,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2560,
+    "output_tokens": 823,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"O1\",\n  \"phrases\": [\n    {\n      \"id\": \"O1-01\",\n      \"zh\": \"带我走吧\",\n      \"chars\": 4,\n      \"self_check\": {\n        \"budget\": [4, 4],\n        \"ok\": true,\n        \"note\": \"按旋律切成「带我 走吧」两段，每段两字\"\n      }\n    },\n    {\n      \"id\": \"O1-02\",\n      \"zh\": \"带 我飞去星河\",\n      \"chars\": 6,\n      \"self_check\": {\n        \"budget\": [6, 6],\n        \"ok\": true,\n        \"note\": \"首字单独占一拍，「我飞去星河」五字连唱\"\n      }\n    }\n  ]\n}",
+  "migrated_from": "20261103T173139_b_edbebf"
+}

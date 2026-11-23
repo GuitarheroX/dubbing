@@ -1,0 +1,209 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“散场”对应终演，“理所当然却始终不显形”保留当然与不可见之意，但“不显形”略偏。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "延续回望与不可见的怅然，情绪方向一致。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "“理所当然 却始终不显形”稍文但可唱，整体顺口。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“不显形”带来隐约感，意象较鲜明。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“终幕”“注定迟早会看见的命运”“却始终未能看见”准确对应原文。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "回望、宿命与未见之感完整保留，语气连贯。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "三句均自然顺口，符合歌词文体。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "表达清晰有力，但意象较直白。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“终演”贴近终演，“命盘”替换命运稍偏但可接受。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "宿命与不可见氛围基本保留。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "“命盘”略突兀，其余自然。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“命盘”增加意象，但服务主题一般。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“仿佛望见命运交错”改变“迟早会看见的命运”之意，加入交错且弱化必然性。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "怅然方向尚在，但“命运交错”使情绪转向复杂暧昧。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文流畅，但“仿佛望见命运交错”语义较绕。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "“交错”有画面但偏离原意，表达普通。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“落幕”“理所当然该出现的命运”“始终看不见”准确对应原文。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "回望与宿命未见的情绪完整保留。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "表达自然简洁，适合歌词。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "清晰有力，但意象较平实。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    }
+  ]
+}

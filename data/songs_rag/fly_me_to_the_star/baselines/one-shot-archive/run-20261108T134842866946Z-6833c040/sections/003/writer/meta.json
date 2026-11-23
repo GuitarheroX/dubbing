@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"两人心跳声 交叠在一起\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": false, \"note\": \"实际11字，需补2字。改：两人心跳声 轻轻交叠在一起（13字）\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"偶尔会不安 因为怕\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": false, \"note\": \"实际9字，需补1字。改：偶尔会不安 因为害怕（10字）\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"你好像随时会消失不见\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": false, \"note\": \"实际10字，需补1字。改：你好像随时会消失不见啊（11字）\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"闪耀眼眸里 除了我 别再映出谁\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [18, 18], \"ok\": false, \"note\": \"实际14字，需补4字。改：闪耀眼眸里 除了我 别再映出别人的影（18字）\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"oh 带我飞向星\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": false, \"note\": \"oh算1字，实际6字？oh+带我飞向星=1+5=6字，ok true\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:48:49+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "C1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1441,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1664,
+    "output_tokens": 432,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

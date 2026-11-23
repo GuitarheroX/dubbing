@@ -1,0 +1,178 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C1",
+    "phrases": [
+      {
+        "id": "C1-01",
+        "section": "C1",
+        "ja": "風を受け、花を抜け",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "C1-02",
+        "section": "C1",
+        "ja": "雲を抜け風下へ私だけ",
+        "budget": {
+          "min": 13,
+          "max": 13
+        },
+        "pattern": [
+          5,
+          3,
+          5
+        ]
+      },
+      {
+        "id": "C1-03",
+        "section": "C1",
+        "ja": "朝ぼらけ、早く行け",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "C1-04",
+        "section": "C1",
+        "ja": "この草と魂の匂い",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          5,
+          4,
+          3
+        ]
+      },
+      {
+        "id": "C1-05",
+        "section": "C1",
+        "ja": "風を抜け、空を抜け",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          3,
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "id": "C1-06",
+        "section": "C1",
+        "ja": "雲を抜け風下へ私だけ",
+        "budget": {
+          "min": 13,
+          "max": 13
+        },
+        "pattern": [
+          5,
+          3,
+          5
+        ]
+      }
+    ],
+    "draft": {
+      "section": "C1",
+      "phrases": [
+        {
+          "id": "C1-01",
+          "zh": "接住这阵风 撞开一片花",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "五加五断句，接风与穿花都保留"
+          }
+        },
+        {
+          "id": "C1-02",
+          "zh": "穿出云层去 顺着风 只剩我一个",
+          "chars": 13,
+          "self_check": {
+            "budget": [
+              13,
+              13
+            ],
+            "ok": true,
+            "note": "按五三五分句，云层与风下都落到"
+          }
+        },
+        {
+          "id": "C1-03",
+          "zh": "天刚泛白时 快走别回头",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "五加五，清晨催促感更硬"
+          }
+        },
+        {
+          "id": "C1-04",
+          "zh": "青草腥气里 混着魂魄 飘散开",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "五四三切分，草与魂的气味并置"
+          }
+        },
+        {
+          "id": "C1-05",
+          "zh": "穿过风 别停 穿过天 别停",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "三二三二，重复别停推进疾走感"
+          }
+        },
+        {
+          "id": "C1-06",
+          "zh": "穿出云层去 顺着风 只剩我一个",
+          "chars": 13,
+          "self_check": {
+            "budget": [
+              13,
+              13
+            ],
+            "ok": true,
+            "note": "与原曲重复句保持完全相同的译法"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

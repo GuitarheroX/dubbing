@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V3\",\n  \"phrases\": [\n    {\"id\": \"V3-01\", \"zh\": \"记忆的箱子里 小小一个家\"},\n    {\"id\": \"V3-02\", \"zh\": \"晨光里摇晃的窗帘 我伸手 拉开它\"},\n    {\"id\": \"V3-03\", \"zh\": \"安静假日 晨光很轻\"},\n    {\"id\": \"V3-04\", \"zh\": \"你刚睡醒的样子 睡眼还朦胧坐在餐桌旁\"},\n    {\"id\": \"V3-05\", \"zh\": \"那天 早晨的餐桌上还留着光\"},\n    {\"id\": \"V3-06\", \"zh\": \"那张桌子上 曾放着我的心\"},\n    {\"id\": \"V3-07\", \"zh\": \"请你把我忘掉吧\"}\n  ]\n}",
+  "finished_at": "2026-11-08T11:33:03+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2572,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3328,
+    "output_tokens": 2637,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

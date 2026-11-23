@@ -1,0 +1,9 @@
+{
+  "run": "run-20261108T134623682733Z-003d1f8d",
+  "updated_at": "2026-11-08T13:46:30+00:00",
+  "song": "kazeyo",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "passed": 1,
+  "total": 12
+}

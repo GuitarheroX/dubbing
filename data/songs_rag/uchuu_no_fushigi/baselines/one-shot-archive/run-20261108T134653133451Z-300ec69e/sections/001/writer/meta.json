@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"鸟为什么能飞过那片天\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"3+2+3+4 分段对应，无标点\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"猫为什么总睡在窗边\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"3+2+3+4 分段对应\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"你今天想活成什么模样\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"3+2+3+4 分段对应\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"全部 全部 全部\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"2+2+2 重复结构保留\"}\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"一起去寻找\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"4+2 分段对应\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:55+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "V1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 2600,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 354,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

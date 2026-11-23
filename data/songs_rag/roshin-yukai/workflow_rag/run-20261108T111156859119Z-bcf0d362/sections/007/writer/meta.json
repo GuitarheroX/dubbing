@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"B2\",\n  \"phrases\": [\n    {\"id\": \"B2-01\", \"zh\": \"我梦见 所有人都 一个一个 消失不见\"},\n    {\"id\": \"B2-02\", \"zh\": \"午夜的房间 宽得发慌 静得能听见自己心跳\"},\n    {\"id\": \"B2-03\", \"zh\": \"堵在胸口 出不去\"},\n    {\"id\": \"B2-04\", \"zh\": \"连好好吸一口气 都做不到了\"}\n  ]\n}",
+  "finished_at": "2026-11-08T11:15:08+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3291,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3840,
+    "output_tokens": 770,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

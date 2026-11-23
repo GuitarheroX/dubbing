@@ -1,0 +1,21 @@
+{
+  "id": "e32d14e8-60f0-478f-aa1f-38c588a7eb16",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B1-01更简洁自然，保留了“装作等待”的核心语义；A的“一直等下去”有重复感。B1-02两版语义都准确，B“能够重新开始”略更顺口。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 274,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 71,
+    "service_tier": "standard"
+  }
+}

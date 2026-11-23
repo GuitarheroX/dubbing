@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-11-08T12:51:10.247459+00:00",
+  "tasks_verified": 988,
+  "all_requests_thinking_disabled": true,
+  "reasoning_content_present": false,
+  "reasoning_token_statistics_reported": 0,
+  "actual_response_models": {
+    "deepseek-flash": 988
+  },
+  "successful_task_usage": {
+    "input_tokens": 498191,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 704896,
+    "output_tokens": 185377
+  },
+  "credential_pattern_matches": 0,
+  "frozen_input_files_verified": 2206,
+  "source_files_changed": [],
+  "frozen_code_hashes_match": true,
+  "comet_status": "skipped"
+}

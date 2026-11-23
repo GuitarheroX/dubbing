@@ -1,0 +1,28 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V3\",\n  \"phrases\": [\n    {\"id\": \"V3-01\", \"zh\": \"时钟的秒针在走\"},\n    {\"id\": \"V3-02\", \"zh\": \"电视里主持人在笑\"},\n    {\"id\": \"V3-03\", \"zh\": \"明明就在身边\"},\n    {\"id\": \"V3-04\", \"zh\": \"却看不见的某人\"},\n    {\"id\": \"V3-05\", \"zh\": \"笑声\"},\n    {\"id\": \"V3-06\", \"zh\": \"饱和着 回荡不停\"},\n    {\"id\": \"V3-07\", \"zh\": \"アレグロ･アジテート\"},\n    {\"id\": \"V3-08\", \"zh\": \"耳鸣不停歇 消不散\"},\n    {\"id\": \"V3-09\", \"zh\": \"アレグロ･アジテート\"},\n    {\"id\": \"V3-10\", \"zh\": \"耳鸣不停歇 消不散\"}\n  ]\n}",
+  "finished_at": "2026-11-08T13:24:03+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "section": "V3",
+  "warnings": [
+    "V3-07: 该句保留原文，不应产出译词，已忽略",
+    "V3-09: 该句保留原文，不应产出译词，已忽略"
+  ],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1827,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3328,
+    "output_tokens": 224,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "0d600e55-3ff0-482a-9a90-ff7b7b6d7f93",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更完整地保留了原文的视角与细节：B1-01明确“我”在梦中施力，B1-03保留“细瘦喉咙在光里跳动”的视觉层次，B1-04“一直望着你”对应持续注视；B的B1-04“望着我”改变了注视方向，B1-02“刺眼”略偏物理刺激，整体情绪张力稍弱。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 342,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 121,
+    "service_tier": "standard"
+  }
+}

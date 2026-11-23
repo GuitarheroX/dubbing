@@ -1,0 +1,21 @@
+{
+  "id": "64c32fc5-619f-4a85-9d95-8babed73e491",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A的B2-01更贴近“被赋予玫瑰生命”的核心语义，B的“披上深红”偏意象化且略偏离；A的B2-02“胸口一团火/烧到最亮/也不回头”自然且有表现力，B的“烧穿胸口”稍显过猛，整体A情绪更连贯。\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 232,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 97,
+    "service_tier": "standard"
+  }
+}

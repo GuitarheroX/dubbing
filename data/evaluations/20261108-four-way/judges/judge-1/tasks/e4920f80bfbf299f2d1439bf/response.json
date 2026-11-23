@@ -1,0 +1,21 @@
+{
+  "id": "31d8d1fb-817b-41b3-9be0-2c1118ab9ff9",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"准确对应原文各短语，阻碍之物/嫉妒、甩落/冲动、我的颜色/本能、想要夺回均保留核心信息\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，决意与冲动感保留，但略平实\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"简洁顺口，符合歌词文体，个别短语稍显直译\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象较平，缺乏张力\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"B1-01增补杂音、B1-02增补脚踝的手属合理补充但偏离原词简洁并列；B1-04改为亲手全部夺回，语义偏移\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"决意与反抗情绪保留，B1-04更强烈\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":3,\"reason\":\"亮出我的颜色较自然，但甩开脚踝的手意象突兀，整体可理解但生硬\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象较鲜明，有画面感，服务主题\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"B1-03将我的颜色改为黑从骨里翻涌，偏离原词颜色/本能；B1-04把黑夺回来改变对象，核心偏移\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"反抗情绪仍在，但黑化意象使情绪色调偏移\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":3,\"reason\":\"黑从骨里翻涌较生硬，其余可理解\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明有力，但部分服务偏离主题\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"与A基本一致，色彩对应颜色，核心信息准确\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，决意保留，略平实\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"顺口自然，符合歌词文体，个别直译\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通，张力一般\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 988,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 872,
+    "service_tier": "standard"
+  }
+}

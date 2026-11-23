@@ -1,0 +1,21 @@
+{
+  "id": "3d528514-5f26-4011-aab8-01af19a5dd7d",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原意：C1-02保留“因为”的因果语气，C1-03直译“消失不见”未添加“人海”意象，C1-04“别再映出谁”自然且保留祈使感；B的C1-03改写偏离原句，C1-04“别映别人”稍生硬。\",\"phrase_ids\":[\"C1-02\",\"C1-03\",\"C1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 317,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 105,
+    "service_tier": "standard"
+  }
+}

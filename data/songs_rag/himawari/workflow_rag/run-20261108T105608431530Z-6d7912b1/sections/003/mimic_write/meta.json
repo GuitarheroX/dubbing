@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"想把我的命都交给你 像海风吹过你脸颊\",\n      \"chars\": 17,\n      \"self_check\": {\"budget\": [17, 17], \"ok\": true, \"note\": \"前半9字后半8字，空格落在旋律切分处；与I1同一句保持完全相同的译词，不作改动\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"想把我的命都交给你 像海风吹过你脸颊\",\n      \"chars\": 17,\n      \"self_check\": {\"budget\": [17, 17], \"ok\": true, \"note\": \"原曲连续重复，译词与C1-01一字不差，保留重复美；9+8对上[9,8]\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"渡过一整片夏天的海 把海风交到你手里\",\n      \"chars\": 17,\n      \"self_check\": {\"budget\": [17, 17], \"ok\": true, \"note\": \"「渡り」落成「渡过」；结尾从初版的「递给你」改成「交到你手里」，让抓不住的风有个落点，也接住下一句的手臂；9+8\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"把接住风的这双手臂 也一并交到你手上\",\n      \"chars\": 17,\n      \"self_check\": {\"budget\": [17, 17], \"ok\": true, \"note\": \"沿用初版「接住风的手臂」这个好意象，「轻轻」换成「一并」，把递进唱实；「交到你手上」与上句「交到你手里」成对，9+8\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T10:58:05+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2450,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1664,
+    "output_tokens": 5122,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

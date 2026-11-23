@@ -1,0 +1,57 @@
+{
+  "section": "B1",
+  "phrases": [
+    {
+      "id": "B1-01",
+      "zh": "夜色将尽 鸟儿轻声报晓",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": true,
+        "note": "四段三字 对应旋律 3 3 3 3"
+      }
+    },
+    {
+      "id": "B1-02",
+      "zh": "时钟的指针 请停下吧",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": true,
+        "note": "三 三 二 三 断句"
+      }
+    },
+    {
+      "id": "B1-03",
+      "zh": "流星划过 悄悄 滑向黎明 散落成碎片",
+      "chars": 22,
+      "self_check": {
+        "budget": [
+          22,
+          22
+        ],
+        "ok": true,
+        "note": "六 二 三 五 六 分段对应"
+      }
+    },
+    {
+      "id": "B1-04",
+      "zh": "oh 带我飞向星",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "保留英文 oh 一字 后五字"
+      }
+    }
+  ]
+}

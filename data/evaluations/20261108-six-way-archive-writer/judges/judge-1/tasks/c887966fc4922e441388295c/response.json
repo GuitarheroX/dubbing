@@ -1,0 +1,21 @@
+{
+  "id": "56ea4393-9d4a-499d-925c-8b917c15be84",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"各句核心信息准确，乙醚麻醉、没油打火机、胃中灼烧、谎言假设均保留\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\",\"V1-07\",\"V1-08\"]},\"emotion\":{\"score\":4,\"reason\":\"失眠冷感与自嘲遗憾基本传达，语气略平\",\"phrase_ids\":[\"V1-02\",\"V1-03\",\"V1-08\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，个别句尾“啊”“呢”稍显凑字\",\"phrase_ids\":[\"V1-02\",\"V1-06\",\"V1-08\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象保留完整，表达清楚但少些锋利\",\"phrase_ids\":[\"V1-05\",\"V1-06\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息基本准确，但“街灯亮得刺眼”偏离“華やか”的繁华感\",\"phrase_ids\":[\"V1-01\"]},\"emotion\":{\"score\":4,\"reason\":\"冷意与失眠氛围到位，末句重复增强遗憾\",\"phrase_ids\":[\"V1-02\",\"V1-03\",\"V1-08\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文顺口自然，符合歌词文体\",\"phrase_ids\":[\"V1-01\",\"V1-03\",\"V1-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“冷意渗进指尖”等表达鲜明，整体有力\",\"phrase_ids\":[\"V1-02\",\"V1-06\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“照不暖空房间”添加原文没有的孤独空间意象，“崩塌”偏离“変わる”，末句“可惜都不是”改变原句假设语气\",\"phrase_ids\":[\"V1-01\",\"V1-04\",\"V1-08\"]},\"emotion\":{\"score\":3,\"reason\":\"冷感保留，但末句转为明确否定，削弱原句“要是那样该多好”的遗憾假设\",\"phrase_ids\":[\"V1-08\"]},\"naturalness\":{\"score\":4,\"reason\":\"语句通顺，个别表达稍文艺但可理解\",\"phrase_ids\":[\"V1-02\",\"V1-06\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“火慢慢啃咬”等意象鲜明，服务氛围\",\"phrase_ids\":[\"V1-06\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“喧哗”偏离“華やか”，“崩塌”偏离“変わる”，末句“多轻松”添加原文没有的解脱感\",\"phrase_ids\":[\"V1-01\",\"V1-04\",\"V1-08\"]},\"emotion\":{\"score\":3,\"reason\":\"整体冷暗氛围接近，但末句情绪由遗憾转为轻松，方向偏移\",\"phrase_ids\":[\"V1-08\"]},\"naturalness\":{\"score\":4,\"reason\":\"较顺口，个别句如“点不燃”稍直白\",\"phrase_ids\":[\"V1-05\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，意象基本但不够鲜明\",\"phrase_ids\":[\"V1-06\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息基本保留，“改变形状”略具体化但可接受，“擦不出火星”合理补充\",\"phrase_ids\":[\"V1-04\",\"V1-05\"]},\"emotion\":{\"score\":4,\"reason\":\"冷感、失眠与遗憾假设传达较好，末句重复增强情绪\",\"phrase_ids\":[\"V1-02\",\"V1-08\"]},\"naturalness\":{\"score\":4,\"reason\":\"断句节奏自然，个别表达如“顺着手背爬上肩”稍繁\",\"phrase_ids\":[\"V1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“烙铁”等意象有力，整体鲜明\",\"phrase_ids\":[\"V1-06\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"各句核心信息准确，未明显增删主题\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\",\"V1-07\",\"V1-08\"]},\"emotion\":{\"score\":3,\"reason\":\"语义正确但语气偏平，冷感与遗憾强度不足\",\"phrase_ids\":[\"V1-02\",\"V1-06\",\"V1-08\"]},\"naturalness\":{\"score\":4,\"reason\":\"通顺可读，但“胃中灼烧般的感受”偏书面\",\"phrase_ids\":[\"V1-06\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但较直译，意象不够鲜明\",\"phrase_ids\":[\"V1-02\",\"V1-06\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1260,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1792,
+    "output_tokens": 1104,
+    "service_tier": "standard"
+  }
+}

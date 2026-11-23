@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173507_b_1737a3",
+  "input_hash": "1737a3f98e955b3fd403af5daf3f87016923a47ed607f97286f7e50fceb14427",
+  "finished_at": "2026-11-03T17:35:20+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2634,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 2482,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\"section\":\"V2\",\"phrases\":[{\"id\":\"V2-01\",\"zh\":\"闷在心底的 那一层忧\",\"chars\":9,\"self_check\":{\"budget\":[9,9],\"ok\":true,\"note\":\"前五字连成一段，后四字接住，共 9 字\"}},{\"id\":\"V2-02\",\"zh\":\"话到嘴边 又咽回心里\",\"chars\":9,\"self_check\":{\"budget\":[9,9],\"ok\":true,\"note\":\"用空格把 4+5 断开，正好对上旋律；没用「了」，免得唱起来发虚\"}},{\"id\":\"V2-03\",\"zh\":\"说给空气 没人接住的话\",\"chars\":10,\"self_check\":{\"budget\":[10,10],\"ok\":true,\"note\":\"4+6 断开，「说给空气」收住前半句，后半句接住「没人接住的话」\"}},{\"id\":\"V2-04\",\"zh\":\"自己也不懂\",\"chars\":5,\"self_check\":{\"budget\":[5,5],\"ok\":true,\"note\":\"整句一口气唱完，5 字全部落在拍上\"}}]}",
+  "migrated_from": "20261103T173507_b_1737a3"
+}

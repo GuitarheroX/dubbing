@@ -1,0 +1,46 @@
+{
+  "section": "B1",
+  "query_text": "风穿过了长街 风带走了什么\n我们就像 蒲公英的绒毛\n被吹散在街口 各自去远方",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "八月春_bayuechun/静默的喧嚣#s4",
+      "title": "静默的喧嚣",
+      "poet": "八月春",
+      "poem_id": "八月春_bayuechun/静默的喧嚣",
+      "stanza_idx": 4,
+      "score": 0.706196,
+      "text": "逛街，遇见空中泛着亮的一团银丝\n在风中悠荡，因找不到爱情\n最终扑向苍老的蒲公英"
+    },
+    {
+      "chunk_id": "管管_guanguan/街#s1",
+      "title": "街",
+      "poet": "管管",
+      "poem_id": "管管_guanguan/街",
+      "stanza_idx": 1,
+      "score": 0.697712,
+      "text": "整个的一条街都被踩住\n当那一个披发的男子\n在街的耳朵上\n小心的挖一株蒲公英\n然后两株蒲公英飘然离去\n整个一条街的肋骨\n被那一个披发男子\n的一双脚\n全部踩住"
+    },
+    {
+      "chunk_id": "陈鸿森_chenhongsen/蒲公英#s1",
+      "title": "蒲公英",
+      "poet": "陈鸿森",
+      "poem_id": "陈鸿森_chenhongsen/蒲公英",
+      "stanza_idx": 1,
+      "score": 0.68405,
+      "text": "风声一起\n我们便开始飘飞\n带着我们那\n忧患\n的种子\n向四野八方\n寻求庇荫\n只要有土地\n便可落脚\n然后委屈的活下\n生长、繁殖\n继续传播\n我们那没有国籍的\n茫然\n我们是\n没有方向的蒲公英\n在漫然的飘飞里\n致力于\n天下为公的\n黄皮肤的\n犹太人"
+    },
+    {
+      "chunk_id": "河东_hedong/时光：链接与呈现：理发记#s3",
+      "title": "时光：链接与呈现：理发记",
+      "poet": "河东",
+      "poem_id": "河东_hedong/时光：链接与呈现：理发记",
+      "stanza_idx": 3,
+      "score": 0.683472,
+      "text": "走出理发店，大街上车水马龙\n站在行道上迷失方向\n凉风习习，\n吹过头顶 吹过\n绕指柔水\n街边的空地重新长出青苗"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "query_text": "挡我路的杂音 嫉妒\n把怯懦全甩开 冲动\n亮出我的颜色 本能\n我要亲手全部夺回来",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

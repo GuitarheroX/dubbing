@@ -212,6 +212,10 @@ python scripts/migrate_run_agents.py --all --dry-run
 
 ### 测试
 
+结果评测入口为 `python -m evaluate`，默认只做离线统计；LLM 匿名评审、顺序复评、COMET-QE 和真人记录导入见 [evaluate/README.md](evaluate/README.md)。
+
+当前主比较为四组：论文原提示、人工 budget/pattern 适配、无 RAG workflow、workflow-RAG；聚焦音节约束、文本质量、成对偏好与 COMET-QE，尚未启动正式评测。
+
 ```bash
 python -m pytest
 ```

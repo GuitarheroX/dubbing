@@ -1,0 +1,21 @@
+{
+  "id": "0ad01cdc-5bd6-4764-b785-33176995c7b7",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A在保持核心语义的同时更具歌词感和情绪流动，如V1-01“望得出神”比B“令人醉”更贴合原句的沉迷凝视，V1-04“一片模糊”自然传达星光渗开；B较直译但部分表达偏平，如V1-08“假装没注意到”略生硬。\",\"phrase_ids\":[\"V1-01\",\"V1-04\",\"V1-08\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 559,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 102,
+    "service_tier": "standard"
+  }
+}

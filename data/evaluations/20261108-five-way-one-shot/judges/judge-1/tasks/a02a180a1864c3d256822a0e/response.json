@@ -1,0 +1,21 @@
+{
+  "id": "a8365678-7ea0-44d6-a2a1-16c10171b585",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原文语义：C2-01保留“核融合炉”而非A的意象化改写“炉心深处”，C2-05“纵身跃入那一刻”对应“飞び込んでみたらそしたら”的条件推进，C2-06“一切都被原谅”准确对应“すべてが許される”。A的C2-01偏离核心词，C2-06“连我也一样”属增义。B中文自然度略逊但整体误读更少。\",\"phrase_ids\":[\"C2-01\",\"C2-05\",\"C2-06\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 286,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 134,
+    "service_tier": "standard"
+  }
+}

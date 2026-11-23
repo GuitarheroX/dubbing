@@ -1,0 +1,21 @@
+{
+  "id": "f1073bd6-2b05-42fa-b108-c91a34bc7f7c",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B1-01更贴近原句“假装一直等待”的持续状态，A的“不肯醒来”属额外引申；B1-02“能够重新开始吗”自然简洁，A“重新再来一次”略冗。B整体语义准确、中文流畅，情绪克制贴合原文。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 276,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 85,
+    "service_tier": "standard"
+  }
+}

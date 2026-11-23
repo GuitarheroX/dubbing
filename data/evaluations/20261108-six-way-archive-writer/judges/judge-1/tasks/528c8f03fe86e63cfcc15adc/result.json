@@ -1,0 +1,232 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "扼喉梦境与细喉跳动保留，但B1-04将“泣き出しそうな眼”误作“我红着眼眶”，视角偏移。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "暴力与静望的张力在，但“亮得刺眼”略强化了光感，哭泣眼神的主体偏移削弱原句哀感。",
+          "phrase_ids": [
+            "B1-02",
+            "B1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“一寸一寸收紧你喉咙”稍显拗口但可唱。",
+          "phrase_ids": [
+            "B1-01"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“掌心轻轻跳动”意象具体有力，服务主题。",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "扼颈、阳光午后、喉头颤动、欲泣眼睛均保留，但“太安静”为原文所无的补充。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "冷峻压抑感接近，但“太安静”改变了光溢午后的氛围。",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "四句均简洁顺口，符合歌词文体。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“喉头微弱地颤动”“欲泣的眼睛”表达凝练。",
+          "phrase_ids": [
+            "B1-03",
+            "B1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "四句核心信息准确：掐颈梦境、满溢阳光、细喉颤动、欲泣之眼望我。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "暴力梦境与明亮午后的反差、哀伤注视均充分保留。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体自然，“满溢得刺眼”略生硬但可接受。",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象清晰有力，但用词较平实。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心事件保留，但“洒满阳光”弱化“溢れる”的满溢感，“跳动着”未体现喉部痉挛感。",
+          "phrase_ids": [
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向对，但整体偏平淡，缺少原句的窒息与哀恸张力。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "四句都顺口自然。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，意象不够鲜明。",
+          "phrase_ids": [
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "四句核心信息准确，补充“在光里”合理且不改变事件。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "“亮得几乎发疼”强化了光与暴力的反差，哀伤注视保留充分。",
+          "phrase_ids": [
+            "B1-02",
+            "B1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“细瘦的喉咙”略文但可唱。",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 5,
+          "reason": "“在光里轻轻跳动”意象鲜明，服务主题。",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "B1-01与B1-04将“君”改为“他”，人物关系明显改变，属核心偏移。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 2,
+          "reason": "人称错位破坏原句“我—你”的亲密暴力张力，情绪指向偏移。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "句子可理解，但“用力紧紧勒住”冗余，“那条纤细喉咙”生硬。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达尚可但冗余，意象不够凝练。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-03"
+          ]
+        }
+      }
+    }
+  ]
+}

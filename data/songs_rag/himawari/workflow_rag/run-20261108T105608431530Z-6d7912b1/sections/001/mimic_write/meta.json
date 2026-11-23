@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"I1\",\n  \"phrases\": [\n    {\n      \"id\": \"I1-01\",\n      \"zh\": \"想把我的命都交给你 像海风吹过你脸颊\",\n      \"chars\": 17,\n      \"self_check\": {\n        \"budget\": [17, 17],\n        \"ok\": true,\n        \"note\": \"前9字后8字，按 pattern 空格断开；保留初版意象，重复句完全一致\"\n      }\n    },\n    {\n      \"id\": \"I1-02\",\n      \"zh\": \"想把我的命都交给你 像海风吹过你脸颊\",\n      \"chars\": 17,\n      \"self_check\": {\n        \"budget\": [17, 17],\n        \"ok\": true,\n        \"note\": \"与 I1-01 完全重复，呼应原曲两句相同；字数前9后8\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T10:56:48+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2578,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 1705,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

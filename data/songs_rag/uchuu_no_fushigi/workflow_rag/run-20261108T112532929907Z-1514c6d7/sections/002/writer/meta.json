@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\"section\": \"V2\", \"phrases\": [{\"id\": \"V2-01\", \"zh\": \"清晨呀 为何 偏照着 我的眼睛\"}, {\"id\": \"V2-02\", \"zh\": \"夜晚呀 为何 静下来 就变空荡\"}, {\"id\": \"V2-03\", \"zh\": \"难过呀 掰一半 分给你\"}, {\"id\": \"V2-04\", \"zh\": \"能这样就 好了 你说呢\"}]}",
+  "finished_at": "2026-11-08T11:26:53+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3741,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 1620,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

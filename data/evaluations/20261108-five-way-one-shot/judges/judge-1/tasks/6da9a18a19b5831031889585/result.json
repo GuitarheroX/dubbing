@@ -1,0 +1,180 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心意思基本保留，但C1-01“凭双脚”和C1-06“伸出手”添加了原文没有的具体动作意象，略有偏移。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "追忆与懊悔的情绪方向一致，C1-06“当初伸出手”稍显具体化，但整体情绪保留较好。",
+          "phrase_ids": [
+            "C1-06"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，C1-03“说是 长大以后 就会明白”略增解释性，但可理解。",
+          "phrase_ids": [
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“只差一点点 迈出去的勇气”等表达有力，意象清晰，服务主题。",
+          "phrase_ids": [
+            "C1-05"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "各句核心信息准确，C1-03“长大成人了吧”与原文“大人になったとか”对应合理。",
+          "phrase_ids": [
+            "C1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，但整体偏平实，追忆与懊悔的强弱略淡。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-07"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文通顺，C1-05“只凭一点点勇气的力量”稍显生硬。",
+          "phrase_ids": [
+            "C1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但较普通，缺少鲜明意象或有力收束。",
+          "phrase_ids": [
+            "C1-04",
+            "C1-06"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心语义保留，C1-06“就能改变 曾有过的明天”把原文“変えられた明日はあった”的过去可能存在改为条件式，略有偏移。",
+          "phrase_ids": [
+            "C1-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "懊悔与追忆情绪基本一致，C1-06条件化稍削弱“曾经存在”的遗憾感。",
+          "phrase_ids": [
+            "C1-06"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "断句自然，符合歌词文体，读来顺口。",
+          "phrase_ids": [
+            "C1-03",
+            "C1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“再多一点点的勇气”“连这 都没能察觉啊”简洁有力，服务主题。",
+          "phrase_ids": [
+            "C1-05",
+            "C1-07"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "C1-01“伸手就能够到天边”和C1-05“推开的门”添加了原文没有的意象，C1-03“变得沉默”也属增译，核心偏移较明显。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-03",
+            "C1-05"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向大体一致，但“天边”“门”等具体意象改变了原曲内省、克制的氛围。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文流畅，但部分增译使句子稍显铺陈。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象鲜明、表达有力，但部分意象偏离原主题。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-05"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "各句核心信息准确，C1-06“本可改变的明天确实存在”较好传达原文过去可能性的语义。",
+          "phrase_ids": [
+            "C1-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "追忆与懊悔情绪保留较好，整体稍偏平实。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-07"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文通顺，C1-05“只需再添一点勇气”略偏书面但可接受。",
+          "phrase_ids": [
+            "C1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“本可改变的明天确实存在”表达有力，整体意象清晰。",
+          "phrase_ids": [
+            "C1-06"
+          ]
+        }
+      }
+    }
+  ]
+}

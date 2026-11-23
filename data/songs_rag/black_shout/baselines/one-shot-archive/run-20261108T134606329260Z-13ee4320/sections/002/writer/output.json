@@ -1,0 +1,96 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "不安像潮水漫溢",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "整句8字，意象补充潮水"
+      }
+    },
+    {
+      "id": "V1-02",
+      "zh": "世间万象的规则",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "イロハ意译为规则，整句8字"
+      }
+    },
+    {
+      "id": "V1-03",
+      "zh": "焦躁在胸口翻涌",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "苛立ち译为焦躁，补胸口翻涌凑足8字"
+      }
+    },
+    {
+      "id": "V1-04",
+      "zh": "夺走仅剩的自由",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "补仅剩的强化失去感，整句8字"
+      }
+    },
+    {
+      "id": "V1-05",
+      "zh": "黑白无声的冷雨",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "モノクロ译为黑白无声，整句8字"
+      }
+    },
+    {
+      "id": "V1-06",
+      "zh": "将整个世界藏起",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "补将字凑足8字，藏起对应隠して"
+      }
+    },
+    {
+      "id": "V1-07",
+      "zh": "天空嘲笑着 沉入黑暗",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": true,
+        "note": "按pattern 8+4断句，前8后4，共12字"
+      }
+    }
+  ]
+}

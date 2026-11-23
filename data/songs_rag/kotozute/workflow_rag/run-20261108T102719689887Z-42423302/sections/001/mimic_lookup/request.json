@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "query_text": "曾见过的风景\n仰头等一颗未至的流星\n愿一直仰望",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

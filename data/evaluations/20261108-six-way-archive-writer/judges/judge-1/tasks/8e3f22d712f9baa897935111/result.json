@@ -1,0 +1,211 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "多数句意保留，C1-01“笑着给我看”略偏“保持笑容”，C1-06“被什么填满”弱化“底”的意象",
+          "phrase_ids": [
+            "C1-01",
+            "C1-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "整体情绪方向一致，C1-08“我并不孤单”偏肯定，削弱原句疑问/不安",
+          "phrase_ids": [
+            "C1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "较顺口，C1-01“笑着给我看”稍生硬",
+          "phrase_ids": [
+            "C1-01"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象基本鲜明，C1-02“恐惧在蔓延”有画面",
+          "phrase_ids": [
+            "C1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心语义大体准确，C1-01“微笑吧”弱化“知った顔”的假装意味，C1-08“并非孤单一人”改变疑问语气",
+          "phrase_ids": [
+            "C1-01",
+            "C1-08"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪偏平，C1-08肯定化削弱原句不安与试探",
+          "phrase_ids": [
+            "C1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "通顺，C1-07“别放开别停下”略短促",
+          "phrase_ids": [
+            "C1-07"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，意象不够突出",
+          "phrase_ids": [
+            "C1-02",
+            "C1-06"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "多数准确，C1-04译“你懂我”可接受，C1-08“我不是一个人吗”保留疑问",
+          "phrase_ids": [
+            "C1-04",
+            "C1-08"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向保留，C1-02“才让我害怕”稍直白",
+          "phrase_ids": [
+            "C1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "较自然，C1-05“踩着拍子转”稍口语化",
+          "phrase_ids": [
+            "C1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“深不见底的才让我害怕”有力度",
+          "phrase_ids": [
+            "C1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "C1-01“熟悉的神情”偏离“知った顔”的假装/了然，C1-08“并非独自一人”改变疑问",
+          "phrase_ids": [
+            "C1-01",
+            "C1-08"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "整体平淡，C1-08肯定化削弱不安",
+          "phrase_ids": [
+            "C1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "通顺，C1-07“别放开我别停下啊”稍拖",
+          "phrase_ids": [
+            "C1-07"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，意象较弱",
+          "phrase_ids": [
+            "C1-02",
+            "C1-06"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "C1-01“懂我的笑脸”偏移“知った顔”，C1-02增“井”意象可接受但C1-07“攥紧我手腕”添加原无动作",
+          "phrase_ids": [
+            "C1-01",
+            "C1-07"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪较充分，C1-08“我不是一个人吧”保留试探",
+          "phrase_ids": [
+            "C1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "较顺口，C1-02“我怕那口井”稍突兀",
+          "phrase_ids": [
+            "C1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“井”意象鲜明，服务主题",
+          "phrase_ids": [
+            "C1-02",
+            "C1-06"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "多数准确，但C1-08“你不是一个人”改变人称与语义，C1-01“了然的笑脸”弱化假装",
+          "phrase_ids": [
+            "C1-08",
+            "C1-01"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "C1-08人称反转导致情绪指向改变",
+          "phrase_ids": [
+            "C1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "通顺自然",
+          "phrase_ids": [
+            "C1-07"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“恐惧漫上来”等表达有画面",
+          "phrase_ids": [
+            "C1-02"
+          ]
+        }
+      }
+    }
+  ]
+}

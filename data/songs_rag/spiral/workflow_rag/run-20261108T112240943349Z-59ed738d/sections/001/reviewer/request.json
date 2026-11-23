@@ -1,0 +1,146 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "phrases": [
+      {
+        "id": "V1-01",
+        "section": "V1",
+        "ja": "描いた地図は引き裂いた",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          4,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "V1-02",
+        "section": "V1",
+        "ja": "世界はあの日のまま",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          4,
+          6
+        ]
+      },
+      {
+        "id": "V1-03",
+        "section": "V1",
+        "ja": "僕はまた",
+        "budget": {
+          "min": 5,
+          "max": 5
+        },
+        "pattern": [
+          5
+        ]
+      },
+      {
+        "id": "V1-04",
+        "section": "V1",
+        "ja": "誰かのせいにした",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          3,
+          5
+        ]
+      },
+      {
+        "id": "V1-05",
+        "section": "V1",
+        "ja": "嫌になっちゃうな",
+        "budget": {
+          "min": 5,
+          "max": 5
+        },
+        "pattern": [
+          5
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V1",
+      "phrases": [
+        {
+          "id": "V1-01",
+          "zh": "亲手画的 旧地图 撕成两半",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "按 4/3/4 断句，撕成两半收尾避开“了”"
+          }
+        },
+        {
+          "id": "V1-02",
+          "zh": "世界停在 那一天的原地",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "按 4/6 断句，保留初版停滞感"
+          }
+        },
+        {
+          "id": "V1-03",
+          "zh": "而我又一次",
+          "chars": 5,
+          "self_check": {
+            "budget": [
+              5,
+              5
+            ],
+            "ok": true,
+            "note": "整句五字，承接下一句的自责"
+          }
+        },
+        {
+          "id": "V1-04",
+          "zh": "把一切 都推给别人",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "按 3/5 断句，保留初版推卸动作"
+          }
+        },
+        {
+          "id": "V1-05",
+          "zh": "我真没出息",
+          "chars": 5,
+          "self_check": {
+            "budget": [
+              5,
+              5
+            ],
+            "ok": true,
+            "note": "整句五字，收在自嘲而非语气词"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

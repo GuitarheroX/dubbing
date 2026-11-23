@@ -1,0 +1,40 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+    "user": "悠々悠々夢を焼け\n魂の白い白い色で\n喜びの火に火をつけたいだけ\n想像は少しの泡銭\n冷めない言葉の両手で\n燃え尽きないものを数えて\n掬いたいだけ"
+  },
+  "data": {
+    "lyrics": [
+      "悠々悠々夢を焼け",
+      "魂の白い白い色で",
+      "喜びの火に火をつけたいだけ",
+      "想像は少しの泡銭",
+      "冷めない言葉の両手で",
+      "燃え尽きないものを数えて",
+      "掬いたいだけ"
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "悠々悠々夢を焼け\n魂の白い白い色で\n喜びの火に火をつけたいだけ\n想像は少しの泡銭\n冷めない言葉の両手で\n燃え尽きないものを数えて\n掬いたいだけ"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

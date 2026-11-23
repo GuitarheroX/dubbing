@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T172743_b_d36001",
+  "input_hash": "d3600196989123f62af37e5546a7272744a801478aa3d24a73f1ffac0e0f0e1a",
+  "finished_at": "2026-11-03T17:28:04+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2122,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1792,
+    "output_tokens": 4367,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"悠悠 悠悠 把梦烧成灰\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"前四字「悠悠悠悠」占 [4]，后五字占 [5]，中间空格断句\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"魂魄的白 白得 白得 作柴火\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"按 [4,2,2,3] 切：魂魄的白／白得／白得／作柴火，保留原句白い白い的重复\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"只想点着火 烧起 烧旺 欢喜的火把\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"按 [5,2,2,5] 切，火字重复呼应原文火に火をつけ\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"想象是 口袋里几枚铜板\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"按 [3,7] 切，「想象是」三字对泡銭的轻贱感\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"话还烫 摊开手 接住火星\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"按 [3,3,4] 切，冷めない化成「话还烫」\"}\n    },\n    {\n      \"id\": \"C1-06\",\n      \"zh\": \"数一数那些 烧不完 的念想\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"按 [5,3,3] 切，「的」并入末段起音\"}\n    },\n    {\n      \"id\": \"C1-07\",\n      \"zh\": \"只是想 捧一把光\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"按 [3,4] 切，收在明知徒劳仍伸手的动作上\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T172743_b_d36001"
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"从梦里睁开双眼的时候\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"沿用初版，十字刚好压满，不做增删\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"我站在翻开的一页白纸上 一个人\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"保留白纸意象，空格断在「一个人」前，让人先落单再出声\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"转一圈 什么都看不见\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"初版原句已达九字，空格代替逗号作停顿\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"没有门 也没有路\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"门与路对应「出口」与「あて」，七字刚好\"}\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"空白里 有声音传过来\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"换掉初版「然后」这类连接词，改成从空白里浮出声音，避免与下一句「喊我名字」撞意\"}\n    },\n    {\n      \"id\": \"V1-06\",\n      \"zh\": \"是你轻轻喊我名字 尾音微微发抖\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"沿用初版，中段空格让「名字」先落，后半句补足十四字\"}\n    },\n    {\n      \"id\": \"V1-07\",\n      \"zh\": \"摸索着 说出第一句话\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"把「言葉」改成开口的动作，与下一句「第一步」形成对句\"}\n    },\n    {\n      \"id\": \"V1-08\",\n      \"zh\": \"迈出这第一步\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"去掉初版「了」，用「这」补足第六字，句尾干净\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:21:59+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3520,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 3304,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

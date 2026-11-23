@@ -1,0 +1,21 @@
+{
+  "id": "c6747c00-dc83-4fe0-a2e4-28aac235356a",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A用“玫瑰是玫瑰”更贴近原句反复强调宿命感的语气，“高贵地绽放”准确传达“気高く”；B的“玫瑰啊玫瑰”偏呼告，“凋散”不如“凋零”自然且与“美丽地”搭配略生硬。\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 203,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 83,
+    "service_tier": "standard"
+  }
+}

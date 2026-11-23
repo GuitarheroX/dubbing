@@ -1,0 +1,21 @@
+{
+  "id": "4e179e9c-4f76-48cd-880b-2f40409bd8ce",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B整体更自然、语义更准：C1-01“焚烧着梦想”比“将梦燃烧”更顺；C1-04保留“零钱”而未添“泡泡”，避免与原文“泡銭”误读；C1-06“燃烧不尽的东西”比“烧不尽的所有”更通顺；C1-07“捧起来”比“捧起就好”更贴近“掬いたいだけ”。A的C1-02“色调”略偏视觉化，C1-03“火苗”稍弱于“把火点燃”的力度。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\",\"C1-07\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1104,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 256,
+    "output_tokens": 175,
+    "service_tier": "standard"
+  }
+}

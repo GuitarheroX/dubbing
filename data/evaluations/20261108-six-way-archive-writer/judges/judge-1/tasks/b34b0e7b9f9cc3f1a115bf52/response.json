@@ -1,0 +1,21 @@
+{
+  "id": "334a0615-0a7d-45b0-a574-aed0be075e38",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原句的凝练与意境：B1-01保留“追忆流云”的比较结构，B1-02“长啸”比“嘶吼”更自然且具苍茫感，B1-03准确传达“连喘息都来不及”的窒息感；B的B1-01加入“我抬头”等原文没有的动作，B1-03“喉咙发烫”属额外具象化，整体略散。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 240,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 130,
+    "service_tier": "standard"
+  }
+}

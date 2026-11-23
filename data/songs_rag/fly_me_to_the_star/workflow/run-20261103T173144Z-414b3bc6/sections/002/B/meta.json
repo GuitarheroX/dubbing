@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173033_b_06089c",
+  "input_hash": "06089cf3cd882dbcf2f26dc5097e1ee7542494a6d6d7af83f81c58c66b701b67",
+  "finished_at": "2026-11-03T17:30:54+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2908,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 4496,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"一次次 话到嘴边 偏又 悄悄咽回去\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"按 3/4/2/5 分段，偏又占两个音，咽回去收在句尾\"}\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"闭上眼 一幕幕 换人生\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"3/3/3 三段对齐，末段换人生三字\"}\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"披上陌生模样 讨你欢喜 只为 你多看我一眼\",\n      \"chars\": 18,\n      \"self_check\": {\"budget\": [18, 18], \"ok\": true, \"note\": \"6/4/2/6，只为两字单占一段，末段六个音\"}\n    },\n    {\n      \"id\": \"V2-04\",\n      \"zh\": \"带 我飞去星河\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"与 V1-05 完全一致，带字单占第一个音，空格只做断句\"}\n    }\n  ]\n}",
+  "migrated_from": "20261103T173033_b_06089c"
+}

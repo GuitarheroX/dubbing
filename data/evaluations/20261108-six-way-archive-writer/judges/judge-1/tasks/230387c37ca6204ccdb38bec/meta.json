@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "started_at": "2026-11-08T12:46:17.116842+00:00",
+  "response_hash": "2e84c2389a95e1215615b846950ee3e316f260f961a6e821eb66c78b274ebb56",
+  "finished_at": "2026-11-08T12:46:18.509771+00:00",
+  "usage": {
+    "input_tokens": 854,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 133,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

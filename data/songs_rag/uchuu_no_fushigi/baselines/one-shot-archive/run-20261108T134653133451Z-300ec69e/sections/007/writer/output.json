@@ -1,0 +1,57 @@
+{
+  "section": "O1",
+  "phrases": [
+    {
+      "id": "O1-01",
+      "zh": "全部 全部 全部",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "全部重复三次，每词两字，对应4+2的旋律切分"
+      }
+    },
+    {
+      "id": "O1-02",
+      "zh": "一起去寻找",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "与V1-05保持一致，四字加两字对应4+2"
+      }
+    },
+    {
+      "id": "O1-03",
+      "zh": "全部 全部 全部",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "重复O1-01，保留原曲重复美"
+      }
+    },
+    {
+      "id": "O1-04",
+      "zh": "一起去寻找",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "重复O1-02，与结尾呼应"
+      }
+    }
+  ]
+}

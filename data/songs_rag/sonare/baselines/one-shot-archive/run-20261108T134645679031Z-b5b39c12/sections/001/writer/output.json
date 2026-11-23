@@ -1,0 +1,109 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "梦醒时分睁开双眼",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "需要10字，当前8字，补两字"
+      }
+    },
+    {
+      "id": "V1-02",
+      "zh": "摊开书页上独自一人伫立",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          14,
+          14
+        ],
+        "ok": false,
+        "note": "需要14字，当前12字，补两字"
+      }
+    },
+    {
+      "id": "V1-03",
+      "zh": "环顾四周却看不见",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "正好9字"
+      }
+    },
+    {
+      "id": "V1-04",
+      "zh": "没有目标也没有出口",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": false,
+        "note": "需要7字，当前9字，减两字"
+      }
+    },
+    {
+      "id": "V1-05",
+      "zh": "然后我听见的是",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": false,
+        "note": "需要9字，当前7字，补两字"
+      }
+    },
+    {
+      "id": "V1-06",
+      "zh": "呼唤着我名字的你的声音",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          14,
+          14
+        ],
+        "ok": false,
+        "note": "需要14字，当前12字，补两字"
+      }
+    },
+    {
+      "id": "V1-07",
+      "zh": "摸索着说出的言语",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "正好9字"
+      }
+    },
+    {
+      "id": "V1-08",
+      "zh": "迈步向前走",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "正好6字"
+      }
+    }
+  ]
+}

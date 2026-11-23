@@ -1,0 +1,57 @@
+{
+  "section": "B1",
+  "phrases": [
+    {
+      "id": "B1-01",
+      "zh": "挡路的一切 嫉妒",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "前六字连读 后两字单独成拍"
+      }
+    },
+    {
+      "id": "B1-02",
+      "zh": "甩落身后去 冲动",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "前六字连读 后两字单独成拍"
+      }
+    },
+    {
+      "id": "B1-03",
+      "zh": "我本色不改 本能",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "前六字连读 后两字单独成拍"
+      }
+    },
+    {
+      "id": "B1-04",
+      "zh": "要把一切夺回手中",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "整句一气唱出"
+      }
+    }
+  ]
+}

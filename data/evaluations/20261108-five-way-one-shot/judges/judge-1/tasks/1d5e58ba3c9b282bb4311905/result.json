@@ -1,0 +1,197 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达核融合炉、跳入、蓝光包围、一切被原谅等核心信息",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03",
+            "C1-04",
+            "C1-05",
+            "C1-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，但表达较平直，牺牲感与恍惚感稍弱",
+          "phrase_ids": [
+            "C1-02",
+            "C1-06"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，'试了的话'略口语拖沓",
+          "phrase_ids": [
+            "C1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "意象忠实但表达普通，缺少张力",
+          "phrase_ids": [
+            "C1-03",
+            "C1-06"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "将'核融合炉'改写为'炉心深处那片蓝'，并增'连我也一样'，核心意象与语义有偏移",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "沉溺与救赎情绪保留较好，'温柔地吞没'强化了意境",
+          "phrase_ids": [
+            "C1-03",
+            "C1-06"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文流畅有歌词感，个别句稍长",
+          "phrase_ids": [
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象鲜明，'化一片光''温柔地吞没'有表现力",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心信息准确，'包裹我''心好轻'为合理补充",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03",
+            "C1-05",
+            "C1-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，'心好轻'略偏轻快，与原曲沉重恍惚稍有差异",
+          "phrase_ids": [
+            "C1-06"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "顺口自然，符合歌词文体",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03",
+            "C1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'纵身一跃而入''湛蓝光芒包裹我'意象清晰有力",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "语义忠实，'炉里'稍窄但核心信息完整",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03",
+            "C1-05",
+            "C1-06"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪基本一致但表达平淡，牺牲与解脱感不足",
+          "phrase_ids": [
+            "C1-02",
+            "C1-06"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "'纵身跳进去的话那样的话'生硬重复，'感觉'句尾拗口",
+          "phrase_ids": [
+            "C1-05",
+            "C1-06"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，缺少鲜明意象",
+          "phrase_ids": [
+            "C1-03",
+            "C1-06"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "'跳进炉心那片蓝'改写核融合炉，且C1-02增'被那光吞没'，语义有偏移",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "沉溺与解脱情绪保留较好，意境较充分",
+          "phrase_ids": [
+            "C1-03",
+            "C1-06"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体流畅，个别句偏长",
+          "phrase_ids": [
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'温柔裹住全身''被那光吞没'意象鲜明",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        }
+      }
+    }
+  ]
+}

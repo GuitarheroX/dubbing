@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T174850_b_f41675",
+  "input_hash": "f4167576d4aa59a052025f5a56f4eed3c99fbc5c4d2de1b147affe3ed59b75ce",
+  "finished_at": "2026-11-03T17:49:01+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2002,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 2523,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"用一首没有词的歌 把黎明画在手心\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"前八后七，空格断在pattern的分段处，正好对上[8,7]\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"浅夏末 薄如水 那头浮起天光\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"两个空格切成3/3/6，薄如水承接分析里夏天像一层水的意象\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"我看见你摊开手掌 那一点不冷的温度\",\n      \"chars\": 16,\n      \"self_check\": {\"budget\": [16, 16], \"ok\": true, \"note\": \"前八后八，后半句八个字对最后一个乐段\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"淡色的天空 有只萤火在晃\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"五字加六字，一个空格断句，收在晃字上留住那点将熄的微光\"}\n    }\n  ]\n}",
+  "migrated_from": "20261103T174850_b_f41675"
+}

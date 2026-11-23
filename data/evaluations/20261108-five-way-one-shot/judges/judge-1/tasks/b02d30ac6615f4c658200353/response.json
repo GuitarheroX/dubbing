@@ -1,0 +1,21 @@
+{
+  "id": "5d397e8c-e684-4302-a753-0dbdcd487e95",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原词意象与情绪：C1-01保留“描朝”而非B的“唱到天亮”，C1-03保留“手心”与“看见”且未添加“发光”，C1-04“破晓前一只萤火”比B更具体自然；B的C1-03“微微发光”属额外意象，C1-01“一直唱到天亮”偏离“描いたまま”。\",\"phrase_ids\":[\"C1-01\",\"C1-03\",\"C1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 309,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 120,
+    "service_tier": "standard"
+  }
+}

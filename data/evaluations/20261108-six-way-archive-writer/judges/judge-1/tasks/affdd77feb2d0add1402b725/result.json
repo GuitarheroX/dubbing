@@ -1,0 +1,240 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达“梦见所有人消失”，并合理展开“一个一个”；后句保留房间宽广与寂静、胸口堵塞、无法呼吸。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "“宽得发慌”“血在流”强化午夜孤寂与压迫感，情绪方向与原词一致且充分。",
+          "phrase_ids": [
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“静到能听见血在流”略突兀但可接受为歌词表达。",
+          "phrase_ids": [
+            "B2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 5,
+          "reason": "“宽得发慌”“血在流”意象鲜明，服务孤独窒息的主题。",
+          "phrase_ids": [
+            "B2-02",
+            "B2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心信息完整：众人消失之梦、深夜房间空旷寂静、胸口堵塞、呼吸困难。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向准确，但“压得人喘不过气”稍显直白，意境略平。",
+          "phrase_ids": [
+            "B2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文流畅自然，符合歌词文体。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "表达清楚有力，但意象较常规，缺少突出亮点。",
+          "phrase_ids": [
+            "B2-02",
+            "B2-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确保留原句核心：众人消失、深夜空旷寂静、胸口堵塞、呼吸变难。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，但“寂静压下来”等表达较平，压迫感稍弱。",
+          "phrase_ids": [
+            "B2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "简洁顺口，符合歌词片段。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，意象和力度较常规。",
+          "phrase_ids": [
+            "B2-02",
+            "B2-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心语义基本保留，但“无边无际的寂静重”语义不完整，“不再顺畅而从容”稍偏离原词窒息感。",
+          "phrase_ids": [
+            "B2-02",
+            "B2-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向大体一致，但表达拖沓，窒息与孤寂的强度被削弱。",
+          "phrase_ids": [
+            "B2-02",
+            "B2-04"
+          ]
+        },
+        "naturalness": {
+          "score": 2,
+          "reason": "“寂静重”“难通”“不再顺畅而从容”生硬且不完整，明显不自然。",
+          "phrase_ids": [
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 2,
+          "reason": "用词堆砌且断裂，意象混乱，表现力弱。",
+          "phrase_ids": [
+            "B2-02",
+            "B2-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心信息准确：众人消失之梦、午夜房间宽广寂静、胸口堵塞、无法好好呼吸。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向正确，但表达偏平，孤寂与压迫感不够充分。",
+          "phrase_ids": [
+            "B2-02",
+            "B2-04"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "简洁自然，符合歌词文体。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但普通，缺少鲜明意象。",
+          "phrase_ids": [
+            "B2-02",
+            "B2-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达众人逐个消失、深夜房间空旷寂静、胸口堵塞、无法完整呼吸。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02",
+            "B2-03",
+            "B2-04"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "“大得空旷”“静得能听见心跳声”强化孤寂压迫，情绪充分保留。",
+          "phrase_ids": [
+            "B2-02",
+            "B2-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“咽不下”与“堵在胸口”搭配略生硬但可接受。",
+          "phrase_ids": [
+            "B2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 5,
+          "reason": "意象鲜明，“心跳声”“完整呼吸”有力服务窒息主题。",
+          "phrase_ids": [
+            "B2-02",
+            "B2-04"
+          ]
+        }
+      }
+    }
+  ]
+}

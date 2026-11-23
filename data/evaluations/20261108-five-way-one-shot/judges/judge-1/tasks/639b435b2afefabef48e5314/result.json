@@ -1,0 +1,200 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达无法表达心意、浮现人生、扮演以吸引注意等核心信息",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，但语气偏直白，细腻感稍弱",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "多处“啊”字凑字，句尾生硬，可理解但不够顺口",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但意象平淡，缺乏歌词张力",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心保留，但“藏在唇边说不出口”略改原意，“回头”弱化“吸引注意”",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "含蓄羞涩的情绪方向贴合，意境较统一",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "句式凝练顺口，符合歌词文体",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“眼底浮游”“让你回头”意象较鲜明",
+          "phrase_ids": [
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“镜中人换陌生脸”偏离“浮现种种人生”的想象义，其余基本保留",
+          "phrase_ids": [
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "羞涩渴望的情绪保留，局部意象偏移但方向一致",
+          "phrase_ids": [
+            "V2-01",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "断句碎片化较多，可理解但多处生硬",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“笑得笨拙”“换你多看一眼”有画面感",
+          "phrase_ids": [
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“一幕幕换人生”“披上陌生模样”偏离原意，吸引注意改为讨欢喜",
+          "phrase_ids": [
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "渴望被看见的情绪方向一致，稍显主动",
+          "phrase_ids": [
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "大体顺口，个别断句略碎",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“披上陌生模样”意象较鲜明",
+          "phrase_ids": [
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心信息准确，忠实对应原文",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向一致但表达平淡，缺乏细腻",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "简洁通顺，略偏直译但可唱",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 2,
+          "reason": "表达空泛，意象与张力不足",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    }
+  ]
+}

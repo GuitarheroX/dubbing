@@ -1,0 +1,21 @@
+{
+  "id": "58d51949-6270-4f47-bd8d-6a155f04372d",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A用“血脉”“命令”“烧到最烈”等意象，把“宿命”与“被要求激烈绽放”表达得更有张力，中文凝练且情绪浓烈；B语义更直白，但“命运”“活着如那风云”偏散文化，表现力较弱。A的“不得不燃”虽为改写，仍贴合原文宿命感。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 229,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 103,
+    "service_tier": "standard"
+  }
+}

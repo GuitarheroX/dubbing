@@ -1,0 +1,46 @@
+{
+  "section": "V3",
+  "query_text": "今天呀 我们 说一点 什么好呢\n和你呀 一起 唱一支 什么歌呢\n还有那 谁都 不认得 的小野花",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "顾城_gucheng/割草归来#s2",
+      "title": "割草归来",
+      "poet": "顾城",
+      "poem_id": "顾城_gucheng/割草归来",
+      "stanza_idx": 2,
+      "score": 0.642749,
+      "text": "是你在唱歌，\n是歌把你唱，\n草篮边的小野菊\n垂头把路望……"
+    },
+    {
+      "chunk_id": "向以鲜_xiangyixian/野花啊，我的野花#s4",
+      "title": "野花啊，我的野花",
+      "poet": "向以鲜",
+      "poem_id": "向以鲜_xiangyixian/野花啊，我的野花",
+      "stanza_idx": 4,
+      "score": 0.640889,
+      "text": "没有野花的日子\n所谓的春天或爱情\n都只是徒有虚名\n野花啊，我的野花"
+    },
+    {
+      "chunk_id": "金格_jinge/十世善#s2",
+      "title": "十世善",
+      "poet": "金格",
+      "poem_id": "金格_jinge/十世善",
+      "stanza_idx": 2,
+      "score": 0.637814,
+      "text": "你说的每一句话晶亮亮，我听的每一句话红扑扑\n你喜欢我眼里的你，我喜欢你眼里的我\n野花约好一起开，野鱼约好一起游\n地上的骨头开出了花，地上的泥土闪亮亮"
+    },
+    {
+      "chunk_id": "本少爷_benshaoye/大长今#s1",
+      "title": "大长今",
+      "poet": "本少爷",
+      "poem_id": "本少爷_benshaoye/大长今",
+      "stanza_idx": 1,
+      "score": 0.635764,
+      "text": "我唱，我在马路边，捡到一分钱\n我唱，系上红领巾，走向校门，带上团徽，走向未来\n我唱，我在山坡上，种了一棵花，开了花，结了个，大西瓜\n我唱，西边的太阳就要落山了，微山湖上静悄悄\n我还要唱我从山中来带来兰花草的时候\n你说你烦不烦啊你\n我听了很伤心\n嘴巴歪歪着嘴角稍有上翘的样子\n一看就知道在哭"
+    }
+  ]
+}

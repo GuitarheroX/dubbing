@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "O1",
+    "query_text": "带我 走吧\noh 带我飞向星",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

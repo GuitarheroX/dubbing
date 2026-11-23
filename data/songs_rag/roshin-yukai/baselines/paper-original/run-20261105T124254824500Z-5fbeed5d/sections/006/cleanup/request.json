@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "时钟的秒针啊\n电视里的主持人啊\n明明存在于那里\n却看不见的某人的\n笑声回荡\n饱和着反射回响\n快板·激动地\n耳鸣不消停不停歇\n快板·激动地\n耳鸣不消停不停歇"
+  },
+  "data": {
+    "response": "时钟的秒针啊\n电视里的主持人啊\n明明存在于那里\n却看不见的某人的\n笑声回荡\n饱和着反射回响\n快板·激动地\n耳鸣不消停不停歇\n快板·激动地\n耳鸣不消停不停歇"
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "时钟的秒针啊\n电视里的主持人啊\n明明存在于那里\n却看不见的某人的\n笑声回荡\n饱和着反射回响\n快板·激动地\n耳鸣不消停不停歇\n快板·激动地\n耳鸣不消停不停歇"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

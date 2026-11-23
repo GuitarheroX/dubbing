@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\"id\": \"V1-01\", \"zh\": \"鸟儿呀 为何 能飞向 蓝蓝天空\"},\n    {\"id\": \"V1-02\", \"zh\": \"猫咪呀 为何 总睡成 一团毛球\"},\n    {\"id\": \"V1-03\", \"zh\": \"你今天 要过 怎样的 晴朗一天\"},\n    {\"id\": \"V1-04\", \"zh\": \"全部 全部 全部\"},\n    {\"id\": \"V1-05\", \"zh\": \"一起出发 找吧\"}\n  ]\n}",
+  "finished_at": "2026-11-08T11:26:19+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3928,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 4361,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

@@ -1,0 +1,200 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "心跳重叠、不安、怕消失、只映我均保留，但“星屑散开”为增补意象，略改原句直述的消失感",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03",
+            "C1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "依恋与不安情绪保留，末句“别的影都别留”强化占有感，方向一致",
+          "phrase_ids": [
+            "C1-03",
+            "C1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "断句多、节奏碎，“同一声”“星屑散开”稍生硬但可理解",
+          "phrase_ids": [
+            "C1-01",
+            "C1-03",
+            "C1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“星屑散开”“别的影都别留”意象鲜明，服务主题",
+          "phrase_ids": [
+            "C1-03",
+            "C1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "各句核心信息准确，忠实原意",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03",
+            "C1-04",
+            "C1-05"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "不安与依恋方向准确，但表达偏平实，情绪强度略弱",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“因为”悬置符合歌词省略，末句稍长但自然",
+          "phrase_ids": [
+            "C1-02",
+            "C1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但意象普通，缺少亮点",
+          "phrase_ids": [
+            "C1-01",
+            "C1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心语义准确，“仿佛就要消失”贴合原句",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03",
+            "C1-04",
+            "C1-05"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "不安与独占欲保留，语气平稳略淡",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03",
+            "C1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "通顺自然，“除了我别映出别人”稍直但可唱",
+          "phrase_ids": [
+            "C1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清晰但较平，意象不突出",
+          "phrase_ids": [
+            "C1-01",
+            "C1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "心跳、不安、怕消失、只映我大意保留，但“叠成一拍在颤动”“像风一松手就散”增补较多，偏离原句直述",
+          "phrase_ids": [
+            "C1-01",
+            "C1-03",
+            "C1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "不安与依恋情绪较强，方向一致",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "断句碎、字数偏满，“别容下别人半个身影”稍拗口",
+          "phrase_ids": [
+            "C1-01",
+            "C1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“像风一松手就散无痕”意象鲜明有力",
+          "phrase_ids": [
+            "C1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "心跳、不安、怕消失、只映我保留；“消失在人海里”为合理补充但略改原句",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03",
+            "C1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "不安与依恋方向准确，情绪连贯",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "顺口自然，“只怕你”悬置符合歌词",
+          "phrase_ids": [
+            "C1-02",
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚，“人海里”稍常见，整体普通",
+          "phrase_ids": [
+            "C1-03",
+            "C1-04"
+          ]
+        }
+      }
+    }
+  ]
+}

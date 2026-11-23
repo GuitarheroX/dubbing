@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"报晓鸟 你别唱 让夜色 再停留\"\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"墙上的 那指针 停住 别向前\"\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"一颗流星悄悄 划过 微亮的 天边滑向晨 碎成满地星屑\"\n    },\n    {\n      \"id\": \"B1-04\",\n      \"zh\": \"oh 带我飞向星\"\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T10:53:30+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2372,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2048,
+    "output_tokens": 2389,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

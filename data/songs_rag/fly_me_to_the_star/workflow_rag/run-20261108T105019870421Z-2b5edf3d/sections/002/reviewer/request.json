@@ -1,0 +1,126 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "phrases": [
+      {
+        "id": "V2-01",
+        "section": "V2",
+        "ja": "気持ち 伝えることできなくて",
+        "budget": {
+          "min": 14,
+          "max": 14
+        },
+        "pattern": [
+          3,
+          4,
+          2,
+          5
+        ]
+      },
+      {
+        "id": "V2-02",
+        "section": "V2",
+        "ja": "いろんな人生を浮かべ",
+        "budget": {
+          "min": 9,
+          "max": 9
+        },
+        "pattern": [
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "id": "V2-03",
+        "section": "V2",
+        "ja": "演じてみるの あなたの気を惹きたいから",
+        "budget": {
+          "min": 18,
+          "max": 18
+        },
+        "pattern": [
+          6,
+          4,
+          2,
+          6
+        ]
+      },
+      {
+        "id": "V2-04",
+        "section": "V2",
+        "ja": "oh, fly me to the star",
+        "budget": {
+          "min": 6,
+          "max": 6
+        },
+        "pattern": [
+          1,
+          5
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V2",
+      "phrases": [
+        {
+          "id": "V2-01",
+          "zh": "真心话 停在唇边 打转 咽回心里去",
+          "chars": 14,
+          "self_check": {
+            "budget": [
+              14,
+              14
+            ],
+            "ok": true,
+            "note": "按 3+4+2+5 断句，真心话停在唇边打转，最后咽回，补足五字"
+          }
+        },
+        {
+          "id": "V2-02",
+          "zh": "镜中人 换一张 陌生脸",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "按 3+3+3 断句，镜中人换一张陌生脸，写试演不同人生"
+          }
+        },
+        {
+          "id": "V2-03",
+          "zh": "演成另一个我 笑得笨拙 只为 换你多看一眼",
+          "chars": 18,
+          "self_check": {
+            "budget": [
+              18,
+              18
+            ],
+            "ok": true,
+            "note": "按 6+4+2+6 断句，保留初版笑得笨拙，末段换你多看一眼六字"
+          }
+        },
+        {
+          "id": "V2-04",
+          "zh": "oh 带我飞向星",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "与 V1-05 完全重复，oh 占第一拍，后五字对齐 1+5"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

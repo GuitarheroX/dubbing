@@ -1,0 +1,158 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "保留潜在忧愁与无法坦率，但“耳机两端”改写了人际隔阂的具体场景，“认不出自己”弱化“连自己也难以理解”",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "压抑、隔阂的情绪方向一致，但“耳机两端”偏具体日常，削弱原句内省感",
+          "phrase_ids": [
+            "V2-01",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，歌词感较强，个别搭配如“一层浑浊”略生硬",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“牙关却咬紧”“接不住谁”意象鲜明，服务主题",
+          "phrase_ids": [
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "四句均准确对应原文：潜在忧愁、无法坦率、与谁都无法相互理解、连自己也是",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "内省、疏离与无力感保留充分，语气略平但方向准确",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "表达通顺，偏直译但可唱可读，“怎么也无法坦率”稍书面",
+          "phrase_ids": [
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "语义清楚但意象较平，缺少更鲜明的歌词表达",
+          "phrase_ids": [
+            "V2-01",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心信息准确，四句均忠实对应原文语义",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "忧愁、无法坦率与疏离感保留良好，整体略平淡",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文自然通顺，“说不通呢”口语感较好",
+          "phrase_ids": [
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏常规，意象与力度一般",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "保留潜在忧愁与自我不懂，但“话到嘴边又咽回”改写为欲言又止，“说给空气”改变人际隔阂的具体表达",
+          "phrase_ids": [
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "内省与孤独方向一致，但“说给空气”偏自嘲式孤独，与原句沉郁疏离略有偏移",
+          "phrase_ids": [
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文流畅有歌词感，“闷在心底的那一层忧”略拗口但可接受",
+          "phrase_ids": [
+            "V2-01"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“话到嘴边又咽回”“说给空气”意象具体，表达较有力",
+          "phrase_ids": [
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    }
+  ]
+}

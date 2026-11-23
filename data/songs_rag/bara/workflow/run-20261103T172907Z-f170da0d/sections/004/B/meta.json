@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T172847_b_9b8c11",
+  "input_hash": "9b8c11460d74b61da72dcf4469268f7aecd77800fab0a34523eb9dde04c28ca3",
+  "finished_at": "2026-11-03T17:28:56+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2067,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1920,
+    "output_tokens": 1724,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"哪一颗星星 转到我头顶\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"5+5 断句，对上 pattern 的两段\"}\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"等到那一天 飘落的是我\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"5+5，空格处换气；不用“了/着”收尾\"}\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"平凡的一生 从来不属我\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"5+5，“平凡”直接落在重音上\"}\n    },\n    {\n      \"id\": \"V2-04\",\n      \"zh\": \"这条路早被划去 我偏要仰头\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"7+5，前段七字连读，后段五字收在仰头\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T172847_b_9b8c11"
+}

@@ -1,0 +1,57 @@
+{
+  "section": "V2",
+  "phrases": [
+    {
+      "id": "V2-01",
+      "zh": "心底潜藏的忧愁",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": false,
+        "note": "需要9字，当前7字，补意象"
+      }
+    },
+    {
+      "id": "V2-02",
+      "zh": "怎么也无法坦率",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": false,
+        "note": "需要9字，当前7字，补意象"
+      }
+    },
+    {
+      "id": "V2-03",
+      "zh": "和谁都无法相互理解",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "需要10字，当前9字，补意象"
+      }
+    },
+    {
+      "id": "V2-04",
+      "zh": "连自己也是",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "精确5字"
+      }
+    }
+  ]
+}

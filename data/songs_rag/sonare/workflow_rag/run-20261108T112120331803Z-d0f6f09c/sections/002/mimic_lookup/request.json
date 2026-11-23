@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "query_text": "踩着零零散散的拍\n哼得走调 你听见了吗",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

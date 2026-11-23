@@ -1,0 +1,21 @@
+{
+  "id": "09e8f639-1819-4046-a195-c1eb4c7a26e9",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"tie\",\"reason\":\"两版仅B1-03“色彩/颜色”一处差异，语义与情绪几乎等同；“颜色”略口语，“色彩”略书面，但均自然且不损原意，其余三句完全一致，整体难分优劣。\",\"phrase_ids\":[\"B1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 634,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 384,
+    "output_tokens": 70,
+    "service_tier": "standard"
+  }
+}

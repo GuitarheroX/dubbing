@@ -1,0 +1,21 @@
+{
+  "id": "b9bafd5c-ffbb-45b0-bf0e-d592248b8025",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更简洁自然，保留了“呆然”的失神感与“终会来”的将来语义；A的“呆立原地”动作化过度，“注视到底”也偏离“一直想看”的持续愿望。V1-01两版均可，B更凝练。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 215,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 89,
+    "service_tier": "standard"
+  }
+}

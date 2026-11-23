@@ -1,0 +1,9 @@
+{
+  "run": "run-20261108T134623375457Z-07861535",
+  "updated_at": "2026-11-08T13:46:30+00:00",
+  "song": "kaijuu",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "passed": 3,
+  "total": 17
+}

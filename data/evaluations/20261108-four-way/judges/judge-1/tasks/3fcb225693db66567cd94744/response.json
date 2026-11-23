@@ -1,0 +1,21 @@
+{
+  "id": "7a0ae6c7-0848-410d-a2f3-b4fc57f0c1c1",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原意：B1-01“从未能察觉”保留未察觉的遗憾；B1-02“太爱撒娇”对应甘えてた，B的“太习惯被你爱”改动了语义；B1-03 A简洁自然，B虽更铺陈但“张开双手”属额外添加。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 237,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 97,
+    "service_tier": "standard"
+  }
+}

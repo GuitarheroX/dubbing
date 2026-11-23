@@ -1,0 +1,152 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "保留玫瑰盛开与散落，但“一身深红”为增补意象，“开/落”替代“咲いて/散る”尚可，核心偏移不大",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "高傲盛开与美丽散落方向一致，但“深红”“一瓣瓣”使情绪更具体柔化，少了原句的庄重反复感",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“玫瑰开 玫瑰开”可唱但略生硬，“一身深红高傲盛开”搭配稍挤",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "深红、一瓣瓣有画面，但“开/落”重复较平，表现力普通",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“玫瑰是玫瑰”对应反复，“高贵地绽放/美丽地凋零”准确传达气高与美散，仅“是”略改判断语气",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "庄重、高贵的情绪保留较好，凋零的凄美也在，但强度略平",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，“玫瑰是玫瑰”有歌词式判断句感，整体自然",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏直译，意象与力度较普通",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "保留玫瑰、凛然盛开与美丽散落，但“开到最盛时”“散得从容”增补了原句没有的时点与从容态度",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "高贵美丽方向一致，但“从容”弱化了“散る”的决绝凄美，情绪略偏",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "“玫瑰啊”呼告自然，“凛然地开到最盛时”稍长但可唱",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“开到最盛时”“散得从容”有画面和态度，表现较鲜明",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "与B同文，核心信息准确，仅“是”略改原反复呼告语气",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "庄重高贵与美丽凋零保留，情绪方向一致但略平",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，判断句式适合歌词",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "清楚但偏直译，意象力度普通",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        }
+      }
+    }
+  ]
+}

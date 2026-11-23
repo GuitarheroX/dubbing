@@ -10,6 +10,13 @@
 
 `one-shot` 是 workflow 的消融对照：workflow 在信息上给它的（整首歌、已定稿的部分、人工预算与分组）它都有，唯一的差别是**没有 workflow 架构本身**——不跑 perceiver 的体会，也没有「reviewer 检查 → 带 prev_zh 返修」的闭环。这样两边的差距才指向架构而不是信息量。
 
+另有显式选择的 `one-shot-archive`：使用 `archive/shared.md` + `archive/b.md`，保留归档提示词的严格预算要求。其数据输入、模型参数和单次调用结构与 `one-shot` 相同，没有 perceiver 分析、没有 reviewer 返修；输出独立存于 `baselines/one-shot-archive/`。默认 `all` 仍仅包含上表三组。比较历史结果时须核对实际提示词哈希及生成参数，不能仅凭方法名认定为严格消融。
+
+```bash
+python baseline/run_baselines.py --root data/songs_rag --all --baseline one-shot-archive \
+  --client api --thinking disabled --temperature 0.7 --jobs 3
+```
+
 两篇论文组保留按原文 mora / syllable 对齐、押韵与主题的要求；标注组把计数目标换成人工作者给出的预算区间，并说明 `pattern` 只是参考、`keep_source` 的句子原样输出。
 
 ## 用法
@@ -66,7 +73,7 @@ paper 组每段调用两次：一次生成，一次由同模型清理输出格�
 
 ## 评测
 
-`lyrics.md` 的「状态」列由确定性的规则检查（`dubbing/checks.py`）在生成结束后**事后**算出，只用于导出口径；规则结论不进入任何模型请求，也**不**单独落盘成报告文件。加入人工预算、字数距离、跨组比较等评测是后续任务。
+`lyrics.md` 的「状态」列由确定性的规则检查（`dubbing/checks.py`）在生成结束后**事后**算出，只用于导出口径；规则结论不进入任何模型请求，也**不**单独落盘成报告文件。跨组评测入口为 `python -m evaluate`，保留规则分、LLM 文本评分与真人试唱分的区别。完整指标见 [评测方案](../docs/evaluation-plan.md)，使用方式见 [evaluate/README.md](../evaluate/README.md)。当前只完成评测流程实现，尚未启动正式评测。
 
 ## 与论文的对应关系与出处
 

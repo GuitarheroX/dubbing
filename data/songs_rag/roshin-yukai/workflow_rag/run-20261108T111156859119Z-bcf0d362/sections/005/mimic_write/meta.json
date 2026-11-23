@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"C2\",\n  \"phrases\": [\n    {\n      \"id\": \"C2-01\",\n      \"zh\": \"炉心深处 那片蓝\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"副歌重复句，与C1同句保持一致，七字对七音\"}\n    },\n    {\n      \"id\": \"C2-02\",\n      \"zh\": \"好想纵身跳进去 化一片光\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"前七字说动作 后四字补光意象，共十一字\"}\n    },\n    {\n      \"id\": \"C2-03\",\n      \"zh\": \"被那一片湛蓝的光 温柔地吞没 多美\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"保留蓝光与吞没，末三字收束成叹，十五字\"}\n    },\n    {\n      \"id\": \"C2-04\",\n      \"zh\": \"炉心深处 那片蓝\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"与C2-01完全重复，保留副歌内部复沓\"}\n    },\n    {\n      \"id\": \"C2-05\",\n      \"zh\": \"倘若这样跳进去 又会怎样\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"倘若 这样 跳进去 又会怎样，十一字不断气\"}\n    },\n    {\n      \"id\": \"C2-06\",\n      \"zh\": \"仿佛一切过错 都被原谅 连我也一样\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"一切过错都被原谅，连我也一样，共十五字\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:14:34+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 5247,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2816,
+    "output_tokens": 3481,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

@@ -1,0 +1,46 @@
+{
+  "section": "B1",
+  "query_text": "我这一生 注定是 深红玫瑰 永不低头\n生来要华美 也如烈火 把命点燃 才叫活过",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "高伟_gaowei/玫瑰像黄金开放命令我舞蹈#s2",
+      "title": "玫瑰像黄金开放命令我舞蹈",
+      "poet": "高伟",
+      "poem_id": "高伟_gaowei/玫瑰像黄金开放命令我舞蹈",
+      "stanza_idx": 2,
+      "score": 0.687715,
+      "text": "你是我的理想 比理想更鲜艳\n理想不知道的地方 你让我知道\n如果活着有报答 你就是我的报答\n如果活着有天堂 你就是我的天堂\n玫瑰被催促着的 是生命的好\n不止是辞令的好 智慧的好\n也不止是身体的好\n玫瑰被你圆满生命的好催促着怒放\n是不得不怒放"
+    },
+    {
+      "chunk_id": "高小刚_gaoxiaogang/生命是一支红莲#s1",
+      "title": "生命是一支红莲",
+      "poet": "高小刚",
+      "poem_id": "高小刚_gaoxiaogang/生命是一支红莲",
+      "stanza_idx": 1,
+      "score": 0.683858,
+      "text": "生命是一支红莲\n绽放，地狱之火焰\n绝望、浓烈，不惜一切的花瓣"
+    },
+    {
+      "chunk_id": "欧阳雄东_ouyangxiongdong/凤凰之名#s1",
+      "title": "凤凰之名",
+      "poet": "欧阳雄东",
+      "poem_id": "欧阳雄东_ouyangxiongdong/凤凰之名",
+      "stanza_idx": 1,
+      "score": 0.672241,
+      "text": "请允许我有自私\n在内心开垦荒芜\n用它种上一片玫瑰\n向太阳昂举高贵头颅\n让热烈驱走前生黯淡\n逃出世俗庸常困溺\n如果有十万朵惊艳\n就借凤凰之名\n拥抱浴火\n涅槃重生"
+    },
+    {
+      "chunk_id": "阿开_akai/废墟#s4",
+      "title": "废墟",
+      "poet": "阿开",
+      "poem_id": "阿开_akai/废墟",
+      "stanza_idx": 4,
+      "score": 0.67132,
+      "text": "劫后的玫瑰\n有屋檐躲雨 有角落哭泣\n有炉膛生着不息的烟火\n迎接呼啸而至的泪水\n温暖一地让我活着的废墟"
+    }
+  ]
+}

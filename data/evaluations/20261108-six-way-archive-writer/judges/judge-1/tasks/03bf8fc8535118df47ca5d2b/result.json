@@ -1,0 +1,229 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "星与飘落之意保留，但“转到我头顶”偏具体化，“从来不属我”与“无法实现”语义偏移，末句加入“偏要仰头”改变原意。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "宿命感与不甘情绪有体现，但末句转为反抗姿态，与原句无奈接受的情绪方向不同。",
+          "phrase_ids": [
+            "V2-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，歌词感较强，个别表达如“划去”略生硬。",
+          "phrase_ids": [
+            "V2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象较鲜明，“偏要仰头”有力度，但服务的是改写后的情绪。",
+          "phrase_ids": [
+            "V2-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "星轮回、消散是我、平凡人生、无法实现之身基本准确，仅“身躯”略窄化。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "宿命与无奈情绪保留较好，语气稍平。",
+          "phrase_ids": [
+            "V2-02",
+            "V2-04"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "可理解但“虽是无法实现的身躯”较生硬，歌词感不足。",
+          "phrase_ids": [
+            "V2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏直译，意象和力度普通。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "星与散落之意保留，但“停在那一刻”改变原意，“我也曾向往”与“无法实现”方向偏移，末句强化为“不许我平凡”。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪较浓，但由无奈转为不甘与反抗，局部偏离原情绪。",
+          "phrase_ids": [
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，歌词文体较自然，个别句略绕。",
+          "phrase_ids": [
+            "V2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象鲜明、有张力，但部分来自改写后的情绪。",
+          "phrase_ids": [
+            "V2-03",
+            "V2-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心信息基本保留，星轮回、凋落是我、平凡人生、无法实现之身均对应，仅“无可奈”略添情绪。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "宿命无奈情绪保留较好，稍显概括。",
+          "phrase_ids": [
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "短句可理解，但“无可奈”“这身躯啊”略生硬、碎片化。",
+          "phrase_ids": [
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "意象清楚但表达普通，力度有限。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "星流转、凋零是我、难遂心愿基本保留，但“未曾盛开”为原句所无，且“平凡一生”与“无法实现”关系被改写。",
+          "phrase_ids": [
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "宿命与无奈情绪较充分，略带诗意偏移。",
+          "phrase_ids": [
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文较顺，歌词感较好，个别搭配略文。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象较鲜明，“未曾盛开”有表现力但属增补。",
+          "phrase_ids": [
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "星轮回、消散是我、平凡人生、无法实现之身基本准确，末句略压缩。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "无奈宿命情绪保留较好，语气稍平。",
+          "phrase_ids": [
+            "V2-02",
+            "V2-04"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "可理解，但“平凡的那 人生啊”“身虽如此”较生硬。",
+          "phrase_ids": [
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏直译，意象力度普通。",
+          "phrase_ids": [
+            "V2-01",
+            "V2-04"
+          ]
+        }
+      }
+    }
+  ]
+}

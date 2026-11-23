@@ -1,0 +1,21 @@
+{
+  "id": "ae2b3bff-87e8-4b80-89c3-de81836daf68",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B2-01“这世上的人”比A的“所有人”更贴近“誰もみんな”的泛指感；B2-02“心跳声”比A“血在流”更自然克制，A略过度渲染；B2-03“咽不下”比“出不去”更贴合“つっかえて”的哽塞感；B2-04两版均准确，B“完整的呼吸”稍自然。整体B语义更稳、中文更顺。\",\"phrase_ids\":[\"B2-01\",\"B2-02\",\"B2-03\",\"B2-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 340,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 137,
+    "service_tier": "standard"
+  }
+}

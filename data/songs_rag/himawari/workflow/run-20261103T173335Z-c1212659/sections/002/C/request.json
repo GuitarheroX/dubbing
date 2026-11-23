@@ -1,0 +1,121 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "phrases": [
+      {
+        "id": "V1-01",
+        "section": "V1",
+        "ja": "夏の海原裸足のまま",
+        "budget": {
+          "min": 13,
+          "max": 13
+        },
+        "pattern": [
+          7,
+          6
+        ]
+      },
+      {
+        "id": "V1-02",
+        "section": "V1",
+        "ja": "あなたを呼ぶ間に足が濡れる",
+        "budget": {
+          "min": 14,
+          "max": 14
+        },
+        "pattern": [
+          8,
+          6
+        ]
+      },
+      {
+        "id": "V1-03",
+        "section": "V1",
+        "ja": "波を忘れて乾いた肌",
+        "budget": {
+          "min": 13,
+          "max": 13
+        },
+        "pattern": [
+          7,
+          6
+        ]
+      },
+      {
+        "id": "V1-04",
+        "section": "V1",
+        "ja": "あなたの引く手に燃えるからだ",
+        "budget": {
+          "min": 14,
+          "max": 14
+        },
+        "pattern": [
+          8,
+          6
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V1",
+      "phrases": [
+        {
+          "id": "V1-01",
+          "zh": "赤脚踏进正午海 白亮晃眼的光",
+          "chars": 13,
+          "self_check": {
+            "budget": [
+              13,
+              13
+            ],
+            "ok": true,
+            "note": "前七字一顿对 [7,6]，空格断句不计字数"
+          }
+        },
+        {
+          "id": "V1-02",
+          "zh": "我喊你名字的时候 脚背被浪打湿",
+          "chars": 14,
+          "self_check": {
+            "budget": [
+              14,
+              14
+            ],
+            "ok": true,
+            "note": "八字加六字，正好对上 [8,6]"
+          }
+        },
+        {
+          "id": "V1-03",
+          "zh": "忘了潮水忘了风 皮肤结成薄盐",
+          "chars": 13,
+          "self_check": {
+            "budget": [
+              13,
+              13
+            ],
+            "ok": true,
+            "note": "七字加六字，两处「忘了」是重复句式"
+          }
+        },
+        {
+          "id": "V1-04",
+          "zh": "你手一牵我就发烫 一路烧到骨头",
+          "chars": 14,
+          "self_check": {
+            "budget": [
+              14,
+              14
+            ],
+            "ok": true,
+            "note": "八字加六字，句尾避开虚字"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

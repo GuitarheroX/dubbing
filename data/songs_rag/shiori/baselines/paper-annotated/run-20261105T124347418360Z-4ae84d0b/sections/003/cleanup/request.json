@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "1. 全部全部都是我\n2. 磨磨蹭蹭抽抽搭搭都是我\n3. 全部全部紧紧拥抱\n4. 稍稍睡一会\n5. 痛痛痛痛飞走吧\n6. 愿悲伤不会夺走一切\n7. 我就做我自己的伙伴吧\n8. 还在漫长路途的途中\n9. 稍微休息一下也\n10. 谁也不会责备你的"
+  },
+  "data": {
+    "response": "1. 全部全部都是我\n2. 磨磨蹭蹭抽抽搭搭都是我\n3. 全部全部紧紧拥抱\n4. 稍稍睡一会\n5. 痛痛痛痛飞走吧\n6. 愿悲伤不会夺走一切\n7. 我就做我自己的伙伴吧\n8. 还在漫长路途的途中\n9. 稍微休息一下也\n10. 谁也不会责备你的"
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "1. 全部全部都是我\n2. 磨磨蹭蹭抽抽搭搭都是我\n3. 全部全部紧紧拥抱\n4. 稍稍睡一会\n5. 痛痛痛痛飞走吧\n6. 愿悲伤不会夺走一切\n7. 我就做我自己的伙伴吧\n8. 还在漫长路途的途中\n9. 稍微休息一下也\n10. 谁也不会责备你的"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "1. 眠りから目覚めたら → 睡醒睁开双眼的时候 (10 syllables: shuì xǐng zhēng kāi shuāng yǎn de shí hòu) ✓\n2. ひらかれたページの上にひとり → 翻开书页之上独自一人 (14 syllables: fān kāi shū yè zhī shàng dú zì yī rén) ✓\n3. 見回せど見えない → 四处张望却看不见 (9 syllables: sì chù zhāng wàng què kàn bú jiàn) ✓\n4. あても出口も → 没有方向没有出口 (7 syllables: méi yǒu fāng xiàng méi yǒu chū kǒu) ✓\n5. そして聞こえたのは → 然后我听见的是 (9 syllables: rán hòu wǒ tīng jiàn de shì) ✓\n6. 名前を呼んでるあなたの声 → 呼唤着我名字的你的声音 (14 syllables: hū huàn zhe wǒ míng zì de nǐ de shēng yīn) ✓\n7. 手探りの言葉と → 摸索着说出的言语 (9 syllables: mō suǒ zhe shuō chū de yán yǔ) ✓\n8. 歩き出した → 迈步向前走 (6 syllables: mài bù xiàng qián zǒu) ✓\n\nRhyme check (final phoneme per line): 候(hòu) / 人(rén) / 见(jiàn) / 口(kǒu) / 是(shì) / 音(yīn) / 语(yǔ) / 走(zǒu). Original rhyme pattern: ら(a) / り(i) / い(i) / も(o) / は(a) / え(e) / と(o) / た(a) — no consistent end-rhyme scheme in the source (free pattern). Chinese lines follow a free pattern as well, with no forced rhyme, matching the source's lack of a unified rhyme."
+  },
+  "data": {
+    "response": "1. 眠りから目覚めたら → 睡醒睁开双眼的时候 (10 syllables: shuì xǐng zhēng kāi shuāng yǎn de shí hòu) ✓\n2. ひらかれたページの上にひとり → 翻开书页之上独自一人 (14 syllables: fān kāi shū yè zhī shàng dú zì yī rén) ✓\n3. 見回せど見えない → 四处张望却看不见 (9 syllables: sì chù zhāng wàng què kàn bú jiàn) ✓\n4. あても出口も → 没有方向没有出口 (7 syllables: méi yǒu fāng xiàng méi yǒu chū kǒu) ✓\n5. そして聞こえたのは → 然后我听见的是 (9 syllables: rán hòu wǒ tīng jiàn de shì) ✓\n6. 名前を呼んでるあなたの声 → 呼唤着我名字的你的声音 (14 syllables: hū huàn zhe wǒ míng zì de nǐ de shēng yīn) ✓\n7. 手探りの言葉と → 摸索着说出的言语 (9 syllables: mō suǒ zhe shuō chū de yán yǔ) ✓\n8. 歩き出した → 迈步向前走 (6 syllables: mài bù xiàng qián zǒu) ✓\n\nRhyme check (final phoneme per line): 候(hòu) / 人(rén) / 见(jiàn) / 口(kǒu) / 是(shì) / 音(yīn) / 语(yǔ) / 走(zǒu). Original rhyme pattern: ら(a) / り(i) / い(i) / も(o) / は(a) / え(e) / と(o) / た(a) — no consistent end-rhyme scheme in the source (free pattern). Chinese lines follow a free pattern as well, with no forced rhyme, matching the source's lack of a unified rhyme."
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "1. 眠りから目覚めたら → 睡醒睁开双眼的时候 (10 syllables: shuì xǐng zhēng kāi shuāng yǎn de shí hòu) ✓\n2. ひらかれたページの上にひとり → 翻开书页之上独自一人 (14 syllables: fān kāi shū yè zhī shàng dú zì yī rén) ✓\n3. 見回せど見えない → 四处张望却看不见 (9 syllables: sì chù zhāng wàng què kàn bú jiàn) ✓\n4. あても出口も → 没有方向没有出口 (7 syllables: méi yǒu fāng xiàng méi yǒu chū kǒu) ✓\n5. そして聞こえたのは → 然后我听见的是 (9 syllables: rán hòu wǒ tīng jiàn de shì) ✓\n6. 名前を呼んでるあなたの声 → 呼唤着我名字的你的声音 (14 syllables: hū huàn zhe wǒ míng zì de nǐ de shēng yīn) ✓\n7. 手探りの言葉と → 摸索着说出的言语 (9 syllables: mō suǒ zhe shuō chū de yán yǔ) ✓\n8. 歩き出した → 迈步向前走 (6 syllables: mài bù xiàng qián zǒu) ✓\n\nRhyme check (final phoneme per line): 候(hòu) / 人(rén) / 见(jiàn) / 口(kǒu) / 是(shì) / 音(yīn) / 语(yǔ) / 走(zǒu). Original rhyme pattern: ら(a) / り(i) / い(i) / も(o) / は(a) / え(e) / と(o) / た(a) — no consistent end-rhyme scheme in the source (free pattern). Chinese lines follow a free pattern as well, with no forced rhyme, matching the source's lack of a unified rhyme."
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

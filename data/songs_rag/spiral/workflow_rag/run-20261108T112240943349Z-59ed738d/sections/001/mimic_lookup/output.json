@@ -1,0 +1,46 @@
+{
+  "section": "V1",
+  "query_text": "画好的地图 我亲手撕碎了\n世界停在 那一天的原地\n而我又一次\n把一切 都推给别人\n真没出息啊",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "陈昭渊_chenzhaoyuan/拾荒#s1",
+      "title": "拾荒",
+      "poet": "陈昭渊",
+      "poem_id": "陈昭渊_chenzhaoyuan/拾荒",
+      "stanza_idx": 1,
+      "score": 0.700721,
+      "text": "我好没天分\n做自己的人\n总在睡不着的时候\n坦承害怕\n滴着残破的眼泪\n落荒移动"
+    },
+    {
+      "chunk_id": "南人_nanren/拼图游戏#s2",
+      "title": "拼图游戏",
+      "poet": "南人",
+      "poem_id": "南人_nanren/拼图游戏",
+      "stanza_idx": 2,
+      "score": 0.69151,
+      "text": "我不敢晃动\n更不敢翻身\n生怕这拼图\n裂开更多的缝隙\n生怕一不小心\n将整个的你洒落一地\n再也无法复原"
+    },
+    {
+      "chunk_id": "余刃_yuren/对答#s5",
+      "title": "对答",
+      "poet": "余刃",
+      "poem_id": "余刃_yuren/对答",
+      "stanza_idx": 5,
+      "score": 0.687549,
+      "text": "这是我想干倒的世界\n这是我想放血的世界\n所有路都不是我想走的\n没有一盏我想打开的灯"
+    },
+    {
+      "chunk_id": "马高明_magaoming/生机#s3",
+      "title": "生机",
+      "poet": "马高明",
+      "poem_id": "马高明_magaoming/生机",
+      "stanza_idx": 3,
+      "score": 0.685763,
+      "text": "我无法笑出声\n更无力哭诉\n是夜半咬破的手指\n涂改了我心中爱情的地图\n我是矛\n我是盾\n我是糊涂\n我是我自己拼命捶击的破鼓\n让我死去吧……"
+    }
+  ]
+}

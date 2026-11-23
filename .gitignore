@@ -18,6 +18,14 @@ data/songs/*/baselines/
 data/songs/*/preview/
 data/baseline_batches/
 
+# 本地保留的旧布局结果；远端仅维护标注与代码，旧结果不重新入库。
+data/songs/*/runs/
+data/songs/*/archive/
+data/songs/*/state.yaml
+data/songs/*/lyrics.md
+data/songs/*/lyrics.zh.txt
+data/songs/*/baseline.txt
+
 # RAG 资产：语料副本、切块中间产物、本地 Chroma 索引都不入库。
 # 只有索引的 manifest.json 值得归档（很小，而且是重要血缘）。
 # 注意用 data/poetry/* 而不是 data/poetry/：整目录被忽略时，下面的 ! 例外不生效。

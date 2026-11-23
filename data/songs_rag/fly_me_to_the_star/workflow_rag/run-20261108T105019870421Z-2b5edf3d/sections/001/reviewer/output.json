@@ -1,0 +1,17 @@
+{
+  "section": "V1",
+  "draft_run": "run-20261108T105019870421Z-2b5edf3d",
+  "verdict": "pass",
+  "violations": [],
+  "changes": {
+    "rewritten": [
+      "V1-01",
+      "V1-02",
+      "V1-03",
+      "V1-04",
+      "V1-05"
+    ],
+    "unchanged": []
+  },
+  "regressions": []
+}

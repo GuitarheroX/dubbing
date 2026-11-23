@@ -1,0 +1,109 @@
+{
+  "section": "V3",
+  "phrases": [
+    {
+      "id": "V3-01",
+      "zh": "时钟 秒针转动",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "整句七字 空格断句"
+      }
+    },
+    {
+      "id": "V3-02",
+      "zh": "电视里 主持人笑",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "整句九字 空格断句"
+      }
+    },
+    {
+      "id": "V3-03",
+      "zh": "明明都在那里",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "整句七字"
+      }
+    },
+    {
+      "id": "V3-04",
+      "zh": "却看不见的某人",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "整句八字"
+      }
+    },
+    {
+      "id": "V3-05",
+      "zh": "笑声回荡",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "整句五字"
+      }
+    },
+    {
+      "id": "V3-06",
+      "zh": "饱和着 反反复复",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "整句八字 空格断句"
+      }
+    },
+    {
+      "id": "V3-08",
+      "zh": "耳鸣不停 消不散 停不下来",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": true,
+        "note": "整句十二字 空格断句"
+      }
+    },
+    {
+      "id": "V3-10",
+      "zh": "耳鸣不停 消不散 停不下来",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": true,
+        "note": "整句十二字 与上一句重复"
+      }
+    }
+  ]
+}

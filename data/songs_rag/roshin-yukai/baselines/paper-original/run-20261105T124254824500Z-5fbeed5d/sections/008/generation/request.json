@@ -1,0 +1,40 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+    "user": "核融合炉にさ\n飛び込んでみたらそしたら\nきっと眠るように消えていけるんだ\n僕のいない朝は\n今よりずっと素晴らしくて\n全ての歯車が噛み合った\nきっとそんな世界だ"
+  },
+  "data": {
+    "lyrics": [
+      "核融合炉にさ",
+      "飛び込んでみたらそしたら",
+      "きっと眠るように消えていけるんだ",
+      "僕のいない朝は",
+      "今よりずっと素晴らしくて",
+      "全ての歯車が噛み合った",
+      "きっとそんな世界だ"
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "核融合炉にさ\n飛び込んでみたらそしたら\nきっと眠るように消えていけるんだ\n僕のいない朝は\n今よりずっと素晴らしくて\n全ての歯車が噛み合った\nきっとそんな世界だ"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

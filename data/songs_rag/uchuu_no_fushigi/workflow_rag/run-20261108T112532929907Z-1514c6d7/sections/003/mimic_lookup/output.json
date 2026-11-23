@@ -1,0 +1,46 @@
+{
+  "section": "B1",
+  "query_text": "笑着跳着呀 也试着 皱起眉头\n世界 那么大 我们却 缩在角落\n我们拉手 问一问宇宙秘密\n一起去把它解开吧",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "苏卫_suwei/笑脸#s2",
+      "title": "笑脸",
+      "poet": "苏卫",
+      "poem_id": "苏卫_suwei/笑脸",
+      "stanza_idx": 2,
+      "score": 0.6622,
+      "text": "不知道一张张笑脸\n也是一扇扇虚掩的门\n分不清那一扇门后\n设有陷阱"
+    },
+    {
+      "chunk_id": "顾偕_guxie/喧嚣中的沉思：复兴#s3",
+      "title": "喧嚣中的沉思：复兴",
+      "poet": "顾偕",
+      "poem_id": "顾偕_guxie/喧嚣中的沉思：复兴",
+      "stanza_idx": 3,
+      "score": 0.660289,
+      "text": "宇宙空间\n顿时被人类的疑问\n围绕\n雄健的智慧游来游去\n响应一束束\n不灭的目光"
+    },
+    {
+      "chunk_id": "文康_wenkang/自在者说#s4",
+      "title": "自在者说",
+      "poet": "文康",
+      "poem_id": "文康_wenkang/自在者说",
+      "stanza_idx": 4,
+      "score": 0.656677,
+      "text": "是啊\n大也是宇宙\n小也是宇宙\n像我现在\n对外面和外面的朋友\n飘飘忽忽的牵挂\n他们是会笑话我的"
+    },
+    {
+      "chunk_id": "陈隽弘_chenjuanhong/坐下或者离开#s2",
+      "title": "坐下或者离开",
+      "poet": "陈隽弘",
+      "poem_id": "陈隽弘_chenjuanhong/坐下或者离开",
+      "stanza_idx": 2,
+      "score": 0.655696,
+      "text": "关于那些无法回答的问题\n那么多离奇的遭遇\n某个部位不知觉壮大了起来\n坐下或者离开\n恨或者爱"
+    }
+  ]
+}

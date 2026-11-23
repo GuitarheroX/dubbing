@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 2.149,
+  "usage": {
+    "input_tokens": 102,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 282,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": true,
+    "human_annotations_in_generation": false,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "generation",
+  "variant": "paper-original",
+  "migrated_from": "run-20261105T124417218291Z-9fe1577b",
+  "raw_response": "笑着烦恼着\n在这广阔世界的角落里\n我们一起把宇宙的奥秘\n试着解开吧\n\nMora count verification (hiragana syllables per line):\n- 笑ったり悩んでみたり: わらったりなやんでみたり = 12 mora ✓ (original: わらったりなやんでみたり = 12 mora)\n- この広い世界のすみっこで: このひろいせかいのすみっこで = 14 mora ✓ (original: このひろいせかいのすみっこで = 14 mora)\n- 僕らでうちゅうのふしぎ: ぼくらでうちゅうのふしぎ = 11 mora ✓ (original: ぼくらでうちゅうのふしぎ = 11 mora)\n- 解き明かしてみよう: ときあかしてみよう = 9 mora ✓ (original: ときあかしてみよう = 9 mora)\n\nRhyme pattern verification (final phoneme per line):\n- り (ri)\n- で (de)\n- ぎ (gi)\n- う (u)\nOriginal rhyme pattern: り/で/ぎ/う — identical ✓\n\nTheme: childhood wonder, exploring the universe's mysteries together — preserved ✓"
+}

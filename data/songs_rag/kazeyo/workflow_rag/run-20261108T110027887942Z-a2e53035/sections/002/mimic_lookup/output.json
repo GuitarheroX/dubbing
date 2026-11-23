@@ -1,0 +1,46 @@
+{
+  "section": "V2",
+  "query_text": "今日的 眼泪和叹息 都收下\n明日的 笑声和亮光 都带上\n全部 风揽着 一路往前送\n去它该去 的地方",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "吴小虫_wuxiaochong/本心录#s111",
+      "title": "本心录",
+      "poet": "吴小虫",
+      "poem_id": "吴小虫_wuxiaochong/本心录",
+      "stanza_idx": 111,
+      "score": 0.6868,
+      "text": "每一件事情都无法等待\n每一个命都伸出着双手\n在阳光明媚的日子里\n请擦去脸上微笑的泪水"
+    },
+    {
+      "chunk_id": "林季钢_linjigang/好好#s3",
+      "title": "好好",
+      "poet": "林季钢",
+      "poem_id": "林季钢_linjigang/好好",
+      "stanza_idx": 3,
+      "score": 0.67532,
+      "text": "好好拥抱迎面而来的人\n擦肩而过的\n好好道别\n坦然面对自己真的无能为力\n接受别人的心意\n好好收着"
+    },
+    {
+      "chunk_id": "顾偕_guxie/情爱永不老_断章#s5",
+      "title": "情爱永不老_断章",
+      "poet": "顾偕",
+      "poem_id": "顾偕_guxie/情爱永不老_断章",
+      "stanza_idx": 5,
+      "score": 0.673818,
+      "text": "当你来到天空和我拥抱\n世界全都成了彩云\n当你把大地带进我们心灵\n你的目光会使万物重新生长\n而你的美丽\n也会变成无数温暖的\n夜晚和早晨"
+    },
+    {
+      "chunk_id": "白恩杰_baienjie/旅途#s1",
+      "title": "旅途",
+      "poet": "白恩杰",
+      "poem_id": "白恩杰_baienjie/旅途",
+      "stanza_idx": 1,
+      "score": 0.671566,
+      "text": "夜是咸的\n每一个湿湿的梦里\n飘浮的星星\n是往日笑出的泪珠\n都要走这段路\n都要在这个季节里\n开出洁白的花\n我们不曾丢失这个日子\n只是不能带走\n还有很长的路\n我们要走\n很长的路\n还会有很多的记忆留下\n很多的花盛开\n但旅人的脚步\n却不能停留"
+    }
+  ]
+}

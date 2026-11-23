@@ -1,0 +1,21 @@
+{
+  "id": "015af21c-b904-4156-8910-d1e93ee9e6a2",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B1-01/B1-02语义准确且中文自然，B1-03“已成你的所有物”简洁有力；A的B1-01“空气被抽干 我”跨句割裂，B1-02“瘪下去的我 啊”语气词生硬，整体表现力稍弱。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 312,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 96,
+    "service_tier": "standard"
+  }
+}

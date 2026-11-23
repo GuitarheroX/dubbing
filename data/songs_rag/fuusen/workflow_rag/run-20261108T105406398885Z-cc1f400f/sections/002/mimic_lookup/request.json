@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "query_text": "气被抽走 慢慢变空\n瘪掉的我 皱在掌心\n呜呼 我已是 你所有",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

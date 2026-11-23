@@ -1,0 +1,21 @@
+{
+  "id": "2fbf1ce2-dad2-4181-893d-e18de70d8a8e",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更自然凝练，疑问语气连贯，V1-03“活出怎样的梦”虽略改写但保留“如何度过今天”的核心；B的V1-01/02为凑格插入空格，V1-03“活成个什么模样”偏口语且稍显生硬。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-05\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 324,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 98,
+    "service_tier": "standard"
+  }
+}

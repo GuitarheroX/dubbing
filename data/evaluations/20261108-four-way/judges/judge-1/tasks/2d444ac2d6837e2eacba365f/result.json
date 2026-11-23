@@ -1,0 +1,160 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "地图被撕、世界停在那一刹、推责他人、自我厌烦均保留，但“别人家”略口语化偏移“誰か”。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04",
+            "V1-05"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "懊悔与自嘲情绪基本保留，“烦哪”稍轻但方向一致。",
+          "phrase_ids": [
+            "V1-04",
+            "V1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“被撕啦”“别人家”偏口语顺口但略随意，歌词感一般。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但意象普通，缺少张力。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心信息准确：地图撕裂、世界停在那天、再次推责、厌烦自己。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04",
+            "V1-05"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "懊悔与自厌方向准确，但语气偏平实，情绪强度略弱。",
+          "phrase_ids": [
+            "V1-04",
+            "V1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文通顺自然，稍偏书面，歌词文体可接受。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "语义清楚但意象与措辞较常规，表现力中等。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "地图撕成两半、世界停在原地、推责他人均保留；“没出息”是自厌的合理引申但略强化。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-04",
+            "V1-05"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "自嘲与懊悔情绪较鲜明，“没出息”稍重但方向一致。",
+          "phrase_ids": [
+            "V1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "断句有歌词节奏感，整体顺口；“亲手画的 旧地图”略碎但可接受。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“撕成两半”“停在原地”意象较鲜明，服务主题。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心事件保留；“真讨厌自己”将“嫌になっちゃうな”明确化为自厌，属合理但略具体化。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-04",
+            "V1-05"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "懊悔自厌情绪明确，强度略高于原句但方向一致。",
+          "phrase_ids": [
+            "V1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，断句有节奏；“我又再一次”稍冗余。",
+          "phrase_ids": [
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“亲手撕成两半”“停在原地”画面感较强。",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02"
+          ]
+        }
+      }
+    }
+  ]
+}

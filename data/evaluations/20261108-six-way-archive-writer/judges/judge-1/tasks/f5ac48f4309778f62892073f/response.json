@@ -1,0 +1,21 @@
+{
+  "id": "881e394c-ce15-4dfe-8ae9-1785355ee457",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"保留玫瑰宿命与热情燃烧的核心，但“接过宿命”略改“被赐予生命”的被动承受感\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"emotion\":{\"score\":4,\"reason\":\"热烈决绝的情绪方向一致，强度略增\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，歌词文体自然\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“烧到最亮”“烧到尽头”意象鲜明有力\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“背负玫瑰宿命”与“受赐玫瑰生命”有偏移，但主旨保留；第二句准确\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，稍显平实\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"语句通顺，符合歌词表达\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通，缺少亮点\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“接受玫瑰生命赐予”贴近原意，第二句保留热情与持续生活\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪基本一致但偏叙述化，力度平淡\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"naturalness\":{\"score\":2,\"reason\":\"“那玫瑰花的生命赐予”“永远地活下去每一天”冗长生硬\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"expressiveness\":{\"score\":2,\"reason\":\"表达拖沓，缺乏歌词凝练感\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“接过玫瑰宿命”偏离“被赐予生命”，第二句增补“烧穿胸口”等原文没有的意象\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"emotion\":{\"score\":4,\"reason\":\"热烈决绝情绪保留且强化\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"节奏顺口，歌词感强\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“披上深红”“烧穿胸口”意象鲜明\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“受玫瑰之生命所赐予”准确传达受赐生命，第二句保留热情燃烧活下去\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向一致但偏文言、力度不足\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"naturalness\":{\"score\":2,\"reason\":\"“之”“所赐予”文言腔与歌词文体不协调，第二句略生硬\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"expressiveness\":{\"score\":2,\"reason\":\"表达拘谨，缺少感染力\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“生来就是玫瑰的宿命”把受赐生命改为宿命，语义偏移；第二句基本准确\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向一致但较平淡\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"简洁顺口，符合歌词\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 638,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 979,
+    "service_tier": "standard"
+  }
+}

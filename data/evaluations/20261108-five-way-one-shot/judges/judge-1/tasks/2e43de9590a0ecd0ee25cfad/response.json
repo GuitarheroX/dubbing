@@ -1,0 +1,21 @@
+{
+  "id": "9abf1ffc-bb94-4544-959c-4e6c2efe4a45",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更简洁自然，疑问句节奏统一，保留童真好奇感；B虽更贴近pattern，但“活成个什么模样”等表达略生硬，整体不如A流畅。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 325,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 79,
+    "service_tier": "standard"
+  }
+}

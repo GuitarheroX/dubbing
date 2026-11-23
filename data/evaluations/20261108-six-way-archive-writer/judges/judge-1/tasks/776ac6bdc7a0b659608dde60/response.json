@@ -1,0 +1,21 @@
+{
+  "id": "df7fa8a0-b7b9-4f31-9f9b-acc7d93a6ab4",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A的“玫瑰是玫瑰”更贴近原句反复强调宿命感的语气，“高贵地绽放/美丽地凋零”语义准确、对仗自然；B的“玫瑰啊”偏呼告，且“凋散”不如“凋零”自然，C1-02还多出重复，整体表现力稍弱。\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 205,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 94,
+    "service_tier": "standard"
+  }
+}

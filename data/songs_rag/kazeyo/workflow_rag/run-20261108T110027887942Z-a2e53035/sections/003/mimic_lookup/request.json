@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "query_text": "风卷起衣裳 吹啊吹 流啊流\n如今 竟落到 这么个地方\n风把我抛起 摇啊摇 晃啊晃\n忽然 笑一声 这儿是 哪儿",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "96d5a1dd-4df9-4b71-a05b-0c5562f585c8",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A准确传达“生来背负玫瑰宿命”与“被赋予华丽激烈地活”的核心语义，中文自然凝练，情绪贴合原词的高贵与决绝。B大幅扩展意象（“血脉”“深红”“命令”“烧到最烈”），偏离原意且表达较生硬，华丽但不够忠实。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 223,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 94,
+    "service_tier": "standard"
+  }
+}

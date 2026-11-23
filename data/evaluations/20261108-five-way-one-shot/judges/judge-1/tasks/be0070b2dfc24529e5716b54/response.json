@@ -1,0 +1,21 @@
+{
+  "id": "6223becd-b5f6-4990-a410-60d4c938fce5",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原文的被动与状态描写：B1-01“空气被抽干”保留被动态，B1-02“干瘪的我啊”自然承接“萎んだ”，B1-03“已是”比A“已成”更口语顺畅。A的“我干瘪着枯萎”语义重复且略生硬。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 307,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 100,
+    "service_tier": "standard"
+  }
+}

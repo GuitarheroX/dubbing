@@ -1,0 +1,21 @@
+{
+  "id": "83cd1a6b-4c47-47ae-b036-10ff11d0915e",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A的儿化词与分句节奏更贴近原歌童趣、口语化的提问语气，V1-03“活成个什么模样”自然且保留“今日如何生活”的核心语义；B较书面化，V1-02“睡得安详”略偏离“一直睡着”的轻快感。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 325,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 106,
+    "service_tier": "standard"
+  }
+}

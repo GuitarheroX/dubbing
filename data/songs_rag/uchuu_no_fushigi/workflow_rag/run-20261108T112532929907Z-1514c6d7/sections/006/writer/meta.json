@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V3\",\n  \"phrases\": [\n    {\"id\": \"V3-01\", \"zh\": \"今天呀 我们 说一点 什么好呢\"},\n    {\"id\": \"V3-02\", \"zh\": \"和你呀 一起 唱一支 什么歌呢\"},\n    {\"id\": \"V3-03\", \"zh\": \"还有那 谁都 不认得 的小野花\"}\n  ]\n}",
+  "finished_at": "2026-11-08T11:29:01+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2455,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2816,
+    "output_tokens": 779,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

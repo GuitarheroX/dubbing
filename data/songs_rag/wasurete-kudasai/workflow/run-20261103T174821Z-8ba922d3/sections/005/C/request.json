@@ -1,0 +1,188 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "phrases": [
+      {
+        "id": "V2-01",
+        "section": "V2",
+        "ja": "一つ一つ数えてみて",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          3,
+          3,
+          6
+        ]
+      },
+      {
+        "id": "V2-02",
+        "section": "V2",
+        "ja": "あなた自身の人生のあなたが愛したいものを",
+        "budget": {
+          "min": 20,
+          "max": 20
+        },
+        "pattern": [
+          9,
+          11
+        ]
+      },
+      {
+        "id": "V2-03",
+        "section": "V2",
+        "ja": "……何もないのかい",
+        "budget": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      {
+        "id": "V2-04",
+        "section": "V2",
+        "ja": "海の側の小さい駅を",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          6,
+          5
+        ]
+      },
+      {
+        "id": "V2-05",
+        "section": "V2",
+        "ja": "歩いて五分の海岸の",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          6,
+          4
+        ]
+      },
+      {
+        "id": "V2-06",
+        "section": "V2",
+        "ja": "僕と見た翡翠の色も",
+        "budget": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      {
+        "id": "V2-07",
+        "section": "V2",
+        "ja": "忘れてください",
+        "budget": {
+          "min": 7,
+          "max": 7
+        }
+      }
+    ],
+    "draft": {
+      "section": "V2",
+      "phrases": [
+        {
+          "id": "V2-01",
+          "zh": "一件件 数过去 有没有舍不得",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "按 pattern 3+3+6 用空格断开，三拍分别落在 3/3/6 字上"
+          }
+        },
+        {
+          "id": "V2-02",
+          "zh": "你这一生里 想爱的人 慢慢数来 可有一样留得住",
+          "chars": 20,
+          "self_check": {
+            "budget": [
+              20,
+              20
+            ],
+            "ok": true,
+            "note": "9+11 两段，前半 5+4，后半 4+7"
+          }
+        },
+        {
+          "id": "V2-03",
+          "zh": "一件也没有吗",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "整句一口气，与上句「一件件」呼应"
+          }
+        },
+        {
+          "id": "V2-04",
+          "zh": "临海那座小站 只等过两人",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "6+5，空格落在小站之后"
+          }
+        },
+        {
+          "id": "V2-05",
+          "zh": "走过五分钟路 就是海边",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "6+4，保留原文「五分钟」这个具体距离"
+          }
+        },
+        {
+          "id": "V2-06",
+          "zh": "我们一同看过的那片翡翠色",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "不分段整句唱，末尾「翡翠色」落在长音上"
+          }
+        },
+        {
+          "id": "V2-07",
+          "zh": "把这一切忘了吧",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "与 V1-07 完全重复，保留副歌式回收"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

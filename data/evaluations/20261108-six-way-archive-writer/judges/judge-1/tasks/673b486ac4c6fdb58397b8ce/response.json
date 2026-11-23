@@ -1,0 +1,21 @@
+{
+  "id": "5099260b-8420-4716-9c27-a0e63acc961d",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"各句核心信息准确，'好都合'译为'恰好'合理，'远远地远远地'保留重复。\",\"phrase_ids\":[\"C2-01\",\"C2-02\",\"C2-03\",\"C2-04\",\"C2-05\",\"C2-06\"]},\"emotion\":{\"score\":5,\"reason\":\"寂寞涌上、晨光忘怀、怪兽呼喊后消失的情绪走向与强弱均保留。\",\"phrase_ids\":[\"C2-01\",\"C2-02\",\"C2-05\",\"C2-06\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文顺口，符合歌词文体，无明显生硬。\",\"phrase_ids\":[\"C2-01\",\"C2-02\",\"C2-03\",\"C2-04\",\"C2-05\",\"C2-06\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰、表达稳妥，但偏平实，缺少突出亮点。\",\"phrase_ids\":[\"C2-01\",\"C2-02\",\"C2-05\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"'抬眼数星星''风贴着草尖''胸口空出一片凉'为增补意象，偏离原句'感到的这份寂寞'；'喊你'改变对象关系；'露着骨头'过度具象化'未完成'。\",\"phrase_ids\":[\"C2-01\",\"C2-02\",\"C2-03\",\"C2-05\",\"C2-06\"]},\"emotion\":{\"score\":3,\"reason\":\"寂寞被替换为'空出一片凉'，呼喊变为'喊你'，情绪方向局部偏移。\",\"phrase_ids\":[\"C2-01\",\"C2-05\",\"C2-06\"]},\"naturalness\":{\"score\":3,\"reason\":\"断句碎片化、'露着骨头'突兀，可理解但多处生硬。\",\"phrase_ids\":[\"C2-01\",\"C2-03\",\"C2-06\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明有力，但部分意象服务偏离主题。\",\"phrase_ids\":[\"C2-01\",\"C2-03\",\"C2-05\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心信息准确，'半途未完成'合理改写，'无影无踪'稍扩但未改意。\",\"phrase_ids\":[\"C2-01\",\"C2-02\",\"C2-03\",\"C2-04\",\"C2-05\",\"C2-06\"]},\"emotion\":{\"score\":5,\"reason\":\"寂寞涌上、忘得干净、呼喊又消失的情绪层次保留充分。\",\"phrase_ids\":[\"C2-01\",\"C2-02\",\"C2-05\",\"C2-06\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，'大概已经''又会'略口语化但可接受。\",\"phrase_ids\":[\"C2-02\",\"C2-06\"]},\"expressiveness\":{\"score\":4,\"reason\":\"表达清晰有画面，'消失得无影无踪'稍显套语。\",\"phrase_ids\":[\"C2-06\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息基本准确，但'远远地'重复缺失，'不完整'弱化'好都合'的恰好之意。\",\"phrase_ids\":[\"C2-03\",\"C2-05\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，但'已经忘了吧'语气偏轻，呼喊力度稍弱。\",\"phrase_ids\":[\"C2-02\",\"C2-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"通顺自然，但偏简洁平淡。\",\"phrase_ids\":[\"C2-01\",\"C2-02\",\"C2-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，缺少鲜明意象与力度。\",\"phrase_ids\":[\"C2-01\",\"C2-05\",\"C2-06\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"各句核心语义准确，'想去了解'合理对应'知りたい'。\",\"phrase_ids\":[\"C2-01\",\"C2-02\",\"C2-03\",\"C2-04\",\"C2-05\",\"C2-06\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，但句式偏叙述化，呼喊的强度略平。\",\"phrase_ids\":[\"C2-01\",\"C2-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"可理解且较顺，但'山丘上望星时感到的'偏书面拗口。\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但偏平实，意象不够鲜明。\",\"phrase_ids\":[\"C2-01\",\"C2-06\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"'数着满天星''风穿过胸口''留着缝隙''喊声散成风'为增补或改写意象，'朝最远处喊'偏离'远远地远远地'的重复强调。\",\"phrase_ids\":[\"C2-01\",\"C2-03\",\"C2-05\",\"C2-06\"]},\"emotion\":{\"score\":3,\"reason\":\"寂寞与呼喊情绪保留，但'喊声散成风'改变消失的意象，整体偏文艺化偏移。\",\"phrase_ids\":[\"C2-01\",\"C2-05\",\"C2-06\"]},\"naturalness\":{\"score\":4,\"reason\":\"较顺口，但'天亮的时分''喊到哑'略生硬。\",\"phrase_ids\":[\"C2-02\",\"C2-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明有画面，但部分意象偏离原主题。\",\"phrase_ids\":[\"C2-01\",\"C2-06\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1386,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 1311,
+    "service_tier": "standard"
+  }
+}

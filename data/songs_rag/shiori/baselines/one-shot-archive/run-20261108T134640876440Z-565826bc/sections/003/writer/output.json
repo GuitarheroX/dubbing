@@ -1,0 +1,135 @@
+{
+  "section": "C1",
+  "phrases": [
+    {
+      "id": "C1-01",
+      "zh": "全部 全部 都是我",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "2+2+5 分段对应"
+      }
+    },
+    {
+      "id": "C1-02",
+      "zh": "闷闷 泣泣 也是我",
+      "chars": 13,
+      "self_check": {
+        "budget": [
+          13,
+          13
+        ],
+        "ok": true,
+        "note": "4+4+5 分段对应，叠词保留原曲重复感"
+      }
+    },
+    {
+      "id": "C1-03",
+      "zh": "全部 全部 抱紧吧",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "2+2+5 与C1-01呼应"
+      }
+    },
+    {
+      "id": "C1-04",
+      "zh": "稍稍 睡一会儿",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "3+3 分段"
+      }
+    },
+    {
+      "id": "C1-05",
+      "zh": "痛痛 痛痛 飞走吧",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": true,
+        "note": "4+4+4 叠词模仿童谣咒语"
+      }
+    },
+    {
+      "id": "C1-06",
+      "zh": "别让悲伤把一切都夺走 我祈祷",
+      "chars": 15,
+      "self_check": {
+        "budget": [
+          15,
+          15
+        ],
+        "ok": true,
+        "note": "13+2 前段长句后段收束"
+      }
+    },
+    {
+      "id": "C1-07",
+      "zh": "我要 做自己的伙伴啊",
+      "chars": 13,
+      "self_check": {
+        "budget": [
+          13,
+          13
+        ],
+        "ok": true,
+        "note": "6+7 分段"
+      }
+    },
+    {
+      "id": "C1-08",
+      "zh": "路还 很长很长 慢慢走",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": true,
+        "note": "4+8 分段，重复“很长”呼应原曲"
+      }
+    },
+    {
+      "id": "C1-09",
+      "zh": "稍微 歇一歇也无妨",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "4+5 分段"
+      }
+    },
+    {
+      "id": "C1-10",
+      "zh": "没有人 会责备你 放心吧",
+      "chars": 14,
+      "self_check": {
+        "budget": [
+          14,
+          14
+        ],
+        "ok": true,
+        "note": "4+5+5 分段"
+      }
+    }
+  ]
+}

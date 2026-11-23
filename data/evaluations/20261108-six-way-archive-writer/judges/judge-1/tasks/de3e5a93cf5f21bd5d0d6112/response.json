@@ -1,0 +1,21 @@
+{
+  "id": "f40217c2-171c-4ba0-9dce-99c98f472fa0",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更自然且有表现力：C1-01“全怪你”口语化、情绪更集中；C1-02“一次次挥拳不停”比A“继续打了好多次”更凝练有力，且保留反复施暴语义；C1-03“连这痛”将前文暴力具体化，与“干净吞下”形成更鲜明的意象对照，未偏离“连这也吞下”的核心语义。A整体准确但偏平直。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 206,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 128,
+    "service_tier": "standard"
+  }
+}

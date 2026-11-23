@@ -1,0 +1,21 @@
+{
+  "id": "4661ea36-685b-4d72-b21d-4f9c1f2abd03",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A用自然中文保留了“把生命献给你”的核心语义，并增添“轻轻交到你手心”的温柔意象，情绪贴合原歌词的奉献感；B直接使用英文，不符合汉语译配的基本要求，且表现力较弱。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 304,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 384,
+    "output_tokens": 74,
+    "service_tier": "standard"
+  }
+}

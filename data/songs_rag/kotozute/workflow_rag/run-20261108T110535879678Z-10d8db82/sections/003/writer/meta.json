@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\"section\": \"B1\", \"phrases\": [{\"id\": \"B1-01\", \"zh\": \"攥一把过去 甩向身后\"}, {\"id\": \"B1-02\", \"zh\": \"见惯太多面孔 只想偏过头去\"}, {\"id\": \"B1-03\", \"zh\": \"比起 昨天 那个我\"}, {\"id\": \"B1-04\", \"zh\": \"比起 这时间\"}]}",
+  "finished_at": "2026-11-08T11:06:28+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2525,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 1964,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

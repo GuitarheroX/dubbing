@@ -1,0 +1,70 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the provided budget.min to budget.max syllable count per line, inclusive, instead of matching the source mora count, and verify by counting syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.\n\nThe input is a JSON object containing phrases in performance order. Each phrase contains its original lyrics in ja. budget is the human-annotated target syllable range. An optional pattern gives human-annotated within-line groups; use it as guidance, not an additional hard constraint. For keep_source: true, reproduce ja unchanged. budget: null means no target syllable limit. Produce one lyric line for every input phrase in order. Do not translate the field names or include the annotation numbers as lyrics.",
+    "user": "{\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"ja\": \"あぁどうしようもなく悲しい\",\n      \"budget\": {\n        \"min\": 8,\n        \"max\": 8\n      },\n      \"pattern\": [\n        1,\n        4,\n        3\n      ]\n    },\n    {\n      \"id\": \"V2-02\",\n      \"ja\": \"私を動かす獣\",\n      \"budget\": {\n        \"min\": 8,\n        \"max\": 8\n      },\n      \"pattern\": [\n        3,\n        5\n      ]\n    },\n    {\n      \"id\": \"V2-03\",\n      \"ja\": \"トートロジー握った手のあぶく\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        6,\n        5\n      ]\n    }\n  ]\n}"
+  },
+  "data": {
+    "phrases": [
+      {
+        "id": "V2-01",
+        "ja": "あぁどうしようもなく悲しい",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          1,
+          4,
+          3
+        ]
+      },
+      {
+        "id": "V2-02",
+        "ja": "私を動かす獣",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          3,
+          5
+        ]
+      },
+      {
+        "id": "V2-03",
+        "ja": "トートロジー握った手のあぶく",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          6,
+          5
+        ]
+      }
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the provided budget.min to budget.max syllable count per line, inclusive, instead of matching the source mora count, and verify by counting syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.\n\nThe input is a JSON object containing phrases in performance order. Each phrase contains its original lyrics in ja. budget is the human-annotated target syllable range. An optional pattern gives human-annotated within-line groups; use it as guidance, not an additional hard constraint. For keep_source: true, reproduce ja unchanged. budget: null means no target syllable limit. Produce one lyric line for every input phrase in order. Do not translate the field names or include the annotation numbers as lyrics.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"ja\": \"あぁどうしようもなく悲しい\",\n      \"budget\": {\n        \"min\": 8,\n        \"max\": 8\n      },\n      \"pattern\": [\n        1,\n        4,\n        3\n      ]\n    },\n    {\n      \"id\": \"V2-02\",\n      \"ja\": \"私を動かす獣\",\n      \"budget\": {\n        \"min\": 8,\n        \"max\": 8\n      },\n      \"pattern\": [\n        3,\n        5\n      ]\n    },\n    {\n      \"id\": \"V2-03\",\n      \"ja\": \"トートロジー握った手のあぶく\",\n      \"budget\": {\n        \"min\": 11,\n        \"max\": 11\n      },\n      \"pattern\": [\n        6,\n        5\n      ]\n    }\n  ]\n}"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "8b93c7e4-c41e-43ac-bc09-4dc2214eed67",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A准确传达“想把生命给你”的核心语义，中文自然且保留奉献的温柔感；B虽更具意象，但“像正午白亮的海面”属原文没有的扩展，且“摊在你手心”略生硬，偏离原句直接告白。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 316,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 384,
+    "output_tokens": 80,
+    "service_tier": "standard"
+  }
+}

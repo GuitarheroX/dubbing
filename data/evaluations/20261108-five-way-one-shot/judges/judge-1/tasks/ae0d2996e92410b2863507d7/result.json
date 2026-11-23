@@ -1,0 +1,209 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "保留“无可奈何/兽/泡沫”核心，但“胸口有火烧不透”添加原文没有的灼烧意象，“骨头里”也偏离“私に”",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "压抑躁动的情绪方向一致，强度略被“烧不透”改写",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，歌词断句自然，仅“碎无声”稍显造作",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "泡沫“破了又生”意象鲜明，服务主题",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "三句核心信息准确，“无可奈何”“心中躁动的兽”“浮现又破灭的泡沫”均贴合",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向准确，但表达较平，缺少原文的窒息感",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文自然顺口，符合歌词文体",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏直译，意象力度普通",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心语义准确，“浮现又浮现即消失”保留反复结构",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，但“即消失”略生硬削弱流动感",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“浮现又浮现即消失”重复且“即”字生硬，可理解但不够顺口",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "意象保留但表达普通，反复结构未增强表现力",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“沉睡的兽在低语”改变兽的状态与动作，“心底”也偏移“私に”",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "整体仍偏压抑，但“沉睡低语”把躁动改为静谧，情绪偏移",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文较顺口，歌词感尚可",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "“泡影”意象尚可，但“沉睡低语”较俗套",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“按不住翻涌”“蠢动的野兽”“泡沫鼓起又破”核心保留，但“胸腔”与“没有声音”为增补",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "躁动、压抑、泡沫无声破灭的情绪方向与强度充分保留",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "断句自然，歌词感强，仅“又一颗”稍显口语跳跃",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 5,
+          "reason": "“鼓起来又破掉”“没有声音又一颗”意象鲜明有力",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "a4fc4abc-e1e3-4893-982d-3731c6205eb4",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"前半句准确传达献出生命，但后半句新增“海风吹过脸颊”的比喻，原句无此信息，属合理补充意象但偏离核心简洁表达\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"献身的深情保留，海风意象与全曲海洋氛围一致，情绪方向相符\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，歌词文体自然，前后衔接流畅\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“像海风吹过你脸颊”意象柔和鲜明，服务主题\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"“我愿将生命献给你”准确对应原句核心语义，无增删\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"献身的决意与深情保留，但较原句略平，缺少“あげたい”的温柔给予感\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"naturalness\":{\"score\":5,\"reason\":\"简洁顺口，符合歌词文体\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但普通，无额外意象，力度中等\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"英文直译准确传达核心语义\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"emotion\":{\"score\":3,\"reason\":\"语义对应但英文在中文歌词语境中情绪传达平淡，缺乏中文语感\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"naturalness\":{\"score\":1,\"reason\":\"候选要求为汉语译配，此处整句为英文，不符合中文歌词文体\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"expressiveness\":{\"score\":2,\"reason\":\"直译清楚但作为中文歌词表现力弱，无中文韵律感\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“把整条命摊在你手心”保留献命核心，但“摊”与“正午白亮的海面”为新增意象，原句无此比喻\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"献身的赤诚与海洋氛围一致，情绪方向相符，但“正午白亮”偏明亮，与原句温柔给予略有差异\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，歌词感强，略偏文艺但可接受\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“摊在手心”“正午白亮的海面”意象鲜明有力，服务主题\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 831,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 256,
+    "output_tokens": 742,
+    "service_tier": "standard"
+  }
+}

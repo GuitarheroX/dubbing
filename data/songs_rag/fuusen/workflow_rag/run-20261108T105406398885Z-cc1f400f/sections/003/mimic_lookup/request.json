@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C1",
+    "query_text": "等我空得像房间 都是你害的\n我这样说出口 你手掌一遍遍落下\n连这句怨你的话 你也咽得干净吗",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

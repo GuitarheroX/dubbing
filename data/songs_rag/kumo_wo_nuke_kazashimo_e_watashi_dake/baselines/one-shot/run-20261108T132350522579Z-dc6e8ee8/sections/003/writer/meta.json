@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\"id\": \"C1-01\", \"zh\": \"迎着风 穿过花丛\"},\n    {\"id\": \"C1-02\", \"zh\": \"穿过云 顺风而下 只剩我\"},\n    {\"id\": \"C1-03\", \"zh\": \"天将明 快些走吧\"},\n    {\"id\": \"C1-04\", \"zh\": \"这青草 和灵魂的气息\"},\n    {\"id\": \"C1-05\", \"zh\": \"穿过风 穿过天空\"},\n    {\"id\": \"C1-06\", \"zh\": \"穿过云 顺风而下 只剩我\"}\n  ]\n}",
+  "finished_at": "2026-11-08T13:23:54+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "section": "C1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1202,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1792,
+    "output_tokens": 151,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

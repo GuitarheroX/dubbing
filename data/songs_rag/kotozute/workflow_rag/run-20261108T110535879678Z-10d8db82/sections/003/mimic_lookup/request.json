@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "query_text": "攥一把过去 甩向身后\n见惯太多面孔 只想偏过头去\n比起 昨天 那个我\n比起 这时间",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

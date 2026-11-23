@@ -1,0 +1,91 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C1",
+    "phrases": [
+      {
+        "id": "C1-01",
+        "section": "C1",
+        "ja": "何もなくなったら 君の所為だよね",
+        "budget": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      {
+        "id": "C1-02",
+        "section": "C1",
+        "ja": "そう言って何回も殴り続けても",
+        "budget": {
+          "min": 14,
+          "max": 14
+        },
+        "pattern": [
+          6,
+          8
+        ]
+      },
+      {
+        "id": "C1-03",
+        "section": "C1",
+        "ja": "それさえ綺麗に飲み込むのかな",
+        "budget": {
+          "min": 14,
+          "max": 14
+        },
+        "pattern": [
+          7,
+          7
+        ]
+      }
+    ],
+    "draft": {
+      "section": "C1",
+      "phrases": [
+        {
+          "id": "C1-01",
+          "zh": "等一切空掉以后 都是你害的",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "前七字后五字，空格处停顿，字数正好十二"
+          }
+        },
+        {
+          "id": "C1-02",
+          "zh": "我这样说出口 你手掌一遍遍落下",
+          "chars": 14,
+          "self_check": {
+            "budget": [
+              14,
+              14
+            ],
+            "ok": true,
+            "note": "按旋律切成六字加八字，保留初版手掌落下的意象"
+          }
+        },
+        {
+          "id": "C1-03",
+          "zh": "连这句怨你的话 你也咽得干净吗",
+          "chars": 14,
+          "self_check": {
+            "budget": [
+              14,
+              14
+            ],
+            "ok": true,
+            "note": "七字加七字，用咽代吞，接住前句的暴力与吞没"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

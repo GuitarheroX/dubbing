@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\"section\":\"B1\",\"phrases\":[{\"id\":\"B1-01\",\"zh\":\"我又梦见自己 双手掐住你的咽喉\",\"chars\":14,\"self_check\":{\"budget\":[14,14],\"ok\":true,\"note\":\"保留原句的暴力意象，掐住你的咽喉与首を締める对应；共14字\"}},{\"id\":\"B1-02\",\"zh\":\"阳光漫溢的午后 亮得几乎发疼\",\"chars\":13,\"self_check\":{\"budget\":[13,13],\"ok\":true,\"note\":\"阳光漫溢写光の溢れる，几乎发疼补出亮度带来的刺痛；共13字\"}},{\"id\":\"B1-03\",\"zh\":\"看你细瘦的喉咙 在光里轻轻跳动\",\"chars\":14,\"self_check\":{\"budget\":[14,14],\"ok\":true,\"note\":\"细瘦的喉咙对应細い喉，轻轻跳动对应跳ねる；共14字\"}},{\"id\":\"B1-04\",\"zh\":\"我用快哭的眼睛 一直望着你\",\"chars\":12,\"self_check\":{\"budget\":[12,12],\"ok\":true,\"note\":\"快哭的眼睛对应泣き出しそうな眼，一直望着收住原句的注视；共12字\"}}]}",
+  "finished_at": "2026-11-08T11:13:03+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 5951,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 3507,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

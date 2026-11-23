@@ -1,0 +1,41 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+    "user": "私はどんどん軽くなる\n貴方は何でも奪い取る\nどんなことでも吸い込んで\n飲み込んでいってしまうんだ\n私はどんどん弱くなる\n心の中の黒いシミも\nさっぱり洗ってくれるから\n何もしなくてもよくなる"
+  },
+  "data": {
+    "lyrics": [
+      "私はどんどん軽くなる",
+      "貴方は何でも奪い取る",
+      "どんなことでも吸い込んで",
+      "飲み込んでいってしまうんだ",
+      "私はどんどん弱くなる",
+      "心の中の黒いシミも",
+      "さっぱり洗ってくれるから",
+      "何もしなくてもよくなる"
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "私はどんどん軽くなる\n貴方は何でも奪い取る\nどんなことでも吸い込んで\n飲み込んでいってしまうんだ\n私はどんどん弱くなる\n心の中の黒いシミも\nさっぱり洗ってくれるから\n何もしなくてもよくなる"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

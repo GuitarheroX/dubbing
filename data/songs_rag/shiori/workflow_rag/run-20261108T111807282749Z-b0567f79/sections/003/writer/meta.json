@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"全部 全部 全都是我啊\"\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"磨磨蹭蹭 抽抽搭搭 也都是我呀\"\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"全部 全部 都抱紧我吧\"\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"乖乖睡一觉吧\"\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"痛痛飞走 痛痛飞走 飞得远远\"\n    },\n    {\n      \"id\": \"C1-06\",\n      \"zh\": \"愿悲伤别把心里的光全都带走 好吗\"\n    },\n    {\n      \"id\": \"C1-07\",\n      \"zh\": \"从今天起我要 站在自己这一边\"\n    },\n    {\n      \"id\": \"C1-08\",\n      \"zh\": \"路还很长 我还在半路慢慢走\"\n    },\n    {\n      \"id\": \"C1-09\",\n      \"zh\": \"就算坐下 歇一小会儿\"\n    },\n    {\n      \"id\": \"C1-10\",\n      \"zh\": \"不会有谁 会来责备我 说我偷懒呀\"\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:20:31+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2625,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1664,
+    "output_tokens": 5624,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

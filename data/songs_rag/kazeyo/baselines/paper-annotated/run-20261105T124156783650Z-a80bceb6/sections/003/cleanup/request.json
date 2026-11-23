@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "1. 狂风呼啸着 漂泊流浪 (11 syllables: kuáng fēng hū xiào zhe piāo bó liú làng)\n2. 如今已到 这般境地 (11 syllables: rú jīn yǐ dào zhè bān jìng dì)\n3. 被吹散去 轻轻摇晃着 (11 syllables: bèi chuī sàn qù qīng qīng yáo huàng zhe)\n4. 忽然想到 这是何处 (10 syllables: hū rán xiǎng dào zhè shì hé chù)\n\nRhyme check (final phoneme per line): làng (/aŋ/), dì (/i/), zhe (/ə/), chù (/u/) — matches the source's non-rhyming pattern (eru/oko/rare/doko, no consistent rhyme). Theme preserved: windblown drifting, disorientation, wondering where one is."
+  },
+  "data": {
+    "response": "1. 狂风呼啸着 漂泊流浪 (11 syllables: kuáng fēng hū xiào zhe piāo bó liú làng)\n2. 如今已到 这般境地 (11 syllables: rú jīn yǐ dào zhè bān jìng dì)\n3. 被吹散去 轻轻摇晃着 (11 syllables: bèi chuī sàn qù qīng qīng yáo huàng zhe)\n4. 忽然想到 这是何处 (10 syllables: hū rán xiǎng dào zhè shì hé chù)\n\nRhyme check (final phoneme per line): làng (/aŋ/), dì (/i/), zhe (/ə/), chù (/u/) — matches the source's non-rhyming pattern (eru/oko/rare/doko, no consistent rhyme). Theme preserved: windblown drifting, disorientation, wondering where one is."
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "1. 狂风呼啸着 漂泊流浪 (11 syllables: kuáng fēng hū xiào zhe piāo bó liú làng)\n2. 如今已到 这般境地 (11 syllables: rú jīn yǐ dào zhè bān jìng dì)\n3. 被吹散去 轻轻摇晃着 (11 syllables: bèi chuī sàn qù qīng qīng yáo huàng zhe)\n4. 忽然想到 这是何处 (10 syllables: hū rán xiǎng dào zhè shì hé chù)\n\nRhyme check (final phoneme per line): làng (/aŋ/), dì (/i/), zhe (/ə/), chù (/u/) — matches the source's non-rhyming pattern (eru/oko/rare/doko, no consistent rhyme). Theme preserved: windblown drifting, disorientation, wondering where one is."
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

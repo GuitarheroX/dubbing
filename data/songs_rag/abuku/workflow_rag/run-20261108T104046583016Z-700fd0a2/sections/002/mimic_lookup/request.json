@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "query_text": "啊 按不住的 这伤悲\n推着我 不肯歇的兽\n同一句话 念到掌心起了泡",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

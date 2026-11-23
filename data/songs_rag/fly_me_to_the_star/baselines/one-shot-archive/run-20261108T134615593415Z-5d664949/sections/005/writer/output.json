@@ -1,0 +1,31 @@
+{
+  "section": "O1",
+  "phrases": [
+    {
+      "id": "O1-01",
+      "zh": "带我飞",
+      "chars": 3,
+      "self_check": {
+        "budget": [
+          4,
+          4
+        ],
+        "ok": false,
+        "note": "只有3字，少1字；需补1字，如「带我飞吧」4字"
+      }
+    },
+    {
+      "id": "O1-02",
+      "zh": "oh fly me to the star",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "保留英文原文，英文单词按音节计，整句6字"
+      }
+    }
+  ]
+}

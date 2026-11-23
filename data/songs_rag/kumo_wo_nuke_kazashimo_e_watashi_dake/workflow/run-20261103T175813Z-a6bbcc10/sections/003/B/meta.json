@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T175758_b_8e67fe",
+  "input_hash": "8e67fedf0410da01fde85d4f0d0023fd75dab600b328b1993e2e728a538b9ced",
+  "finished_at": "2026-11-03T17:58:13+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2038,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1920,
+    "output_tokens": 3106,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"风撞个满怀 花从指缝开\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"按 pattern 5+5 用空格断开，撞个满怀口语化，保留速度感\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"穿过白的云 往风下 只剩我一个\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"5+3+5 分段，往风下三字落在中段\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"天光初泛白 快走 别回头\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"5+5，快走单独成段带催促感\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"草的腥与魂 搅成一股 涌上来\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"5+4+3 对齐三段，末段三字收在涌上来\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"穿过风 再穿 过云层 远去\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"3+2+3+2，再穿两字单独占拍\"}\n    },\n    {\n      \"id\": \"C1-06\",\n      \"zh\": \"穿过白的云 往风下 只剩我一个\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"与 C1-02 完全重复，保留原曲的重复美\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T175758_b_8e67fe"
+}

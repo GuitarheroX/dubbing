@@ -1,0 +1,21 @@
+{
+  "id": "e8e53262-393e-4d68-84b3-bb3694c3b8f7",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更口语自然、情绪更贴近原词（C1-03“一定是长大了吧”、C1-04“其实并不是那样”保留原句的轻叹与否定语气），C1-06“就有能改变的明天”比A“本可改变的明天确实存在”更凝练有表现力；A的C1-06略生硬、C1-04“那样的事”稍显拖沓。两版核心语义均准确。\",\"phrase_ids\":[\"C1-03\",\"C1-04\",\"C1-06\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 307,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 124,
+    "service_tier": "standard"
+  }
+}

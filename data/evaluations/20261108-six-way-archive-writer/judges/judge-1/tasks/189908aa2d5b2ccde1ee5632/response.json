@@ -1,0 +1,21 @@
+{
+  "id": "fb25815f-3b2a-4be5-b704-645e7fa06016",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原句“気高く咲いて／美しく散る”的简洁咏叹，重复“玫瑰啊”保留呼告感，中文自然；A的“一身深红”“一瓣瓣”属额外意象，且“玫瑰落”与“散落”语义重复，稍显堆砌。\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 213,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 92,
+    "service_tier": "standard"
+  }
+}

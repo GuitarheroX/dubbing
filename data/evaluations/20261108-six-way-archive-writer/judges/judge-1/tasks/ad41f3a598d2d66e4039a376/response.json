@@ -1,0 +1,21 @@
+{
+  "id": "069f7794-cad5-41df-bd97-a93524aa6869",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原句核心语义：B2-01保留“玫瑰宿命/生来”的命定感，B2-02保留“燃烧热情、活下去、永远”的持续意志，中文自然且克制。B虽更有表现力，但B2-01“接过玫瑰”“披上深红”偏离“被赋予玫瑰生命”的原意，B2-02“烧穿胸口”属额外强化，情绪略过。\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 220,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 118,
+    "service_tier": "standard"
+  }
+}

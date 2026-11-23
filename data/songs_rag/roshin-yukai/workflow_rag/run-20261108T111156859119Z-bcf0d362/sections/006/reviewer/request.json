@@ -1,0 +1,209 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V3",
+    "phrases": [
+      {
+        "id": "V3-01",
+        "section": "V3",
+        "ja": "時計の秒針や",
+        "budget": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      {
+        "id": "V3-02",
+        "section": "V3",
+        "ja": "テレビの司会者や",
+        "budget": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      {
+        "id": "V3-03",
+        "section": "V3",
+        "ja": "そこにいるけど",
+        "budget": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      {
+        "id": "V3-04",
+        "section": "V3",
+        "ja": "見えない誰かの",
+        "budget": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      {
+        "id": "V3-05",
+        "section": "V3",
+        "ja": "笑い声",
+        "budget": {
+          "min": 5,
+          "max": 5
+        }
+      },
+      {
+        "id": "V3-06",
+        "section": "V3",
+        "ja": "飽和して反響する",
+        "budget": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      {
+        "id": "V3-07",
+        "section": "V3",
+        "ja": "アレグロ･アジテート",
+        "budget": null,
+        "keep_source": true,
+        "notes": "这句不用翻译"
+      },
+      {
+        "id": "V3-08",
+        "section": "V3",
+        "ja": "耳鳴りが消えない止まない",
+        "budget": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      {
+        "id": "V3-09",
+        "section": "V3",
+        "ja": "アレグロ･アジテート",
+        "budget": null,
+        "keep_source": true,
+        "notes": "这句不用翻译"
+      },
+      {
+        "id": "V3-10",
+        "section": "V3",
+        "ja": "耳鳴りが消えない止まない",
+        "budget": {
+          "min": 12,
+          "max": 12
+        }
+      }
+    ],
+    "draft": {
+      "section": "V3",
+      "phrases": [
+        {
+          "id": "V3-01",
+          "zh": "秒针在走 嗒嗒响",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "保留初版，秒针与嗒嗒声压进七字"
+          }
+        },
+        {
+          "id": "V3-02",
+          "zh": "电视里 主持人 还在笑",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "「还在笑」替「笑得假」，语气更冷更远"
+          }
+        },
+        {
+          "id": "V3-03",
+          "zh": "明明在场 却好远",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "保留初版，人在场却像隔一层玻璃"
+          }
+        },
+        {
+          "id": "V3-04",
+          "zh": "看不见的 谁在笑呢",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "把「谁在那边」改成「谁在笑呢」，直接接下一句笑声"
+          }
+        },
+        {
+          "id": "V3-05",
+          "zh": "笑声 一层层",
+          "chars": 5,
+          "self_check": {
+            "budget": [
+              5,
+              5
+            ],
+            "ok": true,
+            "note": "保留初版叠字，笑声像水涨起来"
+          }
+        },
+        {
+          "id": "V3-06",
+          "zh": "饱和 回响 灌满耳朵",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "保留初版三个动作，饱和到灌满耳膜"
+          }
+        },
+        {
+          "id": "V3-08",
+          "zh": "耳朵里 一直嗡嗡响 停不下来",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "空格断开三个节奏段，嗡嗡声连续不断"
+          }
+        },
+        {
+          "id": "V3-10",
+          "zh": "耳朵里 一直嗡嗡响 停不下来",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "与上一句保持完全重复，对应原曲重复句"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "query_text": "水光点新芽 夜还半梦半醒着\n你总快走半步 影子轻轻晃\n桌上散落着夜宵的碎屑 拼成梦地图\n新的早晨 正悄悄走来",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

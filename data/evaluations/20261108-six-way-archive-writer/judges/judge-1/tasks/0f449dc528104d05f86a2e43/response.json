@@ -1,0 +1,21 @@
+{
+  "id": "690f7e96-5902-4bd9-ae36-72cb681c840d",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原句的简洁意象与节奏，核心语义准确；B虽自然流畅，但添加了“耀眼”“白浪”“盐粒”“手心朝上”等原文没有的细节，且“皮肤晒出盐粒”偏离“乾いた肌”的干燥感，表现力扩展略过度。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 287,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 99,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "```json\n{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"风穿过了长街 风带走我和你\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"6+6 对上 pattern；保留原句「風が…風が…」的重复骨架，只把「我们」换成更贴 V1 的「我和你」\"}\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"像蒲公英 谁也没带地图\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"4+6 对上 pattern；后六字是补出来的意象，回扣 V1「梦的地图」，让飘散变得无处可循而不是空泛\"}\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"落在城市角落 各自去生根\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"6+5 对上 pattern；借参考里「只要有土地便可落脚」的意思化成「生根」，不照搬原句，收住「それぞれに」的各自散去\"}\n    }\n  ]\n}\n```",
+  "finished_at": "2026-11-08T11:17:34+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2649,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 3613,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

@@ -1,0 +1,8 @@
+{
+  "run": "run-20261105T124427203784Z-bf14ab3a",
+  "updated_at": "2026-11-07T06:09:06+00:00",
+  "song": "uchuu_no_fushigi",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "baseline": "paper-annotated"
+}

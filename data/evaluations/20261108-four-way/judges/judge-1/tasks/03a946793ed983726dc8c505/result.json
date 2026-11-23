@@ -1,0 +1,152 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达“被赐予玫瑰生命”与“燃烧热情活下去”，核心信息完整。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "热情与宿命感保留，但“每一天”稍显平淡，略弱于原句的决然。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“已然接受了那玫瑰花的生命赐予”偏书面冗长，“永远地活下去每一天”语序生硬。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但意象普通，缺少歌词的凝练力度。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“受玫瑰之生命所赐予”保留核心，“热情燃烧着活下去永远”基本达意但“永远”位置略偏。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向一致，但表达偏干，缺少原句的热烈与宿命张力。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 2,
+          "reason": "“我受玫瑰之　生命所赐予”文言夹杂且断句生硬，“热情燃烧着活下去永远”语序不自然。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 2,
+          "reason": "意象单薄，语句拼贴感强，表现力不足。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“生来就是这玫瑰”偏离“被赐予生命”的被动接受，“接过宿命”可接受；第二句保留燃烧热情但增“不回头”属合理补充。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "宿命感与热烈情绪较强，方向一致，但“不问为何”略添原句没有的决绝语气。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "断句符合歌词文体，整体顺口，个别处略碎。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“烧到最亮”“烧到尽头”意象鲜明有力，服务主题。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“披上深红”“永不回头”大幅增饰，且“接过玫瑰这宿命”弱化“被赐予生命”的核心；第二句“烧穿胸口”偏离原意。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "热烈决绝方向一致，但强度被夸张化，与原句的宿命接受略有偏移。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "四字节奏顺口，符合歌词文体，但部分搭配略造作。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象浓烈鲜明，但“烧穿胸口”等有过度堆砌之嫌。",
+          "phrase_ids": [
+            "B2-01",
+            "B2-02"
+          ]
+        }
+      }
+    }
+  ]
+}

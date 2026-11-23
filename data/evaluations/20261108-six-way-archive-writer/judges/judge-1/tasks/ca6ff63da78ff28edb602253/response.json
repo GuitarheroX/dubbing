@@ -1,0 +1,21 @@
+{
+  "id": "eb7daaa1-3e70-4031-8858-2c400b6c802a",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原句“バラはバラは”的反复咏叹与“気高く/美しく”的副词修饰，语义准确、中文自然；A的“一身深红”“一瓣瓣”属额外添加意象，且“玫瑰开/落”改变了原句以“玫瑰”为主语的静态咏叹感。\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 211,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 96,
+    "service_tier": "standard"
+  }
+}

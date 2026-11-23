@@ -1,0 +1,46 @@
+{
+  "section": "B1",
+  "query_text": "踩着零零散散的拍\n哼得走调 你听见了吗",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "紫鹃_zijuan/高跟鞋奏鸣曲#s1",
+      "title": "高跟鞋奏鸣曲",
+      "poet": "紫鹃",
+      "poem_id": "紫鹃_zijuan/高跟鞋奏鸣曲",
+      "stanza_idx": 1,
+      "score": 0.647828,
+      "text": "你的鞋 在桃花地板踢来踏去\n我的心 也随着拍子摇摆伴舞"
+    },
+    {
+      "chunk_id": "郭哲佑_guozheyou/从来不是如此轻易#s1",
+      "title": "从来不是如此轻易",
+      "poet": "郭哲佑",
+      "poem_id": "郭哲佑_guozheyou/从来不是如此轻易",
+      "stanza_idx": 1,
+      "score": 0.625257,
+      "text": "把歌声里的伤感凝结成冰\n然后慢慢的走，沿路踩碎\n想象那些情节\n终于也有了美好的归属"
+    },
+    {
+      "chunk_id": "莫渝_moyu/香水与香颂#s9",
+      "title": "香水与香颂",
+      "poet": "莫渝",
+      "poem_id": "莫渝_moyu/香水与香颂",
+      "stanza_idx": 9,
+      "score": 0.621537,
+      "text": "闲来没事\n哼哼小调\n看看歌词\n竟也出现一番作为"
+    },
+    {
+      "chunk_id": "向明_2_xiangming2/走在梧桐的道路#s3",
+      "title": "走在梧桐的道路",
+      "poet": "向明_2",
+      "poem_id": "向明_2_xiangming2/走在梧桐的道路",
+      "stanza_idx": 3,
+      "score": 0.610478,
+      "text": "有时\n人生没那么热闹\n干净、脆弱\n又不禁风的状态\n能踩出声响，值得倾听"
+    }
+  ]
+}

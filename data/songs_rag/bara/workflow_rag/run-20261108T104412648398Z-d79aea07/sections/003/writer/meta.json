@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\"id\": \"C1-01\", \"zh\": \"玫瑰啊 玫瑰啊 凛然地开到最盛时\"},\n    {\"id\": \"C1-02\", \"zh\": \"玫瑰啊 玫瑰啊 美丽地散得从容\"}\n  ]\n}",
+  "finished_at": "2026-11-08T10:46:04+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2502,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1664,
+    "output_tokens": 2469,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

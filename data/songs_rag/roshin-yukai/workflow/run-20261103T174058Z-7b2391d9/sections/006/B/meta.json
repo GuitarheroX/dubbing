@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T174021_b_14afd3",
+  "input_hash": "14afd3c6b94581cec8b9266f0177ee3d55d8a3ccde45450a32db3532b237d65b",
+  "finished_at": "2026-11-03T17:40:34+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 3046,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3456,
+    "output_tokens": 2856,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"V3\",\n  \"phrases\": [\n    {\n      \"id\": \"V3-01\",\n      \"zh\": \"秒针 一下一下敲\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"用空格断开「秒针」和后面的动作，共7字\"}\n    },\n    {\n      \"id\": \"V3-02\",\n      \"zh\": \"电视里的人 不停说话\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"前五字是主语，后四字接上，共9字\"}\n    },\n    {\n      \"id\": \"V3-03\",\n      \"zh\": \"都在 我却碰不到\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"前两字一停，后半五字连读，共7字\"}\n    },\n    {\n      \"id\": \"V3-04\",\n      \"zh\": \"看不见的谁 轻轻笑\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"五字加三字，中间空格断开，共8字\"}\n    },\n    {\n      \"id\": \"V3-05\",\n      \"zh\": \"那一阵笑声\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"整句一口气，5字\"}\n    },\n    {\n      \"id\": \"V3-06\",\n      \"zh\": \"声音饱和 反撞回来\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"四字加四字，中间断开，共8字\"}\n    },\n    {\n      \"id\": \"V3-08\",\n      \"zh\": \"耳鸣 一遍遍响 一直都不肯停\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"按 2-4-6 三处停顿，共12字\"}\n    },\n    {\n      \"id\": \"V3-10\",\n      \"zh\": \"耳鸣 一遍遍响 一直都不肯停\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"与V3-08完全相同，保留原曲重复\"}\n    }\n  ]\n}",
+  "migrated_from": "20261103T174021_b_14afd3"
+}

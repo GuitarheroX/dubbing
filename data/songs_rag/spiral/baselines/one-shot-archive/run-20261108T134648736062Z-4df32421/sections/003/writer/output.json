@@ -1,0 +1,96 @@
+{
+  "section": "C1",
+  "phrases": [
+    {
+      "id": "C1-01",
+      "zh": "曾以为能去往任何地方",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": true,
+        "note": "整句11字，前5后6断句"
+      }
+    },
+    {
+      "id": "C1-02",
+      "zh": "那时的我如今在何方",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": true,
+        "note": "前6后5断句"
+      }
+    },
+    {
+      "id": "C1-03",
+      "zh": "一定 是长大了吧",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "9字，少1字，需补"
+      }
+    },
+    {
+      "id": "C1-04",
+      "zh": "其实并不是那样",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": false,
+        "note": "8字，少1字，需补"
+      }
+    },
+    {
+      "id": "C1-05",
+      "zh": "只差一点点的勇气",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "10字，少1字，需补"
+      }
+    },
+    {
+      "id": "C1-06",
+      "zh": "就有能改变的明天",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "10字，少1字，需补"
+      }
+    },
+    {
+      "id": "C1-07",
+      "zh": "连这都没能察觉到",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": true,
+        "note": "前3后7断句"
+      }
+    }
+  ]
+}

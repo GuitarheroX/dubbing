@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T174830_b_39eab4",
+  "input_hash": "39eab401ce0d813d1ad2a080718eaa5cfd70da849f4a549e104d7eb263806ef2",
+  "finished_at": "2026-11-03T17:48:50+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2013,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 3793,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"月光淡得醉人 脚下黑了也不管\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"按 pattern 6+7 拆，空格断句\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"低着头走路 脚尖也看不清\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"5+6 两段，整句一段可用空格作停顿\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"踉跄两步往前 摔了都还没发觉\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"6+7，与 pattern 对齐\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"远处夜星 在眼里晕成一片\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"4+7，「晕成一片」承接原句渗开的意象\"}\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"想做的事情 竟然一件都找不见\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"5+8，无 pattern 按语意留空格\"}\n    },\n    {\n      \"id\": \"V1-06\",\n      \"zh\": \"假装走得很急 头一直低垂\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"5+6，两句动作并列\"}\n    },\n    {\n      \"id\": \"V1-07\",\n      \"zh\": \"摔了一跤之后 还有笑声悬在背后\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"6+8，与 pattern 对齐\"}\n    },\n    {\n      \"id\": \"V1-08\",\n      \"zh\": \"我垂着眼 装作什么都没听\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"4+7，符合 pattern；「垂着眼」与 C1 的抬头成对照\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T174830_b_39eab4"
+}

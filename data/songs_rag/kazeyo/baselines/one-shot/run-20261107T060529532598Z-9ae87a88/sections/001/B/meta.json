@@ -1,0 +1,25 @@
+{
+  "agent": "B",
+  "raw_response": "{\"section\":\"V1\",\"phrases\":[{\"id\":\"V1-01\",\"zh\":\"暮色深 街灯冷 风穿过空巷\",\"chars\":11,\"self_check\":{\"budget\":[11,11],\"ok\":true,\"note\":\"按3 3 5断句，空格不算字\"}},{\"id\":\"V1-02\",\"zh\":\"人影散 心事空 都随晚风荡\",\"chars\":11,\"self_check\":{\"budget\":[11,11],\"ok\":true,\"note\":\"按3 3 5断句，与上一句保持对仗\"}},{\"id\":\"V1-03\",\"zh\":\"载着 悲与欢 随风去远方\",\"chars\":10,\"self_check\":{\"budget\":[10,10],\"ok\":true,\"note\":\"按2 3 5断句，载着两字占两拍\"}},{\"id\":\"V1-04\",\"zh\":\"流云缓缓飘 载我向远方\",\"chars\":10,\"self_check\":{\"budget\":[10,10],\"ok\":true,\"note\":\"按5 5断句，空格处停顿\"}}]}",
+  "finished_at": "2026-11-07T06:05:39+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "V1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 174,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2176,
+    "output_tokens": 1602,
+    "service_tier": "standard"
+  },
+  "temperature": 2.0,
+  "thinking_observation": {
+    "requested": null,
+    "reasoning_tokens": null,
+    "reasoning_content_present": true
+  }
+}

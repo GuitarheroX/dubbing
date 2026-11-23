@@ -1,0 +1,21 @@
+{
+  "id": "f91598d4-230d-476e-a44d-0d22304b76d6",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更简洁自然，V1-02“恍惚等一颗迟来的流星”保留呆然与终将出现之意，且中文更凝练；A的“呆立原地 等待终会出现的流星”偏冗长，“一直想要 注视到底”也稍生硬。V1-01、V1-03两版语义均准确，B整体表现力更佳。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 215,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 110,
+    "service_tier": "standard"
+  }
+}

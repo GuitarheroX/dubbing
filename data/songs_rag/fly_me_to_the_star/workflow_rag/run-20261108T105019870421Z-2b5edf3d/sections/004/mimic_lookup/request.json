@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "query_text": "报晓鸟 你别唱 让夜色 再停留\n墙上的 那指针 停住 别向前\n一颗流星悄悄 划过 微亮的 天边滑向晨 碎成满地星屑\noh 带我飞向星",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the provided budget.min to budget.max syllable count per line, inclusive, instead of matching the source mora count, and verify by counting syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.\n\nThe input is a JSON object containing phrases in performance order. Each phrase contains its original lyrics in ja. budget is the human-annotated target syllable range. An optional pattern gives human-annotated within-line groups; use it as guidance, not an additional hard constraint. For keep_source: true, reproduce ja unchanged. budget: null means no target syllable limit. Produce one lyric line for every input phrase in order. Do not translate the field names or include the annotation numbers as lyrics.",
+    "user": "{\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"ja\": \"命令　故意を感じて\",\n      \"budget\": {\n        \"min\": 8,\n        \"max\": 8\n      },\n      \"pattern\": [\n        2,\n        4,\n        2\n      ]\n    },\n    {\n      \"id\": \"B1-02\",\n      \"ja\": \"訂正　無為を観じて\",\n      \"budget\": {\n        \"min\": 8,\n        \"max\": 8\n      },\n      \"pattern\": [\n        2,\n        4,\n        2\n      ]\n    },\n    {\n      \"id\": \"B1-03\",\n      \"ja\": \"安寧は罪が混ざる\",\n      \"budget\": {\n        \"min\": 9,\n        \"max\": 9\n      },\n      \"pattern\": [\n        2,\n        4,\n        3\n      ]\n    },\n    {\n      \"id\": \"B1-04\",\n      \"ja\": \"当然か\",\n      \"budget\": {\n        \"min\": 3,\n        \"max\": 3\n      },\n      \"pattern\": [\n        3\n      ]\n    }\n  ]\n}"
+  },
+  "data": {
+    "phrases": [
+      {
+        "id": "B1-01",
+        "ja": "命令　故意を感じて",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          2,
+          4,
+          2
+        ]
+      },
+      {
+        "id": "B1-02",
+        "ja": "訂正　無為を観じて",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          2,
+          4,
+          2
+        ]
+      },
+      {
+        "id": "B1-03",
+        "ja": "安寧は罪が混ざる",
+        "budget": {
+          "min": 9,
+          "max": 9
+        },
+        "pattern": [
+          2,
+          4,
+          3
+        ]
+      },
+      {
+        "id": "B1-04",
+        "ja": "当然か",
+        "budget": {
+          "min": 3,
+          "max": 3
+        },
+        "pattern": [
+          3
+        ]
+      }
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the provided budget.min to budget.max syllable count per line, inclusive, instead of matching the source mora count, and verify by counting syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.\n\nThe input is a JSON object containing phrases in performance order. Each phrase contains its original lyrics in ja. budget is the human-annotated target syllable range. An optional pattern gives human-annotated within-line groups; use it as guidance, not an additional hard constraint. For keep_source: true, reproduce ja unchanged. budget: null means no target syllable limit. Produce one lyric line for every input phrase in order. Do not translate the field names or include the annotation numbers as lyrics.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"ja\": \"命令　故意を感じて\",\n      \"budget\": {\n        \"min\": 8,\n        \"max\": 8\n      },\n      \"pattern\": [\n        2,\n        4,\n        2\n      ]\n    },\n    {\n      \"id\": \"B1-02\",\n      \"ja\": \"訂正　無為を観じて\",\n      \"budget\": {\n        \"min\": 8,\n        \"max\": 8\n      },\n      \"pattern\": [\n        2,\n        4,\n        2\n      ]\n    },\n    {\n      \"id\": \"B1-03\",\n      \"ja\": \"安寧は罪が混ざる\",\n      \"budget\": {\n        \"min\": 9,\n        \"max\": 9\n      },\n      \"pattern\": [\n        2,\n        4,\n        3\n      ]\n    },\n    {\n      \"id\": \"B1-04\",\n      \"ja\": \"当然か\",\n      \"budget\": {\n        \"min\": 3,\n        \"max\": 3\n      },\n      \"pattern\": [\n        3\n      ]\n    }\n  ]\n}"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

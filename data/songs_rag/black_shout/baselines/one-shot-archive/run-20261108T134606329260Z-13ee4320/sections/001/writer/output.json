@@ -1,0 +1,109 @@
+{
+  "section": "C1",
+  "phrases": [
+    {
+      "id": "C1-01",
+      "zh": "黑夜再深",
+      "chars": 4,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": false,
+        "note": "只有4字，需要补到6字"
+      }
+    },
+    {
+      "id": "C1-02",
+      "zh": "我也不再畏惧",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": false,
+        "note": "只有6字，需要补到7字"
+      }
+    },
+    {
+      "id": "C1-03",
+      "zh": "信我道路",
+      "chars": 4,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": false,
+        "note": "只有4字，需要补到6字"
+      }
+    },
+    {
+      "id": "C1-04",
+      "zh": "不再迷惘向前",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": false,
+        "note": "只有6字，需要补到7字"
+      }
+    },
+    {
+      "id": "C1-05",
+      "zh": "黑色也无妨",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": false,
+        "note": "只有5字，需要补到6字"
+      }
+    },
+    {
+      "id": "C1-06",
+      "zh": "不必纯白无瑕",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": false,
+        "note": "只有6字，需要补到7字"
+      }
+    },
+    {
+      "id": "C1-07",
+      "zh": "打碎这荒谬",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": false,
+        "note": "只有5字，需要补到7字"
+      }
+    },
+    {
+      "id": "C1-08",
+      "zh": "我就在这里 此刻正呼吸着",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          16,
+          16
+        ],
+        "ok": false,
+        "note": "只有11字，需要补到16字，且要分成7+9"
+      }
+    }
+  ]
+}

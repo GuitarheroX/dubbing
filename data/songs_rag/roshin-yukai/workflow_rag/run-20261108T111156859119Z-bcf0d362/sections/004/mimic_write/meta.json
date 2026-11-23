@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"阳台对面 天色下沉\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"空格断句 不计字数\"}\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"楼梯上 一级一级的足音\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"用足音对应原文声响\"}\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"天空慢慢 蒙上一层灰\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"保留初版天空变灰的意象\"}\n    },\n    {\n      \"id\": \"V2-04\",\n      \"zh\": \"落在窗玻璃上 再落进这房间\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"两个落字对应原文两处落点\"}\n    },\n    {\n      \"id\": \"V2-05\",\n      \"zh\": \"黄昏漫开 一层层晕染\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"保留漫开与晕染的扩散感\"}\n    },\n    {\n      \"id\": \"V2-06\",\n      \"zh\": \"像哭肿的眼睛 太阳红得发烫\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"补足眼睛二字对齐字数\"}\n    },\n    {\n      \"id\": \"V2-07\",\n      \"zh\": \"像要化掉一样 一点一点\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"一点一点与下一句形成重复\"}\n    },\n    {\n      \"id\": \"V2-08\",\n      \"zh\": \"这世界一点一点 死在我眼前\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"沿用一点一点对应原文重复\"}\n    },\n    {\n      \"id\": \"V2-09\",\n      \"zh\": \"我又梦见自己 双手掐住你的咽喉\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"与B1-01同句同译 保持重复\"}\n    },\n    {\n      \"id\": \"V2-10\",\n      \"zh\": \"春风吹过 窗帘轻轻摇动\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"补出吹过 使春风有动作\"}\n    },\n    {\n      \"id\": \"V2-11\",\n      \"zh\": \"从干裂的嘴唇间 一个字一个字\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"嘴唇间补足一字 保留吞吐感\"}\n    },\n    {\n      \"id\": \"V2-12\",\n      \"zh\": \"说出口的话语 像泡泡一样散掉\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"话语对应言葉 泡泡散掉保留易碎感\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:14:09+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 5810,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2432,
+    "output_tokens": 4645,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

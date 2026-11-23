@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 1.449,
+  "usage": {
+    "input_tokens": 162,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 69,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": true,
+    "human_annotations_in_generation": false,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "generation",
+  "variant": "paper-original",
+  "migrated_from": "run-20261105T124340644652Z-14f9efa8",
+  "raw_response": "全部 全部 都是我\n扭扭捏捏 抽抽噎噎 都是我\n全部 全部 抱紧吧\n稍微睡一会儿\n痛痛痛痛 飞走吧\n愿悲伤不会夺走一切\n我要 做我自己的伙伴\n还在 还在 漫长路途的中途\n稍微休息一下\n谁也不会责备的"
+}

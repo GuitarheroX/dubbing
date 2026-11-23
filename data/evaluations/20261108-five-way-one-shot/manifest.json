@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-11-08T13:27:24.486312+00:00",
+  "snapshot_hash": "616a4e30037481a90b74f3487fcc9ae8cdffb294d460e6eefa8cc3565f92312e",
+  "code_commit": "5a9ed1bd2ceea22577a03f99565dd03f07a03669",
+  "code_hashes": {
+    "evaluate/comet_qe.py": "c8eaa4a98161491f14446a4f73299852c82efb8ef1c69de15651299ff1cf5b79",
+    "evaluate/__init__.py": "5492db8e0577d99a9d7c9b9400434dcfd0cb059efc7bafd799a8e82616c3d04f",
+    "evaluate/rules.py": "63a2a4e113586c555c81a0744154fb57479d6308fa4e83ee026d4c872c5cf909",
+    "evaluate/human.py": "0daca21204dcbed0813a1d810deef6794256cf12bae7c212efca9f4616269644",
+    "evaluate/inputs.py": "0612a5eb0648de804a0e3dc264130238e16443c1dd662af49391694eaa59e54f",
+    "evaluate/judges.py": "14d11cabd44f84ed0ea76d5a07921637b6e6297777f922cc5dcfcd29663296a0",
+    "evaluate/cli.py": "4985afc9da21b10e0f6376ff223b893a7657d8eaeede2ba1e77348bd93f6322f",
+    "evaluate/common.py": "b8eefa30ead2026a86fe2955dbfe6313b0183984c543619bb553274839dd5467",
+    "evaluate/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "evaluate/report.py": "84cb79ed6c56a2c8ef3288d59575c0db497147ea575630a8ce8173be99c9bc5c",
+    "dubbing/checks.py": "c0f8194d4bab7faf48ebeb45a1dbe13b5fba42440e7c4027f9f3d2325a435f5d",
+    "dubbing/counting.py": "a3374ef2b4022b4ff17a581a6dcb0cfe3dbb27bc0a01d8b17d1c24910792b41c",
+    "dubbing/models.py": "b54bfaa01606c35923f09571563d6699284266e6f14215bb29c0a564b115da26",
+    "dubbing/recorded_client.py": "9e36cc76525e0c1aa6b3418f02ddbf0796e989cb7c66e0a97fee44ed0d424b53",
+    "dubbing/llm.py": "7ebe4c94d7e60e91ad1189aac328d41c07f1d40723250a39c662b5a180f18488"
+  },
+  "seed": 0,
+  "bootstrap_samples": 2000
+}

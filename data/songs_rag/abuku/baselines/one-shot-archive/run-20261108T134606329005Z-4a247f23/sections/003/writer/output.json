@@ -1,0 +1,57 @@
+{
+  "section": "B1",
+  "phrases": [
+    {
+      "id": "B1-01",
+      "zh": "与其追忆 那远去的云",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": true,
+        "note": "4+3+3 对应旋律分段"
+      }
+    },
+    {
+      "id": "B1-02",
+      "zh": "向着遥远 长嚎",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "4+3 对应旋律分段"
+      }
+    },
+    {
+      "id": "B1-03",
+      "zh": "连喘息 都来不及的 瞬间",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": true,
+        "note": "4+3+3 对应旋律分段"
+      }
+    },
+    {
+      "id": "B1-04",
+      "zh": "苦楚的 那份",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "3+3 对应旋律分段"
+      }
+    }
+  ]
+}

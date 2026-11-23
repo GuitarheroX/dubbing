@@ -1,0 +1,21 @@
+{
+  "id": "7334dfaa-47be-4f26-87a7-63709f772152",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"V1-01将“水光跃于新芽”误并入“夜半梦未醒”，V1-04“从梦里走来”偏离“新朝到来”，核心意象部分偏移\",\"phrase_ids\":[\"V1-01\",\"V1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"清新晨意尚存，但“梦还没醒”使情绪偏朦胧，与原句明快跳跃感有偏差\",\"phrase_ids\":[\"V1-01\",\"V1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"“水光跃芽尖”“影子轻轻晃”顺口有歌词感，个别句略挤\",\"phrase_ids\":[\"V1-01\",\"V1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“影子轻轻晃”“拼成梦地图”意象鲜明，服务主题\",\"phrase_ids\":[\"V1-02\",\"V1-03\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"四句核心信息准确：水光跳新芽、你稍快走、深夜残食是梦地图、新晨来临\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，清新日常感保留，但略平实少跳跃\",\"phrase_ids\":[\"V1-01\",\"V1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"“水光里 跳上新芽时”稍拗，其余自然可唱\",\"phrase_ids\":[\"V1-01\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象较直白，“残食”略生硬少诗意\",\"phrase_ids\":[\"V1-03\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"整体准确，V1-01“新芽轻轻跳”把主语由水光转为新芽，轻微偏移\",\"phrase_ids\":[\"V1-01\"]},\"emotion\":{\"score\":4,\"reason\":\"清新轻快情绪保留较好，“新晨光”略添亮色但方向一致\",\"phrase_ids\":[\"V1-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"各句顺口自然，符合歌词文体\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“新芽轻轻跳”“碎屑是梦的地图”意象清晰有韵味\",\"phrase_ids\":[\"V1-01\",\"V1-03\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"V1-01增“灯影浮水面”“把春天弹响”属合理补充但偏离原句；V1-02增“追着你影子”改变人物动作关系\",\"phrase_ids\":[\"V1-01\",\"V1-02\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪偏浪漫化，“弹响春天”较原句更外放，局部偏离\",\"phrase_ids\":[\"V1-01\"]},\"naturalness\":{\"score\":4,\"reason\":\"语句流畅有歌词感，个别修饰略满\",\"phrase_ids\":[\"V1-01\",\"V1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“新芽把春天弹响”意象鲜明有力，服务主题\",\"phrase_ids\":[\"V1-01\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"四句核心信息准确完整，未增删关键事件\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向一致但偏散文陈述，平淡少跳跃感\",\"phrase_ids\":[\"V1-01\",\"V1-02\"]},\"naturalness\":{\"score\":3,\"reason\":\"“水面上的光斑跳跃在新芽上”等句偏长偏书面，作歌词略生硬\",\"phrase_ids\":[\"V1-01\",\"V1-02\"]},\"expressiveness\":{\"score\":2,\"reason\":\"表达直白铺陈，意象未提炼，较空泛\",\"phrase_ids\":[\"V1-01\",\"V1-04\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"整体准确，V1-02“走得早”把“稍快走”误为时间早，轻微偏移\",\"phrase_ids\":[\"V1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"清新轻快情绪保留，方向一致\",\"phrase_ids\":[\"V1-01\",\"V1-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"各句简洁顺口，符合歌词文体\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象较平，“脚步匆匆走得早”略俗\",\"phrase_ids\":[\"V1-02\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 681,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 1111,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "亲手撕碎那幅地图",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    },
+    {
+      "id": "V1-02",
+      "zh": "世界停在那个夏天",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    },
+    {
+      "id": "V1-03",
+      "zh": "我又一次",
+      "chars": 4,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    },
+    {
+      "id": "V1-04",
+      "zh": "把错推给别人",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    },
+    {
+      "id": "V1-05",
+      "zh": "真让人厌烦啊",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": false,
+        "note": "字数超出，需删减"
+      }
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "各句核心信息准确，V2-04“落进房间”略省“窗玻璃上”但可接受",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04",
+            "V2-05",
+            "V2-06",
+            "V2-07",
+            "V2-08",
+            "V2-09",
+            "V2-10",
+            "V2-11",
+            "V2-12"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "整体阴郁衰败情绪保留，个别句稍平",
+          "phrase_ids": [
+            "V2-03",
+            "V2-06",
+            "V2-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "简洁顺口，V2-04“窗玻璃上 落进房间”略缺衔接",
+          "phrase_ids": [
+            "V2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象清晰，但用词偏直译，冲击力中等",
+          "phrase_ids": [
+            "V2-06",
+            "V2-12"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "语义准确，V2-09“梦见掐住你脖子的梦”重复但信息完整",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04",
+            "V2-05",
+            "V2-06",
+            "V2-07",
+            "V2-08",
+            "V2-09",
+            "V2-10",
+            "V2-11",
+            "V2-12"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，稍显平铺",
+          "phrase_ids": [
+            "V2-03",
+            "V2-06",
+            "V2-08"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "V2-09“梦见……的梦”重复生硬，V2-04“落在窗玻璃上 落进房间里”略冗",
+          "phrase_ids": [
+            "V2-09",
+            "V2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达可懂但偏直译，意象力度一般",
+          "phrase_ids": [
+            "V2-06",
+            "V2-12"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "主旨保留，但V2-01增“风穿过栏杆”、V2-11增“说不出”属合理补充；V2-09“一寸一寸收紧”强化动作，未改事件",
+          "phrase_ids": [
+            "V2-01",
+            "V2-09",
+            "V2-11"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "阴郁、窒息与衰败情绪充分，意象强化服务主题",
+          "phrase_ids": [
+            "V2-06",
+            "V2-08",
+            "V2-09"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，个别句偏长但符合歌词",
+          "phrase_ids": [
+            "V2-09",
+            "V2-11"
+          ]
+        },
+        "expressiveness": {
+          "score": 5,
+          "reason": "“哭肿的眼睛”“一碰就破”等意象鲜明有力",
+          "phrase_ids": [
+            "V2-06",
+            "V2-12"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心准确，V2-01“天际”略偏移，V2-02“逼近”增方向感，V2-09增“纤细”",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-09"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，稍偏冷峻",
+          "phrase_ids": [
+            "V2-05",
+            "V2-09"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "较顺口，V2-04“在窗玻璃 在房间坠落”略生硬",
+          "phrase_ids": [
+            "V2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“暮色无声地扩散”“零落的言语”有表现力",
+          "phrase_ids": [
+            "V2-05",
+            "V2-12"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "多处增补偏移：V2-01并“天色下沉”、V2-08增“死在我眼前”、V2-11增“一个字一个字”，V2-12“散掉”改泡沫意象",
+          "phrase_ids": [
+            "V2-01",
+            "V2-08",
+            "V2-11",
+            "V2-12"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪浓烈且方向一致，但部分强化超出原词克制感",
+          "phrase_ids": [
+            "V2-06",
+            "V2-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "顺口自然，个别句偏散文",
+          "phrase_ids": [
+            "V2-04",
+            "V2-11"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象鲜明，但“红得发烫”“散掉”略改原味",
+          "phrase_ids": [
+            "V2-06",
+            "V2-12"
+          ]
+        }
+      }
+    }
+  ]
+}

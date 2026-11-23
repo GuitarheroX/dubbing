@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "```json\n{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"命令 咬住那点 敌意\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"按 2/4/2 断成三截：命令(2) 咬住那点(4) 敌意(2)；把「故意」译成可咬住的敌意，接住 V2 那句「牙关咬紧」\"}\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"订正 旁观那团 虚无\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"与上一句同构 2/4/2，「那点／那团」形成对仗；保留初版「旁观」「虚无」两个好词\"}\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"安宁 掺一点罪 才完整\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"2/4/3；砍掉初版「罪恶感」的书面味，改成「才完整」的判断句，语气更冷更认命\"}\n    },\n    {\n      \"id\": \"B1-04\",\n      \"zh\": \"当然吧\",\n      \"chars\": 3,\n      \"self_check\": {\"budget\": [3, 3], \"ok\": true, \"note\": \"三字整句，沿用初版，苦涩的自我定罪\"}\n    }\n  ]\n}\n```",
+  "finished_at": "2026-11-08T11:04:49+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3080,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1792,
+    "output_tokens": 2672,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

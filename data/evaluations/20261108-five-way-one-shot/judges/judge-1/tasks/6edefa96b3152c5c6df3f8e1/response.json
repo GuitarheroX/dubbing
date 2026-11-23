@@ -1,0 +1,21 @@
+{
+  "id": "8420046e-c410-4e1e-940c-d5077101cc8b",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B1-01的“攥紧过去 甩开 朝未来”比A的“抓住过去丢弃走向未来”更凝练有力，动作层次更清晰；B1-02的“我却想别过脸”比“想移开眼外”更自然且保留原意；B1-03和B1-04的“越过”与“都敢越”形成呼应，情绪更连贯，A的“比时空更多”语义略偏。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 343,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 133,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "query_text": "盛夏的耀眼海面 赤脚踩进白浪\n喊着你名字的时候 海水漫过脚踝\n忘了海浪推着我 皮肤晒得发干\n你伸来的手心朝上 身体就烧起来",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

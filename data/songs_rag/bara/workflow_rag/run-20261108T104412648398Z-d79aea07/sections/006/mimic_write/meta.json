@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"C2\",\n  \"phrases\": [\n    {\n      \"id\": \"C2-01\",\n      \"zh\": \"玫瑰啊 玫瑰啊 凛然地开到最盛时\",\n      \"chars\": 14,\n      \"self_check\": {\n        \"budget\": [14, 14],\n        \"ok\": true,\n        \"note\": \"按 pattern 拆成 3+3+8：前两组「玫瑰啊」各占三音，后半「凛然地开到最盛时」八字正好填满第三段；这句与 C1-01 完全一致，因为原曲两个副歌是同一句词，重复要保留\"\n      }\n    },\n    {\n      \"id\": \"C2-02\",\n      \"zh\": \"玫瑰啊 玫瑰啊 美丽地散得从容\",\n      \"chars\": 13,\n      \"self_check\": {\n        \"budget\": [13, 13],\n        \"ok\": true,\n        \"note\": \"3+3+7，与 pattern 三段对齐；「美丽地散得从容」七字，「地」「得」连读很快，不占额外拍；同样与 C1-02 保持逐字相同，让第二次副歌听起来是同一句话再说一遍，不是新句子\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T10:47:49+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2549,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2560,
+    "output_tokens": 4178,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

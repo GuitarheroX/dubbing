@@ -1,0 +1,70 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "我 一直 都在凝望你",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "字数不足，需要补意象"
+      }
+    },
+    {
+      "id": "V1-02",
+      "zh": "孤独 好像 被留在身后",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "字数不足，需要补意象"
+      }
+    },
+    {
+      "id": "V1-03",
+      "zh": "今宵 月亮 也向我微笑",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "字数不足，需要补意象"
+      }
+    },
+    {
+      "id": "V1-04",
+      "zh": "朝我这边看",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": false,
+        "note": "少一字，改为「朝我这边看呀」？"
+      }
+    },
+    {
+      "id": "V1-05",
+      "zh": "oh 带我飞向星",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "oh算一个音，带我飞向星五字"
+      }
+    }
+  ]
+}

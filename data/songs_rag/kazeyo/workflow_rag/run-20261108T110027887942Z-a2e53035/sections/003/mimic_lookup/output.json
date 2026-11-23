@@ -1,0 +1,46 @@
+{
+  "section": "B1",
+  "query_text": "风卷起衣裳 吹啊吹 流啊流\n如今 竟落到 这么个地方\n风把我抛起 摇啊摇 晃啊晃\n忽然 笑一声 这儿是 哪儿",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "Jo_jo/逃跑#s1",
+      "title": "逃跑",
+      "poet": "Jo",
+      "poem_id": "Jo_jo/逃跑",
+      "stanza_idx": 1,
+      "score": 0.703022,
+      "text": "我在风中奔跑想要逃避\n风开始是柔和的\n吹呀吹\n然后突然疾了\n于是我\n乱了呼吸\n来不及捂住衣裳\n就有了清凉\n然后温热\n无孔不入的风啊\n一阵穷追猛打\n直到我大呼着投了降"
+    },
+    {
+      "chunk_id": "映阳子_yingyangzi/风#s1",
+      "title": "风",
+      "poet": "映阳子",
+      "poem_id": "映阳子_yingyangzi/风",
+      "stanza_idx": 1,
+      "score": 0.699975,
+      "text": "风喜欢衣服\n特别是漂亮的衣服\n我把衣服晾在绳子上\n风就笑\n风把所有的衣服穿上\n女人不在\n衣服们飞起来\n山坡上裙带招展\n尤其是那件不起眼的短裙"
+    },
+    {
+      "chunk_id": "苦丁_kuding/风#s2",
+      "title": "风",
+      "poet": "苦丁",
+      "poem_id": "苦丁_kuding/风",
+      "stanza_idx": 2,
+      "score": 0.693254,
+      "text": "我说是风\n孩子四下望望 眨着眼问\n风在哪里"
+    },
+    {
+      "chunk_id": "丑石_choushi/第十八层楼顶#s1",
+      "title": "第十八层楼顶",
+      "poet": "丑石",
+      "poem_id": "丑石_choushi/第十八层楼顶",
+      "stanza_idx": 1,
+      "score": 0.682734,
+      "text": "风越来越大 夹带着\n呼啸声\n我扶着栏杆\n整座楼在晃动\n衣服也拼命向后扯着\n要脱离我的肉体\n远山也在晃动\n天上的云层急速翻滚\n向北而去\n它们好像很慌忙 又好像\n整齐划一\n只有我留在这里\n风 一阵紧似一阵\n我感到\n整个中国都在摇晃"
+    }
+  ]
+}

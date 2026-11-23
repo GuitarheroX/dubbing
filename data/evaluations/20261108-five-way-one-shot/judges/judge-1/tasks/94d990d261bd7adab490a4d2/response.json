@@ -1,0 +1,21 @@
+{
+  "id": "202aad04-4a3b-4bdb-87cd-f4d9574a7a01",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更忠实于原文的“吃星/按顺序/咀嚼/融化喝下”链条，语义清晰且中文自然；B虽有表现力，但V1-02“铺满舌尖”和V1-05“咽到无味”属额外扩展，V1-04丢失“按顺序”的核心语义，整体改写幅度偏大。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 404,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 118,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"什么叫普通 什么叫应该 谁能说\",\n      \"chars\": 13,\n      \"self_check\": {\n        \"budget\": [13, 13],\n        \"ok\": true,\n        \"note\": \"前10字两问并置，后3字独立成尾句，对上 10+3 的切分；保留原词里被引号框住的两个词的对仗\"\n      }\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"手里这把尺子 刻着别人名字\",\n      \"chars\": 12,\n      \"self_check\": {\n        \"budget\": [12, 12],\n        \"ok\": true,\n        \"note\": \"把「刻度是别人给的」换成刻着别人名字，尺子有了归属感，仍是 6+6\"\n      }\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"怎么量 都测不准 都不像我\",\n      \"chars\": 11,\n      \"self_check\": {\n        \"budget\": [11, 11],\n        \"ok\": true,\n        \"note\": \"三顿 3+4+4；「测不准」借了参考里量具测不准距离的骨架，回到原词「測れなくって」\"\n      }\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"吐出去吸回来 那口不安 堵在胸口\",\n      \"chars\": 14,\n      \"self_check\": {\n        \"budget\": [14, 14],\n        \"ok\": true,\n        \"note\": \"前10字是闭路循环，后4字落在身体上，对上 10+4；不写「又」靠「回去」的动作带出重复\"\n      }\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"我就这样站着任不安淹没我 不走\",\n      \"chars\": 14,\n      \"self_check\": {\n        \"budget\": [14, 14],\n        \"ok\": true,\n        \"note\": \"12+2 的短尾用「不走」收，既是不动也是不肯动；「站着」在行中不避「着」\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:19:18+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3902,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 6432,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "id": "19383a9c-fa40-41c5-8d5e-0b5f8c7b32a4",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原句的疑问与自省语气，语义准确、中文自然；A的C1-01加入“往哪去/住进谁的胸口”偏离原意，C1-02“心是否诚实”也弱化了“向自己胸口叩问”的核心动作。A的C1-05“原来就是你”虽更有表现力，但属于额外推断。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 500,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 119,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "I1",
+    "phrases": [
+      {
+        "id": "I1-01",
+        "section": "I1",
+        "ja": "僕に心を",
+        "budget": {
+          "min": 7,
+          "max": 7
+        }
+      },
+      {
+        "id": "I1-02",
+        "section": "I1",
+        "ja": "君に花束を",
+        "budget": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      {
+        "id": "I1-03",
+        "section": "I1",
+        "ja": "揺れる髪だけ靡くままにして",
+        "budget": {
+          "min": 15,
+          "max": 15
+        },
+        "pattern": [
+          7,
+          8
+        ]
+      }
+    ],
+    "draft": {
+      "section": "I1",
+      "phrases": [
+        {
+          "id": "I1-01",
+          "zh": "把心交到我手里",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "「僕に心を」补出动词「交到」，与下句「递到你手里」成对仗，一句一个方向"
+          }
+        },
+        {
+          "id": "I1-02",
+          "zh": "把花束递到你手里",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "保留花束原意象，「递」压住轻声告别的语感，句尾不用「了」"
+          }
+        },
+        {
+          "id": "I1-03",
+          "zh": "让头发在风里摇 没有人伸手去按住",
+          "chars": 15,
+          "self_check": {
+            "budget": [
+              15,
+              15
+            ],
+            "ok": true,
+            "note": "空格断在 7+8；借参考里「不要怪风多话」的松手语气，把「靡くままにして」写成没人去按住的动作"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

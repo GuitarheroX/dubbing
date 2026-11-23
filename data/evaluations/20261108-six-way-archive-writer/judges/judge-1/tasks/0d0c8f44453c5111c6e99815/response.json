@@ -1,0 +1,21 @@
+{
+  "id": "70278efc-4716-4a56-a7a1-7722e1a241f0",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原意：C1-01“两人的心跳交叠”准确对应“二人の鼓動 重ね合わせて”，A的“同一声”是额外引申；C1-02保留“因为”的因果悬置，A改成“没理由”语义反转；C1-03“仿佛就要消失”忠实于“いなくなりそうで”，A的“星屑散开”属过度改写；C1-04“除了我别映出别人”自然且保留“私以外”的排他感，A“别的影都别留”稍显冗赘。A在C1-01、C1-03上更有表现力，但核心语义偏移较多。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 334,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 183,
+    "service_tier": "standard"
+  }
+}

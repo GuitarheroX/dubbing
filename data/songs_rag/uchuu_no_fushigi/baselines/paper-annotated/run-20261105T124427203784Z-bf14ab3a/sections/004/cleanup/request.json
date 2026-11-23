@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "1. 星星为什么在闪耀呢 (12 syllables: xīng xīng wèi shén me zài shǎn yào ne)\n2. 云儿为什么在天空游荡 (12 syllables: yún ér wèi shén me zài tiān kōng yóu dàng)\n3. 人们为什么把梦想描绘 (12 syllables: rén men wèi shén me bǎ mèng xiǎng miáo huì)\n4. 难道没有答案吗 (10 syllables: nán dào méi yǒu dá àn ma)\n\nRhyme check (final phonemes): ne / dàng / huì / ma — original has no strict rhyme pattern across lines either (の/の/の/な), so no rhyme constraint is enforced. Theme preserved: stars shining, clouds swimming in sky, people dreaming, no answers."
+  },
+  "data": {
+    "response": "1. 星星为什么在闪耀呢 (12 syllables: xīng xīng wèi shén me zài shǎn yào ne)\n2. 云儿为什么在天空游荡 (12 syllables: yún ér wèi shén me zài tiān kōng yóu dàng)\n3. 人们为什么把梦想描绘 (12 syllables: rén men wèi shén me bǎ mèng xiǎng miáo huì)\n4. 难道没有答案吗 (10 syllables: nán dào méi yǒu dá àn ma)\n\nRhyme check (final phonemes): ne / dàng / huì / ma — original has no strict rhyme pattern across lines either (の/の/の/な), so no rhyme constraint is enforced. Theme preserved: stars shining, clouds swimming in sky, people dreaming, no answers."
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "1. 星星为什么在闪耀呢 (12 syllables: xīng xīng wèi shén me zài shǎn yào ne)\n2. 云儿为什么在天空游荡 (12 syllables: yún ér wèi shén me zài tiān kōng yóu dàng)\n3. 人们为什么把梦想描绘 (12 syllables: rén men wèi shén me bǎ mèng xiǎng miáo huì)\n4. 难道没有答案吗 (10 syllables: nán dào méi yǒu dá àn ma)\n\nRhyme check (final phonemes): ne / dàng / huì / ma — original has no strict rhyme pattern across lines either (の/の/の/な), so no rhyme constraint is enforced. Theme preserved: stars shining, clouds swimming in sky, people dreaming, no answers."
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

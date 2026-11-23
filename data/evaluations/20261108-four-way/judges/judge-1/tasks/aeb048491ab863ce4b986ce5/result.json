@@ -1,0 +1,158 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达“比起追忆流云”的比较结构，远嚎、无暇喘息、痛苦均对应原文",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，痛苦与急迫感保留，但“那样痛苦啊”略平淡",
+          "phrase_ids": [
+            "B1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“向遥远远方”叠词稍拗口",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏直译，意象力度普通",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "B1-01将“比起思念流云”改为“让它飘我抬头”，比较结构丢失；B1-04“烙在胸口”增添原文没有的意象",
+          "phrase_ids": [
+            "B1-01",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "嘶吼与急迫感尚在，但“才痛快”式的改写使痛苦情绪偏移",
+          "phrase_ids": [
+            "B1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文口语流畅，适合歌词",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“喉咙发烫”“烙在胸口”意象鲜明，但部分为增补",
+          "phrase_ids": [
+            "B1-03",
+            "B1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“与其空想那过眼云烟”保留比较与云意象，其余各句准确",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "痛苦与急迫方向一致，“难熬”稍弱于原文的窒息感",
+          "phrase_ids": [
+            "B1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "通顺，“连喘息的那空隙”略多虚词",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达稳妥但偏平实，意象不够突出",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "B1-01改为“不数流云不回头仰起头”，丢失“比起……更”的比较逻辑；B1-04“才痛快”改变痛苦性质",
+          "phrase_ids": [
+            "B1-01",
+            "B1-04"
+          ]
+        },
+        "emotion": {
+          "score": 2,
+          "reason": "“才痛快”将苦闷转为畅快，情绪方向明显偏移",
+          "phrase_ids": [
+            "B1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "短句节奏顺口，符合歌词文体",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03",
+            "B1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“气没喘匀喉咙紧”生动有力，但服务的是改写后的情绪",
+          "phrase_ids": [
+            "B1-03",
+            "B1-04"
+          ]
+        }
+      }
+    }
+  ]
+}

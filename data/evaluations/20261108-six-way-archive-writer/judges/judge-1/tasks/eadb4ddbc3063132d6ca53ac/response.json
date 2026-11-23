@@ -1,0 +1,21 @@
+{
+  "id": "cb93ea7a-e207-473c-b8f7-b9d88bee99e6",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B用词更凝练自然（“纵身跃入”“湛蓝光芒包裹我”），情绪更贴合原曲的冷澈与向往；A的“真想跳进去试试看”“要是跳进去试了的话”偏口语、拖沓，C1-06“心好轻”虽为增补但强化了被宽恕的释然感，未误读核心语义。\",\"phrase_ids\":[\"C1-02\",\"C1-03\",\"C1-05\",\"C1-06\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 271,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 117,
+    "service_tier": "standard"
+  }
+}

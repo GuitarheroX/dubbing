@@ -1,0 +1,21 @@
+{
+  "id": "fa7140e1-e8a6-42b4-9cd3-03504f13cdfc",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A准确传达“想把自己的生命给你”的核心语义，中文简洁自然；B虽有意象扩展，但“像正午白亮的海面”偏离原句，且“摊在你手心”略显生硬，整体不如A忠实自然。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 316,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 384,
+    "output_tokens": 75,
+    "service_tier": "standard"
+  }
+}

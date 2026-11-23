@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 2.497,
+  "usage": {
+    "input_tokens": 100,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 357,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": true,
+    "human_annotations_in_generation": false,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "generation",
+  "variant": "paper-original",
+  "migrated_from": "run-20261105T124417218291Z-9fe1577b",
+  "raw_response": "清晨为何要将我照亮？\n夜晚为何会变得寂凉？\n悲伤的事情对半分吧\n若能如此该有多好啊\n\nMora count verification (approximate syllable count per line):\nLine 1: 清晨为何要将我照亮 (qīng chén wèi hé yào jiāng wǒ zhào liàng) = 10 syllables ✓ (original: あさはなんでぼくをてらすの = 10 mora)\nLine 2: 夜晚为何会变得寂凉 (yè wǎn wèi hé huì biàn dé jì liáng) = 10 syllables ✓ (original: よるはなんでさびしくなるの = 10 mora)\nLine 3: 悲伤的事情对半分吧 (bēi shāng de shì qíng duì bàn fēn ba) = 10 syllables ✓ (original: かなしいことははんぶんこ = 10 mora)\nLine 4: 若能如此该有多好啊 (ruò néng rú cǐ gāi yǒu duō hǎo a) = 10 syllables ✓ (original: できたらいいのにね = 8 mora, approximate)\n\nRhyme verification: Lines 1 and 2 end in \"àng\" (亮/凉) — matching rhyme. Lines 3 and 4 end in \"a\" (吧/啊) — matching rhyme. Original rhyme pattern: の/の (lines 1-2), こ/ね (lines 3-4, near-rhyme) — preserved.\n\nTheme: Same — questioning why morning shines on me and night feels lonely, wishing sadness could be halved/shared."
+}

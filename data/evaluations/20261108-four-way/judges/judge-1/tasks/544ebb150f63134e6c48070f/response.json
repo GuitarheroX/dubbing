@@ -1,0 +1,21 @@
+{
+  "id": "c4d38bf1-f8d9-433c-8cd9-14fbe8477f08",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"四句均准确对应原意，疑问语气保留\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"童真发问的柔和情绪基本保留，略平淡\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文顺口自然，符合歌词文体\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通，缺少亮点\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"前三句核心保留但增补“一整夜”“学鱼儿”“种一个梦”偏移；末句改为“吹散在风里”，与原“没有答案吗”的疑问不同\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"童趣方向一致，但末句转为怅然，情绪落点偏离\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"分节节奏顺口，个别搭配如“种一个梦”稍刻意\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象较鲜明，“游过天空”“种一个梦”有画面感\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"前两句保留发问但“游成鱼群”改喻；第三句“把明天画成梦境”偏离“描绘梦想”；末句“从来就没有”把疑问变为断言\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"整体童趣尚存，但末句断言削弱原曲温柔的悬问感\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"节奏顺畅，个别如“游成鱼群”稍显造作\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明有画面，但部分服务偏离主题\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"四句核心语义准确，第三句语序调整合理\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"疑问与童真情绪保留，略平\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，第三句“把梦想描绘”稍书面\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通，缺少亮点\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 952,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 858,
+    "service_tier": "standard"
+  }
+}

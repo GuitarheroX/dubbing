@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173113_b_823ec9",
+  "input_hash": "823ec901a3a205124657389cc6cacfcff376ab7597b31b4f7efe6df81f79a24f",
+  "finished_at": "2026-11-03T17:31:39+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2163,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2176,
+    "output_tokens": 4958,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"鸟已啼 夜要走 让我把 你看够\",\n      \"chars\": 12,\n      \"self_check\": {\n        \"budget\": [12, 12],\n        \"ok\": true,\n        \"note\": \"按 3 3 3 3 分四组，空格断句，末字收在「够」不拖泥\"\n      }\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"把时针 拨回去 一夜 再重来\",\n      \"chars\": 11,\n      \"self_check\": {\n        \"budget\": [11, 11],\n        \"ok\": true,\n        \"note\": \"3 3 2 3，对应旋律四段；「拨回去」替代「止めて」，用倒拨的意象更狠\"\n      }\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"流星悄悄滑过 黎明 的天边 一闪就坠落 从我指缝溜走\",\n      \"chars\": 22,\n      \"self_check\": {\n        \"budget\": [22, 22],\n        \"ok\": true,\n        \"note\": \"6 2 3 5 6；「黎明」两字单独成段，对上 pattern 的短音\"\n      }\n    },\n    {\n      \"id\": \"B1-04\",\n      \"zh\": \"带 我飞去星河\",\n      \"chars\": 6,\n      \"self_check\": {\n        \"budget\": [6, 6],\n        \"ok\": true,\n        \"note\": \"与前段同句保持完全一致的重复；首字单音成段\"\n      }\n    }\n  ]\n}",
+  "migrated_from": "20261103T173113_b_823ec9"
+}

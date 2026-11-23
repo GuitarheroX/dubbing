@@ -1,0 +1,21 @@
+{
+  "id": "5520f840-f0b7-41f8-b26d-5a5a74184976",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原句“気高く咲いて／美しく散る”的高贵与从容意境，中文自然且保留咏叹感；A的“一身深红”属额外添加，“一瓣瓣”虽具象但略偏描写，整体表现力稍逊。\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 219,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 84,
+    "service_tier": "standard"
+  }
+}

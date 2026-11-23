@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T174635_b_52551b",
+  "input_hash": "52551bb250b17fe31393039b30a4fd022a5d51eb89678df2535dbb9a1e6bd0f8",
+  "finished_at": "2026-11-03T17:46:52+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 3999,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 3849,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"盒子里那一座小小的人家\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"六字后微顿，合成一座能捧在手里的屋子\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"两个人并排站过 厨房的 那扇小窗\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"按 7/3/4 断成三段，空格处留气口\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"窗帘外那一片 种满回忆的小院子\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"6+8，前半掀开窗帘，后半露出院子\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"埋进土里那一捧 春天的日光\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"7+5，把光当成能埋下的东西\"}\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"偶尔也给它浇一点 清凉的井水\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"8+5，动作在前，水在后\"}\n    },\n    {\n      \"id\": \"V1-06\",\n      \"zh\": \"枝上小枇杷黄 的那一天\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"6+4，用颜色代替结果，避开句尾虚字\"}\n    },\n    {\n      \"id\": \"V1-07\",\n      \"zh\": \"把这一切忘了吧\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"轻轻合上盖子，语气与前段一致\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T174635_b_52551b"
+}

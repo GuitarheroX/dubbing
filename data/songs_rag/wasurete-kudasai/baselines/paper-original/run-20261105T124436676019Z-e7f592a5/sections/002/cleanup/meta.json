@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 1.214,
+  "usage": {
+    "input_tokens": 146,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 51,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": true,
+    "human_annotations_in_generation": false,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "cleanup",
+  "variant": "paper-original",
+  "migrated_from": "run-20261105T124436676019Z-e7f592a5",
+  "raw_response": "{\"lines\":[\"箱中的小小家\",\"两人并肩厨房的小窗\",\"窗帘那头的回忆庭院里\",\"埋下一缕春日阳光\",\"偶尔浇上一点水\",\"当小小的枇杷结出果时\",\"请忘了我吧\"]}"
+}

@@ -1,0 +1,153 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "phrases": [
+      {
+        "id": "V1-01",
+        "section": "V1",
+        "ja": "私 ずっとあなたを見てた",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          3,
+          2,
+          4,
+          3
+        ]
+      },
+      {
+        "id": "V1-02",
+        "section": "V1",
+        "ja": "孤独を置いてきたみたい",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          4,
+          3,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "V1-03",
+        "section": "V1",
+        "ja": "今宵 月も笑いかける",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "id": "V1-04",
+        "section": "V1",
+        "ja": "こっちを向いて",
+        "budget": {
+          "min": 6,
+          "max": 6
+        },
+        "pattern": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": "V1-05",
+        "section": "V1",
+        "ja": "oh, fly me to the star",
+        "budget": {
+          "min": 6,
+          "max": 6
+        },
+        "pattern": [
+          1,
+          5
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V1",
+      "phrases": [
+        {
+          "id": "V1-01",
+          "zh": "我一直 悄悄 凝望着你 不说话",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "三段空格对应旋律的 3/2/4/3 切分，「不说话」收住句尾，不拖虚字"
+          }
+        },
+        {
+          "id": "V1-02",
+          "zh": "孤独好像 被留在 门外 的夜色",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "按 4/3/2/3 断句；「的夜色」三个字放在最后一段音符上"
+          }
+        },
+        {
+          "id": "V1-03",
+          "zh": "今夜的 月亮也 弯起眼 对我笑",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "四段各三字，与 [3,3,3,3] 对齐；「弯起眼」用新月弯弯的形象"
+          }
+        },
+        {
+          "id": "V1-04",
+          "zh": "转过来 看着我",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "3+3 两段，正好是两个三字节奏"
+          }
+        },
+        {
+          "id": "V1-05",
+          "zh": "带 我飞去星河",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "第一个字占原曲「oh」那一拍，后面五字连唱，对应 [1,5]"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

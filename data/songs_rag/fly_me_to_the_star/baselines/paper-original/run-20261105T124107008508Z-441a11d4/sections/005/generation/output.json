@@ -1,0 +1,14 @@
+{
+  "section": "O1",
+  "source": "cleanup.lines",
+  "phrases": [
+    {
+      "id": "O1-01",
+      "zh": "带我一起去"
+    },
+    {
+      "id": "O1-02",
+      "zh": "哦，飞向那星辰"
+    }
+  ]
+}

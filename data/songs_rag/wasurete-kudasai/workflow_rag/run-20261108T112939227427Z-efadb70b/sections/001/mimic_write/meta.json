@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "```json\n{\n  \"section\": \"I1\",\n  \"phrases\": [\n    {\n      \"id\": \"I1-01\",\n      \"zh\": \"把心交到我手里\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"「僕に心を」补出动词「交到」，与下句「递到你手里」成对仗，一句一个方向\"}\n    },\n    {\n      \"id\": \"I1-02\",\n      \"zh\": \"把花束递到你手里\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"保留花束原意象，「递」压住轻声告别的语感，句尾不用「了」\"}\n    },\n    {\n      \"id\": \"I1-03\",\n      \"zh\": \"让头发在风里摇 没有人伸手去按住\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"空格断在 7+8；借参考里「不要怪风多话」的松手语气，把「靡くままにして」写成没人去按住的动作\"}\n    }\n  ]\n}\n```",
+  "finished_at": "2026-11-08T11:30:39+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 4921,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 1785,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

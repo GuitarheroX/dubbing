@@ -1,0 +1,8 @@
+{
+  "run": "run-20261105T124230779561Z-aa9bdecf",
+  "updated_at": "2026-11-07T06:09:06+00:00",
+  "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "baseline": "paper-annotated"
+}

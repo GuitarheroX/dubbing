@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V3",
+    "query_text": "秒针在走 嗒嗒响\n电视里 主持人 笑得假\n明明在场 却好远\n看不见的 谁在那边\n笑声 一层层\n饱和 回响 灌满耳朵\n耳朵里 一直嗡嗡响 停不下来\n耳朵里 一直嗡嗡响 停不下来",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

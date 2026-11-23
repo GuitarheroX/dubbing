@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "query_text": "攥紧过去 一甩手 未来\n总在遇见 却只想把视线移开\n比那 旧我 更远些\n比光 更远些",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

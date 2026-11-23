@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "```json\n{\n  \"section\": \"O1\",\n  \"phrases\": [\n    {\n      \"id\": \"O1-01\",\n      \"zh\": \"全部全部 全部\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"按 [4,2] 断句，前四字连读、末两字收住；与 V1-04 同词，保留原曲重复\"}\n    },\n    {\n      \"id\": \"O1-02\",\n      \"zh\": \"一起出发 去找\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"四字起跑、两字落脚，正合 [4,2]；与 V1-05 完全一致，收尾不换词\"}\n    },\n    {\n      \"id\": \"O1-03\",\n      \"zh\": \"全部全部 全部\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"与 O1-01 完全相同，重复句照搬以保住叠句的亮度\"}\n    },\n    {\n      \"id\": \"O1-04\",\n      \"zh\": \"一起出发 去找\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"与 O1-02 完全相同，末句不改字，让人跟着跑出去\"}\n    }\n  ]\n}\n```",
+  "finished_at": "2026-11-08T11:29:34+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2592,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3456,
+    "output_tokens": 1708,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

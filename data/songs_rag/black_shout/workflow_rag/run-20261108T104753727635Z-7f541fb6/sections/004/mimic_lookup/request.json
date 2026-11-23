@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C2",
+    "query_text": "就算明天 是墙\n尽头挡路 也无妨\n用我自己的手\n把墙一寸寸挖开\n发抖的这双腿\n我自己弯腰抱紧\n带着觉悟 迈出去\n我还没够到的梦 现在就要抢进我怀里",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

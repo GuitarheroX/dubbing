@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\"section\": \"C1\", \"phrases\": [{\"id\": \"C1-01\", \"zh\": \"迎着风跑啊 穿过了花丛\"}, {\"id\": \"C1-02\", \"zh\": \"穿过云层 顺着风 只剩下我一个\"}, {\"id\": \"C1-03\", \"zh\": \"天刚泛起白 快一些走吧\"}, {\"id\": \"C1-04\", \"zh\": \"青草的腥气 混着魂魄 飘散\"}, {\"id\": \"C1-05\", \"zh\": \"穿过风 掠过 穿过天 掠过\"}, {\"id\": \"C1-06\", \"zh\": \"穿过云层 顺着风 只剩下我一个\"}]}",
+  "finished_at": "2026-11-08T11:09:20+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2446,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1792,
+    "output_tokens": 1363,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

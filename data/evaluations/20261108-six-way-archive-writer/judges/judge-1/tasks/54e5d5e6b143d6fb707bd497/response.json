@@ -1,0 +1,21 @@
+{
+  "id": "037bf3db-54dd-4950-bfee-089937ad27c1",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B以“我愿将生命献给你”直接凝练地传达原句献身的核心语义，中文自然且庄重；A的“交到你手里”偏口语化，且“全都”略增原文没有的强调，情绪意境不如B贴合。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 298,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 384,
+    "output_tokens": 79,
+    "service_tier": "standard"
+  }
+}

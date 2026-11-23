@@ -1,0 +1,57 @@
+{
+  "section": "I1",
+  "phrases": [
+    {
+      "id": "I1-01",
+      "zh": "爱是从哪里悄悄降临的呢",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          14,
+          14
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    },
+    {
+      "id": "I1-02",
+      "zh": "问自己胸口这颗心",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    },
+    {
+      "id": "I1-03",
+      "zh": "虚假的东西我毫无兴趣",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    },
+    {
+      "id": "I1-04",
+      "zh": "只想凝视真实的光",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "字数不足，需补意象"
+      }
+    }
+  ]
+}

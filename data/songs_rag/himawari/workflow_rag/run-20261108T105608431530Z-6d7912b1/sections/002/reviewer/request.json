@@ -1,0 +1,121 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "phrases": [
+      {
+        "id": "V1-01",
+        "section": "V1",
+        "ja": "夏の海原裸足のまま",
+        "budget": {
+          "min": 13,
+          "max": 13
+        },
+        "pattern": [
+          7,
+          6
+        ]
+      },
+      {
+        "id": "V1-02",
+        "section": "V1",
+        "ja": "あなたを呼ぶ間に足が濡れる",
+        "budget": {
+          "min": 14,
+          "max": 14
+        },
+        "pattern": [
+          8,
+          6
+        ]
+      },
+      {
+        "id": "V1-03",
+        "section": "V1",
+        "ja": "波を忘れて乾いた肌",
+        "budget": {
+          "min": 13,
+          "max": 13
+        },
+        "pattern": [
+          7,
+          6
+        ]
+      },
+      {
+        "id": "V1-04",
+        "section": "V1",
+        "ja": "あなたの引く手に燃えるからだ",
+        "budget": {
+          "min": 14,
+          "max": 14
+        },
+        "pattern": [
+          8,
+          6
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V1",
+      "phrases": [
+        {
+          "id": "V1-01",
+          "zh": "盛夏耀眼的海面 赤脚踩进白浪",
+          "chars": 13,
+          "self_check": {
+            "budget": [
+              13,
+              13
+            ],
+            "ok": true,
+            "note": "前七字后六字，正好卡住 7+6 的旋律切分"
+          }
+        },
+        {
+          "id": "V1-02",
+          "zh": "喊着你名字的间隙 海水漫过脚踝",
+          "chars": 14,
+          "self_check": {
+            "budget": [
+              14,
+              14
+            ],
+            "ok": true,
+            "note": "前八字后六字，保留初版海水漫脚的画面"
+          }
+        },
+        {
+          "id": "V1-03",
+          "zh": "忘了海浪在推我 皮肤晒出盐粒",
+          "chars": 13,
+          "self_check": {
+            "budget": [
+              13,
+              13
+            ],
+            "ok": true,
+            "note": "前七字后六字，用盐粒替代直说发干"
+          }
+        },
+        {
+          "id": "V1-04",
+          "zh": "你伸来的手心朝上 身体先烧起来",
+          "chars": 14,
+          "self_check": {
+            "budget": [
+              14,
+              14
+            ],
+            "ok": true,
+            "note": "前八字后六字，承接初版手心朝上的意象"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

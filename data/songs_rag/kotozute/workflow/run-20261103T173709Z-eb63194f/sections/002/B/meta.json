@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173618_b_ed1853",
+  "input_hash": "ed185318974c078fb475778572042eba7a7b5844fff3357b0960dfdf82df7786",
+  "finished_at": "2026-11-03T17:36:24+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2559,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 1311,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"曾见过的落幕\",\n      \"chars\": 6,\n      \"self_check\": {\n        \"budget\": [6, 6],\n        \"ok\": true,\n        \"note\": \"六字整句，与V1「曾见过的风景」呼应\"\n      }\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"理所当然该出现的命运\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"十字整句连读，不加标点\"\n      }\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"始终看不见\",\n      \"chars\": 5,\n      \"self_check\": {\n        \"budget\": [5, 5],\n        \"ok\": true,\n        \"note\": \"五字收束，保留持续未见的状态\"\n      }\n    }\n  ]\n}",
+  "migrated_from": "20261103T173618_b_ed1853"
+}

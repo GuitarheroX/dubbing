@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\"id\": \"V2-01\", \"zh\": \"心事 藏在唇边说不出口\"},\n    {\"id\": \"V2-02\", \"zh\": \"千万种人生 在眼底浮游\"},\n    {\"id\": \"V2-03\", \"zh\": \"演给你看 只想让你回头\"},\n    {\"id\": \"V2-04\", \"zh\": \"oh, fly me to the star\"}\n  ]\n}",
+  "finished_at": "2026-11-08T13:23:45+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "section": "V2",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1814,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 107,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

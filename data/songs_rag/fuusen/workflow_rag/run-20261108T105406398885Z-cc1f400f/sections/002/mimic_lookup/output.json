@@ -1,0 +1,46 @@
+{
+  "section": "B1",
+  "query_text": "气被抽走 慢慢变空\n瘪掉的我 皱在掌心\n呜呼 我已是 你所有",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "Toto_toto/烟盒子#s1",
+      "title": "烟盒子",
+      "poet": "Toto",
+      "poem_id": "Toto_toto/烟盒子",
+      "stanza_idx": 1,
+      "score": 0.696768,
+      "text": "装满的低潮与烦躁\n被我的指间\n一次一次的点燃抽着抽着\n淌出累的潮间带\n在张与阖之间\n继续，吞下你的名字\n吐出我的哀伤"
+    },
+    {
+      "chunk_id": "柏明文_baimingwen/雪莲#s23",
+      "title": "雪莲",
+      "poet": "柏明文",
+      "poem_id": "柏明文_baimingwen/雪莲",
+      "stanza_idx": 23,
+      "score": 0.656157,
+      "text": "我让你打开\n是的 你就打开了\n我看到的却是\n茫然 抽搐 隐忍的疼\n那一刻 我真想合上双眼\n和你一起 慢慢的死去"
+    },
+    {
+      "chunk_id": "刘亚全_liuyaquan/渴#s2",
+      "title": "渴",
+      "poet": "刘亚全",
+      "poem_id": "刘亚全_liuyaquan/渴",
+      "stanza_idx": 2,
+      "score": 0.655039,
+      "text": "躲进空了的饮料瓶子\n拧个上盖，空气越来越少\n大地脸憋的通红\n谁在我肩上轻轻拍了一下"
+    },
+    {
+      "chunk_id": "老王子_laowangzi/给S.J.#s4",
+      "title": "给S.J.",
+      "poet": "老王子",
+      "poem_id": "老王子_laowangzi/给S.J.",
+      "stanza_idx": 4,
+      "score": 0.654207,
+      "text": "在空气中摇摇欲坠\n希望你\n原谅我复杂的呼吸\n或许再蹩脚的爱\n也是眼泪\n这一刻本该有多么渺茫\n如果能停留\n也是因为经过了你的梦\n就不再奢望清醒"
+    }
+  ]
+}

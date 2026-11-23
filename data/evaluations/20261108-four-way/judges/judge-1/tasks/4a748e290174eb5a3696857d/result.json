@@ -1,0 +1,153 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达空气被抽干、干瘪、成为所有物的核心信息",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "无力与归属感保留，但“啊”略平淡",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "三句均顺口自然，符合歌词文体",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象清晰但偏直译，表现力中上",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心语义准确，所有物关系明确",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，“呜呼”稍显文雅",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“呜呼”略书面",
+          "phrase_ids": [
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "表达清楚但意象普通",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "保留抽气与所有物，但“皱在掌心”增添原文没有的具体意象",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "无力被掌控的情绪基本保留",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "节奏顺口，个别搭配略生硬",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“皱在掌心”意象鲜明但属增补",
+          "phrase_ids": [
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“旧的气球”“指间旧物”大幅改写比喻与关系，偏离原文",
+          "phrase_ids": [
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "颓败感保留，但被物化为旧物的情绪偏移",
+          "phrase_ids": [
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，歌词感尚可",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02",
+            "B1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "气球意象生动但服务的是改写后的主题",
+          "phrase_ids": [
+            "B1-02",
+            "B1-03"
+          ]
+        }
+      }
+    }
+  ]
+}

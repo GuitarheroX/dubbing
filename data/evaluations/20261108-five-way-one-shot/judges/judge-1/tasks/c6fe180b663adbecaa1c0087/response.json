@@ -1,0 +1,21 @@
+{
+  "id": "93c6c17c-6e0d-44cb-866d-e49615af4ac1",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A的B2-01将“命をさずかり”自然化为“生来背负宿命”，情绪连贯；B2-02“让热情燃烧着活下去永远不停”比B的“热情燃烧着活下去永远”更完整流畅。B的B2-01“受玫瑰之生命所赐予”生硬且“之”字断裂，B2-02结尾“永远”悬置，自然度与表现力均逊于A。\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 337,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 121,
+    "service_tier": "standard"
+  }
+}

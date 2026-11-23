@@ -1,0 +1,21 @@
+{
+  "id": "b2cbae39-3196-4f00-bda4-eeb87fca648a",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"各句核心信息准确，乙醚麻醉、没油打火机、灼烧胃部等意象完整保留\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\",\"V1-07\",\"V1-08\"]},\"emotion\":{\"score\":4,\"reason\":\"失眠冷寂与自嘲遗憾的情绪基本到位，末句语气略偏轻\",\"phrase_ids\":[\"V1-03\",\"V1-07\",\"V1-08\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，个别句尾“啊”“呢”稍显凑字\",\"phrase_ids\":[\"V1-02\",\"V1-06\",\"V1-08\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰有力，但措辞偏直译，缺少凝练\",\"phrase_ids\":[\"V1-02\",\"V1-06\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"语义准确，各意象对应无误\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\",\"V1-07\",\"V1-08\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向正确但偏平淡，冷寂与遗憾感不够浓\",\"phrase_ids\":[\"V1-02\",\"V1-06\",\"V1-08\"]},\"naturalness\":{\"score\":4,\"reason\":\"简洁通顺，但偏书面化，歌词感稍弱\",\"phrase_ids\":[\"V1-04\",\"V1-06\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象处理普通，缺少张力\",\"phrase_ids\":[\"V1-01\",\"V1-06\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"多数句保留，但“照不暖空房间”“冷得没有痛”添加原文没有的意象，末句“可惜都不是”改变原句假设语气\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-08\"]},\"emotion\":{\"score\":3,\"reason\":\"冷寂氛围尚可，但末句转为明确否定，削弱原作的假设性遗憾\",\"phrase_ids\":[\"V1-08\"]},\"naturalness\":{\"score\":4,\"reason\":\"较顺口，个别句如“像有火慢慢啃咬”稍显拖沓\",\"phrase_ids\":[\"V1-06\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明，但部分为增补而非原有意象\",\"phrase_ids\":[\"V1-01\",\"V1-06\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“霓虹挑染”“顺着手背爬上肩”“擦不出火星”等为增补或改写，打火机原意是没油而非打不着火\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-05\"]},\"emotion\":{\"score\":4,\"reason\":\"冷寂失眠氛围较浓，情绪方向一致\",\"phrase_ids\":[\"V1-01\",\"V1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"断句节奏自然，符合歌词文体\",\"phrase_ids\":[\"V1-03\",\"V1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象生动有画面感，但部分偏离原意象\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-06\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 2337,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 256,
+    "output_tokens": 792,
+    "service_tier": "standard"
+  }
+}

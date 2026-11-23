@@ -1,0 +1,21 @@
+{
+  "id": "09391f88-a1c6-4485-8ca4-7eb224030330",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原文的简洁语气与句式，如C2-01保留“望星时感到的这份寂寞”的定语结构，C2-02“到朝霞染红双手时早已忘却”自然且不增饰；A的“仰望星空”“涌上心头”“忘得干净”等扩展虽流畅但偏离原句克制感。两版核心语义均准确，B表现力更统一。\",\"phrase_ids\":[\"C2-01\",\"C2-02\",\"C2-03\",\"C2-04\",\"C2-05\",\"C2-06\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 991,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 256,
+    "output_tokens": 131,
+    "service_tier": "standard"
+  }
+}

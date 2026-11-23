@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 1.033,
+  "usage": {
+    "input_tokens": 170,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 75,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": true,
+    "human_annotations_in_generation": false,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "cleanup",
+  "variant": "paper-original",
+  "migrated_from": "run-20261105T124340644652Z-14f9efa8",
+  "raw_response": "{\"lines\":[\"全部 全部 都是我\",\"扭扭捏捏 抽抽噎噎 都是我\",\"全部 全部 抱紧吧\",\"稍微睡一会儿\",\"痛痛痛痛 飞走吧\",\"愿悲伤不会夺走一切\",\"我要 做我自己的伙伴\",\"还在 还在 漫长路途的中途\",\"稍微休息一下\",\"谁也不会责备的\"]}"
+}

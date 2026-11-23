@@ -1,0 +1,22 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"风穿过这长街 风带走些什么\",\n      \"chars\": 12,\n      \"self_check\": {\n        \"budget\": [12, 12],\n        \"ok\": true,\n        \"note\": \"按[6,6]空格断句，前后各六字，保留「风」的重复\"\n      }\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"我们就像 蒲公英的绒毛\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"按[4,6]空格断句，前四后六，沿用初版意象\"\n      }\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"被吹散在街口 各自去远方\",\n      \"chars\": 11,\n      \"self_check\": {\n        \"budget\": [11, 11],\n        \"ok\": true,\n        \"note\": \"按[6,5]空格断句，前六后五，保留「各自去」的散开感\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:45:26+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "json_repaired": false,
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2672,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 1572,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

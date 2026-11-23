@@ -1,0 +1,21 @@
+{
+  "id": "b994e64f-cb14-44b2-a7d8-c93034f85182",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息基本准确，C1-06加入“心里的光”属合理补充，C1-10“嫌我慢半拍”略增原意但未改主题\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\",\"C1-07\",\"C1-08\",\"C1-09\",\"C1-10\"]},\"emotion\":{\"score\":4,\"reason\":\"自我接纳与温柔安抚的情绪保留较好，个别句稍显解释性\",\"phrase_ids\":[\"C1-06\",\"C1-07\",\"C1-10\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，C1-02“都是我模样”略拗口，C1-10稍长但可唱\",\"phrase_ids\":[\"C1-02\",\"C1-10\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“痛痛飞走”“站在自己这一边”等意象鲜明，服务主题\",\"phrase_ids\":[\"C1-05\",\"C1-07\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心语义准确，C1-02“黏黏糊糊”对“うじうじ”略有偏移，C1-10“数落你”人称由我变你\",\"phrase_ids\":[\"C1-02\",\"C1-10\"]},\"emotion\":{\"score\":4,\"reason\":\"温柔自愈情绪保留充分，C1-07“最靠得住的同伴”稍强化但方向一致\",\"phrase_ids\":[\"C1-07\"]},\"naturalness\":{\"score\":4,\"reason\":\"多数顺口，C1-02“黏黏糊糊”与后文搭配略生硬\",\"phrase_ids\":[\"C1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“痛痛飞吧”“刚走到一半”等表达自然有力\",\"phrase_ids\":[\"C1-05\",\"C1-08\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"主旨保留但多处压缩偏移：C1-03“抱紧吧”缺宾语，C1-10“我的停下”语义生造\",\"phrase_ids\":[\"C1-03\",\"C1-10\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向一致但偏平淡，安抚感被压缩\",\"phrase_ids\":[\"C1-04\",\"C1-06\"]},\"naturalness\":{\"score\":2,\"reason\":\"多处断句生硬，C1-10“我的停下”明显不自然\",\"phrase_ids\":[\"C1-08\",\"C1-10\"]},\"expressiveness\":{\"score\":2,\"reason\":\"表达偏空泛，意象与力度不足\",\"phrase_ids\":[\"C1-04\",\"C1-09\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"核心大意保留，但C1-05“痛痛痛痛”重复失真，C1-10“谁也不会责备的”省略对象略偏\",\"phrase_ids\":[\"C1-05\",\"C1-10\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪基本一致但较平淡，童谣式安抚感减弱\",\"phrase_ids\":[\"C1-05\",\"C1-06\"]},\"naturalness\":{\"score\":3,\"reason\":\"可理解，C1-05重复生硬，C1-08“还在还在”略拖沓\",\"phrase_ids\":[\"C1-05\",\"C1-08\"]},\"expressiveness\":{\"score\":3,\"reason\":\"有表达但普通，部分句压缩后力度不足\",\"phrase_ids\":[\"C1-06\",\"C1-09\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"主旨保留，但C1-09“稍微休息一下也”语义未完，C1-10人称变“你”偏离\",\"phrase_ids\":[\"C1-09\",\"C1-10\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向一致，但断句造成安抚感不完整\",\"phrase_ids\":[\"C1-09\",\"C1-10\"]},\"naturalness\":{\"score\":2,\"reason\":\"C1-09句尾悬空、C1-10人称跳脱，多处不自然\",\"phrase_ids\":[\"C1-09\",\"C1-10\"]},\"expressiveness\":{\"score\":2,\"reason\":\"表达偏平，重复与断句削弱表现力\",\"phrase_ids\":[\"C1-01\",\"C1-05\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1606,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 1001,
+    "service_tier": "standard"
+  }
+}

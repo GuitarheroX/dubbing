@@ -1,0 +1,190 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“世界解开的声音”基本对应“ほどける”，但“朝我传来”把“かけてくる”的奔跑/逼近感弱化为传来；“你面前”略改关系。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-05"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "清晨、挥手、划船等意象保留，但整体偏平，缺少原句的涌动与开放感。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-04",
+            "C1-07"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文通顺，歌词文体可读；“在未来回头的你面前”稍拗口。",
+          "phrase_ids": [
+            "C1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但意象普通，“划船前行”较直白。",
+          "phrase_ids": [
+            "C1-07",
+            "C1-09"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“线头松开”合理补充“ほどける”意象；“向我跑过来”准确传达“かけてくる”；“那个你”略增指称但未改主题。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-05"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "晨光涌进、一桨一桨划保留并强化了向前与清晨的氛围，情绪方向一致。",
+          "phrase_ids": [
+            "C1-04",
+            "C1-07"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口；“在未来回过头来的那个你”稍长但可唱。",
+          "phrase_ids": [
+            "C1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“线头松开”“一桨一桨划”意象较鲜明，服务主题。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-07"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“哗啦松开”是合理拟声补充；“朝我跑过来”准确；“那头”略增空间感但未偏离。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-05"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "晨光漫上、桨落水等意象保留清晨与前行感，情绪较充分。",
+          "phrase_ids": [
+            "C1-04",
+            "C1-07"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文自然有歌词感；“世界哗啦松开的那声音”稍繁但可接受。",
+          "phrase_ids": [
+            "C1-01"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“哗啦松开”“桨落进水里”画面感较强。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-07"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“崩解”比“ほどける”更强烈，偏负面；“你身旁”改变了“向你挥手”的对象关系。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-05"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "“崩解”“涌来”带来压迫感，与原句轻盈展开、清晨前行的情绪有局部偏离。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "通顺，歌词文体可读；“无论何方”稍书面。",
+          "phrase_ids": [
+            "C1-10"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但“崩解”“涌来”较常见，整体普通。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“渐渐融解”合理对应“ほどける”；“奔涌而来”强化“かけてくる”；“回望我的你”略改视角但未改事件。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-05"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "融解、晨光醒来、划向前方保留并强化了清晨与开放前行感。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-04",
+            "C1-07"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口；“晨光醒来”略拟人但可接受。",
+          "phrase_ids": [
+            "C1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“渐渐融解”“晨光醒来”意象较鲜明，服务主题。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-04"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "section": "O1",
+  "query_text": "全部 全部 全部\n一起出发 去找\n全部 全部 全部\n一起出发 去找",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "康丽_kangli/众志成城#s24",
+      "title": "众志成城",
+      "poet": "康丽",
+      "poem_id": "康丽_kangli/众志成城",
+      "stanza_idx": 24,
+      "score": 0.63453,
+      "text": "因为爱 使我们更坚强\n因为爱 让我们泪流满面\n爱让我们继续寻找\n爱让我们万众一心\n众志成城"
+    },
+    {
+      "chunk_id": "海男_hainan/歌唱#s44",
+      "title": "歌唱",
+      "poet": "海男",
+      "poem_id": "海男_hainan/歌唱",
+      "stanza_idx": 44,
+      "score": 0.624228,
+      "text": "去吧\n真去到那里就有了好的开端\n去吧\n靠着这一点就能赎回自己的热情"
+    },
+    {
+      "chunk_id": "乌青_wuqing/算力：打怪物#s1",
+      "title": "算力：打怪物",
+      "poet": "乌青",
+      "poem_id": "乌青_wuqing/算力：打怪物",
+      "stanza_idx": 1,
+      "score": 0.613633,
+      "text": "我们去打怪物\n一路上有说有笑多么幸福\n终于找到了怪物\n我们齐心协力打怪物\n打呀打呀打不过\n我们逃跑了\n一路上有说有笑多么幸福\n相信下次还有机会\n我们再去打那个怪物\n还可以叫上更多的朋友"
+    },
+    {
+      "chunk_id": "侯馨婷_houxinting/火车里，看不见的城市#s5",
+      "title": "火车里，看不见的城市",
+      "poet": "侯馨婷",
+      "poem_id": "侯馨婷_houxinting/火车里，看不见的城市",
+      "stanza_idx": 5,
+      "score": 0.61356,
+      "text": "去找昔日的朋友们"
+    }
+  ]
+}

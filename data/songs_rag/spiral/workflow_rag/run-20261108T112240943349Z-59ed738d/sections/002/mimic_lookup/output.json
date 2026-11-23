@@ -1,0 +1,46 @@
+{
+  "section": "B1",
+  "query_text": "就这样吧 假装着 还在等那班车 站到天黑了\n从这一步开始 我还能重新来过吗",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "杨于军_yangyujun/旅行#s1",
+      "title": "旅行",
+      "poet": "杨于军",
+      "poem_id": "杨于军_yangyujun/旅行",
+      "stanza_idx": 1,
+      "score": 0.691429,
+      "text": "往返于车站之间\n肉体的位移\n回来的我不再是出发前的我\n还有途中的我\n都形态各异\n我究竟该怎样出现"
+    },
+    {
+      "chunk_id": "燕七_yanqi/黄昏的云#s1",
+      "title": "黄昏的云",
+      "poet": "燕七",
+      "poem_id": "燕七_yanqi/黄昏的云",
+      "stanza_idx": 1,
+      "score": 0.660156,
+      "text": "不是存在过了就够了\n还要走到彼此的心\n黄昏的火车\n会带来我思念的那个人"
+    },
+    {
+      "chunk_id": "南人_nanren/送你，在站台#s8",
+      "title": "送你，在站台",
+      "poet": "南人",
+      "poem_id": "南人_nanren/送你，在站台",
+      "stanza_idx": 8,
+      "score": 0.657309,
+      "text": "列车开动\n我从车窗里看你神情凝重\n于是我拿出刚才那种回味快乐的表情\n一边笑一边张嘴说个不停\n我知道说什么你也听不见"
+    },
+    {
+      "chunk_id": "符马活_fumahuo/送你去天津#s1p2",
+      "title": "送你去天津",
+      "poet": "符马活",
+      "poem_id": "符马活_fumahuo/送你去天津",
+      "stanza_idx": 1,
+      "score": 0.656199,
+      "text": "地铁狂奔着，牛逼的样子\n我等地铁车门打开\n所有的人都走光了\n我一个人出了站\n天开始黑下来\n跟失恋似的"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T110535879678Z-10d8db82",
+  "updated_at": "2026-11-08T11:07:39+00:00",
+  "song": "kotozute",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

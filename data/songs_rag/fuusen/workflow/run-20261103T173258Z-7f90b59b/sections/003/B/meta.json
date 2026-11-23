@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173250_b_cec98e",
+  "input_hash": "cec98e1511210b12b3ddcbcd3ce64b965067059965328c37421eea698671eb7f",
+  "finished_at": "2026-11-03T17:32:58+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 1706,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1920,
+    "output_tokens": 1483,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"什么都不剩的时候 全都怪你\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"整句没有 pattern，在「时候」后留一处停顿，前八后四\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"喊着全都怪你 手一次次重重落下\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"前六字对 [6]，后八字对 [8]，空格正好落在两段接缝处\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"连这落下的拳头 也咽得干干净净\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"七加七对 [7,7]，句尾不加虚词，收在「干净」上\"}\n    }\n  ]\n}",
+  "migrated_from": "20261103T173250_b_cec98e"
+}

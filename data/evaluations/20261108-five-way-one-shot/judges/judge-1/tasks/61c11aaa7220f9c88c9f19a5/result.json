@@ -1,0 +1,189 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "保留“装作等待”核心，但“一班不来的车”“路灯亮”是新增具体场景，偏离原句抽象等待。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "等待与自问方向一致，但具体化意象使情绪更偏叙事化，略淡原句的停滞感。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，歌词感强，仅“就这样吧”略改语气。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“不来的车”“路灯亮”意象鲜明，服务等待主题，但属新增。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "“楼梯转角”“等谁”“灯熄灭”大幅新增场景，原句“等待什么”的抽象性被改为具体等人。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "停滞等待的情绪尚在，但具体场景使情绪偏移为叙事片段。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文流畅，有歌词节奏感。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "画面感强，但意象多为新增，服务的是改写后的场景。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达“就这样装作一直在等待什么”和“从这里我还能重新开始吗”。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "保留原句停滞、自问与微弱希望的情绪方向。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文自然可唱，略偏直译但通顺。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但较平实，缺少突出意象。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心“装作等待什么”保留，“不肯醒来”为新增但未改变主题；第二句准确。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "停滞与自省情绪基本一致，“不肯醒来”略强化逃避感。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，歌词文体自然。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“不肯醒来”增强表达，但属新增意象。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确对应原句“就这样装作一直在等待着什么”与“从这里我能够重新开始吗”。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "情绪方向与强弱贴近原句，保留停滞自问。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文通顺自然，稍显直译但可唱。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但平实，意象与力度普通。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "096058c4-e12b-4ba9-980e-452d90a8476a",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"地图被撕裂、世界停在那天、推责他人、自我厌烦均准确传达\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"emotion\":{\"score\":4,\"reason\":\"自责与厌倦情绪基本保留，但“真让人厌烦啊”略偏对外而非自厌\",\"phrase_ids\":[\"V1-05\"]},\"naturalness\":{\"score\":5,\"reason\":\"各句顺口自然，符合歌词文体\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰但表达偏平实，缺少张力\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息保留，但“亲手画的”与“我真没出息”属合理补充/偏移，后者强化自厌\",\"phrase_ids\":[\"V1-01\",\"V1-05\"]},\"emotion\":{\"score\":5,\"reason\":\"自责、厌倦与停滞感强烈且方向一致\",\"phrase_ids\":[\"V1-01\",\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"断句节奏自然，但“我真没出息”稍口语直白\",\"phrase_ids\":[\"V1-05\"]},\"expressiveness\":{\"score\":5,\"reason\":\"“撕成两半”“停在原地”意象鲜明有力\",\"phrase_ids\":[\"V1-01\",\"V1-02\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“那个夏天”将“あの日”具体化为季节，属轻微偏移，其余准确\",\"phrase_ids\":[\"V1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，但整体较平\",\"phrase_ids\":[\"V1-01\",\"V1-05\"]},\"naturalness\":{\"score\":5,\"reason\":\"简洁顺口，符合歌词文体\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"表达清楚但意象普通，缺少亮点\",\"phrase_ids\":[\"V1-01\",\"V1-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"各句核心信息准确，“旧模样”合理对应“あの日のまま”\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-04\",\"V1-05\"]},\"emotion\":{\"score\":5,\"reason\":\"自厌与停滞情绪充分保留，“厌倦自己”强化自省\",\"phrase_ids\":[\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体自然，但“真叫人厌倦 自己”断句略生硬\",\"phrase_ids\":[\"V1-05\"]},\"expressiveness\":{\"score\":5,\"reason\":\"“被我撕裂”“旧模样”意象鲜明且服务主题\",\"phrase_ids\":[\"V1-01\",\"V1-02\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心语义准确，“真讨厌自己”贴合原意\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-04\",\"V1-05\"]},\"emotion\":{\"score\":5,\"reason\":\"自责与厌倦情绪方向、强度均保留\",\"phrase_ids\":[\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，但“我又再一次”略冗余\",\"phrase_ids\":[\"V1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰但表达较常规\",\"phrase_ids\":[\"V1-01\",\"V1-02\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“别人家”偏离原意，“那一刹”将持续状态改为瞬间，语义偏移明显\",\"phrase_ids\":[\"V1-02\",\"V1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向大体一致，但“别人家”“烦哪”带戏谑感削弱自责\",\"phrase_ids\":[\"V1-04\",\"V1-05\"]},\"naturalness\":{\"score\":3,\"reason\":\"“被撕啦”“别人家”“烦哪”口语押韵但生硬做作\",\"phrase_ids\":[\"V1-01\",\"V1-04\",\"V1-05\"]},\"expressiveness\":{\"score\":3,\"reason\":\"为押韵牺牲意象准确性，表达普通\",\"phrase_ids\":[\"V1-02\",\"V1-04\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1004,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 1040,
+    "service_tier": "standard"
+  }
+}

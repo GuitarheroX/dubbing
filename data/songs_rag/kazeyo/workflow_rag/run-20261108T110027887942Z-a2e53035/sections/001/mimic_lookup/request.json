@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "query_text": "天色暗 街也静 卷帘门落下\n人走远 屋也空 坐垫还陷着\n全部 装进袖 风就往前走\n云像一条河 风踩着它走",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

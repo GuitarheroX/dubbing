@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "```json\n{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"气被抽走 慢慢变空\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"四加四，空格对应旋律前四音与后四音；保留初版的泄气意象\"}\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"瘪掉的我 皱在掌心\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"四加四；借参考里「空瓶」被握住的骨架，换成气球被攥皱的触感\"}\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"也罢 我已是 你所有\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"按 2/3/3 断句；以「也罢」代呜呼的叹声，末三字收在「你所有」留白\"}\n    }\n  ]\n}\n```",
+  "finished_at": "2026-11-08T10:55:42+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2809,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 1682,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

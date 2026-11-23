@@ -1,0 +1,9 @@
+{
+  "run": "run-20261108T134616747289Z-3c6cf4f4",
+  "updated_at": "2026-11-08T13:46:23+00:00",
+  "song": "fuusen",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "passed": 2,
+  "total": 14
+}

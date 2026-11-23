@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"I1\",\n  \"phrases\": [\n    {\"id\": \"I1-01\", \"zh\": \"爱究竟从何处悄悄降临人间\"},\n    {\"id\": \"I1-02\", \"zh\": \"我轻声问自己心间\"},\n    {\"id\": \"I1-03\", \"zh\": \"虚假的温柔我从来不愿多看一眼\"},\n    {\"id\": \"I1-04\", \"zh\": \"只想凝视那份真实的脸\"}\n  ]\n}",
+  "finished_at": "2026-11-08T13:23:54+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "section": "I1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1530,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 104,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

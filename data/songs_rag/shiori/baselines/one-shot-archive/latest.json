@@ -1,0 +1,9 @@
+{
+  "run": "run-20261108T134640876440Z-565826bc",
+  "updated_at": "2026-11-08T13:46:48+00:00",
+  "song": "shiori",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "passed": 2,
+  "total": 21
+}

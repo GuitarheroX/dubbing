@@ -1,0 +1,71 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C1",
+    "phrases": [
+      {
+        "id": "C1-01",
+        "section": "C1",
+        "ja": "バラはバラは　気高く咲いて",
+        "budget": {
+          "min": 14,
+          "max": 14
+        },
+        "pattern": [
+          3,
+          3,
+          8
+        ]
+      },
+      {
+        "id": "C1-02",
+        "section": "C1",
+        "ja": "バラはバラは　美しく散る",
+        "budget": {
+          "min": 13,
+          "max": 13
+        },
+        "pattern": [
+          3,
+          3,
+          7
+        ]
+      }
+    ],
+    "draft": {
+      "section": "C1",
+      "phrases": [
+        {
+          "id": "C1-01",
+          "zh": "玫瑰啊 玫瑰啊 凛然地开到最盛时",
+          "chars": 14,
+          "self_check": {
+            "budget": [
+              14,
+              14
+            ],
+            "ok": true,
+            "note": "前两个「玫瑰啊」各占3字，第三段8字，空格对应[3,3,8]断句"
+          }
+        },
+        {
+          "id": "C1-02",
+          "zh": "玫瑰啊 玫瑰啊 美丽地散得从容",
+          "chars": 13,
+          "self_check": {
+            "budget": [
+              13,
+              13
+            ],
+            "ok": true,
+            "note": "保留初版重复句式，第三段7字，对应[3,3,7]"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

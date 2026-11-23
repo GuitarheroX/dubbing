@@ -1,0 +1,21 @@
+{
+  "id": "6add29ad-4b9e-44cc-baa1-a298f9f8964f",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更口语自然、情绪鲜活（“听够/受够啦”“好舒服”），B偏书面且“那种事”指代略泛；两版核心语义均准确，V1-05相同。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 461,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 84,
+    "service_tier": "standard"
+  }
+}

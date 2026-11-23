@@ -1,0 +1,46 @@
+{
+  "section": "B1",
+  "query_text": "不数流云 往哪儿 慢慢走\n朝最远方 长嚎吧\n气没喘匀 胸口烫 又再喊\n那点痛 才痛快",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "高小刚_gaoxiaogang/一直向东#s3",
+      "title": "一直向东",
+      "poet": "高小刚",
+      "poem_id": "高小刚_gaoxiaogang/一直向东",
+      "stanza_idx": 3,
+      "score": 0.675557,
+      "text": "快点，慢点都无关归程\n抬眼，是云上流云\n是天空上又一层天空\n一个人的离去，似乎\n孤独了一生\n我是在世界上行走吗？\n为何听不见脚步踩上落叶\n疼痛的哭声"
+    },
+    {
+      "chunk_id": "包临轩_baolinxuan/江水瘦#s3",
+      "title": "江水瘦",
+      "poet": "包临轩",
+      "poem_id": "包临轩_baolinxuan/江水瘦",
+      "stanza_idx": 3,
+      "score": 0.673638,
+      "text": "最初嘶吼，后来浩叹\n最后是呻吟，都止不住一天天的消瘦\n随风去远"
+    },
+    {
+      "chunk_id": "何向阳_hexiangyang/出走#s3",
+      "title": "出走",
+      "poet": "何向阳",
+      "poem_id": "何向阳_hexiangyang/出走",
+      "stanza_idx": 3,
+      "score": 0.668822,
+      "text": "我以无动于衷的冷淡\n掩饰激动\n告诉自己不为什么\n只是出来随便看看世界\n不发出声响的脚步\n永朝人流相反的方向\n执拗，悠闲地走\n很可能\n岔道没完没了\n每条路都是逆风"
+    },
+    {
+      "chunk_id": "顾偕_guxie/我在睡眠中升腾#s1",
+      "title": "我在睡眠中升腾",
+      "poet": "顾偕",
+      "poem_id": "顾偕_guxie/我在睡眠中升腾",
+      "stanza_idx": 1,
+      "score": 0.660687,
+      "text": "远方已在近处\n古老的温柔都于胸中升起\n年轻的世界没有荒凉\n云彩不会风化\n时间不会伤害目光"
+    }
+  ]
+}

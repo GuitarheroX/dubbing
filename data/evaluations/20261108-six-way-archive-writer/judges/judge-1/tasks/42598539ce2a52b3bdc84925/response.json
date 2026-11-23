@@ -1,0 +1,21 @@
+{
+  "id": "27f0abeb-400c-4cf1-8d30-bcb5117e43cc",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原意：C1-01保留“无形歌声”与“描黎明”的持续动作，A的“唱到天亮”偏离“描いたまま”；C1-03“温暖不冷的手心”虽略重复，但准确传达“冷たくない君の手のひら”，A的“微微发光”属无据添加；C1-02、C1-04两版均自然，B“夏日尽头”“淡淡天光”更简洁有韵味。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 302,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 138,
+    "service_tier": "standard"
+  }
+}

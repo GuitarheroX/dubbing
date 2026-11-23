@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "query_text": "就这样吧 假装着 还在等那班车 站到天黑了\n从这一步开始 我还能重新来过吗",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

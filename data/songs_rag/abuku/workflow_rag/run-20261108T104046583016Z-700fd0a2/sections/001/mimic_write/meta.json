@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "```json\n{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"啊 按不住的 在翻涌\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"对应 pattern [1,4,3]：单字「啊」占第一音，中间四字一顿，末三字收；「啊」是原曲本就有的语气词，不算凑字\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"胸腔里 蠢动的野兽\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"3+5 断句；把初版的「我胸中」改成更贴身体的「胸腔里」，与下一段「蠢く」的蠕动感接上\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"水面 鼓起来又破掉 没有声音 又一颗\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"2+6+4+3；用「鼓起来又破掉」替代初版平铺的「浮起来又破开」，末尾「又一颗」留出循环没完的余味，空格即换气点\"}\n    }\n  ]\n}\n```",
+  "finished_at": "2026-11-08T10:41:37+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3415,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 2722,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

@@ -1,0 +1,57 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "暮色里 街巷空寂",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "缺2字，需补意象"
+      }
+    },
+    {
+      "id": "V1-02",
+      "zh": "人世间 聚散无常",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "缺2字，需补意象"
+      }
+    },
+    {
+      "id": "V1-03",
+      "zh": "全部 载着风远去",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "缺2字，需补意象"
+      }
+    },
+    {
+      "id": "V1-04",
+      "zh": "流云间 乘风而行",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "缺2字，需补意象"
+      }
+    }
+  ]
+}

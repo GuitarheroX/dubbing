@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"爱从何来 又往哪去 住进谁的胸口\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"4+4+6 对应 pattern，和 I1-01 完全重复，保留副歌回环\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"手贴胸口 轻轻问 心是否诚实\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"4+3+5，与 I1-02 同一句，动作重复更稳\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"假货摆得再亮 我也只要真的\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"6+6；沿用 I1-03 定稿的说法，只差一个语气词，译词保持一致\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"只想找到真的 眼神不闪躲\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"6+5；后半沿用初版，前半『真的』接上句，形成句内回响\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"找了好久的人 原来就是你\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"6+5，借参考里『不知道你在哪』的寻找语气，落到笃定的收束，不用虚词\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:11:52+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2526,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2176,
+    "output_tokens": 2137,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "id": "4831cb8a-102d-4eef-b2ba-26b26a979bb9",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A在保持“玫瑰宿命”与“华美激烈地活”核心语义的同时，用“一身深红”“落得激烈”扩展出更鲜明的意象和情绪张力，中文更具歌词表现力；B较直译自然但偏平，表现力弱。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 351,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 81,
+    "service_tier": "standard"
+  }
+}

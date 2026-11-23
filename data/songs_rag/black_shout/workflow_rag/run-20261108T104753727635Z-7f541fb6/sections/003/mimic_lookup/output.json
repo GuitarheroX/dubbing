@@ -1,0 +1,46 @@
+{
+  "section": "B1",
+  "query_text": "挡我路的杂音 嫉妒\n把怯懦全甩开 冲动\n亮出我的颜色 本能\n我要亲手全部夺回来",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "曾淑美_zengshumei/记忆#s12",
+      "title": "记忆",
+      "poet": "曾淑美",
+      "poem_id": "曾淑美_zengshumei/记忆",
+      "stanza_idx": 12,
+      "score": 0.658075,
+      "text": "颜色发出尖叫\n丝带绞死自己\n被语言戳伤的爱\n血流不止……\n在空洞之前尽情跳舞\n用力践踏\n你粉碎了我的心"
+    },
+    {
+      "chunk_id": "阿斐_afei/命运进行曲#s4",
+      "title": "命运进行曲",
+      "poet": "阿斐",
+      "poem_id": "阿斐_afei/命运进行曲",
+      "stanza_idx": 4,
+      "score": 0.657474,
+      "text": "谁要割掉我的喉舌\n我的全身器官都用来发声\n谁要收买我的怯懦\n我的全部灵魂都用于壮胆"
+    },
+    {
+      "chunk_id": "文虬_wenqiu/野蛮#s4",
+      "title": "野蛮",
+      "poet": "文虬",
+      "poem_id": "文虬_wenqiu/野蛮",
+      "stanza_idx": 4,
+      "score": 0.652436,
+      "text": "听见我的恐惧\n被击的野蛮\n索性站起来\n黑压压的\n都用黑布蒙住脸"
+    },
+    {
+      "chunk_id": "陈耿雄_chengengxiong/变色龙#s1",
+      "title": "变色龙",
+      "poet": "陈耿雄",
+      "poem_id": "陈耿雄_chengengxiong/变色龙",
+      "stanza_idx": 1,
+      "score": 0.644265,
+      "text": "说我习惯伪装\n不如说我背负着颜色\n说我满嘴风花雪月\n不如说我习惯伪装\n我的脚爪抓住岩石的秘密\n我的尾巴拖着树的忧郁\n你要我吟咏什么\n还有什么值得吟咏\n我喜欢穿着五颜六色\n让全世界都不清楚我的本色"
+    }
+  ]
+}

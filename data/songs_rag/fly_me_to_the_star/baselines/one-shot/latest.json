@@ -1,0 +1,9 @@
+{
+  "run": "run-20261108T132342648991Z-685855b4",
+  "updated_at": "2026-11-08T13:23:48+00:00",
+  "song": "fly_me_to_the_star",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "passed": 6,
+  "total": 20
+}

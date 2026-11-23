@@ -1,0 +1,9 @@
+{
+  "run": "run-20261108T134648736062Z-4df32421",
+  "updated_at": "2026-11-08T13:46:57+00:00",
+  "song": "spiral",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "passed": 4,
+  "total": 20
+}

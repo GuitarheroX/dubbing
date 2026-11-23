@@ -1,0 +1,21 @@
+{
+  "id": "81347a7d-bfd3-4e84-8c72-3135b92b3270",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"“全部”对应ぜんぶ，“一起 去寻找”准确传达さがしにゆこう的邀约语气\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"emotion\":{\"score\":5,\"reason\":\"重复与号召感保留，情绪轻快一致\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"“全部 全部 全部／一起 去寻找”顺口自然，符合歌词文体\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"表达清晰有力，但“一起 去寻找”略常规\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“全部全部 全部”保留重复，“一起出发 寻找”基本达意但“出发”为增补\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"号召感稍强，情绪方向一致\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"naturalness\":{\"score\":3,\"reason\":\"“一起出发 寻找”搭配略生硬，节奏上稍显堆叠\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"“出发”增加动感但整体普通\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“全部全部 全部”保留原意，“一起出发 去找”基本对应但“出发”为增补\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，稍偏行动号召\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"naturalness\":{\"score\":3,\"reason\":\"“一起出发 去找”口语可懂但搭配不够顺\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，缺少鲜明意象\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"“全部”对应ぜんぶ，“一起去寻找”准确传达邀约\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"emotion\":{\"score\":5,\"reason\":\"重复与共同寻找的情绪完整保留\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"“全部 全部 全部／一起去寻找”顺口自然\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"清晰有力，但措辞较常规\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“全部”准确，“去寻找吧”传达邀约但省略“一起”的共同感\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"号召情绪保留，但共同探索的温暖感稍弱\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"“全部 全部 全部／去寻找吧”自然顺口\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"简洁有力，但略平淡\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"“全部”对应ぜんぶ，“一起去寻找”准确传达原意\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"emotion\":{\"score\":5,\"reason\":\"重复与共同寻找的情绪完整保留\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"“全部 全部 全部／一起去寻找”顺口自然\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"表达清晰，但措辞较常规\",\"phrase_ids\":[\"O1-01\",\"O1-02\",\"O1-03\",\"O1-04\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 840,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 1220,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "```json\n{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"啊 按不住的 这悲伤\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"按 pattern 用空格切成 1+4+3，与 V1-01「啊 按不住的 在翻涌」保留同一句骨架，只把落点从动作换成情绪\"}\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"推着我 不肯停的兽\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"3+5，对应 V1-02「胸腔里 蠢动的野兽」的位置呼应；把「動かす」写成「推着我」的动作感，比初版「不肯歇」更口语\"}\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"绕圈的那句话 握碎成泡沫\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"6+5 切分；借了参考里「写在手心的话」的句式骨架，换成自己的「绕圈的那句话」承接トートロジー，落点是握碎的泡，不照抄原句\"}\n    }\n  ]\n}\n```",
+  "finished_at": "2026-11-08T10:42:03+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3176,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 2151,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

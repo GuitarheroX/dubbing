@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T105406398885Z-cc1f400f",
+  "updated_at": "2026-11-08T10:56:03+00:00",
+  "song": "fuusen",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

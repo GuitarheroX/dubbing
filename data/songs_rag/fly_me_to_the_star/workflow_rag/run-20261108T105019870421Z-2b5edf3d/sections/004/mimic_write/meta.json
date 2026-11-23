@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"报晓鸟 你别唱 让夜色 再停留\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"3+3+3+3 逐段对上 pattern，保留初版「你别唱」的祈求语气，把原句报晓的鸟化成挽留的对象\"}\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"时针它 慢一点 停在 这一秒\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"3+3+2+3；初版只有十字，补一个「它」把「停住」换成「停在 这一秒」凑满十一字，动作更具体\"}\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"一颗流星悄悄 无声 滑进那 将明的清晨 落成满地碎光\",\n      \"chars\": 22,\n      \"self_check\": {\"budget\": [22, 22], \"ok\": true, \"note\": \"6+2+3+5+6；「无声」借参考里星海无声的静，末段留初版的碎光意象，「落成」对应零れ落ちて\"}\n    },\n    {\n      \"id\": \"B1-04\",\n      \"zh\": \"oh 带我飞向星\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"oh 占一拍，其余五字与前几段同句保持一致\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T10:53:52+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3004,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2304,
+    "output_tokens": 3262,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

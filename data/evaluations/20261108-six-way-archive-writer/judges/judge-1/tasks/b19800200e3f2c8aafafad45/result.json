@@ -1,0 +1,225 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "准确传达“玫瑰是玫瑰”的重复与高贵绽放、美丽凋零的核心语义",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "保留原句庄重、宿命感的情绪与意境",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "“玫瑰是玫瑰”略直译但可理解，整体顺口",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "重复结构有力，意象清晰，但稍欠中文歌词的润色",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“骄傲”替代“气高”略有偏移，“凋散”不如“散る”自然但主旨保留",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，但“凋散”稍显生硬削弱美感",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“凋散”不常见，读来生硬",
+          "phrase_ids": [
+            "C2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，“凋散”影响意象流畅",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“开到最盛时”“散得从容”添加了原文没有的从容、极盛之意，偏离简洁的宿命陈述",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪仍庄重，但“从容”改变了原句凄美决绝的意味",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文流畅，但句式拉长改变了原短句节奏",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象鲜明，但添加的修饰服务的是改写后的情绪",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "与A语义相同，准确传达核心信息",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "保留庄重宿命情绪",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "全角空格不影响，整体顺口，“玫瑰是玫瑰”略直译",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "重复结构有力，意象清晰",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“一身深红高傲盛开”“一瓣瓣散落”添加了原文没有的颜色与花瓣细节，且“开/落”替代“咲いて/散る”尚可但改动较大",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪仍偏壮美，但添加的视觉细节使意境从宿命咏叹偏向描写",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，有歌词感",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象鲜明有力，但部分来自添加而非原文",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“高傲地盛开”对应“気高く咲いて”尚可，“凋散”稍偏但主旨保留",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，但“凋散”略生硬",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "“凋散”不自然，且两句“玫瑰啊”结构不统一",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，“凋散”影响流畅",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02"
+          ]
+        }
+      }
+    }
+  ]
+}

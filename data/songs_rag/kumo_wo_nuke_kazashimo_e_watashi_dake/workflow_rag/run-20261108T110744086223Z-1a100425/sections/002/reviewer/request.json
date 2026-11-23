@@ -1,0 +1,227 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "phrases": [
+      {
+        "id": "V2-01",
+        "section": "V2",
+        "ja": "突風一吹き、晴れ",
+        "budget": {
+          "min": 7,
+          "max": 7
+        },
+        "pattern": [
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "id": "V2-02",
+        "section": "V2",
+        "ja": "私は道の上",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": "V2-03",
+        "section": "V2",
+        "ja": "とうとうと闊歩",
+        "budget": {
+          "min": 5,
+          "max": 5
+        },
+        "pattern": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": "V2-04",
+        "section": "V2",
+        "ja": "その風下、お前だけ",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          2,
+          4,
+          5
+        ]
+      },
+      {
+        "id": "V2-05",
+        "section": "V2",
+        "ja": "草原に立った影",
+        "budget": {
+          "min": 7,
+          "max": 7
+        },
+        "pattern": [
+          2,
+          3,
+          2
+        ]
+      },
+      {
+        "id": "V2-06",
+        "section": "V2",
+        "ja": "渡りの白い羽根",
+        "budget": {
+          "min": 9,
+          "max": 9
+        },
+        "pattern": [
+          4,
+          5
+        ]
+      },
+      {
+        "id": "V2-07",
+        "section": "V2",
+        "ja": "私の白い風",
+        "budget": {
+          "min": 9,
+          "max": 9
+        },
+        "pattern": [
+          4,
+          5
+        ]
+      },
+      {
+        "id": "V2-08",
+        "section": "V2",
+        "ja": "靡く",
+        "budget": {
+          "min": 3,
+          "max": 3
+        },
+        "pattern": [
+          3
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V2",
+      "phrases": [
+        {
+          "id": "V2-01",
+          "zh": "一阵 风吹过 天晴",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "2+3+2 对应三个音块，与 V1-01「一阵 风穿过」共用同一开头，保留重复感"
+          }
+        },
+        {
+          "id": "V2-02",
+          "zh": "我走在这 空荡路上",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "改掉初版 3+5 的断法，按 pattern 切成 4+4"
+          }
+        },
+        {
+          "id": "V2-03",
+          "zh": "大步 走成风",
+          "chars": 5,
+          "self_check": {
+            "budget": [
+              5,
+              5
+            ],
+            "ok": true,
+            "note": "保留初版，2+3 切分；「走成风」呼应后面化风"
+          }
+        },
+        {
+          "id": "V2-04",
+          "zh": "风下 远远只剩 你站在那里",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "2+4+5；「只剩」与 V1-04「只剩我一个」对仗，只把「我」换成「你」"
+          }
+        },
+        {
+          "id": "V2-05",
+          "zh": "草原 一道影 拉长",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "原曲与 V1-05 完全相同，译词也照搬，2+3+2"
+          }
+        },
+        {
+          "id": "V2-06",
+          "zh": "远飞的鸟 落下白羽毛",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "保留初版的候鸟羽毛意象，4+5 对上两段旋律"
+          }
+        },
+        {
+          "id": "V2-07",
+          "zh": "我化成风 雪白色的风",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "与 V1-06「我化成风 青蓝色的风」句式全同，只换颜色，蓝转白"
+          }
+        },
+        {
+          "id": "V2-08",
+          "zh": "随风飘",
+          "chars": 3,
+          "self_check": {
+            "budget": [
+              3,
+              3
+            ],
+            "ok": true,
+            "note": "与 V1-07 完全重复，保留原曲的重复"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

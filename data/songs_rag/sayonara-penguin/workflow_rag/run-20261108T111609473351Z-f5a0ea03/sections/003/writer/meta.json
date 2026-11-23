@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\"id\": \"C1-01\", \"zh\": \"再见啦 小企鹅\"},\n    {\"id\": \"C1-02\", \"zh\": \"摇摇摆摆向前走 也要笑着啊\"},\n    {\"id\": \"C1-03\", \"zh\": \"爱上这世界的时候 记得眨眨眼\"},\n    {\"id\": \"C1-04\", \"zh\": \"风穿过了长街 风带走我和你\"},\n    {\"id\": \"C1-05\", \"zh\": \"一滴眼泪落下来\"},\n    {\"id\": \"C1-06\", \"zh\": \"再见啦 小企鹅\"}\n  ]\n}",
+  "finished_at": "2026-11-08T11:17:46+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 1772,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 2037,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

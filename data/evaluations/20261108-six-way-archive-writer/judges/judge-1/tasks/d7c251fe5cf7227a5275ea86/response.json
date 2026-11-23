@@ -1,0 +1,21 @@
+{
+  "id": "7c7765f7-5a95-4db2-b5a0-ac823717ed1e",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更凝练自然，V1-02“恍惚等一颗迟来的流星”保留“呆然”与“终将看见”的等待感，意象集中；B的“茫然间 仿佛望见流星划落”把“いずれ見える”弱化为“仿佛”，且“划落”增添原文没有的动态。V1-01、V1-03两版均自然，A略简洁。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 211,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 118,
+    "service_tier": "standard"
+  }
+}

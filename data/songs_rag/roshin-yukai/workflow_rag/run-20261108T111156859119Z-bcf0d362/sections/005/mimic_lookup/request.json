@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C2",
+    "query_text": "炉心深处 那片蓝\n好想纵身跳进去 化一片光\n被那一片湛蓝的光 温柔地吞没 多美\n炉心深处 那片蓝\n倘若这样跳进去 又会怎样\n仿佛一切过错 都被原谅 连我也一样",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

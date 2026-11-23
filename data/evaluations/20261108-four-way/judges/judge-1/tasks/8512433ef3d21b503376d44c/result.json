@@ -1,0 +1,151 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“懂我的笑脸”略偏“知った顔”的熟稔/了然义，但整体核心保留；“井”的补充意象合理。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "恐惧、渴求、依恋的情绪方向一致，“井”意象强化了无底恐惧。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-06",
+            "C1-07"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "多数顺口，“攥紧我手腕”稍具体化但可唱；“我不是 一个人吧”略生硬。",
+          "phrase_ids": [
+            "C1-07",
+            "C1-08"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“那口井深得没有底”意象鲜明，服务主题；其余表达较有力。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-06"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“装作全都懂”贴近“知った顔”；“丢给我”略偏“くれよ”的请求语气；“你懂我”直译可接受。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-03",
+            "C1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，恐惧与依恋保留；“踩着拍子转”稍轻快，略淡原句的疏离感。",
+          "phrase_ids": [
+            "C1-05",
+            "C1-07"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，“那个深底”稍生硬但可理解。",
+          "phrase_ids": [
+            "C1-06"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏平实，“深不见底的才让我害怕”较普通。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-06"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "“带着了然神情微笑吧”准确；“深不见底的恐惧”略改“恐れる”为名词化恐惧，核心保留；“并非孤单一人啊”与疑问语气有偏移。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-08"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪基本一致，但“并非孤单一人啊”把原句的不确定/反问变为断言，削弱不安感。",
+          "phrase_ids": [
+            "C1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "较顺口，“自以为懂地舞着吗”稍书面但可唱。",
+          "phrase_ids": [
+            "C1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏直译，意象力度一般。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-06"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“熟悉的神情”偏离“知った顔”的了然/装懂义；“无底的恐惧在心中”添加“在心中”且名词化；“并非独自一人啊”改变疑问语气。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-08"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "整体情绪方向尚可，但结尾断言化削弱原句不安与反问。",
+          "phrase_ids": [
+            "C1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "较顺口，“别放开我别停下啊”自然。",
+          "phrase_ids": [
+            "C1-07"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，“无底的恐惧在心中”较空泛。",
+          "phrase_ids": [
+            "C1-02"
+          ]
+        }
+      }
+    }
+  ]
+}

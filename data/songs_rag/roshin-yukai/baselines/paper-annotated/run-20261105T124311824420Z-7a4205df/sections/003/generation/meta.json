@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 2.062,
+  "usage": {
+    "input_tokens": 478,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 251,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": false,
+    "human_annotations_in_generation": true,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "generation",
+  "variant": "paper-annotated",
+  "migrated_from": "run-20261105T124311824420Z-7a4205df",
+  "raw_response": "1. 核融合炉里啊 (7 syllables: hé róng hé lú lǐ a)\n2. 想要纵身跳进去 (11: xiǎng yào zòng shēn tiào jìn qù)\n3. 被湛蓝的光包围着真美丽 (15: bèi zhàn lán de guāng bāo wéi zhe zhēn měi lì)\n4. 核融合炉里啊 (7: hé róng hé lú lǐ a)\n5. 纵身跳进去的话那样的话 (11: zòng shēn tiào jìn qù de huà nà yàng de huà)\n6. 仿佛一切都将被宽恕的感觉 (15: fǎng fú yī qiè dōu jiāng bèi kuān shù de gǎn jué)\n\nRhyme check (final phonemes): line 1 ends \"a\", line 2 \"ù\", line 3 \"ì\", line 4 \"a\", line 5 \"à\", line 6 \"é\" — the source has no consistent end-rhyme pattern across these lines, and this translation likewise does not impose one."
+}

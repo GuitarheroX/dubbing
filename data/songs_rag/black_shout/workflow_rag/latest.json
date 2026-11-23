@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T104753727635Z-7f541fb6",
+  "updated_at": "2026-11-08T10:50:15+00:00",
+  "song": "black_shout",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

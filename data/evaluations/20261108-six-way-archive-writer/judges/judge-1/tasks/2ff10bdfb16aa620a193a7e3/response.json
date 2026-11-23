@@ -1,0 +1,21 @@
+{
+  "id": "48355611-e49f-4e2b-aa66-ccf64314bef8",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更简洁自然，V1-02“烦透啦”口语感强且贴合原意，V1-03/04跨句衔接流畅；B的V1-02“听够 真的受够啦”略冗，V1-03“更想”悬置感稍弱。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 331,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 103,
+    "service_tier": "standard"
+  }
+}

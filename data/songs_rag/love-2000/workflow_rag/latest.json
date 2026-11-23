@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T110953236619Z-11415c17",
+  "updated_at": "2026-11-08T11:11:52+00:00",
+  "song": "love-2000",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

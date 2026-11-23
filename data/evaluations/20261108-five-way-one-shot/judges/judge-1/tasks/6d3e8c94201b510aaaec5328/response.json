@@ -1,0 +1,21 @@
+{
+  "id": "4dde7371-9d9c-4b1b-8a6a-3da93e850d63",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"B1-01将“掴み捨てて”处理为抓住并丢弃，方向可通但“走向未来”略增动作；B1-04“比时空更多”偏离“よりも”的比较结构。\",\"phrase_ids\":[\"B1-01\",\"B1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"整体情绪方向保留，但“比时空更多”削弱了原句超越时空的决绝感。\",\"phrase_ids\":[\"B1-04\"]},\"naturalness\":{\"score\":3,\"reason\":\"“想移开眼外”生硬，“比时空更多”中文搭配不自然。\",\"phrase_ids\":[\"B1-02\",\"B1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达可理解但偏平，缺少原句的张力。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"B1-01保留抓取、甩开、面向未来的动作链；B1-02准确；B1-03“昨日”是合理补充；B1-04“都敢越”强化但未改核心。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"决绝、想逃避又超越的情绪保留较充分，“都敢越”略增强力度。\",\"phrase_ids\":[\"B1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"断句有歌词感，“时空 都敢越”稍跳但可唱可解。\",\"phrase_ids\":[\"B1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“攥紧”“甩开”“别过脸”等动作意象鲜明，服务主题。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"B1-01“攥紧又松开”弱化“捨てて”的丢弃义；B1-04“更想”悬空，未完成比较对象。\",\"phrase_ids\":[\"B1-01\",\"B1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪基本一致，但结尾悬置使力度减弱。\",\"phrase_ids\":[\"B1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“比起时空 更想”作为片段可接受但略不完整。\",\"phrase_ids\":[\"B1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，缺少鲜明动作或意象。\",\"phrase_ids\":[\"B1-01\",\"B1-03\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"B1-01“甩向未来”改变动作方向；B1-02“见惯太多面孔”将“出会いし続けて”具体化为面孔且偏移；B1-03“用旧的自己”是新增修饰。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]},\"emotion\":{\"score\":3,\"reason\":\"逃避与超越的情绪方向尚在，但“用旧”带来原句没有的厌倦感。\",\"phrase_ids\":[\"B1-03\"]},\"naturalness\":{\"score\":3,\"reason\":\"“比那 用旧 的自己”“比这 时空远”断句生硬且语义跳跃。\",\"phrase_ids\":[\"B1-03\",\"B1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"“甩向未来”有画面但偏离原意，“用旧”意象虽新却服务偏移主题。\",\"phrase_ids\":[\"B1-01\",\"B1-03\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"四句核心信息基本准确，B1-01“紧抓过去抛弃迎未来”略压缩但方向保留；B1-04省略“よりも”后的比较项，语义稍悬。\",\"phrase_ids\":[\"B1-01\",\"B1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向一致，但表达较平，决绝与逃避的张力不足。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"naturalness\":{\"score\":3,\"reason\":\"“紧抓过去抛弃迎未来”连动堆叠生硬，“比起时空”结尾悬空。\",\"phrase_ids\":[\"B1-01\",\"B1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"语义清楚但意象和力度普通。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 558,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 1037,
+    "service_tier": "standard"
+  }
+}

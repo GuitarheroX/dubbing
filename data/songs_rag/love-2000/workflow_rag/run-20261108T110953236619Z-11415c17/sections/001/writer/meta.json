@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\"section\":\"I1\",\"phrases\":[{\"id\":\"I1-01\",\"zh\":\"爱从何来 又往何处 落在谁的胸口\"},{\"id\":\"I1-02\",\"zh\":\"手贴胸口 问一问 心是否诚实\"},{\"id\":\"I1-03\",\"zh\":\"假话和假面 我一点都不想要\"},{\"id\":\"I1-04\",\"zh\":\"只想凝望真实 眼神不闪躲\"}]}",
+  "finished_at": "2026-11-08T11:10:31+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2615,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 3636,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

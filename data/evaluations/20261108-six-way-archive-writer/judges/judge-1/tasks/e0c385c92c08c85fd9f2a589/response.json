@@ -1,0 +1,21 @@
+{
+  "id": "fb98dbd3-dc8a-4f84-9e1f-f88b76b30000",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A的V2-01“终场”比B“散场”更贴近“終演”的正式感；V2-02保留“命运”核心词，B漏译且“不显形”偏生硬；V2-03“看不分明”比“看不清”更有余韵，整体意境与自然度更佳。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 211,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 102,
+    "service_tier": "standard"
+  }
+}

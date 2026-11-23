@@ -1,0 +1,114 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "phrases": [
+      {
+        "id": "B1-01",
+        "section": "B1",
+        "ja": "過去を掴み捨てて未来",
+        "budget": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      {
+        "id": "B1-02",
+        "section": "B1",
+        "ja": "出会いし続けて目を逸らしたい",
+        "budget": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      {
+        "id": "B1-03",
+        "section": "B1",
+        "ja": "あの自分よりも",
+        "budget": {
+          "min": 7,
+          "max": 7
+        },
+        "pattern": [
+          2,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "B1-04",
+        "section": "B1",
+        "ja": "時空よりも",
+        "budget": {
+          "min": 5,
+          "max": 5
+        },
+        "pattern": [
+          2,
+          3
+        ]
+      }
+    ],
+    "draft": {
+      "section": "B1",
+      "phrases": [
+        {
+          "id": "B1-01",
+          "zh": "攥紧过去 一甩手 未来",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "保留初稿的动作链，三顿 4+3+2，甩手处留白正好落在旋律重音"
+          }
+        },
+        {
+          "id": "B1-02",
+          "zh": "不停地遇见 只想把目光移开",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "把初版「总在遇见」换成「不停地遇见」贴住「出会いし続けて」的绵延感，后半句压缩到七字"
+          }
+        },
+        {
+          "id": "B1-03",
+          "zh": "比那 旧我 更远些",
+          "chars": 7,
+          "self_check": {
+            "budget": [
+              7,
+              7
+            ],
+            "ok": true,
+            "note": "按 pattern 2+2+3 断三处，借参考里「我将比现在更……些」的比较骨架"
+          }
+        },
+        {
+          "id": "B1-04",
+          "zh": "比光 更远些",
+          "chars": 5,
+          "self_check": {
+            "budget": [
+              5,
+              5
+            ],
+            "ok": true,
+            "note": "2+3 对 pattern，把「時空」换成「光」，与 C1 晨光接气，并和上一句共用「更远些」做重复"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

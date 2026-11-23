@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"零碎的拍子 走两步\",\n      \"chars\": 8,\n      \"self_check\": {\n        \"budget\": [8, 8],\n        \"ok\": true,\n        \"note\": \"保留初版「零零散散」的散拍感，压成「零碎」；中间空格断句，「走两步」补一个身体动作凑足八音——借了参考里「沿路踩碎」那种边走边碎的步态\"\n      }\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"哼得走调 也唱给你听\",\n      \"chars\": 9,\n      \"self_check\": {\n        \"budget\": [9, 9],\n        \"ok\": true,\n        \"note\": \"初版「你听见了吗」改为「唱给你听」，把偷偷盼人听见变成主动递出去；空格让「哼得走调」和后半句分两口气\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:22:17+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3075,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 1538,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

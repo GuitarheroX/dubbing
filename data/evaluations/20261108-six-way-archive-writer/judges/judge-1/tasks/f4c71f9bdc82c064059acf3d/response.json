@@ -1,0 +1,21 @@
+{
+  "id": "dcb1f9be-22e3-42f8-85c8-1232438773b6",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"各句核心信息准确，'开始迈出的脚步'合理补足'歩き出した'的动作主体\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\",\"V1-07\",\"V1-08\"]},\"emotion\":{\"score\":4,\"reason\":\"孤独与觉醒的氛围保留，'开始迈出的脚步'稍显平实但方向一致\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-08\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文顺口，歌词文体自然，无明显生硬\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\",\"V1-07\",\"V1-08\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰，'摸索着的话语'有画面感，整体表达稳妥\",\"phrase_ids\":[\"V1-02\",\"V1-07\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心语义准确，'没有方向没有出口'对应'あても出口も'合理\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\",\"V1-07\",\"V1-08\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，'迈步向前走'略平淡但未偏离\",\"phrase_ids\":[\"V1-01\",\"V1-08\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，'翻开书页之上独自一人'语序稍生硬\",\"phrase_ids\":[\"V1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象较普通，'摸索着说出的言语'尚可\",\"phrase_ids\":[\"V1-07\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"'漫长的梦''空白页中央''没有门'等为增补意象，'摸黑捡起散落的词语'偏离'手探りの言葉'原意\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-04\",\"V1-07\"]},\"emotion\":{\"score\":4,\"reason\":\"孤独摸索的情绪氛围保留且较浓，但部分增饰改变了原句质感\",\"phrase_ids\":[\"V1-02\",\"V1-07\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文流畅有歌词感，个别句如'耳朵里忽然落进一声'稍显刻意\",\"phrase_ids\":[\"V1-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明，'空白页中央''摸黑捡起词语'有表现力但属增补\",\"phrase_ids\":[\"V1-02\",\"V1-07\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"'一页白纸''空白里''尾音微微发抖'为增补细节，'说出第一句话'偏离'手探りの言葉と歩き出した'\",\"phrase_ids\":[\"V1-02\",\"V1-05\",\"V1-06\",\"V1-07\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向大体一致，但'尾音微微发抖'引入原词没有的紧张感\",\"phrase_ids\":[\"V1-06\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文较顺，'转一圈什么都看不见'口语自然\",\"phrase_ids\":[\"V1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"画面感较强，'一页白纸上一个人'有张力，但部分靠增饰\",\"phrase_ids\":[\"V1-02\",\"V1-06\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心信息准确，'只剩我一人'合理传达独自一人的状态\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\",\"V1-07\",\"V1-08\"]},\"emotion\":{\"score\":4,\"reason\":\"孤独与觉醒氛围保留，'凭着摸索的话语'稍抽象但方向一致\",\"phrase_ids\":[\"V1-07\"]},\"naturalness\":{\"score\":5,\"reason\":\"短句顺口，符合歌词文体，断句自然\",\"phrase_ids\":[\"V1-01\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"'摊开的书页上只剩我一人'意象清晰，整体表达简洁有力\",\"phrase_ids\":[\"V1-02\",\"V1-06\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心语义准确，'伫立'合理补足独自站立的状态\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\",\"V1-07\",\"V1-08\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，'梦醒时分'略带文言感但氛围保留\",\"phrase_ids\":[\"V1-01\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，'梦醒时分'稍显书面，'摊开书页上独自一人伫立'略紧\",\"phrase_ids\":[\"V1-01\",\"V1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但较平实，意象普通\",\"phrase_ids\":[\"V1-02\",\"V1-07\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1308,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 1261,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "query_text": "草丛最深处 一朵无名花\n若我这一生 只安静盛开\n只迎着风儿 轻轻地摇摆\n若能一生只摇曳 那该有多好",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

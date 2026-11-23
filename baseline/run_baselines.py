@@ -7,6 +7,9 @@
 | ``paper-original`` | 论文 Exp.4 原指令 | 本段原文逐行；不传预算、分组、保留标记、标题 | 生成 + 同模型清理格式 |
 | ``paper-annotated`` | 论文 Exp.4 的人工预算适配版 | 本段 ``id`` / ``ja`` / ``budget`` / ``pattern`` / ``keep_source`` | 生成 + 同模型清理格式 |
 
+另可显式选择 ``one-shot-archive``：``archive/shared.md`` + ``archive/b.md``，
+输入和单次调用结构与 one-shot 相同，结果独立保存；不包含在默认的 ``all`` 三组中。
+
 ``one-shot`` 是 workflow 的消融对照：workflow 给的输入它都给（按段推进，翻译当前段时
 看得到整首歌词和已经定稿的部分），差别只在没有 A 的意境分析和 C 的“检查 → 返修”闭环。
 
@@ -53,6 +56,7 @@ from dubbing.llm import (  # noqa: E402
 )
 from dubbing.models import Analysis, Draft, DraftPhrase, Song, View, ViewRow  # noqa: E402
 from dubbing.prompting import prompt_hash, system_for  # noqa: E402
+from dubbing.recorded_client import RecordedAPIClient  # noqa: E402
 from dubbing.song import list_songs, load_song  # noqa: E402
 from dubbing.store import Request, RunStore, run_base  # noqa: E402
 
@@ -69,6 +73,7 @@ __all__ = [
 
 PROMPTS = Path(__file__).resolve().parent
 VARIANTS = ("one-shot", "paper-original", "paper-annotated")
+ARCHIVE_VARIANT = "one-shot-archive"
 #: ``--baseline paper`` 展开成这两组。
 PAPER_VARIANTS = ("paper-original", "paper-annotated")
 PAPER_URL = "https://aclanthology.org/2026.eacl-srw.42/"
@@ -95,10 +100,15 @@ def _base(root: Path | str, song_id: str, baseline: str) -> Path:
 # --------------------------------------------------------------------------
 
 
-def build_one_shot_request(song: Song, section: str, accepted: dict[str, str]) -> Request:
+def build_one_shot_request(song: Song, section: str, accepted: dict[str, str], *, archived: bool = False) -> Request:
     """workflow 的 B 提示词 + 全曲上下文，但没有 A 分析、没有上一轮反馈。"""
     analysis = Analysis(theme="", emotional_arc="", narrative="")
-    return build_writer_request(song, analysis, focus=section, accepted=accepted, prev_texts=None)
+    request = build_writer_request(song, analysis, focus=section, accepted=accepted, prev_texts=None)
+    if archived:
+        system = "\n\n".join((REPO_ROOT / "archive" / name).read_text(encoding="utf-8").strip()
+                               for name in ("shared.md", "b.md"))
+        return Request(system=system, user=request.user, data=request.data)
+    return request
 
 
 def build_paper_request(song: Song, section: str, variant: str) -> Request:
@@ -167,112 +177,8 @@ def align_lines(generated: str, cleaned: str, phrase_ids: list[str]) -> tuple[li
     return parse_lines(cleaned, len(phrase_ids)), "cleanup.lines"
 
 
-class PaperClient(APIClient):
-    """沿用现有接口、重试和采样配置，额外留存完整 JSON 响应供核对。"""
-
-    def __init__(self, *args, protocol: str = "anthropic", thinking: str | None = None, **kwargs) -> None:
-        if protocol not in ("anthropic", "openai"):
-            raise ValueError(f"未知接口协议：{protocol}")
-        self.protocol = protocol
-        if thinking not in (None, "enabled", "disabled"):
-            raise ValueError(f"未知思考设置：{thinking}")
-        self.thinking = thinking
-        super().__init__(*args, **kwargs)
-
-    @property
-    def url(self) -> str:
-        if self.protocol == "openai":
-            return f"{self.base_url}/chat/completions"
-        return super().url
-
-    def _headers(self) -> dict[str, str]:
-        if self.protocol == "openai":
-            if not self.api_key:
-                raise LLMError("没有 API key：请设置 DEEPSEEK_API_KEY")
-            return {"content-type": "application/json", "Authorization": f"Bearer {self.api_key}"}
-        return super()._headers()
-
-    def _body(self, system: str, user: str, *, agent: str) -> dict[str, Any]:
-        if self.protocol == "openai":
-            body: dict[str, Any] = {
-                "model": self.model,
-                "max_tokens": self.max_tokens,
-                "temperature": self.temperature_for(agent),
-                "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
-            }
-            if self.thinking is not None:
-                body["enable_thinking"] = self.thinking == "enabled"
-            return body
-        body = super()._body(system, user, agent=agent)
-        if self.thinking is not None:
-            body["thinking"] = {"type": self.thinking}
-        return body
-
-    def complete(self, *, agent: str, system: str, user: str) -> str:
-        self.last_response = None
-        self.last_usage = None
-        self.last_thinking_observation = None
-        return super().complete(agent=agent, system=system, user=user)
-
-    def _text_of(self, resp, *, agent: str) -> str:
-        try:
-            self.last_response = resp.json()
-        except ValueError:
-            pass
-        data = self.last_response
-        if self.protocol == "openai":
-            if not isinstance(data, dict):
-                raise LLMError(f"agent={agent} 返回的不是 JSON 对象")
-            if "error" in data:
-                raise LLMError(f"agent={agent} 调用失败：{str(data['error'])[:300]}")
-            self.last_usage = data.get("usage")
-            choices = data.get("choices")
-            if not isinstance(choices, list) or not choices or not isinstance(choices[0], dict):
-                raise LLMError(f"agent={agent} 的响应里没有 choices")
-            choice = choices[0]
-            message = choice.get("message")
-            usage = self.last_usage or {}
-            details = usage.get("completion_tokens_details") or {}
-            reasoning_tokens = details.get("reasoning_tokens")
-            has_reasoning = isinstance(message, dict) and bool(
-                message.get("reasoning_content") or message.get("reasoning")
-            )
-            self.last_thinking_observation = {
-                "requested": self.thinking,
-                "reasoning_tokens": reasoning_tokens,
-                "reasoning_content_present": has_reasoning,
-            }
-            if self.thinking == "disabled" and (
-                has_reasoning or isinstance(reasoning_tokens, (int, float)) and reasoning_tokens > 0
-            ):
-                raise LLMError("已请求 enable_thinking=false，但网关仍返回推理内容或 reasoning tokens；停止该任务")
-            if choice.get("finish_reason") == "length":
-                raise LLMError(f"agent={agent} 的输出被 max_tokens={self.max_tokens} 截断")
-            content = message.get("content") if isinstance(message, dict) else None
-            if not isinstance(content, str) or not content.strip():
-                raise LLMError(f"agent={agent} 的响应里没有正文，finish_reason={choice.get('finish_reason')}")
-            return content.strip()
-        if isinstance(data, dict):
-            self.last_usage = data.get("usage")
-            blocks = data.get("content")
-            blocks = blocks if isinstance(blocks, list) else []
-            has_reasoning = any(
-                isinstance(block, dict)
-                and (block.get("type") == "redacted_thinking" or block.get("type") == "thinking" and bool(block.get("thinking")))
-                for block in blocks
-            )
-            usage = self.last_usage or {}
-            reasoning_tokens = (usage.get("output_tokens_details") or {}).get("reasoning_tokens")
-            self.last_thinking_observation = {
-                "requested": self.thinking,
-                "reasoning_tokens": reasoning_tokens,
-                "reasoning_content_present": has_reasoning,
-            }
-            if self.thinking == "disabled" and (
-                has_reasoning or isinstance(reasoning_tokens, (int, float)) and reasoning_tokens > 0
-            ):
-                raise LLMError("已请求 thinking.type=disabled，但接口仍返回推理内容或 reasoning tokens；停止该任务")
-        return super()._text_of(resp, agent=agent)
+class PaperClient(RecordedAPIClient):
+    """baseline 的客户端；共享协议与思考模式校验，保留既有导入接口。"""
 
 
 # --------------------------------------------------------------------------
@@ -370,7 +276,7 @@ def _finish_run(store: RunStore, song: Song, run_id: str, texts: dict[str, str],
 # --------------------------------------------------------------------------
 
 
-def run_one_shot(song: Song, client: LLMClient, *, out: Path, dry_run: bool = False) -> Path:
+def run_one_shot(song: Song, client: LLMClient, *, out: Path, dry_run: bool = False, archived: bool = False) -> Path:
     store = RunStore(out)
     run_id = store.new_preview() if dry_run else store.new_run()
     texts: dict[str, str] = {}
@@ -378,18 +284,21 @@ def run_one_shot(song: Song, client: LLMClient, *, out: Path, dry_run: bool = Fa
     for index, section in enumerate(song.sections, 1):
         if not song.translatable_of(section.id):
             continue
-        request = build_one_shot_request(song, section.id, texts)
+        request = build_one_shot_request(song, section.id, texts, archived=archived)
         if dry_run:
             store.prepare(run_id, "writer", request, section_index_=index)
             continue
 
-        print(f"[one-shot] {song.id} / {section.id} 生成", file=sys.stderr)
+        print(f"[{ARCHIVE_VARIANT if archived else 'one-shot'}] {song.id} / {section.id} 生成", file=sys.stderr)
         raw = _call(
             store, run_id, "writer", request, client,
             index=index, llm_agent="writer", extra_meta={"section": section.id},
         )
         try:
             draft, warnings = parse_draft_output(extract_json(raw), song, section.id)
+            missing = [p.id for p in song.translatable_of(section.id) if not draft.texts().get(p.id, "").strip()]
+            if missing:
+                raise ValueError("生成缺少非空译词：" + ", ".join(missing))
         except (LLMError, ValueError) as exc:
             store.abandon(
                 run_id, "writer", reason=f"解析失败：{exc}", raw_response=raw,
@@ -509,9 +418,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--baseline",
         action="append",
-        choices=(*VARIANTS, "paper", "all"),
+        choices=(*VARIANTS, ARCHIVE_VARIANT, "paper", "all"),
         default=None,
-        help="可重复；paper=两组论文 baseline，all=全部三种（默认）",
+        help="可重复；paper=两组论文 baseline，all=原有三种（默认）；one-shot-archive 显式选择归档 shared.md+b.md",
     )
     parser.add_argument("--dry-run", action="store_true", help="只保存请求，不调用模型")
     parser.add_argument("--client", choices=("pending", "api"), default="pending", help="真实调用须显式选择 api")
@@ -560,8 +469,8 @@ def main(argv: list[str] | None = None) -> int:
             max_retries=args.max_retries,
         )
         out = _base(args.root, song_id, variant)
-        if variant == "one-shot":
-            return variant, run_one_shot(song, client, out=out, dry_run=args.dry_run)
+        if variant in ("one-shot", ARCHIVE_VARIANT):
+            return variant, run_one_shot(song, client, out=out, dry_run=args.dry_run, archived=variant == ARCHIVE_VARIANT)
         return variant, run_paper(song, variant, client, out=out, dry_run=args.dry_run)
 
     with ThreadPoolExecutor(max_workers=args.jobs) as executor:

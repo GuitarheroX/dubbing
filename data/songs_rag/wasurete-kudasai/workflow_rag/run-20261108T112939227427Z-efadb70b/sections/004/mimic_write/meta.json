@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "```json\n{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"把心交到我手里\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"与 I1-01 同句同译，保留原曲重复；旋律按 3+4 断在「把心交 / 到我手里」\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"把花束递到你手里\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"3+5 断成「把花束 / 递到你手里」，与上句「交到我手里」对仗\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"任头发在风里摇 没有一只手来按住\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"7+8；把初版「没有人伸手去按住」换成「没有一只手来按住」，落到具体的手的意象\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"把话都说给我听\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"3+4 断成「把话都 / 说给我听」\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"把鼻歌都唱给我听\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"初版只有七字，补一个「都」凑足；3+5 断成「把鼻歌 / 都唱给我听」，与上句共用「都…给我听」的重复骨架\"}\n    },\n    {\n      \"id\": \"C1-06\",\n      \"zh\": \"长长的 长长的 迷宫尽头 我把它们放好\",\n      \"chars\": 16,\n      \"self_check\": {\"budget\": [16, 16], \"ok\": true, \"note\": \"按 3+3+4+6 四段排：长长的 / 长长的 / 迷宫尽头 / 我把它们放好；「它们」承前面的话与鼻歌\"}\n    }\n  ]\n}\n```",
+  "finished_at": "2026-11-08T11:31:52+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 4144,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2432,
+    "output_tokens": 2352,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

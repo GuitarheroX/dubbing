@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "query_text": "命令 我察觉到 敌意\n订正 我旁观着 虚无\n安宁 掺着一点 罪恶感\n当然吧",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

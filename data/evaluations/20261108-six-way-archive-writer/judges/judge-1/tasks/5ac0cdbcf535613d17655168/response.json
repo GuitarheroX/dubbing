@@ -1,0 +1,21 @@
+{
+  "id": "17931595-af52-4fdc-b134-10e511941425",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更自然地传达出V3的感官压迫与疏离感：V3-03“明明在场 却好远”比A的“明明就在那里”更有表现力，V3-06“灌满耳朵”强化了饱和回响的意象，V3-08/10“嗡嗡响 停不下来”比A的“不停不消失不停止”更口语、更贴近耳鸣体验；A虽更贴近字面，但整体偏平。\",\"phrase_ids\":[\"V3-03\",\"V3-06\",\"V3-08\",\"V3-10\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 342,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 132,
+    "service_tier": "standard"
+  }
+}

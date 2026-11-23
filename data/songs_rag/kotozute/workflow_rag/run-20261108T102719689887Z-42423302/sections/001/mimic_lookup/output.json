@@ -1,0 +1,46 @@
+{
+  "section": "V1",
+  "query_text": "曾见过的风景\n仰头等一颗未至的流星\n愿一直仰望",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "大头鸭鸭_datouyaya/乡村月夜#s2",
+      "title": "乡村月夜",
+      "poet": "大头鸭鸭",
+      "poem_id": "大头鸭鸭_datouyaya/乡村月夜",
+      "stanza_idx": 2,
+      "score": 0.666298,
+      "text": "星空有大美\n一个人仰望得越久\n看到的星星就越多"
+    },
+    {
+      "chunk_id": "康丽_kangli/神农山索道#s3",
+      "title": "神农山索道",
+      "poet": "康丽",
+      "poem_id": "康丽_kangli/神农山索道",
+      "stanza_idx": 3,
+      "score": 0.651633,
+      "text": "仰望我们的是风\n还有天上的星星"
+    },
+    {
+      "chunk_id": "冰心_bingxin/繁星：一二七#s1",
+      "title": "繁星：一二七",
+      "poet": "冰心",
+      "poem_id": "冰心_bingxin/繁星：一二七",
+      "stanza_idx": 1,
+      "score": 0.650993,
+      "text": "流星\n飞走天空\n可能有一秒时的凝望\n然而这一瞥的光明\n已长久遗留在人的心怀里"
+    },
+    {
+      "chunk_id": "郝茂军_haomaojun/今夜我想是一颗流星#s1",
+      "title": "今夜我想是一颗流星",
+      "poet": "郝茂军",
+      "poem_id": "郝茂军_haomaojun/今夜我想是一颗流星",
+      "stanza_idx": 1,
+      "score": 0.648067,
+      "text": "今夜我想是一颗流星\n用最快的速度抵达故乡\n让还没有入睡的孩子看见我\n并许下美好的心愿"
+    }
+  ]
+}

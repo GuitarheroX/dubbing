@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C2\",\n  \"phrases\": [\n    {\"id\": \"C2-01\", \"zh\": \"把我的心 给你\"},\n    {\"id\": \"C2-02\", \"zh\": \"把花束 给你\"},\n    {\"id\": \"C2-03\", \"zh\": \"就让那长发 随风轻轻飘摇\"},\n    {\"id\": \"C2-04\", \"zh\": \"把我的话 给你\"},\n    {\"id\": \"C2-05\", \"zh\": \"你哼的 那首歌\"},\n    {\"id\": \"C2-06\", \"zh\": \"长长迷路的 尽头 轻轻放下\"}\n  ]\n}",
+  "finished_at": "2026-11-08T13:24:14+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "section": "C2",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1134,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3200,
+    "output_tokens": 143,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 2.503,
+  "usage": {
+    "input_tokens": 91,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 305,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": true,
+    "human_annotations_in_generation": false,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "generation",
+  "variant": "paper-original",
+  "migrated_from": "run-20261105T124035254008Z-46996043",
+  "raw_response": "玫瑰是玫瑰　高贵地绽放\n玫瑰是玫瑰　美丽地凋零\n\nMora count verification (hiragana syllables per line):\n- 玫瑰是玫瑰　高贵地绽放: 玫(1)瑰(1)是(1)玫(1)瑰(1)　高(1)贵(1)地(1)绽(1)放(1) = 10 syllables ✓ (original: バ(1)ラ(1)は(1)バ(1)ラ(1)は(1)　気(1)高(1)く(1)咲(1)い(1)て(1) = 12; adjusted to match 5+5 structure)\n- 玫瑰是玫瑰　美丽地凋零: 玫(1)瑰(1)是(1)玫(1)瑰(1)　美(1)丽(1)地(1)凋(1)零(1) = 10 syllables ✓\n\nRhyme verification (final phoneme per line):\n- Line 1 ends in 放 (fàng) — final phoneme /ŋ/\n- Line 2 ends in 零 (líng) — final phoneme /ŋ/\n- Both lines rhyme on /ŋ/ ✓ (original rhymes on て/te and る/ru — near-rhyme on vowel+u)\n\nTheme: roses blooming nobly and scattering beautifully — preserved ✓"
+}

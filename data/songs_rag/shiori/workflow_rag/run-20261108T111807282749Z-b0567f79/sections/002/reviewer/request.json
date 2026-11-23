@@ -1,0 +1,158 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "phrases": [
+      {
+        "id": "V2-01",
+        "section": "V2",
+        "ja": "不器用で 空回って",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "V2-02",
+        "section": "V2",
+        "ja": "傷つくことから逃げている",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          8,
+          4
+        ]
+      },
+      {
+        "id": "V2-03",
+        "section": "V2",
+        "ja": "現実とノートで行ったり来たり 慰めて",
+        "budget": {
+          "min": 18,
+          "max": 18
+        },
+        "pattern": [
+          4,
+          3,
+          3,
+          3,
+          5
+        ]
+      },
+      {
+        "id": "V2-04",
+        "section": "V2",
+        "ja": "あぁ",
+        "budget": null,
+        "keep_source": true,
+        "notes": "这句不用翻译"
+      },
+      {
+        "id": "V2-05",
+        "section": "V2",
+        "ja": "なんて生きづらい世界なんだろう",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          6,
+          5
+        ]
+      },
+      {
+        "id": "V2-06",
+        "section": "V2",
+        "ja": "だけど だけど",
+        "budget": {
+          "min": 6,
+          "max": 6
+        },
+        "pattern": [
+          3,
+          3
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V2",
+      "phrases": [
+        {
+          "id": "V2-01",
+          "zh": "太笨拙的我 空转个不停",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "前五字对第一段旋律，后五字对第二段，空格只作断句"
+          }
+        },
+        {
+          "id": "V2-02",
+          "zh": "我总是在害怕受伤 转身逃亡",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "前八字一句，后四字‘转身逃亡’收住，字数正好"
+          }
+        },
+        {
+          "id": "V2-03",
+          "zh": "现实冷硬 纸页暖 来回跑 哄哄我 在字里安眠",
+          "chars": 18,
+          "self_check": {
+            "budget": [
+              18,
+              18
+            ],
+            "ok": true,
+            "note": "按四三三三五切分，现实与纸页的温度对照保留初版意象"
+          }
+        },
+        {
+          "id": "V2-05",
+          "zh": "这世界真难活 真难喘口气",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "六字加五字，顺着前面的叹气接一句低声感慨"
+          }
+        },
+        {
+          "id": "V2-06",
+          "zh": "可是啊 可是啊",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "保留原曲重复，两个三字短句对应两个和弦拍点"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

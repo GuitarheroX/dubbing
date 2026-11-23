@@ -1,0 +1,21 @@
+{
+  "id": "a9eae04d-700a-48c5-9dce-78191ad77271",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"保留玫瑰宿命与热烈生存之意，但“血脉只认得深红玫瑰”改写了原文“生为玫瑰宿命”的表述，加入原文没有的血脉意象。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"“不得不燃”“烧到最烈”强化了宿命与激烈情绪，方向一致且有力，略偏炽烈。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"断句符合歌词节奏，整体顺口；“不得不燃”稍显突兀但可接受。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"深红、燃、烧等意象鲜明，服务主题，表达有力度。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"准确传达“生来注定是玫瑰命运”和“生来要华丽激烈地活”，核心信息保留；“如那风云”为增饰。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向正确，但“如那风云”使激烈感略显空泛，整体偏平。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"naturalness\":{\"score\":2,\"reason\":\"“我生来就注定是那朵玫瑰花的命运”冗长拗口，“活着如那风云”搭配生硬。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"expressiveness\":{\"score\":2,\"reason\":\"表达直白且“风云”意象与玫瑰主题关联弱，缺乏鲜明感染力。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"保留玫瑰宿命、华美激烈生存的核心；“落得激烈”把“生きろ”转为凋落，略有偏移。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"宿命感与华美激烈的情绪保留充分，“才算活过”增强决绝感。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"四字节奏顺畅，符合歌词文体；“落得激烈”稍不常见但可理解。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"深红、盛放、华美、激烈等意象集中鲜明，表达有力。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"准确对应“生为玫瑰命运”和“生来要绚烂激烈地活”，核心语义保留，但较简略。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向一致，但表达平淡，激烈与宿命张力不足。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"简洁通顺，符合歌词短句，但“生为玫瑰的命运”略书面。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"语义清楚但意象普通，缺乏鲜明表现力。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 752,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 808,
+    "service_tier": "standard"
+  }
+}

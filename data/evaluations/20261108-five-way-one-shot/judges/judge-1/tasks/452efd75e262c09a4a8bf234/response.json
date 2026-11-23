@@ -1,0 +1,21 @@
+{
+  "id": "6f602c6b-d19e-49c9-ae3c-0e244b60e813",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A在C1-01、C1-03、C1-06等处更自然且有画面感，C1-08“值得去爱 的日子”虽略长但语义准确；B的C1-08“可爱的日子”误读“愛すべき”，且整体表达较平。\",\"phrase_ids\":[\"C1-01\",\"C1-03\",\"C1-06\",\"C1-08\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 784,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 97,
+    "service_tier": "standard"
+  }
+}

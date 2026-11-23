@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173957_b_46d75e",
+  "input_hash": "46d75ea4dd2bfe3863ed9454d97a3e125f1bee77109f46385b97e7b72e240ac9",
+  "finished_at": "2026-11-03T17:40:10+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 4068,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2176,
+    "output_tokens": 3395,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"阳台外 风穿过栏杆\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"阳台外后空格断句，共八字\"}\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"楼梯上 脚步声一级一级\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"空格在第三字后，脚步声叠字占四拍\"}\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"天暗下来 云压得很低\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"四字后换气，后五字连读\"}\n    },\n    {\n      \"id\": \"V2-04\",\n      \"zh\": \"落在窗玻璃上 落在房间地板\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"两个落在重复，各占六字\"}\n    },\n    {\n      \"id\": \"V2-05\",\n      \"zh\": \"黄昏正一点一点散开\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"一气呵成，一点一点连读占四拍\"}\n    },\n    {\n      \"id\": \"V2-06\",\n      \"zh\": \"夕阳红得像 一双哭肿的眼睛\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"前五字后半句七字\"}\n    },\n    {\n      \"id\": \"V2-07\",\n      \"zh\": \"像要融化一样 一点一点\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"六字加四字，中间空格换气\"}\n    },\n    {\n      \"id\": \"V2-08\",\n      \"zh\": \"世界就一点一点 一点点死去\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"一点一点与一点点形成重复，前后各七字五字\"}\n    },\n    {\n      \"id\": \"V2-09\",\n      \"zh\": \"梦见我双手 一寸一寸收紧你喉咙\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"与B1-01完全相同，保留原曲重复\"}\n    },\n    {\n      \"id\": \"V2-10\",\n      \"zh\": \"春风里 窗帘轻轻地晃动\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"三字后断句，后七字连读\"}\n    },\n    {\n      \"id\": \"V2-11\",\n      \"zh\": \"干裂的嘴唇 轻轻张开 却说不出\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"五字四字四字，两处空格分三段\"}\n    },\n    {\n      \"id\": \"V2-12\",\n      \"zh\": \"漏出的话 像泡沫一样 一碰就破\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"四字五字四字，承接上句的嘴唇\"}\n    }\n  ]\n}",
+  "migrated_from": "20261103T173957_b_46d75e"
+}

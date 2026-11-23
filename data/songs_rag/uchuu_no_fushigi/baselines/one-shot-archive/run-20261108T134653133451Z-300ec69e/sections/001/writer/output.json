@@ -1,0 +1,70 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "鸟为什么能飞过那片天",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": true,
+        "note": "3+2+3+4 分段对应，无标点"
+      }
+    },
+    {
+      "id": "V1-02",
+      "zh": "猫为什么总睡在窗边",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": true,
+        "note": "3+2+3+4 分段对应"
+      }
+    },
+    {
+      "id": "V1-03",
+      "zh": "你今天想活成什么模样",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": true,
+        "note": "3+2+3+4 分段对应"
+      }
+    },
+    {
+      "id": "V1-04",
+      "zh": "全部 全部 全部",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "2+2+2 重复结构保留"
+      }
+    },
+    {
+      "id": "V1-05",
+      "zh": "一起去寻找",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "4+2 分段对应"
+      }
+    }
+  ]
+}

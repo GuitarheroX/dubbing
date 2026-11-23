@@ -1,0 +1,139 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "phrases": [
+      {
+        "id": "V1-01",
+        "section": "V1",
+        "ja": "悲しい NEWSと どうでもいい話",
+        "budget": {
+          "min": 14,
+          "max": 14
+        },
+        "pattern": [
+          7,
+          7
+        ]
+      },
+      {
+        "id": "V1-02",
+        "section": "V1",
+        "ja": "朝からもうそんなのうんざりで",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          4,
+          8
+        ]
+      },
+      {
+        "id": "V1-03",
+        "section": "V1",
+        "ja": "今日はいつもよりも",
+        "budget": {
+          "min": 6,
+          "max": 6
+        }
+      },
+      {
+        "id": "V1-04",
+        "section": "V1",
+        "ja": "風が気持ちイイからネ",
+        "budget": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      {
+        "id": "V1-05",
+        "section": "V1",
+        "ja": "楽しさに着替えてネ",
+        "budget": {
+          "min": 9,
+          "max": 9
+        },
+        "pattern": [
+          5,
+          4
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V1",
+      "phrases": [
+        {
+          "id": "V1-01",
+          "zh": "坏消息滚过屏幕 无聊闲话绕耳边",
+          "chars": 14,
+          "self_check": {
+            "budget": [
+              14,
+              14
+            ],
+            "ok": true,
+            "note": "保留初版，前七后七正好对上 [7,7]；空格断句"
+          }
+        },
+        {
+          "id": "V1-02",
+          "zh": "清晨就被 这些声音磨得厌倦",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "四字起句后接八字，对上 [4,8]"
+          }
+        },
+        {
+          "id": "V1-03",
+          "zh": "今天风特别软",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "把「风」提前到这句落地，下一句才好接「吹」"
+          }
+        },
+        {
+          "id": "V1-04",
+          "zh": "把闷住的心吹得发亮",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "改掉「亮了起来」的「了」，用「闷住」承接上一句的厌倦"
+          }
+        },
+        {
+          "id": "V1-05",
+          "zh": "换一身轻快 出门去吧",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "五加四，对上 [5,4]；保留初版「换一身」的动作感"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

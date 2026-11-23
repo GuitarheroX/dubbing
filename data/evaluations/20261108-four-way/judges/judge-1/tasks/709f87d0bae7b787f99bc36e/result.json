@@ -1,0 +1,160 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "传达心意受阻、浮现人生、扮演吸引注意均保留，'镜中人换脸'略增意象但未改主题",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "羞涩、渴望被看见的情绪方向一致，'咽回心里'强化了压抑感",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，'停在唇边打转咽回心里'自然，'带我飞向星'略短促",
+          "phrase_ids": [
+            "V2-01",
+            "V2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'镜中人换陌生脸''笑得笨拙'意象鲜明且服务主题",
+          "phrase_ids": [
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "心意无法传达、浮现种种人生、扮演以吸引注意均准确对应",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向正确但表达直白平淡，缺少原词的细腻张力",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "'我真的无法把心意传达给你啊''我试着去扮演啊'口语拖沓，'种种的人生啊'生硬",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 2,
+          "reason": "多为直译堆叠，'浮现出种种的人生啊'空泛，缺乏意象",
+          "phrase_ids": [
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心信息准确：心情无法传达、浮现种种人生、扮演以吸引注意",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向一致但偏平，缺少原词中渴望与不安的浓度",
+          "phrase_ids": [
+            "V2-01",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "简洁通顺，'试着扮演 因为想吸引你的注意'可理解，稍显直白",
+          "phrase_ids": [
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但普通，'浮现出种种人生'较抽象，无突出意象",
+          "phrase_ids": [
+            "V2-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "话到嘴边咽回、换人生、扮演讨喜均保留，'披上陌生模样'合理引申，'星河'略改'star'单数意象",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03",
+            "V2-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "压抑、渴望被看见的情绪充分，'讨你欢喜''多看我一眼'贴合原意",
+          "phrase_ids": [
+            "V2-01",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文流畅有歌词感，'带 我飞去星河'稍显断裂",
+          "phrase_ids": [
+            "V2-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'一幕幕换人生''披上陌生模样'意象鲜明，服务主题",
+          "phrase_ids": [
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    }
+  ]
+}

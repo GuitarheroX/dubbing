@@ -1,0 +1,21 @@
+{
+  "id": "cf975c60-c2b5-498f-a376-44e90dc9ed4c",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"tie\",\"reason\":\"两份候选文本完全一致，仅空格字符不同，语义、意境与表现力无差异，无法分出优劣。\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 459,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 384,
+    "output_tokens": 48,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "query_text": "慢慢 吃颗星\n红与蓝的星 铺满舌尖\n从未来 吃回过去\n倒着 再吃下\n嚼碎几十遍 化成水\n溶成水以后 喝下",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173758_b_a8a6f9",
+  "input_hash": "a8a6f949d8a0a02af9cd6a7b51dc0ac4bd3e1c0b3be5d64a1c030c0bdec53f1d",
+  "finished_at": "2026-11-03T17:38:07+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 1708,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2048,
+    "output_tokens": 1803,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"爱从何处 降临人间 无声却很明亮\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"与 I1-01 完全重复，按 4/4/6 三处空格分段\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"按着胸口 问自己 听心跳回答\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"与 I1-02 完全重复，4/3/5 三处断句\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"橱窗里的假货 我一眼都不看\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"与 I1-03 同字重复，6+6 两句各按 pattern 分段\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"真正的爱我要 亲手去找到\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"前段 6 字后段 5 字，比 I1-04 更进一层，从握住变找到\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"人海里我一直 在找你身影\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"6+5 对应 pattern，末句落在找的动作上不落定\"}\n    }\n  ]\n}",
+  "migrated_from": "20261103T173758_b_a8a6f9"
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"世界哗啦松开的那声音\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"把初版的「散开」换成「松开」，贴近ほどける那种松绑感，一个字没多\"\n      }\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"朝我跑过来\",\n      \"chars\": 5,\n      \"self_check\": {\n        \"budget\": [5, 5],\n        \"ok\": true,\n        \"note\": \"脚步和晨光都算「跑来」，五个字正好\"\n      }\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"朝我跑过来\",\n      \"chars\": 5,\n      \"self_check\": {\n        \"budget\": [5, 5],\n        \"ok\": true,\n        \"note\": \"原曲两句重复，译词同样原样重复\"\n      }\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"晨光漫上来\",\n      \"chars\": 5,\n      \"self_check\": {\n        \"budget\": [5, 5],\n        \"ok\": true,\n        \"note\": \"「上来」跟上一句「过来」方向呼应，不另起意象\"\n      }\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"在未来那头回过头来的你\",\n      \"chars\": 11,\n      \"self_check\": {\n        \"budget\": [11, 11],\n        \"ok\": true,\n        \"note\": \"保留初版的「未来那头」，只把「的」前压成一口气，正好十一个字\"\n      }\n    },\n    {\n      \"id\": \"C1-06\",\n      \"zh\": \"我挥一挥手\",\n      \"chars\": 5,\n      \"self_check\": {\n        \"budget\": [5, 5],\n        \"ok\": true,\n        \"note\": \"向熟人打招呼的轻，不加副词\"\n      }\n    },\n    {\n      \"id\": \"C1-07\",\n      \"zh\": \"桨落进水里\",\n      \"chars\": 5,\n      \"self_check\": {\n        \"budget\": [5, 5],\n        \"ok\": true,\n        \"note\": \"借参考里「木桨淌着水」的落水动作，只取骨架不取词\"\n      }\n    },\n    {\n      \"id\": \"C1-08\",\n      \"zh\": \"桨落进水里\",\n      \"chars\": 5,\n      \"self_check\": {\n        \"budget\": [5, 5],\n        \"ok\": true,\n        \"note\": \"与上一句完全重复，跟上原曲的叠句\"\n      }\n    },\n    {\n      \"id\": \"C1-09\",\n      \"zh\": \"要去哪儿呢\",\n      \"chars\": 5,\n      \"self_check\": {\n        \"budget\": [5, 5],\n        \"ok\": true,\n        \"note\": \"问句带笑，句尾用「呢」不用「吗」\"\n      }\n    },\n    {\n      \"id\": \"C1-10\",\n      \"zh\": \"去哪儿都行\",\n      \"chars\": 5,\n      \"self_check\": {\n        \"budget\": [5, 5],\n        \"ok\": true,\n        \"note\": \"和上一句共用「去哪儿」，一问一答，保留重复的回声\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:22:36+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2779,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2048,
+    "output_tokens": 2067,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

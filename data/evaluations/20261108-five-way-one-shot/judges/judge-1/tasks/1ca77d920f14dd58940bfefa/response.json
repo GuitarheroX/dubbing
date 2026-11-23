@@ -1,0 +1,21 @@
+{
+  "id": "c06033fb-91a2-4cbf-8739-7cc238b2dbf7",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更简洁自然，保留了“生为玫瑰命运”和“绚烂激烈地活”的核心语义与决绝感；B的B1-01冗长拗口，B1-02“如那风云”属无端添加，削弱原文直陈力度。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 470,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 384,
+    "output_tokens": 81,
+    "service_tier": "standard"
+  }
+}

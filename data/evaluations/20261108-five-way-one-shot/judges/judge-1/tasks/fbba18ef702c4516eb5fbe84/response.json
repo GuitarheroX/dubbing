@@ -1,0 +1,21 @@
+{
+  "id": "8cbd6feb-6c89-4a7e-a5b8-798d6a8d44a4",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"首句增补“无声却很明亮”偏离原问句；C1-03“橱窗里的假货”将抽象虚假具象化，C1-04“真正的爱”略窄于“ホンモノ”，C1-05“人海”为增补。\",\"phrase_ids\":[\"C1-01\",\"C1-03\",\"C1-04\",\"C1-05\"]},\"emotion\":{\"score\":3,\"reason\":\"整体情绪方向保留，但“明亮”“橱窗”等意象使语气偏轻快具体，与原曲内省追问略有偏移。\",\"phrase_ids\":[\"C1-01\",\"C1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，歌词感较好；个别句如“真正的爱我要 亲手去找到”稍显拗口。\",\"phrase_ids\":[\"C1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明、表达有力，但部分增补意象服务主题不够贴切。\",\"phrase_ids\":[\"C1-01\",\"C1-03\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"C1-02“轻声问自己心间”弱化“胸に問いかけた”的叩问动作；C1-03“虚假的温柔”将“ニセモノ”窄化为温柔；C1-04“真实的脸”偏离“ホンモノ”整体真实。\",\"phrase_ids\":[\"C1-02\",\"C1-03\",\"C1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪基本一致，但“温柔”“脸”等词使表达偏柔，原句的直率追问感减弱。\",\"phrase_ids\":[\"C1-03\",\"C1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文较顺，歌词文体可接受；个别句略文雅但不算生硬。\",\"phrase_ids\":[\"C1-02\",\"C1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，意象不够鲜明，部分措辞偏泛。\",\"phrase_ids\":[\"C1-02\",\"C1-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息基本准确；C1-02增补“它到底在哪里”略偏移，C1-04“真正的爱”略窄于“ホンモノ”，C1-05“那个人是你”将“探してた”落实为对方，尚可接受。\",\"phrase_ids\":[\"C1-02\",\"C1-04\",\"C1-05\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向与强弱基本保留，内省追问感较完整。\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文自然顺口，符合歌词文体；个别句稍显口语化。\",\"phrase_ids\":[\"C1-02\",\"C1-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但偏平实，意象与力度一般。\",\"phrase_ids\":[\"C1-01\",\"C1-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心语义准确；C1-03“虚假的东西”略泛化，C1-04“真实的那份”省略中心词，C1-05“寻找着你呀”基本对应。\",\"phrase_ids\":[\"C1-03\",\"C1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，内省与直率感保留较好。\",\"phrase_ids\":[\"C1-02\",\"C1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文较自然，歌词感尚可；C1-04“真实的那份”稍显悬空。\",\"phrase_ids\":[\"C1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，意象不够鲜明，整体偏平。\",\"phrase_ids\":[\"C1-04\",\"C1-05\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"C1-01增补“又往哪去 住进谁的胸口”改变原问句范围；C1-02“心是否诚实”偏移；C1-03“假货摆得再亮”具象化；C1-05“原来就是你”将寻找改为发现，事件关系有变。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-05\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向大体保留，但增补意象使语气偏戏剧化，与原曲内省感有偏移。\",\"phrase_ids\":[\"C1-01\",\"C1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，歌词感较好；个别句略跳脱。\",\"phrase_ids\":[\"C1-01\",\"C1-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明、表达有力，但部分增补偏离主题核心。\",\"phrase_ids\":[\"C1-01\",\"C1-03\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 935,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 1142,
+    "service_tier": "standard"
+  }
+}

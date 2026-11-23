@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"梦见自己 亲手掐住你的脖颈\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"掐住你的脖颈六字对应原文締める夢を見た的节奏\"}\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"午后阳光 满溢得刺眼\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"午后阳光四字起，满溢得刺眼五字收，中间空格断句\"}\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"你纤细的喉咙 微微地颤动\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"你纤细的喉咙六字，微微地颤动五字，中间空格\"}\n    },\n    {\n      \"id\": \"B1-04\",\n      \"zh\": \"用快要哭出来的眼睛望着我\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"用快要哭出来的眼睛七字，望着我三字，整句连读\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:43+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "B1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 3620,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 324,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

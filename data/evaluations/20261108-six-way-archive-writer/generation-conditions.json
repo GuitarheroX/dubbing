@@ -1,0 +1,79 @@
+{
+  "scope": "paired_songs",
+  "profiles": {
+    "paper-original": [
+      {
+        "model": "deepseek-flash",
+        "prompt_hash": "not_recorded",
+        "temperature": 0.7,
+        "thinking_requested": "disabled",
+        "records": 76
+      }
+    ],
+    "paper-annotated": [
+      {
+        "model": "deepseek-flash",
+        "prompt_hash": "not_recorded",
+        "temperature": 0.7,
+        "thinking_requested": "disabled",
+        "records": 76
+      }
+    ],
+    "workflow": [
+      {
+        "model": "deepseek-flash",
+        "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+        "temperature": 0.7,
+        "thinking_requested": "not_recorded",
+        "records": 76
+      }
+    ],
+    "workflow-rag": [
+      {
+        "model": "deepseek-flash",
+        "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+        "temperature": 1.5,
+        "thinking_requested": "not_recorded",
+        "records": 76
+      }
+    ],
+    "one-shot": [
+      {
+        "model": "deepseek-flash",
+        "temperature": 0.7,
+        "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+        "thinking_requested": "disabled",
+        "records": 76
+      }
+    ],
+    "one-shot-archive": [
+      {
+        "model": "deepseek-flash",
+        "temperature": 0.7,
+        "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+        "thinking_requested": "disabled",
+        "records": 76
+      }
+    ]
+  },
+  "judge": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com/anthropic",
+    "protocol": "anthropic",
+    "thinking": "disabled",
+    "temperature": 0,
+    "max_tokens": 6000
+  },
+  "limitations": [
+    "当前 one-shot 使用新版 writer 提示（字数仅大致参考，后续另有人对齐），历史 workflow 使用旧版严格字数提示；这不是仅移除 perceiver/reviewer 的严格架构消融。",
+    "评审与生成记录的模型名称相同，未使用独立评审模型复核。",
+    "workflow 温度为 0.7，RAG 最终改写温度为 1.5；差异不应全部归因于 RAG。",
+    "部分历史生成记录未显式记录思考开关。",
+    "COMET-QE 本次按用户要求跳过。",
+    "one-shot 为本次新生成；其余四组复用冻结的历史产物，部分历史思考状态未记录。",
+    "one-shot 同时移除 perceiver 与 reviewer/返修，不能单独识别这两个组件各自的贡献。",
+    "五候选绝对评分为新调用；原四组的完整请求及配置一致的成对评审复用旧响应。",
+    "one-shot-archive 使用 archive/shared.md+b.md，系统提示已逐段核对与历史 workflow 相同；历史 workflow 的思考状态未记录、生成时间不同，因此尚非所有生成条件严格一致的实验。",
+    "六候选绝对评分为新调用；原五组完整请求及配置一致的成对评审复用旧响应。"
+  ]
+}

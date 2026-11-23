@@ -1,0 +1,57 @@
+{
+  "section": "B1",
+  "phrases": [
+    {
+      "id": "B1-01",
+      "zh": "命令 藏着多少故意",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "命令两字对应第一段，后六字对应4+2"
+      }
+    },
+    {
+      "id": "B1-02",
+      "zh": "订正 冷眼看这无为",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "订正两字起，后六字分四二"
+      }
+    },
+    {
+      "id": "B1-03",
+      "zh": "安宁 总把罪掺进来",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "安宁两字，后七字按四三断"
+      }
+    },
+    {
+      "id": "B1-04",
+      "zh": "当然吧",
+      "chars": 3,
+      "self_check": {
+        "budget": [
+          3,
+          3
+        ],
+        "ok": true,
+        "note": "整句三字"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T174134_b_e316e7",
+  "input_hash": "e316e77e1a938c2452554a826dc1e5ce6d7ba9e9e11f71de2237a0c413f9c800",
+  "finished_at": "2026-11-03T17:41:49+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 1903,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1664,
+    "output_tokens": 3490,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"再见吧 小企鹅\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"整句一段 中间空一格断开 共六字\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"摇摇摆摆 一步一步 笑着往前\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"按 [8,4] 断成 摇摇摆摆一步一步 + 笑着往前\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"我还深深恋着世界 眨一下眼睛\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"按 [8,5] 断成 我还深深恋着世界 + 眨一下眼睛\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"风穿过这房间 风带走你和我\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"与 B1-01 完全重复 保留原曲的重复句式\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"一滴眼泪掉下来\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"整句一段 用「掉下来」代替「了」收尾\"}\n    },\n    {\n      \"id\": \"C1-06\",\n      \"zh\": \"摇摇摆摆 说再见\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"首尾呼应 C1-02 的摇摇摆摆 收在说再见上\"}\n    }\n  ]\n}",
+  "migrated_from": "20261103T174134_b_e316e7"
+}

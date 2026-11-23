@@ -1,0 +1,21 @@
+{
+  "id": "8dd18c53-6afb-4475-9e59-7200aa6d671a",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原意：C1-02保留“问自己的胸/心”而非B的“轻声问自己心间”弱化动作；C1-03“不会在意”对应“興味はない”，B“不愿多看一眼”稍偏；C1-04“真正的爱”准确对应“ホンモノ”，B“真实的脸”意象偏移。A中文自然度也较好，B部分表达略文艺但语义有偏移。\",\"phrase_ids\":[\"C1-02\",\"C1-03\",\"C1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 352,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 125,
+    "service_tier": "standard"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"I1\",\n  \"phrases\": [\n    {\n      \"id\": \"I1-01\",\n      \"zh\": \"爱是从哪里悄悄降临的呢\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": false, \"note\": \"字数不足，需补意象\"}\n    },\n    {\n      \"id\": \"I1-02\",\n      \"zh\": \"问自己胸口这颗心\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": false, \"note\": \"字数不足，需补意象\"}\n    },\n    {\n      \"id\": \"I1-03\",\n      \"zh\": \"虚假的东西我毫无兴趣\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": false, \"note\": \"字数不足，需补意象\"}\n    },\n    {\n      \"id\": \"I1-04\",\n      \"zh\": \"只想凝视真实的光\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": false, \"note\": \"字数不足，需补意象\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:35+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "I1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1608,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 270,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

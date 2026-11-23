@@ -1,0 +1,83 @@
+{
+  "section": "O1",
+  "phrases": [
+    {
+      "id": "O1-01",
+      "zh": "这样的日子 已经够多",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "前四字后空格断句，对应2+3+4的节奏"
+      }
+    },
+    {
+      "id": "O1-02",
+      "zh": "永远这种话 从来就没有",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": true,
+        "note": "五字后空格，对应5+2+3"
+      }
+    },
+    {
+      "id": "O1-03",
+      "zh": "在一切 走向终点之前",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "三字后空格，对应5+4"
+      }
+    },
+    {
+      "id": "O1-04",
+      "zh": "试着 迈出第一步",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "两字后空格，对应2+6"
+      }
+    },
+    {
+      "id": "O1-05",
+      "zh": "一边接受这一切",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "整句六字，不空格"
+      }
+    },
+    {
+      "id": "O1-06",
+      "zh": "一边 默默祈祷",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "两字后空格，对应3+3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "还是忍不住 一遍遍去追寻",
+      "chars": 13,
+      "self_check": {
+        "budget": [
+          13,
+          13
+        ],
+        "ok": true,
+        "note": "4+5+4 对应旋律分段，空格处停顿"
+      }
+    },
+    {
+      "id": "V1-02",
+      "zh": "沉默就够了吗",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "3+3 分段"
+      }
+    },
+    {
+      "id": "V1-03",
+      "zh": "朝着渴望的方向 倒着慢慢走",
+      "chars": 13,
+      "self_check": {
+        "budget": [
+          13,
+          13
+        ],
+        "ok": true,
+        "note": "5+4+4，空格断句"
+      }
+    },
+    {
+      "id": "V1-04",
+      "zh": "像断了呼吸一样",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "5+3 分段"
+      }
+    }
+  ]
+}

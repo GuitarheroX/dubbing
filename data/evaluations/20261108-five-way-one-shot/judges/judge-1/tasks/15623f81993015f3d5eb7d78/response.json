@@ -1,0 +1,21 @@
+{
+  "id": "c505313b-6158-427d-9b3a-950c9e3d62a9",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B2-01中B更贴近“被赐予玫瑰生命/宿命”的核心语义，A的“接过”“披上深红”属额外意象且略偏离；B2-02中B保留“燃烧热情活下去”的原意，A“烧穿胸口”强化过度。B整体中文自然、情绪连贯，虽表现力较平实，但误读风险更低。\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 223,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 106,
+    "service_tier": "standard"
+  }
+}

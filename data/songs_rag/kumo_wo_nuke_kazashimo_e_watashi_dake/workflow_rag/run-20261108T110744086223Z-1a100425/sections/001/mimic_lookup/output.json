@@ -1,0 +1,46 @@
+{
+  "section": "V1",
+  "query_text": "一阵 风吹过\n第二阵 把我拔离 这片草丛\n终于 空得发凉\n顺着风去 只剩下我一个\n草原 立长影 一人\n我变成风 青蓝色的风\n随风飘",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "梅林_meilin/风#s1",
+      "title": "风",
+      "poet": "梅林",
+      "poem_id": "梅林_meilin/风",
+      "stanza_idx": 1,
+      "score": 0.707136,
+      "text": "一阵风靠近一阵风\n一阵风催着一阵风\n一阵风对一阵风说着悄悄话\n一阵风掏空一阵风\n一阵风吹着一阵风\n吹着\n吹着就吹没了"
+    },
+    {
+      "chunk_id": "Jo_jo/逃跑#s1",
+      "title": "逃跑",
+      "poet": "Jo",
+      "poem_id": "Jo_jo/逃跑",
+      "stanza_idx": 1,
+      "score": 0.705123,
+      "text": "我在风中奔跑想要逃避\n风开始是柔和的\n吹呀吹\n然后突然疾了\n于是我\n乱了呼吸\n来不及捂住衣裳\n就有了清凉\n然后温热\n无孔不入的风啊\n一阵穷追猛打\n直到我大呼着投了降"
+    },
+    {
+      "chunk_id": "胡勇_huyong/在草原，无形胜有形#s1",
+      "title": "在草原，无形胜有形",
+      "poet": "胡勇",
+      "poem_id": "胡勇_huyong/在草原，无形胜有形",
+      "stanza_idx": 1,
+      "score": 0.70437,
+      "text": "天，高，无形\n草原，开阔，也无形\n风吹，草没有\n我来的很不是时候\n牛羊躲在哪里\n发烧的太阳轻轻告诉感冒的我\n过两月再来就好"
+    },
+    {
+      "chunk_id": "余秀华_yuxiuhua/风从草原来#s2",
+      "title": "风从草原来",
+      "poet": "余秀华",
+      "poem_id": "余秀华_yuxiuhua/风从草原来",
+      "stanza_idx": 2,
+      "score": 0.70354,
+      "text": "风从草原来，把一个城市困在风心\n想看到的事物都被遮蔽\n多少人一辈子过去了还没有活过\n他慢慢吐烟圈，慢慢说话\n把方言里粗犷的部分低音吐出\n他不说疼\n因为风吹过，无痕"
+    }
+  ]
+}

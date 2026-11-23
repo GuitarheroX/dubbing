@@ -1,0 +1,21 @@
+{
+  "id": "3b0f6365-a8e6-4ec5-b269-01dacf428da3",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原句结构与核心语义：C1-01保留“烧梦”而非“烧成灰”，C1-02保留“以…色”的媒介关系，C1-03“喜悦之火”对应“喜びの火”，C1-04“零钱泡泡”虽略生硬但保留“泡銭”的轻贱感，C1-05“话语之双手”保留原比喻。B多处改写过度：C1-02把颜色变成柴火，C1-03重复“烧”并增“火把”，C1-05把“冷めない言葉”改成“话还烫/接住火星”，偏离原意象；整体表现力虽强但语义漂移较多。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\",\"C1-07\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 363,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 204,
+    "service_tier": "standard"
+  }
+}

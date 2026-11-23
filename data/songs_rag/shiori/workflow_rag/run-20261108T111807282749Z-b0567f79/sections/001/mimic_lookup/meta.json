@@ -1,0 +1,9 @@
+{
+  "agent": "mimic_lookup",
+  "finished_at": "2026-11-08T11:18:41+00:00",
+  "rule_based": true,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "k": 4,
+  "hits": 4
+}

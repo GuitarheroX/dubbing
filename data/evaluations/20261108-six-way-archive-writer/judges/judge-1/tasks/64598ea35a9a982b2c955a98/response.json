@@ -1,0 +1,21 @@
+{
+  "id": "a16a8e9f-7fbb-4a7b-808a-d899c7b30242",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原意：V1-01保留“一直凝望你”的持续感，A的“视线之外”误读为单向旁观；V1-02“被留在身后”自然对应“置いてきた”，A“留在门外”意象偏移；V1-03、V1-04均准确自然。A虽更华丽，但核心语义有偏移。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 309,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 114,
+    "service_tier": "standard"
+  }
+}

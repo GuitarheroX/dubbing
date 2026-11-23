@@ -1,0 +1,21 @@
+{
+  "id": "402c6b1b-6ca9-47f1-9fa8-662b36d8de26",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B2-01中“背负”比“就是”更贴近“さずかり”（被赋予/承受）的被动承受感，且“生来就背负”与“宿命”搭配自然；B2-02“让热情燃烧着”比“燃烧着热情”更接近“情熱を燃やして”的使动意象，“永远不停”比单用“永远”更完整地传达“いつでも”的持续感。两版均未严重误读，但B在语义贴合与表现力上略优。\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 211,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 139,
+    "service_tier": "standard"
+  }
+}

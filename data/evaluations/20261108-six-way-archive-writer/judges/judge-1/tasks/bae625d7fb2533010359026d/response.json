@@ -1,0 +1,21 @@
+{
+  "id": "6efcb32e-e1f8-4c2c-b3a5-da9020ddd6a9",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原句语义：B1-01保留“一直等待”的持续感，B1-02“重新开始”准确对应“やりなおす”；B的“不肯醒来”属额外添加，“重新再来一次”略冗。A中文更自然简洁。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 277,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 81,
+    "service_tier": "standard"
+  }
+}

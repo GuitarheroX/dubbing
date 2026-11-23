@@ -1,0 +1,21 @@
+{
+  "id": "3c74984e-6339-4346-8f7e-e2581fcc2cd7",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"风景与流星核心准确，但“想一直凝望你”添加了原文没有的“你”，轻微改变对象。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"emotion\":{\"score\":4,\"reason\":\"茫然与期盼的情绪基本保留，末句因添加“你”略偏。\",\"phrase_ids\":[\"V1-02\",\"V1-03\"]},\"naturalness\":{\"score\":5,\"reason\":\"三句均顺口自然，符合歌词文体。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰，“茫然中终将看见的流星”有画面感。\",\"phrase_ids\":[\"V1-02\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“迟来的流星”将“いずれ見える”改为迟来，语义有偏移；末句省略宾语尚可。\",\"phrase_ids\":[\"V1-02\",\"V1-03\"]},\"emotion\":{\"score\":3,\"reason\":\"恍惚等待的情绪接近，但“迟来”带来原文没有的延误感。\",\"phrase_ids\":[\"V1-02\"]},\"naturalness\":{\"score\":5,\"reason\":\"表达顺口，歌词感自然。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“恍惚等一颗迟来的流星”意象鲜明。\",\"phrase_ids\":[\"V1-02\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"三句核心信息准确，“终将望见”贴合“いずれ見える”。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"emotion\":{\"score\":5,\"reason\":\"茫然、期盼与持续凝望的情绪方向完整保留。\",\"phrase_ids\":[\"V1-02\",\"V1-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体自然，“总是想要凝望不停”稍显堆叠但可理解。\",\"phrase_ids\":[\"V1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“茫然之间终将望见的流星”意象清楚有力。\",\"phrase_ids\":[\"V1-02\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心准确，“呆望”略窄化“呆然と”的茫然感，“终会来”可接受。\",\"phrase_ids\":[\"V1-02\"]},\"emotion\":{\"score\":3,\"reason\":\"“呆望”偏静态发呆，原文茫然中仍带将见之期待，情绪略平。\",\"phrase_ids\":[\"V1-02\"]},\"naturalness\":{\"score\":5,\"reason\":\"简洁顺口，符合歌词文体。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但较普通，“只想一直看”偏口语平淡。\",\"phrase_ids\":[\"V1-03\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1013,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 256,
+    "output_tokens": 698,
+    "service_tier": "standard"
+  }
+}

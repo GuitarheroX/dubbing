@@ -1,0 +1,21 @@
+{
+  "id": "fb098f2a-cb2d-4062-9bd5-af726331c100",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B的“世界像线头松开的声音”更贴合“ほどける”的意象，且“一桨一桨划”比A的“桨落进水里”更贴近“漕いで行く”的持续动作；A的“哗啦松开”偏口语拟声，“桨落进水里”改变了动作重心。两版其余句自然度接近，B整体意象与语义更稳。\",\"phrase_ids\":[\"C1-01\",\"C1-07\",\"C1-08\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 482,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 114,
+    "service_tier": "standard"
+  }
+}

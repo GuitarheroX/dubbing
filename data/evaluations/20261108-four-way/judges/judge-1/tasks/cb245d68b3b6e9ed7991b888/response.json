@@ -1,0 +1,21 @@
+{
+  "id": "f25d513a-2a28-4ffe-9891-0236181bf41e",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心意象基本准确，但V2-01添加“天色下沉”与V2-03重复，V2-11“一个字一个字”为增译，V2-09“双手”略具体化。\",\"phrase_ids\":[\"V2-01\",\"V2-03\",\"V2-09\",\"V2-11\"]},\"emotion\":{\"score\":4,\"reason\":\"阴郁、消逝与窒息感保留较好，V2-06“红得发烫”稍强化但方向一致。\",\"phrase_ids\":[\"V2-06\",\"V2-08\",\"V2-09\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，V2-01“天色下沉”与V2-03“蒙上一层灰”语义重叠，V2-11“一个字一个字”稍显填充。\",\"phrase_ids\":[\"V2-01\",\"V2-03\",\"V2-11\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“像泡泡一样散掉”“死在我眼前”等表达鲜明，服务主题。\",\"phrase_ids\":[\"V2-08\",\"V2-12\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"各句核心信息准确，V2-09“梦见掐住你脖子的梦”保留原句重复结构。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-09\",\"V2-12\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向准确，但整体偏直译，阴冷与窒息感略平。\",\"phrase_ids\":[\"V2-06\",\"V2-08\",\"V2-09\"]},\"naturalness\":{\"score\":3,\"reason\":\"多处可理解但生硬，如“沿楼梯向上攀登的声音”“像哭肿了一样的太阳的红”“梦见掐住你脖子的梦”。\",\"phrase_ids\":[\"V2-02\",\"V2-06\",\"V2-09\"]},\"expressiveness\":{\"score\":3,\"reason\":\"意象传达完整但表达普通，缺少歌词的凝练与冲击。\",\"phrase_ids\":[\"V2-05\",\"V2-12\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心语义保留，V2-04省略“落”的主语衔接稍弱，V2-09“勒住”与原文“締める”接近。\",\"phrase_ids\":[\"V2-04\",\"V2-09\"]},\"emotion\":{\"score\":4,\"reason\":\"阴郁消逝感基本一致，但表达偏简，情绪强度略降。\",\"phrase_ids\":[\"V2-06\",\"V2-08\"]},\"naturalness\":{\"score\":4,\"reason\":\"较顺口，V2-04“窗玻璃上 落进房间”衔接略突兀，V2-06“太阳红”稍生。\",\"phrase_ids\":[\"V2-04\",\"V2-06\"]},\"expressiveness\":{\"score\":3,\"reason\":\"意象准确但偏平实，缺少鲜明张力。\",\"phrase_ids\":[\"V2-05\",\"V2-12\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"多处增译改变细节：V2-01“风穿过栏杆”原文无，V2-03“云压得很低”增补，V2-11“却说不出”改变“言葉が零れる”的语义，V2-09“一寸一寸收紧”强化动作。\",\"phrase_ids\":[\"V2-01\",\"V2-03\",\"V2-09\",\"V2-11\"]},\"emotion\":{\"score\":4,\"reason\":\"阴郁、窒息与消逝情绪保留充分，增译未逆转情绪方向。\",\"phrase_ids\":[\"V2-08\",\"V2-09\",\"V2-12\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口有歌词感，V2-11“轻轻张开 却说不出”与后句衔接稍跳。\",\"phrase_ids\":[\"V2-11\",\"V2-12\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“一碰就破”“一寸一寸收紧”等表达有力，但部分为增饰。\",\"phrase_ids\":[\"V2-09\",\"V2-12\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 2224,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 941,
+    "service_tier": "standard"
+  }
+}

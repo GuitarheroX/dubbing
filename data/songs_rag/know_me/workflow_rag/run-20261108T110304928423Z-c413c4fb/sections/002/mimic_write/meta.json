@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "```json\n{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"沉在水底的 一层浑浊\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"保留初版意象，前五字对[5]后四字对[4]；借参考里水与海底的语感，不照搬词句\"}\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"想服个软 牙关却咬紧\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"初版十字超一字，砍掉「却咬紧了」的「了」，改「牙关却咬紧」凑四加五\"}\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"耳机两端 谁都接不住谁\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"四加六；去掉初版句中的「着」，换成「两端」这个可数的实物，后半原样保留\"}\n    },\n    {\n      \"id\": \"V2-04\",\n      \"zh\": \"认不出自己\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"整句一段五字，沿用初版，作 V2 收束的短句\"}\n    }\n  ]\n}\n```",
+  "finished_at": "2026-11-08T11:04:16+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3311,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 2053,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

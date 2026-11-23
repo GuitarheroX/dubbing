@@ -1,0 +1,3430 @@
+{
+  "scope": "paired_songs",
+  "phrases": 380,
+  "phrases_with_reported_count": 380,
+  "incorrect_reported_counts": 239,
+  "self_check_ok_but_budget_fail": 188,
+  "rows": [
+    {
+      "song": "abuku",
+      "id": "V1-01",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "abuku",
+      "id": "V1-02",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "abuku",
+      "id": "V1-03",
+      "reported_chars": 15,
+      "actual_count": 12,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "abuku",
+      "id": "B1-01",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "abuku",
+      "id": "B1-02",
+      "reported_chars": 7,
+      "actual_count": 6,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "abuku",
+      "id": "B1-03",
+      "reported_chars": 10,
+      "actual_count": 10,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "abuku",
+      "id": "B1-04",
+      "reported_chars": 6,
+      "actual_count": 5,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "abuku",
+      "id": "C1-01",
+      "reported_chars": 9,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "abuku",
+      "id": "C1-02",
+      "reported_chars": 11,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "abuku",
+      "id": "C1-03",
+      "reported_chars": 14,
+      "actual_count": 13,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "abuku",
+      "id": "C1-04",
+      "reported_chars": 10,
+      "actual_count": 10,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "abuku",
+      "id": "C1-05",
+      "reported_chars": 10,
+      "actual_count": 10,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "abuku",
+      "id": "C1-06",
+      "reported_chars": 11,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "abuku",
+      "id": "C1-07",
+      "reported_chars": 7,
+      "actual_count": 6,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "abuku",
+      "id": "V2-01",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "abuku",
+      "id": "V2-02",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "abuku",
+      "id": "V2-03",
+      "reported_chars": 11,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "V1-01",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "V1-02",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "V1-03",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "V1-04",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "C2-01",
+      "reported_chars": 12,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "C2-02",
+      "reported_chars": 13,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "C1-01",
+      "reported_chars": 12,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "C1-02",
+      "reported_chars": 12,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "V2-01",
+      "reported_chars": 10,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "V2-02",
+      "reported_chars": 9,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "V2-03",
+      "reported_chars": 9,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "V2-04",
+      "reported_chars": 10,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "B2-01",
+      "reported_chars": 11,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "B2-02",
+      "reported_chars": 11,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "B1-01",
+      "reported_chars": 15,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "bara",
+      "id": "B1-02",
+      "reported_chars": 17,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "C1-01",
+      "reported_chars": 4,
+      "actual_count": 4,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "C1-02",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "C1-03",
+      "reported_chars": 4,
+      "actual_count": 4,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "C1-04",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "C1-05",
+      "reported_chars": 5,
+      "actual_count": 5,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "C1-06",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "C1-07",
+      "reported_chars": 5,
+      "actual_count": 5,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "C1-08",
+      "reported_chars": 11,
+      "actual_count": 11,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "B1-01",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "B1-02",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "B1-03",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "B1-04",
+      "reported_chars": 9,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "C2-01",
+      "reported_chars": 5,
+      "actual_count": 5,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "C2-02",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "black_shout",
+      "id": "C2-03",
+      "reported_chars": 4,
+      "actual_count": 4,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "C2-04",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "C2-05",
+      "reported_chars": 5,
+      "actual_count": 5,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "C2-06",
+      "reported_chars": 5,
+      "actual_count": 5,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "C2-07",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "C2-08",
+      "reported_chars": 12,
+      "actual_count": 12,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "V1-01",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "V1-02",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "V1-03",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "V1-04",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "V1-05",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "V1-06",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "black_shout",
+      "id": "V1-07",
+      "reported_chars": 12,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "V1-01",
+      "reported_chars": 9,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "V1-02",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "V1-03",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "V1-04",
+      "reported_chars": 5,
+      "actual_count": 5,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "V1-05",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "C1-01",
+      "reported_chars": 11,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "C1-02",
+      "reported_chars": 9,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "C1-03",
+      "reported_chars": 10,
+      "actual_count": 10,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "C1-04",
+      "reported_chars": 14,
+      "actual_count": 13,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "C1-05",
+      "reported_chars": 5,
+      "actual_count": 6,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": true
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "B1-01",
+      "reported_chars": 12,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "B1-02",
+      "reported_chars": 11,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "B1-03",
+      "reported_chars": 22,
+      "actual_count": 15,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "B1-04",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "O1-01",
+      "reported_chars": 3,
+      "actual_count": 3,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "O1-02",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "V2-01",
+      "reported_chars": 13,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "V2-02",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "V2-03",
+      "reported_chars": 14,
+      "actual_count": 12,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "fly_me_to_the_star",
+      "id": "V2-04",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "fuusen",
+      "id": "V1-01",
+      "reported_chars": 11,
+      "actual_count": 11,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "fuusen",
+      "id": "V1-02",
+      "reported_chars": 12,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "fuusen",
+      "id": "V1-03",
+      "reported_chars": 10,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "fuusen",
+      "id": "V1-04",
+      "reported_chars": 10,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "fuusen",
+      "id": "V1-05",
+      "reported_chars": 11,
+      "actual_count": 11,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "fuusen",
+      "id": "V1-06",
+      "reported_chars": 13,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "fuusen",
+      "id": "V1-07",
+      "reported_chars": 12,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "fuusen",
+      "id": "V1-08",
+      "reported_chars": 11,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "fuusen",
+      "id": "C1-01",
+      "reported_chars": 12,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "fuusen",
+      "id": "C1-02",
+      "reported_chars": 14,
+      "actual_count": 12,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "fuusen",
+      "id": "C1-03",
+      "reported_chars": 14,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "fuusen",
+      "id": "B1-01",
+      "reported_chars": 8,
+      "actual_count": 6,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "fuusen",
+      "id": "B1-02",
+      "reported_chars": 8,
+      "actual_count": 6,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "fuusen",
+      "id": "B1-03",
+      "reported_chars": 8,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "himawari",
+      "id": "I1-01",
+      "reported_chars": 17,
+      "actual_count": 13,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "himawari",
+      "id": "I1-02",
+      "reported_chars": 17,
+      "actual_count": 13,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "himawari",
+      "id": "C1-01",
+      "reported_chars": 17,
+      "actual_count": 13,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "himawari",
+      "id": "C1-02",
+      "reported_chars": 17,
+      "actual_count": 13,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "himawari",
+      "id": "C1-03",
+      "reported_chars": 17,
+      "actual_count": 12,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "himawari",
+      "id": "C1-04",
+      "reported_chars": 17,
+      "actual_count": 12,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "himawari",
+      "id": "V1-01",
+      "reported_chars": 13,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "himawari",
+      "id": "V1-02",
+      "reported_chars": 14,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "himawari",
+      "id": "V1-03",
+      "reported_chars": 13,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "himawari",
+      "id": "V1-04",
+      "reported_chars": 14,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kaijuu",
+      "id": "C1-01",
+      "reported_chars": 4,
+      "actual_count": 4,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "kaijuu",
+      "id": "C1-02",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "kaijuu",
+      "id": "C1-03",
+      "reported_chars": 11,
+      "actual_count": 11,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "kaijuu",
+      "id": "C1-04",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "kaijuu",
+      "id": "C1-05",
+      "reported_chars": 5,
+      "actual_count": 5,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "kaijuu",
+      "id": "C2-01",
+      "reported_chars": 22,
+      "actual_count": 20,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kaijuu",
+      "id": "C2-02",
+      "reported_chars": 21,
+      "actual_count": 20,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kaijuu",
+      "id": "C2-03",
+      "reported_chars": 12,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kaijuu",
+      "id": "C2-04",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "kaijuu",
+      "id": "C2-05",
+      "reported_chars": 14,
+      "actual_count": 15,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kaijuu",
+      "id": "C2-06",
+      "reported_chars": 8,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kaijuu",
+      "id": "V1-01",
+      "reported_chars": 5,
+      "actual_count": 4,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kaijuu",
+      "id": "V1-02",
+      "reported_chars": 9,
+      "actual_count": 6,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kaijuu",
+      "id": "V1-03",
+      "reported_chars": 7,
+      "actual_count": 5,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kaijuu",
+      "id": "V1-04",
+      "reported_chars": 5,
+      "actual_count": 4,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kaijuu",
+      "id": "V1-05",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kaijuu",
+      "id": "V1-06",
+      "reported_chars": 7,
+      "actual_count": 6,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kazeyo",
+      "id": "V1-01",
+      "reported_chars": 9,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "kazeyo",
+      "id": "V1-02",
+      "reported_chars": 9,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "kazeyo",
+      "id": "V1-03",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "kazeyo",
+      "id": "V1-04",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "kazeyo",
+      "id": "B1-01",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "kazeyo",
+      "id": "B1-02",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "kazeyo",
+      "id": "B1-03",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "kazeyo",
+      "id": "B1-04",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "kazeyo",
+      "id": "V2-01",
+      "reported_chars": 11,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kazeyo",
+      "id": "V2-02",
+      "reported_chars": 11,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kazeyo",
+      "id": "V2-03",
+      "reported_chars": 10,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kazeyo",
+      "id": "V2-04",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "know_me",
+      "id": "V1-01",
+      "reported_chars": 13,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "know_me",
+      "id": "V1-02",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "know_me",
+      "id": "V1-03",
+      "reported_chars": 13,
+      "actual_count": 12,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "know_me",
+      "id": "V1-04",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "know_me",
+      "id": "B1-01",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "know_me",
+      "id": "B1-02",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "know_me",
+      "id": "B1-03",
+      "reported_chars": 9,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "know_me",
+      "id": "B1-04",
+      "reported_chars": 3,
+      "actual_count": 3,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "know_me",
+      "id": "C1-01",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "know_me",
+      "id": "C1-02",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "know_me",
+      "id": "C1-03",
+      "reported_chars": 10,
+      "actual_count": 10,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "know_me",
+      "id": "C1-04",
+      "reported_chars": 3,
+      "actual_count": 3,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "know_me",
+      "id": "C1-05",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "know_me",
+      "id": "C1-06",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "know_me",
+      "id": "C1-07",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "know_me",
+      "id": "C1-08",
+      "reported_chars": 7,
+      "actual_count": 6,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "know_me",
+      "id": "V2-01",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "know_me",
+      "id": "V2-02",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "know_me",
+      "id": "V2-03",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "know_me",
+      "id": "V2-04",
+      "reported_chars": 5,
+      "actual_count": 5,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "kotozute",
+      "id": "V1-01",
+      "reported_chars": 6,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kotozute",
+      "id": "V1-02",
+      "reported_chars": 10,
+      "actual_count": 13,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kotozute",
+      "id": "V1-03",
+      "reported_chars": 5,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kotozute",
+      "id": "B1-01",
+      "reported_chars": 9,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kotozute",
+      "id": "B1-02",
+      "reported_chars": 12,
+      "actual_count": 12,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "kotozute",
+      "id": "B1-03",
+      "reported_chars": 7,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kotozute",
+      "id": "B1-04",
+      "reported_chars": 5,
+      "actual_count": 5,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "kotozute",
+      "id": "C1-01",
+      "reported_chars": 13,
+      "actual_count": 14,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kotozute",
+      "id": "C1-02",
+      "reported_chars": 9,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kotozute",
+      "id": "C1-03",
+      "reported_chars": 10,
+      "actual_count": 10,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "kotozute",
+      "id": "C1-04",
+      "reported_chars": 3,
+      "actual_count": 3,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "kotozute",
+      "id": "C1-05",
+      "reported_chars": 3,
+      "actual_count": 3,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "kotozute",
+      "id": "C1-06",
+      "reported_chars": 11,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kotozute",
+      "id": "C1-07",
+      "reported_chars": 9,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kotozute",
+      "id": "C1-08",
+      "reported_chars": 10,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kotozute",
+      "id": "C1-09",
+      "reported_chars": 3,
+      "actual_count": 3,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "kotozute",
+      "id": "C1-10",
+      "reported_chars": 3,
+      "actual_count": 3,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "kotozute",
+      "id": "C1-11",
+      "reported_chars": 2,
+      "actual_count": 2,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "kotozute",
+      "id": "V2-01",
+      "reported_chars": 6,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kotozute",
+      "id": "V2-02",
+      "reported_chars": 10,
+      "actual_count": 13,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kotozute",
+      "id": "V2-03",
+      "reported_chars": 5,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "V1-01",
+      "reported_chars": 5,
+      "actual_count": 5,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "V1-02",
+      "reported_chars": 11,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "V1-03",
+      "reported_chars": 6,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "V1-04",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "V1-05",
+      "reported_chars": 7,
+      "actual_count": 6,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "V1-06",
+      "reported_chars": 9,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "V1-07",
+      "reported_chars": 3,
+      "actual_count": 3,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "C1-01",
+      "reported_chars": 9,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "C1-02",
+      "reported_chars": 12,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "C1-03",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "C1-04",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "C1-05",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "C1-06",
+      "reported_chars": 12,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "V2-01",
+      "reported_chars": 7,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "V2-02",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "V2-03",
+      "reported_chars": 5,
+      "actual_count": 6,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "V2-04",
+      "reported_chars": 11,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "V2-05",
+      "reported_chars": 7,
+      "actual_count": 6,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "V2-06",
+      "reported_chars": 9,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "V2-07",
+      "reported_chars": 9,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "kumo_wo_nuke_kazashimo_e_watashi_dake",
+      "id": "V2-08",
+      "reported_chars": 3,
+      "actual_count": 3,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "love-2000",
+      "id": "I1-01",
+      "reported_chars": 11,
+      "actual_count": 11,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "love-2000",
+      "id": "I1-02",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "love-2000",
+      "id": "I1-03",
+      "reported_chars": 10,
+      "actual_count": 10,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "love-2000",
+      "id": "I1-04",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "love-2000",
+      "id": "B1-01",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "love-2000",
+      "id": "B1-02",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "love-2000",
+      "id": "B1-03",
+      "reported_chars": 17,
+      "actual_count": 12,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "love-2000",
+      "id": "C1-01",
+      "reported_chars": 12,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "love-2000",
+      "id": "C1-02",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "love-2000",
+      "id": "C1-03",
+      "reported_chars": 10,
+      "actual_count": 10,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "love-2000",
+      "id": "C1-04",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "love-2000",
+      "id": "C1-05",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "love-2000",
+      "id": "V1-01",
+      "reported_chars": 14,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "love-2000",
+      "id": "V1-02",
+      "reported_chars": 12,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "love-2000",
+      "id": "V1-03",
+      "reported_chars": 6,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "love-2000",
+      "id": "V1-04",
+      "reported_chars": 9,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "love-2000",
+      "id": "V1-05",
+      "reported_chars": 9,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "B2-01",
+      "reported_chars": 13,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "B2-02",
+      "reported_chars": 18,
+      "actual_count": 17,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": true
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "B2-03",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "B2-04",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C3-01",
+      "reported_chars": 5,
+      "actual_count": 5,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C3-02",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C3-03",
+      "reported_chars": 10,
+      "actual_count": 10,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C3-04",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C3-05",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C3-06",
+      "reported_chars": 10,
+      "actual_count": 10,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C3-07",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V1-01",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V1-02",
+      "reported_chars": 11,
+      "actual_count": 11,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V1-03",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V1-04",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V1-05",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V1-06",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V1-07",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V1-08",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V3-01",
+      "reported_chars": 7,
+      "actual_count": 6,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V3-02",
+      "reported_chars": 9,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V3-03",
+      "reported_chars": 7,
+      "actual_count": 6,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V3-04",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V3-05",
+      "reported_chars": 5,
+      "actual_count": 4,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V3-06",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V3-08",
+      "reported_chars": 12,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V3-10",
+      "reported_chars": 12,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C1-01",
+      "reported_chars": 6,
+      "actual_count": 5,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C1-02",
+      "reported_chars": 9,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C1-03",
+      "reported_chars": 12,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C1-04",
+      "reported_chars": 7,
+      "actual_count": 6,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C1-05",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C1-06",
+      "reported_chars": 12,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V2-01",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V2-02",
+      "reported_chars": 10,
+      "actual_count": 10,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V2-03",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V2-04",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V2-05",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V2-06",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V2-07",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V2-08",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V2-09",
+      "reported_chars": 12,
+      "actual_count": 12,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V2-10",
+      "reported_chars": 9,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V2-11",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "V2-12",
+      "reported_chars": 11,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C2-01",
+      "reported_chars": 7,
+      "actual_count": 5,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C2-02",
+      "reported_chars": 11,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C2-03",
+      "reported_chars": 15,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C2-04",
+      "reported_chars": 7,
+      "actual_count": 6,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C2-05",
+      "reported_chars": 11,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "C2-06",
+      "reported_chars": 15,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "B1-01",
+      "reported_chars": 14,
+      "actual_count": 12,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "B1-02",
+      "reported_chars": 13,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "B1-03",
+      "reported_chars": 14,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "roshin-yukai",
+      "id": "B1-04",
+      "reported_chars": 12,
+      "actual_count": 12,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "sayonara-penguin",
+      "id": "V1-01",
+      "reported_chars": 12,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sayonara-penguin",
+      "id": "V1-02",
+      "reported_chars": 11,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sayonara-penguin",
+      "id": "V1-03",
+      "reported_chars": 15,
+      "actual_count": 12,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sayonara-penguin",
+      "id": "V1-04",
+      "reported_chars": 9,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sayonara-penguin",
+      "id": "C1-01",
+      "reported_chars": 5,
+      "actual_count": 5,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sayonara-penguin",
+      "id": "C1-02",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sayonara-penguin",
+      "id": "C1-03",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sayonara-penguin",
+      "id": "C1-04",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sayonara-penguin",
+      "id": "C1-05",
+      "reported_chars": 5,
+      "actual_count": 5,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sayonara-penguin",
+      "id": "C1-06",
+      "reported_chars": 5,
+      "actual_count": 5,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sayonara-penguin",
+      "id": "B1-01",
+      "reported_chars": 12,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sayonara-penguin",
+      "id": "B1-02",
+      "reported_chars": 10,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sayonara-penguin",
+      "id": "B1-03",
+      "reported_chars": 11,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "V1-01",
+      "reported_chars": 13,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "V1-02",
+      "reported_chars": 12,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "V1-03",
+      "reported_chars": 11,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "V1-04",
+      "reported_chars": 14,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "V1-05",
+      "reported_chars": 14,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "C1-01",
+      "reported_chars": 9,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "C1-02",
+      "reported_chars": 13,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "C1-03",
+      "reported_chars": 9,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "C1-04",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "shiori",
+      "id": "C1-05",
+      "reported_chars": 12,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "C1-06",
+      "reported_chars": 15,
+      "actual_count": 13,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "C1-07",
+      "reported_chars": 13,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "C1-08",
+      "reported_chars": 12,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "C1-09",
+      "reported_chars": 9,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "C1-10",
+      "reported_chars": 14,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "V2-01",
+      "reported_chars": 10,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "V2-02",
+      "reported_chars": 12,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "V2-03",
+      "reported_chars": 18,
+      "actual_count": 15,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "V2-05",
+      "reported_chars": 11,
+      "actual_count": 12,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "shiori",
+      "id": "V2-06",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "sonare",
+      "id": "V1-01",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "V1-02",
+      "reported_chars": 12,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "V1-03",
+      "reported_chars": 9,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "V1-04",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "V1-05",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "V1-06",
+      "reported_chars": 12,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "V1-07",
+      "reported_chars": 9,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "V1-08",
+      "reported_chars": 6,
+      "actual_count": 5,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "C1-01",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "C1-02",
+      "reported_chars": 4,
+      "actual_count": 4,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "C1-03",
+      "reported_chars": 4,
+      "actual_count": 4,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "C1-04",
+      "reported_chars": 4,
+      "actual_count": 4,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "C1-05",
+      "reported_chars": 10,
+      "actual_count": 10,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "C1-06",
+      "reported_chars": 4,
+      "actual_count": 4,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "C1-07",
+      "reported_chars": 4,
+      "actual_count": 4,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "C1-08",
+      "reported_chars": 4,
+      "actual_count": 4,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "C1-09",
+      "reported_chars": 4,
+      "actual_count": 4,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "C1-10",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "B1-01",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "sonare",
+      "id": "B1-02",
+      "reported_chars": 9,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "V1-01",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "V1-02",
+      "reported_chars": 8,
+      "actual_count": 8,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "V1-03",
+      "reported_chars": 4,
+      "actual_count": 4,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "V1-04",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "V1-05",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "C1-01",
+      "reported_chars": 11,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "C1-02",
+      "reported_chars": 11,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "C1-03",
+      "reported_chars": 9,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "C1-04",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "C1-05",
+      "reported_chars": 10,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "C1-06",
+      "reported_chars": 10,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "C1-07",
+      "reported_chars": 10,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "O1-01",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "spiral",
+      "id": "O1-02",
+      "reported_chars": 10,
+      "actual_count": 10,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "spiral",
+      "id": "O1-03",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "spiral",
+      "id": "O1-04",
+      "reported_chars": 8,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "O1-05",
+      "reported_chars": 6,
+      "actual_count": 7,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "O1-06",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "spiral",
+      "id": "B1-01",
+      "reported_chars": 15,
+      "actual_count": 14,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "spiral",
+      "id": "B1-02",
+      "reported_chars": 12,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "O1-01",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "O1-02",
+      "reported_chars": 6,
+      "actual_count": 5,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "O1-03",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "O1-04",
+      "reported_chars": 6,
+      "actual_count": 5,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "V1-01",
+      "reported_chars": 12,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "V1-02",
+      "reported_chars": 12,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "V1-03",
+      "reported_chars": 12,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "V1-04",
+      "reported_chars": 6,
+      "actual_count": 6,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "V1-05",
+      "reported_chars": 6,
+      "actual_count": 5,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "V3-01",
+      "reported_chars": 12,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "V3-02",
+      "reported_chars": 12,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "V3-03",
+      "reported_chars": 12,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "B1-01",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "B1-02",
+      "reported_chars": 12,
+      "actual_count": 11,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "B1-03",
+      "reported_chars": 10,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "B1-04",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "C1-01",
+      "reported_chars": 11,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "C1-02",
+      "reported_chars": 11,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "C1-03",
+      "reported_chars": 11,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "C1-04",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "D1-01",
+      "reported_chars": 11,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "D1-02",
+      "reported_chars": 11,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "D1-03",
+      "reported_chars": 11,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "D1-04",
+      "reported_chars": 9,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "V2-01",
+      "reported_chars": 12,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "V2-02",
+      "reported_chars": 12,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "V2-03",
+      "reported_chars": 9,
+      "actual_count": 9,
+      "reported_count_correct": true,
+      "self_check_ok": true,
+      "budget_pass": true
+    },
+    {
+      "song": "uchuu_no_fushigi",
+      "id": "V2-04",
+      "reported_chars": 7,
+      "actual_count": 7,
+      "reported_count_correct": true,
+      "self_check_ok": false,
+      "budget_pass": false
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "id": "V1-01",
+      "reported_chars": 13,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "id": "V1-02",
+      "reported_chars": 11,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "id": "V1-03",
+      "reported_chars": 13,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "id": "V1-04",
+      "reported_chars": 11,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "id": "V1-05",
+      "reported_chars": 13,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "id": "V1-06",
+      "reported_chars": 11,
+      "actual_count": 9,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "id": "V1-07",
+      "reported_chars": 14,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "id": "V1-08",
+      "reported_chars": 11,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "id": "C1-01",
+      "reported_chars": 15,
+      "actual_count": 12,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "id": "C1-02",
+      "reported_chars": 12,
+      "actual_count": 10,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "id": "C1-03",
+      "reported_chars": 16,
+      "actual_count": 12,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    },
+    {
+      "song": "yoake-to-hotaru",
+      "id": "C1-04",
+      "reported_chars": 11,
+      "actual_count": 8,
+      "reported_count_correct": false,
+      "self_check_ok": true,
+      "budget_pass": false
+    }
+  ],
+  "note": "只核对模型自报与既有计数器，不作为额外打分，也不将检查反馈给模型。"
+}

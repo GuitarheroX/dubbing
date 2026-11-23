@@ -1,0 +1,21 @@
+{
+  "id": "486eeda2-91bd-47a3-a4c9-c202dd9827bf",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"阻碍之物、嫉妒、甩落、冲动、我的色彩、本能、想要夺回均准确对应原文，核心信息完整。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"emotion\":{\"score\":5,\"reason\":\"保留决绝与夺回本能的强烈情绪，省略号感叹号也传达出急迫感。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，但“甩落而去”略生硬，“想要夺回所以”稍欠完整。\",\"phrase_ids\":[\"B1-02\",\"B1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰有力，但用词偏直译，表现力略平。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“挡我路的杂音”偏离“邪魔するもの”，“甩开脚踝的手”添加原文没有的具体意象，核心有偏移。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向大体一致，但“脚踝的手”引入具体画面，削弱原句抽象冲击。\",\"phrase_ids\":[\"B1-02\"]},\"naturalness\":{\"score\":3,\"reason\":\"“甩开脚踝的手”语义突兀，“亮出我的颜色”可理解但略生硬。\",\"phrase_ids\":[\"B1-02\",\"B1-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"有画面感但部分意象偏离主题，表达普通。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":2,\"reason\":\"“黑从骨里翻涌”“把黑夺回来”将原文“私の色/本能”改为黑色主题，属明显偏移。\",\"phrase_ids\":[\"B1-03\",\"B1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪强度尚可，但“黑”的引入改变意境方向。\",\"phrase_ids\":[\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":3,\"reason\":\"“抖落贴上身那”语法省略生硬，“黑从骨里翻涌”可理解但拗口。\",\"phrase_ids\":[\"B1-02\",\"B1-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"意象鲜明但偏离原主题，服务的是改写后的黑色叙事。\",\"phrase_ids\":[\"B1-03\",\"B1-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"“挡路的阻碍”略重复，“我要夺回 现在”丢失“から”的因果与本能色彩，但主旨保留。\",\"phrase_ids\":[\"B1-01\",\"B1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"决绝情绪基本保留，结尾“现在”稍弱于原文的夺回渴望。\",\"phrase_ids\":[\"B1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“挡路的阻碍”稍显冗余。\",\"phrase_ids\":[\"B1-01\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但偏平，“全部甩开”较普通。\",\"phrase_ids\":[\"B1-02\",\"B1-04\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"各句核心信息准确对应原文，仅“颜色”与“色彩”用词差异。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"emotion\":{\"score\":5,\"reason\":\"情绪方向与强度充分保留，急迫夺回之感明确。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“甩落而去”略生硬，“想要夺回所以”稍欠完整。\",\"phrase_ids\":[\"B1-02\",\"B1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰，但用词偏直译，表现力略平。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 723,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 896,
+    "output_tokens": 1015,
+    "service_tier": "standard"
+  }
+}

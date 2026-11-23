@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "query_text": "坏消息滚过屏幕 无聊闲话绕耳边\n清晨就被 这些声音磨得厌倦\n今天风格外软\n吹得心里也亮了起来\n换一身轻快 出门去吧",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

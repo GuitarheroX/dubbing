@@ -1,0 +1,209 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "phrases": [
+      {
+        "id": "V1-01",
+        "section": "V1",
+        "ja": "淡い月に見とれてしまうから",
+        "budget": {
+          "min": 13,
+          "max": 13
+        },
+        "pattern": [
+          6,
+          7
+        ]
+      },
+      {
+        "id": "V1-02",
+        "section": "V1",
+        "ja": "暗い足元も見えずに",
+        "budget": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      {
+        "id": "V1-03",
+        "section": "V1",
+        "ja": "転んだことに気がつけないまま",
+        "budget": {
+          "min": 13,
+          "max": 13
+        },
+        "pattern": [
+          6,
+          7
+        ]
+      },
+      {
+        "id": "V1-04",
+        "section": "V1",
+        "ja": "遠い夜の星が滲む",
+        "budget": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      {
+        "id": "V1-05",
+        "section": "V1",
+        "ja": "したいことが見つけられないから",
+        "budget": {
+          "min": 13,
+          "max": 13
+        }
+      },
+      {
+        "id": "V1-06",
+        "section": "V1",
+        "ja": "急いだ振り 俯くまま",
+        "budget": {
+          "min": 11,
+          "max": 11
+        }
+      },
+      {
+        "id": "V1-07",
+        "section": "V1",
+        "ja": "転んだ後に笑われてるもの",
+        "budget": {
+          "min": 14,
+          "max": 14
+        },
+        "pattern": [
+          6,
+          8
+        ]
+      },
+      {
+        "id": "V1-08",
+        "section": "V1",
+        "ja": "気づかない振りをするのだ",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          4,
+          7
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V1",
+      "phrases": [
+        {
+          "id": "V1-01",
+          "zh": "月光淡得醉人 脚下黑了也不管",
+          "chars": 13,
+          "self_check": {
+            "budget": [
+              13,
+              13
+            ],
+            "ok": true,
+            "note": "按 pattern 6+7 拆，空格断句"
+          }
+        },
+        {
+          "id": "V1-02",
+          "zh": "低着头走路 脚尖也看不清",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "5+6 两段，整句一段可用空格作停顿"
+          }
+        },
+        {
+          "id": "V1-03",
+          "zh": "踉跄两步往前 摔了都还没发觉",
+          "chars": 13,
+          "self_check": {
+            "budget": [
+              13,
+              13
+            ],
+            "ok": true,
+            "note": "6+7，与 pattern 对齐"
+          }
+        },
+        {
+          "id": "V1-04",
+          "zh": "远处夜星 在眼里晕成一片",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "4+7，「晕成一片」承接原句渗开的意象"
+          }
+        },
+        {
+          "id": "V1-05",
+          "zh": "想做的事情 竟然一件都找不见",
+          "chars": 13,
+          "self_check": {
+            "budget": [
+              13,
+              13
+            ],
+            "ok": true,
+            "note": "5+8，无 pattern 按语意留空格"
+          }
+        },
+        {
+          "id": "V1-06",
+          "zh": "假装走得很急 头一直低垂",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "5+6，两句动作并列"
+          }
+        },
+        {
+          "id": "V1-07",
+          "zh": "摔了一跤之后 还有笑声悬在背后",
+          "chars": 14,
+          "self_check": {
+            "budget": [
+              14,
+              14
+            ],
+            "ok": true,
+            "note": "6+8，与 pattern 对齐"
+          }
+        },
+        {
+          "id": "V1-08",
+          "zh": "我垂着眼 装作什么都没听",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "4+7，符合 pattern；「垂着眼」与 C1 的抬头成对照"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

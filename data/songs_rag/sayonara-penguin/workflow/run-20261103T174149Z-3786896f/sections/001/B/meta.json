@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T174110_b_72fa16",
+  "input_hash": "72fa167724d0cf9e20d2d9f5ff95a56177cf0ae4b77db8a68d8090724e4f16e6",
+  "finished_at": "2026-11-03T17:41:24+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2311,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 2869,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"灯影浮水面 新芽把春天弹响\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"前5字对5音，后7字对7音，中间用空格断句\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"你走得快半拍 追着你影子\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"6+5，空格对应旋律两段\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"深夜里桌上吃剩的碎屑 连成梦地图\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"前10字一气连唱，后5字收句\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"新的一天 正慢慢靠近\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"4+5，空格对齐旋律切分\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T174110_b_72fa16"
+}

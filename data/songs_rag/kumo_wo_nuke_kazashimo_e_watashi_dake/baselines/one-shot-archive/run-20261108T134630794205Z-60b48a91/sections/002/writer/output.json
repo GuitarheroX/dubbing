@@ -1,0 +1,109 @@
+{
+  "section": "V2",
+  "phrases": [
+    {
+      "id": "V2-01",
+      "zh": "一阵风 吹散云 天晴",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "2+3+2 对应 pattern 三段"
+      }
+    },
+    {
+      "id": "V2-02",
+      "zh": "我走在 长长路上",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "4+4 对应两段"
+      }
+    },
+    {
+      "id": "V2-03",
+      "zh": "大步 向前阔步",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "2+3 对应两段"
+      }
+    },
+    {
+      "id": "V2-04",
+      "zh": "顺风去 只剩你 独自一人",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": true,
+        "note": "2+4+5 对应三段"
+      }
+    },
+    {
+      "id": "V2-05",
+      "zh": "草原上 立着影",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "2+3+2 对应三段，与V1-05重复"
+      }
+    },
+    {
+      "id": "V2-06",
+      "zh": "迁徙的 白色羽翼",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "4+5 对应两段"
+      }
+    },
+    {
+      "id": "V2-07",
+      "zh": "我化作 一阵白风",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "4+5 对应两段"
+      }
+    },
+    {
+      "id": "V2-08",
+      "zh": "轻摇曳",
+      "chars": 3,
+      "self_check": {
+        "budget": [
+          3,
+          3
+        ],
+        "ok": true,
+        "note": "整句三个字"
+      }
+    }
+  ]
+}

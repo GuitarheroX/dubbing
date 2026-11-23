@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "query_text": "清晨呀 为何 偏照着 我的眼睛\n夜晚呀 为何 静下来 就变空荡\n难过呀 掰一半 分给你\n能这样就 好了 你说呢",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

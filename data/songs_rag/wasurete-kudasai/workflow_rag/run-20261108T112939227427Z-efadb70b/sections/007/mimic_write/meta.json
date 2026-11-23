@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"C2\",\n  \"phrases\": [\n    {\n      \"id\": \"C2-01\",\n      \"zh\": \"把心交到我手里\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"按 3+4 断成「把心交 / 到我手里」，与 C1 同形保留副歌重复\"}\n    },\n    {\n      \"id\": \"C2-02\",\n      \"zh\": \"把花束递到你手里\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"按 3+5 断成「把花束 / 递到你手里」\"}\n    },\n    {\n      \"id\": \"C2-03\",\n      \"zh\": \"任头发在风里摇 没有一只手来按住\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"按 7+8 断句，空格处换气\"}\n    },\n    {\n      \"id\": \"C2-04\",\n      \"zh\": \"把话都说给我听\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"按 3+4 断成「把话都 / 说给我听」\"}\n    },\n    {\n      \"id\": \"C2-05\",\n      \"zh\": \"把鼻歌都唱给我听\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"按 3+5 断成「把鼻歌 / 都唱给我听」\"}\n    },\n    {\n      \"id\": \"C2-06\",\n      \"zh\": \"长长的 长长的 迷宫尽头 我把它们放好\",\n      \"chars\": 16,\n      \"self_check\": {\"budget\": [16, 16], \"ok\": true, \"note\": \"按 3+3+4+6 断句，「长长的」重复对应原曲叠词\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:32:47+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3292,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3456,
+    "output_tokens": 2147,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

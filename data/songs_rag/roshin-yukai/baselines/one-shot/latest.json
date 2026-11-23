@@ -1,0 +1,9 @@
+{
+  "run": "run-20261108T132354376225Z-ba43879e",
+  "updated_at": "2026-11-08T13:24:06+00:00",
+  "song": "roshin-yukai",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "passed": 5,
+  "total": 57
+}

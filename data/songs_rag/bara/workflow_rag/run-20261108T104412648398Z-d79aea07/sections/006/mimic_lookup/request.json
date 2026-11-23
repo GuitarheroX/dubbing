@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C2",
+    "query_text": "玫瑰啊 玫瑰啊 凛然地开到最盛时\n玫瑰啊 玫瑰啊 美丽地散得从容",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

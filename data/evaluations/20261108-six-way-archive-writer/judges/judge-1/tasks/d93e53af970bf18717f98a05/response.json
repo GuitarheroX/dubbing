@@ -1,0 +1,21 @@
+{
+  "id": "8a5eb3d3-2941-489a-a627-8b0b564cf655",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原文的抒情与孤独感，如C1-02/C1-06保留“只剩我一个”的独行意境，C1-04“涌上来”强化感官表现力；B较平实但C1-05将“空を抜け”译为“掠过天空”略有语义偏移，整体表现力稍弱。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 507,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 116,
+    "service_tier": "standard"
+  }
+}

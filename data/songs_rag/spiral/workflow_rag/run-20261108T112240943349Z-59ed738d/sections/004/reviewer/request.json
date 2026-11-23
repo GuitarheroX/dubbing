@@ -1,0 +1,174 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "O1",
+    "phrases": [
+      {
+        "id": "O1-01",
+        "section": "O1",
+        "ja": "そんな日はもうたくさんだ",
+        "budget": {
+          "min": 9,
+          "max": 9
+        },
+        "pattern": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "O1-02",
+        "section": "O1",
+        "ja": "いつまでもなんてないんだ",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          2,
+          3
+        ]
+      },
+      {
+        "id": "O1-03",
+        "section": "O1",
+        "ja": "終わりゆくその前に",
+        "budget": {
+          "min": 9,
+          "max": 9
+        },
+        "pattern": [
+          5,
+          4
+        ]
+      },
+      {
+        "id": "O1-04",
+        "section": "O1",
+        "ja": "一歩踏み出してみた",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          2,
+          6
+        ]
+      },
+      {
+        "id": "O1-05",
+        "section": "O1",
+        "ja": "受け入れながら",
+        "budget": {
+          "min": 6,
+          "max": 6
+        },
+        "pattern": [
+          6
+        ]
+      },
+      {
+        "id": "O1-06",
+        "section": "O1",
+        "ja": "祈りながら",
+        "budget": {
+          "min": 6,
+          "max": 6
+        },
+        "pattern": [
+          3,
+          3
+        ]
+      }
+    ],
+    "draft": {
+      "section": "O1",
+      "phrases": [
+        {
+          "id": "O1-01",
+          "zh": "受够 一个人 熬到天亮",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "2+3+4 三段与旋律切分一致，字数刚好对上"
+          }
+        },
+        {
+          "id": "O1-02",
+          "zh": "哪里有什么 永远 可以等",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "初版「没有什么永远可以等」是9字，把「没有」扩成「哪里有什么」补上去，对上了5+2+3"
+          }
+        },
+        {
+          "id": "O1-03",
+          "zh": "在一切慢慢 结束之前",
+          "chars": 9,
+          "self_check": {
+            "budget": [
+              9,
+              9
+            ],
+            "ok": true,
+            "note": "换掉初版「灯火熄灭」，避开前段已用的路灯意象；5+4 断句"
+          }
+        },
+        {
+          "id": "O1-04",
+          "zh": "还是 试着迈出一步",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "初版后段7字超了，收成「试着迈出一步」，也保留てみた那种试探"
+          }
+        },
+        {
+          "id": "O1-05",
+          "zh": "一边接受一切",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "初版7字，去掉「这」压到6字"
+          }
+        },
+        {
+          "id": "O1-06",
+          "zh": "一边悄悄祈祷",
+          "chars": 6,
+          "self_check": {
+            "budget": [
+              6,
+              6
+            ],
+            "ok": true,
+            "note": "与上一句同用「一边」开头，保留原文ながら的并列重复"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

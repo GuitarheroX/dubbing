@@ -1,0 +1,83 @@
+{
+  "section": "C1",
+  "phrases": [
+    {
+      "id": "C1-01",
+      "zh": "再见吧企鹅",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "五字唱六音 末字拖长一拍"
+      }
+    },
+    {
+      "id": "C1-02",
+      "zh": "摇摇摆摆走 一路笑着",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": true,
+        "note": "前段六字后段四字 中间空格断句"
+      }
+    },
+    {
+      "id": "C1-03",
+      "zh": "恋上这世界 眨一眨眼",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          13,
+          13
+        ],
+        "ok": true,
+        "note": "前段五字后段五字 空格处换气"
+      }
+    },
+    {
+      "id": "C1-04",
+      "zh": "风穿城而过 风带着梦",
+      "chars": 10,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": true,
+        "note": "与B1-01同词 保持重复美"
+      }
+    },
+    {
+      "id": "C1-05",
+      "zh": "泪落了下来",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "五字唱七音 尾音延展"
+      }
+    },
+    {
+      "id": "C1-06",
+      "zh": "再见吧企鹅",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "与C1-01呼应 重复收束"
+      }
+    }
+  ]
+}

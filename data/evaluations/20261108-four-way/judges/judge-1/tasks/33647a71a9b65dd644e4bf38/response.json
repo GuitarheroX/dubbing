@@ -1,0 +1,21 @@
+{
+  "id": "6d391a5d-a18f-4d39-a097-c46bbce0a2ee",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B在保持核心语义的同时更具表现力和意象连贯性：C1-01“烧成灰”比A的“焚烧着”更有力度；C1-02“白得作柴火”将灵魂之色与火意象衔接，A较平直；C1-03“点着火/烧旺”层次更丰富；C1-04“口袋里几枚铜板”比“些许的零钱”更自然具体；C1-05“话还烫/接住火星”比A的“不会冷却的话语双手”更通顺且保留冷热对照；C1-06“念想”比“东西”更有情绪；C1-07“捧一把光”比“捧起来”更完整有意境。A整体偏直译，部分表达略生硬。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\",\"C1-07\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 364,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 218,
+    "service_tier": "standard"
+  }
+}

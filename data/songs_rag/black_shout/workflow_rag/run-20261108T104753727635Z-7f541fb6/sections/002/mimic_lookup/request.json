@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "query_text": "不安漫过我的喉咙\n这世界写好的规矩\n焦躁在骨头里发痒\n一根一根抽走自由\n黑白两色的雨落下\n把整座城市都藏起\n抬头天空低头看我 它还在笑",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

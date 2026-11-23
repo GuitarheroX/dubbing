@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "I1",
+    "query_text": "爱从何来 又往何处 落在谁的胸口\n手贴胸口 问一问 心是否诚实\n假话和假面 我一点都不想要\n只想凝望真实 眼神不闪躲",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

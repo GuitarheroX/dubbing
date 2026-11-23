@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173453_b_364b84",
+  "input_hash": "364b842ffe6d5f1fc50461e0d1f6cbf75e78092e71cc205cc5576e9f088140f1",
+  "finished_at": "2026-11-03T17:35:07+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2707,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 3037,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"不知不觉 学你的样子 伸手索求\",\n      \"chars\": 13,\n      \"self_check\": {\n        \"budget\": [13, 13],\n        \"ok\": true,\n        \"note\": \"按 [4,5,4] 用空格断成三段，汉字共 13 个\"\n      }\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"闭上嘴 就好吗\",\n      \"chars\": 6,\n      \"self_check\": {\n        \"budget\": [6, 6],\n        \"ok\": true,\n        \"note\": \"按 [3,3] 断句，无标点，共 6 字\"\n      }\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"全按你所愿 倒着向前 一步步走\",\n      \"chars\": 13,\n      \"self_check\": {\n        \"budget\": [13, 13],\n        \"ok\": true,\n        \"note\": \"三段字数 5+4+4，合计 13\"\n      }\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"像断了呼吸 一样静\",\n      \"chars\": 8,\n      \"self_check\": {\n        \"budget\": [8, 8],\n        \"ok\": true,\n        \"note\": \"按 [5,3] 分成两段，合计 8 字\"\n      }\n    }\n  ]\n}",
+  "migrated_from": "20261103T173453_b_364b84"
+}

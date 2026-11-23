@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "```json\n{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\"id\": \"V1-01\", \"zh\": \"什么才算普通 什么才算应该\"},\n    {\"id\": \"V1-02\", \"zh\": \"手里这把尺子 刻度都是别人\"},\n    {\"id\": \"V1-03\", \"zh\": \"怎么量 都差一截 都不像我\"},\n    {\"id\": \"V1-04\", \"zh\": \"吐出去又吸回来 还是那口不安\"},\n    {\"id\": \"V1-05\", \"zh\": \"我就这样站着不动 任它把我淹没\"}\n  ]\n}\n```",
+  "finished_at": "2026-11-08T11:18:41+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3108,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 2385,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

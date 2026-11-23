@@ -1,0 +1,46 @@
+{
+  "section": "B2",
+  "query_text": "看着我 看着我 看着我",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "段新强_duanxinqiang/光影#s1",
+      "title": "光影",
+      "poet": "段新强",
+      "poem_id": "段新强_duanxinqiang/光影",
+      "stanza_idx": 1,
+      "score": 0.756613,
+      "text": "我看到了：你看到的\n我"
+    },
+    {
+      "chunk_id": "蒙绢·阿迪丝_mengjuanadisi/风的草原#s10",
+      "title": "风的草原",
+      "poet": "蒙绢·阿迪丝",
+      "poem_id": "蒙绢·阿迪丝_mengjuanadisi/风的草原",
+      "stanza_idx": 10,
+      "score": 0.751679,
+      "text": "正在注视着我们"
+    },
+    {
+      "chunk_id": "徐钺_xuyue/缓慢的黑暗#s9",
+      "title": "缓慢的黑暗",
+      "poet": "徐钺",
+      "poem_id": "徐钺_xuyue/缓慢的黑暗",
+      "stanza_idx": 9,
+      "score": 0.736371,
+      "text": "看着你。"
+    },
+    {
+      "chunk_id": "丑石_choushi/珩琅山#s34",
+      "title": "珩琅山",
+      "poet": "丑石",
+      "poem_id": "丑石_choushi/珩琅山",
+      "stanza_idx": 34,
+      "score": 0.726345,
+      "text": "它看着我们经过了它"
+    }
+  ]
+}

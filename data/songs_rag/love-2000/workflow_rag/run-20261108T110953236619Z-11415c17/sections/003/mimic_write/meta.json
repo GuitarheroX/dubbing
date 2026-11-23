@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "```json\n{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"我竟没有察觉\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"沿用初版，刚好六字，语气轻，不抢后面两句\"}\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"是不是我 太习惯被你爱\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"空格断在第四字后，前半自问后半承认，把「甘えてた」换成被爱的习惯\"}\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"所以 先好好爱自己 再张开双手 去爱别人\",\n      \"chars\": 17,\n      \"self_check\": {\"budget\": [17, 17], \"ok\": true, \"note\": \"按 pattern 2+6+5+4 断成四段，保留初版「张开双手」的动作意象，只把断句位置对齐旋律\"}\n    }\n  ]\n}\n```",
+  "finished_at": "2026-11-08T11:11:27+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2714,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1792,
+    "output_tokens": 1995,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "id": "8c104035-4b85-4f61-9ded-63b22f29c458",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"三句核心意思基本准确，但“话题”略泛化，“还有”承接尚可\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"emotion\":{\"score\":3,\"reason\":\"疑问语气保留，但整体偏平，缺少原词轻快邀约感\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文通顺，歌词感稍弱但可唱\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通，缺少“未知花”的延展感\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心语义保留，“并肩”为合理补充，“叫不出名字”贴近“未知”\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"emotion\":{\"score\":4,\"reason\":\"轻快邀约和好奇感较足，语气词增强亲近感\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"分句节奏自然，略多语气词但符合歌词\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“并肩”“叫不出名字的花”意象较鲜明\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“说些什么样的话”偏离“聊什么话题”，“连谁都没见过”弱化“无人知晓”\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向大致一致但偏陈述，疑问灵动感不足\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"naturalness\":{\"score\":3,\"reason\":\"可理解，但“什么样的话”“连谁都”略生硬\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，缺少原词轻盈感\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“故事”替换“話”尚可，但“歌谣”偏书面，“不曾知晓”准确\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪基本一致，但偏文雅，少了原词口语亲近感\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"naturalness\":{\"score\":3,\"reason\":\"中文可读，但“怎样的歌谣呢”稍显书面\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达平稳，意象不够鲜活\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"三句核心信息准确，疑问和“连…也”结构保留\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"emotion\":{\"score\":4,\"reason\":\"轻快好奇的邀约感保留较好，略平但方向准确\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"naturalness\":{\"score\":5,\"reason\":\"口语自然顺口，符合歌词文体\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"简洁清晰，“连无人知晓的花儿也”有延展感\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"前两句加入“和你”重复且“聊一些”略泛，第三句“带上”改变原句并列意象\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪轻快但“带上花”使原词悬想感变成行动感\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"节奏顺口，分句自然\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达尚可，但“带上”与原词意象偏移\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 714,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 1138,
+    "service_tier": "standard"
+  }
+}

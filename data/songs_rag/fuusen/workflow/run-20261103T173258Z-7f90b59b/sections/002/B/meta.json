@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173230_b_1f5734",
+  "input_hash": "1f57349a1df1b4d9d6c975362166d87de698dfae820fbe8c5bf0928fe3082299",
+  "finished_at": "2026-11-03T17:32:50+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2304,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 3966,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"气被抽干 只剩皱褶\",\n      \"chars\": 8,\n      \"self_check\": {\n        \"budget\": [8, 8],\n        \"ok\": true,\n        \"note\": \"按4+4断句，前后各四字\"\n      }\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"塌成一只 旧的气球\",\n      \"chars\": 8,\n      \"self_check\": {\n        \"budget\": [8, 8],\n        \"ok\": true,\n        \"note\": \"按4+4断句，省略主语承接上句\"\n      }\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"原是 你指间 的旧物\",\n      \"chars\": 8,\n      \"self_check\": {\n        \"budget\": [8, 8],\n        \"ok\": true,\n        \"note\": \"按2+3+3断句，末段三字收住\"\n      }\n    }\n  ]\n}",
+  "migrated_from": "20261103T173230_b_1f5734"
+}

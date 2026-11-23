@@ -1,0 +1,9 @@
+{
+  "run": "run-20261108T134633655100Z-c0036d7b",
+  "updated_at": "2026-11-08T13:46:40+00:00",
+  "song": "love-2000",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "passed": 1,
+  "total": 17
+}

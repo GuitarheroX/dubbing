@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"I1\",\n  \"phrases\": [\n    {\n      \"id\": \"I1-01\",\n      \"zh\": \"爱从何来 又往哪去 住进谁的胸口\",\n      \"chars\": 14,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": true, \"note\": \"按 4/4/6 断成三顿，把初版抽象的“落在谁胸口”换成能摸到身体的“住进”\"}\n    },\n    {\n      \"id\": \"I1-02\",\n      \"zh\": \"手贴胸口 轻轻问 心是否诚实\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"沿用初版的贴胸动作，中段压成 3 字“轻轻问”，整句正好 4/3/5\"}\n    },\n    {\n      \"id\": \"I1-03\",\n      \"zh\": \"假货摆得再亮 我也只要真的\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"借分析里橱窗打亮假货的画面，前段凑满 6 字，后段 6 字，和下一句的“真”接住\"}\n    },\n    {\n      \"id\": \"I1-04\",\n      \"zh\": \"只想看清真实 眼神不闪躲\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"保留初版原句，6+5 与旋律切分一致\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:10:48+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3173,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 2949,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

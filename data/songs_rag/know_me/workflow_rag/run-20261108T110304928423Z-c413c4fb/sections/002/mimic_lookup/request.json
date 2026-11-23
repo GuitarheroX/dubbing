@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "query_text": "沉在水底的 一层浑浊\n想服个软 却咬紧了牙关\n隔着耳机 谁都接不住谁\n认不出自己",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "慢慢 吞下",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "空格断句，两字加三字共五字"
+      }
+    },
+    {
+      "id": "V1-02",
+      "zh": "赤与蓝的 星群",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "五字加四字，空格断句"
+      }
+    },
+    {
+      "id": "V1-03",
+      "zh": "未来 到过去",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "三字加四字"
+      }
+    },
+    {
+      "id": "V1-04",
+      "zh": "一一 咀嚼",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "两字加三字"
+      }
+    },
+    {
+      "id": "V1-05",
+      "zh": "几十次 反复咬碎",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "四字加四字"
+      }
+    },
+    {
+      "id": "V1-06",
+      "zh": "融化后 就喝下",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "五字加两字"
+      }
+    }
+  ]
+}

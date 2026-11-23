@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "query_text": "我这一生 注定是 深红玫瑰 永不低头\n生来要华美 也如烈火 把命点燃 才叫活过",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

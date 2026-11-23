@@ -1,0 +1,21 @@
+{
+  "id": "26e9debf-2dec-4f04-86be-7852767e0b1d",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A整体更自然、更有表现力：C1-01“挂上笑脸 装作全都懂”比B“带着熟悉的神情笑吧”更贴近“知った顔で”的伪装感；C1-02“深不见底的 才让我害怕”比B“无底的恐惧在心中”更口语、更有情绪；C1-05“假装都懂 踩着拍子转”比B“装作懂得跳着舞吗”更流畅；C1-08“我不是一个人吗”保留反问语气，B“并非独自一人啊”偏陈述。B的C1-04保留英文更忠实，但整体不如A自然。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-05\",\"C1-08\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 411,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 170,
+    "service_tier": "standard"
+  }
+}

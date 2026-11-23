@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\"section\":\"V1\",\"phrases\":[{\"id\":\"V1-01\",\"zh\":\"盛夏的耀眼海面 赤脚踩进白浪\"},{\"id\":\"V1-02\",\"zh\":\"喊着你名字的时候 海水漫过脚踝\"},{\"id\":\"V1-03\",\"zh\":\"忘了海浪推着我 皮肤晒得发干\"},{\"id\":\"V1-04\",\"zh\":\"你伸来的手心朝上 身体就烧起来\"}]}",
+  "finished_at": "2026-11-08T10:57:04+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 1980,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 2600,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

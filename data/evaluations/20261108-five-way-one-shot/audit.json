@@ -1,0 +1,35 @@
+{
+  "verified_at": "2026-11-08T13:31:48.917295+00:00",
+  "tasks_verified": 1596,
+  "reused_tasks": 912,
+  "new_completed_tasks": 684,
+  "actual_response_models": {
+    "deepseek-flash": 1596
+  },
+  "all_requests_thinking_disabled": true,
+  "reasoning_content_present": false,
+  "successful_task_usage": {
+    "reused_tasks": {
+      "input_tokens": 406844,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 666112,
+      "output_tokens": 120853
+    },
+    "new_tasks": {
+      "input_tokens": 278637,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 575616,
+      "output_tokens": 159008
+    }
+  },
+  "credential_literal_matches": 0,
+  "frozen_input_files_verified": 2478,
+  "source_files_changed": [],
+  "frozen_code_hashes_match": true,
+  "original_four_candidates_unchanged": true,
+  "original_report_unchanged": true,
+  "one_shot_generation": {
+    "completed_sections": 84
+  },
+  "comet_status": "skipped"
+}

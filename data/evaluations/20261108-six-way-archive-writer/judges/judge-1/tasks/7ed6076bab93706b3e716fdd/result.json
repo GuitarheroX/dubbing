@@ -1,0 +1,231 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "各句核心信息准确，'不条理'译为'荒唐'、'生きている'译为'真实地活着'均合理。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-03",
+            "C1-04",
+            "C1-05",
+            "C1-06",
+            "C1-07",
+            "C1-08"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "从暗夜无畏到自我确认的坚定情绪完整保留，语气强弱贴合。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-02",
+            "C1-04",
+            "C1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文顺口，'就算夜再黑''黑色也无妨'等符合歌词文体。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-05",
+            "C1-06"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "表达清晰有力，但意象较平实，缺少突出亮点。",
+          "phrase_ids": [
+            "C1-07",
+            "C1-08"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "'黑夜披在身上''只信这条窄路''洗成白色'等添加或偏移原意，'窄路'非原文信息。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-03",
+            "C1-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "整体坚定反抗情绪保留，但'呼吸就是证据'偏说理，情绪略转。",
+          "phrase_ids": [
+            "C1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "大体顺口，'砸碎所有不讲理'稍口语生硬。",
+          "phrase_ids": [
+            "C1-07"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'黑夜披在身上''洗成白色'意象鲜明，但部分偏离主题。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-06"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核心语义准确，'循着心信之路''打破这荒谬'贴合原文。",
+          "phrase_ids": [
+            "C1-03",
+            "C1-07"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，但'不必怯懦''坚定前行'略平淡。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体可读，'循着心信之路'稍显文绉生硬。",
+          "phrase_ids": [
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，意象与力度较平。",
+          "phrase_ids": [
+            "C1-04",
+            "C1-08"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "'夜色如墨''不用谁把我洗白''用力呼吸'等改写偏移，'洗白'引入原文没有的他人施动关系。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-06",
+            "C1-08"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "反抗与自我确认情绪较强，但'用力呼吸'略夸张转向。",
+          "phrase_ids": [
+            "C1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "口语顺口，'黑就黑 又何妨'自然，但'洗白'语义双关略跳。",
+          "phrase_ids": [
+            "C1-05",
+            "C1-06"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'夜色如墨''砸碎这些不合理'有力度，意象较鲜明。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-07"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心信息基本准确，'信我道路'略简省，'呼吸着'弱化'生きている'的存在确认。",
+          "phrase_ids": [
+            "C1-03",
+            "C1-08"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，但整体偏平淡，力度稍弱。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "大体顺口，'信我道路'稍生硬。",
+          "phrase_ids": [
+            "C1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达普通，缺少鲜明意象。",
+          "phrase_ids": [
+            "C1-08"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "各句核心语义准确，'坚信的道路''真实地活着'贴合原文。",
+          "phrase_ids": [
+            "C1-03",
+            "C1-08"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致且完整，但语气较平稳，缺一点冲击力。",
+          "phrase_ids": [
+            "C1-02",
+            "C1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文顺口自然，符合歌词文体。",
+          "phrase_ids": [
+            "C1-01",
+            "C1-05",
+            "C1-06"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "表达清晰，'真实地活着'有收束力，但意象较常规。",
+          "phrase_ids": [
+            "C1-08"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "query_text": "真心话 到唇边又 咽下 不敢说出口\n镜中 试演 千百种人生\n演成另一个我 笑得笨拙 只为 换你回眸一眼\noh 带我飞向星",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

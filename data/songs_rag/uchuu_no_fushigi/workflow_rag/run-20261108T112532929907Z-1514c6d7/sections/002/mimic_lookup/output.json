@@ -1,0 +1,46 @@
+{
+  "section": "V2",
+  "query_text": "清晨呀 为何 偏照着 我的眼睛\n夜晚呀 为何 静下来 就变空荡\n难过呀 掰一半 分给你\n能这样就 好了 你说呢",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "木焱_muyan/科幻诗：60#s1",
+      "title": "科幻诗：60",
+      "poet": "木焱",
+      "poem_id": "木焱_muyan/科幻诗：60",
+      "stanza_idx": 1,
+      "score": 0.701833,
+      "text": "剜掉你的眼珠\n予自己更明亮的天空\n若乌云来了\n请假装黑夜\n若星儿出现\n那也许是\n你不舍丢弃的 眼 泪"
+    },
+    {
+      "chunk_id": "河东_hedong/爱情的宿命#s3",
+      "title": "爱情的宿命",
+      "poet": "河东",
+      "poem_id": "河东_hedong/爱情的宿命",
+      "stanza_idx": 3,
+      "score": 0.698283,
+      "text": "很不习惯对着灯光叙述\n身体的扭动始于灵魂的绞痛\n呈现大片的空白\n用心情撒上月光\n爱情的草种\n滋养黑暗中的对话\n滋养一对妄想透视夜的眸子"
+    },
+    {
+      "chunk_id": "魏皓亮_weihaoliang/偏爱#s1",
+      "title": "偏爱",
+      "poet": "魏皓亮",
+      "poem_id": "魏皓亮_weihaoliang/偏爱",
+      "stanza_idx": 1,
+      "score": 0.694836,
+      "text": "过了好久\n才听懂那句\n被偏爱的人\n都有恃无恐\n就像保温杯里的水\n无法引起热锅上蚂蚁的注意\n温床上的小憩\n醒来时\n常被氛围弄的闷热\n安静的时光里\n怎么会需要义无反顾\n不合时宜 只会\n反复糟心\n感动的时刻\n太多都留在心里\n是我需要\n而不是你以为"
+    },
+    {
+      "chunk_id": "红格子_honggezi/一下子#s1",
+      "title": "一下子",
+      "poet": "红格子",
+      "poem_id": "红格子_honggezi/一下子",
+      "stanza_idx": 1,
+      "score": 0.69466,
+      "text": "白天太匆忙夜晚又\n总是偷偷从指间溜过\n日记里的花总是不按时开\n旅途也没办法依约实行\n今天爱上你明天或许不是你\n太阳从东边出来从西边落下\n一切好像都安排得宜\n又好像不是那么一回事"
+    }
+  ]
+}

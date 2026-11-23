@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T175529_b_ce23d6",
+  "input_hash": "ce23d6bb7c1a8706af010a75442814510189a7566f7782e3d0ad8eca3e35bc96",
+  "finished_at": "2026-11-03T17:55:41+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2173,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 2391,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"街灯下 暮色沉 无声的屋檐\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"按 3/3/5 用空格断句，末段五字收在屋檐上\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"人走后 椅子空 积一层薄尘\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"与上句同为 3/3/5，结构平行，末段五字落在薄尘\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"全都 载上吧 风往远处走\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"按 2/3/5 断，前两字短促接旋律起音\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"看云流成河 就坐上云背\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"5/5 两段，第二段承接乘云的动势\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T175529_b_ce23d6"
+}

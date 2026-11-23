@@ -1,0 +1,197 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核融合炉、纵身跃入、湛蓝光包裹、一切被原谅等核心信息准确，仅末句增'心好轻'属合理情绪补充",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02",
+            "C2-03",
+            "C2-04",
+            "C2-05",
+            "C2-06"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "向往与释然的方向保留，'多美丽''心好轻'强化了原曲的温柔解脱感",
+          "phrase_ids": [
+            "C2-03",
+            "C2-06"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "中文顺口，'纵身一跃而入''湛蓝光芒包裹我'符合歌词文体",
+          "phrase_ids": [
+            "C2-02",
+            "C2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "意象清晰有力，但'心好轻'略直白，稍减原句的沉静余味",
+          "phrase_ids": [
+            "C2-06"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "'炉心深处那片蓝'将'核融合炉'改写为意象化指代，丢失直呼炉名的核心；'连我也一样'为增补",
+          "phrase_ids": [
+            "C2-01",
+            "C2-04",
+            "C2-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "温柔吞没与获赦的情绪方向一致，但'又会怎样'稍偏疑问而非向往",
+          "phrase_ids": [
+            "C2-05",
+            "C2-06"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，'化一片光''温柔地吞没'自然，个别句稍长",
+          "phrase_ids": [
+            "C2-02",
+            "C2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'温柔地吞没''连我也一样'意象鲜明，服务主题",
+          "phrase_ids": [
+            "C2-03",
+            "C2-06"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "'跳进炉心那片蓝'弱化核融合炉直呼；'再不用回头'为原句所无的增补，'甜得像梦'偏移",
+          "phrase_ids": [
+            "C2-01",
+            "C2-05",
+            "C2-06"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "解脱感保留，但'甜得像梦'把沉静的自毁式释然甜化，情绪略偏",
+          "phrase_ids": [
+            "C2-06"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "语句流畅，'温柔裹住全身'自然，'甜得像梦'稍俗",
+          "phrase_ids": [
+            "C2-03",
+            "C2-06"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'被那光吞没''温柔裹住全身'画面感强",
+          "phrase_ids": [
+            "C2-02",
+            "C2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "'核聚变炉旁'将'に'译为'旁'，方向略偏（原为跃入炉中），其余核心信息准确",
+          "phrase_ids": [
+            "C2-01",
+            "C2-04",
+            "C2-05"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "向往与获赦方向保留，语气偏平实，情绪强度稍弱",
+          "phrase_ids": [
+            "C2-02",
+            "C2-06"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "'跃入其中后啊''似的'较生硬，书面腔重",
+          "phrase_ids": [
+            "C2-05",
+            "C2-06"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达准确但平淡，'旁'削弱了投身炉中的冲击意象",
+          "phrase_ids": [
+            "C2-01",
+            "C2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "核融合炉、纵身跳入、湛蓝光包裹、一切被原谅均准确对应",
+          "phrase_ids": [
+            "C2-01",
+            "C2-02",
+            "C2-03",
+            "C2-04",
+            "C2-05",
+            "C2-06"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，但末句省略'ような気がして'的犹疑语气，稍显直断",
+          "phrase_ids": [
+            "C2-06"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "使用繁体及'爐'字，'若縱身跳入其中的話'偏书面生硬",
+          "phrase_ids": [
+            "C2-01",
+            "C2-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达准确但较平实，意象呈现普通",
+          "phrase_ids": [
+            "C2-03",
+            "C2-06"
+          ]
+        }
+      }
+    }
+  ]
+}

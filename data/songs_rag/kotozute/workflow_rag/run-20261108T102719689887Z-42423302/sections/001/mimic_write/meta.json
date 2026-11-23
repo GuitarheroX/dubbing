@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"曾见过的风景\",\n      \"chars\": 6,\n      \"self_check\": {\n        \"budget\": [6, 6],\n        \"ok\": true,\n        \"note\": \"保留初版原句，六字正好对上\"\n      }\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"怔怔 等一颗没来的流星\",\n      \"chars\": 10,\n      \"self_check\": {\n        \"budget\": [10, 10],\n        \"ok\": true,\n        \"note\": \"前两字一顿，用空格断开，照应呆然；「没来的」比「未至」更口语，接住原曲那种悬着等不到的钝感\"\n      }\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"想一直仰望\",\n      \"chars\": 5,\n      \"self_check\": {\n        \"budget\": [5, 5],\n        \"ok\": true,\n        \"note\": \"沿用初版的仰望，把贪恋落在抬头的动作上，收尾不用「着」\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T10:28:03+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 4424,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 128,
+    "output_tokens": 3467,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

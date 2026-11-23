@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173351_b_c99d7a",
+  "input_hash": "c99d7a39b614b852df6f1cabb2b97bc6cd324ed47397971776cb2da2204b0476",
+  "finished_at": "2026-11-03T17:33:58+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2538,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 1605,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"一遍一遍\",\n      \"chars\": 4,\n      \"self_check\": {\"budget\": [4, 4], \"ok\": true, \"note\": \"整句一口气四字，与下一句开头重复\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"一遍一遍 呼喊\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"按 pattern 4+2 断，前四字承接上句\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"就算变成夜色 深处的怪兽 也不回头\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"空格切 6+5+4，与旋律三段对齐\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"想在这 留下一句 没说出的心事\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"空格切 3+4+6，末段六字落在长音上\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"把这一句秘密\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"整句一段六字，收在秘密上不作停顿\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T173351_b_c99d7a"
+}

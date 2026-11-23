@@ -1,0 +1,21 @@
+{
+  "id": "e48a978c-e5ed-4aca-83dc-9f893fb71df5",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"保留夏日海边、赤脚、呼唤、脚湿、肌肤干、被牵引而燃烧等核心信息，但“耀眼”“盐粒”“手心朝上”为增补细节，略有偏移。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"热烈、身体感与夏日海边的情绪方向保留较好，增补意象强化了画面但略改变原句的简洁感。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，歌词感较强；个别表达如“皮肤晒出盐粒”稍显刻意。\",\"phrase_ids\":[\"V1-01\",\"V1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明，画面和身体感受有力，服务主题；部分增补略抢原意。\",\"phrase_ids\":[\"V1-01\",\"V1-03\",\"V1-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息基本准确：夏日海边、赤脚、呼喊、脚踝湿、忘潮水、肌肤干、牵手燃烧；但“海原”简化为“海边”，细节略减。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，简洁直白，但热烈与身体感的强度略弱于原文。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文顺口自然，短句有歌词文体感。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但偏平实，意象和力度普通。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息保留较完整，但“奔跑”为原文没有的动作增补，“海原”保留较好。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，夏日海边与身体燃烧感保留，但整体略平。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文可理解且较顺，个别如“肌肤早已干涸”稍书面。\",\"phrase_ids\":[\"V1-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通，缺少突出亮点。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"保留赤脚、海、呼喊、脚湿、忘潮水、肌肤干、牵手燃烧等核心，但“正午”“白亮晃眼”“薄盐”“烧到骨头”等增补较多，局部偏移。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"热烈、身体感与夏日氛围较强，情绪方向一致，但增补使原句更浓烈。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文较顺口，歌词感强；个别表达如“皮肤结成薄盐”稍显造作。\",\"phrase_ids\":[\"V1-01\",\"V1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明有力，画面感强，服务主题；部分增补略过度。\",\"phrase_ids\":[\"V1-01\",\"V1-03\",\"V1-04\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息基本准确，但“奔跑不停”为增补，“海原”简化为“海滨”。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向一致但较平淡，热烈与身体感不足。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文可理解且较顺，但“双脚已被水浸湿”稍显生硬。\",\"phrase_ids\":[\"V1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但普通，意象和力度一般。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息基本保留，但文言压缩使“海原”“呼喊之间”等细节弱化。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向大致一致，但文言化使夏日身体感与热烈感变淡。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]},\"naturalness\":{\"score\":2,\"reason\":\"文言压缩明显生硬，如“唤你之间足已湿”“干肌肤”，不符合自然中文歌词语感。\",\"phrase_ids\":[\"V1-02\",\"V1-03\",\"V1-04\"]},\"expressiveness\":{\"score\":2,\"reason\":\"表达局促，意象被压缩得空泛，力度不足。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 924,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 1366,
+    "service_tier": "standard"
+  }
+}

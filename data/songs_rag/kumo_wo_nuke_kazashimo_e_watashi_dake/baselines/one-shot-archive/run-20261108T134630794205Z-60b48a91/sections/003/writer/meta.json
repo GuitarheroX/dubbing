@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"迎着风 穿过花丛\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": false, \"note\": \"实际9字，需补一字\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"穿过云 顺风去 只剩我一人\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": false, \"note\": \"实际12字，需补一字\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"天微明 快些走 别回头\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"5+5分段\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"这青草 和灵魂的 气息\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": false, \"note\": \"实际10字，需补两字\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"穿过风 穿过 天空 穿过\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"3+2+3+2分段\"}\n    },\n    {\n      \"id\": \"C1-06\",\n      \"zh\": \"穿过云 顺风去 只剩我一人\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": false, \"note\": \"实际12字，需补一字\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:38+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "C1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1310,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1792,
+    "output_tokens": 424,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

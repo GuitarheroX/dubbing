@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 2.332,
+  "usage": {
+    "input_tokens": 572,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 294,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": false,
+    "human_annotations_in_generation": true,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "generation",
+  "variant": "paper-annotated",
+  "migrated_from": "run-20261105T124059277756Z-689b291f",
+  "raw_response": "1. 黑夜再深沉 (6 syllables: hēi yè zài shēn chén)\n2. 此刻不再畏惧 (7 syllables: cǐ kè bù zài wèi jù)\n3. 坚信的道路 (6 syllables: jiān xìn de dào lù)\n4. 毫不犹豫前行 (7 syllables: háo bù yóu yù qián xíng)\n5. 黑色也可以 (6 syllables: hēi sè yě kě yǐ)\n6. 就算不是白色 (7 syllables: jiù suàn bù shì bái sè)\n7. 打破这荒谬 (7 syllables: dǎ pò zhè huāng miù)\n8. 我此刻就在这里 真实地活着 (16 syllables: wǒ cǐ kè jiù zài zhè lǐ zhēn shí de huó zhe)\n\nRhyme check (final phonemes): chén / jù / lù / xíng / yǐ / sè / miù / zhe — no consistent rhyme in source either (夜/今/道/う/い/も/し/ら), so rhyme pattern preserved as free.\n\nNote: lines 1–7 end in varied finals matching the source's lack of rhyme; line 8 ends in \"zhe\" mirroring the source's \"ら\" as a non-rhyming close."
+}

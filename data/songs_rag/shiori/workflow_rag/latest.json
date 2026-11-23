@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T111807282749Z-b0567f79",
+  "updated_at": "2026-11-08T11:21:16+00:00",
+  "song": "shiori",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

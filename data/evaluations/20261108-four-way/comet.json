@@ -1,0 +1,16 @@
+{
+  "status": "skipped",
+  "config": {
+    "input_hash": "3fb64c59f359cd5ecca8a63d2b38610b36d134bafeab0d820ad63c513d7d54f6",
+    "model": "Unbabel/wmt22-cometkiwi-da",
+    "revision_requested": null,
+    "checkpoint": null,
+    "checkpoint_sha256": null,
+    "local_only": false,
+    "batch_size": 8,
+    "gpus": 0,
+    "seed": 0
+  },
+  "reason": "本次按用户要求跳过 COMET-QE；未下载受限权重、未计算分数。",
+  "requested_at": "2026-11-08T12:45:58.070701+00:00"
+}

@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T112532929907Z-1514c6d7",
+  "updated_at": "2026-11-08T11:29:34+00:00",
+  "song": "uchuu_no_fushigi",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B1",
+    "query_text": "笑着跳着呀 也试着 皱起眉头\n世界 那么大 我们却 缩在角落\n我们拉手 问一问宇宙秘密\n一起去把它解开吧",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

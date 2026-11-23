@@ -1,0 +1,21 @@
+{
+  "id": "2220d052-4bfc-4e25-8d9b-f5ed0278f2d2",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更简洁自然，情绪克制贴合原词自省语气；B的“旧地图”“我真没出息”略添油加醋，且“把一切”扩大了原意。A在V1-01、V1-04、V1-05上语义更准、中文更顺。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 324,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 102,
+    "service_tier": "standard"
+  }
+}

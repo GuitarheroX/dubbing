@@ -1,0 +1,21 @@
+{
+  "id": "851ec9a7-b742-46ed-bd0e-8721e94ddb32",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原意：V2-01保留“心意说不出口”的直白情绪，V2-02“千万种人生浮上心间”准确对应“いろんな人生を浮かべ”，V2-03“演给你看/惹你回眸”自然且有表现力。A的V2-01“一次次”添加了原文没有的反复感，V2-02“换人生”略偏离“浮现各种人生”的语义，V2-03“披上陌生模样”扩展稍多。B整体中文更自然、误读更少。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 336,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 152,
+    "service_tier": "standard"
+  }
+}

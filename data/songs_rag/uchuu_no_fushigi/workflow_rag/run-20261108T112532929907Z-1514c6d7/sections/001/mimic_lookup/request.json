@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V1",
+    "query_text": "鸟儿呀 为何 能飞向 蓝蓝天空\n猫咪呀 为何 总睡成 一团毛球\n你今天 要过 怎样的 晴朗一天\n全部 全部 全部\n一起出发 找吧",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "c96d9cb8-3335-4dc1-afe2-7cb1239a9873",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"多数句核心准确，C1-02将“底知らず恐れる”转为“恐惧在心中”，略弱化“无底”的恐惧对象；C1-08“并非独自一人”与疑问语气有偏移。\",\"phrase_ids\":[\"C1-02\",\"C1-08\"]},\"emotion\":{\"score\":4,\"reason\":\"整体保留不安与渴求交织的情绪，C1-02稍显静态，C1-08陈述化削弱原句的确认/反问感。\",\"phrase_ids\":[\"C1-02\",\"C1-08\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，歌词感尚可；“带着熟悉的神情笑吧”略书面，“无底的恐惧在心中”稍平。\",\"phrase_ids\":[\"C1-01\",\"C1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象较普通，C1-02和C1-06偏直白，缺少原词“底”的反复呼应。\",\"phrase_ids\":[\"C1-02\",\"C1-06\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息大体准确；C1-01“笑着给我看”略增使役意味，C1-06“被什么填满”弱化“底”的意象，C1-08改为肯定陈述。\",\"phrase_ids\":[\"C1-01\",\"C1-06\",\"C1-08\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向保留，C1-02“恐惧在蔓延”增强动态，C1-08肯定化使原句的犹疑减弱。\",\"phrase_ids\":[\"C1-02\",\"C1-08\"]},\"naturalness\":{\"score\":4,\"reason\":\"四字加短句节奏较顺，但“装作了然 笑着给我看”稍拗，“给我一份 平庸的爱”略生硬。\",\"phrase_ids\":[\"C1-01\",\"C1-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“深不见底 恐惧在蔓延”较有画面，整体有歌词节奏感，但部分表达偏套语。\",\"phrase_ids\":[\"C1-02\",\"C1-05\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"多数句准确；C1-01“装作全都懂”与“知った顔で笑って”有偏移，C1-08“我不是一个人吗”保留疑问但语义略变。\",\"phrase_ids\":[\"C1-01\",\"C1-08\"]},\"emotion\":{\"score\":4,\"reason\":\"不安、渴求与自欺的情绪基本保留，C1-01偏“装懂”削弱微笑的复杂感。\",\"phrase_ids\":[\"C1-01\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“挂上笑脸 装作全都懂”自然；“那个深底 会被填满吗”稍口语但可理解。\",\"phrase_ids\":[\"C1-01\",\"C1-06\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“深不见底的 才让我害怕”和“那个深底”形成呼应，表达较有力；部分句偏直白。\",\"phrase_ids\":[\"C1-02\",\"C1-06\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"C1-01“懂我的笑脸”改变“知った顔”的“了然神情”为“懂我”，C1-07“攥紧我手腕”增加具体动作，C1-08“不是一个人吧”偏移原句确认语气。\",\"phrase_ids\":[\"C1-01\",\"C1-07\",\"C1-08\"]},\"emotion\":{\"score\":3,\"reason\":\"整体情绪仍在，但C1-07增加肢体控制意象，C1-01转向被理解，局部偏离原词的自欺与疏离感。\",\"phrase_ids\":[\"C1-01\",\"C1-07\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文较顺，“我怕那口井 深得没有底”自然有歌感；“攥紧我手腕”稍具体但可唱。\",\"phrase_ids\":[\"C1-02\",\"C1-07\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“井”的意象鲜明且贯穿C1-02、C1-06，表现力较强，但C1-01和C1-07的改写服务主题稍偏。\",\"phrase_ids\":[\"C1-02\",\"C1-06\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心语义大体准确；C1-02“深不见底的恐惧啊”将“底知らず恐れる”名词化，C1-08“并非孤单一人”弱化疑问语气。\",\"phrase_ids\":[\"C1-02\",\"C1-08\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向保留，C1-02稍显静态，C1-08陈述化削弱原句的确认/反问感。\",\"phrase_ids\":[\"C1-02\",\"C1-08\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“带着了然神情微笑吧”略书面，“别放开别停下”简洁自然。\",\"phrase_ids\":[\"C1-01\",\"C1-07\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但偏平实，C1-02和C1-06缺少“底”的反复呼应，意象不够鲜明。\",\"phrase_ids\":[\"C1-02\",\"C1-06\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1313,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 1233,
+    "service_tier": "standard"
+  }
+}

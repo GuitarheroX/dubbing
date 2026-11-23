@@ -1,0 +1,57 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "草丛深处 无名野花",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "需补两字："
+      }
+    },
+    {
+      "id": "V1-02",
+      "zh": "静静盛开 无人知晓",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "需补两字："
+      }
+    },
+    {
+      "id": "V1-03",
+      "zh": "只迎着风 轻轻摇摆",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "需补两字："
+      }
+    },
+    {
+      "id": "V1-04",
+      "zh": "就这样摇曳 度过一生",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "需补三字："
+      }
+    }
+  ]
+}

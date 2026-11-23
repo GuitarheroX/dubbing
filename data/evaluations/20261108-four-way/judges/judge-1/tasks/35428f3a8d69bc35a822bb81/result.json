@@ -1,0 +1,152 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“零碎的拍子”保留ばらばら节奏之意，但“走两步”添加原文没有的动作；“哼得走调”把“若能哼唱”改成走调，语义有偏移。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "轻松随性的方向接近，但“走两步”“走调”使语气更俏皮，偏离原句安静试探的感觉。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，像歌词口语，但“拍子 走两步”衔接略跳。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "有画面和口语感，但“走两步”与主题关联弱，表达偏随意。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“零散的节奏中”“若能哼唱请听”准确对应原文，未增删关键信息。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "保留安静、试探地邀请聆听的情绪，稍显平直但方向准确。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文可理解且较顺，但“若能哼唱请听”略书面、稍欠歌词流动感。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但偏直译，意象和力度普通。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“散乱的节奏里轻哼”基本对应前半，但“散落的音符 请你听听”把“若能哼唱”改成音符，并添加“散落”意象，语义有偏移。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "轻柔、邀请聆听的氛围与原文接近，情绪方向一致。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文流畅，像歌词；“散乱”“散落”重复略多但可接受。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“散落的音符”意象较鲜明，服务轻声哼唱的主题。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "“用零散的节奏”准确对应前半；“若你哼唱请听我说”把“我若能哼唱”改成“你哼唱”，并添加“我说”，人物关系有偏移。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "邀请聆听的方向仍在，但“请听我说”使语气更主动、偏诉说，与原句轻声试探略有偏离。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文通顺，歌词文体可接受，但“请听我说”稍显套语。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但普通，缺少鲜明意象。",
+          "phrase_ids": [
+            "B1-01",
+            "B1-02"
+          ]
+        }
+      }
+    }
+  ]
+}

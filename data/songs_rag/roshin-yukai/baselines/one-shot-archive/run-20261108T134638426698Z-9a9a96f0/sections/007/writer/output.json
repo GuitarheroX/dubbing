@@ -1,0 +1,57 @@
+{
+  "section": "B2",
+  "phrases": [
+    {
+      "id": "B2-01",
+      "zh": "梦见所有人 全都消失不见",
+      "chars": 13,
+      "self_check": {
+        "budget": [
+          15,
+          15
+        ],
+        "ok": false,
+        "note": "字数不足，需补足到15字"
+      }
+    },
+    {
+      "id": "B2-02",
+      "zh": "深夜的房间 空旷又寂静 压得人喘不过气",
+      "chars": 18,
+      "self_check": {
+        "budget": [
+          17,
+          17
+        ],
+        "ok": false,
+        "note": "超出1字，需精简"
+      }
+    },
+    {
+      "id": "B2-03",
+      "zh": "堵在胸口 散不去",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "空格断句，共7字"
+      }
+    },
+    {
+      "id": "B2-04",
+      "zh": "连呼吸都变得好困难",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "字数不足，需补足到12字"
+      }
+    }
+  ]
+}

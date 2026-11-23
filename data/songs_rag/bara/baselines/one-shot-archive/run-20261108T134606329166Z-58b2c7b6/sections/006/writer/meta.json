@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C2\",\n  \"phrases\": [\n    {\n      \"id\": \"C2-01\",\n      \"zh\": \"玫瑰啊玫瑰 高傲地盛开\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [14, 14], \"ok\": false, \"note\": \"按C1-01同句定稿复用，字数为12；若需精确14字可改为「玫瑰啊玫瑰 高傲地盛开吧」\"}\n    },\n    {\n      \"id\": \"C2-02\",\n      \"zh\": \"玫瑰啊 玫瑰啊 美丽地凋散\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"与C1-02保持完全重复，空格处对应旋律断点\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:18+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "C2",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 580,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2304,
+    "output_tokens": 186,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

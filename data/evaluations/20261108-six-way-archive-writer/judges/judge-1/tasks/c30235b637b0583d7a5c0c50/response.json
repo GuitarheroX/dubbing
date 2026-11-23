@@ -1,0 +1,21 @@
+{
+  "id": "3ed35328-7d12-438f-a8ce-70d0455e8703",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更简洁自然，情绪连贯，C1-03“一定是长大了吧”保留原句推测语气，C1-04“其实并不是那样”比B“并不是那样的事”更口语；B的C1-06“本可改变的明天确实存在”偏解释性、略生硬。\",\"phrase_ids\":[\"C1-03\",\"C1-04\",\"C1-06\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 563,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 92,
+    "service_tier": "standard"
+  }
+}

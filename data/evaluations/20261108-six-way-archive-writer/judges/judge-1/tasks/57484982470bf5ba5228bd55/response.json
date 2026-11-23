@@ -1,0 +1,21 @@
+{
+  "id": "ce7dde9d-3628-412a-958c-2e3f571a9347",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A将“核融合炉”意象化为“炉心 那片蓝”，更自然且有画面感；C1-02/C1-05的“纵身一跃”比B的“跳进去试试看”更具情绪张力，C1-03“温柔裹住全身 多美”也比B直译更富表现力。B用繁体且“核融合爐啊”生硬，整体中文自然度与意境稍逊。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-05\",\"C1-06\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 545,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 131,
+    "service_tier": "standard"
+  }
+}

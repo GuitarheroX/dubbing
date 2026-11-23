@@ -1,0 +1,25 @@
+{
+  "agent": "B",
+  "raw_response": "{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"吹得天地荒 一路流 一路荡\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"按 5/3/3 断成三段，用空格标出旋律切点\"}\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"到如今 只剩 这一片荒芜景象\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"按 3/2/6 断句，末段六字连唱\"}\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"被风卷走了 轻轻摇 慢慢晃\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"按 5/3/3 断句，呼应前句的漂流感\"}\n    },\n    {\n      \"id\": \"B1-04\",\n      \"zh\": \"忽然 停下来 问这人间 何方\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"按 2/3/3/2 断成四段，正好对上旋律的四次落点\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-07T06:06:03+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "B1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 809,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1664,
+    "output_tokens": 1528,
+    "service_tier": "standard"
+  },
+  "temperature": 2.0,
+  "thinking_observation": {
+    "requested": null,
+    "reasoning_tokens": null,
+    "reasoning_content_present": true
+  }
+}

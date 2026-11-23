@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 2.243,
+  "usage": {
+    "input_tokens": 96,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 205,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": true,
+    "human_annotations_in_generation": false,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "generation",
+  "variant": "paper-original",
+  "migrated_from": "run-20261105T124026449384Z-5f73a80c",
+  "raw_response": "啊，无可奈何般\n我体内蠢动的兽\n水面浮现又浮现即消失的泡沫\n\n注：第1行“啊，无可奈何般”7音节（a, wu, ke, nai, he, ru, ban），对应原句7拍；第2行“我体内蠢动的兽”8音节（wo, ti, nei, chun, dong, de, shou），对应原句8拍；第3行“水面浮现又浮现即消失的泡沫”16音节（shui, mian, fu, xian, you, fu, xian, ji, xiao, shi, de, pao, mo），对应原句16拍。韵脚：原句行末分别为“に”“けもの”“あぶく”，译文行末分别为“般”“兽”“沫”，均不押韵，保持一致。主题：内心蠢动的兽性冲动与如泡沫般转瞬即逝的浮现，与原句一致。"
+}

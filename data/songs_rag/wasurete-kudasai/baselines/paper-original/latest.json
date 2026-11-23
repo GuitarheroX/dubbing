@@ -1,0 +1,8 @@
+{
+  "run": "run-20261105T124436676019Z-e7f592a5",
+  "updated_at": "2026-11-07T06:09:06+00:00",
+  "song": "wasurete-kudasai",
+  "status": "failed",
+  "model": "deepseek-flash",
+  "baseline": "paper-original"
+}

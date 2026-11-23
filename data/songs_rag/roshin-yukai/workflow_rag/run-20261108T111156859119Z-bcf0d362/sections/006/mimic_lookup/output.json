@@ -1,0 +1,46 @@
+{
+  "section": "V3",
+  "query_text": "秒针在走 嗒嗒响\n电视里 主持人 笑得假\n明明在场 却好远\n看不见的 谁在那边\n笑声 一层层\n饱和 回响 灌满耳朵\n耳朵里 一直嗡嗡响 停不下来\n耳朵里 一直嗡嗡响 停不下来",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "祥子_xiangzi/壁上观#s3",
+      "title": "壁上观",
+      "poet": "祥子",
+      "poem_id": "祥子_xiangzi/壁上观",
+      "stanza_idx": 3,
+      "score": 0.689691,
+      "text": "仿佛昨日重现\n记忆的胶片两端被粘接起来\n秒针滴滴答答转一圈\n轻飘飘的念头就重播一遍"
+    },
+    {
+      "chunk_id": "杨于军_yangyujun/扇贝蒸粉丝#s1p2",
+      "title": "扇贝蒸粉丝",
+      "poet": "杨于军",
+      "poem_id": "杨于军_yangyujun/扇贝蒸粉丝",
+      "stanza_idx": 1,
+      "score": 0.679814,
+      "text": "秒划分为微秒\n毫秒\n秒针在动与不动之间\n牵扯着我的全部气息\n有时也会回想每个步骤\n是让自己安静的最好办法\n做好了这一切\n就不需要担心结果"
+    },
+    {
+      "chunk_id": "代橘_daiju/耳朵#s6",
+      "title": "耳朵",
+      "poet": "代橘",
+      "poem_id": "代橘_daiju/耳朵",
+      "stanza_idx": 6,
+      "score": 0.673178,
+      "text": "耳朵\n可惜年纪大了\n孔窍们戮力发出的声音\n模糊不清\n心腹里辛苦酝酿的喧嚣\n暧昧不明\n可惜年纪大了\n耳朵\n终究是把千山万水\n听成一首哼不完全的小调"
+    },
+    {
+      "chunk_id": "洪逸辰_hongyichen/时钟海#s3",
+      "title": "时钟海",
+      "poet": "洪逸辰",
+      "poem_id": "洪逸辰_hongyichen/时钟海",
+      "stanza_idx": 3,
+      "score": 0.664826,
+      "text": "所以人们都喜欢时钟海\n快乐的时候\n忧愁的时候\n亢奋或焦虑得睡不着的时候\n跳进时钟海\n没有指针就没有时间像喝醉\n醉醺醺晕乎乎\n狂欢让时间过得像鸟飞\n肢体不协调的人都能摇摆\n像芒草摇摆\n像云朵摇摆\n全世界的人都像车子的雨刷\n一起摇摆\n一起摇摆"
+    }
+  ]
+}

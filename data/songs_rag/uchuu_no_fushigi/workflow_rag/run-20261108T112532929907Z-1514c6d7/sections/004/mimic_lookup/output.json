@@ -1,0 +1,46 @@
+{
+  "section": "C1",
+  "query_text": "星星呀 为何 一整夜 眨着眼睛\n云朵呀 怎么 学鱼儿 游过天空\n人们呀 为何 总想要 种一个梦\n答案呀 也许 吹散在风里",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "杨维晨_yangweichen/无题#s1",
+      "title": "无题",
+      "poet": "杨维晨",
+      "poem_id": "杨维晨_yangweichen/无题",
+      "stanza_idx": 1,
+      "score": 0.69762,
+      "text": "想飞\n于是生出了翅膀\n寂寞的灵魂\n张开了眼睛\n一串串向天空奔去\n许多游鱼\n被水草绊死\n许多感觉\n将心遮住"
+    },
+    {
+      "chunk_id": "刘西英_liuxiying/悟禅#s2",
+      "title": "悟禅",
+      "poet": "刘西英",
+      "poem_id": "刘西英_liuxiying/悟禅",
+      "stanza_idx": 2,
+      "score": 0.693272,
+      "text": "也许是星星把世界理解成了星星\n所以才成为星星\n也许是云朵把世界理解成了云朵\n所以才成为云朵"
+    },
+    {
+      "chunk_id": "赵云_zhaoyun/飞鸟正穿越天空#s2",
+      "title": "飞鸟正穿越天空",
+      "poet": "赵云",
+      "poem_id": "赵云_zhaoyun/飞鸟正穿越天空",
+      "stanza_idx": 2,
+      "score": 0.689826,
+      "text": "我看见风的速度和形状\n我看见云的轻盈和飘渺\n仿佛伸手可以采到云朵\n仿佛鱼儿在冰河穿梭\n而海面海面上的云\n真像小河上的浮冰故乡小河上的浮冰\n下面是任鱼跃的大海\n上面是任鸟飞的蓝天\n我飞翔在云朵间\n出走的梦想构思了那么多年\n怎料回归的瞬间归心似箭"
+    },
+    {
+      "chunk_id": "草馨儿_caoxiner/守着自己柔软的梦#s2",
+      "title": "守着自己柔软的梦",
+      "poet": "草馨儿",
+      "poem_id": "草馨儿_caoxiner/守着自己柔软的梦",
+      "stanza_idx": 2,
+      "score": 0.684845,
+      "text": "隔岸的灯火总是很近\n我来自那个方向\n却常常迷路\n那泛着金鳞的河水\n是我褪下的白昼\n那月光里的叹息\n是我流逝的生命\n我不断地瓦解自己\n就是想放慢脚步\n象风一样\n守着自己柔软的梦"
+    }
+  ]
+}

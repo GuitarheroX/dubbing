@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "1. 就这样装作一直在等待着什么 (18 syllables)\n2. 从这儿我还能重新开始吗 (14 syllables)\n\nRhyme check: Line 1 ends with \"么\" (me), Line 2 ends with \"吗\" (ma) — the original Japanese lines do not share a rhyme either (の/no vs か/ka), so no rhyme constraint is imposed. Theme preserved: pretending to wait for something / asking whether one can start over."
+  },
+  "data": {
+    "response": "1. 就这样装作一直在等待着什么 (18 syllables)\n2. 从这儿我还能重新开始吗 (14 syllables)\n\nRhyme check: Line 1 ends with \"么\" (me), Line 2 ends with \"吗\" (ma) — the original Japanese lines do not share a rhyme either (の/no vs か/ka), so no rhyme constraint is imposed. Theme preserved: pretending to wait for something / asking whether one can start over."
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "1. 就这样装作一直在等待着什么 (18 syllables)\n2. 从这儿我还能重新开始吗 (14 syllables)\n\nRhyme check: Line 1 ends with \"么\" (me), Line 2 ends with \"吗\" (ma) — the original Japanese lines do not share a rhyme either (の/no vs か/ka), so no rhyme constraint is imposed. Theme preserved: pretending to wait for something / asking whether one can start over."
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

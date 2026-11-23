@@ -1,0 +1,200 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心意象与动作基本准确，'没听见'略改'没察觉'但可接受",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04",
+            "V1-05",
+            "V1-06",
+            "V1-07",
+            "V1-08"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "淡月出神、低头装忙的疏离感保留较好",
+          "phrase_ids": [
+            "V1-01",
+            "V1-06",
+            "V1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "简洁顺口，'一件也找不到'稍显口语但自然",
+          "phrase_ids": [
+            "V1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "意象清楚但偏平实，'一片模糊'较普通",
+          "phrase_ids": [
+            "V1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "语义准确，'被人嘲笑的模样'稍增叙述但未改主题",
+          "phrase_ids": [
+            "V1-01",
+            "V1-07"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向一致，但'所以''因为'等连接词使语气偏解释",
+          "phrase_ids": [
+            "V1-01",
+            "V1-05"
+          ]
+        },
+        "naturalness": {
+          "score": 3,
+          "reason": "'淡月令我沉醉所以'断句生硬，'都看不见'可理解",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但缺乏鲜明意象，偏直译",
+          "phrase_ids": [
+            "V1-04",
+            "V1-07"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "核心信息保留，'身后传来谁的笑声'将被动笑改为听觉，属合理补充",
+          "phrase_ids": [
+            "V1-07",
+            "V1-08"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "低头、发愣、装没听见的孤独感传达较充分",
+          "phrase_ids": [
+            "V1-03",
+            "V1-06",
+            "V1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体顺口，'晕开成一片雾'略文艺但可接受",
+          "phrase_ids": [
+            "V1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'晕开成一片雾''身后传来谁的笑声'意象较鲜明",
+          "phrase_ids": [
+            "V1-04",
+            "V1-07"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "各句核心语义准确，'假装没注意到'贴近原意",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03",
+            "V1-04",
+            "V1-05",
+            "V1-06",
+            "V1-07",
+            "V1-08"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向正确但偏简略，意境较淡",
+          "phrase_ids": [
+            "V1-01",
+            "V1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "短句顺口，符合歌词片段文体",
+          "phrase_ids": [
+            "V1-01",
+            "V1-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但意象单薄，'晕染开'稍显普通",
+          "phrase_ids": [
+            "V1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 3,
+          "reason": "'脚下黑了也不管''低着头走路'等增补改变了因果与动作细节，'摔了都还没发觉'尚可",
+          "phrase_ids": [
+            "V1-01",
+            "V1-02",
+            "V1-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "低头、垂眼、笑声悬背后的情绪氛围较浓",
+          "phrase_ids": [
+            "V1-06",
+            "V1-07",
+            "V1-08"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "整体流畅，'竟然一件都找不见'自然",
+          "phrase_ids": [
+            "V1-05"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "'笑声悬在背后''晕成一片'意象较生动",
+          "phrase_ids": [
+            "V1-04",
+            "V1-07"
+          ]
+        }
+      }
+    }
+  ]
+}

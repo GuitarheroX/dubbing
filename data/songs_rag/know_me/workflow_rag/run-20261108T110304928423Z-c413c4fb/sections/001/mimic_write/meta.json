@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"话没出口 就伸手去要 同一种暖\",\n      \"chars\": 13,\n      \"self_check\": {\n        \"budget\": [13, 13],\n        \"ok\": true,\n        \"note\": \"四字五字四字切分，补出话未出口却已伸手的冲动\"\n      }\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"不作声 就好吗\",\n      \"chars\": 6,\n      \"self_check\": {\n        \"budget\": [6, 6],\n        \"ok\": true,\n        \"note\": \"三三切分，保留原句压低声音的问法\"\n      }\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"顺你的心愿 我向后退 脸朝向前\",\n      \"chars\": 13,\n      \"self_check\": {\n        \"budget\": [13, 13],\n        \"ok\": true,\n        \"note\": \"五字四字四字切分，倒走却脸朝前对应原文逆さに歩いてく\"\n      }\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"呼吸像停住 一样静\",\n      \"chars\": 8,\n      \"self_check\": {\n        \"budget\": [8, 8],\n        \"ok\": true,\n        \"note\": \"五字三字切分，用呼吸停住写近乎息绝的麻木\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:03:55+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3524,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 2927,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

@@ -1,0 +1,96 @@
+{
+  "messages": {
+    "system": "(C 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "phrases": [
+      {
+        "id": "V2-01",
+        "section": "V2",
+        "ja": "あぁどうしようもなく悲しい",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          1,
+          4,
+          3
+        ]
+      },
+      {
+        "id": "V2-02",
+        "section": "V2",
+        "ja": "私を動かす獣",
+        "budget": {
+          "min": 8,
+          "max": 8
+        },
+        "pattern": [
+          3,
+          5
+        ]
+      },
+      {
+        "id": "V2-03",
+        "section": "V2",
+        "ja": "トートロジー握った手のあぶく",
+        "budget": {
+          "min": 11,
+          "max": 11
+        },
+        "pattern": [
+          6,
+          5
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V2",
+      "phrases": [
+        {
+          "id": "V2-01",
+          "zh": "沉 胸口有雨 落不尽",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "按 pattern 1+4+3 断：沉／胸口有雨／落不尽，与 V1「闷 胸口有火 烧不透」对仗，火换成雨"
+          }
+        },
+        {
+          "id": "V2-02",
+          "zh": "手心里 有兽在低吼",
+          "chars": 8,
+          "self_check": {
+            "budget": [
+              8,
+              8
+            ],
+            "ok": true,
+            "note": "3+5 断，与 V1「骨头里／有兽在蠕动」同构，兽从骨头爬到手心"
+          }
+        },
+        {
+          "id": "V2-03",
+          "zh": "念头绕回原点 泡沫攥成空",
+          "chars": 11,
+          "self_check": {
+            "budget": [
+              11,
+              11
+            ],
+            "ok": true,
+            "note": "6+5 断，前半句落「循环」，后半句落「攥紧的手里只剩空」，空格处即旋律切分点"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

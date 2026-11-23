@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "```json\n{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"曾见过的散场\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"与 V1-01「曾见过的风景」保持同一句式骨架，只换末二字，坐实「终演」的散场感\"}\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"本该来的 停在眼角不落\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"空格断成 4+6 两段；借参考「他本该到达某个场合却不得不缺席」的「本该…」骨架，把「当然」写成「本该来的」，再落到「停在眼角不落」这个始终不成形的意象\"}\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"一直看不见\",\n      \"chars\": 5,\n      \"self_check\": {\"budget\": [5, 5], \"ok\": true, \"note\": \"「一直」呼应 V1-03「想一直仰望」的重复，「看不见」与上一句「眼角」接得上，视线滑走也抓不住\"}\n    }\n  ]\n}\n```",
+  "finished_at": "2026-11-08T10:28:24+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3209,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 1791,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T173528_b_40df94",
+  "input_hash": "40df94be713ce4942d7579ba6d6c34c8ee64819875dbcc79872571099d5dd304",
+  "finished_at": "2026-11-03T17:35:47+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2096,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1920,
+    "output_tokens": 4707,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"挂上笑脸 装作全都懂\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"四字加五字，中间空格对应旋律断点\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"深不见底的 才让我害怕\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"前五字一顿，后五字收在害怕\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"就丢给我吧 最普通的爱\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"五加五，正好落在两段音上\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"你懂我\",\n      \"chars\": 3,\n      \"self_check\": {\"budget\": [3, 3], \"ok\": true, \"note\": \"三字一句，与前后句气口相接\"}\n    },\n    {\n      \"id\": \"C1-05\",\n      \"zh\": \"假装都懂 踩着拍子转\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"四加五，与 C1-01 句式呼应\"}\n    },\n    {\n      \"id\": \"C1-06\",\n      \"zh\": \"那个深底 会被填满吗\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"四加五，句尾问句不上扬过多\"}\n    },\n    {\n      \"id\": \"C1-07\",\n      \"zh\": \"不要放开我 不要停下\",\n      \"chars\": 9,\n      \"self_check\": {\"budget\": [9, 9], \"ok\": true, \"note\": \"五加四，重复句式对应原文的两次否定\"}\n    },\n    {\n      \"id\": \"C1-08\",\n      \"zh\": \"我不是一个人吗\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"三加四，前三字一口，后四字收住\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T173528_b_40df94"
+}

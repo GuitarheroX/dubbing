@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\"id\": \"V1-01\", \"zh\": \"天色暗 街也静 卷帘门落下\"},\n    {\"id\": \"V1-02\", \"zh\": \"人走远 屋也空 坐垫还陷着\"},\n    {\"id\": \"V1-03\", \"zh\": \"全部 装进袖 风就往前走\"},\n    {\"id\": \"V1-04\", \"zh\": \"云像一条河 风踩着它走\"}\n  ]\n}",
+  "finished_at": "2026-11-08T11:01:00+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2513,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 1802,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

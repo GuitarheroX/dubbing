@@ -1,0 +1,21 @@
+{
+  "id": "ce15b5fa-118f-472d-9ba5-2eb2807af9f2",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B1-01的“装作在等什么 一直等下去”更贴近“待ち続けるフリ”的持续伪装语义，A的“不肯醒来”属额外引申；B1-02两版语义均准确，B更简洁自然。整体B误读更少、中文更顺。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 280,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 89,
+    "service_tier": "standard"
+  }
+}

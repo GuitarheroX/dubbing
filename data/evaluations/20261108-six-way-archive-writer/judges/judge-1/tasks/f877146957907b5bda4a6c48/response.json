@@ -1,0 +1,21 @@
+{
+  "id": "fb057a59-43d3-4003-9845-4ef0fa533f04",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A在保持原意的基础上更自然、更有表现力：B1-01“攥紧过去 松手抛向未来”准确传达“掴み捨てて”的动作对比，B1-02“一次次相逢 却想移开这双眼”比B的“不断相遇却想移开眼”更流畅且情绪更贴合；B1-03/04的停顿也符合歌词节奏。B整体偏直译、略生硬，但核心语义无误。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 341,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 136,
+    "service_tier": "standard"
+  }
+}

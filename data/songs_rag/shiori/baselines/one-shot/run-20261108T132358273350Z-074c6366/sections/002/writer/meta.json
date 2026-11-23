@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\"id\": \"V2-01\", \"zh\": \"笨拙地 兜着圈\"},\n    {\"id\": \"V2-02\", \"zh\": \"总从伤痛面前 转身逃开\"},\n    {\"id\": \"V2-03\", \"zh\": \"现实 笔记 来来回回 找安慰\"},\n    {\"id\": \"V2-05\", \"zh\": \"这世界 怎么这样难活\"},\n    {\"id\": \"V2-06\", \"zh\": \"可是啊 可是啊\"}\n  ]\n}",
+  "finished_at": "2026-11-08T13:24:00+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "section": "V2",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1757,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 130,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

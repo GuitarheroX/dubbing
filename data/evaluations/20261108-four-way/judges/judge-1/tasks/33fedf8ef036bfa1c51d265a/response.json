@@ -1,0 +1,21 @@
+{
+  "id": "815567f2-f070-4099-afdc-fcfbf2a8ff32",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"各句核心信息准确，C1-06“本可改变的明天确实存在”贴合原文可能态与存在义。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\",\"C1-07\"]},\"emotion\":{\"score\":4,\"reason\":\"追忆与懊悔方向保留，语气略平但整体一致。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\",\"C1-07\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文顺口，歌词文体自然，无明显生硬。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\",\"C1-07\"]},\"expressiveness\":{\"score\":4,\"reason\":\"表达清楚有力，但意象较朴素，少一些鲜明画面。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\",\"C1-07\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"主旨保留，但C1-01“伸手够到天边”与C1-05“推开的门”属增补意象，C1-03“沉默”略偏移。\",\"phrase_ids\":[\"C1-01\",\"C1-03\",\"C1-05\"]},\"emotion\":{\"score\":4,\"reason\":\"懊悔与追忆情绪较充分，局部意象强化了情绪。\",\"phrase_ids\":[\"C1-01\",\"C1-05\",\"C1-07\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，但空格断句较多，个别句略散。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\"]},\"expressiveness\":{\"score\":5,\"reason\":\"“推开的门”“没能看清”等表达鲜明，服务主题。\",\"phrase_ids\":[\"C1-05\",\"C1-07\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心语义准确，C1-06“曾有能被改变的明天”保留可能态与过去存在。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\",\"C1-07\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，语气偏平实，懊悔力度稍弱。\",\"phrase_ids\":[\"C1-04\",\"C1-06\",\"C1-07\"]},\"naturalness\":{\"score\":4,\"reason\":\"基本顺口，但“勇气的力量”“明天啊”略拖沓。\",\"phrase_ids\":[\"C1-05\",\"C1-06\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达可理解但较普通，意象与力度不突出。\",\"phrase_ids\":[\"C1-05\",\"C1-06\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"C1-01改为“双脚走到”缩小原意，C1-03“长大就会明白”偏移，C1-06“伸出手”增补动作。\",\"phrase_ids\":[\"C1-01\",\"C1-03\",\"C1-06\"]},\"emotion\":{\"score\":3,\"reason\":\"追忆懊悔方向尚在，但部分改写使情绪偏说理。\",\"phrase_ids\":[\"C1-03\",\"C1-06\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体可读顺口，个别断句略生硬。\",\"phrase_ids\":[\"C1-03\",\"C1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“迈出去的勇气”“伸出手”有画面，但部分服务偏移主题。\",\"phrase_ids\":[\"C1-05\",\"C1-06\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1466,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 904,
+    "service_tier": "standard"
+  }
+}

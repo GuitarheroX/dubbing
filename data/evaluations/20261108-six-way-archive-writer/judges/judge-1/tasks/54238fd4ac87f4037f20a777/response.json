@@ -1,0 +1,21 @@
+{
+  "id": "3e97e063-a062-4712-854f-d4b577dfda4e",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更凝练自然，意象完整保留“无名野花”的谦卑意境；A的V1-01“没有人知道名”生硬，V1-04“就好”偏口语化，整体不如B流畅。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 288,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 82,
+    "service_tier": "standard"
+  }
+}

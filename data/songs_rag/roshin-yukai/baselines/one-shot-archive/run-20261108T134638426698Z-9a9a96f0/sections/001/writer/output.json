@@ -1,0 +1,109 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "街灯亮得刺眼",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          10,
+          10
+        ],
+        "ok": false,
+        "note": "仅6字，不足10字，需要补意象"
+      }
+    },
+    {
+      "id": "V1-02",
+      "zh": "乙醚麻醉的冷意渗进指尖",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": true,
+        "note": "补了指尖意象凑足11字"
+      }
+    },
+    {
+      "id": "V1-03",
+      "zh": "凌晨两点 睡意全无",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": true,
+        "note": "空格断句，共8字"
+      }
+    },
+    {
+      "id": "V1-04",
+      "zh": "一切都在急速地改变",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "仅9字，不足11字，需要补意象"
+      }
+    },
+    {
+      "id": "V1-05",
+      "zh": "打火机没油了",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": false,
+        "note": "仅6字，不足8字，需要补意象"
+      }
+    },
+    {
+      "id": "V1-06",
+      "zh": "胃里像烧灼一样滚烫",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "仅9字，不足11字，需要补意象"
+      }
+    },
+    {
+      "id": "V1-07",
+      "zh": "如果一切都是谎言",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": false,
+        "note": "仅8字，不足9字，需要补意象"
+      }
+    },
+    {
+      "id": "V1-08",
+      "zh": "那该有多好 多好啊",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": false,
+        "note": "仅8字，不足9字，需要补意象"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "section": "V2",
+  "query_text": "问哪一颗星 转到那刻度\n散落的那人 原来就是我\n平凡地活着 那样的日子\n明知求也求不来 这具身躯",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "侯文基_houwenji/树上的鸟儿叫渣渣#s2",
+      "title": "树上的鸟儿叫渣渣",
+      "poet": "侯文基",
+      "poem_id": "侯文基_houwenji/树上的鸟儿叫渣渣",
+      "stanza_idx": 2,
+      "score": 0.656375,
+      "text": "我知道一个人活着\n应该做些什么 平庸不是罪过\n虽然说琐屑能磨损铁\n被光阴磨着 岂不快活\n想起那些昨晚倒下没起来的人\n平淡中就有了美学"
+    },
+    {
+      "chunk_id": "阿谁_ashei/星光之约#s1",
+      "title": "星光之约",
+      "poet": "阿谁",
+      "poem_id": "阿谁_ashei/星光之约",
+      "stanza_idx": 1,
+      "score": 0.651296,
+      "text": "做完一天的事情\n时近午夜\n在看不见的星光下\n活动身体\n想到生命长短不一"
+    },
+    {
+      "chunk_id": "初相遇_chuxiangyu/拟人#s3",
+      "title": "拟人",
+      "poet": "初相遇",
+      "poem_id": "初相遇_chuxiangyu/拟人",
+      "stanza_idx": 3,
+      "score": 0.650255,
+      "text": "我没有自己的名字\n想来，我徒具人的形体\n我什么也不必在乎\n既然，命运已这样安排\n我活着\n仅此而已"
+    },
+    {
+      "chunk_id": "赵路得_zhaolude/粉笔#s1",
+      "title": "粉笔",
+      "poet": "赵路得",
+      "poem_id": "赵路得_zhaolude/粉笔",
+      "stanza_idx": 1,
+      "score": 0.645426,
+      "text": "吃了太多无解的题目\n身子竟遂次地消瘦起来了\n躺在白尘覆积\n侷促低矮的笔沟里\n似在记挂\n那些个以生命的流失\n而参差排列底疑问\n是否又将在顷刻间\n被人以冰冷冷的板擦\n拭落于茫茫无边底半空\n不止一次\n想告诉自己\n原本的我\n并不是这样 飘飘散散的\n祇因为在这黑白并存的方寸间\n总是无法将自己的生命与思想\n固定在同一个时段\n太久"
+    }
+  ]
+}

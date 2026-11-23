@@ -1,0 +1,21 @@
+{
+  "id": "caeca24b-1f54-435a-aae6-e47bbbf26072",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"三句均准确传达原意，疑问与并列关系保留完整\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"emotion\":{\"score\":5,\"reason\":\"语气词与轻快邀约感贴合原曲童趣探索氛围\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"naturalness\":{\"score\":5,\"reason\":\"口语顺口，节奏切分自然，符合歌词文体\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"expressiveness\":{\"score\":5,\"reason\":\"“叫不出名字的花”意象鲜活，服务主题\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"前两句准确，第三句“也带上”略增动作但未改主旨\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，稍偏行动感，童趣略减\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“今天要和你”重复稍显板滞\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"expressiveness\":{\"score\":4,\"reason\":\"表达清楚，“谁都没见过的花”有画面但较普通\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"前两句准确，第三句“连…也”保留并列但语气略转\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"emotion\":{\"score\":3,\"reason\":\"疑问保留但语气偏平淡，缺少原曲轻快邀约感\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文通顺，但未贴合给定节奏切分\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象与语气较普通\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息保留，但“话题”“歌曲”较原词抽象化\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"emotion\":{\"score\":3,\"reason\":\"疑问句偏书面，童趣与亲近感减弱\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"naturalness\":{\"score\":3,\"reason\":\"可理解但偏书面，缺少歌词口语韵律\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达平实，“话题”“歌曲”空泛\",\"phrase_ids\":[\"V3-01\",\"V3-02\",\"V3-03\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 777,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 735,
+    "service_tier": "standard"
+  }
+}

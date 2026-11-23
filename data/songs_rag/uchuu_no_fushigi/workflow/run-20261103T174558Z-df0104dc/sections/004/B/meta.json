@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T174502_b_c864a6",
+  "input_hash": "c864a673ad65f18a6f98999f0e6ed4b45461a8a90c59194c7673450a9f4f77bd",
+  "finished_at": "2026-11-03T17:45:10+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2897,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2176,
+    "output_tokens": 1625,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\n      \"id\": \"C1-01\",\n      \"zh\": \"星星啊 为何 一整夜 眨着眼睛\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"按 3+2+3+4 断句，空格不计入字数\"}\n    },\n    {\n      \"id\": \"C1-02\",\n      \"zh\": \"云朵啊 为何 在天空 游成鱼群\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"按 3+2+3+4 断句，空格不计入字数\"}\n    },\n    {\n      \"id\": \"C1-03\",\n      \"zh\": \"人儿啊 为何 把明天 画成梦境\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"按 3+2+3+4 断句，空格不计入字数\"}\n    },\n    {\n      \"id\": \"C1-04\",\n      \"zh\": \"答案啊 也许 从来就没有\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"按 3+2+5 断句，空格不计入字数\"}\n    }\n  ]\n}",
+  "migrated_from": "20261103T174502_b_c864a6"
+}

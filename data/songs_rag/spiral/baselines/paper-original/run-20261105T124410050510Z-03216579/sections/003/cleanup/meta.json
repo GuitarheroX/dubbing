@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 0.822,
+  "usage": {
+    "input_tokens": 144,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 49,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": true,
+    "human_annotations_in_generation": false,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "cleanup",
+  "variant": "paper-original",
+  "migrated_from": "run-20261105T124410050510Z-03216579",
+  "raw_response": "{\"lines\":[\"曾以为能去任何地方\",\"那时的我如今在何方\",\"想必是已经长大成人\",\"其实并不是那样的事\",\"只需再添一点勇气\",\"本可改变的明天确实存在\",\"可我连那都没能察觉\"]}"
+}

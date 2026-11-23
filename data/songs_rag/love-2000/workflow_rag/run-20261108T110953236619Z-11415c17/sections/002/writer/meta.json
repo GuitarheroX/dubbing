@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\"section\":\"V1\",\"phrases\":[{\"id\":\"V1-01\",\"zh\":\"坏消息滚过屏幕 无聊闲话绕耳边\"},{\"id\":\"V1-02\",\"zh\":\"清晨就被 这些声音磨得厌倦\"},{\"id\":\"V1-03\",\"zh\":\"今天风格外软\"},{\"id\":\"V1-04\",\"zh\":\"吹得心里也亮了起来\"},{\"id\":\"V1-05\",\"zh\":\"换一身轻快 出门去吧\"}]}",
+  "finished_at": "2026-11-08T11:10:55+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2425,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 1111,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

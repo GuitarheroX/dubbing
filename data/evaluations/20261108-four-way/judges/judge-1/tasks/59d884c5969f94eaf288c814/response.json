@@ -1,0 +1,21 @@
+{
+  "id": "c9985f25-5124-4d93-9372-9c9898611ce0",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"新闻、闲话、厌烦、风舒服、换快乐心情等核心信息基本准确，仅“今天比平时多”略不完整。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"emotion\":{\"score\":4,\"reason\":\"从厌烦转向轻松愉快的情绪方向保留，语气自然但略平。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“所以呢”“出发呢”略口语化但符合歌词。\",\"phrase_ids\":[\"V1-04\",\"V1-05\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象普通，缺少鲜明画面。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"保留坏消息、闲话、厌倦、风舒服、换心情的主线，但“电视播着”“塞满房间”“旧睡衣”为增补意象，略改变原句范围。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"emotion\":{\"score\":4,\"reason\":\"厌倦到轻快明朗的情绪转折保留较好，增补意象未偏离情绪方向。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文流畅有歌词感，“换上晴朗”略跳但可理解。\",\"phrase_ids\":[\"V1-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“闲话塞满房间”“换上晴朗”等表达较鲜明，服务情绪转折。\",\"phrase_ids\":[\"V1-01\",\"V1-05\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"坏消息、闲话、清晨厌倦、风、换轻快出门的主线在，但“滚过屏幕”“绕耳边”“风特别软”“心吹得发亮”多为改写增补，原句“今天比平时”被替换。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"emotion\":{\"score\":4,\"reason\":\"由闷到轻快的情绪方向保留，意境较统一。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，歌词文体较自然。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“滚过屏幕”“吹得发亮”等意象较鲜明，但部分偏离原词。\",\"phrase_ids\":[\"V1-01\",\"V1-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心信息准确：悲伤NEWS与无关紧要的话、早上就厌烦、今天比平时、风舒畅、换快乐心情。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"emotion\":{\"score\":4,\"reason\":\"厌倦到舒畅轻快的情绪方向保留，语气稍平。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体可理解且顺口，“NEWS”保留略突兀但可接受。\",\"phrase_ids\":[\"V1-01\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但偏直译，意象和力度普通。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1130,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 938,
+    "service_tier": "standard"
+  }
+}

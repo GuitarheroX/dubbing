@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"C1\",\n  \"phrases\": [\n    {\"id\": \"C1-01\", \"zh\": \"用没有形状的歌谣 描出天亮的模样\"},\n    {\"id\": \"C1-02\", \"zh\": \"浅浅的 浅浅的 夏天的那一头\"},\n    {\"id\": \"C1-03\", \"zh\": \"我看见你不冷的手 轻轻摊开在我眼前\"},\n    {\"id\": \"C1-04\", \"zh\": \"淡淡天色 破晓时分的萤火\"}\n  ]\n}",
+  "finished_at": "2026-11-08T11:34:49+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2353,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1152,
+    "output_tokens": 1756,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

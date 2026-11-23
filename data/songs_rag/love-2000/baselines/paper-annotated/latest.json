@@ -1,0 +1,8 @@
+{
+  "run": "run-20261105T124246025046Z-9e0103b6",
+  "updated_at": "2026-11-07T06:09:06+00:00",
+  "song": "love-2000",
+  "status": "completed",
+  "model": "deepseek-flash",
+  "baseline": "paper-annotated"
+}

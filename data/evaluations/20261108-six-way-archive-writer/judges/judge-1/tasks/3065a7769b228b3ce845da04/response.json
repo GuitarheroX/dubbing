@@ -1,0 +1,21 @@
+{
+  "id": "06ad22b8-7236-454d-834d-e977c62b4f69",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"两版对B1-01的“ばらばら”处理相近，A的“凌乱”比B的“零乱”更自然常用。B1-02中A用“你听见吗”保留了原文“きいて”的呼唤语气，更口语化、有表现力；B的“请你听见”偏书面且略生硬。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 199,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 100,
+    "service_tier": "standard"
+  }
+}

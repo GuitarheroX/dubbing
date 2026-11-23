@@ -1,0 +1,129 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the provided budget.min to budget.max syllable count per line, inclusive, instead of matching the source mora count, and verify by counting syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.\n\nThe input is a JSON object containing phrases in performance order. Each phrase contains its original lyrics in ja. budget is the human-annotated target syllable range. An optional pattern gives human-annotated within-line groups; use it as guidance, not an additional hard constraint. For keep_source: true, reproduce ja unchanged. budget: null means no target syllable limit. Produce one lyric line for every input phrase in order. Do not translate the field names or include the annotation numbers as lyrics.",
+    "user": "{\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"ja\": \"ベランダの向こう側\",\n      \"budget\": {\n        \"min\": 8,\n        \"max\": 8\n      }\n    },\n    {\n      \"id\": \"V2-02\",\n      \"ja\": \"階段を昇ってゆく音\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      }\n    },\n    {\n      \"id\": \"V2-03\",\n      \"ja\": \"陰り出した空が\",\n      \"budget\": {\n        \"min\": 9,\n        \"max\": 9\n      }\n    },\n    {\n      \"id\": \"V2-04\",\n      \"ja\": \"窓ガラスに 部屋に落ちる\",\n      \"budget\": {\n        \"min\": 12,\n        \"max\": 12\n      }\n    },\n    {\n      \"id\": \"V2-05\",\n      \"ja\": \"拡散する夕暮れ\",\n      \"budget\": {\n        \"min\": 9,\n        \"max\": 9\n      }\n    },\n    {\n      \"id\": \"V2-06\",\n      \"ja\": \"泣き腫らしたような陽の赤\",\n      \"budget\": {\n        \"min\": 12,\n        \"max\": 12\n      }\n    },\n    {\n      \"id\": \"V2-07\",\n      \"ja\": \"融けるように少しずつ\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      }\n    },\n    {\n      \"id\": \"V2-08\",\n      \"ja\": \"少しずつ死んでゆく世界\",\n      \"budget\": {\n        \"min\": 12,\n        \"max\": 12\n      }\n    },\n    {\n      \"id\": \"V2-09\",\n      \"ja\": \"君の首を締める夢を見た\",\n      \"budget\": {\n        \"min\": 14,\n        \"max\": 14\n      }\n    },\n    {\n      \"id\": \"V2-10\",\n      \"ja\": \"春風に揺れるカーテン\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      }\n    },\n    {\n      \"id\": \"V2-11\",\n      \"ja\": \"乾いて切れた唇から\",\n      \"budget\": {\n        \"min\": 13,\n        \"max\": 13\n      }\n    },\n    {\n      \"id\": \"V2-12\",\n      \"ja\": \"零れる言葉は泡のよう\",\n      \"budget\": {\n        \"min\": 13,\n        \"max\": 13\n      }\n    }\n  ]\n}"
+  },
+  "data": {
+    "phrases": [
+      {
+        "id": "V2-01",
+        "ja": "ベランダの向こう側",
+        "budget": {
+          "min": 8,
+          "max": 8
+        }
+      },
+      {
+        "id": "V2-02",
+        "ja": "階段を昇ってゆく音",
+        "budget": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      {
+        "id": "V2-03",
+        "ja": "陰り出した空が",
+        "budget": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      {
+        "id": "V2-04",
+        "ja": "窓ガラスに 部屋に落ちる",
+        "budget": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      {
+        "id": "V2-05",
+        "ja": "拡散する夕暮れ",
+        "budget": {
+          "min": 9,
+          "max": 9
+        }
+      },
+      {
+        "id": "V2-06",
+        "ja": "泣き腫らしたような陽の赤",
+        "budget": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      {
+        "id": "V2-07",
+        "ja": "融けるように少しずつ",
+        "budget": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      {
+        "id": "V2-08",
+        "ja": "少しずつ死んでゆく世界",
+        "budget": {
+          "min": 12,
+          "max": 12
+        }
+      },
+      {
+        "id": "V2-09",
+        "ja": "君の首を締める夢を見た",
+        "budget": {
+          "min": 14,
+          "max": 14
+        }
+      },
+      {
+        "id": "V2-10",
+        "ja": "春風に揺れるカーテン",
+        "budget": {
+          "min": 10,
+          "max": 10
+        }
+      },
+      {
+        "id": "V2-11",
+        "ja": "乾いて切れた唇から",
+        "budget": {
+          "min": 13,
+          "max": 13
+        }
+      },
+      {
+        "id": "V2-12",
+        "ja": "零れる言葉は泡のよう",
+        "budget": {
+          "min": 13,
+          "max": 13
+        }
+      }
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the provided budget.min to budget.max syllable count per line, inclusive, instead of matching the source mora count, and verify by counting syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.\n\nThe input is a JSON object containing phrases in performance order. Each phrase contains its original lyrics in ja. budget is the human-annotated target syllable range. An optional pattern gives human-annotated within-line groups; use it as guidance, not an additional hard constraint. For keep_source: true, reproduce ja unchanged. budget: null means no target syllable limit. Produce one lyric line for every input phrase in order. Do not translate the field names or include the annotation numbers as lyrics.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "{\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"ja\": \"ベランダの向こう側\",\n      \"budget\": {\n        \"min\": 8,\n        \"max\": 8\n      }\n    },\n    {\n      \"id\": \"V2-02\",\n      \"ja\": \"階段を昇ってゆく音\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      }\n    },\n    {\n      \"id\": \"V2-03\",\n      \"ja\": \"陰り出した空が\",\n      \"budget\": {\n        \"min\": 9,\n        \"max\": 9\n      }\n    },\n    {\n      \"id\": \"V2-04\",\n      \"ja\": \"窓ガラスに 部屋に落ちる\",\n      \"budget\": {\n        \"min\": 12,\n        \"max\": 12\n      }\n    },\n    {\n      \"id\": \"V2-05\",\n      \"ja\": \"拡散する夕暮れ\",\n      \"budget\": {\n        \"min\": 9,\n        \"max\": 9\n      }\n    },\n    {\n      \"id\": \"V2-06\",\n      \"ja\": \"泣き腫らしたような陽の赤\",\n      \"budget\": {\n        \"min\": 12,\n        \"max\": 12\n      }\n    },\n    {\n      \"id\": \"V2-07\",\n      \"ja\": \"融けるように少しずつ\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      }\n    },\n    {\n      \"id\": \"V2-08\",\n      \"ja\": \"少しずつ死んでゆく世界\",\n      \"budget\": {\n        \"min\": 12,\n        \"max\": 12\n      }\n    },\n    {\n      \"id\": \"V2-09\",\n      \"ja\": \"君の首を締める夢を見た\",\n      \"budget\": {\n        \"min\": 14,\n        \"max\": 14\n      }\n    },\n    {\n      \"id\": \"V2-10\",\n      \"ja\": \"春風に揺れるカーテン\",\n      \"budget\": {\n        \"min\": 10,\n        \"max\": 10\n      }\n    },\n    {\n      \"id\": \"V2-11\",\n      \"ja\": \"乾いて切れた唇から\",\n      \"budget\": {\n        \"min\": 13,\n        \"max\": 13\n      }\n    },\n    {\n      \"id\": \"V2-12\",\n      \"ja\": \"零れる言葉は泡のよう\",\n      \"budget\": {\n        \"min\": 13,\n        \"max\": 13\n      }\n    }\n  ]\n}"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 2.095,
+  "usage": {
+    "input_tokens": 616,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 190,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": false,
+    "human_annotations_in_generation": true,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "generation",
+  "variant": "paper-annotated",
+  "migrated_from": "run-20261105T124447123874Z-94b4ed9d",
+  "raw_response": "1. 小小箱中的家 (6+5=11) ✓\n2. 两人并排厨房的小窗 (7+3+4=14) ✓\n3. 窗帘外回忆中的庭院 (6+8=14) ✓\n4. 把一缕春光埋进土里 (7+5=12) ✓\n5. 偶尔给它浇上一点水 (8+5=13) ✓\n6. 小枇杷结出果实时 (6+4=10) ✓\n7. 请把它忘了吧 (7) ✓\n\nRhyme check (final phoneme per line): 家(ia) / 窗(uang) / 院(uan) / 里(i) / 水(ui) / 时(i) / 吧(a) — no consistent rhyme pattern is present in the source either, so no rhyme scheme is imposed."
+}

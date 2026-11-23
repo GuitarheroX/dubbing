@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\"section\":\"C1\",\"phrases\":[{\"id\":\"C1-01\",\"zh\":\"玫瑰啊 玫瑰啊 凛然地开到最盛时\",\"chars\":14,\"self_check\":{\"budget\":[14,14],\"ok\":true,\"note\":\"前两个「玫瑰啊」各占3字，第三段8字，空格对应[3,3,8]断句\"}},{\"id\":\"C1-02\",\"zh\":\"玫瑰啊 玫瑰啊 美丽地散得从容\",\"chars\":13,\"self_check\":{\"budget\":[13,13],\"ok\":true,\"note\":\"保留初版重复句式，第三段7字，对应[3,3,7]\"}}]}",
+  "finished_at": "2026-11-08T10:46:17+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3060,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1920,
+    "output_tokens": 1803,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "id": "605b1ba3-62f8-45db-a9d3-38ece7ed80a0",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B2-01中B更贴近“被赋予玫瑰生命”的宿命感，A的“披上深红”偏意象化且“接过玫瑰”略生硬；B2-02中B“胸口一团火”自然且有表现力，A“烧穿胸口”过烈且“每次呼吸”与原文“いつでも”对应稍弱。整体B情绪连贯、中文更自然。\",\"phrase_ids\":[\"B2-01\",\"B2-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 232,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 110,
+    "service_tier": "standard"
+  }
+}

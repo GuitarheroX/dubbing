@@ -1,0 +1,21 @@
+{
+  "id": "ae7b93ae-2d01-419f-96f6-f2fa7592ef94",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“把整条命摊在你手心”保留献命核心，但“像正午白亮的海面”是原文没有的比喻，偏移原句直陈。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"emotion\":{\"score\":3,\"reason\":\"献身情绪在，但“正午白亮的海面”带来明亮静物感，与原句单纯炽烈略有偏离。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，“摊在你手心”略口语化但可唱。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“摊在手心”意象鲜明有力，服务献命主题。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“想把我的命都交给你”准确，但“像海风吹过你脸颊”为增补意象，非原句内容。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"emotion\":{\"score\":3,\"reason\":\"献命与海风柔情并存，情绪方向一致但被柔化。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"语句通顺，像歌词口吻。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但“海风吹过脸颊”较常见，力度普通。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"“我愿将生命献给你”准确对应“命をあなたにあげたい”，无增删。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"献身情绪直接保留，但较原句少一点口语炽烈感。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"naturalness\":{\"score\":5,\"reason\":\"简洁顺口，符合歌词文体。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达准确但偏平实，意象与力度普通。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"英文直译准确传达“想把生命给你”。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，但英文表达较直白。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"naturalness\":{\"score\":1,\"reason\":\"候选为英文而非中文歌词，不符合中文译配要求。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"expressiveness\":{\"score\":2,\"reason\":\"作为英文表达清楚，但缺乏中文歌词的意象与韵味。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"“想把我的生命全都交到你手里”准确对应原句，无额外偏移。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"emotion\":{\"score\":4,\"reason\":\"献身情绪保留充分，语气略柔但方向一致。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文自然顺口，适合歌词。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但较常规，缺少鲜明意象。\",\"phrase_ids\":[\"I1-01\",\"I1-02\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 522,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 879,
+    "service_tier": "standard"
+  }
+}

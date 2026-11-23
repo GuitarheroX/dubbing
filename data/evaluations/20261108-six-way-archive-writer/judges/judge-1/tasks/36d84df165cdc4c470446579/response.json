@@ -1,0 +1,21 @@
+{
+  "id": "cfc6a715-8b66-4c59-9984-fd53762d97f4",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核融合炉、纵身跳入、蓝光包裹、一切被宽恕等核心信息准确，改写合理\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\"]},\"emotion\":{\"score\":4,\"reason\":\"向往与自我宽恕的情绪方向保留，但“那样的话”略显平淡\",\"phrase_ids\":[\"C1-05\",\"C1-06\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体顺口，“纵身跳进去的话那样的话”稍显拖沓\",\"phrase_ids\":[\"C1-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"湛蓝光包围的意象清晰，结尾宽恕感有表达但不算强烈\",\"phrase_ids\":[\"C1-03\",\"C1-06\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心语义准确，“真想跳进去试试看”贴合原意\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\"]},\"emotion\":{\"score\":4,\"reason\":\"向往与宽恕情绪保留，但“試試看”略口语化削弱沉溺感\",\"phrase_ids\":[\"C1-02\",\"C1-06\"]},\"naturalness\":{\"score\":4,\"reason\":\"繁体用词自然，“要是跳進去試了的話”稍显啰嗦\",\"phrase_ids\":[\"C1-05\"]},\"expressiveness\":{\"score\":4,\"reason\":\"深蓝光芒包围意象清楚，整体表达平稳\",\"phrase_ids\":[\"C1-03\",\"C1-06\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“跳进炉心”保留核心，但省略“核融合炉”字面；“被那光吞没”为增补意象，偏离原句包裹而非吞没\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\"]},\"emotion\":{\"score\":4,\"reason\":\"沉溺与宽恕的情绪方向保留，温柔裹住全身强化了包裹感\",\"phrase_ids\":[\"C1-03\",\"C1-06\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文流畅有歌词感，但“跳进炉心 那片蓝”句法跳跃\",\"phrase_ids\":[\"C1-01\",\"C1-04\"]},\"expressiveness\":{\"score\":5,\"reason\":\"湛蓝光温柔裹住全身等意象鲜明有力，服务主题\",\"phrase_ids\":[\"C1-03\",\"C1-06\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核融合炉、纵身跃入、蓝光包裹、一切被原谅等核心信息准确\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向保留，但“心好轻”为增补感受，略偏轻快\",\"phrase_ids\":[\"C1-06\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文顺口自然，符合歌词文体\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\"]},\"expressiveness\":{\"score\":4,\"reason\":\"湛蓝光芒包裹意象清楚，“心好轻”稍显直白\",\"phrase_ids\":[\"C1-03\",\"C1-06\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心语义准确，“纵身一跃而入”贴合原意\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\"]},\"emotion\":{\"score\":4,\"reason\":\"向往与宽恕情绪保留，“心好轻”略增轻快感\",\"phrase_ids\":[\"C1-06\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文顺口自然，歌词文体感好\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-06\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清楚但表达较平实，缺少突出亮点\",\"phrase_ids\":[\"C1-03\",\"C1-06\"]}}},{\"label\":\"F\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“炉心深处”替代核融合炉字面，“化一片光”“连我也一样”为增补，偏离原句包裹与宽恕范围\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-06\"]},\"emotion\":{\"score\":4,\"reason\":\"沉溺与自我宽恕情绪方向保留，增补“连我也一样”强化自我指涉\",\"phrase_ids\":[\"C1-06\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文流畅有歌词感，但“炉心深处 那片蓝”句法跳跃\",\"phrase_ids\":[\"C1-01\",\"C1-04\"]},\"expressiveness\":{\"score\":5,\"reason\":\"湛蓝光温柔吞没、化一片光等意象鲜明有力\",\"phrase_ids\":[\"C1-02\",\"C1-03\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1239,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 1196,
+    "service_tier": "standard"
+  }
+}

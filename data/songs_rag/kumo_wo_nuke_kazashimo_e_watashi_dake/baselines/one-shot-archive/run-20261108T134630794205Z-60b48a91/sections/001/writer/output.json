@@ -1,0 +1,96 @@
+{
+  "section": "V1",
+  "phrases": [
+    {
+      "id": "V1-01",
+      "zh": "一阵风 吹过",
+      "chars": 5,
+      "self_check": {
+        "budget": [
+          5,
+          5
+        ],
+        "ok": true,
+        "note": "两字加空格再三字，对应2+3"
+      }
+    },
+    {
+      "id": "V1-02",
+      "zh": "第二阵 我钻出草叶间",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": true,
+        "note": "三字四字四字，对应3+4+4"
+      }
+    },
+    {
+      "id": "V1-03",
+      "zh": "空空 荡荡的原野",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          6,
+          6
+        ],
+        "ok": true,
+        "note": "两字加四字，对应2+4"
+      }
+    },
+    {
+      "id": "V1-04",
+      "zh": "顺风而去 只剩我一人",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "四字加五字，对应4+5"
+      }
+    },
+    {
+      "id": "V1-05",
+      "zh": "草原上 立着影",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": true,
+        "note": "三字加三字，对应2+3+2"
+      }
+    },
+    {
+      "id": "V1-06",
+      "zh": "我化作 一阵青风",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          9,
+          9
+        ],
+        "ok": true,
+        "note": "三字加四字，对应4+5"
+      }
+    },
+    {
+      "id": "V1-07",
+      "zh": "轻摇曳",
+      "chars": 3,
+      "self_check": {
+        "budget": [
+          3,
+          3
+        ],
+        "ok": true,
+        "note": "三字整句"
+      }
+    }
+  ]
+}

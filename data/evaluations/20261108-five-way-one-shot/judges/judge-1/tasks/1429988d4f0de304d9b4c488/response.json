@@ -1,0 +1,21 @@
+{
+  "id": "d54a4c0f-bfcb-44e4-b232-0c007191db0f",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原文的被动、被剥夺与自我消解语气，如V1-02“夺干净”、V1-04“回不来”、V1-05“没了劲”都保留了原意；A的“像气球升空”“房间安静”“像空的房间”等意象属额外添加，且V1-04偏离“吞下去”的核心动作。B中文虽略直，但自然度可接受，情绪更统一。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\",\"V1-07\",\"V1-08\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 396,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 148,
+    "service_tier": "standard"
+  }
+}

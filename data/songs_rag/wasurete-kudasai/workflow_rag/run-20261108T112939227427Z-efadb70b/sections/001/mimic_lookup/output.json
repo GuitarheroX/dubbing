@@ -1,0 +1,46 @@
+{
+  "section": "I1",
+  "query_text": "一颗心 全都给你\n一束花 轻轻递给你\n任长发在风里摇 不去拉住也不去管",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "梅新_meixin/拈花图#s1",
+      "title": "拈花图",
+      "poet": "梅新",
+      "poem_id": "梅新_meixin/拈花图",
+      "stanza_idx": 1,
+      "score": 0.664521,
+      "text": "伸手给一朵花\n手不能离开\n手不离开\n花就不特殊了\n花开手在花盛开\n花落手在花仍开"
+    },
+    {
+      "chunk_id": "棠棣_tangdi/花前忆水#s1",
+      "title": "花前忆水",
+      "poet": "棠棣",
+      "poem_id": "棠棣_tangdi/花前忆水",
+      "stanza_idx": 1,
+      "score": 0.661341,
+      "text": "在一朵花前 所有的\n时光都开始倒流\n双手把阳光掬起\n向着清柔的风倾落"
+    },
+    {
+      "chunk_id": "车延高_cheyangao/温暖#s2",
+      "title": "温暖",
+      "poet": "车延高",
+      "poem_id": "车延高_cheyangao/温暖",
+      "stanza_idx": 2,
+      "score": 0.661028,
+      "text": "长发及腰的你\n不要用眼睛制造思念\n就像天堂里开花的云朵，不要\n怀疑梨花的白\n不要怪风多话"
+    },
+    {
+      "chunk_id": "后然_houran/花#s2",
+      "title": "花",
+      "poet": "后然",
+      "poem_id": "后然_houran/花",
+      "stanza_idx": 2,
+      "score": 0.646307,
+      "text": "有的人常因不关心就会错过花期，\n又因过于在意而只收获过路秋风，\n而我只想握着你的手，\n你就是那朵花，"
+    }
+  ]
+}

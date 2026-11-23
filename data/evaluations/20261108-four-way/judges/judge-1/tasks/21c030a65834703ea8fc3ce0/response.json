@@ -1,0 +1,21 @@
+{
+  "id": "c3edc68d-228a-49d2-9cac-31d1b61b3ae8",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更贴近原文情绪与语义：V1-01保留“亲手撕”的主动感，V1-04“把一切都推给别人”自然且准确，V1-05“真讨厌自己”传达自厌而非单纯烦躁。B的“撕啦”“别人家”“烦哪”口语化偏轻，削弱了原词沉重感，且V1-05语义偏移。\",\"phrase_ids\":[\"V1-01\",\"V1-04\",\"V1-05\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 326,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 768,
+    "output_tokens": 111,
+    "service_tier": "standard"
+  }
+}

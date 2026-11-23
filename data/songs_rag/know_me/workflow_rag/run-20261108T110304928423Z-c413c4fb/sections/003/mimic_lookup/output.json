@@ -1,0 +1,46 @@
+{
+  "section": "B1",
+  "query_text": "命令 我察觉到 敌意\n订正 我旁观着 虚无\n安宁 掺着一点 罪恶感\n当然吧",
+  "k": 4,
+  "collection": "poetry_stanza256_v1",
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "skipped": "",
+  "hits": [
+    {
+      "chunk_id": "杜绿绿_dulvlv/质问#s3",
+      "title": "质问",
+      "poet": "杜绿绿",
+      "poem_id": "杜绿绿_dulvlv/质问",
+      "stanza_idx": 3,
+      "score": 0.646329,
+      "text": "我感觉到它们的存在\n无时无刻。暴躁折断双手\n虚弱与奸诈\n反复考量内心\n我不知它们是否存在\n我诋毁自己的感觉"
+    },
+    {
+      "chunk_id": "阿斐_afei/韬光养晦#s3",
+      "title": "韬光养晦",
+      "poet": "阿斐",
+      "poem_id": "阿斐_afei/韬光养晦",
+      "stanza_idx": 3,
+      "score": 0.645514,
+      "text": "鉴于命运的警示\n我不做过多解释\n任由火焰的眼神\n用讥讽的舌尖\n诱舔我的沉默"
+    },
+    {
+      "chunk_id": "木朵_muduo/十面埋伏#s34",
+      "title": "十面埋伏",
+      "poet": "木朵",
+      "poem_id": "木朵_muduo/十面埋伏",
+      "stanza_idx": 34,
+      "score": 0.638817,
+      "text": "谁说我是恶的一极\n是埋伏中的恶的十分之一\n你觉察了我的贪婪\n我就成为你的本性和死结"
+    },
+    {
+      "chunk_id": "覃贤茂_tanxianmao/芳香的告白#s23",
+      "title": "芳香的告白",
+      "poet": "覃贤茂",
+      "poem_id": "覃贤茂_tanxianmao/芳香的告白",
+      "stanza_idx": 23,
+      "score": 0.633168,
+      "text": "我惧怕这多疑的象征\n正像心痛的责备\n被文字点燃的幻觉\n也许你能理解"
+    }
+  ]
+}

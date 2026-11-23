@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "query_text": "问哪一颗星 转到那刻度\n散落的那人 原来就是我\n平凡地活着 那样的日子\n明知求也求不来 这具身躯",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

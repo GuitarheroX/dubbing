@@ -1,0 +1,25 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"我一点一点变轻了 像气球\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"前六字后五字，空格断句\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"你却把一切都夺走 不放手\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"七字加五字，空格断句\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"不管什么都被吸进 你胸口\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"六字加四字，空格断句\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"吞下去就消失无踪\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"整句十字，无空格\"}\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"我一点一点变弱了 像残风\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"六字加五字，空格断句\"}\n    },\n    {\n      \"id\": \"V1-06\",\n      \"zh\": \"心里那块黑色污渍 也都被\",\n      \"chars\": 13,\n      \"self_check\": {\"budget\": [13, 13], \"ok\": true, \"note\": \"七字加六字，空格断句\"}\n    },\n    {\n      \"id\": \"V1-07\",\n      \"zh\": \"干干净净洗掉 不留痕迹\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"七字加五字，空格断句\"}\n    },\n    {\n      \"id\": \"V1-08\",\n      \"zh\": \"什么都不用做也可以\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"七字加四字，空格断句\"}\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T13:46:19+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "section": "V1",
+  "warnings": [],
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "usage": {
+    "input_tokens": 1396,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 562,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  }
+}

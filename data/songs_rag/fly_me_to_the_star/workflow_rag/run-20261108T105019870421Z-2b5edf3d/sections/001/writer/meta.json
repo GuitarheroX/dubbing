@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\"section\":\"V1\",\"phrases\":[{\"id\":\"V1-01\",\"zh\":\"我一直 站在 你视线 之外看你\"},{\"id\":\"V1-02\",\"zh\":\"像把 孤独 全都 留在门外的夜\"},{\"id\":\"V1-03\",\"zh\":\"今宵的 月色 也温柔地 对我笑\"},{\"id\":\"V1-04\",\"zh\":\"转过头 看看我\"},{\"id\":\"V1-05\",\"zh\":\"oh 飞向那颗星\"}]}",
+  "finished_at": "2026-11-08T10:51:01+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3174,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 3756,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

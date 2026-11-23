@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T174730_b_8cf99f",
+  "input_hash": "8cf99ff2ea304dbc56c42590cc3b0d206b5b07608fd5704382610abbb921852f",
+  "finished_at": "2026-11-03T17:47:54+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 3305,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2304,
+    "output_tokens": 4953,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"一件件 数过去 有没有舍不得\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"按 pattern 3+3+6 用空格断开，三拍分别落在 3/3/6 字上\"}\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"你这一生里 想爱的人 慢慢数来 可有一样留得住\",\n      \"chars\": 20,\n      \"self_check\": {\"budget\": [20, 20], \"ok\": true, \"note\": \"9+11 两段，前半 5+4，后半 4+7\"}\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"一件也没有吗\",\n      \"chars\": 6,\n      \"self_check\": {\"budget\": [6, 6], \"ok\": true, \"note\": \"整句一口气，与上句「一件件」呼应\"}\n    },\n    {\n      \"id\": \"V2-04\",\n      \"zh\": \"临海那座小站 只等过两人\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"6+5，空格落在小站之后\"}\n    },\n    {\n      \"id\": \"V2-05\",\n      \"zh\": \"走过五分钟路 就是海边\",\n      \"chars\": 10,\n      \"self_check\": {\"budget\": [10, 10], \"ok\": true, \"note\": \"6+4，保留原文「五分钟」这个具体距离\"}\n    },\n    {\n      \"id\": \"V2-06\",\n      \"zh\": \"我们一同看过的那片翡翠色\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"不分段整句唱，末尾「翡翠色」落在长音上\"}\n    },\n    {\n      \"id\": \"V2-07\",\n      \"zh\": \"把这一切忘了吧\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"与 V1-07 完全重复，保留副歌式回收\"}\n    }\n  ]\n}",
+  "migrated_from": "20261103T174730_b_8cf99f"
+}

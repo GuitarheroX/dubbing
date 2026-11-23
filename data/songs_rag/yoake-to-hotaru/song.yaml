@@ -1,0 +1,24 @@
+song:
+  id: yoake-to-hotaru
+  title: "夜明けと蛍"
+  artist: ""          # TODO 人工补全
+  source_lang: ja
+
+sections:
+  - {id: V1, role: verse}
+  - {id: C1, role: chorus}
+
+phrases:
+  - {id: V1-01, section: V1, ja: "淡い月に見とれてしまうから", budget: {min: 13, max: 13}, pattern: [6, 7]}
+  - {id: V1-02, section: V1, ja: "暗い足元も見えずに", budget: {min: 11, max: 11}}
+  - {id: V1-03, section: V1, ja: "転んだことに気がつけないまま", budget: {min: 13, max: 13}, pattern: [6, 7]}
+  - {id: V1-04, section: V1, ja: "遠い夜の星が滲む", budget: {min: 11, max: 11}}
+  - {id: V1-05, section: V1, ja: "したいことが見つけられないから", budget: {min: 13, max: 13}}
+  - {id: V1-06, section: V1, ja: "急いだ振り 俯くまま", budget: {min: 11, max: 11}}
+  - {id: V1-07, section: V1, ja: "転んだ後に笑われてるもの", budget: {min: 14, max: 14}, pattern: [6, 8]}
+  - {id: V1-08, section: V1, ja: "気づかない振りをするのだ", budget: {min: 11, max: 11}, pattern: [4, 7]}
+
+  - {id: C1-01, section: C1, ja: "形のない歌で朝を描いたまま", budget: {min: 15, max: 15}, pattern: [8, 7]}
+  - {id: C1-02, section: C1, ja: "浅い浅い夏の向こうに", budget: {min: 12, max: 12}, pattern: [3, 3, 6]}
+  - {id: C1-03, section: C1, ja: "冷たくない君の手のひらが見えた", budget: {min: 16, max: 16}, pattern: [8, 8]}
+  - {id: C1-04, section: C1, ja: "淡い空 明けの蛍", budget: {min: 11, max: 11}}

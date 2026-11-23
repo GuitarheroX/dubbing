@@ -1,0 +1,21 @@
+{
+  "id": "e24a6d19-4b9e-4085-99c1-4865d6e639d9",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原词直陈的愿望与假设语气，核心语义完整；A虽更凝练有表现力，但C1-01将“核融合炉”弱化为“炉心深处”，C1-02加入“化一片光”属额外意象，C1-06“连我也一样”也添了原文没有的限定。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-06\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 286,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1408,
+    "output_tokens": 103,
+    "service_tier": "standard"
+  }
+}

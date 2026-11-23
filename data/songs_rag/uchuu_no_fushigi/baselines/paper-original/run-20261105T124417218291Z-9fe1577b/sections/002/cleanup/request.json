@@ -1,0 +1,32 @@
+{
+  "messages": {
+    "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+    "user": "清晨为何要将我照亮？\n夜晚为何会变得寂凉？\n悲伤的事情对半分吧\n若能如此该有多好啊\n\nMora count verification (approximate syllable count per line):\nLine 1: 清晨为何要将我照亮 (qīng chén wèi hé yào jiāng wǒ zhào liàng) = 10 syllables ✓ (original: あさはなんでぼくをてらすの = 10 mora)\nLine 2: 夜晚为何会变得寂凉 (yè wǎn wèi hé huì biàn dé jì liáng) = 10 syllables ✓ (original: よるはなんでさびしくなるの = 10 mora)\nLine 3: 悲伤的事情对半分吧 (bēi shāng de shì qíng duì bàn fēn ba) = 10 syllables ✓ (original: かなしいことははんぶんこ = 10 mora)\nLine 4: 若能如此该有多好啊 (ruò néng rú cǐ gāi yǒu duō hǎo a) = 10 syllables ✓ (original: できたらいいのにね = 8 mora, approximate)\n\nRhyme verification: Lines 1 and 2 end in \"àng\" (亮/凉) — matching rhyme. Lines 3 and 4 end in \"a\" (吧/啊) — matching rhyme. Original rhyme pattern: の/の (lines 1-2), こ/ね (lines 3-4, near-rhyme) — preserved.\n\nTheme: Same — questioning why morning shines on me and night feels lonely, wishing sadness could be halved/shared."
+  },
+  "data": {
+    "response": "清晨为何要将我照亮？\n夜晚为何会变得寂凉？\n悲伤的事情对半分吧\n若能如此该有多好啊\n\nMora count verification (approximate syllable count per line):\nLine 1: 清晨为何要将我照亮 (qīng chén wèi hé yào jiāng wǒ zhào liàng) = 10 syllables ✓ (original: あさはなんでぼくをてらすの = 10 mora)\nLine 2: 夜晚为何会变得寂凉 (yè wǎn wèi hé huì biàn dé jì liáng) = 10 syllables ✓ (original: よるはなんでさびしくなるの = 10 mora)\nLine 3: 悲伤的事情对半分吧 (bēi shāng de shì qíng duì bàn fēn ba) = 10 syllables ✓ (original: かなしいことははんぶんこ = 10 mora)\nLine 4: 若能如此该有多好啊 (ruò néng rú cǐ gāi yǒu duō hǎo a) = 10 syllables ✓ (original: できたらいいのにね = 8 mora, approximate)\n\nRhyme verification: Lines 1 and 2 end in \"àng\" (亮/凉) — matching rhyme. Lines 3 and 4 end in \"a\" (吧/啊) — matching rhyme. Original rhyme pattern: の/の (lines 1-2), こ/ね (lines 3-4, near-rhyme) — preserved.\n\nTheme: Same — questioning why morning shines on me and night feels lonely, wishing sadness could be halved/shared."
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Extract only the translated lyric lines from the supplied model response. Remove commentary, analysis, numbering and code fences. Preserve the lyric wording, punctuation, order and repetitions exactly. Do not translate, rewrite, correct syllable counts, invent missing lines, or merge or split lyric lines. If a heading is clearly not a lyric line, omit it. Return only a JSON object with a lines array of strings. If no translated lyrics can be identified, return an empty lines array.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "清晨为何要将我照亮？\n夜晚为何会变得寂凉？\n悲伤的事情对半分吧\n若能如此该有多好啊\n\nMora count verification (approximate syllable count per line):\nLine 1: 清晨为何要将我照亮 (qīng chén wèi hé yào jiāng wǒ zhào liàng) = 10 syllables ✓ (original: あさはなんでぼくをてらすの = 10 mora)\nLine 2: 夜晚为何会变得寂凉 (yè wǎn wèi hé huì biàn dé jì liáng) = 10 syllables ✓ (original: よるはなんでさびしくなるの = 10 mora)\nLine 3: 悲伤的事情对半分吧 (bēi shāng de shì qíng duì bàn fēn ba) = 10 syllables ✓ (original: かなしいことははんぶんこ = 10 mora)\nLine 4: 若能如此该有多好啊 (ruò néng rú cǐ gāi yǒu duō hǎo a) = 10 syllables ✓ (original: できたらいいのにね = 8 mora, approximate)\n\nRhyme verification: Lines 1 and 2 end in \"àng\" (亮/凉) — matching rhyme. Lines 3 and 4 end in \"a\" (吧/啊) — matching rhyme. Original rhyme pattern: の/の (lines 1-2), こ/ね (lines 3-4, near-rhyme) — preserved.\n\nTheme: Same — questioning why morning shines on me and night feels lonely, wishing sadness could be halved/shared."
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

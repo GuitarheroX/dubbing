@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "{\n  \"section\": \"V2\",\n  \"phrases\": [\n    {\n      \"id\": \"V2-01\",\n      \"zh\": \"早晨呀 为何 偏照着 我的眼睛\",\n      \"chars\": 12,\n      \"self_check\": {\n        \"budget\": [12, 12],\n        \"ok\": true,\n        \"note\": \"三字起句接两字问句，再三字动作，最后四字落在眼睛上，保留初版语气\"\n      }\n    },\n    {\n      \"id\": \"V2-02\",\n      \"zh\": \"夜晚呀 为何 熄了灯 就变空荡\",\n      \"chars\": 12,\n      \"self_check\": {\n        \"budget\": [12, 12],\n        \"ok\": true,\n        \"note\": \"把「静下来」换成熄灯的具体动作，三字顿后接四字空荡\"\n      }\n    },\n    {\n      \"id\": \"V2-03\",\n      \"zh\": \"难过呀 掰一半 分给你\",\n      \"chars\": 9,\n      \"self_check\": {\n        \"budget\": [9, 9],\n        \"ok\": true,\n        \"note\": \"保留初版孩子气的分半动作，三字三字三字正好对上\"\n      }\n    },\n    {\n      \"id\": \"V2-04\",\n      \"zh\": \"能这样就 多好 你说呢\",\n      \"chars\": 9,\n      \"self_check\": {\n        \"budget\": [9, 9],\n        \"ok\": true,\n        \"note\": \"用「多好」替掉「好了」，避开句尾了字，四字两字三字断句\"\n      }\n    }\n  ]\n}",
+  "finished_at": "2026-11-08T11:27:13+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 4337,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 3354,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

@@ -1,0 +1,21 @@
+{
+  "id": "91e2a11d-d5db-47ad-89fc-f1cfe842ed87",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"B更贴近原文核心语义：C1-01“把梦点燃”对应“夢を焼け”的燃烧意象，A“烧成灰”偏消极；C1-02“纯白的颜色”准确对应“白い色”，A“火色”改动了颜色；C1-03“再添一把火”自然对应“火に火をつけ”，A“点亮烧旺”稍显堆叠；C1-04“泡沫般的零钱”保留“泡銭”的泡沫意象，A“湿冷”属额外添加；C1-05“不会冷却的言语的双手”更贴近“冷めない言葉の両手”，A“还热的词”语义偏移；C1-07“一掬”更贴合“掬いたい”。整体B在自然度与表现力上更稳。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-03\",\"C1-04\",\"C1-05\",\"C1-07\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 375,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 224,
+    "service_tier": "standard"
+  }
+}

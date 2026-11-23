@@ -1,0 +1,8 @@
+{
+  "run": "run-20261108T112120331803Z-d0f6f09c",
+  "updated_at": "2026-11-08T11:22:36+00:00",
+  "song": "sonare",
+  "pipeline": "rag",
+  "status": "completed",
+  "model": "deepseek-flash"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "c232d2eb-e5c4-4d39-9d8c-50f7600f72b7",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A的“未曾察觉”简洁自然，B“从未能察觉”稍显生硬；B1-02中A“太依赖”比B“太爱撒娇”更贴合“甘えてた”在此语境下的自我反思意味，且更自然；B1-03两版语义均准确，A“先爱自己再去爱别人”语序更顺、表现力稍强。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 611,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 256,
+    "output_tokens": 112,
+    "service_tier": "standard"
+  }
+}

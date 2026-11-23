@@ -1,0 +1,21 @@
+{
+  "id": "9a73c9db-4010-4d33-8a29-5aea67d5c33b",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A的B1-01更自然凝练地表达了“装作一直等待”的语义，B的“在等什么 一直等下去”略显重复；B1-02两者语义都准确，A的“能够重新开始吗”稍更贴近原文疑问语气。\",\"phrase_ids\":[\"B1-01\",\"B1-02\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 274,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 81,
+    "service_tier": "standard"
+  }
+}

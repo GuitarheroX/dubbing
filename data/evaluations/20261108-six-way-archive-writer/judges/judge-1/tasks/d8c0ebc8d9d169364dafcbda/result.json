@@ -1,0 +1,250 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "终演、命盘、看不见均准确对应原文，命盘为合理意象补充",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "保留回望与不可见的怅然，但命盘略偏宿命感",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "简洁顺口，命盘稍显书面",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "终演与命盘意象较鲜明，服务主题",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "终演、命运、看不清基本准确，但等待终会出现略增原文没有的等待义",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "情绪方向一致，等待感稍强化",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "断句自然，适合歌词，但等待终会出现稍冗",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达通顺但意象普通，等待一词略稀释原句",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "落幕、命运、看不见均准确，理所当然该出现贴近原文",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "保留宿命与不可见的情绪，较平实",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "三句均顺口自然，符合歌词文体",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "准确但意象较常规，表现力普通",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "散场可接受，但第二句改为始终不显形，丢失命运一词且语义偏移",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "不可见情绪保留，但宿命感被削弱",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "中文顺口，散场自然",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "不显形有一定画面，但整体普通",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 2,
+          "reason": "终场准确，但第二句加入命运交错，偏离原文迟早可见的命运",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 3,
+          "reason": "情绪方向大致一致，但交错带来额外戏剧感",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "读来顺口，仿佛望见命运交错稍显跳脱",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "命运交错意象较鲜明，但偏离主题",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    },
+    {
+      "label": "F",
+      "scores": {
+        "semantic": {
+          "score": 4,
+          "reason": "终幕、命运、未能看见基本准确，注定迟早略强化必然性",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "保留宿命与不可见，情绪一致",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "简洁顺口，符合歌词文体",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "终幕与注定迟早形成张力，表达有力",
+          "phrase_ids": [
+            "V2-01",
+            "V2-02",
+            "V2-03"
+          ]
+        }
+      }
+    }
+  ]
+}

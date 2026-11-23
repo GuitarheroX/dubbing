@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "```json\n{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"就这样吧 装作等 一班不来的车 等到路灯亮\",\n      \"chars\": 18,\n      \"self_check\": {\n        \"budget\": [18, 18],\n        \"ok\": true,\n        \"note\": \"按4-3-6-5断成四段：就这样吧／装作等／一班不来的车／等到路灯亮；借站台等车的意象写「待ち続けるフリ」\"\n      }\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"从这一步开始 我还能重新来过吗\",\n      \"chars\": 14,\n      \"self_check\": {\n        \"budget\": [14, 14],\n        \"ok\": true,\n        \"note\": \"6+8断句，保留初版「这一步」的具体感，問句悬着不落\"\n      }\n    }\n  ]\n}\n```",
+  "finished_at": "2026-11-08T11:23:56+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3306,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1536,
+    "output_tokens": 2624,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

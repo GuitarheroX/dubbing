@@ -1,0 +1,31 @@
+{
+  "section": "B2",
+  "phrases": [
+    {
+      "id": "B2-01",
+      "zh": "我生来就是 玫瑰的宿命",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          15,
+          15
+        ],
+        "ok": false,
+        "note": "待补足四字"
+      }
+    },
+    {
+      "id": "B2-02",
+      "zh": "燃烧着热情 活下去 永远",
+      "chars": 11,
+      "self_check": {
+        "budget": [
+          17,
+          17
+        ],
+        "ok": false,
+        "note": "待补足六字"
+      }
+    }
+  ]
+}

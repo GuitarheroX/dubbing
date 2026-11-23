@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T174034_b_862dee",
+  "input_hash": "862deece75bbf1e9179612cb91d6ab084ea11b128373114967756eaf1ecc71fa",
+  "finished_at": "2026-11-03T17:40:45+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2633,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 3968,
+    "output_tokens": 2517,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"B2\",\n  \"phrases\": [\n    {\n      \"id\": \"B2-01\",\n      \"zh\": \"梦见这世上的人 一个一个 全都消失\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"三处空格断句，7+4+4 对上旋律分段\"}\n    },\n    {\n      \"id\": \"B2-02\",\n      \"zh\": \"深夜的房间 大得空旷 静得能听见心跳声\",\n      \"chars\": 17,\n      \"self_check\": {\"budget\": [17, 17], \"ok\": true, \"note\": \"5+4+8，末段八个字连读占满尾音\"}\n    },\n    {\n      \"id\": \"B2-03\",\n      \"zh\": \"堵在胸口 咽不下\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"4+3，短句收得干脆\"}\n    },\n    {\n      \"id\": \"B2-04\",\n      \"zh\": \"连一次完整的呼吸 都做不到\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"8+4，句尾用「到」不用「了」\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T174034_b_862dee"
+}

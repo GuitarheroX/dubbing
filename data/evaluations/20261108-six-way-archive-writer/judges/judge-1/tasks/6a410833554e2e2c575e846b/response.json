@@ -1,0 +1,21 @@
+{
+  "id": "8736ab5b-0989-4429-a69f-129bc12ff16c",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"B\",\"reason\":\"两版仅C1-03语序不同；B的“描绘梦想”更自然顺口，A的“把梦想描绘”略显生硬，其余三句完全一致，核心语义均准确。\",\"phrase_ids\":[\"C1-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 694,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 62,
+    "service_tier": "standard"
+  }
+}

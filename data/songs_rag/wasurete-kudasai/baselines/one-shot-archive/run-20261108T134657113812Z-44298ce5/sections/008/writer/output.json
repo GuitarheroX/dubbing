@@ -1,0 +1,96 @@
+{
+  "section": "V3",
+  "phrases": [
+    {
+      "id": "V3-01",
+      "zh": "盒子里面小小的家",
+      "chars": 9,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "需补两字"
+      }
+    },
+    {
+      "id": "V3-02",
+      "zh": "晨光里摇曳的窗帘 我推开",
+      "chars": 12,
+      "self_check": {
+        "budget": [
+          14,
+          14
+        ],
+        "ok": false,
+        "note": "需补两字"
+      }
+    },
+    {
+      "id": "V3-03",
+      "zh": "安静的假日清晨",
+      "chars": 7,
+      "self_check": {
+        "budget": [
+          8,
+          8
+        ],
+        "ok": false,
+        "note": "需补一字"
+      }
+    },
+    {
+      "id": "V3-04",
+      "zh": "刚睡醒的你 睡眼惺忪地坐下",
+      "chars": 14,
+      "self_check": {
+        "budget": [
+          17,
+          17
+        ],
+        "ok": false,
+        "note": "需补三字"
+      }
+    },
+    {
+      "id": "V3-05",
+      "zh": "那个早晨的餐桌上",
+      "chars": 8,
+      "self_check": {
+        "budget": [
+          12,
+          12
+        ],
+        "ok": false,
+        "note": "需补四字"
+      }
+    },
+    {
+      "id": "V3-06",
+      "zh": "曾有过我的心",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          11,
+          11
+        ],
+        "ok": false,
+        "note": "需补五字"
+      }
+    },
+    {
+      "id": "V3-07",
+      "zh": "请你忘了我吧",
+      "chars": 6,
+      "self_check": {
+        "budget": [
+          7,
+          7
+        ],
+        "ok": false,
+        "note": "需补一字"
+      }
+    }
+  ]
+}

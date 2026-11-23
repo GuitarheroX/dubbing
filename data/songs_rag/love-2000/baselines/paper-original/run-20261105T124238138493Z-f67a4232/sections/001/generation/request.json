@@ -1,0 +1,37 @@
+{
+  "messages": {
+    "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+    "user": "愛はどこからやってくるのでしょう\n自分の胸に問いかけた\nニセモノなんか興味はないの\nホントだけを見つめたい"
+  },
+  "data": {
+    "lyrics": [
+      "愛はどこからやってくるのでしょう",
+      "自分の胸に問いかけた",
+      "ニセモノなんか興味はないの",
+      "ホントだけを見つめたい"
+    ]
+  },
+  "transport": {
+    "url": "https://api.deepseek.com/anthropic/v1/messages",
+    "body": {
+      "model": "deepseek-flash",
+      "max_tokens": 16000,
+      "temperature": 0.7,
+      "system": "Translate the passage line by line into Chinese with 1) keep the same mora count per line and verify by counting mora in hiragana/syllables; 2) keep the same rhyme pattern and verify by the final phoneme per line; 3) keep the same theme.",
+      "messages": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "text",
+              "text": "愛はどこからやってくるのでしょう\n自分の胸に問いかけた\nニセモノなんか興味はないの\nホントだけを見つめたい"
+            }
+          ]
+        }
+      ],
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

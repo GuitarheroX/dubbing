@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "B2",
+    "query_text": "我梦见 所有人都 一个一个 消失不见\n午夜的房间 宽得发慌 静得能听见自己心跳\n堵在胸口 出不去\n连好好吸一口气 都做不到了",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

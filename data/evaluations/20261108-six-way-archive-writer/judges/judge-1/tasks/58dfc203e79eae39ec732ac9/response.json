@@ -1,0 +1,21 @@
+{
+  "id": "f32a7cff-f5ea-45ce-b6c9-3a73efee9baa",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更口语化、有情绪张力，如C1-02用“井”的意象强化无底恐惧，C1-07“攥紧我手腕”比B的直译更生动；B多处偏书面直译（C1-01、C1-08），表现力较弱。核心语义双方均基本准确。\",\"phrase_ids\":[\"C1-01\",\"C1-02\",\"C1-07\",\"C1-08\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 413,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 104,
+    "service_tier": "standard"
+  }
+}

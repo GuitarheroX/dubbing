@@ -1,0 +1,121 @@
+{
+  "messages": {
+    "system": "(reviewer 是规则检查，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "V2",
+    "phrases": [
+      {
+        "id": "V2-01",
+        "section": "V2",
+        "ja": "どの星が　めぐる時",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "V2-02",
+        "section": "V2",
+        "ja": "散ってゆく　私だろう",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "V2-03",
+        "section": "V2",
+        "ja": "平凡な　人生は",
+        "budget": {
+          "min": 10,
+          "max": 10
+        },
+        "pattern": [
+          5,
+          5
+        ]
+      },
+      {
+        "id": "V2-04",
+        "section": "V2",
+        "ja": "かなえられない　身だけれど",
+        "budget": {
+          "min": 12,
+          "max": 12
+        },
+        "pattern": [
+          7,
+          5
+        ]
+      }
+    ],
+    "draft": {
+      "section": "V2",
+      "phrases": [
+        {
+          "id": "V2-01",
+          "zh": "哪颗星转过 停在那一刻",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "5+5 断句；借 analysis 里「指针咔哒停在刻度」的骨架，把星写成会停住的东西"
+          }
+        },
+        {
+          "id": "V2-02",
+          "zh": "散落的那人 应该就是我",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "沿用初版「散落的那人」，只把句尾改成更冷的断定，与 C1「散得从容」呼应"
+          }
+        },
+        {
+          "id": "V2-03",
+          "zh": "平凡的活法 我也曾向往",
+          "chars": 10,
+          "self_check": {
+            "budget": [
+              10,
+              10
+            ],
+            "ok": true,
+            "note": "5+5；避开句尾「过」，接 V1 那种看着野花心生柔软的口气"
+          }
+        },
+        {
+          "id": "V2-04",
+          "zh": "命里给的这副身 不许我平凡",
+          "chars": 12,
+          "self_check": {
+            "budget": [
+              12,
+              12
+            ],
+            "ok": true,
+            "note": "7+5；初版此处只有 11 字，补一个「不许我平凡」把 かなえられない 说成命的态度"
+          }
+        }
+      ]
+    },
+    "prev_draft": null
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T172931_b_833fe4",
+  "input_hash": "833fe4997fb07395782f15784980e1e9a885612ad0ef099898b21aaba53f6b43",
+  "finished_at": "2026-11-03T17:29:39+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 2882,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1280,
+    "output_tokens": 1629,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\n      \"id\": \"V1-01\",\n      \"zh\": \"不安漫过我的喉咙\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"整句连读，把「溢れた」化成了漫过喉咙的窒息感\"}\n    },\n    {\n      \"id\": \"V1-02\",\n      \"zh\": \"世间规矩密密麻麻\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"叠字占两拍，对应イロハ一条条的细碎规矩\"}\n    },\n    {\n      \"id\": \"V1-03\",\n      \"zh\": \"我揣着一腔的焦躁\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"「着」在句中轻读，不占重音\"}\n    },\n    {\n      \"id\": \"V1-04\",\n      \"zh\": \"自由被谁悄悄掏走\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"「悄悄掏走」四字连读，落在后半拍\"}\n    },\n    {\n      \"id\": \"V1-05\",\n      \"zh\": \"单色的雨无声落下\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"「单色的」三字快读，凑满八音\"}\n    },\n    {\n      \"id\": \"V1-06\",\n      \"zh\": \"把整个世界都藏起\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"句尾避开「了」，用「藏起」收住\"}\n    },\n    {\n      \"id\": \"V1-07\",\n      \"zh\": \"天空高高在上冷笑 我往下沉\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"按 pattern 8+4 断句，前八后四，空格处换气\"}\n    }\n  ]\n}",
+  "migrated_from": "20261103T172931_b_833fe4"
+}

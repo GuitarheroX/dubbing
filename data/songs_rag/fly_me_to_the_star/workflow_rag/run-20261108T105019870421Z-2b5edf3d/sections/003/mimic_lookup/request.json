@@ -1,0 +1,12 @@
+{
+  "messages": {
+    "system": "(mimic 检索是嵌入 + 向量库，不调用模型)",
+    "user": ""
+  },
+  "data": {
+    "section": "C1",
+    "query_text": "胸口心跳 相叠 融成同一个 节奏\n忽然会 害怕 你像光 散去\n怕一转身 你就不 见了 踪影\n你发亮的 眼里 只容我 一个人 别人都别留下\noh 带我飞向星",
+    "k": 4,
+    "collection": "poetry_stanza256_v1"
+  }
+}

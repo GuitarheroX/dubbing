@@ -1,0 +1,21 @@
+{
+  "agent": "mimic_write",
+  "raw_response": "```json\n{\n  \"section\": \"B1\",\n  \"phrases\": [\n    {\n      \"id\": \"B1-01\",\n      \"zh\": \"笑出了眼泪 也试着 皱起眉头\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"5+3+4 按 pattern 空格断开；用具体身体动作替掉初版偏虚的「跳」\"}\n    },\n    {\n      \"id\": \"B1-02\",\n      \"zh\": \"世界 那么大 我们蹲 小小角落\",\n      \"chars\": 12,\n      \"self_check\": {\"budget\": [12, 12], \"ok\": true, \"note\": \"2+3+3+4；借参考里「大也是…小也是…」的大小对置骨架，换成世界与角落\"}\n    },\n    {\n      \"id\": \"B1-03\",\n      \"zh\": \"我们一起 踮脚够宇宙秘密\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"4+7；把「问」改成踮脚的够，孩子的动作更实\"}\n    },\n    {\n      \"id\": \"B1-04\",\n      \"zh\": \"一起去一层层解开\",\n      \"chars\": 8,\n      \"self_check\": {\"budget\": [8, 8], \"ok\": true, \"note\": \"整句一段；补「一层层」承接上句的秘密，也凑满八字\"}\n    }\n  ]\n}\n```",
+  "finished_at": "2026-11-08T11:27:53+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "a35d0d8d3bf589c75ab70ac36766f0ed9c3e797f5a0d114828e69e8af51e89ea",
+  "warnings": [],
+  "round": 1,
+  "index_id": "poetry_stanza256_bge-large-zh-v1.5_v1",
+  "hits": 4,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 3775,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2048,
+    "output_tokens": 4011,
+    "service_tier": "standard"
+  },
+  "temperature": 1.5
+}

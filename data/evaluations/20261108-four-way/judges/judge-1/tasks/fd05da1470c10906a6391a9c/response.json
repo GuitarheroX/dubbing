@@ -1,0 +1,21 @@
+{
+  "id": "e48f6d38-8386-48f7-aa72-97e999c02936",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"保留被夺走、变轻变弱、黑渍被洗的核心，但“漏着气”“皱成一团纸”等具体化偏离原文，V1-06“洗不掉的黑渍”与原文“被洗净”相反。\",\"phrase_ids\":[\"V1-01\",\"V1-05\",\"V1-06\"]},\"emotion\":{\"score\":3,\"reason\":\"整体无力被吞噬的情绪方向保留，但“轻得像羽毛”“皱成一团纸”偏轻巧，削弱了压抑感。\",\"phrase_ids\":[\"V1-01\",\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文顺口，有歌词感，个别句如“你伸进我的胸口 一件件掏空”略生硬但可接受。\",\"phrase_ids\":[\"V1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明，“掏空”“皱成一团纸”有画面感，但部分意象服务主题不够准确。\",\"phrase_ids\":[\"V1-02\",\"V1-05\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"核心信息基本准确，夺走、吸入、吞下、变弱、黑渍被洗净均保留；V1-04“再也回不来”略增原文没有的意味。\",\"phrase_ids\":[\"V1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"被动、被吞噬的无力感保留较好，情绪方向一致，稍显直白。\",\"phrase_ids\":[\"V1-01\",\"V1-05\"]},\"naturalness\":{\"score\":3,\"reason\":\"多数可理解，但“一天一天都没了劲”“洗得干净俐落”等表达略生硬或口语不协调。\",\"phrase_ids\":[\"V1-05\",\"V1-07\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但偏平实，意象和力度一般。\",\"phrase_ids\":[\"V1-02\",\"V1-06\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"核心语义准确，变轻、被夺、吸入吞下、变弱、黑渍洗净、无需做事均对应原文。\",\"phrase_ids\":[\"V1-01\",\"V1-02\",\"V1-03\",\"V1-04\",\"V1-05\",\"V1-06\",\"V1-07\",\"V1-08\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，但表达较简洁平淡，压抑和被动感稍弱。\",\"phrase_ids\":[\"V1-01\",\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文通顺简洁，符合歌词文体，个别句如“于是什么都不用做也好”略拗口。\",\"phrase_ids\":[\"V1-08\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达清楚但意象较普通，缺少鲜明画面。\",\"phrase_ids\":[\"V1-03\",\"V1-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"核心事件保留，但“像气球升空”“房间安静”“擦得发亮”“像空的房间”等新增意象改变或模糊了原文的被动吞噬与洗净意味。\",\"phrase_ids\":[\"V1-01\",\"V1-04\",\"V1-06\",\"V1-07\"]},\"emotion\":{\"score\":3,\"reason\":\"整体方向接近，但气球、空房间等意象使情绪偏轻飘，削弱压抑感。\",\"phrase_ids\":[\"V1-01\",\"V1-05\"]},\"naturalness\":{\"score\":4,\"reason\":\"中文较顺口，有歌词感，个别搭配如“轻轻收走”略柔化。\",\"phrase_ids\":[\"V1-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象鲜明且有画面，但部分意象与主题贴合度不足。\",\"phrase_ids\":[\"V1-04\",\"V1-07\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 1852,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 256,
+    "output_tokens": 877,
+    "service_tier": "standard"
+  }
+}

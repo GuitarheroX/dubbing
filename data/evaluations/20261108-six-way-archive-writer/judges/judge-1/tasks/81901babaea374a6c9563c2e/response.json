@@ -1,0 +1,21 @@
+{
+  "id": "ea853bbb-28b3-4d82-9a0d-3aef07de7b4d",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更自然、有画面感，情绪连贯；B偏直译，部分表达生硬（如V1-01“所以”悬空、V1-07“模样”略拗）。核心语义双方基本准确，A的“晕成一片”“笑声悬在背后”等改写合理且增强表现力。\",\"phrase_ids\":[\"V1-01\",\"V1-03\",\"V1-04\",\"V1-07\",\"V1-08\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 337,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 106,
+    "service_tier": "standard"
+  }
+}

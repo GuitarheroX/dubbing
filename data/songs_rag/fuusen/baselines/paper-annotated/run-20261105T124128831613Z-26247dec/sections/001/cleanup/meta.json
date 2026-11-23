@@ -1,0 +1,35 @@
+{
+  "status": "completed",
+  "elapsed_seconds": 0.795,
+  "usage": {
+    "input_tokens": 2768,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 64,
+    "service_tier": "standard"
+  },
+  "thinking_observation": {
+    "requested": "disabled",
+    "reasoning_tokens": null,
+    "reasoning_content_present": false
+  },
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "protocol": "anthropic",
+  "thinking_requested": "disabled",
+  "temperature_requested": 0.7,
+  "max_tokens": 16000,
+  "paper": "https://aclanthology.org/2026.eacl-srw.42/",
+  "experiment": 4,
+  "fidelity": {
+    "original_exp4_instruction": false,
+    "human_annotations_in_generation": true,
+    "model_and_sampling": "current_project_configuration_not_original_paper_setup",
+    "cleanup": "local_reconstruction_paper_does_not_publish_full_cleanup_prompt",
+    "manual_verification": "pending"
+  },
+  "agent": "cleanup",
+  "variant": "paper-annotated",
+  "migrated_from": "run-20261105T124128831613Z-26247dec",
+  "raw_response": "{\"lines\":[\"我正在一天一天变得更轻\",\"你总是把一切都全部夺干净\",\"无论什么事情都吸进去\",\"吞了下去就再也回不来\",\"我却正一天一天都没了劲\",\"就连我内心深处那块黑色污渍\",\"它们全都会被洗得干净俐落\",\"什么也不用做就一切太平\"]}"
+}

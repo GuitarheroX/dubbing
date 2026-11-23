@@ -1,0 +1,21 @@
+{
+  "id": "70655acc-7d53-4de3-a059-d4346f96c882",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"准确传达“玫瑰是玫瑰”的重复结构与“高贵绽放/美丽凋零”的核心语义\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]},\"emotion\":{\"score\":5,\"reason\":\"保留原句庄重、宿命感的情绪与意境\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"“玫瑰是玫瑰”略直译但可理解，整体顺口\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"重复结构有力，意象清晰，但表达较平实\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“开到最盛时”“散得从容”增添原文没有的意味，核心保留但偏移\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向一致，但“从容”弱化了原句的决绝感\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"“玫瑰啊”呼告自然，整体可唱\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“开到最盛时”意象鲜明，但“散得从容”稍显拖沓\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"与A相同，准确传达核心语义\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]},\"emotion\":{\"score\":5,\"reason\":\"保留庄重宿命情绪\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"“玫瑰是玫瑰”略直译，整体可理解\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"重复结构有力，表达平实\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"“一身深红”“一瓣瓣”为原文所无的补充意象，核心保留但偏移\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向一致，但“散落”较原句“散る”的决绝感偏柔\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]},\"naturalness\":{\"score\":4,\"reason\":\"“玫瑰开/玫瑰落”顺口自然\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“一身深红”“一瓣瓣”意象鲜明，服务主题\",\"phrase_ids\":[\"C2-01\",\"C2-02\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 726,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 512,
+    "output_tokens": 675,
+    "service_tier": "standard"
+  }
+}

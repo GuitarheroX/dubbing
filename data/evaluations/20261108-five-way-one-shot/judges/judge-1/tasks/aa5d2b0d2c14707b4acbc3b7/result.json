@@ -1,0 +1,205 @@
+{
+  "candidates": [
+    {
+      "label": "A",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“全部”对应ぜんぶ，“一起出发 去找”准确传达“さがしにゆこう”的邀约寻找之意。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02",
+            "O1-03",
+            "O1-04"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "重复的“全部”与轻快邀约保留原句的童趣与探索感。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02",
+            "O1-03",
+            "O1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "“一起出发 去找”略拆开但顺口，符合歌词短句。",
+          "phrase_ids": [
+            "O1-02",
+            "O1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“出发”增添行动感，意象清晰但稍显直白。",
+          "phrase_ids": [
+            "O1-02",
+            "O1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "B",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“全部”与“去寻找吧”准确对应原文，核心信息完整。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02",
+            "O1-03",
+            "O1-04"
+          ]
+        },
+        "emotion": {
+          "score": 4,
+          "reason": "方向一致，但“去寻找吧”比原句少一点共同出发的亲切感。",
+          "phrase_ids": [
+            "O1-02",
+            "O1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "“全部 全部 全部”“去寻找吧”简洁顺口，符合歌词文体。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02",
+            "O1-03",
+            "O1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 3,
+          "reason": "表达清楚但较平实，缺少“出发”带来的动感。",
+          "phrase_ids": [
+            "O1-02",
+            "O1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "C",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“全部”与“一起 去寻找”准确传达原文的邀请寻找。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02",
+            "O1-03",
+            "O1-04"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "“一起”保留共同探索的温暖语气，情绪方向一致。",
+          "phrase_ids": [
+            "O1-02",
+            "O1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "“一起 去寻找”可理解且顺口，但中间停顿稍显刻意。",
+          "phrase_ids": [
+            "O1-02",
+            "O1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“一起 去寻找”有邀约感，意象清楚但不算特别鲜明。",
+          "phrase_ids": [
+            "O1-02",
+            "O1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "D",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“全部”与“一起去寻找”准确对应原文，核心语义完整。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02",
+            "O1-03",
+            "O1-04"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "“一起去寻找”保留共同探索的轻快与亲切。",
+          "phrase_ids": [
+            "O1-02",
+            "O1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 5,
+          "reason": "“全部 全部 全部”“一起去寻找”自然顺口，符合歌词短句。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02",
+            "O1-03",
+            "O1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "表达清晰有力，但“去寻找”较常见，意象略普通。",
+          "phrase_ids": [
+            "O1-02",
+            "O1-04"
+          ]
+        }
+      }
+    },
+    {
+      "label": "E",
+      "scores": {
+        "semantic": {
+          "score": 5,
+          "reason": "“全部全部 全部”与“一起出发 寻找”准确传达原文的重复与邀约寻找。",
+          "phrase_ids": [
+            "O1-01",
+            "O1-02",
+            "O1-03",
+            "O1-04"
+          ]
+        },
+        "emotion": {
+          "score": 5,
+          "reason": "“出发”增强行动感，整体保留童趣与探索情绪。",
+          "phrase_ids": [
+            "O1-02",
+            "O1-04"
+          ]
+        },
+        "naturalness": {
+          "score": 4,
+          "reason": "“一起出发 寻找”略紧凑，但可理解且符合歌词节奏。",
+          "phrase_ids": [
+            "O1-02",
+            "O1-04"
+          ]
+        },
+        "expressiveness": {
+          "score": 4,
+          "reason": "“出发 寻找”有动感，意象清楚但稍显拼接。",
+          "phrase_ids": [
+            "O1-02",
+            "O1-04"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "agent": "writer",
+  "raw_response": "{\n  \"section\": \"V1\",\n  \"phrases\": [\n    {\"id\": \"V1-01\", \"zh\": \"我正越来越轻 像气球升空\"},\n    {\"id\": \"V1-02\", \"zh\": \"你总把我的一切 都轻轻拿走\"},\n    {\"id\": \"V1-03\", \"zh\": \"把一切吸进 什么都不留\"},\n    {\"id\": \"V1-04\", \"zh\": \"全都吞下去 房间好安静\"},\n    {\"id\": \"V1-05\", \"zh\": \"我正越来越弱 像漏气气球\"},\n    {\"id\": \"V1-06\", \"zh\": \"心口深处那块黑渍 也擦得发亮\"},\n    {\"id\": \"V1-07\", \"zh\": \"干净得像这间 没人住的空房\"},\n    {\"id\": \"V1-08\", \"zh\": \"我什么都不做 也已经很好\"}\n  ]\n}",
+  "finished_at": "2026-11-08T10:54:47+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "8f192faa259ce09d0635005ff2a5caa9d3723ebdd03067807744a90d88d985de",
+  "warnings": [],
+  "writer_attempt": 1,
+  "base_url": "https://api.deepseek.com/anthropic",
+  "usage": {
+    "input_tokens": 2326,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 2773,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7
+}

@@ -1,0 +1,21 @@
+{
+  "agent": "b",
+  "run_id": "20261103T174010_b_7009a5",
+  "input_hash": "7009a5d7b0232df4f0005cf43b03d28de2f93da0c2a22513a08a267d44e0fb14",
+  "finished_at": "2026-11-03T17:40:21+00:00",
+  "model": "deepseek-flash",
+  "client": "api",
+  "prompt_hash": "7079c7ed413a56016b4d4b32b54dd9c361fde7d2c2dc4e999080e5ac9d333090",
+  "round": 1,
+  "warnings": [],
+  "usage": {
+    "input_tokens": 3721,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 2688,
+    "output_tokens": 2186,
+    "service_tier": "standard"
+  },
+  "temperature": 0.7,
+  "raw_response": "```json\n{\n  \"section\": \"C2\",\n  \"phrases\": [\n    {\n      \"id\": \"C2-01\",\n      \"zh\": \"跳进炉心 那片蓝\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"与C1完全重复 保住副歌记忆点 空格断在四三处\"}\n    },\n    {\n      \"id\": \"C2-02\",\n      \"zh\": \"好想纵身一跃 被那光吞没\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"六五断句 与C1一致 二唱更笃定\"}\n    },\n    {\n      \"id\": \"C2-03\",\n      \"zh\": \"一整片湛蓝的光 温柔裹住全身 多美\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"七六二断 三处停顿贴着旋律拐点\"}\n    },\n    {\n      \"id\": \"C2-04\",\n      \"zh\": \"跳进炉心 那片蓝\",\n      \"chars\": 7,\n      \"self_check\": {\"budget\": [7, 7], \"ok\": true, \"note\": \"与C2-01完全相同 段内重复保留\"}\n    },\n    {\n      \"id\": \"C2-05\",\n      \"zh\": \"若是纵身一跃 再不用回头\",\n      \"chars\": 11,\n      \"self_check\": {\"budget\": [11, 11], \"ok\": true, \"note\": \"六五断 比C1的犹疑更进一步 落到底\"}\n    },\n    {\n      \"id\": \"C2-06\",\n      \"zh\": \"仿佛所有一切 都将被原谅 甜得像梦\",\n      \"chars\": 15,\n      \"self_check\": {\"budget\": [15, 15], \"ok\": true, \"note\": \"六五五断 末句换成甜的意象 收在自我催眠上\"}\n    }\n  ]\n}\n```",
+  "migrated_from": "20261103T174010_b_7009a5"
+}

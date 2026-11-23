@@ -1,0 +1,21 @@
+{
+  "id": "6305cc27-de18-4adc-918a-5c796a86ca58",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"candidates\":[{\"label\":\"A\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"准确对应笑与烦恼、世界角落、共同解开宇宙奥秘，核心信息完整。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，童趣与探索感保留，但略偏简洁平淡。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文顺口自然，符合歌词文体，无生硬处。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"意象清晰、表达干净，但缺少更鲜明的语气或画面。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}}},{\"label\":\"B\",\"scores\":{\"semantic\":{\"score\":5,\"reason\":\"笑与烦恼、广阔世界角落、共同探索宇宙奥秘均准确传达。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，但“忧愁”“看吧”等措辞稍显成人化，童趣略减。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":4,\"reason\":\"整体可理解且通顺，但“有时候欢笑有时候烦恼忧愁”稍显堆叠。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"expressiveness\":{\"score\":3,\"reason\":\"表达普通，意象和语气较平，缺少亮点。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}}},{\"label\":\"C\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"保留笑、烦恼、世界角落和探索宇宙的主旨，但“日子还长”“踮起脚尖够一够天”明显增改原意。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"童趣和探索感仍在，但“日子还长”带来原词没有的延展情绪，末句偏离共同解谜的基调。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":3,\"reason\":\"断句和空格较多，部分表达可理解但不够顺口自然。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"“踮起脚尖够一够天”意象鲜明，但服务主题不足，整体有表达力。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}}},{\"label\":\"D\",\"scores\":{\"semantic\":{\"score\":3,\"reason\":\"笑与烦恼、世界角落、共同探索宇宙的主旨保留，但“笑出了眼泪”“蹲小小角落”“一层层解开”有增改。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"emotion\":{\"score\":3,\"reason\":\"情绪方向大体一致，但“笑出了眼泪”强化了原词没有的悲喜交加感。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":3,\"reason\":\"“世界 那么大 我们蹲 小小角落”断句生硬，“踮脚够宇宙秘密”略拗口。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"画面感较强，“踮脚够宇宙秘密”有想象力，但部分表达略杂。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}}},{\"label\":\"E\",\"scores\":{\"semantic\":{\"score\":4,\"reason\":\"笑与迷惘、辽阔世界角落、共同解谜均准确，但“忽然迷惘”较原词“悩んでみたり”略窄。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"emotion\":{\"score\":4,\"reason\":\"情绪方向一致，童趣与探索感保留，但“迷惘”稍显成人化。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"naturalness\":{\"score\":5,\"reason\":\"中文顺口自然，符合歌词文体。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]},\"expressiveness\":{\"score\":4,\"reason\":\"表达清晰有力，“把答案找出来吧”服务主题，但整体略常规。\",\"phrase_ids\":[\"B1-01\",\"B1-02\",\"B1-03\",\"B1-04\"]}}}]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 772,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 1024,
+    "output_tokens": 1184,
+    "service_tier": "standard"
+  }
+}

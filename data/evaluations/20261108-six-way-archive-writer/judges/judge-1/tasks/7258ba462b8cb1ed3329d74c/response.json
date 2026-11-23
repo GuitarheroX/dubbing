@@ -1,0 +1,21 @@
+{
+  "id": "434595fd-4493-4576-91a8-bc760c0c9f9c",
+  "type": "message",
+  "role": "assistant",
+  "model": "deepseek-flash",
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"winner\":\"A\",\"reason\":\"A更简洁自然，V2-01“曾见过的落幕”准确传达“终演”的终结感；V2-02“理所当然该出现的命运”保留“当然”与“终将显现”的核心语义，比B的“等待终会出现”更少添加；V2-03“始终看不见”直接对应原文否定状态，B“未能看得清”略偏“看不清”而非“看不见”。\",\"phrase_ids\":[\"V2-01\",\"V2-02\",\"V2-03\"]}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+    "input_tokens": 211,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 640,
+    "output_tokens": 116,
+    "service_tier": "standard"
+  }
+}
