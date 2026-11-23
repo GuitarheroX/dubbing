@@ -819,3 +819,29 @@ def test_truncated_output_becomes_an_incomplete_draft_and_fails_review(root):
     review = store.read_output(outcome.run_id, "reviewer", 1)
     assert review["verdict"] == "fail"
     assert any(v["code"] == "UNDER_BUDGET" for v in review["violations"])
+
+
+def test_thinking_setting_is_recorded_in_meta(root):
+    """换了 thinking 默认值以后，旧 run 的质量差异要能解释清楚，所以每步都记。"""
+
+    class ThinkingClient(ScriptedClient):
+        thinking = "disabled"
+        reasoning_effort = "high"
+
+    _make(root)
+    client = ThinkingClient(
+        {
+            "perceiver": scripted(analysis_json(["S1", "S2"])),
+            "writer": scripted(
+                draft_json("S1", {"A-01": "一二三四", "A-02": "六七八九"}),
+                draft_json("S2", {"B-01": "一二三"}),
+            ),
+        }
+    )
+
+    outcome = run_song("t", client, root=root)
+
+    store = store_for(root, "t")
+    meta = store.read_meta(outcome.run_id, "writer", 1)
+    assert meta["thinking"] == "disabled"
+    assert meta["reasoning_effort"] == "high"

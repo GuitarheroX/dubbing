@@ -11,11 +11,12 @@ class RecordedAPIClient(APIClient):
     def __init__(self, *args, protocol: str = "anthropic", thinking: str | None = None, **kwargs) -> None:
         if protocol not in ("anthropic", "openai"):
             raise ValueError(f"未知接口协议：{protocol}")
-        self.protocol = protocol
         if thinking not in (None, "enabled", "disabled"):
             raise ValueError(f"未知思考设置：{thinking}")
-        self.thinking = thinking
         super().__init__(*args, **kwargs)
+        # 基线和评测未指定思考开关时，保留省略该字段的语义。
+        self.protocol = protocol
+        self.thinking = thinking
 
     @property
     def url(self) -> str:

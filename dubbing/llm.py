@@ -14,6 +14,8 @@
 - ``DUBBING_TEMPERATURE`` 默认 0.7
 - ``DUBBING_TEMPERATURE_PERCEIVER`` / ``DUBBING_TEMPERATURE_WRITER`` / ``DUBBING_TEMPERATURE_MIMIC``
   单独给某个角色设温度；``mimic`` 的默认值是 1.5（要在字数约束下改写，需要更放开的手脚）
+- ``DUBBING_THINKING``      ``disabled``（默认，显式关掉思考）/ ``enabled`` / ``none``（不发这个字段）
+- ``DUBBING_REASONING_EFFORT`` 思考强度（如 ``low`` / ``high`` / ``max``），不发就不指定
 
 ``complete`` 返回**原始文本**，解析 JSON 由调用方负责（见 ``extract_json``），
 这样模型偶尔多吐一句解释也不会把流程炸掉。
@@ -47,12 +49,19 @@ __all__ = [
     "DEFAULT_BASE_URL",
     "DEFAULT_MODEL",
     "DEFAULT_TEMPERATURE",
+    "DEFAULT_THINKING",
+    "THINKING_CHOICES",
     "DEFAULT_MAX_TOKENS",
 ]
 
 DEFAULT_BASE_URL = "https://api.deepseek.com/anthropic"
 DEFAULT_MODEL = "deepseek-flash"
 DEFAULT_TEMPERATURE = 0.7
+#: 是否让模型思考。``deepseek-flash`` 默认**开着**思考（强度 high），所以这里显式关掉：
+#: 这条流水线是多轮 agent，每轮都思考既贵又慢，而且思考块还会挤占 ``max_tokens``。
+#: 设为 ``none`` 表示不发这个字段、由端点默认决定。
+DEFAULT_THINKING = "disabled"
+THINKING_CHOICES = ("none", "enabled", "disabled")
 #: 角色默认温度：mimic 要在字数约束下放开手脚改写，默认比通用值高。
 #: perceiver / writer 不在这里设，沿用 DEFAULT_TEMPERATURE（或环境变量）。
 DEFAULT_TEMPERATURE_BY_AGENT = {"mimic": 1.5}
@@ -152,6 +161,8 @@ class APIClient:
         max_tokens: int = DEFAULT_MAX_TOKENS,
         temperature: float | None = None,
         temperature_by_agent: dict[str, float] | None = None,
+        thinking: str | None = None,
+        reasoning_effort: str | None = None,
         timeout: float = 180.0,
         max_retries: int = 3,
     ) -> None:
@@ -164,6 +175,18 @@ class APIClient:
         if temperature is None:
             temperature = float(os.environ.get("DUBBING_TEMPERATURE") or DEFAULT_TEMPERATURE)
         self.temperature = temperature
+
+        resolved_thinking = (
+            thinking or os.environ.get("DUBBING_THINKING") or DEFAULT_THINKING
+        ).strip().lower()
+        if resolved_thinking not in THINKING_CHOICES:
+            raise ValueError(
+                f"未知 thinking={resolved_thinking!r}，可选 {THINKING_CHOICES}"
+            )
+        #: "disabled" = 显式关；"enabled" = 显式开；"none" = 不发这个字段
+        self.thinking = resolved_thinking
+        #: 思考强度（low / high / max …）。不发就不指定，由端点默认。
+        self.reasoning_effort = reasoning_effort or os.environ.get("DUBBING_REASONING_EFFORT") or None
 
         per_agent = dict(DEFAULT_TEMPERATURE_BY_AGENT)
         for agent, var in (
@@ -204,13 +227,18 @@ class APIClient:
         return self.temperature_by_agent.get(agent, self.temperature)
 
     def _body(self, system: str, user: str, *, agent: str) -> dict[str, Any]:
-        return {
+        body: dict[str, Any] = {
             "model": self.model,
             "max_tokens": self.max_tokens,
             "temperature": self.temperature_for(agent),
             "system": system,
             "messages": [{"role": "user", "content": [{"type": "text", "text": user}]}],
         }
+        if self.thinking in ("enabled", "disabled"):
+            body["thinking"] = {"type": self.thinking}
+        if self.reasoning_effort:
+            body["reasoning_effort"] = self.reasoning_effort
+        return body
 
     def complete(self, *, agent: str, system: str, user: str) -> str:
         headers = self._headers()
@@ -284,6 +312,23 @@ class APIClient:
         texts = [b for b in blocks if isinstance(b, dict) and b.get("type") == "text"]
         thinking = [b for b in blocks if isinstance(b, dict) and b.get("type") == "thinking"]
         text = "".join(b.get("text", "") for b in texts).strip()
+
+        # 说了关就别偷偷想：端点不认这个开关时，宁可报错也不要继续花推理的钱
+        if self.thinking == "disabled":
+            usage = self.last_usage or {}
+            details = usage.get("output_tokens_details") or usage.get("completion_tokens_details") or {}
+            # 这个端点把思考 token 记成 thinking_tokens，OpenAI 协议那侧叫 reasoning_tokens
+            counts = [
+                details.get("reasoning_tokens"),
+                details.get("thinking_tokens"),
+            ]
+            reasoning = max((x for x in counts if isinstance(x, (int, float))), default=None)
+            if thinking or (reasoning is not None and reasoning > 0):
+                raise LLMError(
+                    f"agent={agent}：已请求 thinking.type=disabled，但响应里仍有推理内容"
+                    f"（thinking 块 {len(thinking)} 个，思考 token={reasoning}）。"
+                    "停止该任务——端点可能不认这个开关，换个写法或改用 --thinking none。"
+                )
 
         # 先判截断：预算被思考吃光时是"没有正文"，但真正的原因是这个
         if data.get("stop_reason") == "max_tokens":

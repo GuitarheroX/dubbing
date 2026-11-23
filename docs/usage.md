@@ -213,6 +213,29 @@ python -m dubbing run --song kotozute --base-url http://127.0.0.1:8080/anthropic
 客户端会在根地址后拼 `/v1/messages`，所以别自己带这一段（`.../anthropic` ✓，`.../anthropic/v1/messages` ✗）。
 模型名（`DUBBING_MODEL` / `--model`）要跟你的网关认得的一致；`deepseek-flash` 是 DeepSeek 的。
 
+### 思考模式
+
+`deepseek-flash` 默认**开着**思考（强度默认 `high`），而且思考块会占用 `max_tokens`。这条流水线是
+多轮 agent，每轮都思考既贵又慢，所以默认显式关掉：
+
+```bash
+python -m dubbing run --song kotozute --client api                    # 默认就是 disabled
+python -m dubbing run --song kotozute --client api --thinking enabled # 想试试"让它多想想"
+```
+
+| 取值 | 请求体里发什么 | 什么时候用 |
+|---|---|---|
+| `disabled`（默认） | `"thinking": {"type": "disabled"}` | 正常跑：不该为了押韵想掉两千 token |
+| `enabled` | `"thinking": {"type": "enabled"}` | 想验证"多想想"能不能改善意象 |
+| `none` | 不发这个字段 | 换了个不认这个字段的网关时 |
+
+强度用 `--reasoning-effort low|high|max`（发 `reasoning_effort`），不发就不指定；环境变量是
+`DUBBING_THINKING` / `DUBBING_REASONING_EFFORT`。
+
+关掉之后如果响应里**仍然**有 thinking 块或思考 token，客户端会直接报错停下，而不是继续付推理的钱。
+每次调用实际发出去的设置在 `meta.json` 的 `thinking` / `reasoning_effort` 里——换了默认值之后，
+旧 run 的差异才解释得清。
+
 | 环境变量 | 作用 | 默认 |
 |---|---|---|
 | `DEEPSEEK_API_KEY` | 密钥（也认 `ANTHROPIC_API_KEY` / `ANTHROPIC_AUTH_TOKEN`） | 无 |

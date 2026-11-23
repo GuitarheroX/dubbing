@@ -16,6 +16,8 @@ data/songs/*/workflow/
 data/songs/*/workflow_rag/
 data/songs/*/baselines/
 data/songs/*/preview/
+data/songs/*/workflow_without_ai_reviewer
+data/songs/*/workflow_without_ai_reviewer_and_rag
 data/baseline_batches/
 
 # 本地保留的旧布局结果；远端仅维护标注与代码，旧结果不重新入库。
